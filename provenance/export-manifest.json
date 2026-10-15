@@ -1,0 +1,118 @@
+{
+  "export_date": "2026-10-16",
+  "track": "AWS ML Engineering",
+  "deadline": "2026-10-16",
+  "status": "prepared for submission; approval/invitation owner-confirmed; upload pending",
+  "submission_repository": "https://github.com/nhahub/NHA-5-145",
+  "repository": "https://github.com/Homd11/shopping-copilot",
+  "pinned_link_commit": "503b7f6d0897f5a413d546952dd91c9c94d1dec4",
+  "exporter": {
+    "path": "scripts/export_cap01.py",
+    "sha256": "24e4127ea529a19055af5ef2e8fda7fa1516451947388ad1a09f6135bd066cf9",
+    "python_dependencies": {
+      "reportlab": "4.4.9",
+      "pypdf": "6.10.0",
+      "pillow": "12.3.0",
+      "pdfplumber": "0.11.9"
+    }
+  },
+  "fonts": {
+    "arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+    "ariali.ttf": "86b32db9a06f9694e2a3760c42e5117bcdc5cc1255bb5186ca8ce0305e22f288",
+    "arialbi.ttf": "267a411525980d648f10a7222a6ff1ebe4d4feeefbf9b3100cae2b5cfab5594a"
+  },
+  "notes": [
+    "Markdown substance preserved; wide tables use labeled records.",
+    "Mermaid Gantt task rows are rendered as a native vector schedule.",
+    "Sources revised 16 October with current exploratory ML evidence and owner-reported approval/invitation.",
+    "Seven primary-source literature URLs reopened for the 16 October review.",
+    "PDF metadata timestamps use ReportLab invariant mode for deterministic rebuilds."
+  ],
+  "outputs": [
+    {
+      "path": "output/pdf/cap01-project-planning.pdf",
+      "sha256": "a23da9eea78f5d9176758dbb30db8aee70b2f760e9914eac1603158699cc1f99",
+      "bytes": 101418,
+      "sources": [
+        {
+          "path": "docs/cap01-project-planning.md",
+          "sha256": "904e3bf9ff22288e20bfbd9b2b218663079b720d531e56abdcf164f9f84f1e13"
+        }
+      ],
+      "checks": {
+        "page_count": 9,
+        "source_text_fragments_verified": 133,
+        "unique_links_verified": 7,
+        "page_size": "A4 portrait",
+        "text_preservation": "passed",
+        "hyperlinks": "passed",
+        "renderer": "Poppler pdftoppm, 110 dpi",
+        "rendered_pages": 9,
+        "word_bounding_boxes_verified": 2348,
+        "contact_sheets": [
+          "work/pdfbuild/cap01-project-planning/contact-1.jpg",
+          "work/pdfbuild/cap01-project-planning/contact-2.jpg",
+          "work/pdfbuild/cap01-project-planning/contact-3.jpg"
+        ]
+      }
+    },
+    {
+      "path": "output/pdf/cap01-literature-review.pdf",
+      "sha256": "cd9c5778e67fea157b339ec22c7b40407c26c40722ab028fe046ef923b26267c",
+      "bytes": 104834,
+      "sources": [
+        {
+          "path": "docs/cap01-literature-review.md",
+          "sha256": "4a1ec65d71e5b22e59a1b7692b950bb99053cce845e8ab546e8c19c6758bd623"
+        },
+        {
+          "path": "docs/cap01-lecturer-review.md",
+          "sha256": "12de05b345b77e8f77182008d95c2cc942c612599f43fe2a77ba109f61e859a0"
+        }
+      ],
+      "checks": {
+        "page_count": 7,
+        "source_text_fragments_verified": 60,
+        "unique_links_verified": 15,
+        "page_size": "A4 portrait",
+        "text_preservation": "passed",
+        "hyperlinks": "passed",
+        "renderer": "Poppler pdftoppm, 110 dpi",
+        "rendered_pages": 7,
+        "word_bounding_boxes_verified": 2222,
+        "contact_sheets": [
+          "work/pdfbuild/cap01-literature-review/contact-1.jpg",
+          "work/pdfbuild/cap01-literature-review/contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "path": "output/pdf/cap01-requirements.pdf",
+      "sha256": "2af2d1f3936c0cae72cbeccbacd0ce2b4d7d6850701efc825e97fface893fe4b",
+      "bytes": 108428,
+      "sources": [
+        {
+          "path": "docs/cap01-requirements.md",
+          "sha256": "948acba12e945c65322605b2dcb897f8c700155ccf2f946c6fae5eafccbe5e82"
+        }
+      ],
+      "checks": {
+        "page_count": 12,
+        "source_text_fragments_verified": 296,
+        "unique_links_verified": 7,
+        "page_size": "A4 portrait",
+        "text_preservation": "passed",
+        "hyperlinks": "passed",
+        "renderer": "Poppler pdftoppm, 110 dpi",
+        "rendered_pages": 12,
+        "word_bounding_boxes_verified": 3193,
+        "contact_sheets": [
+          "work/pdfbuild/cap01-requirements/contact-1.jpg",
+          "work/pdfbuild/cap01-requirements/contact-2.jpg",
+          "work/pdfbuild/cap01-requirements/contact-3.jpg"
+        ]
+      }
+    }
+  ]
+}
