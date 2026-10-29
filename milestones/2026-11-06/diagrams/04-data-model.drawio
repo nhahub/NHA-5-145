@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" type="device">
+  <diagram id="04-data-model" name="04 / Physical catalogue and separate inference ledger">
+    <mxGraphModel pageWidth="1000" pageHeight="660">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="04 / Physical catalogue and separate inference ledger" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=25;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="12" width="960" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="meta" value="catalogue_meta&lt;br&gt;PK id = 1&lt;br&gt;schema_version, revision" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="30" y="100" width="235" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="products" value="products&lt;br&gt;PK id; ordinal, revision&lt;br&gt;document, category, type&lt;br&gt;price_minor, available&lt;br&gt;absent facts, added_at" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="350" y="95" width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs" value="product_attributes&lt;br&gt;PK product_id, kind, value&lt;br&gt;FK product_id -&amp;gt; products&lt;br&gt;present; ON DELETE CASCADE" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="725" y="95" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fts" value="product_fts / FTS5&lt;br&gt;id UNINDEXED, text&lt;br&gt;Maintained by repository&lt;br&gt;No declared SQL foreign key" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="350" y="355" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="185.0" as="sourcePoint" />
+            <mxPoint x="725" y="185.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-0-label" value="1 to many" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="600" y="165" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.0" y="275" as="sourcePoint" />
+            <mxPoint x="500.0" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1-label" value="indexes text" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="495" y="300" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="policy" value="Separate inference.sqlite&lt;br&gt;policy: identity, allowance&lt;br&gt;enabled, version" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="30" y="515" width="390" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="attempts" value="attempts&lt;br&gt;PK id; reservation, charged&lt;br&gt;settled (integer nanodollars)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="570" y="515" width="390" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="no_fk" value="Same ledger; no declared SQL FK" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=14;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="400" y="555" width="170" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

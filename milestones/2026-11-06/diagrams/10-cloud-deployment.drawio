@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" type="device">
+  <diagram id="10-cloud-deployment" name="10 / Selected Stockholm design - no resources applied">
+    <mxGraphModel pageWidth="1000" pageHeight="720">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="10 / Selected Stockholm design - no resources applied" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=25;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="12" width="960" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" value="Invited Shopper browser" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="actor">
+          <mxGeometry x="30" y="85" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="cf" value="Generated CloudFront HTTPS&lt;br&gt;Waiting page + wake/status" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="370" y="85" width="270" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="lambda" value="Startup Lambda / IAM URL&lt;br&gt;Controller Lambda (worker)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="710" y="85" width="260" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="Private S3 waiting assets&lt;br&gt;OAC, no public bucket" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="370" y="285" width="270" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="dynamo" value="DynamoDB authority&lt;br&gt;Invitation / generation / leases" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="710" y="285" width="260" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="proxy" value="app.scpilot.tech + store.scpilot.tech&lt;br&gt;Retained EIP -&amp;gt; Caddy HTTPS" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="30" y="495" width="350" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="apps" value="One Linux EC2 candidate&lt;br&gt;Agent + Storefront / loopback&lt;br&gt;Persistent catalogue + ledger" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="460" y="490" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="provider" value="Explicit provider&lt;br&gt;Bedrock candidate /&lt;br&gt;OpenRouter fallback" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="790" y="595" width="190" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="122.5" as="sourcePoint" />
+            <mxPoint x="370" y="127.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-0-label" value="startup" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="245" y="105" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="127.5" as="sourcePoint" />
+            <mxPoint x="710" y="127.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1-label" value="OAC control" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="595" y="110" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505.0" y="170" as="sourcePoint" />
+            <mxPoint x="505.0" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2-label" value="OAC assets" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="470" y="210" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840.0" y="170" as="sourcePoint" />
+            <mxPoint x="840.0" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-label" value="atomic state" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="800" y="210" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165.0" y="160" as="sourcePoint" />
+            <mxPoint x="205.0" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4-label" value="shopping HTTPS" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="35" y="300" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="542.5" as="sourcePoint" />
+            <mxPoint x="460" y="545.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5-label" value="local routes" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="345" y="520" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-6" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="545.0" as="sourcePoint" />
+            <mxPoint x="790" y="642.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6-label" value="HTTPS" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="750" y="580" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Control is separate from shopping ingress. Actual IAM, DNS, TLS,&lt;br&gt;model, credits and exact apply/rollback approval remain gates." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=16;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="390" y="395" width="560" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" type="device">
+  <diagram id="11-host-isolation" name="11 / Prepared native host identities and state">
+    <mxGraphModel pageWidth="1000" pageHeight="650">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="11 / Prepared native host identities and state" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=25;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="12" width="960" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="metadata" value="Root metadata barrier&lt;br&gt;Allows only trusted root / Agent&lt;br&gt;Required by application units" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="340" y="85" width="340" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="agent" value="Agent / copilot&lt;br&gt;Private host config + ledger&lt;br&gt;Readiness key; role access" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="30" y="310" width="270" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="store" value="Store / copilot-store&lt;br&gt;Own service-key copy&lt;br&gt;Catalogue writer + WAL" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="370" y="310" width="270" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="proxy" value="Caddy / copilot-proxy&lt;br&gt;No application keys&lt;br&gt;Certificate state only" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="710" y="310" width="270" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="137.5" as="sourcePoint" />
+            <mxPoint x="300" y="367.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510.0" y="190" as="sourcePoint" />
+            <mxPoint x="505.0" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="137.5" as="sourcePoint" />
+            <mxPoint x="710" y="367.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="catalogue" value="Store-owned catalogue directory&lt;br&gt;Agent supplementary group + read-only access&lt;br&gt;No Agent sidecar creation or catalogue writes" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="215" y="505" width="570" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="367.5" as="sourcePoint" />
+            <mxPoint x="215" y="560.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-label" value="read only" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="155" y="455" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505.0" y="425" as="sourcePoint" />
+            <mxPoint x="500.0" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4-label" value="own writes" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="485" y="455" width="150" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

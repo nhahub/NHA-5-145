@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" type="device">
+  <diagram id="06-confirmation" name="06 / Guarded Mutation activity">
+    <mxGraphModel pageWidth="1000" pageHeight="640">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="06 / Guarded Mutation activity" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=25;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="12" width="960" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="request" value="Supported guarded request" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="350" y="85" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="offer" value="Offer exact effect +&lt;br&gt;current state signature" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="350" y="205" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="decision" value="Fresh matching&lt;br&gt;Confirmation?" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="decision">
+          <mxGeometry x="395" y="350" width="210" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="reject" value="Expired / changed / cancelled&lt;br&gt;No mutation" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="35" y="360" width="265" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="execute" value="Bridge + Storefront&lt;br&gt;Recheck and consume once" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="700" y="360" width="265" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="result" value="Match actual ActionResult&lt;br&gt;Complete or reconcile" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="700" y="535" width="265" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.0" y="155" as="sourcePoint" />
+            <mxPoint x="500.0" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-0-label" value="describe" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="510" y="165" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.0" y="285" as="sourcePoint" />
+            <mxPoint x="500.0" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1-label" value="Shopper answer" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="510" y="305" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="402.5" as="sourcePoint" />
+            <mxPoint x="300" y="405.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2-label" value="no" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="275" y="365" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605" y="402.5" as="sourcePoint" />
+            <mxPoint x="700" y="405.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-label" value="yes" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="590" y="365" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832.5" y="450" as="sourcePoint" />
+            <mxPoint x="832.5" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4-label" value="observed effect" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="805" y="475" width="150" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

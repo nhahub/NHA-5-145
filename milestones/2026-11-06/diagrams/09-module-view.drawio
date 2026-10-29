@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" type="device">
+  <diagram id="09-module-view" name="09 / Selected classes and facade composition">
+    <mxGraphModel pageWidth="1000" pageHeight="730">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="09 / Selected classes and facade composition" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=25;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="12" width="960" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="facade" value="SessionStore&lt;br&gt;create(), submit_message()&lt;br&gt;accept_result(), reconcile()&lt;br&gt;stop()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="25" y="90" width="285" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="runtime" value="TaskRuntime&lt;br&gt;sessions, planner, clock&lt;br&gt;confirmation_registrar&lt;br&gt;Shared task-module context" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="360" y="90" width="280" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="registry" value="SessionRegistry&lt;br&gt;create(), get()&lt;br&gt;assert_lease(), takeover()&lt;br&gt;Capacity / idle expiry" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="700" y="90" width="280" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="172.5" as="sourcePoint" />
+            <mxPoint x="360" y="172.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="172.5" as="sourcePoint" />
+            <mxPoint x="700" y="172.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="task" value="ActiveTask&lt;br&gt;task_id, status&lt;br&gt;action, confirmation&lt;br&gt;mutation_proposal" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="25" y="430" width="285" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ledger" value="ConfirmationLedger&lt;br&gt;offer(), can_confirm()&lt;br&gt;confirm(), invalidate()&lt;br&gt;One current bounded offer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="360" y="430" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="session" value="Session&lt;br&gt;session_id&lt;br&gt;active_task, last_task&lt;br&gt;events, accepted_results&lt;br&gt;requires_reconciliation" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="data">
+          <mxGeometry x="700" y="430" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840.0" y="255" as="sourcePoint" />
+            <mxPoint x="840.0" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2-label" value="owns 0..N" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="845" y="325" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="task-reference" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="430" as="sourcePoint" />
+            <mxPoint x="165" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="355" />
+              <mxPoint x="165" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="task-reference-label" value="active / last" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="380" y="315" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#456A7B;strokeWidth=1.5;endArrow=block;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="515.0" as="sourcePoint" />
+            <mxPoint x="360" y="515.0" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4-label" value="0..1" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=15;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="265" y="475" width="150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Selected real members; active_task and last_task are 0..1 each.&lt;br&gt;Task modules receive TaskRuntime. Session/Task records remain process memory." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="125" y="650" width="750" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

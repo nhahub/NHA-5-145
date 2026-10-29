@@ -1,0 +1,524 @@
+{
+  "schema": 1,
+  "date": "2026-10-23",
+  "kind": "inert-review-dossier",
+  "status": "BLOCKED_NOT_AUTHORIZED_TO_APPLY",
+  "source_commit": "c6924a5",
+  "constraints": {
+    "region": "eu-north-1",
+    "account_plan": "Free",
+    "cash_authorized_usd": "0",
+    "new_inference_authorization_usd": "0",
+    "maximum_window_days": 60,
+    "automatic_wake_design": "generated CloudFront HTTPS entry; direct Caddy shopping origins",
+    "apply_authorized": false,
+    "public_exposure_authorized": false,
+    "periodic_observation_adopted": false,
+    "provider_qualified": false
+  },
+  "proposed_names": {
+    "host": "scpilot-capstone-host",
+    "security_group": "scpilot-capstone-host",
+    "key_pair": "scpilot-capstone-admin",
+    "table": "scpilot-capstone-control",
+    "namespace": "scpilot-capstone",
+    "bucket_template": "scpilot-capstone-{verified_account_id}-eu-north-1",
+    "startup": "scpilot-capstone-startup",
+    "controller": "scpilot-capstone-controller",
+    "startup_role": "scpilot-capstone-startup",
+    "controller_role": "scpilot-capstone-controller",
+    "host_role": "scpilot-capstone-host",
+    "instance_profile": "scpilot-capstone-host",
+    "observation_group": "scpilot-capstone-observation",
+    "observation_schedule": "tick",
+    "observation_role": "scpilot-capstone-observation"
+  },
+  "required_bindings": {
+    "verified_account_id": null,
+    "account_identity_evidence": null,
+    "plan_balance_credit_evidence": null,
+    "vpc_id": null,
+    "subnet_id": null,
+    "route_table_id": null,
+    "internet_gateway_id": null,
+    "ami_id": null,
+    "ami_owner_and_image_evidence": null,
+    "operator_ipv4_cidr_32": null,
+    "operator_public_key_fingerprint": null,
+    "security_group_id": null,
+    "key_pair_id": null,
+    "instance_id": null,
+    "root_volume_id": null,
+    "eip_allocation_id": null,
+    "eip_association_id": null,
+    "eip_address": null,
+    "bucket_name": null,
+    "distribution_id": null,
+    "generated_startup_origin": null,
+    "s3_oac_id": null,
+    "lambda_oac_id": null,
+    "control_origin_request_policy_id": null,
+    "startup_function_url_origin": null,
+    "native_linux_release_sha256": null,
+    "startup_zip_sha256": null,
+    "controller_zip_sha256": null,
+    "host_python_and_runtime_lock_digest": null,
+    "invitation_identity": null,
+    "lifecycle_identity": null,
+    "inference_ledger_identity": null,
+    "secret_custody_record_reference": null,
+    "model_qualification_evidence": null,
+    "model_spend_authorization_reference": null,
+    "window_start_utc": null,
+    "window_end_utc": null,
+    "rollback_release_sha256": null,
+    "dns_before_record_reference": null,
+    "final_resource_cost_rollback_approval_reference": null,
+    "private_creation_receipt_record_reference": null,
+    "public_activation_approval_reference": null,
+    "observation_adoption_approval_reference": null
+  },
+  "resources": [
+    {
+      "id": "existing_network",
+      "count": 1,
+      "disposition": "verify and reuse only",
+      "scope": "one owned/authorized public subnet, route table and IGW path; do not change shared VPC/route/NACL/DHCP",
+      "create": false
+    },
+    {
+      "id": "security_group",
+      "count": 1,
+      "disposition": "new provisioning proposal",
+      "name_ref": "security_group",
+      "inbound_ipv4": [
+        {
+          "tcp": 80,
+          "source": "0.0.0.0/0"
+        },
+        {
+          "tcp": 443,
+          "source": "0.0.0.0/0"
+        },
+        {
+          "tcp": 22,
+          "source_binding": "operator_ipv4_cidr_32",
+          "temporary": true
+        }
+      ],
+      "public_private_upstream_ports": [],
+      "ipv6_inbound": false,
+      "egress_candidate": "TCP80/443 internet; resolver behavior reviewed separately",
+      "initial_application_ingress_enabled": false
+    },
+    {
+      "id": "ssh_key_pair",
+      "count": 1,
+      "disposition": "new administration proposal",
+      "name_ref": "key_pair",
+      "material": "import owner-held public key only; no private key in AWS config, source or artifact"
+    },
+    {
+      "id": "host_instance",
+      "count": 1,
+      "disposition": "selected topology, proposed exact settings",
+      "name_ref": "host",
+      "type": "t3.small",
+      "architecture": "x86_64",
+      "image_family_candidate": "Amazon Linux 2023; Python3.12/systemd target verification required",
+      "cpu_credits": "standard",
+      "imds_tokens": "required",
+      "imds_hop_limit": 1,
+      "imds_ipv6_endpoint": "disabled",
+      "metadata_tags": "disabled",
+      "source_dest_check": true,
+      "termination_protection": true,
+      "detailed_monitoring": false,
+      "instance_store_volumes": 0,
+      "automatic_public_ipv4": "disabled; retained EIP is sole public address"
+    },
+    {
+      "id": "root_ebs",
+      "count": 1,
+      "disposition": "selected topology, proposed exact settings",
+      "type": "gp3",
+      "gib": 20,
+      "encrypted": true,
+      "customer_managed_kms_key": false,
+      "delete_on_termination": false,
+      "extra_iops_or_throughput": false,
+      "extra_snapshot_resources": 0
+    },
+    {
+      "id": "eip",
+      "count": 1,
+      "disposition": "selected topology",
+      "domain": "vpc",
+      "association_count": 1,
+      "retained_while_stopped": true
+    },
+    {
+      "id": "host_iam_role",
+      "count": 1,
+      "name_ref": "host_role",
+      "trust_service": "ec2.amazonaws.com",
+      "inline_policy_count": 1,
+      "initial_scope": "existing table/namespace runtime authority only; future exact-model InvokeModel grant held until qualification/spend approval",
+      "artifact_s3_permissions": false,
+      "ec2_control_permissions": false
+    },
+    {
+      "id": "host_instance_profile",
+      "count": 1,
+      "name_ref": "instance_profile",
+      "role_ref": "host_iam_role"
+    },
+    {
+      "id": "control_table",
+      "count": 1,
+      "name_ref": "table",
+      "billing": "PAY_PER_REQUEST",
+      "class": "STANDARD",
+      "partition_key": {
+        "name": "pk",
+        "type": "S"
+      },
+      "sort_key": {
+        "name": "sk",
+        "type": "S"
+      },
+      "namespace_ref": "namespace",
+      "secondary_indexes": 0,
+      "streams": false,
+      "pitr": false,
+      "ttl_enabled": false,
+      "replicas": 0,
+      "deletion_protection": true,
+      "initialize_automatically": false
+    },
+    {
+      "id": "private_bucket",
+      "count": 1,
+      "name_template_ref": "bucket_template",
+      "public_access_block": "all four true",
+      "object_ownership": "BucketOwnerEnforced",
+      "encryption": "SSE-S3",
+      "versioning": "disabled",
+      "prefixes": ["waiting/", "releases/", "catalogue-backups/"],
+      "cloudfront_read_prefixes": ["waiting/"],
+      "website_endpoint": false,
+      "cloudtrail_data_events": false,
+      "access_logging_bucket": false,
+      "automatic_expiry": false,
+      "tls_only_bucket_policy_proposed": true
+    },
+    {
+      "id": "waiting_distribution",
+      "count": 1,
+      "hostname": "AWS generated; bind actual origin before startup config",
+      "pricing": "pay-as-you-go",
+      "custom_aliases": [],
+      "custom_viewer_certificate": false,
+      "origin_count": 2,
+      "origins": [
+        "private S3 REST waiting assets",
+        "startup AWS_IAM Function URL"
+      ],
+      "static_methods": ["GET", "HEAD"],
+      "control_paths": ["/wake", "/status"],
+      "control_cache": "disabled; no cookies/query forwarding; exact headers and error TTL0 from render_cloud_access",
+      "ipv6_viewers": false,
+      "access_logs": false,
+      "additional_viewer_functions": 0,
+      "staging_distribution_count": 0,
+      "s3_origin_path": "/waiting",
+      "default_root_object": "index.html",
+      "static_cache_policy": "existing managed policy, actual ID verified during binding"
+    },
+    {
+      "id": "origin_access_controls",
+      "count": 2,
+      "types": ["s3", "lambda"],
+      "signing": "always sigv4",
+      "names": "derived by existing renderer after distribution ID binds"
+    },
+    {
+      "id": "control_origin_request_policy",
+      "count": 1,
+      "kind": "custom; existing renderer",
+      "headers": ["origin", "content-type", "x-amz-content-sha256"],
+      "cookies": "none",
+      "query_strings": "none"
+    },
+    {
+      "id": "lambda_functions",
+      "count": 2,
+      "name_refs": ["startup", "controller"],
+      "runtime": "python3.12",
+      "architecture": "x86_64",
+      "package": "role-specific verified ZIP; no container image/layer",
+      "vpc_attachment": false,
+      "memory_mb_candidate": 256,
+      "timeout_seconds_candidate": 30,
+      "ephemeral_storage_mb": 512,
+      "reserved_concurrency_each_candidate": 1,
+      "provisioned_concurrency": 0,
+      "startup_url_auth": "AWS_IAM",
+      "controller_function_url": false,
+      "startup_readiness_secret": false,
+      "controller_readiness_secret": "restricted environment hex; same generation as protected host key"
+    },
+    {
+      "id": "lambda_iam_roles",
+      "count": 2,
+      "name_refs": ["startup_role", "controller_role"],
+      "trust_service": "lambda.amazonaws.com",
+      "inline_policy_count_each": 1,
+      "contract": "render_cloud_access exact bound runtime policies"
+    },
+    {
+      "id": "lambda_log_groups",
+      "count": 2,
+      "names": [
+        "/aws/lambda/scpilot-capstone-startup",
+        "/aws/lambda/scpilot-capstone-controller"
+      ],
+      "retention_days": 7,
+      "precreate": true,
+      "invoke_body_logging": false
+    },
+    {
+      "id": "registrar_a_records",
+      "count": 2,
+      "names": ["app.scpilot.tech", "store.scpilot.tech"],
+      "target_binding": "eip_address",
+      "ttl_seconds_candidate": 300,
+      "change_nameservers": false,
+      "new_hosted_zone": false
+    },
+    {
+      "id": "host_services",
+      "count": 4,
+      "units": [
+        "shopping-copilot-store.service",
+        "shopping-copilot-agent.service",
+        "shopping-copilot-proxy.service",
+        "shopping-copilot-metadata.service"
+      ],
+      "target": "shopping-copilot-host.target",
+      "enable_only_target_later": true,
+      "legacy_combined_unit": "conflict; do not enable together",
+      "currently_install_or_enable": false,
+      "caddy_capability": "CAP_NET_BIND_SERVICE only",
+      "provider_ready_default": false,
+      "service_uids": {
+        "agent": "copilot",
+        "store": "copilot-store",
+        "proxy": "copilot-proxy",
+        "metadata": "root"
+      },
+      "metadata_capability": "CAP_NET_ADMIN only; own nft output chain; root oneshot required by applications",
+      "diagnostics": "fixed per-service local lifecycle records; 64KiB plus two backups; seven-day prune on write"
+    }
+  ],
+  "conditional_resources": [
+    {
+      "id": "schedule_group",
+      "count": 1,
+      "name_ref": "observation_group",
+      "adopted": false
+    },
+    {
+      "id": "scheduler_execution_role",
+      "count": 1,
+      "name_ref": "observation_role",
+      "inline_policy_count": 1,
+      "contract": "invoke only exact controller; trust exact account and schedule-group ARN",
+      "adopted": false
+    },
+    {
+      "id": "observation_schedule",
+      "count": 1,
+      "name_ref": "observation_schedule",
+      "group_ref": "observation_group",
+      "state": "DISABLED",
+      "expression": "rate(1 minute)",
+      "timezone": "UTC",
+      "start_binding": "window_start_utc",
+      "end_binding": "window_end_utc",
+      "flexible_window": "OFF",
+      "retry_attempts": 0,
+      "maximum_event_age_seconds": 60,
+      "completion_action": "NONE",
+      "input": {
+        "kind": "tick"
+      },
+      "adopted": false
+    },
+    {
+      "id": "tick_emf_metric",
+      "count": 1,
+      "namespace": "ShoppingCopilot/Lifecycle",
+      "metric": "TickCompleted",
+      "dimension": {
+        "Component": "Controller"
+      },
+      "adopted": false
+    },
+    {
+      "id": "cloudwatch_alarms",
+      "count": 2,
+      "contract": "render_observation controller Errors and missing TickCompleted",
+      "actions_enabled": false,
+      "action_arns": [],
+      "adopted": false
+    }
+  ],
+  "runtime_proposal": {
+    "production_linux_lock_adopted": false,
+    "runtime_wheels_candidate": "28 runtime entries from eval/linux-host-runtime.json; exclude diagnostic packaging",
+    "python_candidate": "CPython3.12 ABI; exact host build/source/digest unresolved",
+    "node_candidate": "24.13.0 official linux-x64 archive/binary digests in tested manifest; security approval pending",
+    "caddy_candidate": "2.11.7 official linux-amd64 archive/binary digests in tested manifest; security approval pending",
+    "release_build": "clean reviewed native Linux production build; do not install derived Windows rehearsal fixture",
+    "transfer": "owner-scoped SSH/SCP with independent digests, not a new runtime S3 permission",
+    "host_config": "/etc/shopping-copilot/agent/host.json",
+    "selected_release": "/opt/shopping-copilot/current",
+    "python_path": "/opt/shopping-copilot/python/bin/python",
+    "catalogue": "/var/lib/shopping-copilot/store/catalogue.sqlite",
+    "inference_ledger": "/var/lib/shopping-copilot/agent/inference.sqlite",
+    "service_secret_file": "/etc/shopping-copilot/agent/service.key",
+    "readiness_secret_file": "/etc/shopping-copilot/agent/readiness.key",
+    "caddy_storage": "/var/lib/shopping-copilot/caddy",
+    "agent_workers": 1,
+    "admission_candidate": {
+      "maximum_bytes": 2621440,
+      "global_rate": 1000,
+      "browser_rate": 120,
+      "maximum_requests": 16,
+      "maximum_streams": 16,
+      "maximum_sessions": 20,
+      "browser_sessions": 2
+    },
+    "inference_candidate": {
+      "maximum_active": 2,
+      "maximum_waiting": 3,
+      "wait_seconds": 8,
+      "maximum_pages": 1024,
+      "new_allowance_usd": null,
+      "input_price_usd_per_million": null,
+      "output_price_usd_per_million": null
+    },
+    "model": "openai.gpt-oss-20b-1:0",
+    "model_streaming_iam_grant": false,
+    "metadata_process_isolation_implemented": true,
+    "durable_host_diagnostics_implemented": true,
+    "store_config": "/etc/shopping-copilot/store/store.json",
+    "proxy_config": "/etc/shopping-copilot/proxy/proxy.json",
+    "metadata_config": "/etc/shopping-copilot/metadata.json",
+    "store_service_secret_copy": "/etc/shopping-copilot/store/service.key",
+    "host_isolation_activated": false,
+    "actual_systemd_boot_verified": false
+  },
+  "cost_scenarios": {
+    "source": "docs/research/2026-10-23-cap06-inventory-reconciliation.md",
+    "currency": "USD",
+    "elapsed_hours": 1440,
+    "gross_before_credits_tax": true,
+    "workload_measured": false,
+    "base_infrastructure": "46.253592",
+    "conditional_observation_increment": "22.1066776",
+    "continuous_infrastructure": "68.3602696",
+    "future_model_planning_allocation_unapproved": "11",
+    "existing_diagnostic_hold_not_confirmed_cost": "0.03",
+    "continuous_combined": "79.3902696",
+    "combined_120_ec2_running_hours": "50.8782696",
+    "combined_30s_non_tick_lambda_sensitivity": "102.7236496",
+    "proposed_envelope_not_approved": "80",
+    "envelope_fit_proven": false,
+    "current_credit_balance": null,
+    "ipv4_credit_eligibility": null,
+    "scheduler_credit_eligibility": null,
+    "stopped_host_ebs_eip_only": "10.544"
+  },
+  "blocking_evidence": [
+    "exact account/network/image/resource bindings and owner authority",
+    "current Free-plan balance, eligible credits, other usage and residual charges",
+    "complete workload costs including Agent operations, INIT, duplicates, logs and abuse",
+    "finite activation dates; observation adoption only for conditional resources and unattended automatic-wake acceptance",
+    "reserved concurrency and all feature creation/runtime eligibility",
+    "native production Linux release, interpreter/lock and provisioning verification",
+    "native host provisioning/activation/reboot verification of prepared process-specific metadata boundary and durable redacted diagnostics",
+    "Bedrock usable quota, strict qualification, qualification gate implementation and explicit spend approval",
+    "ordered activation/rollback/teardown package with current authority retained and exact final approval",
+    "real host/systemd/capability/TLS/IAM/OAC/event/desktop/Android/cloud safety acceptance"
+  ],
+  "binding_phases": {
+    "before_private_creation_approval": [
+      "verified_account_id",
+      "account_identity_evidence",
+      "plan_balance_credit_evidence",
+      "vpc_id",
+      "subnet_id",
+      "route_table_id",
+      "internet_gateway_id",
+      "ami_id",
+      "ami_owner_and_image_evidence",
+      "operator_ipv4_cidr_32",
+      "operator_public_key_fingerprint",
+      "native_linux_release_sha256",
+      "startup_zip_sha256",
+      "controller_zip_sha256",
+      "host_python_and_runtime_lock_digest",
+      "model_qualification_evidence",
+      "model_spend_authorization_reference",
+      "window_start_utc",
+      "window_end_utc",
+      "dns_before_record_reference",
+      "final_resource_cost_rollback_approval_reference",
+      "observation_adoption_approval_reference"
+    ],
+    "after_approved_creation_before_activation": [
+      "security_group_id",
+      "key_pair_id",
+      "instance_id",
+      "root_volume_id",
+      "eip_allocation_id",
+      "eip_association_id",
+      "eip_address",
+      "bucket_name",
+      "distribution_id",
+      "generated_startup_origin",
+      "s3_oac_id",
+      "lambda_oac_id",
+      "control_origin_request_policy_id",
+      "startup_function_url_origin",
+      "private_creation_receipt_record_reference"
+    ],
+    "after_approved_initialization_before_activation": [
+      "invitation_identity",
+      "lifecycle_identity",
+      "inference_ledger_identity",
+      "secret_custody_record_reference",
+      "public_activation_approval_reference",
+      "rollback_release_sha256"
+    ],
+    "rule": "Stage lists apply subject to conditional_binding_rules. Do not require generated IDs before creation or fabricate them; each receipt gates dependent later actions. All real bindings remain null in this preparation."
+  },
+  "conditional_binding_rules": {
+    "rollback_release_sha256": "Required only if later code rollback is available and proposed; first deployment uses closed safe-stop recovery with this field null.",
+    "observation_adoption_approval_reference": "Required before creating conditional observation resources and before unattended automatic-wake acceptance; not an unconditional base-only private-creation prerequisite."
+  },
+  "recovery": {
+    "current_mode": "first-deployment-safe-stop",
+    "previous_qualified_cloud_release_established": false,
+    "code_rollback_available": false,
+    "first_deployment": "keep exposure/admission/provider closed; fence wakes, drain and confirm stopped using owned observations; preserve current authority/accounting/uncertain outcomes; retention or teardown requires its own approval",
+    "later_code_rollback_requires": "existing compatible verified release and approval; never earlier ledger/identity/counter state",
+    "host_iam_teardown": [
+      "detach instance/profile association after host stopped",
+      "remove role from dedicated profile and delete profile",
+      "delete dedicated host inline policy then unused host role, or explicitly retain under approved record"
+    ]
+  }
+}

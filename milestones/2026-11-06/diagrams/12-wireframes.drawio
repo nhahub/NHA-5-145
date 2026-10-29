@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="local" type="device">
+  <diagram id="12-wireframes" name="12 / Interaction wireframes - schematic, not screenshots">
+    <mxGraphModel pageWidth="1000" pageHeight="690">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="12 / Interaction wireframes - schematic, not screenshots" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=25;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="12" width="960" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="desktop" value="Desktop / separate browser origins" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=20;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="20" y="85" width="615" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="store" value="Embedded Storefront&lt;br&gt;Products / selected variant&lt;br&gt;Manual login and payment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="25" y="145" width="330" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="chat" value="Conversation / status&lt;br&gt;Verified product cards&lt;br&gt;Exact Confirmation effect&lt;br&gt;Visible Undo" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="375" y="145" width="255" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="composer" value="Editable request&lt;br&gt;Send / reachable Stop" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="375" y="425" width="255" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile" value="Mobile" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=20;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="710" y="85" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mstatus" value="Status / Storefront access" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="710" y="145" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mchat" value="Scrollable conversation&lt;br&gt;Cards / clarification&lt;br&gt;Confirmation / Undo" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="710" y="225" width="250" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="mcompose" value="Composer + Send + Stop" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;" vertex="1" parent="1" kind="box">
+          <mxGeometry x="710" y="515" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="RTL, keyboard focus and announced state are design requirements.&lt;br&gt;This view does not claim measured accessibility certification." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=1;fontSize=17;fontColor=#183447;fillColor=#EFF6F8;strokeColor=#738E9B;strokeColor=none;fillColor=none;" vertex="1" parent="1" kind="text">
+          <mxGeometry x="25" y="565" width="615" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
