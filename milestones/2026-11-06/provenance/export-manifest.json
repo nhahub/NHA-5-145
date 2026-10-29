@@ -1,0 +1,203 @@
+{
+  "prepared_on": "2026-10-28",
+  "deadline": "2026-11-06",
+  "revision": 2,
+  "source_commit": "01959bb5856bad24851b1b961e677d6b7f27d48b",
+  "scope": "Controlled Storefront; selected Stockholm host; no cloud activation or new runtime claim",
+  "output": {
+    "path": "output/pdf/system-analysis-design-2026-10-28.pdf",
+    "sha256": "0eba06ce0bd9ef68495afc0be354d8e91f1d851ea299e8a18fac5f13749b2c4f",
+    "checks": {
+      "page_count": 23,
+      "source_fragments": 493,
+      "unique_links": 25,
+      "word_bounds_checked": 5778,
+      "embedded_figures": 12,
+      "requirement_ids": [
+        "FR-01",
+        "FR-02",
+        "FR-03",
+        "FR-04",
+        "FR-05",
+        "FR-06",
+        "FR-07",
+        "FR-08",
+        "FR-09",
+        "GR-01",
+        "GR-02",
+        "GR-03",
+        "GR-04",
+        "GR-05",
+        "SQ-01",
+        "SQ-02",
+        "SQ-03",
+        "SQ-04",
+        "SQ-05",
+        "SQ-06",
+        "SQ-07"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "docs/system-analysis-design.md",
+      "sha256": "281009f0d60d726431c0373bba7b51b56c096de20c9d2a246ad943ff1d272536"
+    },
+    {
+      "path": "docs/system-design-views.md",
+      "sha256": "4c9c314e7bf1a0cdee0aa8ec251e19e6b771e5db2ff978580d5fa10eab6a3cdd"
+    },
+    {
+      "path": "docs/system-design-skills.md",
+      "sha256": "f21bc88813f17e96033e4ae77235c685b3af9587eec2f0799a1f1e91cf066907"
+    },
+    {
+      "path": "docs/system-design-submission.md",
+      "sha256": "8bd7291c019e6b35eb53c13d0254718e7161113e89a5c0d0042253fad1b767a1"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6f5352a72e01e9ecae7bc74125d0be5eee1e0ae5bb5e1789334379d8d18f4356"
+    },
+    {
+      "path": "CONTEXT.md",
+      "sha256": "a927fff2f26eb906c493a00fdc10086a9392b4468aec7f0dc77c1f57ad338df4"
+    },
+    {
+      "path": "PROJECT_CHECKPOINT.md",
+      "sha256": "44df227e578dcc8c8d324b05bb9dc297ebfc439dba0cc305ab93ab54fe108d79"
+    },
+    {
+      "path": "docs/cap06-host-isolation.md",
+      "sha256": "b57e02c268f1ccc55df20ace7fedee64449bd26308e918d0bfccafefcfb51196"
+    },
+    {
+      "path": "docs/cap06-apply-proposal.md",
+      "sha256": "f847c0719231683a78b56174bc786919928eaf553239944ab7b45bb77242c5e8"
+    },
+    {
+      "path": "docs/cap06-apply-inventory.json",
+      "sha256": "b92bac73022eb2c073b1b74b6d11291487f6fe33f2f2337ea1c4a2070ca06b78"
+    },
+    {
+      "path": "docs/cap05-bedrock.md",
+      "sha256": "f555e13b867c4837f9e149fdbc31aa70b9aad8cf69083f387ac68480c485d748"
+    },
+    {
+      "path": "docs/cap03-model-comparison-results.md",
+      "sha256": "22cc2e7a05e0fab0a6714d0a3e6d2c2dc5e1c738dbebb4395cc058b717909b0b"
+    },
+    {
+      "path": "docs/research/2026-10-15-gemini-replacement.md",
+      "sha256": "41a016fbbf263185945a4ea0c92775d6ad46f2211cc95ed852e083e702c39a06"
+    },
+    {
+      "path": "store/src/catalogue-db.ts",
+      "sha256": "5ab83e57ce56e0929a9d939e113a017bd88a4b62b4c916b38120c8559ef222b6"
+    },
+    {
+      "path": "agent/inference/ledger.py",
+      "sha256": "9a73ae39f9033f1d42c33ce1a7abf4bd01a93f27f6fa583b136ea2d4e8805030"
+    },
+    {
+      "path": "agent/session_state.py",
+      "sha256": "70641e2b01ff417a0e94b2a26267cf319979b0ecd049c9bc27ceaca575a44977"
+    },
+    {
+      "path": "agent/llm/intent_pipeline.py",
+      "sha256": "f929d0f87352dfbefb50625900d3043fb285e2265aa3ba7286e37a455f4d8eb3"
+    },
+    {
+      "path": "agent/advice.py",
+      "sha256": "1938a9064e76dd692a61225326d4760e0c7abf7058d312fedf80002f06543a99"
+    },
+    {
+      "path": "deploy/Caddyfile.public",
+      "sha256": "9b3e69dcbc573ebcf2a31fbb6d8c1f9310dd1031f9406a69ef4d6292adc8760c"
+    }
+  ],
+  "diagrams": [
+    {
+      "path": "docs/diagrams/system-design-20261028/01-context.drawio",
+      "sha256": "0a82c54a965b3bfc5cd1d65b0ea1821e18c5abf497c432ba26a787dbf6029210",
+      "preview_sha256": "77f364022b60417e26d40c31f7ecfe54ce33cbb48d882fa54d3e63d904829e94"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/02-containers.drawio",
+      "sha256": "6b99c0d58353009e52999da0b2e51a70dc920f09861a8bc6026f8c26a45eb9ec",
+      "preview_sha256": "560b2c54716961b7b86f2d7c81e3c2dba9174fb716a5f024c3fa06b0406f006c"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/03-data-flow.drawio",
+      "sha256": "68cab939bc2296db812c60745a53dd89adac232ff5a7d60fd4eb99cefed7b407",
+      "preview_sha256": "6b87a5473869f3e1ffc0475489f65c7cfc1c5bd8aef5d09f8b03bdb3b55ca012"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/04-data-model.drawio",
+      "sha256": "dea791bf4612a3eb67a63ad67e1fafdf958e08fc50c5397fe5f6446beec51faf",
+      "preview_sha256": "5ce0d3d1aceaf1d176c1c14bc6662faec79557bb932b79ad3bd9c6291351300c"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/05-action-sequence.drawio",
+      "sha256": "7ad68320cfff39fbd9cf4d36ab3550cd2438c961d9380e59625b7fbb56242936",
+      "preview_sha256": "fa340adca7f13601b8709fbece2d3aa1232865b0faadb922a77332a672bdaf3e"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/06-confirmation.drawio",
+      "sha256": "f99572608cb64f2089ee548a81e1b6468e690dbecfcc259fdd5f5fbeaeccff72",
+      "preview_sha256": "cde2fb6cc79bcee3a48f2d1f2bbbfd8100129164300d026e5f20b4ab6ee31c91"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/07-task-state.drawio",
+      "sha256": "9a64334b5ab341646baf8c0616305df5793d7ef4881ed00601aed5f982873b8f",
+      "preview_sha256": "24b7fbe89a9c9716830ba86349a49a482c8b7b49d4f260358da0f201a6577069"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/08-host-lifecycle.drawio",
+      "sha256": "313374bd6717004885a2baf3b8a5953f3f9b81b6ddb130948c0ad4129730feea",
+      "preview_sha256": "75ed6e84d92aff3a417a0641d36b86bddfff8a9fd414b0eb9b7f365a1673fe88"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/09-module-view.drawio",
+      "sha256": "693c45030553d1f52e0fbf2f09d12470b0a88d66a9fe76faab09908a20af9881",
+      "preview_sha256": "04b47b5f4fa006c6a4369e03c19d94be0737e53504fc0824095f45ee3639005f"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/10-cloud-deployment.drawio",
+      "sha256": "020e010a9a7642290cc29af2dbb866e8b43ec8d8ec03e70077a57942ef2ab675",
+      "preview_sha256": "51b35e8c3d3a6d02983b734e54b35aec5dec33baa0685542d0bcd14ad4a31d7c"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/11-host-isolation.drawio",
+      "sha256": "260e573515e110cc58a2c87d14cff7106d8f96944fffa85714e7245e0d9e3ddf",
+      "preview_sha256": "fa5635371b97e88fc6f9c55672fba2a01408490f9f6136bd3541f87746a4f594"
+    },
+    {
+      "path": "docs/diagrams/system-design-20261028/12-wireframes.drawio",
+      "sha256": "e33179b94f7883a0423161e4af63ed296bfc43571c5fa1709e200cb489bcca58",
+      "preview_sha256": "25d6e28afb0c9ee2c0ba168428d517432db7cff931f230220f673759dea28fce"
+    }
+  ],
+  "exporter": {
+    "path": "scripts/export_system_design.py",
+    "sha256": "8a3e33fc991b2e45565c93bdbaa3efa533c9484aa2da330dde3e99d1d92fff4d"
+  },
+  "dependencies": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9",
+    "pillow": "12.3.0"
+  },
+  "fonts": {
+    "arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+  },
+  "renderer": "Local restricted draw.io XML subset to ReportLab vectors; Poppler previews. No desktop CLI used.",
+  "visual_review": {
+    "record": "system-analysis-design-2026-10-28.review.json",
+    "sha256": "b2fb2d610dbf5ac5ce1082cfacd6854ac1a06cc68ce9de04b1b5a27cc0ff1487",
+    "status": "reviewed"
+  }
+}
