@@ -364,6 +364,10 @@ def test_packaged_production_store_uses_generated_environment(
     settings = load_component_settings(component_path, "store", read_private=fixture_reader)
     monkeypatch.setattr(module, "_runtime_root", lambda: release)
     argv, environment = module.command(settings, "store")
+    # Production keeps Storefront state in the host's state folder; the test process
+    # cannot create that folder, so it runs against its own file.
+    assert environment["COPILOT_STATE_DB"] == module.STORE_STATE_FILE
+    environment["COPILOT_STATE_DB"] = str(tmp_path / "storefront-state.sqlite")
     before = catalogue_status(settings.catalogue)
     node = shutil.which("node")
     assert node is not None

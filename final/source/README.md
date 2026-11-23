@@ -1,7 +1,5 @@
 # Shopping Copilot
 
-[![CI](https://github.com/Homd11/shopping-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/Homd11/shopping-copilot/actions/workflows/ci.yml)
-
 **An Arabic-first shopping assistant that turns everyday requests into visible, controlled browser actions.**
 
 Shopping Copilot helps a shopper find products, navigate a store, and manage a cart
@@ -126,8 +124,7 @@ CI and live-model results below retain their original dates and scope.
 
 As of **26 September 2026**, the complete local automated suite passed **521 tests:
 144 TypeScript and 377 Python**, including desktop and mobile browser regressions. The
-[verified GitHub Actions run](https://github.com/Homd11/shopping-copilot/actions/runs/36162368824)
-also passed formatting, lint, build, and HTTP health checks.
+GitHub Actions run also passed formatting, lint, build, and HTTP health checks.
 
 Ordinary CI uses the scripted provider and makes no paid model calls. A separate
 bounded live evaluation of **Gemini 2.5 Flash through OpenRouter** passed:
@@ -152,8 +149,8 @@ complete MVP acceptance gate.
 - GNU Make for `make ci`, or the equivalent commands below on Windows
 
 ```sh
-git clone https://github.com/Homd11/shopping-copilot.git
-cd shopping-copilot
+git clone https://github.com/nhahub/NHA-5-145.git
+cd NHA-5-145/final/source
 ```
 
 For a new Windows checkout:

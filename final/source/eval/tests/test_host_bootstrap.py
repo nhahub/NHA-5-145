@@ -123,6 +123,14 @@ def synthetic_runtime_root(prepared, monkeypatch):
     monkeypatch.setattr(module, "_runtime_root", lambda: prepared["release"])
 
 
+@pytest.fixture(autouse=True)
+def private_agent_state(tmp_path, monkeypatch):
+    import deploy.host_config as host_config
+
+    # The host path exists only on the provisioned host; a test writes its own file.
+    monkeypatch.setattr(host_config, "AGENT_STATE_FILE", str(tmp_path / "agent-state.sqlite"))
+
+
 def test_factory_refuses_execution_from_another_release(config_file, monkeypatch):
     import deploy.host_bootstrap as module
 

@@ -1,8 +1,19 @@
-# Shopping Copilot - DEPI graduation documentation
+# Shopping Copilot - DEPI graduation project
 
 Digital Egypt Pioneers Initiative (DEPI) | AWS ML Engineering
 
 Official submission repository: [nhahub/NHA-5-145](https://github.com/nhahub/NHA-5-145).
+
+## Source code
+
+The complete application is in [`final/source/`](final/source/): the Agent (Python/FastAPI), Bridge, Panel and Storefront (TypeScript/Node), the evaluation and browser test suites, the AWS deployment code and the design documents. Setup and run instructions are in [final/source/README.md](final/source/README.md).
+
+```sh
+git clone https://github.com/nhahub/NHA-5-145.git
+cd NHA-5-145/final/source
+```
+
+The [final submission](final/README.md) also holds the presentation, the demo video and the infographic.
 
 ## Reports
 
