@@ -1,0 +1,117 @@
+{
+  "binding": {
+    "release_sha256": "7b651e376c2bfcb158c6782c3870332f17cf393959bfa65a066cf4705ef1fbac",
+    "protocol_sha256": "bb23656f8d8319ef624b2fca5a61003b6e273e00335fd4bc49e5a36efba572ef",
+    "records_sha256": "bb44a01e07ebe12a52b3226378d72764f7b3764318174760e62badce4e89301c",
+    "review_sha256": "e0e35a8518253424c136b34fc34567ce175e0a55669d7defb4acfcf9d138a54c",
+    "schema_sha256": "5b255bc9eab4a63d581df414724354cfd254d7cbe59659f8ec9a15bc5fef999f",
+    "overlap_sha256": "dfe457460aaa369341760629cdc7da3b9cffe95a1be5b39fe77a6e95e85c39de",
+    "artifact_hashes": {
+      "outputs/model-comparison/classical-001/lr.joblib": "aa2d8f90f90cbdaafbf0b12e1bc9be165391071dea6fb80f4363d16be6ba84f4",
+      "eval/evidence/cap03-comparison-20261007/classical.json": "24de6713ad89047565ed60875e5605ba3c265db91bdc460b5ef7240b3dca3c2b",
+      "outputs/model-comparison/classical-001/svm.joblib": "ef14bc6b30f34d270942dfa076920c02c57b6add3e3aadc72eddaf02010d59b8",
+      "outputs/model-comparison/classical-001/nb.joblib": "95e2d894f78a5189791828ed52950808fd7f868e9fd4417382a07d9e0e1f91f0",
+      "outputs/model-comparison/classical-001/rf.joblib": "0398518dca6722c5647e64b779dca396b21f70748b29b7cc280591b55961529e",
+      "outputs/model-comparison/classical-001/xgb.joblib": "3a37b6d0700aeadadd09aeb8be9bee1ece6e85c7b163be8302a1bd072f91f147",
+      "outputs/model-comparison/embeddings-001/embedding_lr.joblib": "334e222791b1f70e131b840810881f5b2cb3ef972097f9db96d2e6d1e77a8ecb",
+      "eval/evidence/cap03-comparison-20261007/embeddings.json": "b1423c671b0f1101cc66b82996b789cf20cdf3260346dfca28da3f9dae78cc8b",
+      "outputs/model-comparison/embeddings-001/embedding_mlp.joblib": "8d85a41e6cad7e6dac20059b1d25213d0e0cf17148b00e67621893799e4ec3ed"
+    },
+    "source_hashes": {
+      "eval/holdout_eval.py": "b5ec1d4f056f9ad2776210a67cd95903ef10a352d27d6878164a21118bbbcd3d",
+      "eval/holdout_release.py": "601308e2b0708416276516a353c5dd978d0389dc160c4fbed6997e222f0e4c18",
+      "eval/comparison_encoder.py": "63835b1f82ef63490483cc57f42b58126580d265a5ce282b902eee16cb75e201",
+      "agent/llm/openrouter.py": "cecf3b1dfb32932a70c4dc8b62c24131671b78b8a3fc0cff81eb3bb764933e6a",
+      "agent/llm/config.py": "870927a63f3fb0a94bb725fb625bc3c5d966a5962ef0a9fcb79a92432bb667e2",
+      "agent/llm/contract.py": "2a98196de76cb18a349549a2db1a1696e397a3a26714d4df5d45a638d7157bd2",
+      "agent/llm/provider_schema.py": "9029695f068d6689e25c82b8c5ae3eb17358d56489a5b68b983df4db207d0dcc"
+    }
+  },
+  "environment": {
+    "python": "3.12.5",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "cpu_count": 12,
+    "threads": 4,
+    "device": "cpu",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0",
+      "xgboost": "3.4.1",
+      "torch": "2.14.1+cu130",
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.19.0",
+      "huggingface-hub": "1.33.0"
+    }
+  },
+  "invocations": [
+    {
+      "command": "offline",
+      "git_head": "7e20365b4480455adb1b1ae2928020233c97aaa1",
+      "started_at": "2026-10-09T09:45:55.265532+00:00",
+      "binding": {
+        "release_sha256": "7b651e376c2bfcb158c6782c3870332f17cf393959bfa65a066cf4705ef1fbac",
+        "protocol_sha256": "bb23656f8d8319ef624b2fca5a61003b6e273e00335fd4bc49e5a36efba572ef",
+        "records_sha256": "bb44a01e07ebe12a52b3226378d72764f7b3764318174760e62badce4e89301c",
+        "review_sha256": "e0e35a8518253424c136b34fc34567ce175e0a55669d7defb4acfcf9d138a54c",
+        "schema_sha256": "5b255bc9eab4a63d581df414724354cfd254d7cbe59659f8ec9a15bc5fef999f",
+        "overlap_sha256": "dfe457460aaa369341760629cdc7da3b9cffe95a1be5b39fe77a6e95e85c39de",
+        "artifact_hashes": {
+          "outputs/model-comparison/classical-001/lr.joblib": "aa2d8f90f90cbdaafbf0b12e1bc9be165391071dea6fb80f4363d16be6ba84f4",
+          "eval/evidence/cap03-comparison-20261007/classical.json": "24de6713ad89047565ed60875e5605ba3c265db91bdc460b5ef7240b3dca3c2b",
+          "outputs/model-comparison/classical-001/svm.joblib": "ef14bc6b30f34d270942dfa076920c02c57b6add3e3aadc72eddaf02010d59b8",
+          "outputs/model-comparison/classical-001/nb.joblib": "95e2d894f78a5189791828ed52950808fd7f868e9fd4417382a07d9e0e1f91f0",
+          "outputs/model-comparison/classical-001/rf.joblib": "0398518dca6722c5647e64b779dca396b21f70748b29b7cc280591b55961529e",
+          "outputs/model-comparison/classical-001/xgb.joblib": "3a37b6d0700aeadadd09aeb8be9bee1ece6e85c7b163be8302a1bd072f91f147",
+          "outputs/model-comparison/embeddings-001/embedding_lr.joblib": "334e222791b1f70e131b840810881f5b2cb3ef972097f9db96d2e6d1e77a8ecb",
+          "eval/evidence/cap03-comparison-20261007/embeddings.json": "b1423c671b0f1101cc66b82996b789cf20cdf3260346dfca28da3f9dae78cc8b",
+          "outputs/model-comparison/embeddings-001/embedding_mlp.joblib": "8d85a41e6cad7e6dac20059b1d25213d0e0cf17148b00e67621893799e4ec3ed"
+        },
+        "source_hashes": {
+          "eval/holdout_eval.py": "b5ec1d4f056f9ad2776210a67cd95903ef10a352d27d6878164a21118bbbcd3d",
+          "eval/holdout_release.py": "601308e2b0708416276516a353c5dd978d0389dc160c4fbed6997e222f0e4c18",
+          "eval/comparison_encoder.py": "63835b1f82ef63490483cc57f42b58126580d265a5ce282b902eee16cb75e201",
+          "agent/llm/openrouter.py": "cecf3b1dfb32932a70c4dc8b62c24131671b78b8a3fc0cff81eb3bb764933e6a",
+          "agent/llm/config.py": "870927a63f3fb0a94bb725fb625bc3c5d966a5962ef0a9fcb79a92432bb667e2",
+          "agent/llm/contract.py": "2a98196de76cb18a349549a2db1a1696e397a3a26714d4df5d45a638d7157bd2",
+          "agent/llm/provider_schema.py": "9029695f068d6689e25c82b8c5ae3eb17358d56489a5b68b983df4db207d0dcc"
+        }
+      }
+    },
+    {
+      "command": "llm",
+      "git_head": "7e20365b4480455adb1b1ae2928020233c97aaa1",
+      "started_at": "2026-10-09T09:46:06.623565+00:00",
+      "binding": {
+        "release_sha256": "7b651e376c2bfcb158c6782c3870332f17cf393959bfa65a066cf4705ef1fbac",
+        "protocol_sha256": "bb23656f8d8319ef624b2fca5a61003b6e273e00335fd4bc49e5a36efba572ef",
+        "records_sha256": "bb44a01e07ebe12a52b3226378d72764f7b3764318174760e62badce4e89301c",
+        "review_sha256": "e0e35a8518253424c136b34fc34567ce175e0a55669d7defb4acfcf9d138a54c",
+        "schema_sha256": "5b255bc9eab4a63d581df414724354cfd254d7cbe59659f8ec9a15bc5fef999f",
+        "overlap_sha256": "dfe457460aaa369341760629cdc7da3b9cffe95a1be5b39fe77a6e95e85c39de",
+        "artifact_hashes": {
+          "outputs/model-comparison/classical-001/lr.joblib": "aa2d8f90f90cbdaafbf0b12e1bc9be165391071dea6fb80f4363d16be6ba84f4",
+          "eval/evidence/cap03-comparison-20261007/classical.json": "24de6713ad89047565ed60875e5605ba3c265db91bdc460b5ef7240b3dca3c2b",
+          "outputs/model-comparison/classical-001/svm.joblib": "ef14bc6b30f34d270942dfa076920c02c57b6add3e3aadc72eddaf02010d59b8",
+          "outputs/model-comparison/classical-001/nb.joblib": "95e2d894f78a5189791828ed52950808fd7f868e9fd4417382a07d9e0e1f91f0",
+          "outputs/model-comparison/classical-001/rf.joblib": "0398518dca6722c5647e64b779dca396b21f70748b29b7cc280591b55961529e",
+          "outputs/model-comparison/classical-001/xgb.joblib": "3a37b6d0700aeadadd09aeb8be9bee1ece6e85c7b163be8302a1bd072f91f147",
+          "outputs/model-comparison/embeddings-001/embedding_lr.joblib": "334e222791b1f70e131b840810881f5b2cb3ef972097f9db96d2e6d1e77a8ecb",
+          "eval/evidence/cap03-comparison-20261007/embeddings.json": "b1423c671b0f1101cc66b82996b789cf20cdf3260346dfca28da3f9dae78cc8b",
+          "outputs/model-comparison/embeddings-001/embedding_mlp.joblib": "8d85a41e6cad7e6dac20059b1d25213d0e0cf17148b00e67621893799e4ec3ed"
+        },
+        "source_hashes": {
+          "eval/holdout_eval.py": "b5ec1d4f056f9ad2776210a67cd95903ef10a352d27d6878164a21118bbbcd3d",
+          "eval/holdout_release.py": "601308e2b0708416276516a353c5dd978d0389dc160c4fbed6997e222f0e4c18",
+          "eval/comparison_encoder.py": "63835b1f82ef63490483cc57f42b58126580d265a5ce282b902eee16cb75e201",
+          "agent/llm/openrouter.py": "cecf3b1dfb32932a70c4dc8b62c24131671b78b8a3fc0cff81eb3bb764933e6a",
+          "agent/llm/config.py": "870927a63f3fb0a94bb725fb625bc3c5d966a5962ef0a9fcb79a92432bb667e2",
+          "agent/llm/contract.py": "2a98196de76cb18a349549a2db1a1696e397a3a26714d4df5d45a638d7157bd2",
+          "agent/llm/provider_schema.py": "9029695f068d6689e25c82b8c5ae3eb17358d56489a5b68b983df4db207d0dcc"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "shopping-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24.13.0 <25",
+    "pnpm": "11.19.0"
+  },
+  "scripts": {
+    "agent:win": "python -m uvicorn agent.app:app --host 127.0.0.1 --port 8000 --reload",
+    "build": "pnpm --recursive build",
+    "eval:browser": "python -m eval.runner",
+    "eval:win": "python -m pytest eval/tests",
+    "format": "pnpm format:ts && python -m ruff format agent eval deploy",
+    "format:check": "pnpm format:check:ts && python -m ruff format --check agent eval deploy",
+    "format:check:ts": "prettier --check .",
+    "format:ts": "prettier --write .",
+    "lint": "pnpm lint:ts && python -m ruff check agent eval deploy",
+    "lint:ts": "eslint . --max-warnings=0",
+    "panel": "pnpm --filter @shopping-copilot/panel dev",
+    "store": "pnpm --filter @shopping-copilot/bridge build && pnpm --filter @shopping-copilot/store dev",
+    "test": "pnpm --recursive test && python -m pytest agent/tests eval/tests"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.34.0",
+    "@types/node": "24.3.0",
+    "eslint": "9.34.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.41.0"
+  }
+}

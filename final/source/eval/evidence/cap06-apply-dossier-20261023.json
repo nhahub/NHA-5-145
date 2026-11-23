@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "date": "2026-10-23",
+  "status": "offline inventory consistency pass",
+  "source_commit": "81413a0",
+  "inventory_sha256": "57d93cf1caaf2a3fa4fb397e976024c3b24e43fc046dfb24bb44547f19eeecac",
+  "proposal_sha256": "c1d724ac7174c597418a924875e7d08878d9fcfaca98122b4090c0a8b351ace3",
+  "checks": [
+    "all actual bindings null; all adoption/apply/exposure/provider states closed",
+    "all resource IDs/naming references unique and resolved",
+    "resource/role/log/OAC counts match existing pure renderer contracts",
+    "synthetic-only in-memory access and disabled60day observation documents render",
+    "candidate admission limits accepted by existing constructor",
+    "Decimal totals/sensitivities independently agree with retained source rows",
+    "post-fix conditional bindings, null first-deployment safe-stop recovery and explicit host IAM cleanup recorded"
+  ],
+  "base_resource_groups": 18,
+  "conditional_resource_groups": 5,
+  "network_or_sdk_calls": false,
+  "production_code_or_locks_changed": false,
+  "limitations": [
+    "not an apply tool/schema; no actual account/resource/policy/cloud operation verified",
+    "not approval-ready until bound account/workload/model/host and owner gates resolve"
+  ],
+  "review": {
+    "verdict_before_fixes": "revise:2Important and2Minor; noCritical",
+    "independent_checks": "pre-fix in-memory pure-renderer assertions, evidence hashes, quantities/Decimal and whitespace passed; no production or network operation",
+    "findings_and_primary_rulings": [
+      "Important config ownership: corrected release/interpreter root ownership separately from owner-only private config readable by effective service UID; no reader relaxation.",
+      "Important first-deploy rollback: explicit safe-stop branch; null prior-release hash allowed and no invented fallback.",
+      "Minor conditional adoption regraded Important: service adoption must not appear mandatory for base-only private preparation; per-field conditional rules added.",
+      "Minor host IAM teardown regraded Important: exact cleanup must account for dedicated profile, inline policy and role; dependency order or approved retention explicit."
+    ],
+    "post_fix": "one primary documentation/data correction pass; final consistency and formatting passed; no second independent review",
+    "deferred_findings": [],
+    "declined_scope_rulings": [
+      "Actual account/credit/quota/effective IAM and current pricing: remain unverified; dated source consistency only.",
+      "Native production build/lock/security/systemd/capacity/TLS/browser and actual isolation/diagnostics: remain required future implementation/acceptance, no inference from dossier.",
+      "Model and paid usage qualification: blocked; no new model call or authorization.",
+      "Existing runtime safety under real failures: unchanged contracts referenced, no runtime tests rerun for this docs/data-only change.",
+      "Resource names/SSH/SG/native build candidate: builder proposals only, not adopted by owner."
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+	admin off
+	auto_https off
+	persist_config off
+	storage file_system "{$COPILOT_CADDY_STORAGE}"
+	log {
+		output file "{$COPILOT_CADDY_STORAGE}/diagnostics.jsonl" {
+			roll_size 1MiB
+			roll_keep 2
+			roll_keep_for 168h
+		}
+		format filter {
+			wrap json
+			fields {
+				request>headers delete
+				request>uri delete
+			}
+		}
+	}
+	servers {
+		strict_sni_host on
+	}
+}
+
+(https_common) {
+	bind {$COPILOT_PROXY_BIND:127.0.0.1}
+	tls "{$COPILOT_TLS_CERT}" "{$COPILOT_TLS_KEY}"
+	header {
+		Cache-Control "no-store"
+		X-Content-Type-Options "nosniff"
+		-Server
+	}
+}
+
+{$COPILOT_PANEL_ORIGIN} {
+	import https_common
+	header Content-Security-Policy "frame-ancestors 'none'; frame-src {$COPILOT_STORE_ORIGIN}"
+	# These POSTs await model interpretation inline (agent INTERPRETATION_DEADLINE_SECONDS=90).
+	@interpret {
+		method POST
+		path_regexp interpret ^/sessions/[^/]+/(messages|action-results|tasks/[^/]+/(answers|retry))$
+	}
+	handle @interpret {
+		reverse_proxy {$COPILOT_AGENT_UPSTREAM:127.0.0.1:8000} {
+			header_up -X-Service-Secret
+			transport http {
+				dial_timeout 3s
+				response_header_timeout 105s
+			}
+		}
+	}
+	@api path /health /shopper/* /sessions /sessions/* /speech/*
+	handle @api {
+		reverse_proxy {$COPILOT_AGENT_UPSTREAM:127.0.0.1:8000} {
+			flush_interval -1
+			stream_timeout 30m
+			header_up -X-Service-Secret
+			transport http {
+				dial_timeout 3s
+				response_header_timeout 15s
+			}
+		}
+	}
+	@assets path / /assets/*
+	handle @assets {
+		root * "{$COPILOT_PANEL_ROOT}"
+		file_server
+	}
+	handle {
+		respond 404
+	}
+}
+
+{$COPILOT_STORE_ORIGIN} {
+	import https_common
+	header Content-Security-Policy "frame-ancestors {$COPILOT_PANEL_ORIGIN}"
+	@private path_regexp private (?i)^/(__internal|__test|__probe|step)(/|$)
+	handle @private {
+		respond 404
+	}
+	handle {
+		reverse_proxy 127.0.0.1:4000 {
+			header_up -X-Service-Secret
+			transport http {
+				dial_timeout 3s
+				response_header_timeout 15s
+			}
+		}
+	}
+}

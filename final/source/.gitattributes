@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Generated deliverables must retain exact binary bytes.
+*.pdf binary
+*.pptx binary
+
+# Hash-pinned approval evidence keeps its original bytes, including line endings.
+docs/public-startup-transport-diagnostic-20261103.md -text whitespace=trailing-space,space-before-tab,cr-at-eol

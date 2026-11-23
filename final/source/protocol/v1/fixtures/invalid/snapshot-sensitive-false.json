@@ -1,0 +1,21 @@
+{
+  "v": 1,
+  "url": "http://localhost:4000/",
+  "title": "Home",
+  "lang": "ar",
+  "viewport": {
+    "w": 390,
+    "h": 844,
+    "scrollY": 0
+  },
+  "truncated": false,
+  "elements": [
+    {
+      "id": 7,
+      "role": "link",
+      "name": "Cart",
+      "visible": true,
+      "sensitive": false
+    }
+  ]
+}

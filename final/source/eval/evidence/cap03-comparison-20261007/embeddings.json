@@ -1,0 +1,4133 @@
+{
+  "status": "complete",
+  "kind": "exploratory_synthetic_development_only",
+  "unseen_count": 0,
+  "inference_api_calls": 0,
+  "llm_comparison": "not_run",
+  "release_sha256": "4f1ded67bbb4da259b55b2f56b9f5e11a55208ff7fd0ff73b51c305a0545ba8e",
+  "phase": "embeddings",
+  "labels": [
+    "advice",
+    "find_products",
+    "locate",
+    "navigate",
+    "open_product",
+    "mutate",
+    "cart_edit",
+    "help",
+    "off_topic",
+    "unsupported"
+  ],
+  "configs": [
+    {
+      "index": 36,
+      "family": "embedding_lr",
+      "features": "embedding",
+      "C": 0.1,
+      "class_weight": null
+    },
+    {
+      "index": 37,
+      "family": "embedding_lr",
+      "features": "embedding",
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    {
+      "index": 38,
+      "family": "embedding_lr",
+      "features": "embedding",
+      "C": 1.0,
+      "class_weight": null
+    },
+    {
+      "index": 39,
+      "family": "embedding_lr",
+      "features": "embedding",
+      "C": 1.0,
+      "class_weight": "balanced"
+    },
+    {
+      "index": 40,
+      "family": "embedding_lr",
+      "features": "embedding",
+      "C": 10.0,
+      "class_weight": null
+    },
+    {
+      "index": 41,
+      "family": "embedding_lr",
+      "features": "embedding",
+      "C": 10.0,
+      "class_weight": "balanced"
+    },
+    {
+      "index": 42,
+      "family": "embedding_mlp",
+      "features": "embedding",
+      "hidden_layer_sizes": [64],
+      "alpha": 0.001
+    },
+    {
+      "index": 43,
+      "family": "embedding_mlp",
+      "features": "embedding",
+      "hidden_layer_sizes": [64],
+      "alpha": 0.01
+    },
+    {
+      "index": 44,
+      "family": "embedding_mlp",
+      "features": "embedding",
+      "hidden_layer_sizes": [128],
+      "alpha": 0.001
+    },
+    {
+      "index": 45,
+      "family": "embedding_mlp",
+      "features": "embedding",
+      "hidden_layer_sizes": [128],
+      "alpha": 0.01
+    }
+  ],
+  "families": [
+    {
+      "family": "embedding_lr",
+      "status": "complete",
+      "trials": [
+        {
+          "config": {
+            "index": 36,
+            "family": "embedding_lr",
+            "features": "embedding",
+            "C": 0.1,
+            "class_weight": null
+          },
+          "training_seconds": 0.07340040000053705,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.4339622641509434,
+          "macro_f1": 0.43040404040404034,
+          "classification": {
+            "advice": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1-score": 0.75,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.36363636363636365,
+              "recall": 1.0,
+              "f1-score": 0.5333333333333333,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.16666666666666666,
+              "recall": 0.2,
+              "f1-score": 0.18181818181818182,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1-score": 0.75,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.36363636363636365,
+              "recall": 1.0,
+              "f1-score": 0.5333333333333333,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.125,
+              "f1-score": 0.2222222222222222,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 1.0,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.5,
+              "support": 12.0
+            },
+            "accuracy": 0.4339622641509434,
+            "macro avg": {
+              "precision": 0.5393939393939394,
+              "recall": 0.49083333333333334,
+              "f1-score": 0.43040404040404034,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.6366495140080046,
+              "recall": 0.4339622641509434,
+              "f1-score": 0.42050695635601293,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "cart_edit",
+            "advice",
+            "advice",
+            "find_products",
+            "advice",
+            "find_products",
+            "find_products",
+            "find_products",
+            "find_products",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "mutate",
+            "cart_edit",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "open_product",
+            "open_product",
+            "find_products",
+            "navigate",
+            "locate",
+            "navigate",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "help",
+            "open_product",
+            "help",
+            "find_products",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "unsupported",
+            "mutate",
+            "navigate",
+            "unsupported",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 37,
+            "family": "embedding_lr",
+            "features": "embedding",
+            "C": 0.1,
+            "class_weight": "balanced"
+          },
+          "training_seconds": 0.05637300000034884,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.37735849056603776,
+          "macro_f1": 0.38781954887218045,
+          "classification": {
+            "advice": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1-score": 0.5714285714285714,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.375,
+              "recall": 0.75,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.2222222222222222,
+              "recall": 0.4,
+              "f1-score": 0.2857142857142857,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.4,
+              "recall": 0.5,
+              "f1-score": 0.4444444444444444,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.5,
+              "recall": 0.75,
+              "f1-score": 0.6,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.125,
+              "f1-score": 0.2222222222222222,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.5714285714285714,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.42105263157894735,
+              "support": 12.0
+            },
+            "accuracy": 0.37735849056603776,
+            "macro avg": {
+              "precision": 0.47353174603174597,
+              "recall": 0.41083333333333333,
+              "f1-score": 0.38781954887218045,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.5233003893381252,
+              "recall": 0.37735849056603776,
+              "f1-score": 0.37841143739852773,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "navigate",
+            "advice",
+            "open_product",
+            "find_products",
+            "advice",
+            "find_products",
+            "unsupported",
+            "find_products",
+            "find_products",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "mutate",
+            "open_product",
+            "mutate",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "unsupported",
+            "navigate",
+            "locate",
+            "navigate",
+            "navigate",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "help",
+            "open_product",
+            "help",
+            "navigate",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "mutate",
+            "unsupported",
+            "unsupported",
+            "mutate",
+            "navigate",
+            "unsupported",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 38,
+            "family": "embedding_lr",
+            "features": "embedding",
+            "C": 1.0,
+            "class_weight": null
+          },
+          "training_seconds": 0.04879460000029212,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.37735849056603776,
+          "macro_f1": 0.3716269841269841,
+          "classification": {
+            "advice": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1-score": 0.8,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.25,
+              "recall": 0.5,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.125,
+              "recall": 0.25,
+              "f1-score": 0.16666666666666666,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.125,
+              "f1-score": 0.2222222222222222,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.75,
+              "recall": 0.25,
+              "f1-score": 0.375,
+              "support": 12.0
+            },
+            "accuracy": 0.37735849056603776,
+            "macro avg": {
+              "precision": 0.4658333333333333,
+              "recall": 0.4325,
+              "f1-score": 0.3716269841269841,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.5440251572327044,
+              "recall": 0.37735849056603776,
+              "f1-score": 0.35762204252770285,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "cart_edit",
+            "advice",
+            "advice",
+            "advice",
+            "advice",
+            "find_products",
+            "open_product",
+            "find_products",
+            "cart_edit",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "mutate",
+            "cart_edit",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "find_products",
+            "navigate",
+            "locate",
+            "mutate",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "help",
+            "open_product",
+            "mutate",
+            "find_products",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "advice",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "unsupported",
+            "mutate",
+            "navigate",
+            "unsupported",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 39,
+            "family": "embedding_lr",
+            "features": "embedding",
+            "C": 1.0,
+            "class_weight": "balanced"
+          },
+          "training_seconds": 0.05146530000001803,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.37735849056603776,
+          "macro_f1": 0.3765275075801392,
+          "classification": {
+            "advice": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1-score": 0.8888888888888888,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.2857142857142857,
+              "recall": 0.5,
+              "f1-score": 0.36363636363636365,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.4,
+              "recall": 0.5,
+              "f1-score": 0.4444444444444444,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.125,
+              "recall": 0.25,
+              "f1-score": 0.16666666666666666,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.3333333333333333,
+              "recall": 0.75,
+              "f1-score": 0.46153846153846156,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 0.5,
+              "recall": 0.125,
+              "f1-score": 0.2,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.5714285714285714,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.42105263157894735,
+              "support": 12.0
+            },
+            "accuracy": 0.37735849056603776,
+            "macro avg": {
+              "precision": 0.4048809523809524,
+              "recall": 0.41583333333333333,
+              "f1-score": 0.3765275075801392,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.43333333333333335,
+              "recall": 0.37735849056603776,
+              "f1-score": 0.36659474256296504,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "cart_edit",
+            "advice",
+            "advice",
+            "advice",
+            "advice",
+            "find_products",
+            "open_product",
+            "find_products",
+            "unsupported",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "mutate",
+            "open_product",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "unsupported",
+            "navigate",
+            "locate",
+            "mutate",
+            "navigate",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "help",
+            "open_product",
+            "mutate",
+            "find_products",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "unsupported",
+            "mutate",
+            "off_topic",
+            "unsupported",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 40,
+            "family": "embedding_lr",
+            "features": "embedding",
+            "C": 10.0,
+            "class_weight": null
+          },
+          "training_seconds": 0.036082799999348936,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.32075471698113206,
+          "macro_f1": 0.32535923141186296,
+          "classification": {
+            "advice": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1-score": 0.75,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.25,
+              "recall": 0.5,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.4,
+              "recall": 0.5,
+              "f1-score": 0.4444444444444444,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.125,
+              "recall": 0.25,
+              "f1-score": 0.16666666666666666,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.125,
+              "recall": 0.25,
+              "f1-score": 0.16666666666666666,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 0.5,
+              "recall": 0.125,
+              "f1-score": 0.2,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.5714285714285714,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.42105263157894735,
+              "support": 12.0
+            },
+            "accuracy": 0.32075471698113206,
+            "macro avg": {
+              "precision": 0.3588095238095238,
+              "recall": 0.3408333333333334,
+              "f1-score": 0.32535923141186296,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.3985624438454627,
+              "recall": 0.32075471698113206,
+              "f1-score": 0.3279771756435113,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "cart_edit",
+            "advice",
+            "open_product",
+            "advice",
+            "advice",
+            "find_products",
+            "open_product",
+            "find_products",
+            "unsupported",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "mutate",
+            "cart_edit",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "unsupported",
+            "navigate",
+            "locate",
+            "mutate",
+            "navigate",
+            "cart_edit",
+            "find_products",
+            "locate",
+            "help",
+            "open_product",
+            "mutate",
+            "find_products",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "unsupported",
+            "mutate",
+            "off_topic",
+            "unsupported",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 41,
+            "family": "embedding_lr",
+            "features": "embedding",
+            "C": 10.0,
+            "class_weight": "balanced"
+          },
+          "training_seconds": 0.038150499999574095,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.32075471698113206,
+          "macro_f1": 0.3239450899977216,
+          "classification": {
+            "advice": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1-score": 0.75,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.2857142857142857,
+              "recall": 0.5,
+              "f1-score": 0.36363636363636365,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.3333333333333333,
+              "recall": 0.5,
+              "f1-score": 0.4,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.125,
+              "recall": 0.25,
+              "f1-score": 0.16666666666666666,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.125,
+              "recall": 0.25,
+              "f1-score": 0.16666666666666666,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 0.5,
+              "recall": 0.125,
+              "f1-score": 0.2,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.5714285714285714,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.42105263157894735,
+              "support": 12.0
+            },
+            "accuracy": 0.32075471698113206,
+            "macro avg": {
+              "precision": 0.3557142857142857,
+              "recall": 0.3408333333333334,
+              "f1-score": 0.3239450899977216,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.39622641509433965,
+              "recall": 0.32075471698113206,
+              "f1-score": 0.3269098991045366,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "cart_edit",
+            "advice",
+            "open_product",
+            "advice",
+            "advice",
+            "find_products",
+            "open_product",
+            "find_products",
+            "unsupported",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "mutate",
+            "cart_edit",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "unsupported",
+            "navigate",
+            "locate",
+            "mutate",
+            "navigate",
+            "cart_edit",
+            "find_products",
+            "locate",
+            "help",
+            "open_product",
+            "mutate",
+            "open_product",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "unsupported",
+            "mutate",
+            "off_topic",
+            "unsupported",
+            "mutate"
+          ]
+        }
+      ],
+      "selected_config": {
+        "index": 36,
+        "family": "embedding_lr",
+        "features": "embedding",
+        "C": 0.1,
+        "class_weight": null
+      },
+      "validation": {
+        "count": 53,
+        "accuracy": 0.4339622641509434,
+        "macro_f1": 0.43040404040404034,
+        "classification": {
+          "advice": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 4.0
+          },
+          "find_products": {
+            "precision": 0.36363636363636365,
+            "recall": 1.0,
+            "f1-score": 0.5333333333333333,
+            "support": 4.0
+          },
+          "locate": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1-score": 0.3333333333333333,
+            "support": 4.0
+          },
+          "navigate": {
+            "precision": 0.16666666666666666,
+            "recall": 0.2,
+            "f1-score": 0.18181818181818182,
+            "support": 5.0
+          },
+          "open_product": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 4.0
+          },
+          "mutate": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "cart_edit": {
+            "precision": 0.36363636363636365,
+            "recall": 1.0,
+            "f1-score": 0.5333333333333333,
+            "support": 4.0
+          },
+          "help": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1-score": 0.5,
+            "support": 4.0
+          },
+          "off_topic": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1-score": 0.2222222222222222,
+            "support": 8.0
+          },
+          "unsupported": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.5,
+            "support": 12.0
+          },
+          "accuracy": 0.4339622641509434,
+          "macro avg": {
+            "precision": 0.5393939393939394,
+            "recall": 0.49083333333333334,
+            "f1-score": 0.43040404040404034,
+            "support": 53.0
+          },
+          "weighted avg": {
+            "precision": 0.6366495140080046,
+            "recall": 0.4339622641509434,
+            "f1-score": 0.42050695635601293,
+            "support": 53.0
+          }
+        }
+      },
+      "predictions": [
+        {
+          "case_id": "syn-en-03",
+          "text": "take me to my orders, newest one first if u can",
+          "label": "navigate",
+          "language": "english",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 9.431499999664084
+        },
+        {
+          "case_id": "synthetic-002-013",
+          "text": "قميص رسمي مقاس كبير ولا وسط لو بحب اللبس واسع؟ مش طالب تختارلي مقاس مؤكد، عايز افهم الاختيار",
+          "label": "advice",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 8.075899999312242
+        },
+        {
+          "case_id": "synthetic-002-014",
+          "text": "Formal Shirt M wala L law ba7eb loose fit? mesh 3ayezak tefta7 saf7a, 3ayez netkalem fel ekhtyar",
+          "label": "advice",
+          "language": "franco_arabic",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 8.742299999539682
+        },
+        {
+          "case_id": "synthetic-002-015",
+          "text": "im between M and L on Formal Shirt. what would you need to know before recommending a size?",
+          "label": "advice",
+          "language": "english",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 7.565200000499317
+        },
+        {
+          "case_id": "synthetic-002-016",
+          "text": "محتار بين size M و L في قميص رسمي، ناقصنا إيه عشان تقول رأي مسؤول؟",
+          "label": "advice",
+          "language": "mixed",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 7.2493999996368075
+        },
+        {
+          "case_id": "synthetic-002-029",
+          "text": "طلعلي سماعات اقصى سعر الف ومتين جنيه",
+          "label": "find_products",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 7.813800000803894
+        },
+        {
+          "case_id": "synthetic-002-030",
+          "text": "3ayez charger abyad, er5as 7aga el awel",
+          "label": "find_products",
+          "language": "franco_arabic",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 10.08780000029219
+        },
+        {
+          "case_id": "synthetic-002-031",
+          "text": "got any smartwatches up to 2500 EGP in silver?",
+          "label": "find_products",
+          "language": "english",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 7.912900000519585
+        },
+        {
+          "case_id": "synthetic-002-032",
+          "text": "بدور على speaker صغير، ceiling ٩٠٠ EGP مش headphones",
+          "label": "find_products",
+          "language": "mixed",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 7.735300000604184
+        },
+        {
+          "case_id": "synthetic-002-045",
+          "text": "فين علامة حسابي؟ انا مش عايز افتحه دلوقتي بس اعرف مكانه",
+          "label": "locate",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "locate",
+          "correct": true,
+          "warm_latency_ms": 7.476699999642733
+        },
+        {
+          "case_id": "synthetic-002-046",
+          "text": "eshawerly 3ala link 7esaby, bala ma ten2elny",
+          "label": "locate",
+          "language": "franco_arabic",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 8.881300000211922
+        },
+        {
+          "case_id": "synthetic-002-047",
+          "text": "where exactly is the account link? just mark it for me",
+          "label": "locate",
+          "language": "english",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 8.783999999650405
+        },
+        {
+          "case_id": "synthetic-002-048",
+          "text": "الـ account icon مش لاقيه، بس وريني مكانه من غير navigation",
+          "label": "locate",
+          "language": "mixed",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 9.032699999806937
+        },
+        {
+          "case_id": "synthetic-002-057",
+          "text": "عايز اروح صفحه طلباتي القديمه، مش بطلب حاجه جديده",
+          "label": "navigate",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 7.875000000240107
+        },
+        {
+          "case_id": "synthetic-002-058",
+          "text": "wareeny saf7et el orders bta3ty, ana naseet awsalha ezay",
+          "label": "navigate",
+          "language": "franco_arabic",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 7.982500000252912
+        },
+        {
+          "case_id": "synthetic-002-059",
+          "text": "can we go back to order history? leave this product for now",
+          "label": "navigate",
+          "language": "english",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 8.263600000645965
+        },
+        {
+          "case_id": "synthetic-002-060",
+          "text": "خلينا في orders history دلوقتي، افتح الصفحة",
+          "label": "navigate",
+          "language": "mixed",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": true,
+          "warm_latency_ms": 7.30810000004567
+        },
+        {
+          "case_id": "synthetic-002-077",
+          "text": "افتح صفحة ارخص منتج من التلاته اللي انت لسه عرضتهم، متعملش بحث جديد",
+          "label": "open_product",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": true,
+          "warm_latency_ms": 7.799700000759913
+        },
+        {
+          "case_id": "synthetic-002-078",
+          "text": "men el talat tarshi7at elly odamna, el ar5as efta7 saf7eto bas",
+          "label": "open_product",
+          "language": "franco_arabic",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 8.539000000382657
+        },
+        {
+          "case_id": "synthetic-002-079",
+          "text": "open the cheapest product from that existing three-item shortlist, no new search please",
+          "label": "open_product",
+          "language": "english",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": true,
+          "warm_latency_ms": 11.357399999724294
+        },
+        {
+          "case_id": "synthetic-002-080",
+          "text": "هات product page للـ cheapest من آخر ٣ suggestions بس",
+          "label": "open_product",
+          "language": "mixed",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": true,
+          "warm_latency_ms": 7.515199999943434
+        },
+        {
+          "case_id": "synthetic-002-093",
+          "text": "انا دوست شراء ومش فاهم تم ولا لا، جرب تبعت الطلب تاني",
+          "label": "mutate",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 7.518299999901501
+        },
+        {
+          "case_id": "synthetic-002-094",
+          "text": "el page wa2afet ba3d el shera, e3mel submit tany law sama7t",
+          "label": "mutate",
+          "language": "franco_arabic",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 7.6200000003154855
+        },
+        {
+          "case_id": "synthetic-002-095",
+          "text": "checkout froze after i clicked. submit it again? dont charge twice though",
+          "label": "mutate",
+          "language": "english",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "locate",
+          "correct": false,
+          "warm_latency_ms": 7.674899999983609
+        },
+        {
+          "case_id": "synthetic-002-096",
+          "text": "الـ checkout علق، اعمل retry للـ order بس مش مرتين",
+          "label": "mutate",
+          "language": "mixed",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 7.376699999440461
+        },
+        {
+          "case_id": "synthetic-002-097",
+          "text": "حطلي اتنين تيشيرت اسكندريه ابيض مقاس وسط في العربيه",
+          "label": "cart_edit",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 7.254899999679765
+        },
+        {
+          "case_id": "synthetic-002-098",
+          "text": "dayef Alex Tee abyad size M wa7ed lel cart",
+          "label": "cart_edit",
+          "language": "franco_arabic",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 7.0587000000159605
+        },
+        {
+          "case_id": "synthetic-002-099",
+          "text": "add three white Alex Tees in M please, not the blue ones",
+          "label": "cart_edit",
+          "language": "english",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 8.466300000691263
+        },
+        {
+          "case_id": "synthetic-002-100",
+          "text": "ضيف Alex Tee size M ابيض، واحدة بس مش ٢",
+          "label": "cart_edit",
+          "language": "mixed",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 9.358199999951466
+        },
+        {
+          "case_id": "synthetic-002-125",
+          "text": "هو ينفع اشتغل بإيدي وانت موجود ولا لازم كل حاجه اقولك عليها؟",
+          "label": "help",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": true,
+          "warm_latency_ms": 9.449799999856623
+        },
+        {
+          "case_id": "synthetic-002-126",
+          "text": "yenfa3 astakhdem el site b nafsy wenta mawgoud? 3ayez afham bas",
+          "label": "help",
+          "language": "franco_arabic",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": false,
+          "warm_latency_ms": 8.36799999979121
+        },
+        {
+          "case_id": "synthetic-002-127",
+          "text": "do i have to let you do everything or can i still use the shop myself?",
+          "label": "help",
+          "language": "english",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": true,
+          "warm_latency_ms": 7.422000000588014
+        },
+        {
+          "case_id": "synthetic-002-128",
+          "text": "ينفع أعمل manual browsing معاك ولا لازم كل حاجة في chat؟",
+          "label": "help",
+          "language": "mixed",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 7.278400000359397
+        },
+        {
+          "case_id": "synthetic-002-137",
+          "text": "حللي مسألة اتنين س زائد خمسه يساوي تلاتتاشر",
+          "label": "off_topic",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 6.910799999786832
+        },
+        {
+          "case_id": "synthetic-002-138",
+          "text": "fahhemny el photosynthesis 3ashan 3andy emte7an",
+          "label": "off_topic",
+          "language": "franco_arabic",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": false,
+          "warm_latency_ms": 7.148499999857449
+        },
+        {
+          "case_id": "synthetic-002-139",
+          "text": "why does my python for loop skip every other number?",
+          "label": "off_topic",
+          "language": "english",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 7.294699999874865
+        },
+        {
+          "case_id": "synthetic-002-140",
+          "text": "ممكن تشرحلي quadratic equation؟ عندي exam",
+          "label": "off_topic",
+          "language": "mixed",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 7.439200000590063
+        },
+        {
+          "case_id": "synthetic-002-141",
+          "text": "الجو بكره في طنطا عامل ايه؟ مش بشتري لبس بس بسأل",
+          "label": "off_topic",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": false,
+          "warm_latency_ms": 7.483299999876181
+        },
+        {
+          "case_id": "synthetic-002-142",
+          "text": "hayemtar bokra fel giza wala la? so2al 3an el gaw bas",
+          "label": "off_topic",
+          "language": "franco_arabic",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": false,
+          "warm_latency_ms": 7.205800000519957
+        },
+        {
+          "case_id": "synthetic-002-143",
+          "text": "whats the forecast in Cairo this weekend? nothing to do with clothes",
+          "label": "off_topic",
+          "language": "english",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 7.547799999883864
+        },
+        {
+          "case_id": "synthetic-002-144",
+          "text": "في rain بكرة في اسوان؟ مش محتاج product",
+          "label": "off_topic",
+          "language": "mixed",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "off_topic",
+          "correct": true,
+          "warm_latency_ms": 7.225399999697402
+        },
+        {
+          "case_id": "synthetic-002-149",
+          "text": "فاصل مع البايع ونزلي سعر القميص خمسين جنيه",
+          "label": "unsupported",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 7.4386999995113
+        },
+        {
+          "case_id": "synthetic-002-150",
+          "text": "kalem el seller yekhally el se3r nos, ana mesh hadfa3 keda",
+          "label": "unsupported",
+          "language": "franco_arabic",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 7.222700000056648
+        },
+        {
+          "case_id": "synthetic-002-151",
+          "text": "can you bargain with the seller and knock 20 percent off?",
+          "label": "unsupported",
+          "language": "english",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 8.51909999983036
+        },
+        {
+          "case_id": "synthetic-002-152",
+          "text": "اطلب discount من التاجر مخصوص ليا وغير الـ price",
+          "label": "unsupported",
+          "language": "mixed",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 8.984500000224216
+        },
+        {
+          "case_id": "synthetic-002-153",
+          "text": "غير ميعاد توصيل طلبي للسبت بدل بكره من عندك",
+          "label": "unsupported",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 9.787200000573648
+        },
+        {
+          "case_id": "synthetic-002-154",
+          "text": "badal ma el talab yegy bokra khalleh youm el etneen",
+          "label": "unsupported",
+          "language": "franco_arabic",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 11.560699999790813
+        },
+        {
+          "case_id": "synthetic-002-155",
+          "text": "reschedule my delivery for next week, i wont be home tomorrow",
+          "label": "unsupported",
+          "language": "english",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 9.107400000175403
+        },
+        {
+          "case_id": "synthetic-002-156",
+          "text": "عدّل delivery date للجمعة، مش بس توريني orders",
+          "label": "unsupported",
+          "language": "mixed",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 9.066000000530039
+        },
+        {
+          "case_id": "synthetic-002-157",
+          "text": "رجعلي فلوس الطلب اللي استلمته، عايز اعمل استرجاع",
+          "label": "unsupported",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 7.429100000081235
+        },
+        {
+          "case_id": "synthetic-002-158",
+          "text": "3ayez aragga3 el product w el floos terga3ly, e3mel el refund",
+          "label": "unsupported",
+          "language": "franco_arabic",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 7.33719999971072
+        },
+        {
+          "case_id": "synthetic-002-159",
+          "text": "start a refund for the order i already received please",
+          "label": "unsupported",
+          "language": "english",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 7.143700000597164
+        },
+        {
+          "case_id": "synthetic-002-160",
+          "text": "اعمل return للطلب القديم وrefund، مش remove من cart",
+          "label": "unsupported",
+          "language": "mixed",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 7.830200000171317
+        }
+      ],
+      "per_language": {
+        "egyptian_arabic": {
+          "count": 13,
+          "accuracy": 0.46153846153846156,
+          "macro_f1": 0.4733333333333333,
+          "classification": {
+            "advice": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1-score": 0.4,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "open_product": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 3.0
+            },
+            "accuracy": 0.46153846153846156,
+            "macro avg": {
+              "precision": 0.425,
+              "recall": 0.6,
+              "f1-score": 0.4733333333333333,
+              "support": 13.0
+            },
+            "weighted avg": {
+              "precision": 0.3269230769230769,
+              "recall": 0.46153846153846156,
+              "f1-score": 0.36410256410256403,
+              "support": 13.0
+            }
+          }
+        },
+        "english": {
+          "count": 14,
+          "accuracy": 0.5,
+          "macro_f1": 0.4,
+          "classification": {
+            "advice": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "open_product": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 3.0
+            },
+            "accuracy": 0.5,
+            "macro avg": {
+              "precision": 0.36666666666666664,
+              "recall": 0.5,
+              "f1-score": 0.4,
+              "support": 14.0
+            },
+            "weighted avg": {
+              "precision": 0.4047619047619047,
+              "recall": 0.5,
+              "f1-score": 0.42857142857142855,
+              "support": 14.0
+            }
+          }
+        },
+        "franco_arabic": {
+          "count": 13,
+          "accuracy": 0.23076923076923078,
+          "macro_f1": 0.19999999999999998,
+          "classification": {
+            "advice": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "open_product": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 0.2,
+              "recall": 1.0,
+              "f1-score": 0.3333333333333333,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 3.0
+            },
+            "accuracy": 0.23076923076923078,
+            "macro avg": {
+              "precision": 0.16999999999999998,
+              "recall": 0.3,
+              "f1-score": 0.19999999999999998,
+              "support": 13.0
+            },
+            "weighted avg": {
+              "precision": 0.13076923076923078,
+              "recall": 0.23076923076923078,
+              "f1-score": 0.15384615384615383,
+              "support": 13.0
+            }
+          }
+        },
+        "mixed": {
+          "count": 13,
+          "accuracy": 0.5384615384615384,
+          "macro_f1": 0.5166666666666667,
+          "classification": {
+            "advice": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 1.0
+            },
+            "open_product": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1-score": 0.6666666666666666,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 1.0,
+              "recall": 0.3333333333333333,
+              "f1-score": 0.5,
+              "support": 3.0
+            },
+            "accuracy": 0.5384615384615384,
+            "macro avg": {
+              "precision": 0.5666666666666667,
+              "recall": 0.5833333333333333,
+              "f1-score": 0.5166666666666667,
+              "support": 13.0
+            },
+            "weighted avg": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5384615384615384,
+              "f1-score": 0.5256410256410257,
+              "support": 13.0
+            }
+          }
+        }
+      },
+      "confusion_matrices": {
+        "raw": [
+          [3, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 4, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 1, 0, 1, 1, 0, 0, 0],
+          [0, 0, 0, 1, 0, 1, 3, 0, 0, 0],
+          [0, 0, 0, 0, 3, 0, 1, 0, 0, 0],
+          [0, 1, 1, 2, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 4, 0, 0, 0],
+          [0, 1, 0, 0, 1, 0, 0, 2, 0, 0],
+          [1, 2, 0, 1, 0, 1, 0, 2, 1, 0],
+          [0, 2, 0, 1, 0, 3, 2, 0, 0, 4]
+        ],
+        "row_normalized": [
+          [0.75, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+          [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.25, 0.25, 0.0, 0.25, 0.25, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.0, 0.2, 0.0, 0.2, 0.6, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.0, 0.0, 0.75, 0.0, 0.25, 0.0, 0.0, 0.0],
+          [0.0, 0.25, 0.25, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0],
+          [0.0, 0.25, 0.0, 0.0, 0.25, 0.0, 0.0, 0.5, 0.0, 0.0],
+          [0.125, 0.25, 0.0, 0.125, 0.0, 0.125, 0.0, 0.25, 0.125, 0.0],
+          [
+            0.0, 0.16666666666666666, 0.0, 0.08333333333333333, 0.0, 0.25,
+            0.16666666666666666, 0.0, 0.0, 0.3333333333333333
+          ]
+        ]
+      },
+      "latency_ms": {
+        "sample_count": 53,
+        "p50": 7.735300000604184,
+        "p95": 9.907440000461065,
+        "includes_encoder": true
+      },
+      "artifact_reload_ms_warm_os_cache": 5.007499999919673,
+      "artifact_reload_verified": true,
+      "artifact_bytes": 27576,
+      "artifact_sha256": "334e222791b1f70e131b840810881f5b2cb3ef972097f9db96d2e6d1e77a8ecb",
+      "shared_encoder_bytes": 494488356
+    },
+    {
+      "family": "embedding_mlp",
+      "status": "complete",
+      "trials": [
+        {
+          "config": {
+            "index": 42,
+            "family": "embedding_mlp",
+            "features": "embedding",
+            "hidden_layer_sizes": [64],
+            "alpha": 0.001
+          },
+          "training_seconds": 0.07910230000015872,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.3584905660377358,
+          "macro_f1": 0.3522294372294372,
+          "classification": {
+            "advice": {
+              "precision": 0.3333333333333333,
+              "recall": 0.25,
+              "f1-score": 0.2857142857142857,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1-score": 0.5714285714285714,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.14285714285714285,
+              "recall": 0.2,
+              "f1-score": 0.16666666666666666,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.375,
+              "recall": 0.75,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.14285714285714285,
+              "recall": 0.25,
+              "f1-score": 0.18181818181818182,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.375,
+              "recall": 0.75,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1-score": 0.4,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.5,
+              "recall": 0.16666666666666666,
+              "f1-score": 0.25,
+              "support": 12.0
+            },
+            "accuracy": 0.3584905660377358,
+            "macro avg": {
+              "precision": 0.4269047619047619,
+              "recall": 0.41166666666666674,
+              "f1-score": 0.3522294372294372,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.47583108715184186,
+              "recall": 0.3584905660377358,
+              "f1-score": 0.3369027199215879,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "unsupported",
+            "find_products",
+            "open_product",
+            "find_products",
+            "advice",
+            "find_products",
+            "find_products",
+            "find_products",
+            "find_products",
+            "locate",
+            "open_product",
+            "navigate",
+            "navigate",
+            "locate",
+            "open_product",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "open_product",
+            "open_product",
+            "unsupported",
+            "open_product",
+            "mutate",
+            "navigate",
+            "cart_edit",
+            "cart_edit",
+            "find_products",
+            "cart_edit",
+            "help",
+            "open_product",
+            "navigate",
+            "find_products",
+            "mutate",
+            "advice",
+            "cart_edit",
+            "navigate",
+            "off_topic",
+            "help",
+            "advice",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "mutate",
+            "unsupported",
+            "navigate",
+            "mutate",
+            "mutate",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 43,
+            "family": "embedding_mlp",
+            "features": "embedding",
+            "hidden_layer_sizes": [64],
+            "alpha": 0.01
+          },
+          "training_seconds": 0.10070459999951709,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.3018867924528302,
+          "macro_f1": 0.30540209790209794,
+          "classification": {
+            "advice": {
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1-score": 0.75,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.4444444444444444,
+              "recall": 1.0,
+              "f1-score": 0.6153846153846154,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.14285714285714285,
+              "recall": 0.2,
+              "f1-score": 0.16666666666666666,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.2857142857142857,
+              "recall": 0.5,
+              "f1-score": 0.36363636363636365,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.25,
+              "recall": 0.5,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 0.5,
+              "recall": 0.125,
+              "f1-score": 0.2,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.25,
+              "recall": 0.08333333333333333,
+              "f1-score": 0.125,
+              "support": 12.0
+            },
+            "accuracy": 0.3018867924528302,
+            "macro avg": {
+              "precision": 0.31230158730158725,
+              "recall": 0.36583333333333334,
+              "f1-score": 0.30540209790209794,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.3138664270739742,
+              "recall": 0.3018867924528302,
+              "f1-score": 0.26759906759906754,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "unsupported",
+            "advice",
+            "open_product",
+            "advice",
+            "advice",
+            "find_products",
+            "find_products",
+            "find_products",
+            "find_products",
+            "navigate",
+            "open_product",
+            "navigate",
+            "open_product",
+            "locate",
+            "cart_edit",
+            "cart_edit",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "unsupported",
+            "navigate",
+            "locate",
+            "navigate",
+            "open_product",
+            "cart_edit",
+            "find_products",
+            "cart_edit",
+            "help",
+            "open_product",
+            "help",
+            "find_products",
+            "find_products",
+            "cart_edit",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "advice",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "mutate",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "mutate",
+            "unsupported",
+            "navigate",
+            "off_topic",
+            "mutate",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 44,
+            "family": "embedding_mlp",
+            "features": "embedding",
+            "hidden_layer_sizes": [128],
+            "alpha": 0.001
+          },
+          "training_seconds": 0.1100631000008434,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.37735849056603776,
+          "macro_f1": 0.3985714285714286,
+          "classification": {
+            "advice": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1-score": 0.5714285714285714,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.25,
+              "recall": 0.5,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.1111111111111111,
+              "recall": 0.2,
+              "f1-score": 0.14285714285714285,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.5,
+              "recall": 0.75,
+              "f1-score": 0.6,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.16666666666666666,
+              "recall": 0.25,
+              "f1-score": 0.2,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.375,
+              "recall": 0.75,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1-score": 0.5714285714285714,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1-score": 0.4,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 12.0
+            },
+            "accuracy": 0.37735849056603776,
+            "macro avg": {
+              "precision": 0.4736111111111111,
+              "recall": 0.42000000000000004,
+              "f1-score": 0.3985714285714286,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.510482180293501,
+              "recall": 0.37735849056603776,
+              "f1-score": 0.38400718778077264,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "unsupported",
+            "find_products",
+            "advice",
+            "find_products",
+            "advice",
+            "cart_edit",
+            "open_product",
+            "find_products",
+            "find_products",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "mutate",
+            "locate",
+            "navigate",
+            "cart_edit",
+            "open_product",
+            "open_product",
+            "navigate",
+            "open_product",
+            "open_product",
+            "unsupported",
+            "navigate",
+            "mutate",
+            "navigate",
+            "navigate",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "help",
+            "open_product",
+            "help",
+            "unsupported",
+            "find_products",
+            "advice",
+            "mutate",
+            "navigate",
+            "off_topic",
+            "help",
+            "find_products",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "unsupported",
+            "navigate",
+            "navigate",
+            "mutate",
+            "mutate"
+          ]
+        },
+        {
+          "config": {
+            "index": 45,
+            "family": "embedding_mlp",
+            "features": "embedding",
+            "hidden_layer_sizes": [128],
+            "alpha": 0.01
+          },
+          "training_seconds": 0.12010849999933271,
+          "converged": true,
+          "warnings": [],
+          "count": 53,
+          "accuracy": 0.41509433962264153,
+          "macro_f1": 0.41888386123680244,
+          "classification": {
+            "advice": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1-score": 0.8888888888888888,
+              "support": 4.0
+            },
+            "find_products": {
+              "precision": 0.375,
+              "recall": 0.75,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1-score": 0.3333333333333333,
+              "support": 4.0
+            },
+            "navigate": {
+              "precision": 0.125,
+              "recall": 0.2,
+              "f1-score": 0.15384615384615385,
+              "support": 5.0
+            },
+            "open_product": {
+              "precision": 0.3333333333333333,
+              "recall": 0.5,
+              "f1-score": 0.4,
+              "support": 4.0
+            },
+            "mutate": {
+              "precision": 0.2,
+              "recall": 0.25,
+              "f1-score": 0.2222222222222222,
+              "support": 4.0
+            },
+            "cart_edit": {
+              "precision": 0.4444444444444444,
+              "recall": 1.0,
+              "f1-score": 0.6153846153846154,
+              "support": 4.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 4.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.125,
+              "f1-score": 0.2222222222222222,
+              "support": 8.0
+            },
+            "unsupported": {
+              "precision": 0.6,
+              "recall": 0.25,
+              "f1-score": 0.35294117647058826,
+              "support": 12.0
+            },
+            "accuracy": 0.41509433962264153,
+            "macro avg": {
+              "precision": 0.48777777777777775,
+              "recall": 0.48250000000000004,
+              "f1-score": 0.41888386123680244,
+              "support": 53.0
+            },
+            "weighted avg": {
+              "precision": 0.5365303983228511,
+              "recall": 0.41509433962264153,
+              "f1-score": 0.3890871491315442,
+              "support": 53.0
+            }
+          },
+          "predictions": [
+            "navigate",
+            "advice",
+            "advice",
+            "advice",
+            "advice",
+            "find_products",
+            "unsupported",
+            "find_products",
+            "find_products",
+            "locate",
+            "cart_edit",
+            "navigate",
+            "navigate",
+            "locate",
+            "open_product",
+            "cart_edit",
+            "open_product",
+            "unsupported",
+            "mutate",
+            "open_product",
+            "open_product",
+            "find_products",
+            "navigate",
+            "mutate",
+            "navigate",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "cart_edit",
+            "help",
+            "open_product",
+            "help",
+            "find_products",
+            "find_products",
+            "cart_edit",
+            "mutate",
+            "navigate",
+            "help",
+            "help",
+            "advice",
+            "off_topic",
+            "find_products",
+            "mutate",
+            "unsupported",
+            "find_products",
+            "cart_edit",
+            "cart_edit",
+            "unsupported",
+            "open_product",
+            "navigate",
+            "navigate",
+            "unsupported",
+            "mutate"
+          ]
+        }
+      ],
+      "selected_config": {
+        "index": 45,
+        "family": "embedding_mlp",
+        "features": "embedding",
+        "hidden_layer_sizes": [128],
+        "alpha": 0.01
+      },
+      "validation": {
+        "count": 53,
+        "accuracy": 0.41509433962264153,
+        "macro_f1": 0.41888386123680244,
+        "classification": {
+          "advice": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "find_products": {
+            "precision": 0.375,
+            "recall": 0.75,
+            "f1-score": 0.5,
+            "support": 4.0
+          },
+          "locate": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1-score": 0.3333333333333333,
+            "support": 4.0
+          },
+          "navigate": {
+            "precision": 0.125,
+            "recall": 0.2,
+            "f1-score": 0.15384615384615385,
+            "support": 5.0
+          },
+          "open_product": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1-score": 0.4,
+            "support": 4.0
+          },
+          "mutate": {
+            "precision": 0.2,
+            "recall": 0.25,
+            "f1-score": 0.2222222222222222,
+            "support": 4.0
+          },
+          "cart_edit": {
+            "precision": 0.4444444444444444,
+            "recall": 1.0,
+            "f1-score": 0.6153846153846154,
+            "support": 4.0
+          },
+          "help": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1-score": 0.5,
+            "support": 4.0
+          },
+          "off_topic": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1-score": 0.2222222222222222,
+            "support": 8.0
+          },
+          "unsupported": {
+            "precision": 0.6,
+            "recall": 0.25,
+            "f1-score": 0.35294117647058826,
+            "support": 12.0
+          },
+          "accuracy": 0.41509433962264153,
+          "macro avg": {
+            "precision": 0.48777777777777775,
+            "recall": 0.48250000000000004,
+            "f1-score": 0.41888386123680244,
+            "support": 53.0
+          },
+          "weighted avg": {
+            "precision": 0.5365303983228511,
+            "recall": 0.41509433962264153,
+            "f1-score": 0.3890871491315442,
+            "support": 53.0
+          }
+        }
+      },
+      "predictions": [
+        {
+          "case_id": "syn-en-03",
+          "text": "take me to my orders, newest one first if u can",
+          "label": "navigate",
+          "language": "english",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": true,
+          "warm_latency_ms": 8.282199999484874
+        },
+        {
+          "case_id": "synthetic-002-013",
+          "text": "قميص رسمي مقاس كبير ولا وسط لو بحب اللبس واسع؟ مش طالب تختارلي مقاس مؤكد، عايز افهم الاختيار",
+          "label": "advice",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 8.354700000381854
+        },
+        {
+          "case_id": "synthetic-002-014",
+          "text": "Formal Shirt M wala L law ba7eb loose fit? mesh 3ayezak tefta7 saf7a, 3ayez netkalem fel ekhtyar",
+          "label": "advice",
+          "language": "franco_arabic",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 7.810000000063155
+        },
+        {
+          "case_id": "synthetic-002-015",
+          "text": "im between M and L on Formal Shirt. what would you need to know before recommending a size?",
+          "label": "advice",
+          "language": "english",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 8.51779999993596
+        },
+        {
+          "case_id": "synthetic-002-016",
+          "text": "محتار بين size M و L في قميص رسمي، ناقصنا إيه عشان تقول رأي مسؤول؟",
+          "label": "advice",
+          "language": "mixed",
+          "group": "pilot2-component-016",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": true,
+          "warm_latency_ms": 8.207199999560544
+        },
+        {
+          "case_id": "synthetic-002-029",
+          "text": "طلعلي سماعات اقصى سعر الف ومتين جنيه",
+          "label": "find_products",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 9.633599999688158
+        },
+        {
+          "case_id": "synthetic-002-030",
+          "text": "3ayez charger abyad, er5as 7aga el awel",
+          "label": "find_products",
+          "language": "franco_arabic",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": false,
+          "warm_latency_ms": 12.429699999302102
+        },
+        {
+          "case_id": "synthetic-002-031",
+          "text": "got any smartwatches up to 2500 EGP in silver?",
+          "label": "find_products",
+          "language": "english",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 8.70649999978923
+        },
+        {
+          "case_id": "synthetic-002-032",
+          "text": "بدور على speaker صغير، ceiling ٩٠٠ EGP مش headphones",
+          "label": "find_products",
+          "language": "mixed",
+          "group": "pilot2-component-018",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": true,
+          "warm_latency_ms": 8.47799999974086
+        },
+        {
+          "case_id": "synthetic-002-045",
+          "text": "فين علامة حسابي؟ انا مش عايز افتحه دلوقتي بس اعرف مكانه",
+          "label": "locate",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "locate",
+          "correct": true,
+          "warm_latency_ms": 7.788099999743281
+        },
+        {
+          "case_id": "synthetic-002-046",
+          "text": "eshawerly 3ala link 7esaby, bala ma ten2elny",
+          "label": "locate",
+          "language": "franco_arabic",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 10.54059999933088
+        },
+        {
+          "case_id": "synthetic-002-047",
+          "text": "where exactly is the account link? just mark it for me",
+          "label": "locate",
+          "language": "english",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 10.077199999614095
+        },
+        {
+          "case_id": "synthetic-002-048",
+          "text": "الـ account icon مش لاقيه، بس وريني مكانه من غير navigation",
+          "label": "locate",
+          "language": "mixed",
+          "group": "pilot2-component-021",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 11.301300000013725
+        },
+        {
+          "case_id": "synthetic-002-057",
+          "text": "عايز اروح صفحه طلباتي القديمه، مش بطلب حاجه جديده",
+          "label": "navigate",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "locate",
+          "correct": false,
+          "warm_latency_ms": 14.199100000041653
+        },
+        {
+          "case_id": "synthetic-002-058",
+          "text": "wareeny saf7et el orders bta3ty, ana naseet awsalha ezay",
+          "label": "navigate",
+          "language": "franco_arabic",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": false,
+          "warm_latency_ms": 9.313700000348035
+        },
+        {
+          "case_id": "synthetic-002-059",
+          "text": "can we go back to order history? leave this product for now",
+          "label": "navigate",
+          "language": "english",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 8.525300000655989
+        },
+        {
+          "case_id": "synthetic-002-060",
+          "text": "خلينا في orders history دلوقتي، افتح الصفحة",
+          "label": "navigate",
+          "language": "mixed",
+          "group": "pilot2-component-010",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": false,
+          "warm_latency_ms": 8.326899999701709
+        },
+        {
+          "case_id": "synthetic-002-077",
+          "text": "افتح صفحة ارخص منتج من التلاته اللي انت لسه عرضتهم، متعملش بحث جديد",
+          "label": "open_product",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": false,
+          "warm_latency_ms": 8.427400000073249
+        },
+        {
+          "case_id": "synthetic-002-078",
+          "text": "men el talat tarshi7at elly odamna, el ar5as efta7 saf7eto bas",
+          "label": "open_product",
+          "language": "franco_arabic",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 8.509700000104203
+        },
+        {
+          "case_id": "synthetic-002-079",
+          "text": "open the cheapest product from that existing three-item shortlist, no new search please",
+          "label": "open_product",
+          "language": "english",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": true,
+          "warm_latency_ms": 8.349199999429402
+        },
+        {
+          "case_id": "synthetic-002-080",
+          "text": "هات product page للـ cheapest من آخر ٣ suggestions بس",
+          "label": "open_product",
+          "language": "mixed",
+          "group": "pilot2-component-024",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": true,
+          "warm_latency_ms": 8.09670000035112
+        },
+        {
+          "case_id": "synthetic-002-093",
+          "text": "انا دوست شراء ومش فاهم تم ولا لا، جرب تبعت الطلب تاني",
+          "label": "mutate",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 9.301000000050408
+        },
+        {
+          "case_id": "synthetic-002-094",
+          "text": "el page wa2afet ba3d el shera, e3mel submit tany law sama7t",
+          "label": "mutate",
+          "language": "franco_arabic",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 9.64159999966796
+        },
+        {
+          "case_id": "synthetic-002-095",
+          "text": "checkout froze after i clicked. submit it again? dont charge twice though",
+          "label": "mutate",
+          "language": "english",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": true,
+          "warm_latency_ms": 10.11830000061309
+        },
+        {
+          "case_id": "synthetic-002-096",
+          "text": "الـ checkout علق، اعمل retry للـ order بس مش مرتين",
+          "label": "mutate",
+          "language": "mixed",
+          "group": "pilot2-component-025",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 10.102100000040082
+        },
+        {
+          "case_id": "synthetic-002-097",
+          "text": "حطلي اتنين تيشيرت اسكندريه ابيض مقاس وسط في العربيه",
+          "label": "cart_edit",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 12.585499999659078
+        },
+        {
+          "case_id": "synthetic-002-098",
+          "text": "dayef Alex Tee abyad size M wa7ed lel cart",
+          "label": "cart_edit",
+          "language": "franco_arabic",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 8.501100000103179
+        },
+        {
+          "case_id": "synthetic-002-099",
+          "text": "add three white Alex Tees in M please, not the blue ones",
+          "label": "cart_edit",
+          "language": "english",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 11.718100000507548
+        },
+        {
+          "case_id": "synthetic-002-100",
+          "text": "ضيف Alex Tee size M ابيض، واحدة بس مش ٢",
+          "label": "cart_edit",
+          "language": "mixed",
+          "group": "pilot2-component-026",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": true,
+          "warm_latency_ms": 10.095700000420038
+        },
+        {
+          "case_id": "synthetic-002-125",
+          "text": "هو ينفع اشتغل بإيدي وانت موجود ولا لازم كل حاجه اقولك عليها؟",
+          "label": "help",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": true,
+          "warm_latency_ms": 8.125100000142993
+        },
+        {
+          "case_id": "synthetic-002-126",
+          "text": "yenfa3 astakhdem el site b nafsy wenta mawgoud? 3ayez afham bas",
+          "label": "help",
+          "language": "franco_arabic",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": false,
+          "warm_latency_ms": 7.915099999991071
+        },
+        {
+          "case_id": "synthetic-002-127",
+          "text": "do i have to let you do everything or can i still use the shop myself?",
+          "label": "help",
+          "language": "english",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": true,
+          "warm_latency_ms": 8.251799999925424
+        },
+        {
+          "case_id": "synthetic-002-128",
+          "text": "ينفع أعمل manual browsing معاك ولا لازم كل حاجة في chat؟",
+          "label": "help",
+          "language": "mixed",
+          "group": "pilot2-component-029",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 8.056300000134797
+        },
+        {
+          "case_id": "synthetic-002-137",
+          "text": "حللي مسألة اتنين س زائد خمسه يساوي تلاتتاشر",
+          "label": "off_topic",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 8.590299999923445
+        },
+        {
+          "case_id": "synthetic-002-138",
+          "text": "fahhemny el photosynthesis 3ashan 3andy emte7an",
+          "label": "off_topic",
+          "language": "franco_arabic",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 7.740000000012515
+        },
+        {
+          "case_id": "synthetic-002-139",
+          "text": "why does my python for loop skip every other number?",
+          "label": "off_topic",
+          "language": "english",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 10.089699999298318
+        },
+        {
+          "case_id": "synthetic-002-140",
+          "text": "ممكن تشرحلي quadratic equation؟ عندي exam",
+          "label": "off_topic",
+          "language": "mixed",
+          "group": "pilot2-component-032",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 10.071300000163319
+        },
+        {
+          "case_id": "synthetic-002-141",
+          "text": "الجو بكره في طنطا عامل ايه؟ مش بشتري لبس بس بسأل",
+          "label": "off_topic",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": false,
+          "warm_latency_ms": 7.920899999589892
+        },
+        {
+          "case_id": "synthetic-002-142",
+          "text": "hayemtar bokra fel giza wala la? so2al 3an el gaw bas",
+          "label": "off_topic",
+          "language": "franco_arabic",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "help",
+          "correct": false,
+          "warm_latency_ms": 8.739500000046974
+        },
+        {
+          "case_id": "synthetic-002-143",
+          "text": "whats the forecast in Cairo this weekend? nothing to do with clothes",
+          "label": "off_topic",
+          "language": "english",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "advice",
+          "correct": false,
+          "warm_latency_ms": 8.045299999139388
+        },
+        {
+          "case_id": "synthetic-002-144",
+          "text": "في rain بكرة في اسوان؟ مش محتاج product",
+          "label": "off_topic",
+          "language": "mixed",
+          "group": "pilot2-component-033",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "off_topic",
+          "correct": true,
+          "warm_latency_ms": 8.14619999982824
+        },
+        {
+          "case_id": "synthetic-002-149",
+          "text": "فاصل مع البايع ونزلي سعر القميص خمسين جنيه",
+          "label": "unsupported",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 7.8297999998540035
+        },
+        {
+          "case_id": "synthetic-002-150",
+          "text": "kalem el seller yekhally el se3r nos, ana mesh hadfa3 keda",
+          "label": "unsupported",
+          "language": "franco_arabic",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 9.963800000150513
+        },
+        {
+          "case_id": "synthetic-002-151",
+          "text": "can you bargain with the seller and knock 20 percent off?",
+          "label": "unsupported",
+          "language": "english",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 9.571300000061456
+        },
+        {
+          "case_id": "synthetic-002-152",
+          "text": "اطلب discount من التاجر مخصوص ليا وغير الـ price",
+          "label": "unsupported",
+          "language": "mixed",
+          "group": "pilot2-component-035",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "find_products",
+          "correct": false,
+          "warm_latency_ms": 8.049199999732082
+        },
+        {
+          "case_id": "synthetic-002-153",
+          "text": "غير ميعاد توصيل طلبي للسبت بدل بكره من عندك",
+          "label": "unsupported",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 7.820400000127847
+        },
+        {
+          "case_id": "synthetic-002-154",
+          "text": "badal ma el talab yegy bokra khalleh youm el etneen",
+          "label": "unsupported",
+          "language": "franco_arabic",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "cart_edit",
+          "correct": false,
+          "warm_latency_ms": 7.3011999993468635
+        },
+        {
+          "case_id": "synthetic-002-155",
+          "text": "reschedule my delivery for next week, i wont be home tomorrow",
+          "label": "unsupported",
+          "language": "english",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 8.45709999975952
+        },
+        {
+          "case_id": "synthetic-002-156",
+          "text": "عدّل delivery date للجمعة، مش بس توريني orders",
+          "label": "unsupported",
+          "language": "mixed",
+          "group": "pilot2-component-036",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "open_product",
+          "correct": false,
+          "warm_latency_ms": 9.333699999842793
+        },
+        {
+          "case_id": "synthetic-002-157",
+          "text": "رجعلي فلوس الطلب اللي استلمته، عايز اعمل استرجاع",
+          "label": "unsupported",
+          "language": "egyptian_arabic",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 8.616099999926519
+        },
+        {
+          "case_id": "synthetic-002-158",
+          "text": "3ayez aragga3 el product w el floos terga3ly, e3mel el refund",
+          "label": "unsupported",
+          "language": "franco_arabic",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "navigate",
+          "correct": false,
+          "warm_latency_ms": 9.049700000105076
+        },
+        {
+          "case_id": "synthetic-002-159",
+          "text": "start a refund for the order i already received please",
+          "label": "unsupported",
+          "language": "english",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "unsupported",
+          "correct": true,
+          "warm_latency_ms": 11.835500000415777
+        },
+        {
+          "case_id": "synthetic-002-160",
+          "text": "اعمل return للطلب القديم وrefund، مش remove من cart",
+          "label": "unsupported",
+          "language": "mixed",
+          "group": "pilot2-component-037",
+          "eligible": true,
+          "split": "validation",
+          "predicted": "mutate",
+          "correct": false,
+          "warm_latency_ms": 11.927700000342156
+        }
+      ],
+      "per_language": {
+        "egyptian_arabic": {
+          "count": 13,
+          "accuracy": 0.38461538461538464,
+          "macro_f1": 0.33999999999999997,
+          "classification": {
+            "advice": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1-score": 0.4,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "open_product": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 3.0
+            },
+            "accuracy": 0.38461538461538464,
+            "macro avg": {
+              "precision": 0.275,
+              "recall": 0.5,
+              "f1-score": 0.33999999999999997,
+              "support": 13.0
+            },
+            "weighted avg": {
+              "precision": 0.21153846153846154,
+              "recall": 0.38461538461538464,
+              "f1-score": 0.2615384615384615,
+              "support": 13.0
+            }
+          }
+        },
+        "english": {
+          "count": 14,
+          "accuracy": 0.7142857142857143,
+          "macro_f1": 0.65,
+          "classification": {
+            "advice": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1-score": 0.5,
+              "support": 2.0
+            },
+            "open_product": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1-score": 0.6666666666666666,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 3.0
+            },
+            "accuracy": 0.7142857142857143,
+            "macro avg": {
+              "precision": 0.6,
+              "recall": 0.75,
+              "f1-score": 0.65,
+              "support": 14.0
+            },
+            "weighted avg": {
+              "precision": 0.6071428571428571,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.6428571428571429,
+              "support": 14.0
+            }
+          }
+        },
+        "franco_arabic": {
+          "count": 13,
+          "accuracy": 0.15384615384615385,
+          "macro_f1": 0.13999999999999999,
+          "classification": {
+            "advice": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "open_product": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1-score": 0.4,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 3.0
+            },
+            "accuracy": 0.15384615384615385,
+            "macro avg": {
+              "precision": 0.125,
+              "recall": 0.2,
+              "f1-score": 0.13999999999999999,
+              "support": 13.0
+            },
+            "weighted avg": {
+              "precision": 0.09615384615384616,
+              "recall": 0.15384615384615385,
+              "f1-score": 0.10769230769230768,
+              "support": 13.0
+            }
+          }
+        },
+        "mixed": {
+          "count": 13,
+          "accuracy": 0.38461538461538464,
+          "macro_f1": 0.36666666666666664,
+          "classification": {
+            "advice": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "find_products": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 1.0
+            },
+            "locate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "navigate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "open_product": {
+              "precision": 0.3333333333333333,
+              "recall": 1.0,
+              "f1-score": 0.5,
+              "support": 1.0
+            },
+            "mutate": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "cart_edit": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 1.0
+            },
+            "help": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "off_topic": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1-score": 0.6666666666666666,
+              "support": 2.0
+            },
+            "unsupported": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 3.0
+            },
+            "accuracy": 0.38461538461538464,
+            "macro avg": {
+              "precision": 0.36666666666666664,
+              "recall": 0.45,
+              "f1-score": 0.36666666666666664,
+              "support": 13.0
+            },
+            "weighted avg": {
+              "precision": 0.3589743589743589,
+              "recall": 0.38461538461538464,
+              "f1-score": 0.3333333333333333,
+              "support": 13.0
+            }
+          }
+        }
+      },
+      "confusion_matrices": {
+        "raw": [
+          [4, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 3, 0, 0, 0, 0, 0, 0, 0, 1],
+          [0, 0, 1, 2, 0, 0, 1, 0, 0, 0],
+          [0, 0, 1, 1, 2, 0, 1, 0, 0, 0],
+          [0, 0, 0, 0, 2, 1, 0, 0, 0, 1],
+          [0, 1, 0, 2, 0, 1, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 4, 0, 0, 0],
+          [0, 1, 0, 0, 1, 0, 0, 2, 0, 0],
+          [1, 1, 0, 1, 0, 1, 1, 2, 1, 0],
+          [0, 2, 0, 2, 1, 2, 2, 0, 0, 3]
+        ],
+        "row_normalized": [
+          [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+          [0.0, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25],
+          [0.0, 0.0, 0.25, 0.5, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.2, 0.2, 0.4, 0.0, 0.2, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.0, 0.0, 0.5, 0.25, 0.0, 0.0, 0.0, 0.25],
+          [0.0, 0.25, 0.0, 0.5, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0],
+          [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0],
+          [0.0, 0.25, 0.0, 0.0, 0.25, 0.0, 0.0, 0.5, 0.0, 0.0],
+          [0.125, 0.125, 0.0, 0.125, 0.0, 0.125, 0.125, 0.25, 0.125, 0.0],
+          [
+            0.0, 0.16666666666666666, 0.0, 0.16666666666666666,
+            0.08333333333333333, 0.16666666666666666, 0.16666666666666666, 0.0,
+            0.0, 0.25
+          ]
+        ]
+      },
+      "latency_ms": {
+        "sample_count": 53,
+        "p50": 8.525300000655989,
+        "p95": 12.128499999926134,
+        "includes_encoder": true
+      },
+      "artifact_reload_ms_warm_os_cache": 5.79100000049948,
+      "artifact_reload_verified": true,
+      "artifact_bytes": 625367,
+      "artifact_sha256": "8d85a41e6cad7e6dac20059b1d25213d0e0cf17148b00e67621893799e4ec3ed",
+      "shared_encoder_bytes": 494488356
+    }
+  ],
+  "counts": {
+    "train": {
+      "find_products": 38,
+      "advice": 29,
+      "navigate": 20,
+      "cart_edit": 42,
+      "mutate": 20,
+      "locate": 15,
+      "help": 14,
+      "unsupported": 9,
+      "off_topic": 9,
+      "open_product": 14
+    },
+    "validation": {
+      "navigate": 5,
+      "advice": 4,
+      "find_products": 4,
+      "locate": 4,
+      "open_product": 4,
+      "mutate": 4,
+      "cart_edit": 4,
+      "help": 4,
+      "off_topic": 8,
+      "unsupported": 12
+    }
+  },
+  "source_hashes": {
+    "docs/cap03-model-comparison-protocol.md": "64c7f3593c38c6a543b5ee886a2e80a1dcf48818d0be833ba92b4999b079de16",
+    "eval/compare_models.py": "4c68ad90ba7634310f519ff0f1d4144e150518a05e7023339a71a468d2a2c8be",
+    "eval/comparison_models.py": "4eb5986b9bef3288d5f13fe61b4ec3e17eea72c34d8bea955410d170693ca291",
+    "eval/comparison_encoder.py": "63835b1f82ef63490483cc57f42b58126580d265a5ce282b902eee16cb75e201",
+    "eval/pilot_data.py": "3cddc84f29af8402c7cdf9c6de338c509595fcd14e550feac37d86ac9af59cd8",
+    "eval/baseline_pilot.py": "7c088a571bcb64a55b9de048770cf55811ba5cf4445f918cd25532aa581005de"
+  },
+  "environment": {
+    "python": "3.12.5",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "threads": 4,
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0",
+      "xgboost": "3.4.1",
+      "torch": "2.14.1+cu130",
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.19.0",
+      "huggingface-hub": "1.33.0"
+    }
+  },
+  "git_head": "227059bdf74be3787a64479eab8736e005daf46c",
+  "invocation": {
+    "release": "eval/datasets/capstone-v1/pilot-20261007/release.json",
+    "output": "outputs/model-comparison/embeddings-001",
+    "phase": "embeddings"
+  },
+  "limitations": [
+    "Previously inspected synthetic validation; not independent gold or unseen",
+    "Unequal small tuning budgets and different pretrained representations",
+    "No seed-variance or runtime safety claim; local compute cost unmeasured"
+  ],
+  "embedding_preparation_seconds": 0.5083002999999735,
+  "encoder": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "device": "cuda",
+    "cuda_build": "13.0",
+    "gpu_name": "NVIDIA GeForce RTX 3060",
+    "download_or_cache_seconds": 0.030801400000200374,
+    "initialization_seconds": 2.0798170000007303,
+    "dimensions": 384,
+    "max_seq_length": 128,
+    "normalize_embeddings": true,
+    "files": {
+      "1_Pooling/config.json": {
+        "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "bytes": 190
+      },
+      "config.json": {
+        "sha256": "6300193cb75e01cf80c96decef7187dfb33094d97cc1490b7ead6ff134476e4e",
+        "bytes": 645
+      },
+      "config_sentence_transformers.json": {
+        "sha256": "b8c64b5cece00d8424b4896ea75b512b6008576088497609dfeb6bd63e6d36b8",
+        "bytes": 122
+      },
+      "model.safetensors": {
+        "sha256": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b",
+        "bytes": 470641600
+      },
+      "modules.json": {
+        "sha256": "8f4b264b80206c830bebbdcae377e137925650a433b689343a63bdc9b3145460",
+        "bytes": 229
+      },
+      "sentence_bert_config.json": {
+        "sha256": "70f4448f31320443fe3557cacea5abf2dcc4915dda8c80646bec9f3bb0aa5a1f",
+        "bytes": 53
+      },
+      "special_tokens_map.json": {
+        "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d",
+        "bytes": 239
+      },
+      "tokenizer.json": {
+        "sha256": "2c3387be76557bd40970cec13153b3bbf80407865484b209e655e5e4729076b8",
+        "bytes": 9081518
+      },
+      "tokenizer_config.json": {
+        "sha256": "5036ea374ffedd706e3bef33e2e0d6953cb868ef8a490e76e32ba0faa37a6b9b",
+        "bytes": 526
+      },
+      "unigram.json": {
+        "sha256": "71b44701d7efd054205115acfa6ef126c5d2f84bd3affe0c59e48163674d19a6",
+        "bytes": 14763234
+      }
+    },
+    "bytes": 494488356
+  },
+  "embedding_artifact": {
+    "file": "embeddings.npz",
+    "sha256": "02bafceeb7f858292027603ac06029365671812d7c2d172683b7109a83967c2a",
+    "release_sha256": "4f1ded67bbb4da259b55b2f56b9f5e11a55208ff7fd0ff73b51c305a0545ba8e",
+    "encoder_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "case_ids": {
+      "train": [
+        "syn-ar-01",
+        "syn-ar-02",
+        "syn-ar-03",
+        "syn-ar-04",
+        "syn-ar-06",
+        "syn-ar-07",
+        "syn-ar-08",
+        "syn-ar-09",
+        "syn-ar-10",
+        "syn-fr-01",
+        "syn-fr-02",
+        "syn-fr-03",
+        "syn-fr-04",
+        "syn-fr-06",
+        "syn-fr-07",
+        "syn-fr-08",
+        "syn-fr-09",
+        "syn-fr-10",
+        "syn-en-01",
+        "syn-en-02",
+        "syn-en-04",
+        "syn-en-06",
+        "syn-en-07",
+        "syn-en-08",
+        "syn-en-09",
+        "syn-en-10",
+        "syn-mx-01",
+        "syn-mx-02",
+        "syn-mx-03",
+        "syn-mx-04",
+        "syn-mx-06",
+        "syn-mx-07",
+        "syn-mx-08",
+        "syn-mx-09",
+        "syn-mx-10",
+        "gemini-001-001",
+        "gemini-001-003",
+        "gemini-001-004",
+        "gemini-001-005",
+        "gemini-001-007",
+        "gemini-001-009",
+        "gemini-001-010",
+        "gemini-001-012",
+        "gemini-001-014",
+        "gemini-001-015",
+        "gemini-001-016",
+        "gemini-001-017",
+        "gemini-001-020",
+        "gemini-001-022",
+        "gemini-001-023",
+        "gemini-001-026",
+        "gemini-001-028",
+        "gemini-001-029",
+        "gemini-001-030",
+        "gemini-001-032",
+        "gemini-001-033",
+        "gemini-001-034",
+        "gemini-001-035",
+        "gemini-001-037",
+        "gemini-001-038",
+        "gemini-001-039",
+        "gemini-001-041",
+        "gemini-001-042",
+        "gemini-001-044",
+        "gemini-001-046",
+        "gemini-001-047",
+        "gemini-001-048",
+        "gemini-001-051",
+        "gemini-001-053",
+        "gemini-001-054",
+        "gemini-001-055",
+        "gemini-001-057",
+        "gemini-001-058",
+        "gemini-001-059",
+        "gemini-001-060",
+        "gemini-001-062",
+        "gemini-001-063",
+        "gemini-001-064",
+        "gemini-001-066",
+        "gemini-001-067",
+        "gemini-001-069",
+        "gemini-001-071",
+        "gemini-001-072",
+        "gemini-001-073",
+        "gemini-001-074",
+        "gemini-001-076",
+        "gemini-001-078",
+        "gemini-001-079",
+        "gemini-001-080",
+        "gemini-001-082",
+        "gemini-001-084",
+        "gemini-001-085",
+        "gemini-001-087",
+        "gemini-001-088",
+        "gemini-001-089",
+        "gemini-001-091",
+        "gemini-001-092",
+        "gemini-001-094",
+        "gemini-001-096",
+        "gemini-001-097",
+        "gemini-001-099",
+        "gemini-001-100",
+        "synthetic-002-001",
+        "synthetic-002-002",
+        "synthetic-002-003",
+        "synthetic-002-004",
+        "synthetic-002-005",
+        "synthetic-002-006",
+        "synthetic-002-007",
+        "synthetic-002-008",
+        "synthetic-002-009",
+        "synthetic-002-010",
+        "synthetic-002-011",
+        "synthetic-002-012",
+        "synthetic-002-017",
+        "synthetic-002-018",
+        "synthetic-002-019",
+        "synthetic-002-020",
+        "synthetic-002-021",
+        "synthetic-002-022",
+        "synthetic-002-023",
+        "synthetic-002-024",
+        "synthetic-002-025",
+        "synthetic-002-026",
+        "synthetic-002-027",
+        "synthetic-002-028",
+        "synthetic-002-033",
+        "synthetic-002-034",
+        "synthetic-002-035",
+        "synthetic-002-036",
+        "synthetic-002-037",
+        "synthetic-002-038",
+        "synthetic-002-039",
+        "synthetic-002-040",
+        "synthetic-002-041",
+        "synthetic-002-042",
+        "synthetic-002-043",
+        "synthetic-002-044",
+        "synthetic-002-049",
+        "synthetic-002-050",
+        "synthetic-002-051",
+        "synthetic-002-052",
+        "synthetic-002-053",
+        "synthetic-002-054",
+        "synthetic-002-055",
+        "synthetic-002-056",
+        "synthetic-002-061",
+        "synthetic-002-062",
+        "synthetic-002-063",
+        "synthetic-002-064",
+        "synthetic-002-065",
+        "synthetic-002-066",
+        "synthetic-002-067",
+        "synthetic-002-068",
+        "synthetic-002-069",
+        "synthetic-002-070",
+        "synthetic-002-071",
+        "synthetic-002-072",
+        "synthetic-002-073",
+        "synthetic-002-074",
+        "synthetic-002-075",
+        "synthetic-002-076",
+        "synthetic-002-081",
+        "synthetic-002-082",
+        "synthetic-002-083",
+        "synthetic-002-084",
+        "synthetic-002-085",
+        "synthetic-002-086",
+        "synthetic-002-087",
+        "synthetic-002-088",
+        "synthetic-002-089",
+        "synthetic-002-090",
+        "synthetic-002-091",
+        "synthetic-002-092",
+        "synthetic-002-101",
+        "synthetic-002-102",
+        "synthetic-002-103",
+        "synthetic-002-104",
+        "synthetic-002-105",
+        "synthetic-002-106",
+        "synthetic-002-107",
+        "synthetic-002-108",
+        "synthetic-002-109",
+        "synthetic-002-110",
+        "synthetic-002-111",
+        "synthetic-002-112",
+        "synthetic-002-113",
+        "synthetic-002-114",
+        "synthetic-002-115",
+        "synthetic-002-116",
+        "synthetic-002-117",
+        "synthetic-002-118",
+        "synthetic-002-119",
+        "synthetic-002-120",
+        "synthetic-002-121",
+        "synthetic-002-122",
+        "synthetic-002-123",
+        "synthetic-002-124",
+        "synthetic-002-129",
+        "synthetic-002-130",
+        "synthetic-002-131",
+        "synthetic-002-132",
+        "synthetic-002-133",
+        "synthetic-002-134",
+        "synthetic-002-135",
+        "synthetic-002-136",
+        "synthetic-002-145",
+        "synthetic-002-146",
+        "synthetic-002-147",
+        "synthetic-002-148"
+      ],
+      "validation": [
+        "syn-en-03",
+        "synthetic-002-013",
+        "synthetic-002-014",
+        "synthetic-002-015",
+        "synthetic-002-016",
+        "synthetic-002-029",
+        "synthetic-002-030",
+        "synthetic-002-031",
+        "synthetic-002-032",
+        "synthetic-002-045",
+        "synthetic-002-046",
+        "synthetic-002-047",
+        "synthetic-002-048",
+        "synthetic-002-057",
+        "synthetic-002-058",
+        "synthetic-002-059",
+        "synthetic-002-060",
+        "synthetic-002-077",
+        "synthetic-002-078",
+        "synthetic-002-079",
+        "synthetic-002-080",
+        "synthetic-002-093",
+        "synthetic-002-094",
+        "synthetic-002-095",
+        "synthetic-002-096",
+        "synthetic-002-097",
+        "synthetic-002-098",
+        "synthetic-002-099",
+        "synthetic-002-100",
+        "synthetic-002-125",
+        "synthetic-002-126",
+        "synthetic-002-127",
+        "synthetic-002-128",
+        "synthetic-002-137",
+        "synthetic-002-138",
+        "synthetic-002-139",
+        "synthetic-002-140",
+        "synthetic-002-141",
+        "synthetic-002-142",
+        "synthetic-002-143",
+        "synthetic-002-144",
+        "synthetic-002-149",
+        "synthetic-002-150",
+        "synthetic-002-151",
+        "synthetic-002-152",
+        "synthetic-002-153",
+        "synthetic-002-154",
+        "synthetic-002-155",
+        "synthetic-002-156",
+        "synthetic-002-157",
+        "synthetic-002-158",
+        "synthetic-002-159",
+        "synthetic-002-160"
+      ]
+    },
+    "shapes": {
+      "train": [210, 384],
+      "validation": [53, 384]
+    }
+  },
+  "truncated": {
+    "train": 0,
+    "validation": 0
+  }
+}

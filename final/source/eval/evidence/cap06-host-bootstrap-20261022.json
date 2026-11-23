@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-22",
+  "base_commit": "1a0c85a",
+  "scope": "Restricted immutable host inputs and explicit pre-loop owned startup API; no deployment or provider activation",
+  "source_hash_basis": "SHA256 of working-tree bytes verified offline on Windows",
+  "source_sha256": {
+    "deploy/host_config.py": "c177490d06ac06698b89a1ef62715d66fe3ca133b52a6187d2754631de6bea2b",
+    "deploy/host_bootstrap.py": "7839b7cb233e991b6fd8dcbca02a0d808ce92fe593532a6122e2dc0a72c46b41",
+    "agent/app.py": "2d69409c6f4723a2b7f1595e2832122981b9b95f7019c98ef5849ef5638da576",
+    "agent/storefront_service.py": "20e77fa75b2d0ad5e9a6087196bcbb682f4cf27d46f1852f78538fd007ad8ec0",
+    "agent/catalogue_turn.py": "7d5c6120e2be1264f9c7fe69e10151f1fcb8a56793041b1b85fe959161de134a",
+    "agent/tests/test_app_environment.py": "0047366fa252c5cbb9d4883fc1bf7fb0bb87b1d89c46f2cbdf48bd28a33723d8",
+    "eval/tests/test_host_config.py": "89233e5fa3fffb234b235caf6db96c4ebb72b0d2003d4344ec5225886fd07e31",
+    "eval/tests/test_host_bootstrap.py": "e0be725c8a390b252c1f89551a0a351bb0f22c9fbc3ce6d7672cec12353237af",
+    "eval/tests/test_release.py": "a9bcd47d5e001137d5f9826e35e17df3bce99942a7f2cb62a9fc126ebde21279"
+  },
+  "final_checks": {
+    "command": "python -X utf8 -m pytest agent/tests eval/tests/test_host_checks.py eval/tests/test_host_config.py eval/tests/test_host_bootstrap.py eval/tests/test_cloud_access.py eval/tests/test_waiting_signing.py eval/tests/test_release.py::test_built_release_is_self_contained_and_refuses_overwrite -q",
+    "passed": 936,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 145.06,
+    "includes": "All Agent safety/ownership/model/recovery plus host/config/bootstrap/access/browser and fresh self-contained release build",
+    "latest_env_bootstrap_focused_passed": 19,
+    "focused_duration_seconds": 9.41
+  },
+  "independent_review": {
+    "remaining_actionable_findings": 0,
+    "resolved_categories": [
+      "Explicit retrieval/service-mode still consumed ambient settings",
+      "Synchronous Confirmation transport still allowed environment proxy",
+      "Unresolved provider verification held lease actor lock and blocked pending renewals",
+      "Cancelled shutdown could close shared SDK before admission/lifecycle workers drained"
+    ],
+    "red_green_regressions_observed": true,
+    "earlier_broad_focused_passed": 86,
+    "earlier_duration_seconds": 25.09,
+    "focused_after_admission_close_fix_passed": 41,
+    "duration_seconds": 14.97,
+    "final_lifecycle_and_admission_shutdown_regressions_passed": 2,
+    "final_duration_seconds": 3.15
+  },
+  "verified_bounds": [
+    "Exact bounded JSON schema, duplicate/extra field refusal, immutable validated mappings and secret repr exclusion",
+    "POSIX reader metadata/parent validation and non-POSIX refusal; no production secret provisioning",
+    "Pre-loop factory rejects active loop and mismatched executing release root before SDK creation",
+    "Explicit environment avoids dotenv/local identity/ambient mode or ranking and does not mutate os.environ",
+    "Legacy lazy app attribute cached; importing module alone creates no default app/client",
+    "Private async identity and synchronous Confirmation disable environment proxy routing",
+    "Single GuardedClient, existing durable authority only and default unqualified provider blocks requests without inference charges",
+    "Shared one-flight1s provider gate outside lease actor; pending renewal and owned stop remain available",
+    "Final remote/local generation fences after provider awaits",
+    "Retained cancellation-resistant shutdown drains all shared SDK users before closing it once off-loop",
+    "Fresh general release contains host_config.py and host_bootstrap.py"
+  ],
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format:239files",
+    "pip check",
+    "git diff --check"
+  ],
+  "actual_aws_api_calls": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "production_keys_generated": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "remaining": [
+    "Real POSIX ownership/permissions/key provisioning and execution from actual installed release",
+    "Owner-approved launcher/systemd selection of explicit host API",
+    "Linux Lambda dependencies and approved reliable external observation delivery",
+    "Bedrock zero-quota blocker/actual qualification; no new pass format or fallback",
+    "Account-effective IAM/OAC/event eligibility, resource/cost/rollback approval and deployed acceptance"
+  ],
+  "limits": [
+    "Windows metadata fixtures/trusted private-reader seam do not establish Linux permission enforcement",
+    "Synthetic release tests patch private execution-root observation, not actual deployed execution",
+    "Default qualification is explicitly false and no successful model output is fabricated",
+    "Async cancellation cannot kill underlying synchronous I/O; retained drains await real completion",
+    "No current launcher, scheduler/topology, allowance cap, resource, upgrade or push change"
+  ]
+}

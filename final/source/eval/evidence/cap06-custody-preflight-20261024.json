@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "read-only-custody-and-accounting-preflight",
+  "source_commit": "4324110",
+  "status": "observed_not_migrated_or_runtime_authorized",
+  "read_only_protocol": {
+    "provider_metadata_gets": 1,
+    "fixed_endpoint": "https://openrouter.ai/api/v1/key",
+    "retries": 0,
+    "redirects": false,
+    "response_limit_bytes": 16384,
+    "total_timeout_seconds": 15,
+    "model_requests": 0,
+    "provider_or_key_mutations": false,
+    "actual_ledger_mutations": false,
+    "custody_copy_or_migration": false,
+    "new_allowance_authorized": false,
+    "sqlite": "mode=ro&immutable=1/query_only; no WAL/SHM/journal; stable SHA256 before/after; no runtime ledger constructors"
+  },
+  "key_observation": {
+    "cap_usd": "2.00",
+    "non_resetting": true,
+    "remaining_positive": true,
+    "exact_live_balance_retained_privately": true,
+    "key_bytes_or_digests_published": false,
+    "current_worktree_explicit_model": "google/gemini-3.5-flash-lite",
+    "canonical_checkout_model_is_older": true,
+    "local_configurations_have_same_key_in_memory": true,
+    "local_configuration_changed": false,
+    "historical_report_key_identity_cryptographically_established": false
+  },
+  "historical_ledger_observations": [
+    {
+      "report": "model-qualification-20261014T203454Z",
+      "database_sha256": "96229f7cdfbec8ecab7c450bc5d2f0bcb36d1b549d47c49cf3e1e10188839682",
+      "identity_matches_policy": true,
+      "version": 1,
+      "enabled": true,
+      "allowance_usd": "0.2403973",
+      "accounted_usd": "0.19968291",
+      "remaining_usd": "0.04071439",
+      "attempts": 156,
+      "unsettled": 0,
+      "held_usd": "0",
+      "sidecars_absent": true,
+      "unchanged": true
+    },
+    {
+      "report": "model-qualification-20261014T213739Z",
+      "database_sha256": "4df85c95f1d9bc6d793e0e6f754ca114e7c5b734b7e09338100c4dc8d1411da0",
+      "identity_matches_policy": true,
+      "version": 1,
+      "enabled": true,
+      "allowance_usd": "0.12",
+      "accounted_usd": "0.09501011",
+      "remaining_usd": "0.02498989",
+      "attempts": 72,
+      "unsettled": 0,
+      "held_usd": "0",
+      "sidecars_absent": true,
+      "unchanged": true
+    }
+  ],
+  "journal_inventory": {
+    "inputs_unchanged": 60,
+    "unique_attempts": 247,
+    "settled_attempts": 228,
+    "settled_usd": "0.294693020",
+    "unsettled_attempts": 19,
+    "conservatively_rounded_held_usd": "0.255886201",
+    "duplicate_measured_cost_receipts": 228,
+    "measured_receipts_added_as_new_charges": false,
+    "claims_or_cumulative_totals_added_as_charges": false,
+    "unknown_holds_refunded": false,
+    "conflicts": 0,
+    "provider_aggregate_exceeds_attributed_receipts": true,
+    "provider_aggregate_gap_is_not_assumed_zero": true,
+    "complete_key_history_attribution_established": false
+  },
+  "runtime_readiness": {
+    "maximum_reservation_usd": "0.083148800",
+    "both_historical_qualification_remainders_below_threshold": true,
+    "historical_remainders_are_runtime_grant": false,
+    "production_ledger_selected": false,
+    "actual_host_or_key_qualified": false,
+    "capacity_qualified": false
+  },
+  "private_receipt_sha256": {
+    "metadata_and_read_only_ledgers": "9add0685179d8c07fa3ada2601ee339af3fe6986b03e19678d78816d4b786a3c",
+    "accounting_inventory": "42d8b55e2c3e6d9c9b35414466ec2043951f6cb36ab29e306d31c3876631ea99",
+    "accounting_inventory_script": "8739935bf588d530ebc5603051a77fa886ee0d3d0762da03ba05b00c8514d675"
+  },
+  "remaining_actions": [
+    "Explicit authoritative runtime ledger, retained history/holds and finite new runtime spending authorization; no automatic reuse or initialization",
+    "Quiesced single-writer custody handoff to protected Agent files, independently pinned qualification and retirement of local active copies",
+    "Actual native host installation/security/UID/systemd/metadata/log/capacity acceptance and separately approved exact resource/cost/rollback stage"
+  ],
+  "external_effects": {
+    "resources_created": false,
+    "real_model_calls": 0,
+    "ledger_enable_reset_or_settlement": false,
+    "public_activation": false,
+    "push_or_merge": false
+  }
+}

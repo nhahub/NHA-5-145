@@ -1,0 +1,28 @@
+# Install once per clone:  python -m pre_commit install
+# The format hooks rewrite files; when one does, the commit stops so the fix can be staged.
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: ruff format (fixes files)
+        entry: ruff format
+        language: python
+        additional_dependencies: [ruff==0.12.8]
+        types: [python]
+      - id: ruff
+        name: ruff
+        entry: ruff check
+        language: python
+        additional_dependencies: [ruff==0.12.8]
+        types: [python]
+      - id: prettier
+        name: prettier (fixes files)
+        entry: pnpm exec prettier --write --ignore-unknown
+        language: system
+        types_or: [javascript, jsx, ts, tsx, json, yaml, markdown, css, html]
+      - id: eslint
+        name: eslint
+        entry: pnpm lint:ts
+        language: system
+        pass_filenames: false
+        types_or: [javascript, jsx, ts, tsx]

@@ -1,0 +1,53 @@
+{
+  "status": "reward_earned_trial_deleted",
+  "epoch": 1793275567.412661,
+  "reward_added_usd": 20,
+  "total_extra_rewards_earned_usd": 80,
+  "remaining_extra_reward_usd": 20,
+  "plan": "FREE",
+  "credits_observed": {
+    "amount": 179.74,
+    "unit": "USD"
+  },
+  "inventory": {
+    "databases": 0,
+    "snapshots": 0,
+    "backups": 0,
+    "subnetgroups": 0,
+    "securitygroups": 0,
+    "schedules": 0,
+    "cleanup_roles": 0,
+    "new_rds_service_roles": 0,
+    "active_ec2": 0,
+    "eips": 0
+  },
+  "project_host_stopped": true,
+  "live_model_posts": 0,
+  "activities": [
+    {
+      "title": "Use a foundation model in the Amazon Bedrock playground",
+      "status": "NOT_STARTED"
+    },
+    {
+      "title": "Create an Aurora or RDS database",
+      "status": "COMPLETED"
+    },
+    {
+      "title": "Create a web app using AWS Lambda",
+      "status": "COMPLETED"
+    },
+    {
+      "title": "Set up a cost budget using AWS Budgets",
+      "status": "COMPLETED"
+    },
+    {
+      "title": "Launch an instance using EC2",
+      "status": "COMPLETED"
+    }
+  ],
+  "started_epoch": 1793275083.8735125,
+  "closed_epoch": 1793275512.911742,
+  "local_tests_passed": 14,
+  "ceiling_usd": 1,
+  "cash_usd": 0
+}

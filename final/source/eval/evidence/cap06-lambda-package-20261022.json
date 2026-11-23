@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-22",
+  "status": "local-package-preparation-only",
+  "base_commit": "d221105",
+  "platform": "Windows Python 3.12.5",
+  "intended_runtime": "AWS Lambda Python 3.12 AL2023, architecture execution unverified",
+  "handler": "handler.handler",
+  "artifacts": {
+    "startup": {
+      "path": ".scratch/cap06-lambda-package/startup-20261022-final-v1.zip",
+      "sha256": "88c5f11d3e6770091146a196c4a3a58ece4774ce6a08b4c4a29b57dd25f65661",
+      "zip_bytes": 25886261,
+      "extracted_bytes": 25323479,
+      "files": 2379,
+      "manifest_sha256": "47db4e0fa116a9f6f9af796f541d83ef51d45f63fa3c96374cd1d388b1f36c54",
+      "omitted": ["jmespath-1.1.0.data/scripts/jp.py"],
+      "rebuild_identical": true,
+      "isolated_smoke": {
+        "fixed_role_delegation": true,
+        "isolated_import": true,
+        "platform": "win32",
+        "python": "3.12.5",
+        "role": "startup",
+        "sdk_creation_and_network_blocked": true,
+        "service_models_and_ca_present": true,
+        "versions": {
+          "anyio": "4.15.1",
+          "boto3": "1.43.115",
+          "botocore": "1.43.115",
+          "certifi": "2026.7.22",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.19",
+          "jmespath": "1.1.0",
+          "python-dateutil": "2.9.0.post0",
+          "s3transfer": "0.19.3",
+          "six": "1.17.0",
+          "typing-extensions": "4.16.0",
+          "urllib3": "2.8.0"
+        }
+      }
+    },
+    "controller": {
+      "path": ".scratch/cap06-lambda-package/controller-20261022-final-v1.zip",
+      "sha256": "e208482f62b7a3158766fe59d63be86c47b6e2cb21a9aa2a560b70c6f4248ad0",
+      "zip_bytes": 25886267,
+      "extracted_bytes": 25323485,
+      "files": 2379,
+      "manifest_sha256": "d7f588b94f15f9069b7169d3cf3c4d1562354acea83dd4d18744c1edf4ab144b",
+      "omitted": ["jmespath-1.1.0.data/scripts/jp.py"],
+      "rebuild_identical": true,
+      "isolated_smoke": {
+        "fixed_role_delegation": true,
+        "isolated_import": true,
+        "platform": "win32",
+        "python": "3.12.5",
+        "role": "controller",
+        "sdk_creation_and_network_blocked": true,
+        "service_models_and_ca_present": true,
+        "versions": {
+          "anyio": "4.15.1",
+          "boto3": "1.43.115",
+          "botocore": "1.43.115",
+          "certifi": "2026.7.22",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.19",
+          "jmespath": "1.1.0",
+          "python-dateutil": "2.9.0.post0",
+          "s3transfer": "0.19.3",
+          "six": "1.17.0",
+          "typing-extensions": "4.16.0",
+          "urllib3": "2.8.0"
+        }
+      }
+    }
+  },
+  "wheels": [
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "filename": "anyio-4.15.1-py3-none-any.whl",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101"
+    },
+    {
+      "name": "boto3",
+      "version": "1.43.115",
+      "filename": "boto3-1.43.115-py3-none-any.whl",
+      "sha256": "6667a0c21d48dc125dbba88444bc8a601ce881a99341a0e6169f9333898e620d"
+    },
+    {
+      "name": "botocore",
+      "version": "1.43.115",
+      "filename": "botocore-1.43.115-py3-none-any.whl",
+      "sha256": "9ceda640c868bc15f5399129e8cfdef8cbb4b350e8a99547c9b5f477cfb9619a"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "filename": "certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "filename": "h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "filename": "httpcore-1.0.9-py3-none-any.whl",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "filename": "httpx-0.28.1-py3-none-any.whl",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
+    },
+    {
+      "name": "idna",
+      "version": "3.19",
+      "filename": "idna-3.19-py3-none-any.whl",
+      "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
+    },
+    {
+      "name": "jmespath",
+      "version": "1.1.0",
+      "filename": "jmespath-1.1.0-py3-none-any.whl",
+      "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+    },
+    {
+      "name": "s3transfer",
+      "version": "0.19.3",
+      "filename": "s3transfer-0.19.3-py3-none-any.whl",
+      "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "filename": "urllib3-2.8.0-py3-none-any.whl",
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+    }
+  ],
+  "source_hash_basis": "Working-tree bytes used in Windows verification; Git line-ending conversion may change checkout bytes and subsequent archive digests.",
+  "input_sha256": {
+    "agent/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "agent/admission/__init__.py": "d3cd4d8432a1f753b9a80ee35b861c2b86eec5db403639019c1b3c22dee6e3e6",
+    "agent/admission/store.py": "80ebc7e7114b7776d8c217eb83fb6584fbb71dd14162b60039a3c753c6994ca8",
+    "agent/admission/dynamodb.py": "3f3492830fd53eaf87d484333e7a1f4327768a8600214e9f425d2dbea9244645",
+    "agent/lifecycle/__init__.py": "ae6c260f88250dea2dc7665f83cabdc742c7a68d0dc5211a8ca17572217ff2e2",
+    "agent/lifecycle/store.py": "287c4430db96fe2266b9b24d85378428330218d44e483d5c6d3c1dd1a31a7180",
+    "agent/lifecycle/dynamodb.py": "ff55c0d10b072f29a1f85eb8a019ac7b616bbe743b1d25092cb01cbc7cdc2542",
+    "agent/lifecycle/executor.py": "f33792521d055f3c33b89ddd0be7100c08fc4c2b3f4252bc4c2c15cd7da2bcf1",
+    "agent/lifecycle/controller.py": "da436829936651418a7daee6fab7ec52648605f7b7b0d07f05195bce173ab285",
+    "agent/lifecycle/readiness.py": "88d45bcf484d8d261e46744b8354ac12705553046b267f8c294a156cf38b7b73",
+    "agent/lifecycle/startup.py": "58ea354ea43670746ab7ec522e5fee33413ba74cb6eaa0e3729628dbf9e4c1c0",
+    "agent/lifecycle/lambda_runtime.py": "f8992b8b49fa77ac58288eafc8a9d0fe0024a9ea9b6a2fe9edc8a6ac035c5e9d",
+    "agent/lifecycle/lambda_entry.py": "7d3ed9ce875dc1947c65b82b8a30b5888bbfb7bfb46895659944691455e227a6",
+    "agent/lifecycle/waiting.html": "54d19da3948ac3176ea6a4887629804cd2ac54f2cf15116c5f330fd7c56ccd9b",
+    "deploy/lambda_package.py": "567b776ace4c194fb7704065f4d054d7cd37e32e94d770b0855020a620d6f3b4",
+    "deploy/lambda-wheels.json": "33f67afe3df803201a4093338b9c9f57818119256991ed69df27d3eeed73da6d",
+    "deploy/lambda-requirements.lock": "3ba878a0105283ab1bc646543a68c077eca9f71ecf78e3358695848e2f35b69a",
+    "eval/lambda_package_smoke.py": "971897fed75ca38b8e6add5b4db5ec1c02789628571d1537f51e34e4fc4a9f5a",
+    "agent/tests/test_lambda_entry.py": "18b0cc9f80194b547cbcdf8f533cb374dfdf043cc6c09a5917887b94f14c0f96",
+    "eval/tests/test_lambda_package.py": "b953641c3b2baa35c53a8dd8d40f06d15e9ca617e15e6e8133d8efc5a298fdaa",
+    "docs/cap06-lambda-package.md": "7517ed2557a048cb222e6aacf0cd1dda2bf507f8c90ad7e58caf97d0fd21e308",
+    "docs/research/2026-10-22-cap06-lambda-package-contract.md": "bf2298875416d0f62823a1bfda0678c95d33c1dbb0fcee89eee549e98907c4e6",
+    "docs/specs/2026-10-22-cap06-lambda-package.md": "75a9191dbb7f041ebb088502ef662043fd8b914a35e9aafe1eb789545c6a5b73",
+    "the execution plan": "f9864395b790a6d99c127ca3e5f161f5e5e2b6e06c5f628d73767c593aa59237"
+  },
+  "tests": {
+    "focused": {
+      "passed": 64,
+      "seconds": 3.76,
+      "log": "outputs/cap06-lambda-focused.log"
+    },
+    "affected_full": {
+      "passed": 1000,
+      "skipped": 0,
+      "seconds": 161.48,
+      "log": "outputs/cap06-lambda-full.log",
+      "coverage": "all Agent tests, package, host checks/config/bootstrap, cloud access, waiting signing and fresh general release build"
+    },
+    "independent_review": {
+      "findings": 0,
+      "focused_passed": 64,
+      "focused_seconds": 5.05,
+      "both_actual_role_builds_and_isolated_smokes_reproduced": true
+    },
+    "red_green": [
+      "entry missing module then32passed",
+      "package missing module then25passed",
+      "known JMESPath CLI refusal then explicit verified omission",
+      "manifest provenance mutation accepted then refused"
+    ]
+  },
+  "checks": [
+    "Ruff check and format244Pythonfiles",
+    "pip check",
+    "TypeScript ESLint",
+    "repository Prettier",
+    "git diff whitespace",
+    "offline pip hash/target constrained wheel acquisition"
+  ],
+  "acquisition": "Exact pinned official PyPI universal wheels, followed by offline --require-hashes --platform any --implementation py --python-version 3.12 --abi none validation; no package installation.",
+  "not_performed": [
+    "AL2023/Linux execution",
+    "AWS/model/real credential calls",
+    "upload/resource/key/config/DNS/TLS provisioning",
+    "runtime activation",
+    "scheduler selection or topology/spend increase",
+    "push or merge"
+  ],
+  "open_gates": [
+    "reliable approved external lifecycle observations",
+    "intended Linux/architecture execution",
+    "host launcher/POSIX/config/key provisioning",
+    "effective IAM/OAC/events/account eligibility",
+    "resource/cost/rollback approval",
+    "Bedrock nonzero quota and qualification",
+    "deployed cloud acceptance"
+  ],
+  "constraints_preserved": [
+    "Free plan",
+    "eu-north-1",
+    "zero cash",
+    "no provider fallback or gate waiver",
+    "no new diagnostic authorization",
+    "held inference reservations unchanged",
+    "no uncertain Action replay"
+  ]
+}

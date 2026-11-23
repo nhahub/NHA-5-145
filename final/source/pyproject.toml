@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shopping-copilot-agent"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "boto3==1.43.115",
+  "fastapi==0.116.1",
+  "httpx==0.28.1",
+  "python-dotenv==1.2.3",
+  "uvicorn[standard]==0.35.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jsonschema==4.26.0",
+  "playwright==1.63.0",
+  "pre-commit==4.3.0",
+  "pytest==8.4.1",
+  "ruff==0.12.8",
+]
+
+[tool.setuptools.packages.find]
+include = ["agent*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra -p no:cacheprovider"
+filterwarnings = [
+  "ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning:starlette.testclient",
+]
+testpaths = ["agent/tests", "eval/tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

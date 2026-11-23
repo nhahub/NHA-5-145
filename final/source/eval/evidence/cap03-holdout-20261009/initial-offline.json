@@ -1,0 +1,4928 @@
+{
+  "binding": {
+    "release_sha256": "7b651e376c2bfcb158c6782c3870332f17cf393959bfa65a066cf4705ef1fbac",
+    "protocol_sha256": "bb23656f8d8319ef624b2fca5a61003b6e273e00335fd4bc49e5a36efba572ef",
+    "records_sha256": "bb44a01e07ebe12a52b3226378d72764f7b3764318174760e62badce4e89301c",
+    "review_sha256": "e0e35a8518253424c136b34fc34567ce175e0a55669d7defb4acfcf9d138a54c",
+    "schema_sha256": "5b255bc9eab4a63d581df414724354cfd254d7cbe59659f8ec9a15bc5fef999f",
+    "overlap_sha256": "dfe457460aaa369341760629cdc7da3b9cffe95a1be5b39fe77a6e95e85c39de",
+    "artifact_hashes": {
+      "outputs/model-comparison/classical-001/lr.joblib": "aa2d8f90f90cbdaafbf0b12e1bc9be165391071dea6fb80f4363d16be6ba84f4",
+      "eval/evidence/cap03-comparison-20261007/classical.json": "24de6713ad89047565ed60875e5605ba3c265db91bdc460b5ef7240b3dca3c2b",
+      "outputs/model-comparison/classical-001/svm.joblib": "ef14bc6b30f34d270942dfa076920c02c57b6add3e3aadc72eddaf02010d59b8",
+      "outputs/model-comparison/classical-001/nb.joblib": "95e2d894f78a5189791828ed52950808fd7f868e9fd4417382a07d9e0e1f91f0",
+      "outputs/model-comparison/classical-001/rf.joblib": "0398518dca6722c5647e64b779dca396b21f70748b29b7cc280591b55961529e",
+      "outputs/model-comparison/classical-001/xgb.joblib": "3a37b6d0700aeadadd09aeb8be9bee1ece6e85c7b163be8302a1bd072f91f147",
+      "outputs/model-comparison/embeddings-001/embedding_lr.joblib": "334e222791b1f70e131b840810881f5b2cb3ef972097f9db96d2e6d1e77a8ecb",
+      "eval/evidence/cap03-comparison-20261007/embeddings.json": "b1423c671b0f1101cc66b82996b789cf20cdf3260346dfca28da3f9dae78cc8b",
+      "outputs/model-comparison/embeddings-001/embedding_mlp.joblib": "8d85a41e6cad7e6dac20059b1d25213d0e0cf17148b00e67621893799e4ec3ed"
+    },
+    "source_hashes": {
+      "eval/holdout_eval.py": "b5ec1d4f056f9ad2776210a67cd95903ef10a352d27d6878164a21118bbbcd3d",
+      "eval/holdout_release.py": "601308e2b0708416276516a353c5dd978d0389dc160c4fbed6997e222f0e4c18",
+      "eval/comparison_encoder.py": "63835b1f82ef63490483cc57f42b58126580d265a5ce282b902eee16cb75e201",
+      "agent/llm/openrouter.py": "cecf3b1dfb32932a70c4dc8b62c24131671b78b8a3fc0cff81eb3bb764933e6a",
+      "agent/llm/config.py": "870927a63f3fb0a94bb725fb625bc3c5d966a5962ef0a9fcb79a92432bb667e2",
+      "agent/llm/contract.py": "2a98196de76cb18a349549a2db1a1696e397a3a26714d4df5d45a638d7157bd2",
+      "agent/llm/provider_schema.py": "9029695f068d6689e25c82b8c5ae3eb17358d56489a5b68b983df4db207d0dcc"
+    }
+  },
+  "environment": {
+    "python": "3.12.5",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "cpu_count": 12,
+    "threads": 4,
+    "device": "cpu",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0",
+      "xgboost": "3.4.1",
+      "torch": "2.14.1+cu130",
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.19.0",
+      "huggingface-hub": "1.33.0"
+    }
+  },
+  "families": {
+    "lr": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8869999999205902
+        },
+        "holdout-20261009-002": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.0445000000345317
+        },
+        "holdout-20261009-003": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2212999999974272
+        },
+        "holdout-20261009-004": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.980400000003101
+        },
+        "holdout-20261009-005": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.0813999999754742
+        },
+        "holdout-20261009-006": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8831000000100175
+        },
+        "holdout-20261009-007": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.1680999999725827
+        },
+        "holdout-20261009-008": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.1607000000140033
+        },
+        "holdout-20261009-009": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8140999999568521
+        },
+        "holdout-20261009-010": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.170999999999367
+        },
+        "holdout-20261009-011": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.0764999999537395
+        },
+        "holdout-20261009-012": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9092999999893436
+        },
+        "holdout-20261009-013": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8609999999862339
+        },
+        "holdout-20261009-014": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8090000000038344
+        },
+        "holdout-20261009-015": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.2553999999909138
+        },
+        "holdout-20261009-016": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8645000000342407
+        },
+        "holdout-20261009-017": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1220000000093933
+        },
+        "holdout-20261009-018": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8630999999468258
+        },
+        "holdout-20261009-019": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8434999999735737
+        },
+        "holdout-20261009-020": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8178999999017833
+        },
+        "holdout-20261009-021": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.933000000031825
+        },
+        "holdout-20261009-022": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1600999999927808
+        },
+        "holdout-20261009-023": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.832500000001346
+        },
+        "holdout-20261009-024": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8613999999624866
+        },
+        "holdout-20261009-025": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7160000000112632
+        },
+        "holdout-20261009-026": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7547000000158732
+        },
+        "holdout-20261009-027": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 0.8758999999827211
+        },
+        "holdout-20261009-028": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7805999999845881
+        },
+        "holdout-20261009-029": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7614999999532301
+        },
+        "holdout-20261009-030": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.2613000000101238
+        },
+        "holdout-20261009-031": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8036000000402055
+        },
+        "holdout-20261009-032": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7679000000280212
+        },
+        "holdout-20261009-033": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7755000000315704
+        },
+        "holdout-20261009-034": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.048099999934493
+        },
+        "holdout-20261009-035": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8214000000634769
+        },
+        "holdout-20261009-036": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.2140999999701307
+        },
+        "holdout-20261009-037": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8712000000059561
+        },
+        "holdout-20261009-038": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8265999999821361
+        },
+        "holdout-20261009-039": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8368999999674998
+        },
+        "holdout-20261009-040": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.7611999999426189
+        },
+        "holdout-20261009-041": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.7756999999628533
+        },
+        "holdout-20261009-042": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.2330000000702057
+        },
+        "holdout-20261009-043": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8069000000432425
+        },
+        "holdout-20261009-044": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.2622000000419575
+        },
+        "holdout-20261009-045": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.0561000000279819
+        },
+        "holdout-20261009-046": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.797799999986637
+        },
+        "holdout-20261009-047": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.8143999999674634
+        },
+        "holdout-20261009-048": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.8128000000624525
+        },
+        "holdout-20261009-049": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0545000000092841
+        },
+        "holdout-20261009-050": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8804999999938445
+        },
+        "holdout-20261009-051": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0108000000172979
+        },
+        "holdout-20261009-052": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.9979999999814027
+        },
+        "holdout-20261009-053": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.9258000000045286
+        },
+        "holdout-20261009-054": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.9891999999354084
+        },
+        "holdout-20261009-055": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.0472999999819876
+        },
+        "holdout-20261009-056": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8318999999801235
+        },
+        "holdout-20261009-057": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.0577000000466796
+        },
+        "holdout-20261009-058": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8035999999265186
+        },
+        "holdout-20261009-059": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.5038000000231477
+        },
+        "holdout-20261009-060": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0954000000538144
+        },
+        "holdout-20261009-061": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.12309999997251
+        },
+        "holdout-20261009-062": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8344999999962965
+        },
+        "holdout-20261009-063": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9971000000632557
+        },
+        "holdout-20261009-064": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.114400000005844
+        },
+        "holdout-20261009-065": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.215099999967606
+        },
+        "holdout-20261009-066": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8685000000241416
+        },
+        "holdout-20261009-067": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.0432999999920867
+        },
+        "holdout-20261009-068": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.8017000000108965
+        },
+        "holdout-20261009-069": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.9456000000227505
+        },
+        "holdout-20261009-070": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.9460999999646447
+        },
+        "holdout-20261009-071": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9868999999298467
+        },
+        "holdout-20261009-072": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0273000000324828
+        },
+        "holdout-20261009-073": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0601999999835243
+        },
+        "holdout-20261009-074": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9819000000561573
+        },
+        "holdout-20261009-075": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8232000000134576
+        },
+        "holdout-20261009-076": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.9238000000095781
+        },
+        "holdout-20261009-077": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0456999999632899
+        },
+        "holdout-20261009-078": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2321999998903266
+        },
+        "holdout-20261009-079": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8244000000559026
+        },
+        "holdout-20261009-080": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8057999999664389
+        },
+        "holdout-20261009-081": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8510999999771229
+        },
+        "holdout-20261009-082": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7857000000512926
+        },
+        "holdout-20261009-083": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7823999999345688
+        },
+        "holdout-20261009-084": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7758999998941363
+        },
+        "holdout-20261009-085": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.9720000000470463
+        },
+        "holdout-20261009-086": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.2391000000206986
+        },
+        "holdout-20261009-087": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.7401999999956388
+        },
+        "holdout-20261009-088": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.0177999999996246
+        },
+        "holdout-20261009-089": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.066300000047704
+        },
+        "holdout-20261009-090": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.168399999983194
+        },
+        "holdout-20261009-091": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1038999999755106
+        },
+        "holdout-20261009-092": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.7767000000740154
+        },
+        "holdout-20261009-093": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 1.0745999999244304
+        },
+        "holdout-20261009-094": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.0596000000759886
+        },
+        "holdout-20261009-095": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.128300000004856
+        },
+        "holdout-20261009-096": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.0839000000260057
+        },
+        "holdout-20261009-097": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8090999999694759
+        },
+        "holdout-20261009-098": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 0.8202000000210319
+        },
+        "holdout-20261009-099": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8249999999634383
+        },
+        "holdout-20261009-100": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8221000000503409
+        },
+        "holdout-20261009-101": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9804999999687425
+        },
+        "holdout-20261009-102": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 1.063700000031531
+        },
+        "holdout-20261009-103": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.1498000000074171
+        },
+        "holdout-20261009-104": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 0.799199999960365
+        },
+        "holdout-20261009-105": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.7755000000315704
+        },
+        "holdout-20261009-106": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.6975999999431224
+        },
+        "holdout-20261009-107": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.5865000000303553
+        },
+        "holdout-20261009-108": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.7900000000518048
+        },
+        "holdout-20261009-109": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.4303000000381871
+        },
+        "holdout-20261009-110": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.8296999999402033
+        },
+        "holdout-20261009-111": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.0730000000194195
+        },
+        "holdout-20261009-112": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.8153999999649386
+        },
+        "holdout-20261009-113": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8319000000938104
+        },
+        "holdout-20261009-114": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.2214999999287102
+        },
+        "holdout-20261009-115": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8067999999639142
+        },
+        "holdout-20261009-116": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.7996999999022592
+        },
+        "holdout-20261009-117": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8224000000609522
+        },
+        "holdout-20261009-118": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.0205999999470805
+        },
+        "holdout-20261009-119": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.8026000000427302
+        },
+        "holdout-20261009-120": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.7807000000639164
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:45:55.435646+00:00",
+          "load_ms": 1464.3204999999853,
+          "warmup_ms": 16.71869999995579
+        }
+      ]
+    },
+    "svm": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7258999999066873
+        },
+        "holdout-20261009-002": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.6958000000167885
+        },
+        "holdout-20261009-003": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.942399999985355
+        },
+        "holdout-20261009-004": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7438999999749285
+        },
+        "holdout-20261009-005": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.762900000040645
+        },
+        "holdout-20261009-006": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9821999999530817
+        },
+        "holdout-20261009-007": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.7402000001093256
+        },
+        "holdout-20261009-008": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.4532000000144762
+        },
+        "holdout-20261009-009": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8820000000469008
+        },
+        "holdout-20261009-010": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.2619000000313463
+        },
+        "holdout-20261009-011": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9314000000131273
+        },
+        "holdout-20261009-012": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.1872000000039407
+        },
+        "holdout-20261009-013": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.9284000000207016
+        },
+        "holdout-20261009-014": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.789800000006835
+        },
+        "holdout-20261009-015": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.0760999999774867
+        },
+        "holdout-20261009-016": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8550000000013824
+        },
+        "holdout-20261009-017": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.973299999941446
+        },
+        "holdout-20261009-018": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.020499999981439
+        },
+        "holdout-20261009-019": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.735299999973904
+        },
+        "holdout-20261009-020": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.695199999995566
+        },
+        "holdout-20261009-021": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1124000000108936
+        },
+        "holdout-20261009-022": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.6882999999788808
+        },
+        "holdout-20261009-023": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.6624999999758074
+        },
+        "holdout-20261009-024": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.9355999999343112
+        },
+        "holdout-20261009-025": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7036999999172622
+        },
+        "holdout-20261009-026": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0594999999966603
+        },
+        "holdout-20261009-027": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7748000000447064
+        },
+        "holdout-20261009-028": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.9646999999404215
+        },
+        "holdout-20261009-029": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0253000000375323
+        },
+        "holdout-20261009-030": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7152000000587577
+        },
+        "holdout-20261009-031": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8631000000605127
+        },
+        "holdout-20261009-032": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7029000000784436
+        },
+        "holdout-20261009-033": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7299000000102751
+        },
+        "holdout-20261009-034": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7357999999157983
+        },
+        "holdout-20261009-035": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8040999999820997
+        },
+        "holdout-20261009-036": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.806100000090737
+        },
+        "holdout-20261009-037": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.883199999975659
+        },
+        "holdout-20261009-038": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7108999999445587
+        },
+        "holdout-20261009-039": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.0088999999879888
+        },
+        "holdout-20261009-040": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.6946000000880304
+        },
+        "holdout-20261009-041": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.7262000000309854
+        },
+        "holdout-20261009-042": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.1974000000236629
+        },
+        "holdout-20261009-043": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.0036999999556429
+        },
+        "holdout-20261009-044": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.70770000002085
+        },
+        "holdout-20261009-045": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.0543000000780012
+        },
+        "holdout-20261009-046": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.6768999999167136
+        },
+        "holdout-20261009-047": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.0959999999613501
+        },
+        "holdout-20261009-048": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8069000000432425
+        },
+        "holdout-20261009-049": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.1334000000715605
+        },
+        "holdout-20261009-050": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8874999999761712
+        },
+        "holdout-20261009-051": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.682199999914701
+        },
+        "holdout-20261009-052": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8142000000361804
+        },
+        "holdout-20261009-053": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7003999999142252
+        },
+        "holdout-20261009-054": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7336999999552063
+        },
+        "holdout-20261009-055": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8815000001050066
+        },
+        "holdout-20261009-056": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8551000000807107
+        },
+        "holdout-20261009-057": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7031000000097265
+        },
+        "holdout-20261009-058": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.6980000000567088
+        },
+        "holdout-20261009-059": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.0346000000254207
+        },
+        "holdout-20261009-060": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.6893000000900429
+        },
+        "holdout-20261009-061": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9242000000995176
+        },
+        "holdout-20261009-062": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8949999999003921
+        },
+        "holdout-20261009-063": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9674000000359229
+        },
+        "holdout-20261009-064": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.7123999999976149
+        },
+        "holdout-20261009-065": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.6879999999682695
+        },
+        "holdout-20261009-066": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.7349999999632928
+        },
+        "holdout-20261009-067": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7606000000350832
+        },
+        "holdout-20261009-068": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8381000000099448
+        },
+        "holdout-20261009-069": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.837700000033692
+        },
+        "holdout-20261009-070": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.7173999999849912
+        },
+        "holdout-20261009-071": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.0406999999759137
+        },
+        "holdout-20261009-072": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0730000000194195
+        },
+        "holdout-20261009-073": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.6896999999526088
+        },
+        "holdout-20261009-074": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7524000000103115
+        },
+        "holdout-20261009-075": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8431999999629625
+        },
+        "holdout-20261009-076": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7064000000127635
+        },
+        "holdout-20261009-077": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.9979999999814027
+        },
+        "holdout-20261009-078": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.9898000000703178
+        },
+        "holdout-20261009-079": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0134999999991123
+        },
+        "holdout-20261009-080": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7026999999197869
+        },
+        "holdout-20261009-081": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.1418999999932566
+        },
+        "holdout-20261009-082": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7334000000582819
+        },
+        "holdout-20261009-083": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7170000000087384
+        },
+        "holdout-20261009-084": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8740000000670989
+        },
+        "holdout-20261009-085": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.6790999999566338
+        },
+        "holdout-20261009-086": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.998100000060731
+        },
+        "holdout-20261009-087": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.778199999899698
+        },
+        "holdout-20261009-088": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.7027999999991152
+        },
+        "holdout-20261009-089": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.7226999999829786
+        },
+        "holdout-20261009-090": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7232000000385597
+        },
+        "holdout-20261009-091": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.7691000000704662
+        },
+        "holdout-20261009-092": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.7349999999632928
+        },
+        "holdout-20261009-093": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9997999999313834
+        },
+        "holdout-20261009-094": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.6845999999995911
+        },
+        "holdout-20261009-095": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.7687999999461681
+        },
+        "holdout-20261009-096": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.94950000004701
+        },
+        "holdout-20261009-097": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.1280999999598862
+        },
+        "holdout-20261009-098": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 0.8414000000129818
+        },
+        "holdout-20261009-099": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2027000000216503
+        },
+        "holdout-20261009-100": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.7244000000810047
+        },
+        "holdout-20261009-101": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.666599999907703
+        },
+        "holdout-20261009-102": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1363999999502994
+        },
+        "holdout-20261009-103": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.309699999978875
+        },
+        "holdout-20261009-104": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.7944000000179585
+        },
+        "holdout-20261009-105": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.6802000000334374
+        },
+        "holdout-20261009-106": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8030999999846244
+        },
+        "holdout-20261009-107": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.6940999999187625
+        },
+        "holdout-20261009-108": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.7385000000112996
+        },
+        "holdout-20261009-109": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7042999999384847
+        },
+        "holdout-20261009-110": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.6789000000253509
+        },
+        "holdout-20261009-111": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.6871000000501226
+        },
+        "holdout-20261009-112": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.6929999999556458
+        },
+        "holdout-20261009-113": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.7656000000224594
+        },
+        "holdout-20261009-114": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0606999999254185
+        },
+        "holdout-20261009-115": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.696799999900577
+        },
+        "holdout-20261009-116": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.7174999999506326
+        },
+        "holdout-20261009-117": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1541000000079293
+        },
+        "holdout-20261009-118": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.9072000000287517
+        },
+        "holdout-20261009-119": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.7057000000258995
+        },
+        "holdout-20261009-120": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.6974000000354863
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:45:57.987703+00:00",
+          "load_ms": 9.13869999999406,
+          "warmup_ms": 0.6967000000486223
+        }
+      ]
+    },
+    "nb": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8424999999760985
+        },
+        "holdout-20261009-002": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.1030000000573636
+        },
+        "holdout-20261009-003": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8233999999447406
+        },
+        "holdout-20261009-004": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8860000000368018
+        },
+        "holdout-20261009-005": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.2660999999525302
+        },
+        "holdout-20261009-006": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.3245999999753622
+        },
+        "holdout-20261009-007": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2561000000914646
+        },
+        "holdout-20261009-008": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8745999999746346
+        },
+        "holdout-20261009-009": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8859000000711603
+        },
+        "holdout-20261009-010": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.0351999999329564
+        },
+        "holdout-20261009-011": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.8761999999933323
+        },
+        "holdout-20261009-012": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.843600000052902
+        },
+        "holdout-20261009-013": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.0198999999602165
+        },
+        "holdout-20261009-014": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.4499999999770807
+        },
+        "holdout-20261009-015": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.2418999999681546
+        },
+        "holdout-20261009-016": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.0730000000194195
+        },
+        "holdout-20261009-017": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.1041000000204804
+        },
+        "holdout-20261009-018": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8861999999680847
+        },
+        "holdout-20261009-019": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.2719000000060987
+        },
+        "holdout-20261009-020": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1627000000089538
+        },
+        "holdout-20261009-021": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.827299999969
+        },
+        "holdout-20261009-022": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.0548000000198954
+        },
+        "holdout-20261009-023": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.9227000000464614
+        },
+        "holdout-20261009-024": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.0988999999881344
+        },
+        "holdout-20261009-025": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0386999999809632
+        },
+        "holdout-20261009-026": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.1201999999457257
+        },
+        "holdout-20261009-027": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8084999999482534
+        },
+        "holdout-20261009-028": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.8672000000160551
+        },
+        "holdout-20261009-029": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.04810000004818
+        },
+        "holdout-20261009-030": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.1282000000392145
+        },
+        "holdout-20261009-031": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.8445000000847358
+        },
+        "holdout-20261009-032": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.9459000000333617
+        },
+        "holdout-20261009-033": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0225000000900764
+        },
+        "holdout-20261009-034": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.901600000020153
+        },
+        "holdout-20261009-035": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8155999998962216
+        },
+        "holdout-20261009-036": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0942999999770109
+        },
+        "holdout-20261009-037": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8637999999336898
+        },
+        "holdout-20261009-038": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.1823999999478474
+        },
+        "holdout-20261009-039": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8894000000054803
+        },
+        "holdout-20261009-040": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.0141999999859763
+        },
+        "holdout-20261009-041": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8073000000194952
+        },
+        "holdout-20261009-042": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.8341000000200438
+        },
+        "holdout-20261009-043": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9774999999763168
+        },
+        "holdout-20261009-044": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8953999999903317
+        },
+        "holdout-20261009-045": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8080999999720007
+        },
+        "holdout-20261009-046": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.905400000078771
+        },
+        "holdout-20261009-047": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.2166999999863037
+        },
+        "holdout-20261009-048": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8375999999543637
+        },
+        "holdout-20261009-049": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8870999999999185
+        },
+        "holdout-20261009-050": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.122900000041227
+        },
+        "holdout-20261009-051": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8978999999271764
+        },
+        "holdout-20261009-052": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9037999999463864
+        },
+        "holdout-20261009-053": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.027299999918796
+        },
+        "holdout-20261009-054": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8341000000200438
+        },
+        "holdout-20261009-055": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.2468999999555308
+        },
+        "holdout-20261009-056": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.9357000000136395
+        },
+        "holdout-20261009-057": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8377999999993335
+        },
+        "holdout-20261009-058": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 0.8047000000033222
+        },
+        "holdout-20261009-059": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.17950000003475
+        },
+        "holdout-20261009-060": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0214999999789143
+        },
+        "holdout-20261009-061": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.2135999999145497
+        },
+        "holdout-20261009-062": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8210999999391788
+        },
+        "holdout-20261009-063": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.9813999999769294
+        },
+        "holdout-20261009-064": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.1698000000706088
+        },
+        "holdout-20261009-065": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8667000000741609
+        },
+        "holdout-20261009-066": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.0173000000577304
+        },
+        "holdout-20261009-067": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.937500000077307
+        },
+        "holdout-20261009-068": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.3709999999491629
+        },
+        "holdout-20261009-069": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8275999999796113
+        },
+        "holdout-20261009-070": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.1088999999628868
+        },
+        "holdout-20261009-071": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 0.9357000000136395
+        },
+        "holdout-20261009-072": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.8582000000387779
+        },
+        "holdout-20261009-073": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.846900000055939
+        },
+        "holdout-20261009-074": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2969000000566666
+        },
+        "holdout-20261009-075": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.1161000001038701
+        },
+        "holdout-20261009-076": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.9444000000939923
+        },
+        "holdout-20261009-077": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8705000000190921
+        },
+        "holdout-20261009-078": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0293000000274333
+        },
+        "holdout-20261009-079": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.9564000000636952
+        },
+        "holdout-20261009-080": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8947000000034677
+        },
+        "holdout-20261009-081": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8680999999342021
+        },
+        "holdout-20261009-082": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.0833000000047832
+        },
+        "holdout-20261009-083": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8473999999978332
+        },
+        "holdout-20261009-084": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.1870999999246123
+        },
+        "holdout-20261009-085": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.1018000000149186
+        },
+        "holdout-20261009-086": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.231599999982791
+        },
+        "holdout-20261009-087": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.9551000000556087
+        },
+        "holdout-20261009-088": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8477000000084445
+        },
+        "holdout-20261009-089": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.1974999999893043
+        },
+        "holdout-20261009-090": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.1200000000144428
+        },
+        "holdout-20261009-091": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.1921000000256754
+        },
+        "holdout-20261009-092": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8948999999347507
+        },
+        "holdout-20261009-093": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9218999999802691
+        },
+        "holdout-20261009-094": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.125899999919966
+        },
+        "holdout-20261009-095": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8328999999775988
+        },
+        "holdout-20261009-096": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8572000000413027
+        },
+        "holdout-20261009-097": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.077099999974962
+        },
+        "holdout-20261009-098": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 1.116300000035153
+        },
+        "holdout-20261009-099": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9467999999515087
+        },
+        "holdout-20261009-100": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 0.9707000000389598
+        },
+        "holdout-20261009-101": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 0.8111999999300679
+        },
+        "holdout-20261009-102": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8553000000119937
+        },
+        "holdout-20261009-103": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.8873000000448883
+        },
+        "holdout-20261009-104": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 1.0696999999026957
+        },
+        "holdout-20261009-105": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.1675999999170017
+        },
+        "holdout-20261009-106": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8510999999771229
+        },
+        "holdout-20261009-107": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8090000000038344
+        },
+        "holdout-20261009-108": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8212999999841486
+        },
+        "holdout-20261009-109": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.0988999999881344
+        },
+        "holdout-20261009-110": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.029199999948105
+        },
+        "holdout-20261009-111": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.0293999999930747
+        },
+        "holdout-20261009-112": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8704000000534506
+        },
+        "holdout-20261009-113": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.1326000000053682
+        },
+        "holdout-20261009-114": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8300000000645014
+        },
+        "holdout-20261009-115": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2123999999857915
+        },
+        "holdout-20261009-116": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 0.8229999999684878
+        },
+        "holdout-20261009-117": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 0.8490999999821724
+        },
+        "holdout-20261009-118": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 0.8762999999589738
+        },
+        "holdout-20261009-119": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 0.8576999999831969
+        },
+        "holdout-20261009-120": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 0.8800000000519503
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:45:59.311840+00:00",
+          "load_ms": 19.23490000001493,
+          "warmup_ms": 0.665700000013203
+        }
+      ]
+    },
+    "rf": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.772200000029443
+        },
+        "holdout-20261009-002": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.088199999937387
+        },
+        "holdout-20261009-003": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.685999999997875
+        },
+        "holdout-20261009-004": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 23.822999999993044
+        },
+        "holdout-20261009-005": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 25.013500000000022
+        },
+        "holdout-20261009-006": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.405200000046534
+        },
+        "holdout-20261009-007": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 23.98479999999381
+        },
+        "holdout-20261009-008": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 23.883600000090155
+        },
+        "holdout-20261009-009": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 24.29019999999582
+        },
+        "holdout-20261009-010": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 25.25290000005498
+        },
+        "holdout-20261009-011": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.540699999988647
+        },
+        "holdout-20261009-012": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.086099999976796
+        },
+        "holdout-20261009-013": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.817400000074485
+        },
+        "holdout-20261009-014": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.24949999999626
+        },
+        "holdout-20261009-015": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.451900000030946
+        },
+        "holdout-20261009-016": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.508400000058828
+        },
+        "holdout-20261009-017": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.347400000010566
+        },
+        "holdout-20261009-018": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 23.92510000004222
+        },
+        "holdout-20261009-019": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.969199999986813
+        },
+        "holdout-20261009-020": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 24.091800000064723
+        },
+        "holdout-20261009-021": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.326799999926152
+        },
+        "holdout-20261009-022": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.29580000000442
+        },
+        "holdout-20261009-023": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 24.34229999994386
+        },
+        "holdout-20261009-024": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 23.51690000000417
+        },
+        "holdout-20261009-025": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 25.166199999944183
+        },
+        "holdout-20261009-026": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 25.001699999961602
+        },
+        "holdout-20261009-027": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 24.558100000035665
+        },
+        "holdout-20261009-028": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.32299999998122
+        },
+        "holdout-20261009-029": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 24.225500000056854
+        },
+        "holdout-20261009-030": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 24.488199999950666
+        },
+        "holdout-20261009-031": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.021599999969112
+        },
+        "holdout-20261009-032": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 23.653600000102415
+        },
+        "holdout-20261009-033": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.299699999914992
+        },
+        "holdout-20261009-034": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.7309999999743
+        },
+        "holdout-20261009-035": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.651999999946383
+        },
+        "holdout-20261009-036": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.723600000015722
+        },
+        "holdout-20261009-037": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 24.08709999997427
+        },
+        "holdout-20261009-038": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 24.24919999998565
+        },
+        "holdout-20261009-039": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 25.00559999998586
+        },
+        "holdout-20261009-040": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 25.00150000003032
+        },
+        "holdout-20261009-041": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.751700000024357
+        },
+        "holdout-20261009-042": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 24.62520000005952
+        },
+        "holdout-20261009-043": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 23.828600000001643
+        },
+        "holdout-20261009-044": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 24.31709999996201
+        },
+        "holdout-20261009-045": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.16029999994862
+        },
+        "holdout-20261009-046": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 23.626700000022538
+        },
+        "holdout-20261009-047": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 24.137999999993554
+        },
+        "holdout-20261009-048": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 23.736299999995936
+        },
+        "holdout-20261009-049": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.663299999929222
+        },
+        "holdout-20261009-050": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 24.46980000001986
+        },
+        "holdout-20261009-051": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.9033000000054
+        },
+        "holdout-20261009-052": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.742500000025757
+        },
+        "holdout-20261009-053": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.42180000002736
+        },
+        "holdout-20261009-054": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 23.848100000009254
+        },
+        "holdout-20261009-055": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.71970000010515
+        },
+        "holdout-20261009-056": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.096799999938412
+        },
+        "holdout-20261009-057": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 23.881599999981518
+        },
+        "holdout-20261009-058": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 23.86320000005071
+        },
+        "holdout-20261009-059": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 35.65719999994599
+        },
+        "holdout-20261009-060": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.104300000090007
+        },
+        "holdout-20261009-061": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.586599999906866
+        },
+        "holdout-20261009-062": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.608000000057473
+        },
+        "holdout-20261009-063": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.144099999944046
+        },
+        "holdout-20261009-064": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 24.427800000012212
+        },
+        "holdout-20261009-065": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.21100000003662
+        },
+        "holdout-20261009-066": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 23.80920000007336
+        },
+        "holdout-20261009-067": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.268600000027618
+        },
+        "holdout-20261009-068": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.713999999903535
+        },
+        "holdout-20261009-069": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 23.824699999977383
+        },
+        "holdout-20261009-070": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 23.88070000006337
+        },
+        "holdout-20261009-071": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.25560000006044
+        },
+        "holdout-20261009-072": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.097800000049574
+        },
+        "holdout-20261009-073": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 23.9037000000053
+        },
+        "holdout-20261009-074": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.376399999937348
+        },
+        "holdout-20261009-075": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 24.234000000092237
+        },
+        "holdout-20261009-076": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 23.90760000002956
+        },
+        "holdout-20261009-077": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 24.385499999993954
+        },
+        "holdout-20261009-078": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.179800000069918
+        },
+        "holdout-20261009-079": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.873600000001716
+        },
+        "holdout-20261009-080": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.28629999997156
+        },
+        "holdout-20261009-081": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.838500000010754
+        },
+        "holdout-20261009-082": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 24.246900000093774
+        },
+        "holdout-20261009-083": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 24.38520000009703
+        },
+        "holdout-20261009-084": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 23.849599999948623
+        },
+        "holdout-20261009-085": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.210699999912322
+        },
+        "holdout-20261009-086": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.941100000001825
+        },
+        "holdout-20261009-087": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.985700000025645
+        },
+        "holdout-20261009-088": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.03100000003633
+        },
+        "holdout-20261009-089": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.24350000001141
+        },
+        "holdout-20261009-090": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.64759999998023
+        },
+        "holdout-20261009-091": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 24.419600000101127
+        },
+        "holdout-20261009-092": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 23.54200000002038
+        },
+        "holdout-20261009-093": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.014699999952427
+        },
+        "holdout-20261009-094": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.34989999994741
+        },
+        "holdout-20261009-095": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 23.79689999997936
+        },
+        "holdout-20261009-096": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 24.41199999998389
+        },
+        "holdout-20261009-097": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.64980000002015
+        },
+        "holdout-20261009-098": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 24.429999999938445
+        },
+        "holdout-20261009-099": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.874100000057297
+        },
+        "holdout-20261009-100": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.46169999996073
+        },
+        "holdout-20261009-101": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.425500000030297
+        },
+        "holdout-20261009-102": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 23.7505999999712
+        },
+        "holdout-20261009-103": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 24.714300000027833
+        },
+        "holdout-20261009-104": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.237099999936618
+        },
+        "holdout-20261009-105": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 25.345300000026327
+        },
+        "holdout-20261009-106": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 35.43979999994917
+        },
+        "holdout-20261009-107": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 23.79320000000007
+        },
+        "holdout-20261009-108": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 25.069999999914216
+        },
+        "holdout-20261009-109": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 35.778499999992164
+        },
+        "holdout-20261009-110": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 23.980000000051405
+        },
+        "holdout-20261009-111": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 24.27290000002813
+        },
+        "holdout-20261009-112": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.604500000009466
+        },
+        "holdout-20261009-113": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.830299999962335
+        },
+        "holdout-20261009-114": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 24.057800000036877
+        },
+        "holdout-20261009-115": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 23.531599999955688
+        },
+        "holdout-20261009-116": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 24.05660000010812
+        },
+        "holdout-20261009-117": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.317000000110056
+        },
+        "holdout-20261009-118": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 24.52959999993709
+        },
+        "holdout-20261009-119": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 23.79740000003494
+        },
+        "holdout-20261009-120": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 24.349000000029264
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:46:00.668675+00:00",
+          "load_ms": 429.6005999999579,
+          "warmup_ms": 27.71830000006048
+        }
+      ]
+    },
+    "xgb": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.6616999999996551
+        },
+        "holdout-20261009-002": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.6022999999449894
+        },
+        "holdout-20261009-003": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.5479999999570282
+        },
+        "holdout-20261009-004": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.5253000000257089
+        },
+        "holdout-20261009-005": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.253600000040933
+        },
+        "holdout-20261009-006": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.301699999999073
+        },
+        "holdout-20261009-007": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.5065000000049622
+        },
+        "holdout-20261009-008": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.4235000001008302
+        },
+        "holdout-20261009-009": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.4850999999680425
+        },
+        "holdout-20261009-010": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.5518999999812877
+        },
+        "holdout-20261009-011": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.555499999994936
+        },
+        "holdout-20261009-012": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.6031000000111817
+        },
+        "holdout-20261009-013": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.2553000000252723
+        },
+        "holdout-20261009-014": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.5360000001010121
+        },
+        "holdout-20261009-015": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.2818000000152097
+        },
+        "holdout-20261009-016": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.4988000000357715
+        },
+        "holdout-20261009-017": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.5142999999397944
+        },
+        "holdout-20261009-018": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.562600000056591
+        },
+        "holdout-20261009-019": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.298399999996036
+        },
+        "holdout-20261009-020": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.3867000000118423
+        },
+        "holdout-20261009-021": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.488499999936721
+        },
+        "holdout-20261009-022": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.4770000000225991
+        },
+        "holdout-20261009-023": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.3761999999815089
+        },
+        "holdout-20261009-024": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.4908999999079242
+        },
+        "holdout-20261009-025": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.6345000000228538
+        },
+        "holdout-20261009-026": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.5097000000423577
+        },
+        "holdout-20261009-027": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.3514999999415522
+        },
+        "holdout-20261009-028": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.3232999999672757
+        },
+        "holdout-20261009-029": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.7752999999629537
+        },
+        "holdout-20261009-030": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.7068000000790562
+        },
+        "holdout-20261009-031": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.8053999999665393
+        },
+        "holdout-20261009-032": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.5862999999853855
+        },
+        "holdout-20261009-033": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.3909999998986677
+        },
+        "holdout-20261009-034": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.5776000000187196
+        },
+        "holdout-20261009-035": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.8244000000322558
+        },
+        "holdout-20261009-036": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.2566000000333588
+        },
+        "holdout-20261009-037": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2041999999610198
+        },
+        "holdout-20261009-038": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.4313000000356624
+        },
+        "holdout-20261009-039": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2639999999919382
+        },
+        "holdout-20261009-040": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.560000000040418
+        },
+        "holdout-20261009-041": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.4859999999998763
+        },
+        "holdout-20261009-042": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.485500000057982
+        },
+        "holdout-20261009-043": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.5099999999392821
+        },
+        "holdout-20261009-044": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.2324000000489832
+        },
+        "holdout-20261009-045": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.2928999999530788
+        },
+        "holdout-20261009-046": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.410700000064935
+        },
+        "holdout-20261009-047": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.5304000000924134
+        },
+        "holdout-20261009-048": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.2467000000242479
+        },
+        "holdout-20261009-049": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.5505000000075597
+        },
+        "holdout-20261009-050": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.4675999999553824
+        },
+        "holdout-20261009-051": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.3945000000603613
+        },
+        "holdout-20261009-052": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2796999999409309
+        },
+        "holdout-20261009-053": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.362299999982497
+        },
+        "holdout-20261009-054": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.278800000022784
+        },
+        "holdout-20261009-055": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.4730000000326982
+        },
+        "holdout-20261009-056": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.5390999999453925
+        },
+        "holdout-20261009-057": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.270299999987401
+        },
+        "holdout-20261009-058": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.5657000000146581
+        },
+        "holdout-20261009-059": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.2729999999692154
+        },
+        "holdout-20261009-060": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2565000000677173
+        },
+        "holdout-20261009-061": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 2.3684999999886713
+        },
+        "holdout-20261009-062": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.4754000000039014
+        },
+        "holdout-20261009-063": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.4222999999446984
+        },
+        "holdout-20261009-064": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.6663000000107786
+        },
+        "holdout-20261009-065": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.282800000012685
+        },
+        "holdout-20261009-066": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.3539999999920838
+        },
+        "holdout-20261009-067": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.8928000000641987
+        },
+        "holdout-20261009-068": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.2765999999828637
+        },
+        "holdout-20261009-069": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.5273000000206594
+        },
+        "holdout-20261009-070": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.6730999999481355
+        },
+        "holdout-20261009-071": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.3598000000456523
+        },
+        "holdout-20261009-072": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2621999999282707
+        },
+        "holdout-20261009-073": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.2268000000403845
+        },
+        "holdout-20261009-074": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.2960999999904743
+        },
+        "holdout-20261009-075": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.4084000000593733
+        },
+        "holdout-20261009-076": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2653999999656662
+        },
+        "holdout-20261009-077": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.4590999999199994
+        },
+        "holdout-20261009-078": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2566000000333588
+        },
+        "holdout-20261009-079": {
+          "status": "complete",
+          "prediction": "mutate",
+          "failure_category": null,
+          "latency_ms": 1.5861000000541026
+        },
+        "holdout-20261009-080": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2712000000192347
+        },
+        "holdout-20261009-081": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.5528000000131215
+        },
+        "holdout-20261009-082": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.473199999963981
+        },
+        "holdout-20261009-083": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2973999999985608
+        },
+        "holdout-20261009-084": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.2391999999863401
+        },
+        "holdout-20261009-085": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.7258000000310858
+        },
+        "holdout-20261009-086": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.4202999999497479
+        },
+        "holdout-20261009-087": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.305500000057691
+        },
+        "holdout-20261009-088": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.5571999999792752
+        },
+        "holdout-20261009-089": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.5234999999620413
+        },
+        "holdout-20261009-090": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.3020999999753258
+        },
+        "holdout-20261009-091": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.5504000000419182
+        },
+        "holdout-20261009-092": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.4872000000423213
+        },
+        "holdout-20261009-093": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.9112999999606473
+        },
+        "holdout-20261009-094": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.500999999962005
+        },
+        "holdout-20261009-095": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.7518999999310836
+        },
+        "holdout-20261009-096": {
+          "status": "complete",
+          "prediction": "navigate",
+          "failure_category": null,
+          "latency_ms": 1.2586000000283093
+        },
+        "holdout-20261009-097": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.3412000000698754
+        },
+        "holdout-20261009-098": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.412100000038663
+        },
+        "holdout-20261009-099": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.2510999999904016
+        },
+        "holdout-20261009-100": {
+          "status": "complete",
+          "prediction": "off_topic",
+          "failure_category": null,
+          "latency_ms": 1.4022999999951935
+        },
+        "holdout-20261009-101": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2247000000797925
+        },
+        "holdout-20261009-102": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.4333999999962543
+        },
+        "holdout-20261009-103": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.4841000000842541
+        },
+        "holdout-20261009-104": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.5184000000090236
+        },
+        "holdout-20261009-105": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.2521999999535183
+        },
+        "holdout-20261009-106": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.5012000000069747
+        },
+        "holdout-20261009-107": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.3594000000693995
+        },
+        "holdout-20261009-108": {
+          "status": "complete",
+          "prediction": "help",
+          "failure_category": null,
+          "latency_ms": 1.2506000000485074
+        },
+        "holdout-20261009-109": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.8029000000296946
+        },
+        "holdout-20261009-110": {
+          "status": "complete",
+          "prediction": "unsupported",
+          "failure_category": null,
+          "latency_ms": 1.3245999999753622
+        },
+        "holdout-20261009-111": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.5508999999838124
+        },
+        "holdout-20261009-112": {
+          "status": "complete",
+          "prediction": "advice",
+          "failure_category": null,
+          "latency_ms": 1.6680999999607593
+        },
+        "holdout-20261009-113": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.5353000000004613
+        },
+        "holdout-20261009-114": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.4730999999983396
+        },
+        "holdout-20261009-115": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.216800000065632
+        },
+        "holdout-20261009-116": {
+          "status": "complete",
+          "prediction": "open_product",
+          "failure_category": null,
+          "latency_ms": 1.472700000022087
+        },
+        "holdout-20261009-117": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.3853000000381144
+        },
+        "holdout-20261009-118": {
+          "status": "complete",
+          "prediction": "find_products",
+          "failure_category": null,
+          "latency_ms": 1.3238000000228567
+        },
+        "holdout-20261009-119": {
+          "status": "complete",
+          "prediction": "locate",
+          "failure_category": null,
+          "latency_ms": 1.213699999993878
+        },
+        "holdout-20261009-120": {
+          "status": "complete",
+          "prediction": "cart_edit",
+          "failure_category": null,
+          "latency_ms": 1.5951999999970212
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:46:05.521644+00:00",
+          "load_ms": 575.6013000000166,
+          "warmup_ms": 9.464699999966797
+        }
+      ]
+    },
+    "embedding_lr": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-002": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-003": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-004": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-005": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-006": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-007": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-008": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-009": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-010": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-011": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-012": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-013": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-014": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-015": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-016": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-017": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-018": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-019": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-020": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-021": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-022": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-023": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-024": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-025": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-026": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-027": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-028": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-029": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-030": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-031": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-032": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-033": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-034": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-035": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-036": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-037": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-038": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-039": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-040": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-041": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-042": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-043": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-044": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-045": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-046": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-047": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-048": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-049": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-050": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-051": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-052": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-053": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-054": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-055": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-056": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-057": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-058": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-059": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-060": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-061": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-062": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-063": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-064": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-065": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-066": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-067": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-068": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-069": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-070": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-071": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-072": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-073": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-074": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-075": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-076": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-077": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-078": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-079": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-080": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-081": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-082": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-083": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-084": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-085": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-086": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-087": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-088": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-089": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-090": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-091": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-092": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-093": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-094": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-095": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-096": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-097": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-098": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-099": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-100": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-101": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-102": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-103": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-104": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-105": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-106": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-107": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-108": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-109": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-110": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-111": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-112": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-113": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-114": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-115": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-116": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-117": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-118": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-119": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-120": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:46:08.004052+00:00",
+          "failure_category": "IncompleteSnapshotError",
+          "elapsed_ms": 32342.383600000063
+        }
+      ]
+    },
+    "embedding_mlp": {
+      "attempts": {
+        "holdout-20261009-001": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-002": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-003": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-004": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-005": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-006": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-007": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-008": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-009": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-010": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-011": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-012": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-013": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-014": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-015": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-016": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-017": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-018": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-019": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-020": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-021": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-022": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-023": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-024": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-025": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-026": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-027": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-028": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-029": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-030": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-031": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-032": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-033": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-034": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-035": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-036": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-037": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-038": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-039": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-040": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-041": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-042": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-043": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-044": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-045": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-046": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-047": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-048": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-049": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-050": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-051": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-052": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-053": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-054": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-055": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-056": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-057": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-058": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-059": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-060": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-061": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-062": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-063": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-064": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-065": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-066": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-067": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-068": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-069": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-070": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-071": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-072": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-073": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-074": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-075": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-076": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-077": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-078": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-079": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-080": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-081": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-082": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-083": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-084": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-085": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-086": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-087": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-088": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-089": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-090": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-091": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-092": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-093": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-094": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-095": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-096": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-097": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-098": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-099": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-100": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-101": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-102": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-103": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-104": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-105": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-106": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-107": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-108": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-109": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-110": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-111": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-112": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-113": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-114": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-115": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-116": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-117": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-118": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-119": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        },
+        "holdout-20261009-120": {
+          "status": "startup_failure",
+          "prediction": "__failure__",
+          "failure_category": "startup_failure"
+        }
+      },
+      "startups": [
+        {
+          "started_at": "2026-10-09T09:46:40.355454+00:00",
+          "failure_category": "IncompleteSnapshotError",
+          "elapsed_ms": 22.38709999994626
+        }
+      ]
+    }
+  }
+}

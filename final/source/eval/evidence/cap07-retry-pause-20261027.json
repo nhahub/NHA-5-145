@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "owner_requested_pause": true,
+  "status": "paused_after_safe_teardown",
+  "phase_reached": "teardown",
+  "failure": {
+    "phase": "isolation",
+    "category": "RuntimeError",
+    "detail": "SSH barrier_probe refused; exact private output retained"
+  },
+  "single_start_used": true,
+  "reboot_used": false,
+  "boot_done": true,
+  "log_fixtures_passed": true,
+  "role_network_probe_passed": false,
+  "provider_custody_uploaded": false,
+  "live_model_posts": 0,
+  "protected_operation_pointer": ".scratch/cap07-controlled-host-preparation/retry-operation.txt",
+  "storage_retained": [
+    "original encrypted20GiBroot",
+    "existing small on-demand control table"
+  ],
+  "resume_requires": "Read checkpoint and private failure receipts; do not restart or reset prior operation automatically",
+  "safe_state": {
+    "original_stopped": true,
+    "public_ip_absent": true,
+    "operation_eips": 0,
+    "live_model_posts": 0,
+    "custody_uploaded": false,
+    "epoch": 1793133586.161568
+  }
+}

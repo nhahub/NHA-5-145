@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:shopping-copilot:development-records:v2",
+  "title": "CAP-02 synthetic development batch, not frozen release",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "record_format_version",
+      "template_only",
+      "eligible_for_evaluation",
+      "case_id",
+      "dataset_version",
+      "provenance",
+      "language_group",
+      "script",
+      "scenario_tags",
+      "input",
+      "expected",
+      "grouping",
+      "comparison",
+      "annotation"
+    ],
+    "properties": {
+      "record_format_version": {
+        "const": 2
+      },
+      "template_only": {
+        "const": false
+      },
+      "eligible_for_evaluation": {
+        "const": false
+      },
+      "case_id": {
+        "type": "string"
+      },
+      "dataset_version": {
+        "const": "capstone-v1-draft"
+      },
+      "provenance": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_category",
+          "source_reference",
+          "author_id",
+          "created_on",
+          "permission_reference",
+          "prior_exposure"
+        ],
+        "properties": {
+          "source_category": {
+            "const": "synthetic"
+          },
+          "source_reference": {
+            "type": "string"
+          },
+          "author_id": {
+            "type": "string"
+          },
+          "created_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "permission_reference": {
+            "type": "string"
+          },
+          "prior_exposure": {
+            "const": "exposed"
+          }
+        }
+      },
+      "language_group": {
+        "enum": ["egyptian_arabic", "franco_arabic", "english", "mixed"]
+      },
+      "script": {
+        "enum": ["arabic", "latin", "mixed"]
+      },
+      "scenario_tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "input": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "message",
+          "followup_turns",
+          "sanitized_context_reference",
+          "context_sha256",
+          "requires_context"
+        ],
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "followup_turns": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "sanitized_context_reference": {
+            "type": ["string", "null"]
+          },
+          "context_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "requires_context": {
+            "type": "boolean"
+          }
+        }
+      },
+      "expected": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "intent",
+          "constraints",
+          "needs_clarification",
+          "clarification_fields",
+          "acceptable_targets",
+          "quantity_mode",
+          "quantity",
+          "cart_operation",
+          "mutation_kind",
+          "catalogue_requirements",
+          "semantic_notes"
+        ],
+        "properties": {
+          "intent": {
+            "enum": [
+              "advice",
+              "find_products",
+              "locate",
+              "navigate",
+              "open_product",
+              "mutate",
+              "cart_edit",
+              "help",
+              "off_topic",
+              "unsupported"
+            ]
+          },
+          "constraints": {
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "description": "Catalogue category key. Required for a completed find_products decision, including browsing a section or filtering by product_type. Resolve from the request and catalogue categories; if genuinely ambiguous, set needs_clarification=true and missing_fields=['category'].",
+                "title": "Category"
+              },
+              "query": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Query"
+              },
+              "product_type": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Product Type"
+              },
+              "min_price": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/IntentMoney"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null
+              },
+              "max_price": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/IntentMoney"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null
+              },
+              "size": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Size"
+              },
+              "color": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Color"
+              },
+              "availability": {
+                "anyOf": [
+                  {
+                    "enum": ["available", "unavailable"],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Availability"
+              },
+              "sort": {
+                "anyOf": [
+                  {
+                    "enum": ["cheapest", "newest"],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Sort"
+              },
+              "target": {
+                "anyOf": [
+                  {
+                    "enum": ["cart", "orders", "checkout", "account"],
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null,
+                "title": "Target"
+              }
+            },
+            "title": "IntentConstraints",
+            "type": "object"
+          },
+          "needs_clarification": {
+            "type": "boolean"
+          },
+          "clarification_fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "acceptable_targets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "quantity_mode": {
+            "enum": ["set", "increase", "decrease", null]
+          },
+          "quantity": {
+            "type": ["number", "null"]
+          },
+          "cart_operation": {
+            "enum": ["add", "quantity", "remove", "undo", null]
+          },
+          "mutation_kind": {
+            "enum": ["clear_cart", "submit_checkout", null]
+          },
+          "catalogue_requirements": {
+            "type": "array",
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "excluded": {
+                  "default": false,
+                  "title": "Excluded",
+                  "type": "boolean"
+                },
+                "kind": {
+                  "enum": ["feature", "suitable_for"],
+                  "title": "Kind",
+                  "type": "string"
+                },
+                "value": {
+                  "title": "Value",
+                  "type": "string"
+                },
+                "source": {
+                  "title": "Source",
+                  "type": "string"
+                }
+              },
+              "required": ["kind", "value", "source"],
+              "title": "CatalogueRequirement",
+              "type": "object"
+            }
+          },
+          "semantic_notes": {
+            "type": "string"
+          }
+        }
+      },
+      "grouping": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "paraphrase_group_id",
+          "conversation_group_id",
+          "split",
+          "duplicate_review"
+        ],
+        "properties": {
+          "paraphrase_group_id": {
+            "type": "string"
+          },
+          "conversation_group_id": {
+            "type": "string"
+          },
+          "split": {
+            "type": "null"
+          },
+          "duplicate_review": {
+            "const": "pending_semantic_review"
+          }
+        }
+      },
+      "comparison": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["intent_only_eligible", "eligibility_reason"],
+        "properties": {
+          "intent_only_eligible": {
+            "type": "boolean"
+          },
+          "eligibility_reason": {
+            "type": "string"
+          }
+        }
+      },
+      "annotation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "annotator_id",
+          "reviewer_id",
+          "status",
+          "disagreements",
+          "resolution"
+        ],
+        "properties": {
+          "annotator_id": {
+            "type": "string"
+          },
+          "reviewer_id": {
+            "type": "null"
+          },
+          "status": {
+            "const": "draft_unreviewed"
+          },
+          "disagreements": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "resolution": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "IntentMoney": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "title": "Amount",
+          "type": "string"
+        },
+        "currency": {
+          "pattern": "^[A-Z]{3}$",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": ["amount", "currency"],
+      "title": "IntentMoney",
+      "type": "object"
+    }
+  }
+}

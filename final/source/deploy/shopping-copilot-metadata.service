@@ -1,0 +1,28 @@
+[Unit]
+Description=Shopping Copilot metadata credential boundary
+After=network.target
+PartOf=shopping-copilot-host.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+WorkingDirectory=/opt/shopping-copilot/current
+ExecStart=/opt/shopping-copilot/python/bin/python -B -m deploy.host_metadata --config /etc/shopping-copilot/metadata.json
+RemainAfterExit=yes
+TimeoutStartSec=15
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectProc=invisible
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+CapabilityBoundingSet=CAP_NET_ADMIN
+RestrictAddressFamilies=AF_NETLINK
+LimitNOFILE=256
+TasksMax=8
+MemoryMax=128M
+StandardOutput=null
+StandardError=null

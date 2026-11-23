@@ -1,0 +1,103 @@
+{
+  "split_strategy_version": 1,
+  "dataset_version": "capstone-v1-draft",
+  "status": "proposal_only_pending_label_and_duplicate_review",
+  "frozen": false,
+  "batch_reference": "eval/datasets/capstone-v1/development/synthetic-batch-001.json",
+  "unit": "connected_components_of_paraphrase_and_conversation_groups",
+  "proposed_membership": {
+    "train": {
+      "paraphrase_group_ids": [
+        "family-bag-no-leather",
+        "family-cart-nav",
+        "family-clear-cart",
+        "family-delivery-scheduling",
+        "family-formal-shirt-page",
+        "family-help-capabilities",
+        "family-locate-checkout",
+        "family-orders-nav",
+        "family-outfit-colour",
+        "family-runner-add",
+        "family-runner-quantity",
+        "family-running-no-leather",
+        "family-shirt-quantity",
+        "family-shirt-remove-variant",
+        "family-submit-checkout",
+        "family-tshirt-budget-correction",
+        "family-undo-removal"
+      ],
+      "case_ids": [
+        "syn-ar-01",
+        "syn-ar-02",
+        "syn-ar-04",
+        "syn-ar-05",
+        "syn-ar-06",
+        "syn-ar-07",
+        "syn-ar-08",
+        "syn-ar-09",
+        "syn-fr-01",
+        "syn-fr-04",
+        "syn-fr-05",
+        "syn-fr-06",
+        "syn-fr-07",
+        "syn-fr-08",
+        "syn-fr-09",
+        "syn-fr-10",
+        "syn-en-01",
+        "syn-en-03",
+        "syn-en-04",
+        "syn-en-05",
+        "syn-en-06",
+        "syn-en-07",
+        "syn-en-09",
+        "syn-mx-01",
+        "syn-mx-03",
+        "syn-mx-04",
+        "syn-mx-05",
+        "syn-mx-06",
+        "syn-mx-07",
+        "syn-mx-08",
+        "syn-mx-09",
+        "syn-mx-10"
+      ]
+    },
+    "validation": {
+      "paraphrase_group_ids": [
+        "family-account-nav",
+        "family-installments",
+        "family-nonshopping-writing",
+        "family-shirt-budget",
+        "family-shoe-comfort",
+        "family-shoe-comparison"
+      ],
+      "case_ids": [
+        "syn-ar-03",
+        "syn-ar-10",
+        "syn-fr-02",
+        "syn-fr-03",
+        "syn-en-02",
+        "syn-en-08",
+        "syn-en-10",
+        "syn-mx-02"
+      ]
+    },
+    "unseen_test": {
+      "case_ids": [],
+      "case_count": 0,
+      "status": "unavailable_no_independently_sealed_cases"
+    }
+  },
+  "rules": {
+    "never_put_exposed_or_synthetic_batch_cases_into_unseen": true,
+    "all_connected_groups_stay_together": true,
+    "fit_vocabulary_and_idf_on_train_only": true,
+    "validation_for_selection_not_unseen_claim": true,
+    "release_splits_unchanged_until_review": true
+  },
+  "limitations": [
+    "32/8 development proposal, not a balanced or representative evaluation.",
+    "Several labels have insufficient support; expand data before meaningful ten-class benchmarking.",
+    "All content is exposed and language-model-generated; same-author draft labels can share model bias.",
+    "Additional near-duplicate review can merge groups and change counts; record before candidate runs."
+  ]
+}

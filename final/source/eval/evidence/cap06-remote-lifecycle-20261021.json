@@ -1,0 +1,60 @@
+{
+  "v": 1,
+  "date": "2026-10-21",
+  "base_commit": "15406ba",
+  "scope": "Offline DynamoDB lifecycle decisions and durable command handoff; no executor or public integration",
+  "source_sha256": {
+    "agent/lifecycle/dynamodb.py": "ae869c6bdf833c138b43b9d503f676f57a167b159fbfd7c6864e6cb9a6142409",
+    "agent/tests/test_lifecycle_dynamodb.py": "cfbc312a2df5595ec3a27c5abc64c30d54b07ccaa4688ec18270c81bb54fbd5b"
+  },
+  "final_checks": {
+    "passed": 139,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 58.83,
+    "remote_lifecycle_cases": 40,
+    "includes": "remote/local invitations and lifecycle, HTTP admission/model boundaries, inference allowance/runtime, fresh release build"
+  },
+  "independent_review": {
+    "findings_initial": 1,
+    "finding": "Idle unhealthy drain could reopen admission",
+    "regression_red_observed": true,
+    "fix": "Persist and validate health independently of drain state",
+    "resolved": true,
+    "independent_tests_passed": 39,
+    "skipped": 0
+  },
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format",
+    "pip check",
+    "git diff --check"
+  ],
+  "offline_backend": "Existing pinned Moto5.2.4; explicit dummy Boto3 credentials, intercepted in process",
+  "aws_api_calls": 0,
+  "ec2_commands": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "limits": {
+    "idle_seconds": 3600,
+    "start_deadline_seconds": 300,
+    "startup_grace_seconds": 120,
+    "drain_seconds": 5,
+    "lease_seconds": 45,
+    "maximum_work_leases": 128,
+    "cooldown_seconds": 60,
+    "stop_completion_seconds": 120,
+    "maximum_command_records": 1
+  },
+  "limitations": [
+    "No real EC2 executor/command delivery; database generation is not an EC2-enforced fence.",
+    "Claimed/uncertain commands lock recovery; no automatic unlock procedure.",
+    "No production HTTP/Lambda/OAC/rate-lane/IAM/async-host integration.",
+    "Real AWS conflicts, permissions, durability, latency, costs and public acceptance unverified.",
+    "Bedrock zero-quota and existing deployment gates remain open."
+  ]
+}

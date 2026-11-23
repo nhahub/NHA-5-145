@@ -1,0 +1,2425 @@
+{
+  "status": "development_component_graph_not_frozen_or_allocated",
+  "unseen_count": 0,
+  "source_files": [
+    {
+      "path": "eval/datasets/capstone-v1/development/synthetic-batch-001.json",
+      "sha256_normalized_lf": "dffc979ffb0949cb88ddf8ff7a9b12242416ca327c78e238125b365ab12aadf4"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/gemini-batch-001.annotated.json",
+      "sha256_normalized_lf": "ce20143c19499143ee658af18d4edad421aea3e41cb67141ceb455dfe9dcec49"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/synthetic-batch-002.json",
+      "sha256_normalized_lf": "a09c36f800a721d8df0a78fa59e01a6b687b7a9427dd3e83adca1d9a82f9930c"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/combined-group-map.json",
+      "sha256_normalized_lf": "5c0f17ee84a22e49d0a0dd3acde7f5d0817fad33c6ffbd9ab16deb837b426bba"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/batch-002-families.json",
+      "sha256_normalized_lf": "8651ff5b9653b5b6aa3909c7487784761a6e33584586937693617e56a947f51a"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/batch-002-overlap-review.json",
+      "sha256_normalized_lf": "d0b40d8aa4d8281d54110ba39ae4748d623c817ddd019a267d7ab58fe8e67555"
+    }
+  ],
+  "inherited_relation_map": "eval/datasets/capstone-v1/development/combined-group-map.json",
+  "added_relation_ledger": "eval/datasets/capstone-v1/development/batch-002-overlap-review.json",
+  "components": [
+    {
+      "component_id": "expanded-component-001",
+      "case_ids": [
+        "gemini-001-001",
+        "gemini-001-002",
+        "gemini-001-003",
+        "gemini-001-004",
+        "gemini-001-005",
+        "gemini-001-006",
+        "gemini-001-007",
+        "gemini-001-008",
+        "gemini-001-009",
+        "gemini-001-010",
+        "gemini-001-011",
+        "gemini-001-012",
+        "gemini-001-013",
+        "gemini-001-014",
+        "gemini-001-017",
+        "gemini-001-018",
+        "gemini-001-019",
+        "gemini-001-020",
+        "gemini-001-021",
+        "gemini-001-022",
+        "gemini-001-023",
+        "gemini-001-024",
+        "gemini-001-025",
+        "gemini-001-026",
+        "gemini-001-027",
+        "gemini-001-028",
+        "gemini-001-029",
+        "gemini-001-030",
+        "gemini-001-031",
+        "gemini-001-032",
+        "gemini-001-033",
+        "gemini-001-034",
+        "gemini-001-035",
+        "gemini-001-036",
+        "gemini-001-039",
+        "gemini-001-040",
+        "gemini-001-041",
+        "gemini-001-042",
+        "gemini-001-043",
+        "gemini-001-048",
+        "gemini-001-049",
+        "gemini-001-050",
+        "gemini-001-051",
+        "gemini-001-052",
+        "gemini-001-053",
+        "gemini-001-054",
+        "gemini-001-055",
+        "gemini-001-056",
+        "gemini-001-057",
+        "gemini-001-058",
+        "gemini-001-059",
+        "gemini-001-060",
+        "gemini-001-061",
+        "gemini-001-064",
+        "gemini-001-065",
+        "gemini-001-066",
+        "gemini-001-067",
+        "gemini-001-068",
+        "gemini-001-069",
+        "gemini-001-070",
+        "gemini-001-071",
+        "gemini-001-072",
+        "gemini-001-073",
+        "gemini-001-074",
+        "gemini-001-075",
+        "gemini-001-076",
+        "gemini-001-077",
+        "gemini-001-078",
+        "gemini-001-079",
+        "gemini-001-080",
+        "gemini-001-081",
+        "gemini-001-082",
+        "gemini-001-083",
+        "gemini-001-084",
+        "gemini-001-085",
+        "gemini-001-086",
+        "gemini-001-089",
+        "gemini-001-090",
+        "gemini-001-091",
+        "gemini-001-092",
+        "gemini-001-093",
+        "gemini-001-094",
+        "gemini-001-095",
+        "gemini-001-096",
+        "gemini-001-097",
+        "gemini-001-098",
+        "gemini-001-099",
+        "gemini-001-100",
+        "syn-ar-01",
+        "syn-ar-04",
+        "syn-ar-05",
+        "syn-en-02",
+        "syn-en-06",
+        "syn-en-07",
+        "syn-fr-02",
+        "syn-fr-04",
+        "syn-fr-05",
+        "syn-fr-07",
+        "syn-mx-01",
+        "syn-mx-02",
+        "syn-mx-04",
+        "syn-mx-05",
+        "syn-mx-06",
+        "syn-mx-07",
+        "synthetic-002-005",
+        "synthetic-002-006",
+        "synthetic-002-007",
+        "synthetic-002-008",
+        "synthetic-002-017",
+        "synthetic-002-018",
+        "synthetic-002-019",
+        "synthetic-002-020",
+        "synthetic-002-061",
+        "synthetic-002-062",
+        "synthetic-002-063",
+        "synthetic-002-064",
+        "synthetic-002-089",
+        "synthetic-002-090",
+        "synthetic-002-091",
+        "synthetic-002-092",
+        "synthetic-002-101",
+        "synthetic-002-102",
+        "synthetic-002-103",
+        "synthetic-002-104",
+        "synthetic-002-161",
+        "synthetic-002-162",
+        "synthetic-002-163",
+        "synthetic-002-164"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-002",
+      "case_ids": [
+        "gemini-001-015",
+        "gemini-001-016",
+        "gemini-001-037",
+        "gemini-001-038",
+        "gemini-001-062",
+        "gemini-001-063",
+        "gemini-001-087",
+        "gemini-001-088",
+        "syn-ar-06",
+        "syn-fr-09",
+        "syn-mx-03",
+        "syn-mx-09",
+        "synthetic-002-049",
+        "synthetic-002-050",
+        "synthetic-002-051",
+        "synthetic-002-052",
+        "synthetic-002-081",
+        "synthetic-002-082",
+        "synthetic-002-083",
+        "synthetic-002-084",
+        "synthetic-002-085",
+        "synthetic-002-086",
+        "synthetic-002-087",
+        "synthetic-002-088"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-003",
+      "case_ids": [
+        "gemini-001-044",
+        "gemini-001-045",
+        "gemini-001-046",
+        "gemini-001-047",
+        "syn-en-01"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-004",
+      "case_ids": ["syn-ar-02"],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-005",
+      "case_ids": [
+        "syn-ar-03",
+        "syn-fr-03",
+        "synthetic-002-053",
+        "synthetic-002-054",
+        "synthetic-002-055",
+        "synthetic-002-056"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-006",
+      "case_ids": [
+        "syn-ar-07",
+        "syn-fr-10",
+        "syn-mx-08",
+        "synthetic-002-033",
+        "synthetic-002-034",
+        "synthetic-002-035",
+        "synthetic-002-036"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-007",
+      "case_ids": [
+        "syn-ar-08",
+        "syn-en-09",
+        "synthetic-002-113",
+        "synthetic-002-114",
+        "synthetic-002-115",
+        "synthetic-002-116"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-008",
+      "case_ids": ["syn-ar-09"],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-009",
+      "case_ids": ["syn-ar-10"],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-010",
+      "case_ids": [
+        "syn-en-03",
+        "synthetic-002-057",
+        "synthetic-002-058",
+        "synthetic-002-059",
+        "synthetic-002-060"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-011",
+      "case_ids": [
+        "syn-en-04",
+        "syn-en-05",
+        "syn-fr-06",
+        "synthetic-002-065",
+        "synthetic-002-066",
+        "synthetic-002-067",
+        "synthetic-002-068"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-012",
+      "case_ids": ["syn-en-08"],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-013",
+      "case_ids": ["syn-en-10"],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-014",
+      "case_ids": ["syn-fr-01", "syn-mx-10"],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-015",
+      "case_ids": [
+        "syn-fr-08",
+        "synthetic-002-109",
+        "synthetic-002-110",
+        "synthetic-002-111",
+        "synthetic-002-112"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-016",
+      "case_ids": [
+        "synthetic-002-001",
+        "synthetic-002-002",
+        "synthetic-002-003",
+        "synthetic-002-004"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-017",
+      "case_ids": [
+        "synthetic-002-009",
+        "synthetic-002-010",
+        "synthetic-002-011",
+        "synthetic-002-012"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-018",
+      "case_ids": [
+        "synthetic-002-013",
+        "synthetic-002-014",
+        "synthetic-002-015",
+        "synthetic-002-016"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-019",
+      "case_ids": [
+        "synthetic-002-021",
+        "synthetic-002-022",
+        "synthetic-002-023",
+        "synthetic-002-024"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-020",
+      "case_ids": [
+        "synthetic-002-025",
+        "synthetic-002-026",
+        "synthetic-002-027",
+        "synthetic-002-028"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-021",
+      "case_ids": [
+        "synthetic-002-029",
+        "synthetic-002-030",
+        "synthetic-002-031",
+        "synthetic-002-032"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-022",
+      "case_ids": [
+        "synthetic-002-037",
+        "synthetic-002-038",
+        "synthetic-002-039",
+        "synthetic-002-040"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-023",
+      "case_ids": [
+        "synthetic-002-041",
+        "synthetic-002-042",
+        "synthetic-002-043",
+        "synthetic-002-044"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-024",
+      "case_ids": [
+        "synthetic-002-045",
+        "synthetic-002-046",
+        "synthetic-002-047",
+        "synthetic-002-048"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-025",
+      "case_ids": [
+        "synthetic-002-069",
+        "synthetic-002-070",
+        "synthetic-002-071",
+        "synthetic-002-072"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-026",
+      "case_ids": [
+        "synthetic-002-073",
+        "synthetic-002-074",
+        "synthetic-002-075",
+        "synthetic-002-076"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-027",
+      "case_ids": [
+        "synthetic-002-077",
+        "synthetic-002-078",
+        "synthetic-002-079",
+        "synthetic-002-080"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-028",
+      "case_ids": [
+        "synthetic-002-093",
+        "synthetic-002-094",
+        "synthetic-002-095",
+        "synthetic-002-096"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-029",
+      "case_ids": [
+        "synthetic-002-097",
+        "synthetic-002-098",
+        "synthetic-002-099",
+        "synthetic-002-100",
+        "synthetic-002-165",
+        "synthetic-002-166",
+        "synthetic-002-167",
+        "synthetic-002-168"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-030",
+      "case_ids": [
+        "synthetic-002-105",
+        "synthetic-002-106",
+        "synthetic-002-107",
+        "synthetic-002-108"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-031",
+      "case_ids": [
+        "synthetic-002-117",
+        "synthetic-002-118",
+        "synthetic-002-119",
+        "synthetic-002-120"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-032",
+      "case_ids": [
+        "synthetic-002-121",
+        "synthetic-002-122",
+        "synthetic-002-123",
+        "synthetic-002-124"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-033",
+      "case_ids": [
+        "synthetic-002-125",
+        "synthetic-002-126",
+        "synthetic-002-127",
+        "synthetic-002-128"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-034",
+      "case_ids": [
+        "synthetic-002-129",
+        "synthetic-002-130",
+        "synthetic-002-131",
+        "synthetic-002-132"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-035",
+      "case_ids": [
+        "synthetic-002-133",
+        "synthetic-002-134",
+        "synthetic-002-135",
+        "synthetic-002-136"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-036",
+      "case_ids": [
+        "synthetic-002-137",
+        "synthetic-002-138",
+        "synthetic-002-139",
+        "synthetic-002-140"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-037",
+      "case_ids": [
+        "synthetic-002-141",
+        "synthetic-002-142",
+        "synthetic-002-143",
+        "synthetic-002-144"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-038",
+      "case_ids": [
+        "synthetic-002-145",
+        "synthetic-002-146",
+        "synthetic-002-147",
+        "synthetic-002-148"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-039",
+      "case_ids": [
+        "synthetic-002-149",
+        "synthetic-002-150",
+        "synthetic-002-151",
+        "synthetic-002-152"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-040",
+      "case_ids": [
+        "synthetic-002-153",
+        "synthetic-002-154",
+        "synthetic-002-155",
+        "synthetic-002-156"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "expanded-component-041",
+      "case_ids": [
+        "synthetic-002-157",
+        "synthetic-002-158",
+        "synthetic-002-159",
+        "synthetic-002-160"
+      ],
+      "split": null
+    }
+  ],
+  "membership": [
+    {
+      "case_id": "syn-ar-01",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-ar-01",
+      "source_paraphrase_group_id": "family-running-no-leather"
+    },
+    {
+      "case_id": "syn-ar-02",
+      "component_id": "expanded-component-004",
+      "source_conversation_group_id": "conv-syn-ar-02",
+      "source_paraphrase_group_id": "family-outfit-colour"
+    },
+    {
+      "case_id": "syn-ar-03",
+      "component_id": "expanded-component-005",
+      "source_conversation_group_id": "conv-syn-ar-03",
+      "source_paraphrase_group_id": "family-account-nav"
+    },
+    {
+      "case_id": "syn-ar-04",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-ar-shirt-correction",
+      "source_paraphrase_group_id": "family-shirt-quantity"
+    },
+    {
+      "case_id": "syn-ar-05",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-ar-shirt-correction",
+      "source_paraphrase_group_id": "family-shirt-quantity"
+    },
+    {
+      "case_id": "syn-ar-06",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-syn-ar-06",
+      "source_paraphrase_group_id": "family-clear-cart"
+    },
+    {
+      "case_id": "syn-ar-07",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-syn-ar-07",
+      "source_paraphrase_group_id": "family-locate-checkout"
+    },
+    {
+      "case_id": "syn-ar-08",
+      "component_id": "expanded-component-007",
+      "source_conversation_group_id": "conv-syn-ar-08",
+      "source_paraphrase_group_id": "family-help-capabilities"
+    },
+    {
+      "case_id": "syn-ar-09",
+      "component_id": "expanded-component-008",
+      "source_conversation_group_id": "conv-syn-ar-09",
+      "source_paraphrase_group_id": "family-delivery-scheduling"
+    },
+    {
+      "case_id": "syn-ar-10",
+      "component_id": "expanded-component-009",
+      "source_conversation_group_id": "conv-syn-ar-10",
+      "source_paraphrase_group_id": "family-nonshopping-writing"
+    },
+    {
+      "case_id": "syn-fr-01",
+      "component_id": "expanded-component-014",
+      "source_conversation_group_id": "conv-syn-fr-01",
+      "source_paraphrase_group_id": "family-tshirt-budget-correction"
+    },
+    {
+      "case_id": "syn-fr-02",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-fr-02",
+      "source_paraphrase_group_id": "family-shoe-comparison"
+    },
+    {
+      "case_id": "syn-fr-03",
+      "component_id": "expanded-component-005",
+      "source_conversation_group_id": "conv-syn-fr-03",
+      "source_paraphrase_group_id": "family-account-nav"
+    },
+    {
+      "case_id": "syn-fr-04",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-fr-runner-correction",
+      "source_paraphrase_group_id": "family-runner-quantity"
+    },
+    {
+      "case_id": "syn-fr-05",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-fr-runner-correction",
+      "source_paraphrase_group_id": "family-runner-quantity"
+    },
+    {
+      "case_id": "syn-fr-06",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-syn-fr-06",
+      "source_paraphrase_group_id": "family-formal-shirt-page"
+    },
+    {
+      "case_id": "syn-fr-07",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-fr-07",
+      "source_paraphrase_group_id": "family-runner-add"
+    },
+    {
+      "case_id": "syn-fr-08",
+      "component_id": "expanded-component-015",
+      "source_conversation_group_id": "conv-syn-fr-08",
+      "source_paraphrase_group_id": "family-undo-removal"
+    },
+    {
+      "case_id": "syn-fr-09",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-syn-fr-09",
+      "source_paraphrase_group_id": "family-clear-cart"
+    },
+    {
+      "case_id": "syn-fr-10",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-syn-fr-10",
+      "source_paraphrase_group_id": "family-locate-checkout"
+    },
+    {
+      "case_id": "syn-en-01",
+      "component_id": "expanded-component-003",
+      "source_conversation_group_id": "conv-syn-en-01",
+      "source_paraphrase_group_id": "family-bag-no-leather"
+    },
+    {
+      "case_id": "syn-en-02",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-en-02",
+      "source_paraphrase_group_id": "family-shoe-comfort"
+    },
+    {
+      "case_id": "syn-en-03",
+      "component_id": "expanded-component-010",
+      "source_conversation_group_id": "conv-syn-en-03",
+      "source_paraphrase_group_id": "family-orders-nav"
+    },
+    {
+      "case_id": "syn-en-04",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-en-shirt-return",
+      "source_paraphrase_group_id": "family-formal-shirt-page"
+    },
+    {
+      "case_id": "syn-en-05",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-en-shirt-return",
+      "source_paraphrase_group_id": "family-formal-shirt-page"
+    },
+    {
+      "case_id": "syn-en-06",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-en-06",
+      "source_paraphrase_group_id": "family-shirt-remove-variant"
+    },
+    {
+      "case_id": "syn-en-07",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-en-07",
+      "source_paraphrase_group_id": "family-submit-checkout"
+    },
+    {
+      "case_id": "syn-en-08",
+      "component_id": "expanded-component-012",
+      "source_conversation_group_id": "conv-syn-en-08",
+      "source_paraphrase_group_id": "family-installments"
+    },
+    {
+      "case_id": "syn-en-09",
+      "component_id": "expanded-component-007",
+      "source_conversation_group_id": "conv-syn-en-09",
+      "source_paraphrase_group_id": "family-help-capabilities"
+    },
+    {
+      "case_id": "syn-en-10",
+      "component_id": "expanded-component-013",
+      "source_conversation_group_id": "conv-syn-en-10",
+      "source_paraphrase_group_id": "family-shirt-budget"
+    },
+    {
+      "case_id": "syn-mx-01",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-mx-01",
+      "source_paraphrase_group_id": "family-running-no-leather"
+    },
+    {
+      "case_id": "syn-mx-02",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-mx-02",
+      "source_paraphrase_group_id": "family-shoe-comparison"
+    },
+    {
+      "case_id": "syn-mx-03",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-syn-mx-03",
+      "source_paraphrase_group_id": "family-cart-nav"
+    },
+    {
+      "case_id": "syn-mx-04",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-mx-remove-clarification",
+      "source_paraphrase_group_id": "family-shirt-remove-variant"
+    },
+    {
+      "case_id": "syn-mx-05",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-mx-remove-clarification",
+      "source_paraphrase_group_id": "family-shirt-remove-variant"
+    },
+    {
+      "case_id": "syn-mx-06",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-mx-06",
+      "source_paraphrase_group_id": "family-runner-quantity"
+    },
+    {
+      "case_id": "syn-mx-07",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-syn-mx-07",
+      "source_paraphrase_group_id": "family-runner-add"
+    },
+    {
+      "case_id": "syn-mx-08",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-syn-mx-08",
+      "source_paraphrase_group_id": "family-locate-checkout"
+    },
+    {
+      "case_id": "syn-mx-09",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-syn-mx-09",
+      "source_paraphrase_group_id": "family-clear-cart"
+    },
+    {
+      "case_id": "syn-mx-10",
+      "component_id": "expanded-component-014",
+      "source_conversation_group_id": "conv-syn-mx-10",
+      "source_paraphrase_group_id": "family-tshirt-budget-correction"
+    },
+    {
+      "case_id": "gemini-001-001",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-white-sneaker-budget"
+    },
+    {
+      "case_id": "gemini-001-002",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-shoe-no-leather"
+    },
+    {
+      "case_id": "gemini-001-003",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-shoe-comfort"
+    },
+    {
+      "case_id": "gemini-001-004",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-005",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-loose-trousers"
+    },
+    {
+      "case_id": "gemini-001-006",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-trouser-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-007",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-trouser-add"
+    },
+    {
+      "case_id": "gemini-001-008",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-one"
+    },
+    {
+      "case_id": "gemini-001-009",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-03",
+      "source_paraphrase_group_id": "gemini-family-garment-fit-comparison"
+    },
+    {
+      "case_id": "gemini-001-010",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-03",
+      "source_paraphrase_group_id": "gemini-family-tee-add"
+    },
+    {
+      "case_id": "gemini-001-011",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-03",
+      "source_paraphrase_group_id": "gemini-family-garment-replace"
+    },
+    {
+      "case_id": "gemini-001-012",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-04",
+      "source_paraphrase_group_id": "gemini-family-summer-dress"
+    },
+    {
+      "case_id": "gemini-001-013",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-04",
+      "source_paraphrase_group_id": "gemini-family-garment-cotton-no-other-material"
+    },
+    {
+      "case_id": "gemini-001-014",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-04",
+      "source_paraphrase_group_id": "gemini-family-garment-sizing"
+    },
+    {
+      "case_id": "gemini-001-015",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-05",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-016",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-05",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-017",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-winter-hoodie"
+    },
+    {
+      "case_id": "gemini-001-018",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-hoodie-no-zip"
+    },
+    {
+      "case_id": "gemini-001-019",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-garment-stock-question"
+    },
+    {
+      "case_id": "gemini-001-020",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-hoodie-add"
+    },
+    {
+      "case_id": "gemini-001-021",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-submit-cod"
+    },
+    {
+      "case_id": "gemini-001-022",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-comfortable-shoe-search"
+    },
+    {
+      "case_id": "gemini-001-023",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-shoe-comparison"
+    },
+    {
+      "case_id": "gemini-001-024",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-socks-remove"
+    },
+    {
+      "case_id": "gemini-001-025",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-submit-external-message"
+    },
+    {
+      "case_id": "gemini-001-026",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-white-sneaker-budget"
+    },
+    {
+      "case_id": "gemini-001-027",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-shoe-slip-on"
+    },
+    {
+      "case_id": "gemini-001-028",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-shoe-comfort"
+    },
+    {
+      "case_id": "gemini-001-029",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-030",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-sweatpants-search"
+    },
+    {
+      "case_id": "gemini-001-031",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-garment-cotton-no-other-material"
+    },
+    {
+      "case_id": "gemini-001-032",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-three"
+    },
+    {
+      "case_id": "gemini-001-033",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-tee-remove"
+    },
+    {
+      "case_id": "gemini-001-034",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-10",
+      "source_paraphrase_group_id": "gemini-family-garment-comparison"
+    },
+    {
+      "case_id": "gemini-001-035",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-10",
+      "source_paraphrase_group_id": "gemini-family-jacket-add"
+    },
+    {
+      "case_id": "gemini-001-036",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-10",
+      "source_paraphrase_group_id": "gemini-family-variant-change"
+    },
+    {
+      "case_id": "gemini-001-037",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-11",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-038",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-11",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-039",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-tee-pack-search"
+    },
+    {
+      "case_id": "gemini-001-040",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-tee-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-041",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-garment-sizing"
+    },
+    {
+      "case_id": "gemini-001-042",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-tee-pack-add"
+    },
+    {
+      "case_id": "gemini-001-043",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-submit-cod"
+    },
+    {
+      "case_id": "gemini-001-044",
+      "component_id": "expanded-component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-bag-material-search"
+    },
+    {
+      "case_id": "gemini-001-045",
+      "component_id": "expanded-component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-bag-no-leather"
+    },
+    {
+      "case_id": "gemini-001-046",
+      "component_id": "expanded-component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-payment-policy"
+    },
+    {
+      "case_id": "gemini-001-047",
+      "component_id": "expanded-component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-bag-remove"
+    },
+    {
+      "case_id": "gemini-001-048",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-14",
+      "source_paraphrase_group_id": "gemini-family-formal-shoe-search"
+    },
+    {
+      "case_id": "gemini-001-049",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-14",
+      "source_paraphrase_group_id": "gemini-family-shoe-toe-revision"
+    },
+    {
+      "case_id": "gemini-001-050",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-14",
+      "source_paraphrase_group_id": "gemini-family-submit-external-message"
+    },
+    {
+      "case_id": "gemini-001-051",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-running-shoe-budget"
+    },
+    {
+      "case_id": "gemini-001-052",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-running-brand-revision"
+    },
+    {
+      "case_id": "gemini-001-053",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-shoe-comfort"
+    },
+    {
+      "case_id": "gemini-001-054",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-055",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-oversized-tee-search"
+    },
+    {
+      "case_id": "gemini-001-056",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-tee-print-revision"
+    },
+    {
+      "case_id": "gemini-001-057",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-tee-add"
+    },
+    {
+      "case_id": "gemini-001-058",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-one"
+    },
+    {
+      "case_id": "gemini-001-059",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-17",
+      "source_paraphrase_group_id": "gemini-family-garment-fit-comparison"
+    },
+    {
+      "case_id": "gemini-001-060",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-17",
+      "source_paraphrase_group_id": "gemini-family-trouser-add"
+    },
+    {
+      "case_id": "gemini-001-061",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-17",
+      "source_paraphrase_group_id": "gemini-family-garment-replace"
+    },
+    {
+      "case_id": "gemini-001-062",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-18",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-063",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-18",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-064",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-winter-hoodie"
+    },
+    {
+      "case_id": "gemini-001-065",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-hoodie-no-zip"
+    },
+    {
+      "case_id": "gemini-001-066",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-garment-care"
+    },
+    {
+      "case_id": "gemini-001-067",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-hoodie-add"
+    },
+    {
+      "case_id": "gemini-001-068",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-checkout-cod-navigation"
+    },
+    {
+      "case_id": "gemini-001-069",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-summer-shirt"
+    },
+    {
+      "case_id": "gemini-001-070",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-garment-loose-fit-revision"
+    },
+    {
+      "case_id": "gemini-001-071",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-delivery-duration"
+    },
+    {
+      "case_id": "gemini-001-072",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-last-item-remove"
+    },
+    {
+      "case_id": "gemini-001-073",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-21",
+      "source_paraphrase_group_id": "gemini-family-formal-shoe-search"
+    },
+    {
+      "case_id": "gemini-001-074",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-21",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-075",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-21",
+      "source_paraphrase_group_id": "gemini-family-checkout-coupon"
+    },
+    {
+      "case_id": "gemini-001-076",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-oversized-hoodie-search"
+    },
+    {
+      "case_id": "gemini-001-077",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-hoodie-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-078",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-garment-material-question"
+    },
+    {
+      "case_id": "gemini-001-079",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-hoodie-add"
+    },
+    {
+      "case_id": "gemini-001-080",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-running-shoe-use"
+    },
+    {
+      "case_id": "gemini-001-081",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-running-brand-revision"
+    },
+    {
+      "case_id": "gemini-001-082",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-shoe-quantity-set-two"
+    },
+    {
+      "case_id": "gemini-001-083",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-one"
+    },
+    {
+      "case_id": "gemini-001-084",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-24",
+      "source_paraphrase_group_id": "gemini-family-garment-fit-comparison"
+    },
+    {
+      "case_id": "gemini-001-085",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-24",
+      "source_paraphrase_group_id": "gemini-family-tee-add"
+    },
+    {
+      "case_id": "gemini-001-086",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-24",
+      "source_paraphrase_group_id": "gemini-family-variant-change"
+    },
+    {
+      "case_id": "gemini-001-087",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-25",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-088",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-gemini-001-25",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-089",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-cargo-search"
+    },
+    {
+      "case_id": "gemini-001-090",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-trouser-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-091",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-delivery-duration"
+    },
+    {
+      "case_id": "gemini-001-092",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-trouser-add"
+    },
+    {
+      "case_id": "gemini-001-093",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-submit-cod"
+    },
+    {
+      "case_id": "gemini-001-094",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-summer-dress"
+    },
+    {
+      "case_id": "gemini-001-095",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-dress-sleeve-revision"
+    },
+    {
+      "case_id": "gemini-001-096",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-garment-sizing"
+    },
+    {
+      "case_id": "gemini-001-097",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-socks-remove"
+    },
+    {
+      "case_id": "gemini-001-098",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-28",
+      "source_paraphrase_group_id": "gemini-family-order-cancel-restore"
+    },
+    {
+      "case_id": "gemini-001-099",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-28",
+      "source_paraphrase_group_id": "gemini-family-white-leather-sneaker"
+    },
+    {
+      "case_id": "gemini-001-100",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-gemini-001-28",
+      "source_paraphrase_group_id": "gemini-family-checkout-navigation"
+    },
+    {
+      "case_id": "synthetic-002-001",
+      "component_id": "expanded-component-016",
+      "source_conversation_group_id": "conv-synthetic-002-001",
+      "source_paraphrase_group_id": "synth002-colour-discussion"
+    },
+    {
+      "case_id": "synthetic-002-002",
+      "component_id": "expanded-component-016",
+      "source_conversation_group_id": "conv-synthetic-002-002",
+      "source_paraphrase_group_id": "synth002-colour-discussion"
+    },
+    {
+      "case_id": "synthetic-002-003",
+      "component_id": "expanded-component-016",
+      "source_conversation_group_id": "conv-synthetic-002-003",
+      "source_paraphrase_group_id": "synth002-colour-discussion"
+    },
+    {
+      "case_id": "synthetic-002-004",
+      "component_id": "expanded-component-016",
+      "source_conversation_group_id": "conv-synthetic-002-004",
+      "source_paraphrase_group_id": "synth002-colour-discussion"
+    },
+    {
+      "case_id": "synthetic-002-005",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-005",
+      "source_paraphrase_group_id": "synth002-price-tradeoff"
+    },
+    {
+      "case_id": "synthetic-002-006",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-006",
+      "source_paraphrase_group_id": "synth002-price-tradeoff"
+    },
+    {
+      "case_id": "synthetic-002-007",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-007",
+      "source_paraphrase_group_id": "synth002-price-tradeoff"
+    },
+    {
+      "case_id": "synthetic-002-008",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-008",
+      "source_paraphrase_group_id": "synth002-price-tradeoff"
+    },
+    {
+      "case_id": "synthetic-002-009",
+      "component_id": "expanded-component-017",
+      "source_conversation_group_id": "conv-synthetic-002-009",
+      "source_paraphrase_group_id": "synth002-use-suitability"
+    },
+    {
+      "case_id": "synthetic-002-010",
+      "component_id": "expanded-component-017",
+      "source_conversation_group_id": "conv-synthetic-002-010",
+      "source_paraphrase_group_id": "synth002-use-suitability"
+    },
+    {
+      "case_id": "synthetic-002-011",
+      "component_id": "expanded-component-017",
+      "source_conversation_group_id": "conv-synthetic-002-011",
+      "source_paraphrase_group_id": "synth002-use-suitability"
+    },
+    {
+      "case_id": "synthetic-002-012",
+      "component_id": "expanded-component-017",
+      "source_conversation_group_id": "conv-synthetic-002-012",
+      "source_paraphrase_group_id": "synth002-use-suitability"
+    },
+    {
+      "case_id": "synthetic-002-013",
+      "component_id": "expanded-component-018",
+      "source_conversation_group_id": "conv-synthetic-002-013",
+      "source_paraphrase_group_id": "synth002-size-uncertainty"
+    },
+    {
+      "case_id": "synthetic-002-014",
+      "component_id": "expanded-component-018",
+      "source_conversation_group_id": "conv-synthetic-002-014",
+      "source_paraphrase_group_id": "synth002-size-uncertainty"
+    },
+    {
+      "case_id": "synthetic-002-015",
+      "component_id": "expanded-component-018",
+      "source_conversation_group_id": "conv-synthetic-002-015",
+      "source_paraphrase_group_id": "synth002-size-uncertainty"
+    },
+    {
+      "case_id": "synthetic-002-016",
+      "component_id": "expanded-component-018",
+      "source_conversation_group_id": "conv-synthetic-002-016",
+      "source_paraphrase_group_id": "synth002-size-uncertainty"
+    },
+    {
+      "case_id": "synthetic-002-017",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-017",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-018",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-018",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-019",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-019",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-020",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-020",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-021",
+      "component_id": "expanded-component-019",
+      "source_conversation_group_id": "conv-synthetic-002-021",
+      "source_paraphrase_group_id": "synth002-clothing-search"
+    },
+    {
+      "case_id": "synthetic-002-022",
+      "component_id": "expanded-component-019",
+      "source_conversation_group_id": "conv-synthetic-002-022",
+      "source_paraphrase_group_id": "synth002-clothing-search"
+    },
+    {
+      "case_id": "synthetic-002-023",
+      "component_id": "expanded-component-019",
+      "source_conversation_group_id": "conv-synthetic-002-023",
+      "source_paraphrase_group_id": "synth002-clothing-search"
+    },
+    {
+      "case_id": "synthetic-002-024",
+      "component_id": "expanded-component-019",
+      "source_conversation_group_id": "conv-synthetic-002-024",
+      "source_paraphrase_group_id": "synth002-clothing-search"
+    },
+    {
+      "case_id": "synthetic-002-025",
+      "component_id": "expanded-component-020",
+      "source_conversation_group_id": "conv-synthetic-002-025",
+      "source_paraphrase_group_id": "synth002-bag-search"
+    },
+    {
+      "case_id": "synthetic-002-026",
+      "component_id": "expanded-component-020",
+      "source_conversation_group_id": "conv-synthetic-002-026",
+      "source_paraphrase_group_id": "synth002-bag-search"
+    },
+    {
+      "case_id": "synthetic-002-027",
+      "component_id": "expanded-component-020",
+      "source_conversation_group_id": "conv-synthetic-002-027",
+      "source_paraphrase_group_id": "synth002-bag-search"
+    },
+    {
+      "case_id": "synthetic-002-028",
+      "component_id": "expanded-component-020",
+      "source_conversation_group_id": "conv-synthetic-002-028",
+      "source_paraphrase_group_id": "synth002-bag-search"
+    },
+    {
+      "case_id": "synthetic-002-029",
+      "component_id": "expanded-component-021",
+      "source_conversation_group_id": "conv-synthetic-002-029",
+      "source_paraphrase_group_id": "synth002-electronics-search"
+    },
+    {
+      "case_id": "synthetic-002-030",
+      "component_id": "expanded-component-021",
+      "source_conversation_group_id": "conv-synthetic-002-030",
+      "source_paraphrase_group_id": "synth002-electronics-search"
+    },
+    {
+      "case_id": "synthetic-002-031",
+      "component_id": "expanded-component-021",
+      "source_conversation_group_id": "conv-synthetic-002-031",
+      "source_paraphrase_group_id": "synth002-electronics-search"
+    },
+    {
+      "case_id": "synthetic-002-032",
+      "component_id": "expanded-component-021",
+      "source_conversation_group_id": "conv-synthetic-002-032",
+      "source_paraphrase_group_id": "synth002-electronics-search"
+    },
+    {
+      "case_id": "synthetic-002-033",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-synthetic-002-033",
+      "source_paraphrase_group_id": "synth002-checkout-control"
+    },
+    {
+      "case_id": "synthetic-002-034",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-synthetic-002-034",
+      "source_paraphrase_group_id": "synth002-checkout-control"
+    },
+    {
+      "case_id": "synthetic-002-035",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-synthetic-002-035",
+      "source_paraphrase_group_id": "synth002-checkout-control"
+    },
+    {
+      "case_id": "synthetic-002-036",
+      "component_id": "expanded-component-006",
+      "source_conversation_group_id": "conv-synthetic-002-036",
+      "source_paraphrase_group_id": "synth002-checkout-control"
+    },
+    {
+      "case_id": "synthetic-002-037",
+      "component_id": "expanded-component-022",
+      "source_conversation_group_id": "conv-synthetic-002-037",
+      "source_paraphrase_group_id": "synth002-quantity-control"
+    },
+    {
+      "case_id": "synthetic-002-038",
+      "component_id": "expanded-component-022",
+      "source_conversation_group_id": "conv-synthetic-002-038",
+      "source_paraphrase_group_id": "synth002-quantity-control"
+    },
+    {
+      "case_id": "synthetic-002-039",
+      "component_id": "expanded-component-022",
+      "source_conversation_group_id": "conv-synthetic-002-039",
+      "source_paraphrase_group_id": "synth002-quantity-control"
+    },
+    {
+      "case_id": "synthetic-002-040",
+      "component_id": "expanded-component-022",
+      "source_conversation_group_id": "conv-synthetic-002-040",
+      "source_paraphrase_group_id": "synth002-quantity-control"
+    },
+    {
+      "case_id": "synthetic-002-041",
+      "component_id": "expanded-component-023",
+      "source_conversation_group_id": "conv-synthetic-002-041",
+      "source_paraphrase_group_id": "synth002-remove-control"
+    },
+    {
+      "case_id": "synthetic-002-042",
+      "component_id": "expanded-component-023",
+      "source_conversation_group_id": "conv-synthetic-002-042",
+      "source_paraphrase_group_id": "synth002-remove-control"
+    },
+    {
+      "case_id": "synthetic-002-043",
+      "component_id": "expanded-component-023",
+      "source_conversation_group_id": "conv-synthetic-002-043",
+      "source_paraphrase_group_id": "synth002-remove-control"
+    },
+    {
+      "case_id": "synthetic-002-044",
+      "component_id": "expanded-component-023",
+      "source_conversation_group_id": "conv-synthetic-002-044",
+      "source_paraphrase_group_id": "synth002-remove-control"
+    },
+    {
+      "case_id": "synthetic-002-045",
+      "component_id": "expanded-component-024",
+      "source_conversation_group_id": "conv-synthetic-002-045",
+      "source_paraphrase_group_id": "synth002-account-entry"
+    },
+    {
+      "case_id": "synthetic-002-046",
+      "component_id": "expanded-component-024",
+      "source_conversation_group_id": "conv-synthetic-002-046",
+      "source_paraphrase_group_id": "synth002-account-entry"
+    },
+    {
+      "case_id": "synthetic-002-047",
+      "component_id": "expanded-component-024",
+      "source_conversation_group_id": "conv-synthetic-002-047",
+      "source_paraphrase_group_id": "synth002-account-entry"
+    },
+    {
+      "case_id": "synthetic-002-048",
+      "component_id": "expanded-component-024",
+      "source_conversation_group_id": "conv-synthetic-002-048",
+      "source_paraphrase_group_id": "synth002-account-entry"
+    },
+    {
+      "case_id": "synthetic-002-049",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-049",
+      "source_paraphrase_group_id": "synth002-cart-destination"
+    },
+    {
+      "case_id": "synthetic-002-050",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-050",
+      "source_paraphrase_group_id": "synth002-cart-destination"
+    },
+    {
+      "case_id": "synthetic-002-051",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-051",
+      "source_paraphrase_group_id": "synth002-cart-destination"
+    },
+    {
+      "case_id": "synthetic-002-052",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-052",
+      "source_paraphrase_group_id": "synth002-cart-destination"
+    },
+    {
+      "case_id": "synthetic-002-053",
+      "component_id": "expanded-component-005",
+      "source_conversation_group_id": "conv-synthetic-002-053",
+      "source_paraphrase_group_id": "synth002-account-destination"
+    },
+    {
+      "case_id": "synthetic-002-054",
+      "component_id": "expanded-component-005",
+      "source_conversation_group_id": "conv-synthetic-002-054",
+      "source_paraphrase_group_id": "synth002-account-destination"
+    },
+    {
+      "case_id": "synthetic-002-055",
+      "component_id": "expanded-component-005",
+      "source_conversation_group_id": "conv-synthetic-002-055",
+      "source_paraphrase_group_id": "synth002-account-destination"
+    },
+    {
+      "case_id": "synthetic-002-056",
+      "component_id": "expanded-component-005",
+      "source_conversation_group_id": "conv-synthetic-002-056",
+      "source_paraphrase_group_id": "synth002-account-destination"
+    },
+    {
+      "case_id": "synthetic-002-057",
+      "component_id": "expanded-component-010",
+      "source_conversation_group_id": "conv-synthetic-002-057",
+      "source_paraphrase_group_id": "synth002-orders-destination"
+    },
+    {
+      "case_id": "synthetic-002-058",
+      "component_id": "expanded-component-010",
+      "source_conversation_group_id": "conv-synthetic-002-058",
+      "source_paraphrase_group_id": "synth002-orders-destination"
+    },
+    {
+      "case_id": "synthetic-002-059",
+      "component_id": "expanded-component-010",
+      "source_conversation_group_id": "conv-synthetic-002-059",
+      "source_paraphrase_group_id": "synth002-orders-destination"
+    },
+    {
+      "case_id": "synthetic-002-060",
+      "component_id": "expanded-component-010",
+      "source_conversation_group_id": "conv-synthetic-002-060",
+      "source_paraphrase_group_id": "synth002-orders-destination"
+    },
+    {
+      "case_id": "synthetic-002-061",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-061",
+      "source_paraphrase_group_id": "synth002-checkout-destination"
+    },
+    {
+      "case_id": "synthetic-002-062",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-062",
+      "source_paraphrase_group_id": "synth002-checkout-destination"
+    },
+    {
+      "case_id": "synthetic-002-063",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-063",
+      "source_paraphrase_group_id": "synth002-checkout-destination"
+    },
+    {
+      "case_id": "synthetic-002-064",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-064",
+      "source_paraphrase_group_id": "synth002-checkout-destination"
+    },
+    {
+      "case_id": "synthetic-002-065",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-synthetic-002-065",
+      "source_paraphrase_group_id": "synth002-shoe-details"
+    },
+    {
+      "case_id": "synthetic-002-066",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-synthetic-002-066",
+      "source_paraphrase_group_id": "synth002-shoe-details"
+    },
+    {
+      "case_id": "synthetic-002-067",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-synthetic-002-067",
+      "source_paraphrase_group_id": "synth002-shoe-details"
+    },
+    {
+      "case_id": "synthetic-002-068",
+      "component_id": "expanded-component-011",
+      "source_conversation_group_id": "conv-synthetic-002-068",
+      "source_paraphrase_group_id": "synth002-shoe-details"
+    },
+    {
+      "case_id": "synthetic-002-069",
+      "component_id": "expanded-component-025",
+      "source_conversation_group_id": "conv-synthetic-002-069",
+      "source_paraphrase_group_id": "synth002-ranked-product-details"
+    },
+    {
+      "case_id": "synthetic-002-070",
+      "component_id": "expanded-component-025",
+      "source_conversation_group_id": "conv-synthetic-002-070",
+      "source_paraphrase_group_id": "synth002-ranked-product-details"
+    },
+    {
+      "case_id": "synthetic-002-071",
+      "component_id": "expanded-component-025",
+      "source_conversation_group_id": "conv-synthetic-002-071",
+      "source_paraphrase_group_id": "synth002-ranked-product-details"
+    },
+    {
+      "case_id": "synthetic-002-072",
+      "component_id": "expanded-component-025",
+      "source_conversation_group_id": "conv-synthetic-002-072",
+      "source_paraphrase_group_id": "synth002-ranked-product-details"
+    },
+    {
+      "case_id": "synthetic-002-073",
+      "component_id": "expanded-component-026",
+      "source_conversation_group_id": "conv-synthetic-002-073",
+      "source_paraphrase_group_id": "synth002-cart-product-details"
+    },
+    {
+      "case_id": "synthetic-002-074",
+      "component_id": "expanded-component-026",
+      "source_conversation_group_id": "conv-synthetic-002-074",
+      "source_paraphrase_group_id": "synth002-cart-product-details"
+    },
+    {
+      "case_id": "synthetic-002-075",
+      "component_id": "expanded-component-026",
+      "source_conversation_group_id": "conv-synthetic-002-075",
+      "source_paraphrase_group_id": "synth002-cart-product-details"
+    },
+    {
+      "case_id": "synthetic-002-076",
+      "component_id": "expanded-component-026",
+      "source_conversation_group_id": "conv-synthetic-002-076",
+      "source_paraphrase_group_id": "synth002-cart-product-details"
+    },
+    {
+      "case_id": "synthetic-002-077",
+      "component_id": "expanded-component-027",
+      "source_conversation_group_id": "conv-synthetic-002-077",
+      "source_paraphrase_group_id": "synth002-shortlist-cheapest-details"
+    },
+    {
+      "case_id": "synthetic-002-078",
+      "component_id": "expanded-component-027",
+      "source_conversation_group_id": "conv-synthetic-002-078",
+      "source_paraphrase_group_id": "synth002-shortlist-cheapest-details"
+    },
+    {
+      "case_id": "synthetic-002-079",
+      "component_id": "expanded-component-027",
+      "source_conversation_group_id": "conv-synthetic-002-079",
+      "source_paraphrase_group_id": "synth002-shortlist-cheapest-details"
+    },
+    {
+      "case_id": "synthetic-002-080",
+      "component_id": "expanded-component-027",
+      "source_conversation_group_id": "conv-synthetic-002-080",
+      "source_paraphrase_group_id": "synth002-shortlist-cheapest-details"
+    },
+    {
+      "case_id": "synthetic-002-081",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-081",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-082",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-082",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-083",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-083",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-084",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-084",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-085",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-085",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-086",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-086",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-087",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-087",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-088",
+      "component_id": "expanded-component-002",
+      "source_conversation_group_id": "conv-synthetic-002-088",
+      "source_paraphrase_group_id": "synth002-abandon-basket"
+    },
+    {
+      "case_id": "synthetic-002-089",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-089",
+      "source_paraphrase_group_id": "synth002-place-order"
+    },
+    {
+      "case_id": "synthetic-002-090",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-090",
+      "source_paraphrase_group_id": "synth002-place-order"
+    },
+    {
+      "case_id": "synthetic-002-091",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-091",
+      "source_paraphrase_group_id": "synth002-place-order"
+    },
+    {
+      "case_id": "synthetic-002-092",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-092",
+      "source_paraphrase_group_id": "synth002-place-order"
+    },
+    {
+      "case_id": "synthetic-002-093",
+      "component_id": "expanded-component-028",
+      "source_conversation_group_id": "conv-synthetic-002-093",
+      "source_paraphrase_group_id": "synth002-checkout-retry"
+    },
+    {
+      "case_id": "synthetic-002-094",
+      "component_id": "expanded-component-028",
+      "source_conversation_group_id": "conv-synthetic-002-094",
+      "source_paraphrase_group_id": "synth002-checkout-retry"
+    },
+    {
+      "case_id": "synthetic-002-095",
+      "component_id": "expanded-component-028",
+      "source_conversation_group_id": "conv-synthetic-002-095",
+      "source_paraphrase_group_id": "synth002-checkout-retry"
+    },
+    {
+      "case_id": "synthetic-002-096",
+      "component_id": "expanded-component-028",
+      "source_conversation_group_id": "conv-synthetic-002-096",
+      "source_paraphrase_group_id": "synth002-checkout-retry"
+    },
+    {
+      "case_id": "synthetic-002-097",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-097",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-098",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-098",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-099",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-099",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-100",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-100",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-101",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-101",
+      "source_paraphrase_group_id": "synth002-quantity-revision"
+    },
+    {
+      "case_id": "synthetic-002-102",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-102",
+      "source_paraphrase_group_id": "synth002-quantity-revision"
+    },
+    {
+      "case_id": "synthetic-002-103",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-103",
+      "source_paraphrase_group_id": "synth002-quantity-revision"
+    },
+    {
+      "case_id": "synthetic-002-104",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-104",
+      "source_paraphrase_group_id": "synth002-quantity-revision"
+    },
+    {
+      "case_id": "synthetic-002-105",
+      "component_id": "expanded-component-030",
+      "source_conversation_group_id": "conv-synthetic-002-105",
+      "source_paraphrase_group_id": "synth002-remove-line"
+    },
+    {
+      "case_id": "synthetic-002-106",
+      "component_id": "expanded-component-030",
+      "source_conversation_group_id": "conv-synthetic-002-106",
+      "source_paraphrase_group_id": "synth002-remove-line"
+    },
+    {
+      "case_id": "synthetic-002-107",
+      "component_id": "expanded-component-030",
+      "source_conversation_group_id": "conv-synthetic-002-107",
+      "source_paraphrase_group_id": "synth002-remove-line"
+    },
+    {
+      "case_id": "synthetic-002-108",
+      "component_id": "expanded-component-030",
+      "source_conversation_group_id": "conv-synthetic-002-108",
+      "source_paraphrase_group_id": "synth002-remove-line"
+    },
+    {
+      "case_id": "synthetic-002-109",
+      "component_id": "expanded-component-015",
+      "source_conversation_group_id": "conv-synthetic-002-109",
+      "source_paraphrase_group_id": "synth002-undo-edit"
+    },
+    {
+      "case_id": "synthetic-002-110",
+      "component_id": "expanded-component-015",
+      "source_conversation_group_id": "conv-synthetic-002-110",
+      "source_paraphrase_group_id": "synth002-undo-edit"
+    },
+    {
+      "case_id": "synthetic-002-111",
+      "component_id": "expanded-component-015",
+      "source_conversation_group_id": "conv-synthetic-002-111",
+      "source_paraphrase_group_id": "synth002-undo-edit"
+    },
+    {
+      "case_id": "synthetic-002-112",
+      "component_id": "expanded-component-015",
+      "source_conversation_group_id": "conv-synthetic-002-112",
+      "source_paraphrase_group_id": "synth002-undo-edit"
+    },
+    {
+      "case_id": "synthetic-002-113",
+      "component_id": "expanded-component-007",
+      "source_conversation_group_id": "conv-synthetic-002-113",
+      "source_paraphrase_group_id": "synth002-capabilities"
+    },
+    {
+      "case_id": "synthetic-002-114",
+      "component_id": "expanded-component-007",
+      "source_conversation_group_id": "conv-synthetic-002-114",
+      "source_paraphrase_group_id": "synth002-capabilities"
+    },
+    {
+      "case_id": "synthetic-002-115",
+      "component_id": "expanded-component-007",
+      "source_conversation_group_id": "conv-synthetic-002-115",
+      "source_paraphrase_group_id": "synth002-capabilities"
+    },
+    {
+      "case_id": "synthetic-002-116",
+      "component_id": "expanded-component-007",
+      "source_conversation_group_id": "conv-synthetic-002-116",
+      "source_paraphrase_group_id": "synth002-capabilities"
+    },
+    {
+      "case_id": "synthetic-002-117",
+      "component_id": "expanded-component-031",
+      "source_conversation_group_id": "conv-synthetic-002-117",
+      "source_paraphrase_group_id": "synth002-compose-request"
+    },
+    {
+      "case_id": "synthetic-002-118",
+      "component_id": "expanded-component-031",
+      "source_conversation_group_id": "conv-synthetic-002-118",
+      "source_paraphrase_group_id": "synth002-compose-request"
+    },
+    {
+      "case_id": "synthetic-002-119",
+      "component_id": "expanded-component-031",
+      "source_conversation_group_id": "conv-synthetic-002-119",
+      "source_paraphrase_group_id": "synth002-compose-request"
+    },
+    {
+      "case_id": "synthetic-002-120",
+      "component_id": "expanded-component-031",
+      "source_conversation_group_id": "conv-synthetic-002-120",
+      "source_paraphrase_group_id": "synth002-compose-request"
+    },
+    {
+      "case_id": "synthetic-002-121",
+      "component_id": "expanded-component-032",
+      "source_conversation_group_id": "conv-synthetic-002-121",
+      "source_paraphrase_group_id": "synth002-clarification-support"
+    },
+    {
+      "case_id": "synthetic-002-122",
+      "component_id": "expanded-component-032",
+      "source_conversation_group_id": "conv-synthetic-002-122",
+      "source_paraphrase_group_id": "synth002-clarification-support"
+    },
+    {
+      "case_id": "synthetic-002-123",
+      "component_id": "expanded-component-032",
+      "source_conversation_group_id": "conv-synthetic-002-123",
+      "source_paraphrase_group_id": "synth002-clarification-support"
+    },
+    {
+      "case_id": "synthetic-002-124",
+      "component_id": "expanded-component-032",
+      "source_conversation_group_id": "conv-synthetic-002-124",
+      "source_paraphrase_group_id": "synth002-clarification-support"
+    },
+    {
+      "case_id": "synthetic-002-125",
+      "component_id": "expanded-component-033",
+      "source_conversation_group_id": "conv-synthetic-002-125",
+      "source_paraphrase_group_id": "synth002-manual-control"
+    },
+    {
+      "case_id": "synthetic-002-126",
+      "component_id": "expanded-component-033",
+      "source_conversation_group_id": "conv-synthetic-002-126",
+      "source_paraphrase_group_id": "synth002-manual-control"
+    },
+    {
+      "case_id": "synthetic-002-127",
+      "component_id": "expanded-component-033",
+      "source_conversation_group_id": "conv-synthetic-002-127",
+      "source_paraphrase_group_id": "synth002-manual-control"
+    },
+    {
+      "case_id": "synthetic-002-128",
+      "component_id": "expanded-component-033",
+      "source_conversation_group_id": "conv-synthetic-002-128",
+      "source_paraphrase_group_id": "synth002-manual-control"
+    },
+    {
+      "case_id": "synthetic-002-129",
+      "component_id": "expanded-component-034",
+      "source_conversation_group_id": "conv-synthetic-002-129",
+      "source_paraphrase_group_id": "synth002-cooking"
+    },
+    {
+      "case_id": "synthetic-002-130",
+      "component_id": "expanded-component-034",
+      "source_conversation_group_id": "conv-synthetic-002-130",
+      "source_paraphrase_group_id": "synth002-cooking"
+    },
+    {
+      "case_id": "synthetic-002-131",
+      "component_id": "expanded-component-034",
+      "source_conversation_group_id": "conv-synthetic-002-131",
+      "source_paraphrase_group_id": "synth002-cooking"
+    },
+    {
+      "case_id": "synthetic-002-132",
+      "component_id": "expanded-component-034",
+      "source_conversation_group_id": "conv-synthetic-002-132",
+      "source_paraphrase_group_id": "synth002-cooking"
+    },
+    {
+      "case_id": "synthetic-002-133",
+      "component_id": "expanded-component-035",
+      "source_conversation_group_id": "conv-synthetic-002-133",
+      "source_paraphrase_group_id": "synth002-entertainment"
+    },
+    {
+      "case_id": "synthetic-002-134",
+      "component_id": "expanded-component-035",
+      "source_conversation_group_id": "conv-synthetic-002-134",
+      "source_paraphrase_group_id": "synth002-entertainment"
+    },
+    {
+      "case_id": "synthetic-002-135",
+      "component_id": "expanded-component-035",
+      "source_conversation_group_id": "conv-synthetic-002-135",
+      "source_paraphrase_group_id": "synth002-entertainment"
+    },
+    {
+      "case_id": "synthetic-002-136",
+      "component_id": "expanded-component-035",
+      "source_conversation_group_id": "conv-synthetic-002-136",
+      "source_paraphrase_group_id": "synth002-entertainment"
+    },
+    {
+      "case_id": "synthetic-002-137",
+      "component_id": "expanded-component-036",
+      "source_conversation_group_id": "conv-synthetic-002-137",
+      "source_paraphrase_group_id": "synth002-study"
+    },
+    {
+      "case_id": "synthetic-002-138",
+      "component_id": "expanded-component-036",
+      "source_conversation_group_id": "conv-synthetic-002-138",
+      "source_paraphrase_group_id": "synth002-study"
+    },
+    {
+      "case_id": "synthetic-002-139",
+      "component_id": "expanded-component-036",
+      "source_conversation_group_id": "conv-synthetic-002-139",
+      "source_paraphrase_group_id": "synth002-study"
+    },
+    {
+      "case_id": "synthetic-002-140",
+      "component_id": "expanded-component-036",
+      "source_conversation_group_id": "conv-synthetic-002-140",
+      "source_paraphrase_group_id": "synth002-study"
+    },
+    {
+      "case_id": "synthetic-002-141",
+      "component_id": "expanded-component-037",
+      "source_conversation_group_id": "conv-synthetic-002-141",
+      "source_paraphrase_group_id": "synth002-weather"
+    },
+    {
+      "case_id": "synthetic-002-142",
+      "component_id": "expanded-component-037",
+      "source_conversation_group_id": "conv-synthetic-002-142",
+      "source_paraphrase_group_id": "synth002-weather"
+    },
+    {
+      "case_id": "synthetic-002-143",
+      "component_id": "expanded-component-037",
+      "source_conversation_group_id": "conv-synthetic-002-143",
+      "source_paraphrase_group_id": "synth002-weather"
+    },
+    {
+      "case_id": "synthetic-002-144",
+      "component_id": "expanded-component-037",
+      "source_conversation_group_id": "conv-synthetic-002-144",
+      "source_paraphrase_group_id": "synth002-weather"
+    },
+    {
+      "case_id": "synthetic-002-145",
+      "component_id": "expanded-component-038",
+      "source_conversation_group_id": "conv-synthetic-002-145",
+      "source_paraphrase_group_id": "synth002-external-stores"
+    },
+    {
+      "case_id": "synthetic-002-146",
+      "component_id": "expanded-component-038",
+      "source_conversation_group_id": "conv-synthetic-002-146",
+      "source_paraphrase_group_id": "synth002-external-stores"
+    },
+    {
+      "case_id": "synthetic-002-147",
+      "component_id": "expanded-component-038",
+      "source_conversation_group_id": "conv-synthetic-002-147",
+      "source_paraphrase_group_id": "synth002-external-stores"
+    },
+    {
+      "case_id": "synthetic-002-148",
+      "component_id": "expanded-component-038",
+      "source_conversation_group_id": "conv-synthetic-002-148",
+      "source_paraphrase_group_id": "synth002-external-stores"
+    },
+    {
+      "case_id": "synthetic-002-149",
+      "component_id": "expanded-component-039",
+      "source_conversation_group_id": "conv-synthetic-002-149",
+      "source_paraphrase_group_id": "synth002-bargaining"
+    },
+    {
+      "case_id": "synthetic-002-150",
+      "component_id": "expanded-component-039",
+      "source_conversation_group_id": "conv-synthetic-002-150",
+      "source_paraphrase_group_id": "synth002-bargaining"
+    },
+    {
+      "case_id": "synthetic-002-151",
+      "component_id": "expanded-component-039",
+      "source_conversation_group_id": "conv-synthetic-002-151",
+      "source_paraphrase_group_id": "synth002-bargaining"
+    },
+    {
+      "case_id": "synthetic-002-152",
+      "component_id": "expanded-component-039",
+      "source_conversation_group_id": "conv-synthetic-002-152",
+      "source_paraphrase_group_id": "synth002-bargaining"
+    },
+    {
+      "case_id": "synthetic-002-153",
+      "component_id": "expanded-component-040",
+      "source_conversation_group_id": "conv-synthetic-002-153",
+      "source_paraphrase_group_id": "synth002-delivery-change"
+    },
+    {
+      "case_id": "synthetic-002-154",
+      "component_id": "expanded-component-040",
+      "source_conversation_group_id": "conv-synthetic-002-154",
+      "source_paraphrase_group_id": "synth002-delivery-change"
+    },
+    {
+      "case_id": "synthetic-002-155",
+      "component_id": "expanded-component-040",
+      "source_conversation_group_id": "conv-synthetic-002-155",
+      "source_paraphrase_group_id": "synth002-delivery-change"
+    },
+    {
+      "case_id": "synthetic-002-156",
+      "component_id": "expanded-component-040",
+      "source_conversation_group_id": "conv-synthetic-002-156",
+      "source_paraphrase_group_id": "synth002-delivery-change"
+    },
+    {
+      "case_id": "synthetic-002-157",
+      "component_id": "expanded-component-041",
+      "source_conversation_group_id": "conv-synthetic-002-157",
+      "source_paraphrase_group_id": "synth002-refund-request"
+    },
+    {
+      "case_id": "synthetic-002-158",
+      "component_id": "expanded-component-041",
+      "source_conversation_group_id": "conv-synthetic-002-158",
+      "source_paraphrase_group_id": "synth002-refund-request"
+    },
+    {
+      "case_id": "synthetic-002-159",
+      "component_id": "expanded-component-041",
+      "source_conversation_group_id": "conv-synthetic-002-159",
+      "source_paraphrase_group_id": "synth002-refund-request"
+    },
+    {
+      "case_id": "synthetic-002-160",
+      "component_id": "expanded-component-041",
+      "source_conversation_group_id": "conv-synthetic-002-160",
+      "source_paraphrase_group_id": "synth002-refund-request"
+    },
+    {
+      "case_id": "synthetic-002-161",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-017",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-162",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-018",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-163",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-019",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-164",
+      "component_id": "expanded-component-001",
+      "source_conversation_group_id": "conv-synthetic-002-020",
+      "source_paraphrase_group_id": "synth002-shoe-search"
+    },
+    {
+      "case_id": "synthetic-002-165",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-097",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-166",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-098",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-167",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-099",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    },
+    {
+      "case_id": "synthetic-002-168",
+      "component_id": "expanded-component-029",
+      "source_conversation_group_id": "conv-synthetic-002-100",
+      "source_paraphrase_group_id": "synth002-add-variant"
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "$defs": {
+    "AttributePredicate": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "enum": [
+            "category",
+            "product_type",
+            "color",
+            "size",
+            "feature",
+            "use"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "op": {
+          "enum": ["eq", "exclude"],
+          "title": "Op",
+          "type": "string"
+        },
+        "value": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": ["field", "op", "value"],
+      "title": "AttributePredicate",
+      "type": "object"
+    },
+    "AvailabilityPredicate": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "const": "available",
+          "title": "Field",
+          "type": "string"
+        },
+        "op": {
+          "const": "eq",
+          "title": "Op",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "boolean"
+        }
+      },
+      "required": ["field", "op", "value"],
+      "title": "AvailabilityPredicate",
+      "type": "object"
+    },
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "product": {
+          "$ref": "#/$defs/ProductEvidence"
+        },
+        "product_revision": {
+          "minimum": 1,
+          "title": "Product Revision",
+          "type": "integer"
+        },
+        "requirements": {
+          "items": {
+            "$ref": "#/$defs/RequirementResult"
+          },
+          "maxItems": 20,
+          "title": "Requirements",
+          "type": "array"
+        }
+      },
+      "required": ["product", "product_revision", "requirements"],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "DetailsQuery": {
+      "additionalProperties": false,
+      "properties": {
+        "v": {
+          "const": 1,
+          "default": 1,
+          "title": "V",
+          "type": "integer"
+        },
+        "ids": {
+          "items": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 9,
+          "minItems": 1,
+          "title": "Ids",
+          "type": "array"
+        },
+        "requirements": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "available": "#/$defs/AvailabilityPredicate",
+                "category": "#/$defs/AttributePredicate",
+                "color": "#/$defs/AttributePredicate",
+                "feature": "#/$defs/AttributePredicate",
+                "price": "#/$defs/MoneyPredicate",
+                "product_type": "#/$defs/AttributePredicate",
+                "size": "#/$defs/AttributePredicate",
+                "use": "#/$defs/AttributePredicate"
+              },
+              "propertyName": "field"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/MoneyPredicate"
+              },
+              {
+                "$ref": "#/$defs/AttributePredicate"
+              },
+              {
+                "$ref": "#/$defs/AvailabilityPredicate"
+              }
+            ]
+          },
+          "maxItems": 20,
+          "title": "Requirements",
+          "type": "array"
+        },
+        "unverified_requirements": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Unverified Requirements",
+          "type": "array"
+        }
+      },
+      "required": ["ids"],
+      "title": "DetailsQuery",
+      "type": "object"
+    },
+    "DetailsResult": {
+      "additionalProperties": false,
+      "properties": {
+        "v": {
+          "const": 1,
+          "title": "V",
+          "type": "integer"
+        },
+        "catalogue_revision": {
+          "minimum": 1,
+          "title": "Catalogue Revision",
+          "type": "integer"
+        },
+        "products": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "maxItems": 9,
+          "title": "Products",
+          "type": "array"
+        },
+        "missing_ids": {
+          "items": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 9,
+          "title": "Missing Ids",
+          "type": "array"
+        },
+        "unverified_requirements": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Unverified Requirements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "v",
+        "catalogue_revision",
+        "products",
+        "missing_ids",
+        "unverified_requirements"
+      ],
+      "title": "DetailsResult",
+      "type": "object"
+    },
+    "MoneyPredicate": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "const": "price",
+          "title": "Field",
+          "type": "string"
+        },
+        "op": {
+          "enum": ["gte", "lte"],
+          "title": "Op",
+          "type": "string"
+        },
+        "amount": {
+          "maxLength": 24,
+          "pattern": "^(?:0|[1-9]\\d*)(?:\\.\\d{1,2})?$",
+          "title": "Amount",
+          "type": "string"
+        },
+        "currency": {
+          "const": "EGP",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": ["field", "op", "amount", "currency"],
+      "title": "MoneyPredicate",
+      "type": "object"
+    },
+    "ProductEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "category": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Category",
+          "type": "string"
+        },
+        "nameAr": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Namear",
+          "type": "string"
+        },
+        "nameEn": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Nameen",
+          "type": "string"
+        },
+        "type": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Type",
+          "type": "string"
+        },
+        "price": {
+          "$ref": "#/$defs/ProductMoney"
+        },
+        "sizes": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Sizes",
+          "type": "array"
+        },
+        "colors": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Colors",
+          "type": "array"
+        },
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "addedAt": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Addedat",
+          "type": "string"
+        },
+        "features": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Features",
+          "type": "array"
+        },
+        "suitableFor": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Suitablefor",
+          "type": "array"
+        },
+        "wearPosition": {
+          "anyOf": [
+            {
+              "enum": ["upper", "lower"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Wearposition"
+        },
+        "absent_features": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Absent Features",
+          "type": "array"
+        },
+        "absent_uses": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Absent Uses",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "nameAr",
+        "nameEn",
+        "type",
+        "price",
+        "sizes",
+        "colors",
+        "available",
+        "addedAt",
+        "features",
+        "suitableFor",
+        "wearPosition",
+        "absent_features",
+        "absent_uses"
+      ],
+      "title": "ProductEvidence",
+      "type": "object"
+    },
+    "ProductMoney": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "maxLength": 24,
+          "pattern": "^(?:0|[1-9]\\d*)(?:\\.\\d{1,2})?$",
+          "title": "Amount",
+          "type": "string"
+        },
+        "currency": {
+          "const": "EGP",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": ["amount", "currency"],
+      "title": "ProductMoney",
+      "type": "object"
+    },
+    "RequirementResult": {
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "maximum": 19,
+          "minimum": 0,
+          "title": "Index",
+          "type": "integer"
+        },
+        "status": {
+          "enum": ["satisfied", "violated", "unknown"],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": ["index", "status"],
+      "title": "RequirementResult",
+      "type": "object"
+    },
+    "SearchQuery": {
+      "additionalProperties": false,
+      "properties": {
+        "v": {
+          "const": 1,
+          "default": 1,
+          "title": "V",
+          "type": "integer"
+        },
+        "query": {
+          "maxLength": 1024,
+          "title": "Query",
+          "type": "string"
+        },
+        "predicates": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "available": "#/$defs/AvailabilityPredicate",
+                "category": "#/$defs/AttributePredicate",
+                "color": "#/$defs/AttributePredicate",
+                "feature": "#/$defs/AttributePredicate",
+                "price": "#/$defs/MoneyPredicate",
+                "product_type": "#/$defs/AttributePredicate",
+                "size": "#/$defs/AttributePredicate",
+                "use": "#/$defs/AttributePredicate"
+              },
+              "propertyName": "field"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/MoneyPredicate"
+              },
+              {
+                "$ref": "#/$defs/AttributePredicate"
+              },
+              {
+                "$ref": "#/$defs/AvailabilityPredicate"
+              }
+            ]
+          },
+          "maxItems": 20,
+          "title": "Predicates",
+          "type": "array"
+        },
+        "requirements": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "available": "#/$defs/AvailabilityPredicate",
+                "category": "#/$defs/AttributePredicate",
+                "color": "#/$defs/AttributePredicate",
+                "feature": "#/$defs/AttributePredicate",
+                "price": "#/$defs/MoneyPredicate",
+                "product_type": "#/$defs/AttributePredicate",
+                "size": "#/$defs/AttributePredicate",
+                "use": "#/$defs/AttributePredicate"
+              },
+              "propertyName": "field"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/MoneyPredicate"
+              },
+              {
+                "$ref": "#/$defs/AttributePredicate"
+              },
+              {
+                "$ref": "#/$defs/AvailabilityPredicate"
+              }
+            ]
+          },
+          "maxItems": 20,
+          "title": "Requirements",
+          "type": "array"
+        },
+        "unverified_requirements": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Unverified Requirements",
+          "type": "array"
+        },
+        "sort": {
+          "default": "relevance",
+          "enum": ["relevance", "cheapest", "newest"],
+          "title": "Sort",
+          "type": "string"
+        },
+        "cursor": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cursor"
+        }
+      },
+      "required": ["query"],
+      "title": "SearchQuery",
+      "type": "object"
+    },
+    "SearchResult": {
+      "additionalProperties": false,
+      "properties": {
+        "v": {
+          "const": 1,
+          "title": "V",
+          "type": "integer"
+        },
+        "catalogue_revision": {
+          "minimum": 1,
+          "title": "Catalogue Revision",
+          "type": "integer"
+        },
+        "candidates": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "maxItems": 10,
+          "title": "Candidates",
+          "type": "array"
+        },
+        "ranking": {
+          "enum": ["lexical", "hybrid"],
+          "title": "Ranking",
+          "type": "string"
+        },
+        "exact_count": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Exact Count"
+        },
+        "next_cursor": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Next Cursor"
+        },
+        "truncated": {
+          "title": "Truncated",
+          "type": "boolean"
+        },
+        "unverified_requirements": {
+          "items": {
+            "maxLength": 200,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Unverified Requirements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "v",
+        "catalogue_revision",
+        "candidates",
+        "ranking",
+        "exact_count",
+        "next_cursor",
+        "truncated",
+        "unverified_requirements"
+      ],
+      "title": "SearchResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Schema export container, not a request sent over the network.",
+  "properties": {
+    "search": {
+      "$ref": "#/$defs/SearchQuery"
+    },
+    "details": {
+      "$ref": "#/$defs/DetailsQuery"
+    },
+    "search_result": {
+      "$ref": "#/$defs/SearchResult"
+    },
+    "details_result": {
+      "$ref": "#/$defs/DetailsResult"
+    }
+  },
+  "required": ["search", "details", "search_result", "details_result"],
+  "title": "CatalogueProtocol",
+  "type": "object"
+}

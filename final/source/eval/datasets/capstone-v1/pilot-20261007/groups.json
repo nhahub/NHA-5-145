@@ -1,0 +1,1040 @@
+{
+  "status": "frozen_synthetic_development_group_map",
+  "source_files": [
+    {
+      "path": "eval/datasets/capstone-v1/development/batch-002-families.json",
+      "sha256_normalized_lf": "8651ff5b9653b5b6aa3909c7487784761a6e33584586937693617e56a947f51a"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/batch-002-overlap-review.json",
+      "sha256_normalized_lf": "d0b40d8aa4d8281d54110ba39ae4748d623c817ddd019a267d7ab58fe8e67555"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/combined-group-map.json",
+      "sha256_normalized_lf": "5c0f17ee84a22e49d0a0dd3acde7f5d0817fad33c6ffbd9ab16deb837b426bba"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/ar-cart-after.json",
+      "sha256_normalized_lf": "155138872d86635152e7edd66a16ba007b60d32f7ed9f6283894fad17b615465"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/ar-cart-before.json",
+      "sha256_normalized_lf": "7610521803d8c538eccbe929fb8407b8df144a6eeab30d9e57b34b71333c408a"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-abandon-basket.json",
+      "sha256_normalized_lf": "709f943b2716f0b15410499d82f6253e7043682620a1cdf4a377d27c40c9d4ca"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-add-variant.json",
+      "sha256_normalized_lf": "7c99867412dc5ae0d6ca22315866e82660fc5f5a0ea85b5784b5177da29f8787"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-cart-product-details.json",
+      "sha256_normalized_lf": "193ef45f82adf76fcd4a4dfe8014dc36a05fe782fd6026ae1847e734c3a7c5e4"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-checkout-control.json",
+      "sha256_normalized_lf": "c566f291d7b1d4fc39bb680db759526535655587378824bc3ecdde71e2d98689"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-checkout-retry.json",
+      "sha256_normalized_lf": "b2d9a2324b623209ac3f99dbf5caa7f605b34a5c76461587ae700c8a2f9d7f11"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-place-order.json",
+      "sha256_normalized_lf": "0f181f39bc6cac4a38ff4f1d62b4d5c4532d93d325b334bc5b039bdf8453027c"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-price-tradeoff.json",
+      "sha256_normalized_lf": "6421f770ebe9c4748e2702ef9e4a7aba1aee77fb247cf8a6f8e7d087f14af7df"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-quantity-control.json",
+      "sha256_normalized_lf": "e912744e4d30a19fb5777875be54eddb809878ebe088b84a0c75f2f574ab457c"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-quantity-revision.json",
+      "sha256_normalized_lf": "f7f1d059be166db7d4c0389c9ae20c0790ba5099ed02e201deff9cfe50bab48b"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-ranked-product-details.json",
+      "sha256_normalized_lf": "709c60cfcdbb5f847d2cfad74703aa8efadd40fc52a80c0a70c3b05f242c85bf"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-remove-control.json",
+      "sha256_normalized_lf": "7338dfec45399454293295ecd1154338e81512c1cbcdb69ed7b7e75edd210ae9"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-remove-line.json",
+      "sha256_normalized_lf": "3b2e178961630e3385200a6d4748085eee42b7a5d7715b7835223c6b78a60277"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-replace-basket.json",
+      "sha256_normalized_lf": "aa3f40eb20aecf27444897f2e5285b6292989db1aa580ce2df58255a7834e060"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-shoe-details.json",
+      "sha256_normalized_lf": "de630f88406d4a66d1db582a5e92110b6b177bb70b12f8405c2f1f425469e64b"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-shortlist-cheapest-details.json",
+      "sha256_normalized_lf": "50a880a6c4ac2e5a7fce1d3d6b80b59d8ea8619972bb04ca96757e46e978ead2"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-size-uncertainty.json",
+      "sha256_normalized_lf": "246725d36cbab9d428243502c09539954872e7b49618184ba105c7d67074cee4"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-undo-edit.json",
+      "sha256_normalized_lf": "39c25a32ac942c04582f715f394ad71d8d5a7d046ae429ab20bfe9902534ba54"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-use-suitability.json",
+      "sha256_normalized_lf": "ca9cdb473a407e3ffa62986fad250475e261d44b987b1df7d88c8c22c9ba9d39"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-161.json",
+      "sha256_normalized_lf": "925f0e18a2de4e87c1056612b11ddcec5f6474a95d86a6599214c5a5cf06ad49"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-162.json",
+      "sha256_normalized_lf": "1f91bc861d5fbad11ea801a7ced24866a86806af65bf56eb510581b7980ebf45"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-163.json",
+      "sha256_normalized_lf": "354723476344de90ef27e4e5b01d36f9ad53fc70eb759e604f8a271d3e854689"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-164.json",
+      "sha256_normalized_lf": "366d69c102bcdc2206e21855b4678c83746a8c2d04d1bc27f034d25a0cca7fe2"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-165.json",
+      "sha256_normalized_lf": "bc9459f4e14bf71167f40c61124f37caadd69c454da5314d5f2bc7db0def2d37"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-166.json",
+      "sha256_normalized_lf": "423a007fe108c3eb354b7b718d0529e2ab385fc84c5d0022c5af5ab7872b22ca"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-167.json",
+      "sha256_normalized_lf": "cc4aa25a98919694511e3d1b121db33fed7e1aa60d31301a5c335e24806742b7"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-168.json",
+      "sha256_normalized_lf": "9a097d50a071adc8837c5616cf42ea3c30c8045aa9760e986256f2f609acda8a"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/cart-for-clear.json",
+      "sha256_normalized_lf": "191e6d1fa56c4d835e8444ee7d0796fa82a6c6aceca3354f873a6d89e1f54194"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/checkout-ready.json",
+      "sha256_normalized_lf": "7d403825acc0c61edd4fe0212fcdec74daa7074f3050c2ebcdb08487070e265e"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/comparison.json",
+      "sha256_normalized_lf": "a27195d44917e1f9cc3fdabd58e8fc4789da3e27274c0d09cc018fdf30016161"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/en-known-shirt.json",
+      "sha256_normalized_lf": "fb8ab336e1ecdefc7d243f931406c490c3a2c0cca3ff7bd9013b5ed3380457d2"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/en-return-shirt.json",
+      "sha256_normalized_lf": "58c834e0821cbc21514e6f71090557a860766fdd62700e801cab161f499d6e4e"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/fr-cart-after.json",
+      "sha256_normalized_lf": "e8347adf1b19e147fbd4ae70542f03d900b6164051820aef4a5aeb6b2457a94b"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/fr-cart-before.json",
+      "sha256_normalized_lf": "9e41d4a7dcb10c2fe0b6abbe854eb137caacf06e2274ae6d3ef3b5610aa09986"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/mix-cart-ambiguous.json",
+      "sha256_normalized_lf": "fa013db437185e7b4037f3ff4e0e5cf2fea1df93581468c724f2a594ee2f7f3d"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/mix-cart-answer.json",
+      "sha256_normalized_lf": "31d549d967328166e32adef17d42b0f00a0888b3b2a19092ae6b7e26f0abfb14"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/product-add.json",
+      "sha256_normalized_lf": "f1daabca6bed3015ecc3074089e640cc6fcc2041802b201dbaa4a0818133781b"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/remove-then-undo.json",
+      "sha256_normalized_lf": "1bec6c85bbedf4022890c86b10d2895d48e5298d6ca7c1390d76ebad20c10406"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/expanded-group-map.json",
+      "sha256_normalized_lf": "993f5907510f54084545c32a9666e686269e757ab505015dd751810ff07bc7c2"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/gemini-batch-001.annotated.json",
+      "sha256_normalized_lf": "ce20143c19499143ee658af18d4edad421aea3e41cb67141ceb455dfe9dcec49"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/pilot2-overlap-review.json",
+      "sha256_normalized_lf": "d77899dd6c6594d47702b4616394119123e4cf3cef035ed228380f5e06eaba1b"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/record-format-v2.schema.json",
+      "sha256_normalized_lf": "2d0cf19598f7dea78807ce0053b6acd7fd2be433a7386d593e355ba16b6ca562"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/synthetic-batch-001.json",
+      "sha256_normalized_lf": "dffc979ffb0949cb88ddf8ff7a9b12242416ca327c78e238125b365ab12aadf4"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/synthetic-batch-002.json",
+      "sha256_normalized_lf": "a09c36f800a721d8df0a78fa59e01a6b687b7a9427dd3e83adca1d9a82f9930c"
+    },
+    {
+      "path": "eval/intent-corpus.json",
+      "sha256_normalized_lf": "1ef7ebefc6eb07a2fce8d4739c7a63f42827a4322c42598b9d442a0042aba2d8"
+    },
+    {
+      "path": "eval/milestone_cases.py",
+      "sha256_normalized_lf": "da88fe54a9646941558f4632c4cc2c0da989298fa7c422f0c0cfa297ac24267c"
+    },
+    {
+      "path": "store/src/catalogue.ts",
+      "sha256_normalized_lf": "0683111b78d2333de33fb1caa244927aaf9b1e49a8b9fad5e87f615c42005b49"
+    }
+  ],
+  "components": [
+    {
+      "component_id": "pilot2-component-001",
+      "case_ids": [
+        "gemini-001-001",
+        "gemini-001-002",
+        "gemini-001-003",
+        "gemini-001-004",
+        "gemini-001-005",
+        "gemini-001-006",
+        "gemini-001-007",
+        "gemini-001-008",
+        "gemini-001-009",
+        "gemini-001-010",
+        "gemini-001-011",
+        "gemini-001-012",
+        "gemini-001-013",
+        "gemini-001-014",
+        "gemini-001-017",
+        "gemini-001-018",
+        "gemini-001-019",
+        "gemini-001-020",
+        "gemini-001-021",
+        "gemini-001-022",
+        "gemini-001-023",
+        "gemini-001-024",
+        "gemini-001-025",
+        "gemini-001-026",
+        "gemini-001-027",
+        "gemini-001-028",
+        "gemini-001-029",
+        "gemini-001-030",
+        "gemini-001-031",
+        "gemini-001-032",
+        "gemini-001-033",
+        "gemini-001-034",
+        "gemini-001-035",
+        "gemini-001-036",
+        "gemini-001-039",
+        "gemini-001-040",
+        "gemini-001-041",
+        "gemini-001-042",
+        "gemini-001-043",
+        "gemini-001-048",
+        "gemini-001-049",
+        "gemini-001-050",
+        "gemini-001-051",
+        "gemini-001-052",
+        "gemini-001-053",
+        "gemini-001-054",
+        "gemini-001-055",
+        "gemini-001-056",
+        "gemini-001-057",
+        "gemini-001-058",
+        "gemini-001-059",
+        "gemini-001-060",
+        "gemini-001-061",
+        "gemini-001-064",
+        "gemini-001-065",
+        "gemini-001-066",
+        "gemini-001-067",
+        "gemini-001-068",
+        "gemini-001-069",
+        "gemini-001-070",
+        "gemini-001-071",
+        "gemini-001-072",
+        "gemini-001-073",
+        "gemini-001-074",
+        "gemini-001-075",
+        "gemini-001-076",
+        "gemini-001-077",
+        "gemini-001-078",
+        "gemini-001-079",
+        "gemini-001-080",
+        "gemini-001-081",
+        "gemini-001-082",
+        "gemini-001-083",
+        "gemini-001-084",
+        "gemini-001-085",
+        "gemini-001-086",
+        "gemini-001-089",
+        "gemini-001-090",
+        "gemini-001-091",
+        "gemini-001-092",
+        "gemini-001-093",
+        "gemini-001-094",
+        "gemini-001-095",
+        "gemini-001-096",
+        "gemini-001-097",
+        "gemini-001-098",
+        "gemini-001-099",
+        "gemini-001-100",
+        "syn-ar-01",
+        "syn-ar-04",
+        "syn-ar-05",
+        "syn-en-02",
+        "syn-en-06",
+        "syn-en-07",
+        "syn-fr-02",
+        "syn-fr-04",
+        "syn-fr-05",
+        "syn-fr-07",
+        "syn-fr-08",
+        "syn-mx-01",
+        "syn-mx-02",
+        "syn-mx-04",
+        "syn-mx-05",
+        "syn-mx-06",
+        "syn-mx-07",
+        "synthetic-002-005",
+        "synthetic-002-006",
+        "synthetic-002-007",
+        "synthetic-002-008",
+        "synthetic-002-017",
+        "synthetic-002-018",
+        "synthetic-002-019",
+        "synthetic-002-020",
+        "synthetic-002-061",
+        "synthetic-002-062",
+        "synthetic-002-063",
+        "synthetic-002-064",
+        "synthetic-002-089",
+        "synthetic-002-090",
+        "synthetic-002-091",
+        "synthetic-002-092",
+        "synthetic-002-101",
+        "synthetic-002-102",
+        "synthetic-002-103",
+        "synthetic-002-104",
+        "synthetic-002-105",
+        "synthetic-002-106",
+        "synthetic-002-107",
+        "synthetic-002-108",
+        "synthetic-002-109",
+        "synthetic-002-110",
+        "synthetic-002-111",
+        "synthetic-002-112",
+        "synthetic-002-161",
+        "synthetic-002-162",
+        "synthetic-002-163",
+        "synthetic-002-164"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-002",
+      "case_ids": [
+        "gemini-001-015",
+        "gemini-001-016",
+        "gemini-001-037",
+        "gemini-001-038",
+        "gemini-001-062",
+        "gemini-001-063",
+        "gemini-001-087",
+        "gemini-001-088",
+        "syn-ar-06",
+        "syn-fr-09",
+        "syn-mx-03",
+        "syn-mx-09",
+        "synthetic-002-049",
+        "synthetic-002-050",
+        "synthetic-002-051",
+        "synthetic-002-052",
+        "synthetic-002-081",
+        "synthetic-002-082",
+        "synthetic-002-083",
+        "synthetic-002-084",
+        "synthetic-002-085",
+        "synthetic-002-086",
+        "synthetic-002-087",
+        "synthetic-002-088"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-003",
+      "case_ids": [
+        "gemini-001-044",
+        "gemini-001-045",
+        "gemini-001-046",
+        "gemini-001-047",
+        "syn-en-01",
+        "synthetic-002-025",
+        "synthetic-002-026",
+        "synthetic-002-027",
+        "synthetic-002-028"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-004",
+      "case_ids": [
+        "syn-ar-02",
+        "synthetic-002-001",
+        "synthetic-002-002",
+        "synthetic-002-003",
+        "synthetic-002-004"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-005",
+      "case_ids": [
+        "syn-ar-03",
+        "syn-fr-03",
+        "synthetic-002-053",
+        "synthetic-002-054",
+        "synthetic-002-055",
+        "synthetic-002-056"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-006",
+      "case_ids": [
+        "syn-ar-07",
+        "syn-fr-10",
+        "syn-mx-08",
+        "synthetic-002-033",
+        "synthetic-002-034",
+        "synthetic-002-035",
+        "synthetic-002-036"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-007",
+      "case_ids": [
+        "syn-ar-08",
+        "syn-en-09",
+        "synthetic-002-113",
+        "synthetic-002-114",
+        "synthetic-002-115",
+        "synthetic-002-116"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-008",
+      "case_ids": ["syn-ar-09"],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-009",
+      "case_ids": ["syn-ar-10"],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-010",
+      "case_ids": [
+        "syn-en-03",
+        "synthetic-002-057",
+        "synthetic-002-058",
+        "synthetic-002-059",
+        "synthetic-002-060"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-011",
+      "case_ids": [
+        "syn-en-04",
+        "syn-en-05",
+        "syn-fr-06",
+        "synthetic-002-065",
+        "synthetic-002-066",
+        "synthetic-002-067",
+        "synthetic-002-068"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-012",
+      "case_ids": ["syn-en-08"],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-013",
+      "case_ids": ["syn-en-10"],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-014",
+      "case_ids": ["syn-fr-01", "syn-mx-10"],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-015",
+      "case_ids": [
+        "synthetic-002-009",
+        "synthetic-002-010",
+        "synthetic-002-011",
+        "synthetic-002-012"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-016",
+      "case_ids": [
+        "synthetic-002-013",
+        "synthetic-002-014",
+        "synthetic-002-015",
+        "synthetic-002-016"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-017",
+      "case_ids": [
+        "synthetic-002-021",
+        "synthetic-002-022",
+        "synthetic-002-023",
+        "synthetic-002-024"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-018",
+      "case_ids": [
+        "synthetic-002-029",
+        "synthetic-002-030",
+        "synthetic-002-031",
+        "synthetic-002-032"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-019",
+      "case_ids": [
+        "synthetic-002-037",
+        "synthetic-002-038",
+        "synthetic-002-039",
+        "synthetic-002-040"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-020",
+      "case_ids": [
+        "synthetic-002-041",
+        "synthetic-002-042",
+        "synthetic-002-043",
+        "synthetic-002-044"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-021",
+      "case_ids": [
+        "synthetic-002-045",
+        "synthetic-002-046",
+        "synthetic-002-047",
+        "synthetic-002-048"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-022",
+      "case_ids": [
+        "synthetic-002-069",
+        "synthetic-002-070",
+        "synthetic-002-071",
+        "synthetic-002-072"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-023",
+      "case_ids": [
+        "synthetic-002-073",
+        "synthetic-002-074",
+        "synthetic-002-075",
+        "synthetic-002-076"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-024",
+      "case_ids": [
+        "synthetic-002-077",
+        "synthetic-002-078",
+        "synthetic-002-079",
+        "synthetic-002-080"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-025",
+      "case_ids": [
+        "synthetic-002-093",
+        "synthetic-002-094",
+        "synthetic-002-095",
+        "synthetic-002-096"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-026",
+      "case_ids": [
+        "synthetic-002-097",
+        "synthetic-002-098",
+        "synthetic-002-099",
+        "synthetic-002-100",
+        "synthetic-002-165",
+        "synthetic-002-166",
+        "synthetic-002-167",
+        "synthetic-002-168"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-027",
+      "case_ids": [
+        "synthetic-002-117",
+        "synthetic-002-118",
+        "synthetic-002-119",
+        "synthetic-002-120"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-028",
+      "case_ids": [
+        "synthetic-002-121",
+        "synthetic-002-122",
+        "synthetic-002-123",
+        "synthetic-002-124"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-029",
+      "case_ids": [
+        "synthetic-002-125",
+        "synthetic-002-126",
+        "synthetic-002-127",
+        "synthetic-002-128"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-030",
+      "case_ids": [
+        "synthetic-002-129",
+        "synthetic-002-130",
+        "synthetic-002-131",
+        "synthetic-002-132"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-031",
+      "case_ids": [
+        "synthetic-002-133",
+        "synthetic-002-134",
+        "synthetic-002-135",
+        "synthetic-002-136"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-032",
+      "case_ids": [
+        "synthetic-002-137",
+        "synthetic-002-138",
+        "synthetic-002-139",
+        "synthetic-002-140"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-033",
+      "case_ids": [
+        "synthetic-002-141",
+        "synthetic-002-142",
+        "synthetic-002-143",
+        "synthetic-002-144"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-034",
+      "case_ids": [
+        "synthetic-002-145",
+        "synthetic-002-146",
+        "synthetic-002-147",
+        "synthetic-002-148"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-035",
+      "case_ids": [
+        "synthetic-002-149",
+        "synthetic-002-150",
+        "synthetic-002-151",
+        "synthetic-002-152"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-036",
+      "case_ids": [
+        "synthetic-002-153",
+        "synthetic-002-154",
+        "synthetic-002-155",
+        "synthetic-002-156"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "pilot2-component-037",
+      "case_ids": [
+        "synthetic-002-157",
+        "synthetic-002-158",
+        "synthetic-002-159",
+        "synthetic-002-160"
+      ],
+      "split": null
+    }
+  ],
+  "membership": [
+    { "case_id": "gemini-001-001", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-002", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-003", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-004", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-005", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-006", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-007", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-008", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-009", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-010", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-011", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-012", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-013", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-014", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-017", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-018", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-019", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-020", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-021", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-022", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-023", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-024", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-025", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-026", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-027", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-028", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-029", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-030", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-031", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-032", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-033", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-034", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-035", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-036", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-039", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-040", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-041", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-042", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-043", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-048", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-049", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-050", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-051", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-052", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-053", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-054", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-055", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-056", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-057", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-058", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-059", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-060", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-061", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-064", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-065", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-066", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-067", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-068", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-069", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-070", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-071", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-072", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-073", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-074", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-075", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-076", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-077", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-078", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-079", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-080", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-081", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-082", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-083", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-084", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-085", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-086", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-089", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-090", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-091", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-092", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-093", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-094", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-095", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-096", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-097", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-098", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-099", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-100", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-ar-01", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-ar-04", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-ar-05", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-en-02", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-en-06", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-en-07", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-fr-02", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-fr-04", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-fr-05", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-fr-07", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-fr-08", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-mx-01", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-mx-02", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-mx-04", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-mx-05", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-mx-06", "component_id": "pilot2-component-001" },
+    { "case_id": "syn-mx-07", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-005", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-006", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-007", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-008", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-017", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-018", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-019", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-020", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-061", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-062", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-063", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-064", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-089", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-090", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-091", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-092", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-101", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-102", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-103", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-104", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-105", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-106", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-107", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-108", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-109", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-110", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-111", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-112", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-161", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-162", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-163", "component_id": "pilot2-component-001" },
+    { "case_id": "synthetic-002-164", "component_id": "pilot2-component-001" },
+    { "case_id": "gemini-001-015", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-016", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-037", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-038", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-062", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-063", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-087", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-088", "component_id": "pilot2-component-002" },
+    { "case_id": "syn-ar-06", "component_id": "pilot2-component-002" },
+    { "case_id": "syn-fr-09", "component_id": "pilot2-component-002" },
+    { "case_id": "syn-mx-03", "component_id": "pilot2-component-002" },
+    { "case_id": "syn-mx-09", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-049", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-050", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-051", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-052", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-081", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-082", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-083", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-084", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-085", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-086", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-087", "component_id": "pilot2-component-002" },
+    { "case_id": "synthetic-002-088", "component_id": "pilot2-component-002" },
+    { "case_id": "gemini-001-044", "component_id": "pilot2-component-003" },
+    { "case_id": "gemini-001-045", "component_id": "pilot2-component-003" },
+    { "case_id": "gemini-001-046", "component_id": "pilot2-component-003" },
+    { "case_id": "gemini-001-047", "component_id": "pilot2-component-003" },
+    { "case_id": "syn-en-01", "component_id": "pilot2-component-003" },
+    { "case_id": "synthetic-002-025", "component_id": "pilot2-component-003" },
+    { "case_id": "synthetic-002-026", "component_id": "pilot2-component-003" },
+    { "case_id": "synthetic-002-027", "component_id": "pilot2-component-003" },
+    { "case_id": "synthetic-002-028", "component_id": "pilot2-component-003" },
+    { "case_id": "syn-ar-02", "component_id": "pilot2-component-004" },
+    { "case_id": "synthetic-002-001", "component_id": "pilot2-component-004" },
+    { "case_id": "synthetic-002-002", "component_id": "pilot2-component-004" },
+    { "case_id": "synthetic-002-003", "component_id": "pilot2-component-004" },
+    { "case_id": "synthetic-002-004", "component_id": "pilot2-component-004" },
+    { "case_id": "syn-ar-03", "component_id": "pilot2-component-005" },
+    { "case_id": "syn-fr-03", "component_id": "pilot2-component-005" },
+    { "case_id": "synthetic-002-053", "component_id": "pilot2-component-005" },
+    { "case_id": "synthetic-002-054", "component_id": "pilot2-component-005" },
+    { "case_id": "synthetic-002-055", "component_id": "pilot2-component-005" },
+    { "case_id": "synthetic-002-056", "component_id": "pilot2-component-005" },
+    { "case_id": "syn-ar-07", "component_id": "pilot2-component-006" },
+    { "case_id": "syn-fr-10", "component_id": "pilot2-component-006" },
+    { "case_id": "syn-mx-08", "component_id": "pilot2-component-006" },
+    { "case_id": "synthetic-002-033", "component_id": "pilot2-component-006" },
+    { "case_id": "synthetic-002-034", "component_id": "pilot2-component-006" },
+    { "case_id": "synthetic-002-035", "component_id": "pilot2-component-006" },
+    { "case_id": "synthetic-002-036", "component_id": "pilot2-component-006" },
+    { "case_id": "syn-ar-08", "component_id": "pilot2-component-007" },
+    { "case_id": "syn-en-09", "component_id": "pilot2-component-007" },
+    { "case_id": "synthetic-002-113", "component_id": "pilot2-component-007" },
+    { "case_id": "synthetic-002-114", "component_id": "pilot2-component-007" },
+    { "case_id": "synthetic-002-115", "component_id": "pilot2-component-007" },
+    { "case_id": "synthetic-002-116", "component_id": "pilot2-component-007" },
+    { "case_id": "syn-ar-09", "component_id": "pilot2-component-008" },
+    { "case_id": "syn-ar-10", "component_id": "pilot2-component-009" },
+    { "case_id": "syn-en-03", "component_id": "pilot2-component-010" },
+    { "case_id": "synthetic-002-057", "component_id": "pilot2-component-010" },
+    { "case_id": "synthetic-002-058", "component_id": "pilot2-component-010" },
+    { "case_id": "synthetic-002-059", "component_id": "pilot2-component-010" },
+    { "case_id": "synthetic-002-060", "component_id": "pilot2-component-010" },
+    { "case_id": "syn-en-04", "component_id": "pilot2-component-011" },
+    { "case_id": "syn-en-05", "component_id": "pilot2-component-011" },
+    { "case_id": "syn-fr-06", "component_id": "pilot2-component-011" },
+    { "case_id": "synthetic-002-065", "component_id": "pilot2-component-011" },
+    { "case_id": "synthetic-002-066", "component_id": "pilot2-component-011" },
+    { "case_id": "synthetic-002-067", "component_id": "pilot2-component-011" },
+    { "case_id": "synthetic-002-068", "component_id": "pilot2-component-011" },
+    { "case_id": "syn-en-08", "component_id": "pilot2-component-012" },
+    { "case_id": "syn-en-10", "component_id": "pilot2-component-013" },
+    { "case_id": "syn-fr-01", "component_id": "pilot2-component-014" },
+    { "case_id": "syn-mx-10", "component_id": "pilot2-component-014" },
+    { "case_id": "synthetic-002-009", "component_id": "pilot2-component-015" },
+    { "case_id": "synthetic-002-010", "component_id": "pilot2-component-015" },
+    { "case_id": "synthetic-002-011", "component_id": "pilot2-component-015" },
+    { "case_id": "synthetic-002-012", "component_id": "pilot2-component-015" },
+    { "case_id": "synthetic-002-013", "component_id": "pilot2-component-016" },
+    { "case_id": "synthetic-002-014", "component_id": "pilot2-component-016" },
+    { "case_id": "synthetic-002-015", "component_id": "pilot2-component-016" },
+    { "case_id": "synthetic-002-016", "component_id": "pilot2-component-016" },
+    { "case_id": "synthetic-002-021", "component_id": "pilot2-component-017" },
+    { "case_id": "synthetic-002-022", "component_id": "pilot2-component-017" },
+    { "case_id": "synthetic-002-023", "component_id": "pilot2-component-017" },
+    { "case_id": "synthetic-002-024", "component_id": "pilot2-component-017" },
+    { "case_id": "synthetic-002-029", "component_id": "pilot2-component-018" },
+    { "case_id": "synthetic-002-030", "component_id": "pilot2-component-018" },
+    { "case_id": "synthetic-002-031", "component_id": "pilot2-component-018" },
+    { "case_id": "synthetic-002-032", "component_id": "pilot2-component-018" },
+    { "case_id": "synthetic-002-037", "component_id": "pilot2-component-019" },
+    { "case_id": "synthetic-002-038", "component_id": "pilot2-component-019" },
+    { "case_id": "synthetic-002-039", "component_id": "pilot2-component-019" },
+    { "case_id": "synthetic-002-040", "component_id": "pilot2-component-019" },
+    { "case_id": "synthetic-002-041", "component_id": "pilot2-component-020" },
+    { "case_id": "synthetic-002-042", "component_id": "pilot2-component-020" },
+    { "case_id": "synthetic-002-043", "component_id": "pilot2-component-020" },
+    { "case_id": "synthetic-002-044", "component_id": "pilot2-component-020" },
+    { "case_id": "synthetic-002-045", "component_id": "pilot2-component-021" },
+    { "case_id": "synthetic-002-046", "component_id": "pilot2-component-021" },
+    { "case_id": "synthetic-002-047", "component_id": "pilot2-component-021" },
+    { "case_id": "synthetic-002-048", "component_id": "pilot2-component-021" },
+    { "case_id": "synthetic-002-069", "component_id": "pilot2-component-022" },
+    { "case_id": "synthetic-002-070", "component_id": "pilot2-component-022" },
+    { "case_id": "synthetic-002-071", "component_id": "pilot2-component-022" },
+    { "case_id": "synthetic-002-072", "component_id": "pilot2-component-022" },
+    { "case_id": "synthetic-002-073", "component_id": "pilot2-component-023" },
+    { "case_id": "synthetic-002-074", "component_id": "pilot2-component-023" },
+    { "case_id": "synthetic-002-075", "component_id": "pilot2-component-023" },
+    { "case_id": "synthetic-002-076", "component_id": "pilot2-component-023" },
+    { "case_id": "synthetic-002-077", "component_id": "pilot2-component-024" },
+    { "case_id": "synthetic-002-078", "component_id": "pilot2-component-024" },
+    { "case_id": "synthetic-002-079", "component_id": "pilot2-component-024" },
+    { "case_id": "synthetic-002-080", "component_id": "pilot2-component-024" },
+    { "case_id": "synthetic-002-093", "component_id": "pilot2-component-025" },
+    { "case_id": "synthetic-002-094", "component_id": "pilot2-component-025" },
+    { "case_id": "synthetic-002-095", "component_id": "pilot2-component-025" },
+    { "case_id": "synthetic-002-096", "component_id": "pilot2-component-025" },
+    { "case_id": "synthetic-002-097", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-098", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-099", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-100", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-165", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-166", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-167", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-168", "component_id": "pilot2-component-026" },
+    { "case_id": "synthetic-002-117", "component_id": "pilot2-component-027" },
+    { "case_id": "synthetic-002-118", "component_id": "pilot2-component-027" },
+    { "case_id": "synthetic-002-119", "component_id": "pilot2-component-027" },
+    { "case_id": "synthetic-002-120", "component_id": "pilot2-component-027" },
+    { "case_id": "synthetic-002-121", "component_id": "pilot2-component-028" },
+    { "case_id": "synthetic-002-122", "component_id": "pilot2-component-028" },
+    { "case_id": "synthetic-002-123", "component_id": "pilot2-component-028" },
+    { "case_id": "synthetic-002-124", "component_id": "pilot2-component-028" },
+    { "case_id": "synthetic-002-125", "component_id": "pilot2-component-029" },
+    { "case_id": "synthetic-002-126", "component_id": "pilot2-component-029" },
+    { "case_id": "synthetic-002-127", "component_id": "pilot2-component-029" },
+    { "case_id": "synthetic-002-128", "component_id": "pilot2-component-029" },
+    { "case_id": "synthetic-002-129", "component_id": "pilot2-component-030" },
+    { "case_id": "synthetic-002-130", "component_id": "pilot2-component-030" },
+    { "case_id": "synthetic-002-131", "component_id": "pilot2-component-030" },
+    { "case_id": "synthetic-002-132", "component_id": "pilot2-component-030" },
+    { "case_id": "synthetic-002-133", "component_id": "pilot2-component-031" },
+    { "case_id": "synthetic-002-134", "component_id": "pilot2-component-031" },
+    { "case_id": "synthetic-002-135", "component_id": "pilot2-component-031" },
+    { "case_id": "synthetic-002-136", "component_id": "pilot2-component-031" },
+    { "case_id": "synthetic-002-137", "component_id": "pilot2-component-032" },
+    { "case_id": "synthetic-002-138", "component_id": "pilot2-component-032" },
+    { "case_id": "synthetic-002-139", "component_id": "pilot2-component-032" },
+    { "case_id": "synthetic-002-140", "component_id": "pilot2-component-032" },
+    { "case_id": "synthetic-002-141", "component_id": "pilot2-component-033" },
+    { "case_id": "synthetic-002-142", "component_id": "pilot2-component-033" },
+    { "case_id": "synthetic-002-143", "component_id": "pilot2-component-033" },
+    { "case_id": "synthetic-002-144", "component_id": "pilot2-component-033" },
+    { "case_id": "synthetic-002-145", "component_id": "pilot2-component-034" },
+    { "case_id": "synthetic-002-146", "component_id": "pilot2-component-034" },
+    { "case_id": "synthetic-002-147", "component_id": "pilot2-component-034" },
+    { "case_id": "synthetic-002-148", "component_id": "pilot2-component-034" },
+    { "case_id": "synthetic-002-149", "component_id": "pilot2-component-035" },
+    { "case_id": "synthetic-002-150", "component_id": "pilot2-component-035" },
+    { "case_id": "synthetic-002-151", "component_id": "pilot2-component-035" },
+    { "case_id": "synthetic-002-152", "component_id": "pilot2-component-035" },
+    { "case_id": "synthetic-002-153", "component_id": "pilot2-component-036" },
+    { "case_id": "synthetic-002-154", "component_id": "pilot2-component-036" },
+    { "case_id": "synthetic-002-155", "component_id": "pilot2-component-036" },
+    { "case_id": "synthetic-002-156", "component_id": "pilot2-component-036" },
+    { "case_id": "synthetic-002-157", "component_id": "pilot2-component-037" },
+    { "case_id": "synthetic-002-158", "component_id": "pilot2-component-037" },
+    { "case_id": "synthetic-002-159", "component_id": "pilot2-component-037" },
+    { "case_id": "synthetic-002-160", "component_id": "pilot2-component-037" }
+  ]
+}

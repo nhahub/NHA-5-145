@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <ellipse cx="320" cy="408" rx="155" ry="16" fill="#25362d" opacity=".12" />
+  <path
+    d="M191 291v-81a129 129 0 0 1 258 0v81"
+    fill="none"
+    stroke="#38483f"
+    stroke-width="30"
+  />
+  <path
+    d="M201 188a122 122 0 0 1 237 0"
+    fill="none"
+    stroke="#b7b6a2"
+    stroke-width="13"
+  />
+  <rect
+    x="161"
+    y="233"
+    width="75"
+    height="151"
+    rx="35"
+    fill="#748476"
+    stroke="#344b40"
+    stroke-width="5"
+  />
+  <rect
+    x="404"
+    y="233"
+    width="75"
+    height="151"
+    rx="35"
+    fill="#748476"
+    stroke="#344b40"
+    stroke-width="5"
+  />
+  <rect x="218" y="253" width="23" height="112" rx="10" fill="#c8ceba" />
+  <rect x="399" y="253" width="23" height="112" rx="10" fill="#c8ceba" />
+</svg>

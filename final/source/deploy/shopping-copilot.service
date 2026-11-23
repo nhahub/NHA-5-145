@@ -1,0 +1,32 @@
+[Unit]
+Description=Shopping Copilot bounded application runtime
+After=network.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=copilot
+Group=copilot
+WorkingDirectory=/opt/shopping-copilot/current
+ExecStart=/opt/shopping-copilot/python/bin/python -B -m deploy run --release /opt/shopping-copilot/current --config /etc/shopping-copilot/runtime.env --logs /var/log/shopping-copilot
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadOnlyPaths=/opt/shopping-copilot /etc/shopping-copilot
+ReadWritePaths=/var/lib/shopping-copilot /var/log/shopping-copilot
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LimitNOFILE=4096
+TasksMax=64
+MemoryMax=1G
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,58 @@
+{
+  "review_date": "2026-10-07",
+  "status": "bounded_AI_development_overlap_review",
+  "source_files": [
+    {
+      "path": "eval/intent-corpus.json",
+      "sha256_normalized_lf": "1ef7ebefc6eb07a2fce8d4739c7a63f42827a4322c42598b9d442a0042aba2d8"
+    },
+    {
+      "path": "eval/milestone_cases.py",
+      "sha256_normalized_lf": "da88fe54a9646941558f4632c4cc2c0da989298fa7c422f0c0cfa297ac24267c"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/expanded-group-map.json",
+      "sha256_normalized_lf": "993f5907510f54084545c32a9666e686269e757ab505015dd751810ff07bc7c2"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/remove-then-undo.json",
+      "sha256_normalized_lf": "1bec6c85bbedf4022890c86b10d2895d48e5298d6ca7c1390d76ebad20c10406"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-undo-edit.json",
+      "sha256_normalized_lf": "39c25a32ac942c04582f715f394ad71d8d5a7d046ae429ab20bfe9902534ba54"
+    }
+  ],
+  "relations": [
+    {
+      "case_ids": ["syn-en-06", "syn-fr-08"],
+      "reason": "Undo fixture explicitly quotes prior removal of white Formal Shirt L, matching the named removal request."
+    },
+    {
+      "case_ids": ["synthetic-002-109", "synthetic-002-105"],
+      "reason": "Conservative scenario link: Undo fixture identifies prior removal of bag-02, matching the named Cairo Backpack removal; no common recorded conversation ID is asserted."
+    },
+    {
+      "case_ids": ["syn-ar-02", "synthetic-002-002"],
+      "reason": "Conservative template link: owned black trousers and colour-coordination opinion; common conversation authorship not established."
+    },
+    {
+      "case_ids": ["syn-en-01", "synthetic-002-025"],
+      "reason": "Conservative template link: university backpack with maximum EGP budget; values and exclusions differ."
+    }
+  ],
+  "scope": {
+    "legacy_intent_cases": 60,
+    "milestone_cases": 44,
+    "synthetic_records": 308,
+    "targeted_tests": "product-context, advice, cart-repair and browser-cart tests",
+    "all_89_inventory_sources_exhaustively_reviewed": false,
+    "private_material_imported": false
+  },
+  "conclusion": "No additional convincing bridge established by the reviewed legacy collections. Absence of detected overlap is not proof of semantic independence.",
+  "limitations": [
+    "Synthetic/exposed only; private debugging remains exposed but is not exhaustively inspectable.",
+    "Legacy corpus, browser tests and private transcripts are not training or validation inputs in this pilot.",
+    "Final independent unseen evaluation remains open."
+  ]
+}

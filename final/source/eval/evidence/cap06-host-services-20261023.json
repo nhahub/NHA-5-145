@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-23",
+  "base_commit": "75a552f3db9900fa021eace9604ed9b7c517cbca",
+  "status": "inactive-local-preparation",
+  "aws_or_model_calls": 0,
+  "resources_created": false,
+  "units_installed_or_enabled": false,
+  "public_acme_started_or_validated": false,
+  "launchers": {
+    "module": "deploy.host_component",
+    "executables": ["/usr/bin/node", "/usr/bin/caddy"],
+    "clean_environment": true,
+    "protected_existing_settings": true,
+    "existing_state_only": true,
+    "qualified_provider": false,
+    "public_cli_bypass": false
+  },
+  "supervision": {
+    "target": "shopping-copilot-host.target",
+    "members": ["store", "agent", "proxy"],
+    "membership": "Wants + PartOf; independent bounded restarts",
+    "readiness": "existing signed flow, not active target/Type=exec",
+    "legacy_conflict_and_ordering": true,
+    "agent_memory_mib": 1024,
+    "store_memory_mib": 256,
+    "proxy_memory_mib": 256,
+    "memory_is_measured_capacity": false,
+    "only_proxy_bind_capability": true
+  },
+  "linux_checks": {
+    "systemd": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "version": "systemd 255 (255.4-1ubuntu8.17)",
+      "limits": "static syntax/dependency check with inert target/interpreter/directory stubs; no unit start or native exec"
+    },
+    "posix_primitives": {
+      "checks": [
+        "owner-only regular bounded file accepted",
+        "group-readable file refused",
+        "oversize refused",
+        "file symlink refused",
+        "multiple hardlinks refused",
+        "FIFO nonblocking refused",
+        "owner-only existing storage accepted",
+        "public storage refused",
+        "storage symlink refused",
+        "writable storage ancestor refused",
+        "symlink storage ancestor refused"
+      ],
+      "passed": 11,
+      "source_sha256": {
+        "deploy/host_config.py": "c177490d06ac06698b89a1ef62715d66fe3ca133b52a6187d2754631de6bea2b",
+        "deploy/host_component.py": "192f2ffd858bf72a13061bb55a6b76496a43097f4f0da3aaa6dc8ae11fc57f73"
+      },
+      "limits": "exact AST-extracted filesystem functions only on Ubuntu/WSL; not full HostSettings loading or actual target-host acceptance"
+    }
+  },
+  "tests": {
+    "red": "1 failed, 26 errors: missing component module and units",
+    "initial_green": {
+      "passed": 27,
+      "seconds": 5.91
+    },
+    "component_and_real_caddy_adapt": {
+      "passed": 31,
+      "seconds": 22.95,
+      "skipped": 0,
+      "includes": "real packaged production Storefront twice with generated environment; test route disabled/private read secret required/catalogue unchanged"
+    },
+    "full": {
+      "passed": 1107,
+      "skipped": 0,
+      "seconds": 345.65,
+      "warnings": "two upstream websockets deprecations",
+      "log": "outputs/cap06-host-services-final.log",
+      "coverage": "all Agent, component/host/config/checks, control/package/access/waiting/proxy, fresh release build and browser recovery",
+      "after_review_fix": true
+    },
+    "review": {
+      "independent_passed": 78,
+      "deselected": 1,
+      "seconds": 24.35,
+      "finding": "quoted release path passed preflight but failed actual Caddy adaptation; no provisioning or listener",
+      "assessment": "treated as Important for fixed-profile handoff; fixed by primary RED->GREEN",
+      "fix": {
+        "character_cases": 7,
+        "command_validation_integration": 1,
+        "component_unit_passed": 35,
+        "seconds": 6.95,
+        "real_caddy_space_path_adapt": {
+          "real_caddy_space_path_adapt": true,
+          "storage_created": false,
+          "listener_or_provisioning": false
+        }
+      },
+      "deferred_minors": [],
+      "limits": [
+        "actual AL2023/systemd252 capabilities/shutdown/provisioning/TLS/DNS/AWS/model/cost acceptance remains separate",
+        "reviewer did not rebuild or run shared-port/full suite; primary owns that evidence"
+      ]
+    },
+    "initial_full": {
+      "passed": 1099,
+      "seconds": 340.33,
+      "warnings": "two upstream websockets deprecations",
+      "log": "outputs/cap06-host-services-full.log"
+    },
+    "checks": {
+      "ruff_check": "pass",
+      "ruff_format_files": 251,
+      "pip_check": "pass",
+      "typescript_lint": "pass",
+      "whitespace": "pass",
+      "changed_markdown_json_prettier": "pass"
+    }
+  },
+  "limits": [
+    "Windows real-Storefront harness substitutes installed Node and adds SYSTEMROOT; not POSIX exec acceptance",
+    "systemd255 static parse with inert filesystem stubs; not real systemd252/AL2023 service runtime/capability/signal acceptance",
+    "Linux filesystem evidence applies to exact extracted functions only, not full host settings or key provisioning",
+    "Caddy adaptation only; no public TLS, provisioning or listener",
+    "No AWS/model/provider/inventory/cost/deployment gate closed"
+  ]
+}

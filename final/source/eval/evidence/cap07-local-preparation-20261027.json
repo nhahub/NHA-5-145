@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "date": "2026-10-27",
+  "kind": "cap07-local-synthetic-preparation",
+  "status": "local_preparation_verified_pre_cloud",
+  "cloud_clock_started": false,
+  "real_aws_requests": 0,
+  "real_provider_requests": 0,
+  "real_custody_accessed": false,
+  "source_archive_sha256": "5e5e3843160225b81b81f3dd79bb960fc82507134ae7a7f58896020d5cd28a23",
+  "native_rehearsal": {
+    "stage": ".scratch/cap07-controlled-host-preparation/native-6570f0617c",
+    "result_sha256": "5f2efbdcd217556622e0ea18d9a7ecec708b7a448d2d8a6b2254f8a836849a71",
+    "result": {
+      "synthetic_only": true,
+      "real_aws_calls": 0,
+      "real_model_posts": 0,
+      "python": "3.12.14",
+      "lanes": [
+        {
+          "mode": "control",
+          "cohorts": [
+            {
+              "requested": 1,
+              "completed": 1,
+              "inference_busy": 0,
+              "elapsed_seconds": 0.193953
+            },
+            {
+              "requested": 5,
+              "completed": 5,
+              "inference_busy": 0,
+              "elapsed_seconds": 0.549557
+            },
+            {
+              "requested": 8,
+              "completed": 8,
+              "inference_busy": 0,
+              "elapsed_seconds": 0.957446
+            }
+          ],
+          "requests": 126,
+          "uncertain_preserved": true
+        },
+        {
+          "mode": "captured",
+          "cohorts": [
+            {
+              "requested": 1,
+              "completed": 1,
+              "inference_busy": 0,
+              "elapsed_seconds": 2.012648
+            },
+            {
+              "requested": 5,
+              "completed": 5,
+              "inference_busy": 0,
+              "elapsed_seconds": 7.955407
+            },
+            {
+              "requested": 8,
+              "completed": 5,
+              "inference_busy": 3,
+              "elapsed_seconds": 9.129765
+            }
+          ],
+          "requests": 140,
+          "uncertain_preserved": true
+        }
+      ],
+      "request_accounting": {
+        "calls": 8823,
+        "observed_wru": 660,
+        "observed_rru": 9650,
+        "observed_sdk_wire_bytes": 26133946,
+        "maximum_encoded_row": 1134,
+        "bounded_wru": 2344,
+        "bounded_rru": 16523,
+        "bounded_table_bytes": 79308,
+        "bounded_regional_sdk_wire_bytes": 52267892,
+        "bounded_internet_output_bytes": 16777216
+      },
+      "passed": true
+    }
+  },
+  "unit_assets": {
+    "stage": ".scratch/cap07-controlled-host-preparation/assets-bd4af347",
+    "result_sha256": "58b59f4f726ca605023bf09330e1d4814c85ca5a5e4a6e893fdff71af1ddba24",
+    "result": {
+      "systemd252_verify": true,
+      "negative_cases": 4,
+      "fixed_utc_deadline": true,
+      "units_executed": false,
+      "aws_calls": 0
+    }
+  },
+  "private_payload_manifest_sha256": "4488672fd1a972895d5a8ef809b5d870e020581198b5497e42d383b45441c98d",
+  "python_regression": {
+    "first_full": "1593 passed;2warnings",
+    "final_full": "1596 passed;1existing browser initialDOM timeout;2warnings",
+    "failed_case": "eval/tests/test_browser_flow.py::test_ticket_08_login_handoff_waits_once_then_spotlights_newest_order",
+    "focused_retry": "1passed in13.84seconds",
+    "browser_group_retry": "6passed in94.11seconds",
+    "full_failure_not_erased": true,
+    "review_fix_pass_full": "1597passed;2upstreamwarnings;1008.45seconds"
+  },
+  "remaining": [
+    "fresh account/FREE/credit/IP/permission preflight",
+    "one key-statusGET and sole-writer actual custody",
+    "single4h cloud acceptance/reboot/capacity/stop/EIPrelease"
+  ],
+  "public_activation": false,
+  "focused_regression": "107passed in15.98seconds; Ruff check and285fileformatcheck passed",
+  "review": {
+    "fresh_reviewer": "gpt-6-astra",
+    "completed": true,
+    "important_findings": 8,
+    "fix_pass": "19private synthetic regression tests passed; native accounting/staticunits rerun; full1597testregression passed",
+    "deferred_minor_findings": [],
+    "scope": "whole preparation including operator scripts; no real custody/cloud access"
+  },
+  "prices": {
+    "ec2": {
+      "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/eu-north-1/index.csv",
+      "utc": "2026-10-27T19:47:17.024229+00:00",
+      "etag": "\"f486104630ae07aa31d9db63c87675f9-22\"",
+      "last_modified": "Fri, 23 Oct 2026 23:12:56 GMT",
+      "streamed_prefix_bytes": 131858397,
+      "prefix_sha256": "fea08fe26872bfc8d06d554a9f4c94238655651304aa6787556363c424395b6c",
+      "rates": [
+        {
+          "SKU": "H33YTQG3Y9XKNSF3",
+          "PricePerUnit": "0.0836000000",
+          "Unit": "GB-Mo",
+          "TermType": "OnDemand",
+          "Location": "EU (Stockholm)",
+          "Instance Type": "",
+          "Operating System": "",
+          "Tenancy": "",
+          "Product Family": "Storage"
+        },
+        {
+          "SKU": "RZ2CPJT3JCVWXCQM",
+          "PricePerUnit": "0.0216000000",
+          "Unit": "Hrs",
+          "TermType": "OnDemand",
+          "Location": "EU (Stockholm)",
+          "Instance Type": "t3.small",
+          "Operating System": "Linux",
+          "Tenancy": "Shared",
+          "Product Family": "Compute Instance"
+        }
+      ],
+      "account_requests": 0
+    },
+    "vpc_dynamodb": {
+      "utc": "2026-10-27T19:45:38.817678+00:00",
+      "sources": [
+        {
+          "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonVPC/current/eu-north-1/index.json",
+          "sha256": "c8d887776d7a729b5523db41d7403131205342b832a66465980935337aa628ce",
+          "bytes": 77914,
+          "rates": [
+            {
+              "sku": "H24SU884XW7MB5WC",
+              "usage": "EUN1-PublicIPv4:InUseAddress",
+              "USD": "0.0050000000",
+              "unit": "Hrs"
+            },
+            {
+              "sku": "2M69N79CPJC2EXZ3",
+              "usage": "EUN1-PublicIPv4:IdleAddress",
+              "USD": "0.0050000000",
+              "unit": "Hrs"
+            }
+          ]
+        },
+        {
+          "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonDynamoDB/current/eu-north-1/index.json",
+          "sha256": "79a676192ebb2e75357a6dadb24468eda9d53687ea2902b8b6d4d21bf283281f",
+          "bytes": 39690,
+          "rates": [
+            {
+              "sku": "7CWH57BC2PWWUQUW",
+              "usage": "EUN1-TimedStorage-ByteHrs",
+              "USD": "0.0000000000",
+              "unit": "GB-Mo"
+            },
+            {
+              "sku": "7CWH57BC2PWWUQUW",
+              "usage": "EUN1-TimedStorage-ByteHrs",
+              "USD": "0.2690000000",
+              "unit": "GB-Mo"
+            },
+            {
+              "sku": "7VPREYYAVVNTF6HA",
+              "usage": "EUN1-WriteRequestUnits",
+              "USD": "0.0000006700",
+              "unit": "WriteRequestUnits"
+            },
+            {
+              "sku": "U3XUEPVEBM989J89",
+              "usage": "EUN1-ReadRequestUnits",
+              "USD": "0.0000001345",
+              "unit": "ReadRequestUnits"
+            },
+            {
+              "sku": "MACZ8RKNUM65VQ5B",
+              "usage": "EUN1-ReplWriteRequestUnits",
+              "USD": "0.0000006700",
+              "unit": "ReplicatedWriteRequestUnits"
+            }
+          ]
+        }
+      ],
+      "aws_account_requests": 0
+    },
+    "planning_bound_usd": "0.142404",
+    "approved_ceiling_usd": "0.25"
+  },
+  "repository_quality": {
+    "ruff_check": "passed",
+    "ruff_format": "285filespassed",
+    "source_eslint": "bridge/panel/store passed",
+    "edited_documents_prettier": "passed",
+    "root_eslint": "fails on2158errors entirely in ignored .scratch cached/downloaded JavaScript; no product findings in focused source check",
+    "root_prettier": "fails on14ignored local ledgers/briefs; edited tracked documents pass"
+  }
+}

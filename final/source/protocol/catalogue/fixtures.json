@@ -1,0 +1,124 @@
+[
+  {
+    "name": "unicode-exclusion",
+    "valid": true,
+    "query": {
+      "v": 1,
+      "query": "مش جلد — laptop bag",
+      "predicates": [],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": ["washable"],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "name": "wrong-sort-type",
+    "valid": false,
+    "query": {
+      "v": 1,
+      "query": "مش جلد — laptop bag",
+      "predicates": [],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": ["washable"],
+      "sort": ["relevance"],
+      "cursor": null
+    }
+  },
+  {
+    "name": "blank-fact",
+    "valid": false,
+    "query": {
+      "v": 1,
+      "query": "مش جلد — laptop bag",
+      "predicates": [],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "eq",
+          "value": " "
+        }
+      ],
+      "unverified_requirements": ["washable"],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "name": "boolean-version",
+    "valid": false,
+    "query": {
+      "v": true,
+      "query": "مش جلد — laptop bag",
+      "predicates": [],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": ["washable"],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "name": "model-url",
+    "valid": false,
+    "query": {
+      "v": 1,
+      "query": "مش جلد — laptop bag",
+      "predicates": [],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": ["washable"],
+      "sort": "relevance",
+      "cursor": null,
+      "url": "https://example.invalid"
+    }
+  },
+  {
+    "name": "money-storage-overflow",
+    "valid": false,
+    "query": {
+      "v": 1,
+      "query": "مش جلد — laptop bag",
+      "predicates": [
+        {
+          "field": "price",
+          "op": "lte",
+          "amount": "92233720368547758.08",
+          "currency": "EGP"
+        }
+      ],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": ["washable"],
+      "sort": "relevance",
+      "cursor": null
+    }
+  }
+]

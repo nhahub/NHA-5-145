@@ -1,0 +1,1654 @@
+{
+  "format_version": 1,
+  "reviewed_on": "2026-10-06",
+  "status": "semantic_grouping_draft_owner_review_pending",
+  "independent_human_review": false,
+  "intended_use": "Conservative leakage components for the two exposed synthetic development batches; no train/validation/test allocation and no unseen evidence.",
+  "source_files": [
+    {
+      "path": "eval/datasets/capstone-v1/development/synthetic-batch-001.json",
+      "sha256_normalized_lf": "dffc979ffb0949cb88ddf8ff7a9b12242416ca327c78e238125b365ab12aadf4"
+    },
+    {
+      "path": "eval/datasets/capstone-v1/development/gemini-batch-001.annotated.json",
+      "sha256_normalized_lf": "ce20143c19499143ee658af18d4edad421aea3e41cb67141ceb455dfe9dcec49"
+    }
+  ],
+  "record_count": 140,
+  "component_count": 15,
+  "relations": [
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-ar-shirt-correction.",
+      "case_ids": ["syn-ar-04", "syn-ar-05"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-en-shirt-return.",
+      "case_ids": ["syn-en-04", "syn-en-05"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-fr-runner-correction.",
+      "case_ids": ["syn-fr-04", "syn-fr-05"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-01.",
+      "case_ids": [
+        "gemini-001-001",
+        "gemini-001-002",
+        "gemini-001-003",
+        "gemini-001-004"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-02.",
+      "case_ids": [
+        "gemini-001-005",
+        "gemini-001-006",
+        "gemini-001-007",
+        "gemini-001-008"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-03.",
+      "case_ids": ["gemini-001-009", "gemini-001-010", "gemini-001-011"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-04.",
+      "case_ids": ["gemini-001-012", "gemini-001-013", "gemini-001-014"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-05.",
+      "case_ids": ["gemini-001-015", "gemini-001-016"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-06.",
+      "case_ids": [
+        "gemini-001-017",
+        "gemini-001-018",
+        "gemini-001-019",
+        "gemini-001-020",
+        "gemini-001-021"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-07.",
+      "case_ids": [
+        "gemini-001-022",
+        "gemini-001-023",
+        "gemini-001-024",
+        "gemini-001-025"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-08.",
+      "case_ids": [
+        "gemini-001-026",
+        "gemini-001-027",
+        "gemini-001-028",
+        "gemini-001-029"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-09.",
+      "case_ids": [
+        "gemini-001-030",
+        "gemini-001-031",
+        "gemini-001-032",
+        "gemini-001-033"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-10.",
+      "case_ids": ["gemini-001-034", "gemini-001-035", "gemini-001-036"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-11.",
+      "case_ids": ["gemini-001-037", "gemini-001-038"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-12.",
+      "case_ids": [
+        "gemini-001-039",
+        "gemini-001-040",
+        "gemini-001-041",
+        "gemini-001-042",
+        "gemini-001-043"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-13.",
+      "case_ids": [
+        "gemini-001-044",
+        "gemini-001-045",
+        "gemini-001-046",
+        "gemini-001-047"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-14.",
+      "case_ids": ["gemini-001-048", "gemini-001-049", "gemini-001-050"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-15.",
+      "case_ids": [
+        "gemini-001-051",
+        "gemini-001-052",
+        "gemini-001-053",
+        "gemini-001-054"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-16.",
+      "case_ids": [
+        "gemini-001-055",
+        "gemini-001-056",
+        "gemini-001-057",
+        "gemini-001-058"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-17.",
+      "case_ids": ["gemini-001-059", "gemini-001-060", "gemini-001-061"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-18.",
+      "case_ids": ["gemini-001-062", "gemini-001-063"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-19.",
+      "case_ids": [
+        "gemini-001-064",
+        "gemini-001-065",
+        "gemini-001-066",
+        "gemini-001-067",
+        "gemini-001-068"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-20.",
+      "case_ids": [
+        "gemini-001-069",
+        "gemini-001-070",
+        "gemini-001-071",
+        "gemini-001-072"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-21.",
+      "case_ids": ["gemini-001-073", "gemini-001-074", "gemini-001-075"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-22.",
+      "case_ids": [
+        "gemini-001-076",
+        "gemini-001-077",
+        "gemini-001-078",
+        "gemini-001-079"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-23.",
+      "case_ids": [
+        "gemini-001-080",
+        "gemini-001-081",
+        "gemini-001-082",
+        "gemini-001-083"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-24.",
+      "case_ids": ["gemini-001-084", "gemini-001-085", "gemini-001-086"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-25.",
+      "case_ids": ["gemini-001-087", "gemini-001-088"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-26.",
+      "case_ids": [
+        "gemini-001-089",
+        "gemini-001-090",
+        "gemini-001-091",
+        "gemini-001-092",
+        "gemini-001-093"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-27.",
+      "case_ids": [
+        "gemini-001-094",
+        "gemini-001-095",
+        "gemini-001-096",
+        "gemini-001-097"
+      ]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-gemini-001-28.",
+      "case_ids": ["gemini-001-098", "gemini-001-099", "gemini-001-100"]
+    },
+    {
+      "relation": "conversation_group_id",
+      "reason": "Preserve the complete source conversation_group_id: conv-mx-remove-clarification.",
+      "case_ids": ["syn-mx-04", "syn-mx-05"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-account-nav.",
+      "case_ids": ["syn-ar-03", "syn-fr-03"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-clear-cart.",
+      "case_ids": ["syn-ar-06", "syn-fr-09", "syn-mx-09"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-formal-shirt-page.",
+      "case_ids": ["syn-fr-06", "syn-en-04", "syn-en-05"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-help-capabilities.",
+      "case_ids": ["syn-ar-08", "syn-en-09"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-locate-checkout.",
+      "case_ids": ["syn-ar-07", "syn-fr-10", "syn-mx-08"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-runner-add.",
+      "case_ids": ["syn-fr-07", "syn-mx-07"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-runner-quantity.",
+      "case_ids": ["syn-fr-04", "syn-fr-05", "syn-mx-06"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-running-no-leather.",
+      "case_ids": ["syn-ar-01", "syn-mx-01"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-shirt-quantity.",
+      "case_ids": ["syn-ar-04", "syn-ar-05"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-shirt-remove-variant.",
+      "case_ids": ["syn-en-06", "syn-mx-04", "syn-mx-05"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-shoe-comparison.",
+      "case_ids": ["syn-fr-02", "syn-mx-02"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: family-tshirt-budget-correction.",
+      "case_ids": ["syn-fr-01", "syn-mx-10"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-cart-view.",
+      "case_ids": [
+        "gemini-001-015",
+        "gemini-001-037",
+        "gemini-001-062",
+        "gemini-001-087"
+      ]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-clear-cart.",
+      "case_ids": [
+        "gemini-001-016",
+        "gemini-001-038",
+        "gemini-001-063",
+        "gemini-001-088"
+      ]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-delivery-duration.",
+      "case_ids": ["gemini-001-071", "gemini-001-091"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-formal-shoe-search.",
+      "case_ids": ["gemini-001-048", "gemini-001-073"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-garment-cotton-no-other-material.",
+      "case_ids": ["gemini-001-013", "gemini-001-031"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-garment-fit-comparison.",
+      "case_ids": ["gemini-001-009", "gemini-001-059", "gemini-001-084"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-garment-replace.",
+      "case_ids": ["gemini-001-011", "gemini-001-061"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-garment-sizing.",
+      "case_ids": ["gemini-001-014", "gemini-001-041", "gemini-001-096"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-hoodie-add.",
+      "case_ids": ["gemini-001-020", "gemini-001-067", "gemini-001-079"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-hoodie-no-zip.",
+      "case_ids": ["gemini-001-018", "gemini-001-065"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-quantity-set-one.",
+      "case_ids": ["gemini-001-008", "gemini-001-058", "gemini-001-083"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-running-brand-revision.",
+      "case_ids": ["gemini-001-052", "gemini-001-081"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-shoe-add.",
+      "case_ids": [
+        "gemini-001-004",
+        "gemini-001-029",
+        "gemini-001-054",
+        "gemini-001-074"
+      ]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-shoe-comfort.",
+      "case_ids": ["gemini-001-003", "gemini-001-028", "gemini-001-053"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-socks-remove.",
+      "case_ids": ["gemini-001-024", "gemini-001-097"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-submit-cod.",
+      "case_ids": ["gemini-001-021", "gemini-001-043", "gemini-001-093"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-submit-external-message.",
+      "case_ids": ["gemini-001-025", "gemini-001-050"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-summer-dress.",
+      "case_ids": ["gemini-001-012", "gemini-001-094"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-tee-add.",
+      "case_ids": ["gemini-001-010", "gemini-001-057", "gemini-001-085"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-trouser-add.",
+      "case_ids": ["gemini-001-007", "gemini-001-060", "gemini-001-092"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-trouser-colour-revision.",
+      "case_ids": ["gemini-001-006", "gemini-001-090"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-variant-change.",
+      "case_ids": ["gemini-001-036", "gemini-001-086"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-white-sneaker-budget.",
+      "case_ids": ["gemini-001-001", "gemini-001-026"]
+    },
+    {
+      "relation": "paraphrase_group_id",
+      "reason": "Preserve the complete source paraphrase_group_id: gemini-family-winter-hoodie.",
+      "case_ids": ["gemini-001-017", "gemini-001-064"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Shoe discovery with a hard no-leather requirement; related cross-language template despite changed budgets and sizes.",
+      "case_ids": ["syn-ar-01", "syn-mx-01", "gemini-001-002"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Bag discovery excluding leather; preserve the connected source conversation even though bag subtype and budget differ.",
+      "case_ids": ["syn-en-01", "gemini-001-045"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Question about comfort/breathability/suitability of referenced shoes; cross-language factual-uncertainty template.",
+      "case_ids": [
+        "syn-en-02",
+        "gemini-001-003",
+        "gemini-001-028",
+        "gemini-001-053"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Comparison between two referenced shoes; comparison axis differs, so merge conservatively rather than claim independent cases.",
+      "case_ids": ["syn-fr-02", "syn-mx-02", "gemini-001-023"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Add the referenced shoe variant, with size/colour/quantity slot substitutions.",
+      "case_ids": [
+        "syn-fr-07",
+        "syn-mx-07",
+        "gemini-001-004",
+        "gemini-001-029",
+        "gemini-001-054",
+        "gemini-001-074"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Open/view cart contents, including a total-inspection variant.",
+      "case_ids": [
+        "syn-mx-03",
+        "gemini-001-015",
+        "gemini-001-037",
+        "gemini-001-062",
+        "gemini-001-087"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Explicit whole-cart clearing across languages; same guarded capability.",
+      "case_ids": [
+        "syn-ar-06",
+        "syn-fr-09",
+        "syn-mx-09",
+        "gemini-001-016",
+        "gemini-001-038",
+        "gemini-001-063",
+        "gemini-001-088"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Final-quantity correction template. Merge both members of the prior delta-versus-total conversation, without treating the delta label as equivalent.",
+      "case_ids": ["syn-ar-04", "syn-ar-05", "gemini-001-032", "gemini-001-058"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Shoe quantity change/correction template; retain delta-versus-total semantic distinctions inside one leakage family.",
+      "case_ids": [
+        "syn-fr-04",
+        "syn-fr-05",
+        "syn-mx-06",
+        "gemini-001-082",
+        "gemini-001-083"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Remove a specified garment cart line while preserving others; keep ambiguity clarification and all source turns connected.",
+      "case_ids": ["syn-en-06", "syn-mx-04", "syn-mx-05", "gemini-001-033"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Checkout completion clause and compound variants are related exposed templates; compound examples remain excluded from primary classification.",
+      "case_ids": [
+        "syn-en-07",
+        "gemini-001-021",
+        "gemini-001-025",
+        "gemini-001-043",
+        "gemini-001-050",
+        "gemini-001-075",
+        "gemini-001-093"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Checkout navigation wording with unsupported optional clauses; ambiguity remains annotated rather than erased by grouping.",
+      "case_ids": ["gemini-001-068", "gemini-001-075", "gemini-001-100"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Summer floral-dress discovery across languages; differing lengths/sleeve requirements are slot/constraint variants.",
+      "case_ids": ["gemini-001-012", "gemini-001-094"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Loose jeans/cargo discovery and comparison share the garment-fit scenario; conservatively link the related conversation families.",
+      "case_ids": ["gemini-001-005", "gemini-001-059", "gemini-001-089"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Add a specified T-shirt variant across languages, with quantity/fit/colour slot changes.",
+      "case_ids": ["gemini-001-010", "gemini-001-057", "gemini-001-085"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Add a hoodie variant across languages; connected material/fit and colour revisions must stay together.",
+      "case_ids": ["gemini-001-020", "gemini-001-067", "gemini-001-079"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Shoe discovery with colour/size/budget/material slots; white sneaker and running variants conservatively grouped as one exposed template family.",
+      "case_ids": [
+        "gemini-001-001",
+        "gemini-001-026",
+        "gemini-001-051",
+        "gemini-001-099"
+      ]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Brown shoe discovery with size/material/formality variations.",
+      "case_ids": ["gemini-001-048", "gemini-001-073"]
+    },
+    {
+      "relation": "semantic_near_paraphrase",
+      "reason": "Checkout with cash-on-delivery request across Arabic, Franco, English and mixed wording; preserve navigation/submission differences.",
+      "case_ids": [
+        "gemini-001-021",
+        "gemini-001-043",
+        "gemini-001-068",
+        "gemini-001-093"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "component_id": "component-001",
+      "case_ids": [
+        "gemini-001-001",
+        "gemini-001-002",
+        "gemini-001-003",
+        "gemini-001-004",
+        "gemini-001-005",
+        "gemini-001-006",
+        "gemini-001-007",
+        "gemini-001-008",
+        "gemini-001-009",
+        "gemini-001-010",
+        "gemini-001-011",
+        "gemini-001-012",
+        "gemini-001-013",
+        "gemini-001-014",
+        "gemini-001-017",
+        "gemini-001-018",
+        "gemini-001-019",
+        "gemini-001-020",
+        "gemini-001-021",
+        "gemini-001-022",
+        "gemini-001-023",
+        "gemini-001-024",
+        "gemini-001-025",
+        "gemini-001-026",
+        "gemini-001-027",
+        "gemini-001-028",
+        "gemini-001-029",
+        "gemini-001-030",
+        "gemini-001-031",
+        "gemini-001-032",
+        "gemini-001-033",
+        "gemini-001-034",
+        "gemini-001-035",
+        "gemini-001-036",
+        "gemini-001-039",
+        "gemini-001-040",
+        "gemini-001-041",
+        "gemini-001-042",
+        "gemini-001-043",
+        "gemini-001-048",
+        "gemini-001-049",
+        "gemini-001-050",
+        "gemini-001-051",
+        "gemini-001-052",
+        "gemini-001-053",
+        "gemini-001-054",
+        "gemini-001-055",
+        "gemini-001-056",
+        "gemini-001-057",
+        "gemini-001-058",
+        "gemini-001-059",
+        "gemini-001-060",
+        "gemini-001-061",
+        "gemini-001-064",
+        "gemini-001-065",
+        "gemini-001-066",
+        "gemini-001-067",
+        "gemini-001-068",
+        "gemini-001-069",
+        "gemini-001-070",
+        "gemini-001-071",
+        "gemini-001-072",
+        "gemini-001-073",
+        "gemini-001-074",
+        "gemini-001-075",
+        "gemini-001-076",
+        "gemini-001-077",
+        "gemini-001-078",
+        "gemini-001-079",
+        "gemini-001-080",
+        "gemini-001-081",
+        "gemini-001-082",
+        "gemini-001-083",
+        "gemini-001-084",
+        "gemini-001-085",
+        "gemini-001-086",
+        "gemini-001-089",
+        "gemini-001-090",
+        "gemini-001-091",
+        "gemini-001-092",
+        "gemini-001-093",
+        "gemini-001-094",
+        "gemini-001-095",
+        "gemini-001-096",
+        "gemini-001-097",
+        "gemini-001-098",
+        "gemini-001-099",
+        "gemini-001-100",
+        "syn-ar-01",
+        "syn-ar-04",
+        "syn-ar-05",
+        "syn-en-02",
+        "syn-en-06",
+        "syn-en-07",
+        "syn-fr-02",
+        "syn-fr-04",
+        "syn-fr-05",
+        "syn-fr-07",
+        "syn-mx-01",
+        "syn-mx-02",
+        "syn-mx-04",
+        "syn-mx-05",
+        "syn-mx-06",
+        "syn-mx-07"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "component-002",
+      "case_ids": [
+        "gemini-001-015",
+        "gemini-001-016",
+        "gemini-001-037",
+        "gemini-001-038",
+        "gemini-001-062",
+        "gemini-001-063",
+        "gemini-001-087",
+        "gemini-001-088",
+        "syn-ar-06",
+        "syn-fr-09",
+        "syn-mx-03",
+        "syn-mx-09"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "component-003",
+      "case_ids": [
+        "gemini-001-044",
+        "gemini-001-045",
+        "gemini-001-046",
+        "gemini-001-047",
+        "syn-en-01"
+      ],
+      "split": null
+    },
+    {
+      "component_id": "component-004",
+      "case_ids": ["syn-ar-02"],
+      "split": null
+    },
+    {
+      "component_id": "component-005",
+      "case_ids": ["syn-ar-03", "syn-fr-03"],
+      "split": null
+    },
+    {
+      "component_id": "component-006",
+      "case_ids": ["syn-ar-07", "syn-fr-10", "syn-mx-08"],
+      "split": null
+    },
+    {
+      "component_id": "component-007",
+      "case_ids": ["syn-ar-08", "syn-en-09"],
+      "split": null
+    },
+    {
+      "component_id": "component-008",
+      "case_ids": ["syn-ar-09"],
+      "split": null
+    },
+    {
+      "component_id": "component-009",
+      "case_ids": ["syn-ar-10"],
+      "split": null
+    },
+    {
+      "component_id": "component-010",
+      "case_ids": ["syn-en-03"],
+      "split": null
+    },
+    {
+      "component_id": "component-011",
+      "case_ids": ["syn-en-04", "syn-en-05", "syn-fr-06"],
+      "split": null
+    },
+    {
+      "component_id": "component-012",
+      "case_ids": ["syn-en-08"],
+      "split": null
+    },
+    {
+      "component_id": "component-013",
+      "case_ids": ["syn-en-10"],
+      "split": null
+    },
+    {
+      "component_id": "component-014",
+      "case_ids": ["syn-fr-01", "syn-mx-10"],
+      "split": null
+    },
+    {
+      "component_id": "component-015",
+      "case_ids": ["syn-fr-08"],
+      "split": null
+    }
+  ],
+  "membership": [
+    {
+      "case_id": "syn-ar-01",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-ar-01",
+      "source_paraphrase_group_id": "family-running-no-leather"
+    },
+    {
+      "case_id": "syn-ar-02",
+      "component_id": "component-004",
+      "source_conversation_group_id": "conv-syn-ar-02",
+      "source_paraphrase_group_id": "family-outfit-colour"
+    },
+    {
+      "case_id": "syn-ar-03",
+      "component_id": "component-005",
+      "source_conversation_group_id": "conv-syn-ar-03",
+      "source_paraphrase_group_id": "family-account-nav"
+    },
+    {
+      "case_id": "syn-ar-04",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-ar-shirt-correction",
+      "source_paraphrase_group_id": "family-shirt-quantity"
+    },
+    {
+      "case_id": "syn-ar-05",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-ar-shirt-correction",
+      "source_paraphrase_group_id": "family-shirt-quantity"
+    },
+    {
+      "case_id": "syn-ar-06",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-syn-ar-06",
+      "source_paraphrase_group_id": "family-clear-cart"
+    },
+    {
+      "case_id": "syn-ar-07",
+      "component_id": "component-006",
+      "source_conversation_group_id": "conv-syn-ar-07",
+      "source_paraphrase_group_id": "family-locate-checkout"
+    },
+    {
+      "case_id": "syn-ar-08",
+      "component_id": "component-007",
+      "source_conversation_group_id": "conv-syn-ar-08",
+      "source_paraphrase_group_id": "family-help-capabilities"
+    },
+    {
+      "case_id": "syn-ar-09",
+      "component_id": "component-008",
+      "source_conversation_group_id": "conv-syn-ar-09",
+      "source_paraphrase_group_id": "family-delivery-scheduling"
+    },
+    {
+      "case_id": "syn-ar-10",
+      "component_id": "component-009",
+      "source_conversation_group_id": "conv-syn-ar-10",
+      "source_paraphrase_group_id": "family-nonshopping-writing"
+    },
+    {
+      "case_id": "syn-fr-01",
+      "component_id": "component-014",
+      "source_conversation_group_id": "conv-syn-fr-01",
+      "source_paraphrase_group_id": "family-tshirt-budget-correction"
+    },
+    {
+      "case_id": "syn-fr-02",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-fr-02",
+      "source_paraphrase_group_id": "family-shoe-comparison"
+    },
+    {
+      "case_id": "syn-fr-03",
+      "component_id": "component-005",
+      "source_conversation_group_id": "conv-syn-fr-03",
+      "source_paraphrase_group_id": "family-account-nav"
+    },
+    {
+      "case_id": "syn-fr-04",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-fr-runner-correction",
+      "source_paraphrase_group_id": "family-runner-quantity"
+    },
+    {
+      "case_id": "syn-fr-05",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-fr-runner-correction",
+      "source_paraphrase_group_id": "family-runner-quantity"
+    },
+    {
+      "case_id": "syn-fr-06",
+      "component_id": "component-011",
+      "source_conversation_group_id": "conv-syn-fr-06",
+      "source_paraphrase_group_id": "family-formal-shirt-page"
+    },
+    {
+      "case_id": "syn-fr-07",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-fr-07",
+      "source_paraphrase_group_id": "family-runner-add"
+    },
+    {
+      "case_id": "syn-fr-08",
+      "component_id": "component-015",
+      "source_conversation_group_id": "conv-syn-fr-08",
+      "source_paraphrase_group_id": "family-undo-removal"
+    },
+    {
+      "case_id": "syn-fr-09",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-syn-fr-09",
+      "source_paraphrase_group_id": "family-clear-cart"
+    },
+    {
+      "case_id": "syn-fr-10",
+      "component_id": "component-006",
+      "source_conversation_group_id": "conv-syn-fr-10",
+      "source_paraphrase_group_id": "family-locate-checkout"
+    },
+    {
+      "case_id": "syn-en-01",
+      "component_id": "component-003",
+      "source_conversation_group_id": "conv-syn-en-01",
+      "source_paraphrase_group_id": "family-bag-no-leather"
+    },
+    {
+      "case_id": "syn-en-02",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-en-02",
+      "source_paraphrase_group_id": "family-shoe-comfort"
+    },
+    {
+      "case_id": "syn-en-03",
+      "component_id": "component-010",
+      "source_conversation_group_id": "conv-syn-en-03",
+      "source_paraphrase_group_id": "family-orders-nav"
+    },
+    {
+      "case_id": "syn-en-04",
+      "component_id": "component-011",
+      "source_conversation_group_id": "conv-en-shirt-return",
+      "source_paraphrase_group_id": "family-formal-shirt-page"
+    },
+    {
+      "case_id": "syn-en-05",
+      "component_id": "component-011",
+      "source_conversation_group_id": "conv-en-shirt-return",
+      "source_paraphrase_group_id": "family-formal-shirt-page"
+    },
+    {
+      "case_id": "syn-en-06",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-en-06",
+      "source_paraphrase_group_id": "family-shirt-remove-variant"
+    },
+    {
+      "case_id": "syn-en-07",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-en-07",
+      "source_paraphrase_group_id": "family-submit-checkout"
+    },
+    {
+      "case_id": "syn-en-08",
+      "component_id": "component-012",
+      "source_conversation_group_id": "conv-syn-en-08",
+      "source_paraphrase_group_id": "family-installments"
+    },
+    {
+      "case_id": "syn-en-09",
+      "component_id": "component-007",
+      "source_conversation_group_id": "conv-syn-en-09",
+      "source_paraphrase_group_id": "family-help-capabilities"
+    },
+    {
+      "case_id": "syn-en-10",
+      "component_id": "component-013",
+      "source_conversation_group_id": "conv-syn-en-10",
+      "source_paraphrase_group_id": "family-shirt-budget"
+    },
+    {
+      "case_id": "syn-mx-01",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-mx-01",
+      "source_paraphrase_group_id": "family-running-no-leather"
+    },
+    {
+      "case_id": "syn-mx-02",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-mx-02",
+      "source_paraphrase_group_id": "family-shoe-comparison"
+    },
+    {
+      "case_id": "syn-mx-03",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-syn-mx-03",
+      "source_paraphrase_group_id": "family-cart-nav"
+    },
+    {
+      "case_id": "syn-mx-04",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-mx-remove-clarification",
+      "source_paraphrase_group_id": "family-shirt-remove-variant"
+    },
+    {
+      "case_id": "syn-mx-05",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-mx-remove-clarification",
+      "source_paraphrase_group_id": "family-shirt-remove-variant"
+    },
+    {
+      "case_id": "syn-mx-06",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-mx-06",
+      "source_paraphrase_group_id": "family-runner-quantity"
+    },
+    {
+      "case_id": "syn-mx-07",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-syn-mx-07",
+      "source_paraphrase_group_id": "family-runner-add"
+    },
+    {
+      "case_id": "syn-mx-08",
+      "component_id": "component-006",
+      "source_conversation_group_id": "conv-syn-mx-08",
+      "source_paraphrase_group_id": "family-locate-checkout"
+    },
+    {
+      "case_id": "syn-mx-09",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-syn-mx-09",
+      "source_paraphrase_group_id": "family-clear-cart"
+    },
+    {
+      "case_id": "syn-mx-10",
+      "component_id": "component-014",
+      "source_conversation_group_id": "conv-syn-mx-10",
+      "source_paraphrase_group_id": "family-tshirt-budget-correction"
+    },
+    {
+      "case_id": "gemini-001-001",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-white-sneaker-budget"
+    },
+    {
+      "case_id": "gemini-001-002",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-shoe-no-leather"
+    },
+    {
+      "case_id": "gemini-001-003",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-shoe-comfort"
+    },
+    {
+      "case_id": "gemini-001-004",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-01",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-005",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-loose-trousers"
+    },
+    {
+      "case_id": "gemini-001-006",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-trouser-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-007",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-trouser-add"
+    },
+    {
+      "case_id": "gemini-001-008",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-02",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-one"
+    },
+    {
+      "case_id": "gemini-001-009",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-03",
+      "source_paraphrase_group_id": "gemini-family-garment-fit-comparison"
+    },
+    {
+      "case_id": "gemini-001-010",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-03",
+      "source_paraphrase_group_id": "gemini-family-tee-add"
+    },
+    {
+      "case_id": "gemini-001-011",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-03",
+      "source_paraphrase_group_id": "gemini-family-garment-replace"
+    },
+    {
+      "case_id": "gemini-001-012",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-04",
+      "source_paraphrase_group_id": "gemini-family-summer-dress"
+    },
+    {
+      "case_id": "gemini-001-013",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-04",
+      "source_paraphrase_group_id": "gemini-family-garment-cotton-no-other-material"
+    },
+    {
+      "case_id": "gemini-001-014",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-04",
+      "source_paraphrase_group_id": "gemini-family-garment-sizing"
+    },
+    {
+      "case_id": "gemini-001-015",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-05",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-016",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-05",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-017",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-winter-hoodie"
+    },
+    {
+      "case_id": "gemini-001-018",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-hoodie-no-zip"
+    },
+    {
+      "case_id": "gemini-001-019",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-garment-stock-question"
+    },
+    {
+      "case_id": "gemini-001-020",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-hoodie-add"
+    },
+    {
+      "case_id": "gemini-001-021",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-06",
+      "source_paraphrase_group_id": "gemini-family-submit-cod"
+    },
+    {
+      "case_id": "gemini-001-022",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-comfortable-shoe-search"
+    },
+    {
+      "case_id": "gemini-001-023",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-shoe-comparison"
+    },
+    {
+      "case_id": "gemini-001-024",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-socks-remove"
+    },
+    {
+      "case_id": "gemini-001-025",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-07",
+      "source_paraphrase_group_id": "gemini-family-submit-external-message"
+    },
+    {
+      "case_id": "gemini-001-026",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-white-sneaker-budget"
+    },
+    {
+      "case_id": "gemini-001-027",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-shoe-slip-on"
+    },
+    {
+      "case_id": "gemini-001-028",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-shoe-comfort"
+    },
+    {
+      "case_id": "gemini-001-029",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-08",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-030",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-sweatpants-search"
+    },
+    {
+      "case_id": "gemini-001-031",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-garment-cotton-no-other-material"
+    },
+    {
+      "case_id": "gemini-001-032",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-three"
+    },
+    {
+      "case_id": "gemini-001-033",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-09",
+      "source_paraphrase_group_id": "gemini-family-tee-remove"
+    },
+    {
+      "case_id": "gemini-001-034",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-10",
+      "source_paraphrase_group_id": "gemini-family-garment-comparison"
+    },
+    {
+      "case_id": "gemini-001-035",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-10",
+      "source_paraphrase_group_id": "gemini-family-jacket-add"
+    },
+    {
+      "case_id": "gemini-001-036",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-10",
+      "source_paraphrase_group_id": "gemini-family-variant-change"
+    },
+    {
+      "case_id": "gemini-001-037",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-11",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-038",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-11",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-039",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-tee-pack-search"
+    },
+    {
+      "case_id": "gemini-001-040",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-tee-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-041",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-garment-sizing"
+    },
+    {
+      "case_id": "gemini-001-042",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-tee-pack-add"
+    },
+    {
+      "case_id": "gemini-001-043",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-12",
+      "source_paraphrase_group_id": "gemini-family-submit-cod"
+    },
+    {
+      "case_id": "gemini-001-044",
+      "component_id": "component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-bag-material-search"
+    },
+    {
+      "case_id": "gemini-001-045",
+      "component_id": "component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-bag-no-leather"
+    },
+    {
+      "case_id": "gemini-001-046",
+      "component_id": "component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-payment-policy"
+    },
+    {
+      "case_id": "gemini-001-047",
+      "component_id": "component-003",
+      "source_conversation_group_id": "conv-gemini-001-13",
+      "source_paraphrase_group_id": "gemini-family-bag-remove"
+    },
+    {
+      "case_id": "gemini-001-048",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-14",
+      "source_paraphrase_group_id": "gemini-family-formal-shoe-search"
+    },
+    {
+      "case_id": "gemini-001-049",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-14",
+      "source_paraphrase_group_id": "gemini-family-shoe-toe-revision"
+    },
+    {
+      "case_id": "gemini-001-050",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-14",
+      "source_paraphrase_group_id": "gemini-family-submit-external-message"
+    },
+    {
+      "case_id": "gemini-001-051",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-running-shoe-budget"
+    },
+    {
+      "case_id": "gemini-001-052",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-running-brand-revision"
+    },
+    {
+      "case_id": "gemini-001-053",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-shoe-comfort"
+    },
+    {
+      "case_id": "gemini-001-054",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-15",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-055",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-oversized-tee-search"
+    },
+    {
+      "case_id": "gemini-001-056",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-tee-print-revision"
+    },
+    {
+      "case_id": "gemini-001-057",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-tee-add"
+    },
+    {
+      "case_id": "gemini-001-058",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-16",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-one"
+    },
+    {
+      "case_id": "gemini-001-059",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-17",
+      "source_paraphrase_group_id": "gemini-family-garment-fit-comparison"
+    },
+    {
+      "case_id": "gemini-001-060",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-17",
+      "source_paraphrase_group_id": "gemini-family-trouser-add"
+    },
+    {
+      "case_id": "gemini-001-061",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-17",
+      "source_paraphrase_group_id": "gemini-family-garment-replace"
+    },
+    {
+      "case_id": "gemini-001-062",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-18",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-063",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-18",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-064",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-winter-hoodie"
+    },
+    {
+      "case_id": "gemini-001-065",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-hoodie-no-zip"
+    },
+    {
+      "case_id": "gemini-001-066",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-garment-care"
+    },
+    {
+      "case_id": "gemini-001-067",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-hoodie-add"
+    },
+    {
+      "case_id": "gemini-001-068",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-19",
+      "source_paraphrase_group_id": "gemini-family-checkout-cod-navigation"
+    },
+    {
+      "case_id": "gemini-001-069",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-summer-shirt"
+    },
+    {
+      "case_id": "gemini-001-070",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-garment-loose-fit-revision"
+    },
+    {
+      "case_id": "gemini-001-071",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-delivery-duration"
+    },
+    {
+      "case_id": "gemini-001-072",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-20",
+      "source_paraphrase_group_id": "gemini-family-last-item-remove"
+    },
+    {
+      "case_id": "gemini-001-073",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-21",
+      "source_paraphrase_group_id": "gemini-family-formal-shoe-search"
+    },
+    {
+      "case_id": "gemini-001-074",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-21",
+      "source_paraphrase_group_id": "gemini-family-shoe-add"
+    },
+    {
+      "case_id": "gemini-001-075",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-21",
+      "source_paraphrase_group_id": "gemini-family-checkout-coupon"
+    },
+    {
+      "case_id": "gemini-001-076",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-oversized-hoodie-search"
+    },
+    {
+      "case_id": "gemini-001-077",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-hoodie-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-078",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-garment-material-question"
+    },
+    {
+      "case_id": "gemini-001-079",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-22",
+      "source_paraphrase_group_id": "gemini-family-hoodie-add"
+    },
+    {
+      "case_id": "gemini-001-080",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-running-shoe-use"
+    },
+    {
+      "case_id": "gemini-001-081",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-running-brand-revision"
+    },
+    {
+      "case_id": "gemini-001-082",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-shoe-quantity-set-two"
+    },
+    {
+      "case_id": "gemini-001-083",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-23",
+      "source_paraphrase_group_id": "gemini-family-quantity-set-one"
+    },
+    {
+      "case_id": "gemini-001-084",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-24",
+      "source_paraphrase_group_id": "gemini-family-garment-fit-comparison"
+    },
+    {
+      "case_id": "gemini-001-085",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-24",
+      "source_paraphrase_group_id": "gemini-family-tee-add"
+    },
+    {
+      "case_id": "gemini-001-086",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-24",
+      "source_paraphrase_group_id": "gemini-family-variant-change"
+    },
+    {
+      "case_id": "gemini-001-087",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-25",
+      "source_paraphrase_group_id": "gemini-family-cart-view"
+    },
+    {
+      "case_id": "gemini-001-088",
+      "component_id": "component-002",
+      "source_conversation_group_id": "conv-gemini-001-25",
+      "source_paraphrase_group_id": "gemini-family-clear-cart"
+    },
+    {
+      "case_id": "gemini-001-089",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-cargo-search"
+    },
+    {
+      "case_id": "gemini-001-090",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-trouser-colour-revision"
+    },
+    {
+      "case_id": "gemini-001-091",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-delivery-duration"
+    },
+    {
+      "case_id": "gemini-001-092",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-trouser-add"
+    },
+    {
+      "case_id": "gemini-001-093",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-26",
+      "source_paraphrase_group_id": "gemini-family-submit-cod"
+    },
+    {
+      "case_id": "gemini-001-094",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-summer-dress"
+    },
+    {
+      "case_id": "gemini-001-095",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-dress-sleeve-revision"
+    },
+    {
+      "case_id": "gemini-001-096",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-garment-sizing"
+    },
+    {
+      "case_id": "gemini-001-097",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-27",
+      "source_paraphrase_group_id": "gemini-family-socks-remove"
+    },
+    {
+      "case_id": "gemini-001-098",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-28",
+      "source_paraphrase_group_id": "gemini-family-order-cancel-restore"
+    },
+    {
+      "case_id": "gemini-001-099",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-28",
+      "source_paraphrase_group_id": "gemini-family-white-leather-sneaker"
+    },
+    {
+      "case_id": "gemini-001-100",
+      "component_id": "component-001",
+      "source_conversation_group_id": "conv-gemini-001-28",
+      "source_paraphrase_group_id": "gemini-family-checkout-navigation"
+    }
+  ],
+  "limitations": [
+    "Grouping is deliberately conservative and may produce a large connected component; never cut a component just to improve split balance.",
+    "Review covers these 140 draft records, not all historical test/prompt/live sources; historical exposure still applies.",
+    "Original source and per-record group IDs are retained; components are the cross-source allocation unit.",
+    "No language-balanced or ten-class evaluation support is established by raw source counts."
+  ]
+}

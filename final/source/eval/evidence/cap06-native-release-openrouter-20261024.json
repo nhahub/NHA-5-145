@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "native-linux-release-and-protected-openrouter-preparation",
+  "status": "native_proof_verified_regression_browser_cleanup_failure_retained",
+  "scope": {
+    "storefront": "Controlled Storefront only",
+    "generalisation": "Step25 parked/unmerged/out of scope",
+    "service_architecture": "native Python/Node/Caddy under systemd; Docker disposable verification only"
+  },
+  "source": {
+    "branch": "feature/cap06-linux-production-host",
+    "base": "02bcf378577466011d0cf713c8de575eeae4787a",
+    "snapshot": {
+      "commit": "2dbe015115822d0e2821b194645e416c71d20d30",
+      "tree": "ff109049c131baab1ac15f29ebf5dc66bc875ef9",
+      "sha256": "f47490964f3fd741b615a245482fa39f0c2d435f04bab99f288d819504ab3a98",
+      "bytes": 5049285,
+      "files": 6
+    },
+    "genuine_shallow_git": true,
+    "history_owner_config_hooks_credentials_excluded": true,
+    "production_build_source_clean": true
+  },
+  "input_sha256": {
+    "deploy/host_config.py": "0939f8f836ef9e10110693a6581d5fdd33a33810bc59acbb1f870c86f7e138c0",
+    "eval/native_release_source.py": "1bd5aeb8f8db5ba90e734e9d26d7a7a8c11d462f7e3ebd767934bf0f9768e72a",
+    "eval/native_release_probe.py": "3941aa0fff49f3e5ebad1cba398e5a817d070a862aa9488d7c7f6a0b23639932",
+    "eval/tests/test_host_openrouter.py": "920ead69fdb264cfb479d1cbb454f38badfabeb0ecedf5538bd67c45e49ddcab",
+    "eval/tests/test_native_release_source.py": "53897567f142123c6fc79b33f8e32f210a9c346481de025315b82b0c6bf0f09a",
+    "eval/tests/test_native_release_probe.py": "62983507ea614ea4d2e7d72b018c8192b88020c784e3e3106eaffa7712e120d5",
+    "eval/tests/test_host_bootstrap.py": "f5cffe7979c1ebe20fc614e2a686dca7186f0d00258641ae432c060bfccb69af"
+  },
+  "build_profile": {
+    "version": 1,
+    "image_sha256": "25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "source": {
+      "commit": "2dbe015115822d0e2821b194645e416c71d20d30",
+      "tree": "ff109049c131baab1ac15f29ebf5dc66bc875ef9",
+      "sha256": "f47490964f3fd741b615a245482fa39f0c2d435f04bab99f288d819504ab3a98",
+      "bytes": 5049285,
+      "files": 6
+    },
+    "git_sha256": "7868f63309367aed4330fd3da5841634acc1c9b51f3e090451ac02c95090e202",
+    "node_sha256": "53fb205ae78805130177e24bcb459a69a1518c8d98f8965f31d85aae7ea840fc",
+    "caddy_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "packaging_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "catalogue_sha256": "52ee9d8714d73bcd587a72d17d778f412213a010ae547b7350b55f24c02674f0",
+    "store_manifest_sha256": "04df8140b7fb96959eb60a594de1d295caffe75277b0677dee63568441d2cc82",
+    "pnpm_manifest_sha256": "db5b3ddeca41b9dca76da8701fb885076a219832f103ffab6e41462aa630ad04"
+  },
+  "build_profile_sha256": "d64ceba2a0c6e6e6dd3f59cbfe64026eb5ec81e54913148f17f741e1eb55b692",
+  "git_acquisition": {
+    "release": "2023.12.20260914",
+    "package": "git-core-2.50.1-1.amzn2023.0.1.x86_64.rpm",
+    "sources": [
+      {
+        "url": "https://cdn.amazonlinux.com/al2023/core/mirrors/2023.12.20260914/x86_64/mirror.list",
+        "file": "mirror.list",
+        "bytes": 118,
+        "sha256": "fd5c612028390744e8f95a6b5f398b493dc0cbd215ac4cf13b96c39aed1cb560"
+      },
+      {
+        "url": "https://cdn.amazonlinux.com/al2023/core/guids/6ac5adb46dce32d21e7bd0c7e97948be299a34e9e2f7a2cb3ca6ae047b0f869e/x86_64/repodata/repomd.xml",
+        "file": "repomd.xml",
+        "bytes": 3687,
+        "sha256": "cae4a493cf9f815caf0306997aeb0e1b6aa8a828a78711e96bae661c59d7e934"
+      },
+      {
+        "url": "https://cdn.amazonlinux.com/al2023/core/guids/6ac5adb46dce32d21e7bd0c7e97948be299a34e9e2f7a2cb3ca6ae047b0f869e/x86_64/repodata/primary.xml.gz",
+        "file": "primary.xml.gz",
+        "bytes": 7888898,
+        "sha256": "bca2711e5684cf73a38f962d50f108d4a8288cc1c89c75b512f45ccb32ecf040"
+      },
+      {
+        "url": "https://cdn.amazonlinux.com/al2023/blobstore/1a266c41e66b0dca131ea2cb616588d75b580d2bfbb8b67a6504280ee90d640c/git-core-2.50.1-1.amzn2023.0.1.x86_64.rpm",
+        "file": "git-core-2.50.1-1.amzn2023.0.1.x86_64.rpm",
+        "bytes": 5149111,
+        "sha256": "1a266c41e66b0dca131ea2cb616588d75b580d2bfbb8b67a6504280ee90d640c"
+      }
+    ],
+    "supplier_signature_verified": true,
+    "key_sha256": "664b632018bd84f9b249be7bd26937c560edb2f2bfc0cbc01ec5a7b4e06aad56",
+    "key_id": "d832c631",
+    "selected_binary_sha256": "7868f63309367aed4330fd3da5841634acc1c9b51f3e090451ac02c95090e202",
+    "binary_bytes": 4367456,
+    "dependencies_present": true,
+    "system_package_installed": false,
+    "production_security_adopted": false
+  },
+  "policy_preparation": {
+    "source_commit": "aba05a8f1d7bb3965424e854e0490a6cdb7f3692",
+    "source_tree": "ae5bde32fa11a7769662583686e7daddf021af78",
+    "lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "cache_bytes": 919,
+    "cache_records": 2,
+    "scripts_executed": false,
+    "packages_materialized": false,
+    "default_policy_unchanged": true,
+    "registry": "https://registry.npmjs.org/",
+    "workspace_entries": 359,
+    "production_entries": 68,
+    "pnpm_version": "11.19.0",
+    "verified_at_utc": ["2026-10-24T13:49:02.608Z", "2026-10-24T13:49:03.893Z"],
+    "minimum_release_age_minutes": 1440,
+    "exclusions": [],
+    "cache_records_rewritten": false,
+    "lockfile_only": true,
+    "scripts_disabled": true,
+    "package_content_store_rows": 359,
+    "package_content_store_files": 6334,
+    "owner_store_unchanged": true,
+    "note": "Preparation commit precedes build commit; raw lock digest unchanged and both actual native graphs accepted the original pnpm success records."
+  },
+  "native_proof": {
+    "source_commit": "2dbe015115822d0e2821b194645e416c71d20d30",
+    "source_tree": "ff109049c131baab1ac15f29ebf5dc66bc875ef9",
+    "source_clean": true,
+    "genuine_git": true,
+    "offline_native_build": true,
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "manifest_sha256": "bbf04fb131f066492876218bccacf8907a9b19db78408e1eb4eb57ae1ba31944",
+    "archive_sha256": "bb525fcf8a218fa9f6aa1d475cb8dc01ee57f842456bad26d044f5a984ce134a",
+    "archive_bytes": 4392960,
+    "runtime": {
+      "agent_full_startup_verified": false,
+      "agent_running_loop_refusal_only": true,
+      "caddy_adapt_only": true,
+      "catalogue_preserved": true,
+      "default_posix_v2_load": true,
+      "key_refusals": ["group-readable-provider-key", "symlink-provider-key"],
+      "manifest_unchanged": true,
+      "native_imports": [
+        "pydantic_core._pydantic_core",
+        "httptools.parser.parser",
+        "yaml._yaml",
+        "uvloop.loop",
+        "watchfiles._rust_notify",
+        "websockets.speedups"
+      ],
+      "native_storefront_restarts": 2,
+      "provider_calls": 0,
+      "runtime_distributions": 28,
+      "sdk_calls": 0,
+      "storefront_key_environment_isolation": true,
+      "uncertain_allowance_preserved": true
+    }
+  },
+  "archive_roundtrip": {
+    "archive_sha256": "bb525fcf8a218fa9f6aa1d475cb8dc01ee57f842456bad26d044f5a984ce134a",
+    "manifest_sha256": "bbf04fb131f066492876218bccacf8907a9b19db78408e1eb4eb57ae1ba31944",
+    "entries": 1226,
+    "relative_links": 192,
+    "contained_hardlinks": 39,
+    "verified_manifest_files": 943,
+    "native_archive_roundtrip_verified": true,
+    "source_commit": "2dbe015115822d0e2821b194645e416c71d20d30",
+    "public_origins": {
+      "panel": "https://app.scpilot.tech",
+      "store": "https://store.scpilot.tech",
+      "agent": "https://app.scpilot.tech"
+    }
+  },
+  "bounds": {
+    "image": "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "python": "3.12.15",
+    "os_release": "AL2023 2023.12.20260914",
+    "glibc": "2.34",
+    "node": "24.13.0",
+    "pnpm": "11.19.0",
+    "caddy": "2.11.7",
+    "git": "2.50.1",
+    "network": "none",
+    "root_filesystem": "read-only",
+    "capabilities": [],
+    "new_privileges": false,
+    "uid": 10001,
+    "gid": 10001,
+    "cpus": 2,
+    "memory_bytes": 2147483648,
+    "additional_swap_bytes": 0,
+    "pids": 128,
+    "temporary_bytes": 67108864,
+    "build_tmpfs_bytes": 1610612736,
+    "synthetic_caddy_tmpfs_bytes": 33554432,
+    "outer_deadline_seconds": 480,
+    "pnpm_install_deadline_seconds": 180,
+    "pip_deadline_seconds": 90,
+    "runtime_deadline_seconds": 90,
+    "ports_published": false,
+    "owner_checkout_home_credentials_socket_mounted": false,
+    "custom_application_image_created": false,
+    "disposable_containers_removed": true
+  },
+  "verification": {
+    "new_openrouter_tests": "55 passed; 6 initial valid-v2 RED failures",
+    "source_snapshot_tests": "18 passed; 17 initial RED failures; 7 existing fixtures pass",
+    "canonical_tool_manifest_test": "1 initial RED then GREEN",
+    "policy_restore_tests": "3 initial RED then GREEN; altered cache or lock refused before destination created",
+    "host_bootstrap": "12 passed, both providers, default readiness closed",
+    "combined_focused": "108 passed before 4 probe checks added",
+    "source_checks": [
+      {
+        "check": "source-eslint",
+        "exit_code": 0,
+        "seconds": 8.8
+      },
+      {
+        "check": "source-prettier",
+        "exit_code": 0,
+        "seconds": 0.95
+      },
+      {
+        "check": "ruff-check",
+        "exit_code": 0,
+        "seconds": 0.16
+      },
+      {
+        "check": "ruff-format",
+        "exit_code": 0,
+        "seconds": 0.16
+      },
+      {
+        "check": "typescript-tests",
+        "exit_code": 0,
+        "seconds": 15.52
+      },
+      {
+        "check": "workspace-build",
+        "exit_code": 0,
+        "seconds": 3.22
+      },
+      {
+        "check": "pip-check",
+        "exit_code": 0,
+        "seconds": 1.19
+      }
+    ],
+    "typescript": "199 passed: Bridge97, Storefront63, Panel39",
+    "python_full": {
+      "agent": {
+        "passed": 899,
+        "failed": 0,
+        "pytest_seconds": 108.35,
+        "process_seconds": 109.61
+      },
+      "evaluation": {
+        "passed": 546,
+        "failed": 1,
+        "warnings": 2,
+        "pytest_seconds": 837.47,
+        "process_seconds": 838.91
+      },
+      "failure_test": "eval/tests/test_milestone_fixtures.py::test_milestone_fixture_uses_owned_cart_and_authenticated_telemetry",
+      "failure": "Browser.close: Response has been disposed; event listener read response after target closure",
+      "affected_whole_module_recheck": {
+        "passed": 1,
+        "failed": 0,
+        "pytest_seconds": 12.78,
+        "process_seconds": 13.49,
+        "code_changed": false
+      },
+      "affected_source_and_test_unchanged_from_main_02bcf37": true,
+      "uninterrupted_full_green": false,
+      "interpretation": "All task assertions reached cleanup in the failing test. No product workaround or suppressed exception; original run retained. Unchanged isolated module passes; broader cause not established."
+    },
+    "ruff_formatted_files": 270,
+    "eslint_scope": "source with .scratch/** excluded",
+    "prettier_scope": "repository .gitignore/.prettierignore  applied"
+  },
+  "preserved_failures_and_repairs": [
+    "Combined host compatibility batch: one Node catalogue seed process exit3221226505 caused17 cached setup errors; unchanged isolated host-config module23 passed6.71s. No guard or product workaround.",
+    "Bootstrap test initially queried speech before existing identity/readiness gates; corrected expectation to authenticated503demo_waiting. Product guard unchanged.",
+    "Native attempt33fadf3 refused cross-platform tool digest due Windows path order; canonical case-sensitive relative ordering fixed with RED/GREEN regression.",
+    "Attempt893f989 pnpm store-path check used read-only /var/task; actual privateHOME default store verified from source cwd. npm_config_store_dir is ignored by pnpm11.",
+    "Attemptaba05a8 frozen offline install timed out180s: separate default policy verifier requested registry metadata. Genuine normal-policy metadata successes sealed and restored; no age/trust/integrity flag disabled.",
+    "First metadata-preparation container startupEOF125 during measured Windows allocation pressure, no container remained. After owner closed unused Brave windows, engine healthy and second preparation succeeded; no restart or process termination. Does not establish cause of prior Moto MemoryError.",
+    "Independent archive harness initially refused valid pnpm hardlinks. Corrected to permit only targets already observed as regular archive members; standard data-filter extraction and original manifest verify pass. Native archive unchanged.",
+    "Prior runtime slice full Python1367passed2warnings1MemoryError during unchanged Moto fixture setup; affected whole module40passed on unchanged recheck. Original failure retained in earlier evidence.",
+    "Current complete suites: Agent899passed; Evaluation546passed2warnings1browser cleanup failure in unchanged milestone harness. Whole affected module recheck1passed12.78s without changes; no uninterrupted full-green claim."
+  ],
+  "review": {
+    "fresh_code_material_findings": 0,
+    "followup_through_commit": "2dbe015",
+    "reviewer_repeated_tests_or_network": false,
+    "final_document_review_pending": false,
+    "final_document_material_findings": 0
+  },
+  "provider_contract": {
+    "v1": "fixed bedrock/openai.gpt-oss-20b-1:0",
+    "v2": "fixed openrouter/google/gemini-3.5-flash-lite",
+    "protected_agent_only_external_key_supported": true,
+    "non_resetting_cap_usd": "2.00",
+    "actual_key_or_ledger_migrated": false,
+    "provider_readiness_default": false,
+    "extra_model_calls_authorized": false,
+    "provider_switch_automatic": false
+  },
+  "remaining_gates": [
+    "production interpreter/AMI/package/security adoption",
+    "actual native host provisioning and systemd boot/reboot/capability/metadata/log acceptance",
+    "full native Agent startup, qualified readiness and measured capacity",
+    "actual selected provider qualification, protected key custody and verified remaining allowance",
+    "current AWS identity/Free-plan balance/cost/eligibility and exact resource/rollback approval",
+    "public DNS/TLS activation and deployed desktop/Android safety acceptance"
+  ],
+  "external_effects": {
+    "aws_account_provider_calls": 0,
+    "model_spend": 0,
+    "actual_secret_allowance_changes": false,
+    "service_user_firewall_install_or_activation": false,
+    "public_dns_tls_changes": false,
+    "push_or_merge": false
+  },
+  "local_archive": ".scratch/cap06-native-release/run-42e3a8559748/output/release.tar"
+}

@@ -1,0 +1,2315 @@
+{
+  "version": 1,
+  "cap_usd": "0.20",
+  "binding": {
+    "release_sha256": "7b651e376c2bfcb158c6782c3870332f17cf393959bfa65a066cf4705ef1fbac",
+    "protocol_sha256": "bb23656f8d8319ef624b2fca5a61003b6e273e00335fd4bc49e5a36efba572ef",
+    "records_sha256": "bb44a01e07ebe12a52b3226378d72764f7b3764318174760e62badce4e89301c",
+    "review_sha256": "e0e35a8518253424c136b34fc34567ce175e0a55669d7defb4acfcf9d138a54c",
+    "schema_sha256": "5b255bc9eab4a63d581df414724354cfd254d7cbe59659f8ec9a15bc5fef999f",
+    "overlap_sha256": "dfe457460aaa369341760629cdc7da3b9cffe95a1be5b39fe77a6e95e85c39de",
+    "artifact_hashes": {
+      "outputs/model-comparison/classical-001/lr.joblib": "aa2d8f90f90cbdaafbf0b12e1bc9be165391071dea6fb80f4363d16be6ba84f4",
+      "eval/evidence/cap03-comparison-20261007/classical.json": "24de6713ad89047565ed60875e5605ba3c265db91bdc460b5ef7240b3dca3c2b",
+      "outputs/model-comparison/classical-001/svm.joblib": "ef14bc6b30f34d270942dfa076920c02c57b6add3e3aadc72eddaf02010d59b8",
+      "outputs/model-comparison/classical-001/nb.joblib": "95e2d894f78a5189791828ed52950808fd7f868e9fd4417382a07d9e0e1f91f0",
+      "outputs/model-comparison/classical-001/rf.joblib": "0398518dca6722c5647e64b779dca396b21f70748b29b7cc280591b55961529e",
+      "outputs/model-comparison/classical-001/xgb.joblib": "3a37b6d0700aeadadd09aeb8be9bee1ece6e85c7b163be8302a1bd072f91f147",
+      "outputs/model-comparison/embeddings-001/embedding_lr.joblib": "334e222791b1f70e131b840810881f5b2cb3ef972097f9db96d2e6d1e77a8ecb",
+      "eval/evidence/cap03-comparison-20261007/embeddings.json": "b1423c671b0f1101cc66b82996b789cf20cdf3260346dfca28da3f9dae78cc8b",
+      "outputs/model-comparison/embeddings-001/embedding_mlp.joblib": "8d85a41e6cad7e6dac20059b1d25213d0e0cf17148b00e67621893799e4ec3ed"
+    },
+    "source_hashes": {
+      "eval/holdout_eval.py": "b5ec1d4f056f9ad2776210a67cd95903ef10a352d27d6878164a21118bbbcd3d",
+      "eval/holdout_release.py": "601308e2b0708416276516a353c5dd978d0389dc160c4fbed6997e222f0e4c18",
+      "eval/comparison_encoder.py": "63835b1f82ef63490483cc57f42b58126580d265a5ce282b902eee16cb75e201",
+      "agent/llm/openrouter.py": "cecf3b1dfb32932a70c4dc8b62c24131671b78b8a3fc0cff81eb3bb764933e6a",
+      "agent/llm/config.py": "870927a63f3fb0a94bb725fb625bc3c5d966a5962ef0a9fcb79a92432bb667e2",
+      "agent/llm/contract.py": "2a98196de76cb18a349549a2db1a1696e397a3a26714d4df5d45a638d7157bd2",
+      "agent/llm/provider_schema.py": "9029695f068d6689e25c82b8c5ae3eb17358d56489a5b68b983df4db207d0dcc"
+    }
+  },
+  "attempts": {
+    "holdout-20261009-001": {
+      "status": "complete",
+      "reservation_usd": "0.0020852",
+      "actual_cost_usd": "0.0001182",
+      "started_at": "2026-10-09T09:46:06.631178+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1386.559600000055,
+        "generation_id": "gen-1791539162-v2ffzFaI2OMDa9o6nwyC",
+        "provider_latency_ms": 1391,
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 6,
+          "total_tokens": 350,
+          "cost": 0.0001182
+        }
+      }
+    },
+    "holdout-20261009-002": {
+      "status": "complete",
+      "reservation_usd": "0.0020849",
+      "actual_cost_usd": "0.0001307",
+      "started_at": "2026-10-09T09:46:08.023420+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1763.7448000000404,
+        "generation_id": "gen-1791539164-xm2C86NLHRiFlwQJFbLE",
+        "provider_latency_ms": 1750,
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 11,
+          "total_tokens": 355,
+          "cost": 0.0001307
+        }
+      }
+    },
+    "holdout-20261009-003": {
+      "status": "complete",
+      "reservation_usd": "0.0020876",
+      "actual_cost_usd": "0.0001307",
+      "started_at": "2026-10-09T09:46:09.793346+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1630.4183000000876,
+        "generation_id": "gen-1791539165-7kfbgH6n4tqrQH4CiBEN",
+        "provider_latency_ms": 1625,
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 11,
+          "total_tokens": 355,
+          "cost": 0.0001307
+        }
+      }
+    },
+    "holdout-20261009-004": {
+      "status": "complete",
+      "reservation_usd": "0.001967",
+      "actual_cost_usd": "0.0001191",
+      "started_at": "2026-10-09T09:46:11.430741+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 939.9496999999428,
+        "generation_id": "gen-1791539167-0RO2AACXaEuWzgKbuIiY",
+        "provider_latency_ms": 937,
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 6,
+          "total_tokens": 353,
+          "cost": 0.0001191
+        }
+      }
+    },
+    "holdout-20261009-005": {
+      "status": "complete",
+      "reservation_usd": "0.0019637",
+      "actual_cost_usd": "0.0001328",
+      "started_at": "2026-10-09T09:46:12.377611+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1796.0343999999395,
+        "generation_id": "gen-1791539168-jWOlqBBcTzt8ZlQc7kra",
+        "provider_latency_ms": 1797,
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 11,
+          "total_tokens": 362,
+          "cost": 0.0001328
+        }
+      }
+    },
+    "holdout-20261009-006": {
+      "status": "complete",
+      "reservation_usd": "0.0019649",
+      "actual_cost_usd": "0.0001316",
+      "started_at": "2026-10-09T09:46:14.179585+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1444.0623000000414,
+        "generation_id": "gen-1791539170-E16OVYfOAxWmhuhFmFvS",
+        "provider_latency_ms": 1437,
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 11,
+          "total_tokens": 358,
+          "cost": 0.0001316
+        }
+      }
+    },
+    "holdout-20261009-007": {
+      "status": "complete",
+      "reservation_usd": "0.0019736",
+      "actual_cost_usd": "0.000128",
+      "started_at": "2026-10-09T09:46:15.630832+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1231.5166999999292,
+        "generation_id": "gen-1791539171-PdLdv8uA7D2S0IcY1Qj1",
+        "provider_latency_ms": 1235,
+        "usage": {
+          "prompt_tokens": 335,
+          "completion_tokens": 11,
+          "total_tokens": 346,
+          "cost": 0.000128
+        }
+      }
+    },
+    "holdout-20261009-008": {
+      "status": "complete",
+      "reservation_usd": "0.0019727",
+      "actual_cost_usd": "0.000128",
+      "started_at": "2026-10-09T09:46:16.867890+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1041.7396999999937,
+        "generation_id": "gen-1791539172-OpCO2IAHc7BaAWZjdps5",
+        "provider_latency_ms": 1032,
+        "usage": {
+          "prompt_tokens": 335,
+          "completion_tokens": 11,
+          "total_tokens": 346,
+          "cost": 0.000128
+        }
+      }
+    },
+    "holdout-20261009-009": {
+      "status": "complete",
+      "reservation_usd": "0.0019661",
+      "actual_cost_usd": "0.0001265",
+      "started_at": "2026-10-09T09:46:17.916788+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 4090.8567000000176,
+        "generation_id": "gen-1791539173-qwWdWiVTMQb16mCb3afB",
+        "provider_latency_ms": 4094,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 11,
+          "total_tokens": 341,
+          "cost": 0.0001265
+        }
+      }
+    },
+    "holdout-20261009-010": {
+      "status": "complete",
+      "reservation_usd": "0.0020546",
+      "actual_cost_usd": "0.0001283",
+      "started_at": "2026-10-09T09:46:22.014627+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1555.6291999999985,
+        "generation_id": "gen-1791539178-OHnNIMzyjlNnuDDOyTZW",
+        "provider_latency_ms": 1562,
+        "usage": {
+          "prompt_tokens": 336,
+          "completion_tokens": 11,
+          "total_tokens": 347,
+          "cost": 0.0001283
+        }
+      }
+    },
+    "holdout-20261009-011": {
+      "status": "complete",
+      "reservation_usd": "0.0020522",
+      "actual_cost_usd": "0.0001283",
+      "started_at": "2026-10-09T09:46:23.578553+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1205.4051999999729,
+        "generation_id": "gen-1791539179-ldL4pUlXkQCUcSkXQ49G",
+        "provider_latency_ms": 1203,
+        "usage": {
+          "prompt_tokens": 336,
+          "completion_tokens": 11,
+          "total_tokens": 347,
+          "cost": 0.0001283
+        }
+      }
+    },
+    "holdout-20261009-012": {
+      "status": "complete",
+      "reservation_usd": "0.00206",
+      "actual_cost_usd": "0.0001298",
+      "started_at": "2026-10-09T09:46:24.790869+00:00",
+      "result": {
+        "prediction": "advice",
+        "failure_category": null,
+        "latency_ms": 1130.5389999999989,
+        "generation_id": "gen-1791539180-ak6evqLyDj9Y81EqgWxi",
+        "provider_latency_ms": 1125,
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 11,
+          "total_tokens": 352,
+          "cost": 0.0001298
+        }
+      }
+    },
+    "holdout-20261009-013": {
+      "status": "complete",
+      "reservation_usd": "0.0020648",
+      "actual_cost_usd": "0.0001232",
+      "started_at": "2026-10-09T09:46:25.927732+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 6942.752599999949,
+        "generation_id": "gen-1791539181-kRmjkZu2mmgy08Ce6ozQ",
+        "provider_latency_ms": 6952,
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 8,
+          "total_tokens": 352,
+          "cost": 0.0001232
+        }
+      }
+    },
+    "holdout-20261009-014": {
+      "status": "complete",
+      "reservation_usd": "0.0020432",
+      "actual_cost_usd": "0.0001217",
+      "started_at": "2026-10-09T09:46:32.877467+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 3719.967800000063,
+        "generation_id": "gen-1791539188-o4vRQQqDF8lBZ2HDMmEX",
+        "provider_latency_ms": 3719,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 8,
+          "total_tokens": 347,
+          "cost": 0.0001217
+        }
+      }
+    },
+    "holdout-20261009-015": {
+      "status": "complete",
+      "reservation_usd": "0.0020774",
+      "actual_cost_usd": "0.0001342",
+      "started_at": "2026-10-09T09:46:36.605446+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1561.9177999999465,
+        "generation_id": "gen-1791539192-LSdQYIEmuhtd9VOPNGKS",
+        "provider_latency_ms": 1562,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 13,
+          "total_tokens": 352,
+          "cost": 0.0001342
+        }
+      }
+    },
+    "holdout-20261009-016": {
+      "status": "complete",
+      "reservation_usd": "0.0019553",
+      "actual_cost_usd": "0.0001342",
+      "started_at": "2026-10-09T09:46:38.176139+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 3537.377300000003,
+        "generation_id": "gen-1791539194-fSjRpO7MBj5BEebphmqq",
+        "provider_latency_ms": 3547,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 13,
+          "total_tokens": 352,
+          "cost": 0.0001342
+        }
+      }
+    },
+    "holdout-20261009-017": {
+      "status": "complete",
+      "reservation_usd": "0.001955",
+      "actual_cost_usd": "0.0001327",
+      "started_at": "2026-10-09T09:46:41.720423+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1683.4228999999823,
+        "generation_id": "gen-1791539197-RqvGGo6Hkzh1P1fSrwHc",
+        "provider_latency_ms": 1687,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 13,
+          "total_tokens": 347,
+          "cost": 0.0001327
+        }
+      }
+    },
+    "holdout-20261009-018": {
+      "status": "complete",
+      "reservation_usd": "0.001955",
+      "actual_cost_usd": "0.0001348",
+      "started_at": "2026-10-09T09:46:43.410976+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1367.4556000000848,
+        "generation_id": "gen-1791539199-JRghXGhQgiNGSNArmTQG",
+        "provider_latency_ms": 1375,
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 13,
+          "total_tokens": 354,
+          "cost": 0.0001348
+        }
+      }
+    },
+    "holdout-20261009-019": {
+      "status": "complete",
+      "reservation_usd": "0.0019586",
+      "actual_cost_usd": "0.0001321",
+      "started_at": "2026-10-09T09:46:44.785699+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1445.2896999999894,
+        "generation_id": "gen-1791539200-xktRi2urLZ0dz4ztDQwA",
+        "provider_latency_ms": 1452,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 13,
+          "total_tokens": 345,
+          "cost": 0.0001321
+        }
+      }
+    },
+    "holdout-20261009-020": {
+      "status": "complete",
+      "reservation_usd": "0.0019658",
+      "actual_cost_usd": "0.0001351",
+      "started_at": "2026-10-09T09:46:46.237708+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1474.0756000001056,
+        "generation_id": "gen-1791539202-uMmK2GXsWaAe7x8lVZIc",
+        "provider_latency_ms": 1484,
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 13,
+          "total_tokens": 355,
+          "cost": 0.0001351
+        }
+      }
+    },
+    "holdout-20261009-021": {
+      "status": "complete",
+      "reservation_usd": "0.0019661",
+      "actual_cost_usd": "0.0001199",
+      "started_at": "2026-10-09T09:46:47.718483+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1243.4050000000525,
+        "generation_id": "gen-1791539203-d5n3BKV24Es4UapOxlom",
+        "provider_latency_ms": 1250,
+        "usage": {
+          "prompt_tokens": 333,
+          "completion_tokens": 8,
+          "total_tokens": 341,
+          "cost": 0.0001199
+        }
+      }
+    },
+    "holdout-20261009-022": {
+      "status": "complete",
+      "reservation_usd": "0.0020177",
+      "actual_cost_usd": "0.0001196",
+      "started_at": "2026-10-09T09:46:48.969766+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 4964.122999999972,
+        "generation_id": "gen-1791539204-XtXun8YSBzJjitO3Tmy2",
+        "provider_latency_ms": 4968,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 8,
+          "total_tokens": 340,
+          "cost": 0.0001196
+        }
+      }
+    },
+    "holdout-20261009-023": {
+      "status": "complete",
+      "reservation_usd": "0.002027",
+      "actual_cost_usd": "0.0001208",
+      "started_at": "2026-10-09T09:46:53.942749+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 6190.650199999936,
+        "generation_id": "gen-1791539209-P3UzfCFKeH9EtpKEmXER",
+        "provider_latency_ms": 6202,
+        "usage": {
+          "prompt_tokens": 336,
+          "completion_tokens": 8,
+          "total_tokens": 344,
+          "cost": 0.0001208
+        }
+      }
+    },
+    "holdout-20261009-024": {
+      "status": "complete",
+      "reservation_usd": "0.0020288",
+      "actual_cost_usd": "0.0001226",
+      "started_at": "2026-10-09T09:47:00.141260+00:00",
+      "result": {
+        "prediction": "find_products",
+        "failure_category": null,
+        "latency_ms": 1574.1194999998243,
+        "generation_id": "gen-1791539216-mMApRLzXkiQ31oMBDL0F",
+        "provider_latency_ms": 1577,
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 8,
+          "total_tokens": 350,
+          "cost": 0.0001226
+        }
+      }
+    },
+    "holdout-20261009-025": {
+      "status": "complete",
+      "reservation_usd": "0.0020462",
+      "actual_cost_usd": "0.0001152",
+      "started_at": "2026-10-09T09:47:01.722566+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 3576.954999999998,
+        "generation_id": "gen-1791539217-5rEWefESgiwRSLCpis5E",
+        "provider_latency_ms": 3578,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 6,
+          "total_tokens": 340,
+          "cost": 0.0001152
+        }
+      }
+    },
+    "holdout-20261009-026": {
+      "status": "complete",
+      "reservation_usd": "0.0020363",
+      "actual_cost_usd": "0.0001274",
+      "started_at": "2026-10-09T09:47:05.307608+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 1612.1725000000424,
+        "generation_id": "gen-1791539221-VAaEyIVeNnyaCq3J71Yx",
+        "provider_latency_ms": 1609,
+        "usage": {
+          "prompt_tokens": 333,
+          "completion_tokens": 11,
+          "total_tokens": 344,
+          "cost": 0.0001274
+        }
+      }
+    },
+    "holdout-20261009-027": {
+      "status": "complete",
+      "reservation_usd": "0.0020402",
+      "actual_cost_usd": "0.0001262",
+      "started_at": "2026-10-09T09:47:06.927674+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 2182.50769999986,
+        "generation_id": "gen-1791539222-szHw0KTJyUPWoFHD1QMX",
+        "provider_latency_ms": 2187,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 11,
+          "total_tokens": 340,
+          "cost": 0.0001262
+        }
+      }
+    },
+    "holdout-20261009-028": {
+      "status": "complete",
+      "reservation_usd": "0.0019517",
+      "actual_cost_usd": "0.0001271",
+      "started_at": "2026-10-09T09:47:09.117887+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 2249.1782000001876,
+        "generation_id": "gen-1791539225-yY0MfeoixyNL5DdHyPhp",
+        "provider_latency_ms": 2250,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 11,
+          "total_tokens": 343,
+          "cost": 0.0001271
+        }
+      }
+    },
+    "holdout-20261009-029": {
+      "status": "complete",
+      "reservation_usd": "0.0019499",
+      "actual_cost_usd": "0.0001143",
+      "started_at": "2026-10-09T09:47:11.374481+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 2971.471500000007,
+        "generation_id": "gen-1791539227-HeGxfFYAaqJEoFIZP4hC",
+        "provider_latency_ms": 2968,
+        "usage": {
+          "prompt_tokens": 331,
+          "completion_tokens": 6,
+          "total_tokens": 337,
+          "cost": 0.0001143
+        }
+      }
+    },
+    "holdout-20261009-030": {
+      "status": "complete",
+      "reservation_usd": "0.0019538",
+      "actual_cost_usd": "0.000117",
+      "started_at": "2026-10-09T09:47:14.353380+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 1583.980800000063,
+        "generation_id": "gen-1791539230-rIwyVgskDI9ia2bZPa7k",
+        "provider_latency_ms": 1577,
+        "usage": {
+          "prompt_tokens": 340,
+          "completion_tokens": 6,
+          "total_tokens": 346,
+          "cost": 0.000117
+        }
+      }
+    },
+    "holdout-20261009-031": {
+      "status": "complete",
+      "reservation_usd": "0.0019604",
+      "actual_cost_usd": "0.0001256",
+      "started_at": "2026-10-09T09:47:15.945810+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 1058.810499999936,
+        "generation_id": "gen-1791539231-NewJ1R3CDlAishh6TZiA",
+        "provider_latency_ms": 1047,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 11,
+          "total_tokens": 338,
+          "cost": 0.0001256
+        }
+      }
+    },
+    "holdout-20261009-032": {
+      "status": "complete",
+      "reservation_usd": "0.0019535",
+      "actual_cost_usd": "0.0001128",
+      "started_at": "2026-10-09T09:47:17.016493+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 3406.40099999996,
+        "generation_id": "gen-1791539232-Mc93jB82K1FV3Vhti7JY",
+        "provider_latency_ms": 3406,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 6,
+          "total_tokens": 332,
+          "cost": 0.0001128
+        }
+      }
+    },
+    "holdout-20261009-033": {
+      "status": "complete",
+      "reservation_usd": "0.0019616",
+      "actual_cost_usd": "0.0001268",
+      "started_at": "2026-10-09T09:47:20.431957+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 5253.194800000074,
+        "generation_id": "gen-1791539236-Dd2dWH9u15hderev3PfF",
+        "provider_latency_ms": 5250,
+        "usage": {
+          "prompt_tokens": 331,
+          "completion_tokens": 11,
+          "total_tokens": 342,
+          "cost": 0.0001268
+        }
+      }
+    },
+    "holdout-20261009-034": {
+      "status": "complete",
+      "reservation_usd": "0.0020162",
+      "actual_cost_usd": "0.0001259",
+      "started_at": "2026-10-09T09:47:25.693998+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 982.0217999999841,
+        "generation_id": "gen-1791539241-tNxda8pVNwpDLfy2fgDB",
+        "provider_latency_ms": 984,
+        "usage": {
+          "prompt_tokens": 328,
+          "completion_tokens": 11,
+          "total_tokens": 339,
+          "cost": 0.0001259
+        }
+      }
+    },
+    "holdout-20261009-035": {
+      "status": "complete",
+      "reservation_usd": "0.0020495",
+      "actual_cost_usd": "0.0001152",
+      "started_at": "2026-10-09T09:47:26.683940+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 2377.5450999999066,
+        "generation_id": "gen-1791539242-wERmQBwKhJl9iIVgPEXs",
+        "provider_latency_ms": 2375,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 6,
+          "total_tokens": 340,
+          "cost": 0.0001152
+        }
+      }
+    },
+    "holdout-20261009-036": {
+      "status": "complete",
+      "reservation_usd": "0.0020273",
+      "actual_cost_usd": "0.0001262",
+      "started_at": "2026-10-09T09:47:29.071102+00:00",
+      "result": {
+        "prediction": "locate",
+        "failure_category": null,
+        "latency_ms": 1313.6738999999125,
+        "generation_id": "gen-1791539245-kQfI79bOsUJCEoVQvalO",
+        "provider_latency_ms": 1312,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 11,
+          "total_tokens": 340,
+          "cost": 0.0001262
+        }
+      }
+    },
+    "holdout-20261009-037": {
+      "status": "complete",
+      "reservation_usd": "0.0020273",
+      "actual_cost_usd": "0.0001128",
+      "started_at": "2026-10-09T09:47:30.392696+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1083.476699999892,
+        "generation_id": "gen-1791539246-eHxxa6Ow2t4LqnGRC6Ti",
+        "provider_latency_ms": 1094,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 6,
+          "total_tokens": 332,
+          "cost": 0.0001128
+        }
+      }
+    },
+    "holdout-20261009-038": {
+      "status": "complete",
+      "reservation_usd": "0.002027",
+      "actual_cost_usd": "0.0001143",
+      "started_at": "2026-10-09T09:47:31.484697+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 959.4088000001193,
+        "generation_id": "gen-1791539247-GOSIBqJkyIPb71PjvA1y",
+        "provider_latency_ms": 968,
+        "usage": {
+          "prompt_tokens": 331,
+          "completion_tokens": 6,
+          "total_tokens": 337,
+          "cost": 0.0001143
+        }
+      }
+    },
+    "holdout-20261009-039": {
+      "status": "complete",
+      "reservation_usd": "0.0020381",
+      "actual_cost_usd": "0.000114",
+      "started_at": "2026-10-09T09:47:32.452938+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1274.1330999999718,
+        "generation_id": "gen-1791539248-9gv8EEYEQDRePnZOh2Ea",
+        "provider_latency_ms": 1281,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 6,
+          "total_tokens": 336,
+          "cost": 0.000114
+        }
+      }
+    },
+    "holdout-20261009-040": {
+      "status": "complete",
+      "reservation_usd": "0.0019544",
+      "actual_cost_usd": "0.0001298",
+      "started_at": "2026-10-09T09:47:33.736643+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1311.7099000000962,
+        "generation_id": "gen-1791539249-6qd0V7jFD7GP0jutTvjp",
+        "provider_latency_ms": 1312,
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 11,
+          "total_tokens": 352,
+          "cost": 0.0001298
+        }
+      }
+    },
+    "holdout-20261009-041": {
+      "status": "complete",
+      "reservation_usd": "0.0019529",
+      "actual_cost_usd": "0.0001158",
+      "started_at": "2026-10-09T09:47:35.057667+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 4126.6573000000335,
+        "generation_id": "gen-1791539251-1wEQnEyTX1PWHrjE8AxF",
+        "provider_latency_ms": 4125,
+        "usage": {
+          "prompt_tokens": 336,
+          "completion_tokens": 6,
+          "total_tokens": 342,
+          "cost": 0.0001158
+        }
+      }
+    },
+    "holdout-20261009-042": {
+      "status": "complete",
+      "reservation_usd": "0.0019508",
+      "actual_cost_usd": "0.0001146",
+      "started_at": "2026-10-09T09:47:39.191976+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 887.9310999998324,
+        "generation_id": "gen-1791539255-cQk0frfcKOJUeY0lwhNu",
+        "provider_latency_ms": 890,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 6,
+          "total_tokens": 338,
+          "cost": 0.0001146
+        }
+      }
+    },
+    "holdout-20261009-043": {
+      "status": "complete",
+      "reservation_usd": "0.0019598",
+      "actual_cost_usd": "0.0001128",
+      "started_at": "2026-10-09T09:47:40.089000+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 2304.8302999998214,
+        "generation_id": "gen-1791539256-upXMtDPkKoulVhPE2Ugb",
+        "provider_latency_ms": 2297,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 6,
+          "total_tokens": 332,
+          "cost": 0.0001128
+        }
+      }
+    },
+    "holdout-20261009-044": {
+      "status": "complete",
+      "reservation_usd": "0.0019484",
+      "actual_cost_usd": "0.0001116",
+      "started_at": "2026-10-09T09:47:42.403789+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1245.1704999998583,
+        "generation_id": "gen-1791539258-uY8PjTuETRS8Xj0NbuPs",
+        "provider_latency_ms": 1250,
+        "usage": {
+          "prompt_tokens": 322,
+          "completion_tokens": 6,
+          "total_tokens": 328,
+          "cost": 0.0001116
+        }
+      }
+    },
+    "holdout-20261009-045": {
+      "status": "complete",
+      "reservation_usd": "0.0019526",
+      "actual_cost_usd": "0.000125",
+      "started_at": "2026-10-09T09:47:43.656930+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1074.3441000001894,
+        "generation_id": "gen-1791539259-xcfnzwhzxtkgIcbCEZ3A",
+        "provider_latency_ms": 1077,
+        "usage": {
+          "prompt_tokens": 325,
+          "completion_tokens": 11,
+          "total_tokens": 336,
+          "cost": 0.000125
+        }
+      }
+    },
+    "holdout-20261009-046": {
+      "status": "complete",
+      "reservation_usd": "0.0020159",
+      "actual_cost_usd": "0.0001253",
+      "started_at": "2026-10-09T09:47:44.740453+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1596.3654999998198,
+        "generation_id": "gen-1791539260-hXCuHyDmKqT25mLVHs76",
+        "provider_latency_ms": 1608,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 11,
+          "total_tokens": 337,
+          "cost": 0.0001253
+        }
+      }
+    },
+    "holdout-20261009-047": {
+      "status": "complete",
+      "reservation_usd": "0.0020039",
+      "actual_cost_usd": "0.0001128",
+      "started_at": "2026-10-09T09:47:46.345491+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 1606.4695000000029,
+        "generation_id": "gen-1791539262-F0wgplrLSRCxPERpWoRy",
+        "provider_latency_ms": 1609,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 6,
+          "total_tokens": 332,
+          "cost": 0.0001128
+        }
+      }
+    },
+    "holdout-20261009-048": {
+      "status": "complete",
+      "reservation_usd": "0.0020153",
+      "actual_cost_usd": "0.0001131",
+      "started_at": "2026-10-09T09:47:47.960282+00:00",
+      "result": {
+        "prediction": "navigate",
+        "failure_category": null,
+        "latency_ms": 3370.3113999999914,
+        "generation_id": "gen-1791539263-3dxP8msijOEkG9wYL5kI",
+        "provider_latency_ms": 3359,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 6,
+          "total_tokens": 333,
+          "cost": 0.0001131
+        }
+      }
+    },
+    "holdout-20261009-049": {
+      "status": "complete",
+      "reservation_usd": "0.0020474",
+      "actual_cost_usd": "0.0001187",
+      "started_at": "2026-10-09T09:47:51.339378+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 1991.0938000000442,
+        "generation_id": "gen-1791539267-3P9kfH2CsDlJ5TigF6mc",
+        "provider_latency_ms": 1984,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 8,
+          "total_tokens": 337,
+          "cost": 0.0001187
+        }
+      }
+    },
+    "holdout-20261009-050": {
+      "status": "complete",
+      "reservation_usd": "0.0020441",
+      "actual_cost_usd": "0.0001196",
+      "started_at": "2026-10-09T09:47:53.338433+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 2303.9779000000635,
+        "generation_id": "gen-1791539269-dVal1MI2V6HNDbUNPaws",
+        "provider_latency_ms": 2297,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 8,
+          "total_tokens": 340,
+          "cost": 0.0001196
+        }
+      }
+    },
+    "holdout-20261009-051": {
+      "status": "complete",
+      "reservation_usd": "0.0020666",
+      "actual_cost_usd": "0.0001217",
+      "started_at": "2026-10-09T09:47:55.651768+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 3191.9763000000785,
+        "generation_id": "gen-1791539271-avEPTFDheNAtHcUIPCZU",
+        "provider_latency_ms": 3186,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 8,
+          "total_tokens": 347,
+          "cost": 0.0001217
+        }
+      }
+    },
+    "holdout-20261009-052": {
+      "status": "complete",
+      "reservation_usd": "0.001958",
+      "actual_cost_usd": "0.0001351",
+      "started_at": "2026-10-09T09:47:58.854540+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 1224.1604999999254,
+        "generation_id": "gen-1791539274-L4AC9WPN5vallwiGKEiX",
+        "provider_latency_ms": 1218,
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 13,
+          "total_tokens": 355,
+          "cost": 0.0001351
+        }
+      }
+    },
+    "holdout-20261009-053": {
+      "status": "complete",
+      "reservation_usd": "0.0019553",
+      "actual_cost_usd": "0.0001202",
+      "started_at": "2026-10-09T09:48:00.089834+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 2270.7227000000785,
+        "generation_id": "gen-1791539276-mm581MZbbToOduDcHLuw",
+        "provider_latency_ms": 2266,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 8,
+          "total_tokens": 342,
+          "cost": 0.0001202
+        }
+      }
+    },
+    "holdout-20261009-054": {
+      "status": "complete",
+      "reservation_usd": "0.0019529",
+      "actual_cost_usd": "0.0001315",
+      "started_at": "2026-10-09T09:48:02.371111+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 1924.8969999998735,
+        "generation_id": "gen-1791539278-pZdPFp51BgCLFtkvG53U",
+        "provider_latency_ms": 1922,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 13,
+          "total_tokens": 343,
+          "cost": 0.0001315
+        }
+      }
+    },
+    "holdout-20261009-055": {
+      "status": "complete",
+      "reservation_usd": "0.0019619",
+      "actual_cost_usd": "0.0001187",
+      "started_at": "2026-10-09T09:48:04.307976+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 2241.0434000000805,
+        "generation_id": "gen-1791539280-CmfpsBvVlQIg5YEKW5Ex",
+        "provider_latency_ms": 2234,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 8,
+          "total_tokens": 337,
+          "cost": 0.0001187
+        }
+      }
+    },
+    "holdout-20261009-056": {
+      "status": "complete",
+      "reservation_usd": "0.0019604",
+      "actual_cost_usd": "0.0001184",
+      "started_at": "2026-10-09T09:48:06.563839+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 1237.8439999999955,
+        "generation_id": "gen-1791539282-heBH1LW4TL7QyElEZ8vO",
+        "provider_latency_ms": 1250,
+        "usage": {
+          "prompt_tokens": 328,
+          "completion_tokens": 8,
+          "total_tokens": 336,
+          "cost": 0.0001184
+        }
+      }
+    },
+    "holdout-20261009-057": {
+      "status": "complete",
+      "reservation_usd": "0.0019589",
+      "actual_cost_usd": "0.0001178",
+      "started_at": "2026-10-09T09:48:07.814268+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 2097.3756999999296,
+        "generation_id": "gen-1791539284-XPgKJA1WFvna3T2G3hwp",
+        "provider_latency_ms": 2109,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 8,
+          "total_tokens": 334,
+          "cost": 0.0001178
+        }
+      }
+    },
+    "holdout-20261009-058": {
+      "status": "complete",
+      "reservation_usd": "0.0020249",
+      "actual_cost_usd": "0.0001187",
+      "started_at": "2026-10-09T09:48:09.923183+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 3163.3679999999913,
+        "generation_id": "gen-1791539285-XeKijDsbSrMsEUzqEfmN",
+        "provider_latency_ms": 3171,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 8,
+          "total_tokens": 337,
+          "cost": 0.0001187
+        }
+      }
+    },
+    "holdout-20261009-059": {
+      "status": "complete",
+      "reservation_usd": "0.0020288",
+      "actual_cost_usd": "0.0001187",
+      "started_at": "2026-10-09T09:48:13.098529+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 1197.8530999999748,
+        "generation_id": "gen-1791539289-1bLu7b004QrSqIBshHtb",
+        "provider_latency_ms": 1203,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 8,
+          "total_tokens": 337,
+          "cost": 0.0001187
+        }
+      }
+    },
+    "holdout-20261009-060": {
+      "status": "complete",
+      "reservation_usd": "0.0020159",
+      "actual_cost_usd": "0.000119",
+      "started_at": "2026-10-09T09:48:14.307823+00:00",
+      "result": {
+        "prediction": "open_product",
+        "failure_category": null,
+        "latency_ms": 1394.8897000000215,
+        "generation_id": "gen-1791539290-LCPk3IsVYkzEmARHASfg",
+        "provider_latency_ms": 1390,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 8,
+          "total_tokens": 338,
+          "cost": 0.000119
+        }
+      }
+    },
+    "holdout-20261009-061": {
+      "status": "complete",
+      "reservation_usd": "0.0020606",
+      "actual_cost_usd": "0.0001292",
+      "started_at": "2026-10-09T09:48:15.714679+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 2444.1775999998754,
+        "generation_id": "gen-1791539291-uE5pf1qRM0MNa7ltFjQs",
+        "provider_latency_ms": 2438,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 11,
+          "total_tokens": 350,
+          "cost": 0.0001292
+        }
+      }
+    },
+    "holdout-20261009-062": {
+      "status": "complete",
+      "reservation_usd": "0.0020357",
+      "actual_cost_usd": "0.0001262",
+      "started_at": "2026-10-09T09:48:18.173206+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 3230.1022000001467,
+        "generation_id": "gen-1791539294-MCmaawpdG5ZHfpsBFRL2",
+        "provider_latency_ms": 3234,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 11,
+          "total_tokens": 340,
+          "cost": 0.0001262
+        }
+      }
+    },
+    "holdout-20261009-063": {
+      "status": "complete",
+      "reservation_usd": "0.0020516",
+      "actual_cost_usd": "0.0001149",
+      "started_at": "2026-10-09T09:48:21.414873+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 4780.656599999929,
+        "generation_id": "gen-1791539297-MemyT2oWI0X6YsCotS5Q",
+        "provider_latency_ms": 4780,
+        "usage": {
+          "prompt_tokens": 333,
+          "completion_tokens": 6,
+          "total_tokens": 339,
+          "cost": 0.0001149
+        }
+      }
+    },
+    "holdout-20261009-064": {
+      "status": "complete",
+      "reservation_usd": "0.0019529",
+      "actual_cost_usd": "0.0001161",
+      "started_at": "2026-10-09T09:48:26.208727+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1191.893299999947,
+        "generation_id": "gen-1791539302-9ayiLRzf58eZDDXC7HmB",
+        "provider_latency_ms": 1188,
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 6,
+          "total_tokens": 343,
+          "cost": 0.0001161
+        }
+      }
+    },
+    "holdout-20261009-065": {
+      "status": "complete",
+      "reservation_usd": "0.0019562",
+      "actual_cost_usd": "0.0001173",
+      "started_at": "2026-10-09T09:48:27.410507+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1423.6036999998305,
+        "generation_id": "gen-1791539303-at5zym3AGkX5EPhRsTgY",
+        "provider_latency_ms": 1421,
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 6,
+          "total_tokens": 347,
+          "cost": 0.0001173
+        }
+      }
+    },
+    "holdout-20261009-066": {
+      "status": "complete",
+      "reservation_usd": "0.0019565",
+      "actual_cost_usd": "0.0001167",
+      "started_at": "2026-10-09T09:48:28.845669+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1189.5873999999367,
+        "generation_id": "gen-1791539304-9wPuZ1O5x88QPa4X7suw",
+        "provider_latency_ms": 1188,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 6,
+          "total_tokens": 345,
+          "cost": 0.0001167
+        }
+      }
+    },
+    "holdout-20261009-067": {
+      "status": "complete",
+      "reservation_usd": "0.0019583",
+      "actual_cost_usd": "0.0001128",
+      "started_at": "2026-10-09T09:48:30.048406+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 3039.5275999999285,
+        "generation_id": "gen-1791539306-iyN4BBoPsKT9oj98gLuO",
+        "provider_latency_ms": 3046,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 6,
+          "total_tokens": 332,
+          "cost": 0.0001128
+        }
+      }
+    },
+    "holdout-20261009-068": {
+      "status": "complete",
+      "reservation_usd": "0.0019604",
+      "actual_cost_usd": "0.0001131",
+      "started_at": "2026-10-09T09:48:33.098595+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1223.6877000000277,
+        "generation_id": "gen-1791539309-k28mJ5YQMUzipGZjQTJ1",
+        "provider_latency_ms": 1234,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 6,
+          "total_tokens": 333,
+          "cost": 0.0001131
+        }
+      }
+    },
+    "holdout-20261009-069": {
+      "status": "complete",
+      "reservation_usd": "0.0019556",
+      "actual_cost_usd": "0.0001128",
+      "started_at": "2026-10-09T09:48:34.333137+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1080.8226999999988,
+        "generation_id": "gen-1791539310-mx2qhjoXzjZhfzJfqskP",
+        "provider_latency_ms": 1078,
+        "usage": {
+          "prompt_tokens": 326,
+          "completion_tokens": 6,
+          "total_tokens": 332,
+          "cost": 0.0001128
+        }
+      }
+    },
+    "holdout-20261009-070": {
+      "status": "complete",
+      "reservation_usd": "0.0020096",
+      "actual_cost_usd": "0.0001259",
+      "started_at": "2026-10-09T09:48:35.424543+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 992.4255999999332,
+        "generation_id": "gen-1791539311-9Cn5tdiBICLzXfNV1cTG",
+        "provider_latency_ms": 1000,
+        "usage": {
+          "prompt_tokens": 328,
+          "completion_tokens": 11,
+          "total_tokens": 339,
+          "cost": 0.0001259
+        }
+      }
+    },
+    "holdout-20261009-071": {
+      "status": "complete",
+      "reservation_usd": "0.0020366",
+      "actual_cost_usd": "0.0001146",
+      "started_at": "2026-10-09T09:48:36.427038+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1001.9942000001265,
+        "generation_id": "gen-1791539312-hdwFwwH7VwDZ9MDddez0",
+        "provider_latency_ms": 1015,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 6,
+          "total_tokens": 338,
+          "cost": 0.0001146
+        }
+      }
+    },
+    "holdout-20261009-072": {
+      "status": "complete",
+      "reservation_usd": "0.0020294",
+      "actual_cost_usd": "0.000114",
+      "started_at": "2026-10-09T09:48:37.437720+00:00",
+      "result": {
+        "prediction": "mutate",
+        "failure_category": null,
+        "latency_ms": 1218.2302999999592,
+        "generation_id": "gen-1791539313-KM84JsccemlNdUZZTTC2",
+        "provider_latency_ms": 1219,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 6,
+          "total_tokens": 336,
+          "cost": 0.000114
+        }
+      }
+    },
+    "holdout-20261009-073": {
+      "status": "complete",
+      "reservation_usd": "0.0020555",
+      "actual_cost_usd": "0.0001217",
+      "started_at": "2026-10-09T09:48:38.665876+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1067.251499999884,
+        "generation_id": "gen-1791539314-zvckYaWcETnIWLFnwXly",
+        "provider_latency_ms": 1062,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 8,
+          "total_tokens": 347,
+          "cost": 0.0001217
+        }
+      }
+    },
+    "holdout-20261009-074": {
+      "status": "complete",
+      "reservation_usd": "0.0020495",
+      "actual_cost_usd": "0.0001333",
+      "started_at": "2026-10-09T09:48:39.742929+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1432.2809000000234,
+        "generation_id": "gen-1791539315-G2A8QvKf66TS6EeBb8hD",
+        "provider_latency_ms": 1422,
+        "usage": {
+          "prompt_tokens": 336,
+          "completion_tokens": 13,
+          "total_tokens": 349,
+          "cost": 0.0001333
+        }
+      }
+    },
+    "holdout-20261009-075": {
+      "status": "complete",
+      "reservation_usd": "0.0020648",
+      "actual_cost_usd": "0.0001324",
+      "started_at": "2026-10-09T09:48:41.187049+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1479.6449999998913,
+        "generation_id": "gen-1791539317-4F9RDjlDKS6ykxCoVZUg",
+        "provider_latency_ms": 1484,
+        "usage": {
+          "prompt_tokens": 333,
+          "completion_tokens": 13,
+          "total_tokens": 346,
+          "cost": 0.0001324
+        }
+      }
+    },
+    "holdout-20261009-076": {
+      "status": "complete",
+      "reservation_usd": "0.001955",
+      "actual_cost_usd": "0.0001342",
+      "started_at": "2026-10-09T09:48:42.680325+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1124.2016999999578,
+        "generation_id": "gen-1791539318-CNvuMxeoV3n6EUKOcmzA",
+        "provider_latency_ms": 1125,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 13,
+          "total_tokens": 352,
+          "cost": 0.0001342
+        }
+      }
+    },
+    "holdout-20261009-077": {
+      "status": "complete",
+      "reservation_usd": "0.0019523",
+      "actual_cost_usd": "0.0001315",
+      "started_at": "2026-10-09T09:48:43.813838+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 2344.9906999999257,
+        "generation_id": "gen-1791539319-e0czVT6BgcTHc2JhCzdd",
+        "provider_latency_ms": 2344,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 13,
+          "total_tokens": 343,
+          "cost": 0.0001315
+        }
+      }
+    },
+    "holdout-20261009-078": {
+      "status": "complete",
+      "reservation_usd": "0.0019514",
+      "actual_cost_usd": "0.0001327",
+      "started_at": "2026-10-09T09:48:46.169261+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1615.6464000000597,
+        "generation_id": "gen-1791539322-ASipFH25hRLcgSOse1l6",
+        "provider_latency_ms": 1609,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 13,
+          "total_tokens": 347,
+          "cost": 0.0001327
+        }
+      }
+    },
+    "holdout-20261009-079": {
+      "status": "complete",
+      "reservation_usd": "0.0019562",
+      "actual_cost_usd": "0.0001315",
+      "started_at": "2026-10-09T09:48:47.795709+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1590.043200000082,
+        "generation_id": "gen-1791539323-zz2U5CIyLxnoM3od5HHT",
+        "provider_latency_ms": 1593,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 13,
+          "total_tokens": 343,
+          "cost": 0.0001315
+        }
+      }
+    },
+    "holdout-20261009-080": {
+      "status": "complete",
+      "reservation_usd": "0.0019643",
+      "actual_cost_usd": "0.0001202",
+      "started_at": "2026-10-09T09:48:49.395746+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 2512.7880000000005,
+        "generation_id": "gen-1791539325-oVmewVRmBIrTdXUavNBK",
+        "provider_latency_ms": 2516,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 8,
+          "total_tokens": 342,
+          "cost": 0.0001202
+        }
+      }
+    },
+    "holdout-20261009-081": {
+      "status": "complete",
+      "reservation_usd": "0.0019589",
+      "actual_cost_usd": "0.0001181",
+      "started_at": "2026-10-09T09:48:51.918265+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1091.8047999998635,
+        "generation_id": "gen-1791539327-L7I3RFcZvm1tqvGjtLbk",
+        "provider_latency_ms": 1093,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 8,
+          "total_tokens": 335,
+          "cost": 0.0001181
+        }
+      }
+    },
+    "holdout-20261009-082": {
+      "status": "complete",
+      "reservation_usd": "0.0020123",
+      "actual_cost_usd": "0.0001187",
+      "started_at": "2026-10-09T09:48:53.019869+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 2258.054099999981,
+        "generation_id": "gen-1791539329-v60yi8HHpX1C03DTsWGt",
+        "provider_latency_ms": 2266,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 8,
+          "total_tokens": 337,
+          "cost": 0.0001187
+        }
+      }
+    },
+    "holdout-20261009-083": {
+      "status": "complete",
+      "reservation_usd": "0.0020135",
+      "actual_cost_usd": "0.0001306",
+      "started_at": "2026-10-09T09:48:55.287789+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 971.2339999998676,
+        "generation_id": "gen-1791539331-kvIsv2qBjOXEANpoO5tr",
+        "provider_latency_ms": 968,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 13,
+          "total_tokens": 340,
+          "cost": 0.0001306
+        }
+      }
+    },
+    "holdout-20261009-084": {
+      "status": "complete",
+      "reservation_usd": "0.0020147",
+      "actual_cost_usd": "0.000119",
+      "started_at": "2026-10-09T09:48:56.271298+00:00",
+      "result": {
+        "prediction": "cart_edit",
+        "failure_category": null,
+        "latency_ms": 1031.6967000001114,
+        "generation_id": "gen-1791539332-Xgs0TgqaHND7NUnk2x7L",
+        "provider_latency_ms": 1030,
+        "usage": {
+          "prompt_tokens": 330,
+          "completion_tokens": 8,
+          "total_tokens": 338,
+          "cost": 0.000119
+        }
+      }
+    },
+    "holdout-20261009-085": {
+      "status": "complete",
+      "reservation_usd": "0.0020783",
+      "actual_cost_usd": "0.0001286",
+      "started_at": "2026-10-09T09:48:57.311981+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1349.5430999998916,
+        "generation_id": "gen-1791539333-e2v3Ywvv2O1OTb1wOgr1",
+        "provider_latency_ms": 1359,
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 11,
+          "total_tokens": 348,
+          "cost": 0.0001286
+        }
+      }
+    },
+    "holdout-20261009-086": {
+      "status": "complete",
+      "reservation_usd": "0.0020612",
+      "actual_cost_usd": "0.0001295",
+      "started_at": "2026-10-09T09:48:58.671683+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 5772.110899999916,
+        "generation_id": "gen-1791539334-SF5hfKPQpUEGB3z1j8cY",
+        "provider_latency_ms": 5780,
+        "usage": {
+          "prompt_tokens": 340,
+          "completion_tokens": 11,
+          "total_tokens": 351,
+          "cost": 0.0001295
+        }
+      }
+    },
+    "holdout-20261009-087": {
+      "status": "complete",
+      "reservation_usd": "0.0020531",
+      "actual_cost_usd": "0.0001152",
+      "started_at": "2026-10-09T09:49:04.453656+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 950.6977000000916,
+        "generation_id": "gen-1791539340-h6g3VU1ABvNOB3kpRvOZ",
+        "provider_latency_ms": 953,
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 6,
+          "total_tokens": 340,
+          "cost": 0.0001152
+        }
+      }
+    },
+    "holdout-20261009-088": {
+      "status": "complete",
+      "reservation_usd": "0.0019586",
+      "actual_cost_usd": "0.0001298",
+      "started_at": "2026-10-09T09:49:05.416634+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 2066.3414000000557,
+        "generation_id": "gen-1791539341-Z36zwYzZ3jEy2gLAvbzQ",
+        "provider_latency_ms": 2062,
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 11,
+          "total_tokens": 352,
+          "cost": 0.0001298
+        }
+      }
+    },
+    "holdout-20261009-089": {
+      "status": "complete",
+      "reservation_usd": "0.0019622",
+      "actual_cost_usd": "0.0001197",
+      "started_at": "2026-10-09T09:49:07.493950+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1485.6269000001703,
+        "generation_id": "gen-1791539343-H3CicnPA7sYfoIp9aB4B",
+        "provider_latency_ms": 1484,
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 6,
+          "total_tokens": 355,
+          "cost": 0.0001197
+        }
+      }
+    },
+    "holdout-20261009-090": {
+      "status": "complete",
+      "reservation_usd": "0.0019574",
+      "actual_cost_usd": "0.0001307",
+      "started_at": "2026-10-09T09:49:08.989407+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1241.0843000000114,
+        "generation_id": "gen-1791539344-qwwW7Sndl9eYEJBPPN92",
+        "provider_latency_ms": 1250,
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 11,
+          "total_tokens": 355,
+          "cost": 0.0001307
+        }
+      }
+    },
+    "holdout-20261009-091": {
+      "status": "complete",
+      "reservation_usd": "0.0019661",
+      "actual_cost_usd": "0.0001134",
+      "started_at": "2026-10-09T09:49:10.241622+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1595.6063999999515,
+        "generation_id": "gen-1791539346-ANdAjlD8REU8S6PEK0To",
+        "provider_latency_ms": 1593,
+        "usage": {
+          "prompt_tokens": 328,
+          "completion_tokens": 6,
+          "total_tokens": 334,
+          "cost": 0.0001134
+        }
+      }
+    },
+    "holdout-20261009-092": {
+      "status": "complete",
+      "reservation_usd": "0.0019634",
+      "actual_cost_usd": "0.0001271",
+      "started_at": "2026-10-09T09:49:11.847538+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 2254.6274999999696,
+        "generation_id": "gen-1791539347-X5pjZ0xidhNyhjRFaoSj",
+        "provider_latency_ms": 2266,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 11,
+          "total_tokens": 343,
+          "cost": 0.0001271
+        }
+      }
+    },
+    "holdout-20261009-093": {
+      "status": "complete",
+      "reservation_usd": "0.0019619",
+      "actual_cost_usd": "0.0001146",
+      "started_at": "2026-10-09T09:49:14.113092+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 2017.447299999958,
+        "generation_id": "gen-1791539350-YVzXjVaygTnH7mmqBoLL",
+        "provider_latency_ms": 2030,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 6,
+          "total_tokens": 338,
+          "cost": 0.0001146
+        }
+      }
+    },
+    "holdout-20261009-094": {
+      "status": "complete",
+      "reservation_usd": "0.0020339",
+      "actual_cost_usd": "0.0001256",
+      "started_at": "2026-10-09T09:49:16.141786+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1574.4346000001315,
+        "generation_id": "gen-1791539352-PN29zsLc28HUOcFrAHhz",
+        "provider_latency_ms": 1577,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 11,
+          "total_tokens": 338,
+          "cost": 0.0001256
+        }
+      }
+    },
+    "holdout-20261009-095": {
+      "status": "complete",
+      "reservation_usd": "0.0020552",
+      "actual_cost_usd": "0.0001158",
+      "started_at": "2026-10-09T09:49:17.726573+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1008.4941000000072,
+        "generation_id": "gen-1791539353-0GEHVfUCJi3fBbYKtd3m",
+        "provider_latency_ms": 1000,
+        "usage": {
+          "prompt_tokens": 336,
+          "completion_tokens": 6,
+          "total_tokens": 342,
+          "cost": 0.0001158
+        }
+      }
+    },
+    "holdout-20261009-096": {
+      "status": "complete",
+      "reservation_usd": "0.0020366",
+      "actual_cost_usd": "0.000128",
+      "started_at": "2026-10-09T09:49:18.745771+00:00",
+      "result": {
+        "prediction": "help",
+        "failure_category": null,
+        "latency_ms": 1921.0410999999112,
+        "generation_id": "gen-1791539354-5f1B3yzx27Wq9VC52xFG",
+        "provider_latency_ms": 1922,
+        "usage": {
+          "prompt_tokens": 335,
+          "completion_tokens": 11,
+          "total_tokens": 346,
+          "cost": 0.000128
+        }
+      }
+    },
+    "holdout-20261009-097": {
+      "status": "complete",
+      "reservation_usd": "0.0020474",
+      "actual_cost_usd": "0.0001193",
+      "started_at": "2026-10-09T09:49:20.677758+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1948.508899999979,
+        "generation_id": "gen-1791539356-89YiZZ7aRhU92EcDAVAO",
+        "provider_latency_ms": 1952,
+        "usage": {
+          "prompt_tokens": 331,
+          "completion_tokens": 8,
+          "total_tokens": 339,
+          "cost": 0.0001193
+        }
+      }
+    },
+    "holdout-20261009-098": {
+      "status": "complete",
+      "reservation_usd": "0.0020051",
+      "actual_cost_usd": "0.0001175",
+      "started_at": "2026-10-09T09:49:22.635760+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1397.3324999999477,
+        "generation_id": "gen-1791539358-bPGKNwBbqeJOwtXnwl9i",
+        "provider_latency_ms": 1391,
+        "usage": {
+          "prompt_tokens": 325,
+          "completion_tokens": 8,
+          "total_tokens": 333,
+          "cost": 0.0001175
+        }
+      }
+    },
+    "holdout-20261009-099": {
+      "status": "complete",
+      "reservation_usd": "0.0020081",
+      "actual_cost_usd": "0.0001297",
+      "started_at": "2026-10-09T09:49:24.043757+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1079.6090999999706,
+        "generation_id": "gen-1791539360-scf9CIu57JYZWTbmT273",
+        "provider_latency_ms": 1077,
+        "usage": {
+          "prompt_tokens": 324,
+          "completion_tokens": 13,
+          "total_tokens": 337,
+          "cost": 0.0001297
+        }
+      }
+    },
+    "holdout-20261009-100": {
+      "status": "complete",
+      "reservation_usd": "0.0019514",
+      "actual_cost_usd": "0.0001318",
+      "started_at": "2026-10-09T09:49:25.133781+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1082.9283000000487,
+        "generation_id": "gen-1791539361-bm4pcSu4AhamAQ9b06RO",
+        "provider_latency_ms": 1077,
+        "usage": {
+          "prompt_tokens": 331,
+          "completion_tokens": 13,
+          "total_tokens": 344,
+          "cost": 0.0001318
+        }
+      }
+    },
+    "holdout-20261009-101": {
+      "status": "complete",
+      "reservation_usd": "0.0019484",
+      "actual_cost_usd": "0.0001318",
+      "started_at": "2026-10-09T09:49:26.226709+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 2014.4278999998733,
+        "generation_id": "gen-1791539362-HTuLHdPJnxyJWpVzEiuQ",
+        "provider_latency_ms": 2015,
+        "usage": {
+          "prompt_tokens": 331,
+          "completion_tokens": 13,
+          "total_tokens": 344,
+          "cost": 0.0001318
+        }
+      }
+    },
+    "holdout-20261009-102": {
+      "status": "complete",
+      "reservation_usd": "0.001955",
+      "actual_cost_usd": "0.0001354",
+      "started_at": "2026-10-09T09:49:28.251611+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1140.7945000000836,
+        "generation_id": "gen-1791539364-ScAcWz1UKwe50tmasj2p",
+        "provider_latency_ms": 1140,
+        "usage": {
+          "prompt_tokens": 343,
+          "completion_tokens": 13,
+          "total_tokens": 356,
+          "cost": 0.0001354
+        }
+      }
+    },
+    "holdout-20261009-103": {
+      "status": "complete",
+      "reservation_usd": "0.0019532",
+      "actual_cost_usd": "0.0001285",
+      "started_at": "2026-10-09T09:49:29.402995+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1701.515900000004,
+        "generation_id": "gen-1791539365-1IvdgW7S9RmZYBiOMj88",
+        "provider_latency_ms": 1702,
+        "usage": {
+          "prompt_tokens": 320,
+          "completion_tokens": 13,
+          "total_tokens": 333,
+          "cost": 0.0001285
+        }
+      }
+    },
+    "holdout-20261009-104": {
+      "status": "complete",
+      "reservation_usd": "0.0019544",
+      "actual_cost_usd": "0.0001172",
+      "started_at": "2026-10-09T09:49:31.115457+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1387.7092000000175,
+        "generation_id": "gen-1791539367-h0HZ4PuW7AjRcNMKbYzT",
+        "provider_latency_ms": 1375,
+        "usage": {
+          "prompt_tokens": 324,
+          "completion_tokens": 8,
+          "total_tokens": 332,
+          "cost": 0.0001172
+        }
+      }
+    },
+    "holdout-20261009-105": {
+      "status": "complete",
+      "reservation_usd": "0.0019508",
+      "actual_cost_usd": "0.0001294",
+      "started_at": "2026-10-09T09:49:32.514906+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1081.2110000001667,
+        "generation_id": "gen-1791539368-XPne1rexcQa4d0753na5",
+        "provider_latency_ms": 1077,
+        "usage": {
+          "prompt_tokens": 323,
+          "completion_tokens": 13,
+          "total_tokens": 336,
+          "cost": 0.0001294
+        }
+      }
+    },
+    "holdout-20261009-106": {
+      "status": "complete",
+      "reservation_usd": "0.0019973",
+      "actual_cost_usd": "0.00013",
+      "started_at": "2026-10-09T09:49:33.605750+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1167.3605000000862,
+        "generation_id": "gen-1791539369-0aYXuuFjMpLtlYRiQZNT",
+        "provider_latency_ms": 1172,
+        "usage": {
+          "prompt_tokens": 325,
+          "completion_tokens": 13,
+          "total_tokens": 338,
+          "cost": 0.00013
+        }
+      }
+    },
+    "holdout-20261009-107": {
+      "status": "complete",
+      "reservation_usd": "0.0019871",
+      "actual_cost_usd": "0.0001288",
+      "started_at": "2026-10-09T09:49:34.783873+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1148.3519000000797,
+        "generation_id": "gen-1791539370-0Di76iHBPMPo2GgJEkiR",
+        "provider_latency_ms": 1155,
+        "usage": {
+          "prompt_tokens": 321,
+          "completion_tokens": 13,
+          "total_tokens": 334,
+          "cost": 0.0001288
+        }
+      }
+    },
+    "holdout-20261009-108": {
+      "status": "complete",
+      "reservation_usd": "0.0020135",
+      "actual_cost_usd": "0.0001312",
+      "started_at": "2026-10-09T09:49:35.944499+00:00",
+      "result": {
+        "prediction": "off_topic",
+        "failure_category": null,
+        "latency_ms": 1772.8550000001633,
+        "generation_id": "gen-1791539371-FOalCFZMYloJEbZkNUwe",
+        "provider_latency_ms": 1765,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 13,
+          "total_tokens": 342,
+          "cost": 0.0001312
+        }
+      }
+    },
+    "holdout-20261009-109": {
+      "status": "complete",
+      "reservation_usd": "0.0020456",
+      "actual_cost_usd": "0.0001296",
+      "started_at": "2026-10-09T09:49:37.727570+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 2497.1190999999635,
+        "generation_id": "gen-1791539373-88VLzW2mFDkiF6FCIcMK",
+        "provider_latency_ms": 2500,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 12,
+          "total_tokens": 344,
+          "cost": 0.0001296
+        }
+      }
+    },
+    "holdout-20261009-110": {
+      "status": "complete",
+      "reservation_usd": "0.002042",
+      "actual_cost_usd": "0.0001174",
+      "started_at": "2026-10-09T09:49:40.237572+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 3935.0681999999324,
+        "generation_id": "gen-1791539376-bZk5P1MENxDPsZmN2Ybz",
+        "provider_latency_ms": 3922,
+        "usage": {
+          "prompt_tokens": 333,
+          "completion_tokens": 7,
+          "total_tokens": 340,
+          "cost": 0.0001174
+        }
+      }
+    },
+    "holdout-20261009-111": {
+      "status": "complete",
+      "reservation_usd": "0.0020231",
+      "actual_cost_usd": "0.0001159",
+      "started_at": "2026-10-09T09:49:44.185833+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 1544.1812000001391,
+        "generation_id": "gen-1791539380-yBc7O0s35JSA0pNLpdWM",
+        "provider_latency_ms": 1547,
+        "usage": {
+          "prompt_tokens": 328,
+          "completion_tokens": 7,
+          "total_tokens": 335,
+          "cost": 0.0001159
+        }
+      }
+    },
+    "holdout-20261009-112": {
+      "status": "complete",
+      "reservation_usd": "0.0019589",
+      "actual_cost_usd": "0.0001332",
+      "started_at": "2026-10-09T09:49:45.740447+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 938.9529999998558,
+        "generation_id": "gen-1791539381-RFKjxHhJ1CogpvbzToHs",
+        "provider_latency_ms": 937,
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 12,
+          "total_tokens": 356,
+          "cost": 0.0001332
+        }
+      }
+    },
+    "holdout-20261009-113": {
+      "status": "complete",
+      "reservation_usd": "0.0019535",
+      "actual_cost_usd": "0.0001192",
+      "started_at": "2026-10-09T09:49:46.691250+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 1103.356500000018,
+        "generation_id": "gen-1791539382-ln2xH5dDzhHeUeq3B4zz",
+        "provider_latency_ms": 1109,
+        "usage": {
+          "prompt_tokens": 339,
+          "completion_tokens": 7,
+          "total_tokens": 346,
+          "cost": 0.0001192
+        }
+      }
+    },
+    "holdout-20261009-114": {
+      "status": "complete",
+      "reservation_usd": "0.001955",
+      "actual_cost_usd": "0.0001305",
+      "started_at": "2026-10-09T09:49:47.805499+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 951.5695000000051,
+        "generation_id": "gen-1791539383-8SmODoYkqc2j4lvpQloT",
+        "provider_latency_ms": 952,
+        "usage": {
+          "prompt_tokens": 335,
+          "completion_tokens": 12,
+          "total_tokens": 347,
+          "cost": 0.0001305
+        }
+      }
+    },
+    "holdout-20261009-115": {
+      "status": "complete",
+      "reservation_usd": "0.0019553",
+      "actual_cost_usd": "0.0001272",
+      "started_at": "2026-10-09T09:49:48.769539+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 978.0975000001035,
+        "generation_id": "gen-1791539384-Cln16mmk62lwd09xtTEj",
+        "provider_latency_ms": 984,
+        "usage": {
+          "prompt_tokens": 324,
+          "completion_tokens": 12,
+          "total_tokens": 336,
+          "cost": 0.0001272
+        }
+      }
+    },
+    "holdout-20261009-116": {
+      "status": "complete",
+      "reservation_usd": "0.0019568",
+      "actual_cost_usd": "0.0001272",
+      "started_at": "2026-10-09T09:49:49.758350+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 1130.6620999998813,
+        "generation_id": "gen-1791539385-z2dvOhvY6tRv3JZSHTXe",
+        "provider_latency_ms": 1125,
+        "usage": {
+          "prompt_tokens": 324,
+          "completion_tokens": 12,
+          "total_tokens": 336,
+          "cost": 0.0001272
+        }
+      }
+    },
+    "holdout-20261009-117": {
+      "status": "complete",
+      "reservation_usd": "0.0019562",
+      "actual_cost_usd": "0.0001275",
+      "started_at": "2026-10-09T09:49:50.901376+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 996.7028999999457,
+        "generation_id": "gen-1791539386-JzdgRwLyhFVdw9J4oCyX",
+        "provider_latency_ms": 1000,
+        "usage": {
+          "prompt_tokens": 325,
+          "completion_tokens": 12,
+          "total_tokens": 337,
+          "cost": 0.0001275
+        }
+      }
+    },
+    "holdout-20261009-118": {
+      "status": "complete",
+      "reservation_usd": "0.0020207",
+      "actual_cost_usd": "0.0001296",
+      "started_at": "2026-10-09T09:49:51.909103+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 919.4130000000769,
+        "generation_id": "gen-1791539387-FAR9pAqjq9mNpTVVi9xe",
+        "provider_latency_ms": 921,
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 12,
+          "total_tokens": 344,
+          "cost": 0.0001296
+        }
+      }
+    },
+    "holdout-20261009-119": {
+      "status": "complete",
+      "reservation_usd": "0.0020174",
+      "actual_cost_usd": "0.0001162",
+      "started_at": "2026-10-09T09:49:52.844707+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 1283.7586000000556,
+        "generation_id": "gen-1791539388-QZfmyK6T9ti7ZOgHZKQJ",
+        "provider_latency_ms": 1281,
+        "usage": {
+          "prompt_tokens": 329,
+          "completion_tokens": 7,
+          "total_tokens": 336,
+          "cost": 0.0001162
+        }
+      }
+    },
+    "holdout-20261009-120": {
+      "status": "complete",
+      "reservation_usd": "0.0020108",
+      "actual_cost_usd": "0.0001156",
+      "started_at": "2026-10-09T09:49:54.139028+00:00",
+      "result": {
+        "prediction": "unsupported",
+        "failure_category": null,
+        "latency_ms": 1092.8142999998727,
+        "generation_id": "gen-1791539390-va6qPgiLXbNW3oDiVbSE",
+        "provider_latency_ms": 1094,
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 7,
+          "total_tokens": 334,
+          "cost": 0.0001156
+        }
+      }
+    }
+  },
+  "spent_plus_reserved_usd": "0.0148178"
+}

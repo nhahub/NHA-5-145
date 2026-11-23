@@ -1,0 +1,160 @@
+{
+  "v": 1,
+  "name": "Controlled Storefront",
+  "currency": "EGP",
+  "routes": {
+    "home": "/",
+    "category": "/c/{category}",
+    "product": "/p/{product_id}",
+    "cart": "/cart",
+    "checkout": "/checkout",
+    "account": "/account",
+    "orders": "/account/orders"
+  },
+  "filters": [
+    "q",
+    "type",
+    "min_price",
+    "max_price",
+    "size",
+    "color",
+    "availability",
+    "sort"
+  ],
+  "categories": {
+    "shoes": { "ar": "الأحذية", "en": "Shoes" },
+    "clothing": { "ar": "الملابس", "en": "Clothing" },
+    "bags": { "ar": "الشنط", "en": "Bags" },
+    "electronics": { "ar": "الإلكترونيات", "en": "Electronics" }
+  },
+  "color_labels": {
+    "ar": {
+      "black": "أسود",
+      "blue": "أزرق",
+      "red": "أحمر",
+      "white": "أبيض",
+      "brown": "بني",
+      "green": "أخضر",
+      "gray": "رمادي",
+      "cream": "كريمي",
+      "beige": "بيج",
+      "sand": "رملي",
+      "navy": "كحلي",
+      "pink": "وردي",
+      "yellow": "أصفر",
+      "orange": "برتقالي",
+      "khaki": "كاكي",
+      "gold": "ذهبي",
+      "silver": "فضي"
+    }
+  },
+  "vocabulary": {
+    "categories": {
+      "shoes": [
+        "shoe",
+        "shoes",
+        "sneaker",
+        "kootshi",
+        "kotshi",
+        "كوتشي",
+        "حذاء",
+        "أحذية"
+      ],
+      "clothing": ["clothing", "clothes", "jacket", "ملابس", "هدوم", "جاكيت"],
+      "bags": ["bag", "bags", "شنطة", "شنط"],
+      "electronics": ["electronics", "phone", "mobile", "موبايل", "إلكترونيات"]
+    },
+    "types": {
+      "running": ["running", "جري", "للجري", "gari", "gery"],
+      "football": [
+        "football",
+        "soccer",
+        "football shoes",
+        "كرة قدم",
+        "كورة قدم",
+        "كوتشي كرة",
+        "كوتشي كورة",
+        "حذاء كرة",
+        "جزمة كورة"
+      ],
+      "outerwear": ["jacket", "جاكيت"],
+      "shirts": ["shirt", "shirts", "قميص", "قمصان"],
+      "casual": ["casual", "كاجوال"],
+      "tops": ["t-shirt", "t-shirts", "تيشيرت"],
+      "sportswear": ["sportswear", "ملابس رياضية"],
+      "trousers": ["trousers", "بنطلون"],
+      "dresses": ["dresses", "فستان"],
+      "backpack": ["backpack", "حقيبة ظهر"],
+      "headphones": ["headphones", "سماعات"]
+    },
+    "colors": {
+      "black": ["black", "اسود", "أسود"],
+      "blue": ["blue", "ازرق", "أزرق"],
+      "red": ["red", "احمر", "أحمر"],
+      "white": ["white", "ابيض", "أبيض"],
+      "brown": ["brown", "بني", "بنى"],
+      "green": ["green", "أخضر", "اخضر"],
+      "gray": ["gray", "grey", "رمادي"],
+      "cream": ["cream", "كريمي"],
+      "beige": ["beige", "بيج"],
+      "sand": ["sand", "رملي"],
+      "navy": ["navy", "كحلي"],
+      "pink": ["pink", "وردي"],
+      "yellow": ["yellow", "أصفر"],
+      "orange": ["orange", "برتقالي"],
+      "khaki": ["khaki", "كاكي"],
+      "gold": ["gold", "ذهبي"],
+      "silver": ["silver", "فضي"]
+    },
+    "controls": {
+      "q": ["بحث", "search"],
+      "type": ["نوع الحذاء", "النوع", "type"],
+      "min_price": ["أقل سعر", "minimum price"],
+      "max_price": ["أقصى سعر", "maximum price"],
+      "size": ["المقاس", "size"],
+      "color": ["اللون", "color"],
+      "availability": ["التوفر", "availability"],
+      "sort": ["الترتيب", "sort"],
+      "submit": ["تطبيق الفلاتر", "apply filters"]
+    },
+    "availability": {
+      "available": ["available", "in stock", "متاح", "موجود"],
+      "unavailable": ["unavailable", "out of stock", "غير متاح", "خلصان"]
+    },
+    "sort": {
+      "cheapest": ["cheapest", "lowest price", "الأرخص"],
+      "newest": ["newest", "latest", "الأحدث"]
+    },
+    "features": {
+      "leather": ["leather", "جلد"],
+      "lightweight": ["lightweight", "خفيف", "خفيفة"],
+      "breathable": ["breathable", "تهوية"],
+      "comfortable": ["comfortable", "comfort", "مريح", "مريحة"],
+      "grip": ["grip", "يمسك", "ثبات"],
+      "light_color": ["light colors", "light colours", "فاتح", "فاتحة"]
+    },
+    "suitable_for": {
+      "formal_events": ["formal", "wedding", "فرح", "رسمي", "رسمية"],
+      "hot_weather": ["summer", "صيف", "صيفي", "أصيّف", "اصيف"],
+      "beach": ["beach", "بحر", "شاطئ"],
+      "daily_workouts": ["daily workouts", "workouts", "تمرين", "تدريب"],
+      "road_running": ["street", "road", "شارع"],
+      "hiking": ["hiking", "هايكنج", "تسلق"]
+    },
+    "soft_preferences": {
+      "lower_price": [
+        "not expensive",
+        "affordable",
+        "maykoonsh ghaly",
+        "ghaly awi",
+        "مش غالي",
+        "مش غالية",
+        "رخيص"
+      ]
+    }
+  },
+  "url_rules": {
+    "same_origin_only": true,
+    "category_filters_in_query": true
+  }
+}

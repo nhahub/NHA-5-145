@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-28",
+  "status": "private_application_acceptance_passed_closed_compute_safe",
+  "aws_credit_ceiling_usd": "0.15",
+  "cash_usd": "0",
+  "free_plan_verified": true,
+  "conservative_incremental_credit_estimate_usd": "0.02270400",
+  "rounded_compute_ip_minutes": 15,
+  "final_billing_measurement": false,
+  "retained_storage_allocation_separate": true,
+  "start_used": true,
+  "guest_reboots": 0,
+  "started_epoch": 1793215768.4839036,
+  "fixed_end_epoch": 1793230168,
+  "prior_authority_clean_completion": {
+    "finished": true,
+    "generation": 2,
+    "authority_state": "stopped",
+    "epoch": 1793202646.3866498
+  },
+  "driver_diagnostics_retrieved_before_reconciliation_or_load": true,
+  "diagnostic_inspection": {
+    "inspected": true,
+    "diagnostic_sha256": "031932cbb56ca0f028e2edfa2ede419c5953f7587a17ce3c3fd9e6da44fbd463",
+    "epoch": 1793215890.8057387,
+    "finding": "Prior driver swallowed exception; empty stderr, generic acceptance_refused; fixture metrics 1:2POST/5:10POST; last sample resource-safe. Add safe stage/type/count diagnostics before first current-session load; no resource thresholds changed."
+  },
+  "first_current_attempt": {
+    "requests": 130,
+    "failure": "TimeoutError",
+    "cohort": 8
+  },
+  "second_current_attempt": {
+    "requests": 130,
+    "failure": "ReadTimeout",
+    "cohort": 8
+  },
+  "driver_repair": {
+    "once_snapshot_replaced_by_bounded_terminal_sse": true,
+    "cohort_timeout_seconds": 30,
+    "http_read_timeout_seconds": 30,
+    "http_connect_timeout_seconds": 5,
+    "inference_queue_wait_seconds_unchanged": 8
+  },
+  "original_session_request_ceiling": 300,
+  "explicit_owner_amended_ceiling": 450,
+  "aggregate_requests": {
+    "earlier": 130,
+    "previous": 130,
+    "repaired": 140,
+    "total": 400,
+    "ceiling": 450
+  },
+  "captured_capacity": {
+    "passed": true,
+    "real_model_posts": 0,
+    "mode": "captured",
+    "cohorts": [
+      {
+        "requested": 1,
+        "completed": 1,
+        "inference_busy": 0,
+        "elapsed_seconds": 2.928485
+      },
+      {
+        "requested": 5,
+        "completed": 5,
+        "inference_busy": 0,
+        "elapsed_seconds": 9.825428
+      },
+      {
+        "requested": 8,
+        "completed": 5,
+        "inference_busy": 3,
+        "elapsed_seconds": 11.319521
+      }
+    ],
+    "requests": 140,
+    "minimum_mem_available": 1541951488,
+    "maximum_swap_used": 0,
+    "sampler_count": 58,
+    "capture_metrics": {
+      "rows": {
+        "1": {
+          "requested": 1,
+          "posts": 2,
+          "gets": 2,
+          "full": 0
+        },
+        "5": {
+          "requested": 5,
+          "posts": 10,
+          "gets": 10,
+          "full": 0
+        },
+        "8": {
+          "requested": 8,
+          "posts": 10,
+          "gets": 10,
+          "full": 3
+        }
+      },
+      "active": 0,
+      "post_peak": 1,
+      "real_model_posts": 0
+    }
+  },
+  "readiness_generation": 3,
+  "post_capacity_readiness": {
+    "signed_ready": true,
+    "wrong_generation_refused": true,
+    "wrong_key_refused": true,
+    "stale_response_refused": true,
+    "unsigned_response_refused": true
+  },
+  "post_capacity_inspection": {
+    "units": {
+      "agent": {
+        "restarts": 0,
+        "fd_count": 9,
+        "fd_limit": 4096,
+        "uid": 993,
+        "capabilities": {
+          "CapEff": 0,
+          "CapPrm": 0,
+          "CapBnd": 0,
+          "CapAmb": 0
+        },
+        "memory_max": 1073741824,
+        "tasks_max": 64,
+        "active": "active"
+      },
+      "store": {
+        "restarts": 0,
+        "fd_count": 23,
+        "fd_limit": 4096,
+        "uid": 992,
+        "capabilities": {
+          "CapEff": 0,
+          "CapPrm": 0,
+          "CapBnd": 0,
+          "CapAmb": 0
+        },
+        "memory_max": 268435456,
+        "tasks_max": 64,
+        "active": "active"
+      },
+      "proxy": {
+        "restarts": 0,
+        "fd_count": 10,
+        "fd_limit": 4096,
+        "uid": 991,
+        "capabilities": {
+          "CapEff": 1024,
+          "CapPrm": 1024,
+          "CapBnd": 1024,
+          "CapAmb": 1024
+        },
+        "memory_max": 268435456,
+        "tasks_max": 64,
+        "active": "active"
+      }
+    },
+    "swap_active": true,
+    "swappiness": 10,
+    "metadata_uid_denials": true,
+    "agent_metadata_positive": true,
+    "model_egress_denied": true,
+    "nft_sha256": "021a7f25ba7181691c13cc0da7debd506de9dcebf0dc347d147c7893753ddda1",
+    "readiness": {
+      "signed_ready": true,
+      "wrong_generation_refused": true,
+      "wrong_key_refused": true,
+      "stale_response_refused": true,
+      "unsigned_response_refused": true
+    }
+  },
+  "capture_custody_isolation": {
+    "capture_cannot_open_real_custody": true,
+    "signed_capture_ready": true
+  },
+  "canonical_accounting_unchanged": true,
+  "canonical_attempts": 248,
+  "custody_uploaded_or_reset": false,
+  "live_model_posts": 0,
+  "new_provider_status_gets": 0,
+  "fake_model_posts": {
+    "attempt_1": 22,
+    "attempt_2": 22,
+    "passed_attempt": 22,
+    "total": 66
+  },
+  "all_acceptance_invitations_revoked": {
+    "count": 3,
+    "all_revoked": true,
+    "off_host": true,
+    "epoch": 1793216731.7737982
+  },
+  "guest_cleanup": {
+    "guest_cleanup": true,
+    "ledger_disabled": true,
+    "apps_disabled": true,
+    "safe_guard_restored": true
+  },
+  "teardown": {
+    "errors": [],
+    "utc": "2026-10-28T19:44:32.495664+00:00"
+  },
+  "compute_safe": {
+    "original_stopped": true,
+    "eip_released": true,
+    "utc": "2026-10-28T19:44:19.730248+00:00"
+  },
+  "fresh_final_safety": {
+    "original_stopped": true,
+    "no_public_ip": true,
+    "operation_eip_count": 0,
+    "checked_epoch": 1793217114.6621418
+  },
+  "authority_finish": {
+    "pending": false,
+    "wait": {
+      "not_before": 1793220173.7503324,
+      "absolute_end": 1793230168,
+      "cloud_compute_running": false
+    },
+    "finite_local_worker": true,
+    "no_cloud_compute": true,
+    "complete_receipt": {
+      "finished": true,
+      "generation": 3,
+      "authority_state": "stopped",
+      "epoch": 1793220259.3383248
+    },
+    "operation_closed": true
+  },
+  "private_operator_tests": 57,
+  "driver_tests": 27,
+  "full_python_suite": {
+    "passed": 1599,
+    "warnings": 2,
+    "seconds": 1010.1,
+    "command": "python -m pytest agent/tests eval/tests -q"
+  },
+  "public_activation": false,
+  "deployed_base_operator_sha256": {
+    "guest.py": "6915d6a29d9dc03e319b3fbec0011d16c2295f00fb88f5ff297b3c8f38fb1739",
+    "focused_guest.py": "1c17be389ee441673a1145c81bc4b5528c7cc135b0fe1c54881531e3ff5c0188",
+    "focused_reset.py": "e69736475f2501cbb84a43f3be95e3dd9b579abcf1b7f68c1ebbc1b28d1e7f11",
+    "capture_launcher.py": "b4beecd7086eac1f31755306c0e3fdb0d7f551a3e0b0ae087f188ac8a75fddf7",
+    "capacity_monitor.py": "2d69b4687a810df588928f3d0a0dcc89d90db41f511cc024a239e3ec14592824"
+  },
+  "final_deployed_driver_sha256": "00bba0871bab40a008194d9babea4988a351ef40b5b0e220e8ab534684699f7f",
+  "protected_pointer": ".scratch/cap07-controlled-host-preparation/completion-operation.txt",
+  "additional_start_authorized": false
+}

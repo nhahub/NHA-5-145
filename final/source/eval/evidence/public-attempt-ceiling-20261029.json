@@ -1,0 +1,36 @@
+{
+  "status": "local_attempt_ceiling_verified_cloud_launch_held_for_owner_review",
+  "tests": {
+    "command": "python -m pytest agent/tests eval/tests -q",
+    "passed": 1617,
+    "failures": 0,
+    "warnings": 2,
+    "warning_kind": "existing websockets/uvicorn deprecations",
+    "seconds": 1002.22,
+    "exit_code": 0,
+    "log_sha256": "d8a2b77f0b2e6de149fef7e26b645bbff7e06f59dfff75a62e3c076fd5038df5",
+    "focused_passed": 88
+  },
+  "checks": {
+    "ruff_lint": "pass",
+    "ruff_format": "pass",
+    "independent_runtime_review": "no material issues"
+  },
+  "dns": {
+    "owner_operated_only": true,
+    "computer_use_allowed": false,
+    "brave_access_allowed": false,
+    "owner_confirms_no_A_records": true,
+    "read_only_resolver_A_AAAA_CNAME": "NXDOMAIN for both app/store; authoritative refresh still required"
+  },
+  "aws_mutations": 0,
+  "aws_session_started": false,
+  "provider_status_gets": 0,
+  "live_model_posts": 0,
+  "remaining_preparation": [
+    "protected bounded operator and synthetic failure tests",
+    "rebuild/verify final native release and affected Lambda ZIPs",
+    "refresh exact account/pricing/ownership/service eligibility before writes"
+  ],
+  "epoch": 1793278781.4263673
+}

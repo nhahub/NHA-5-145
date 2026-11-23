@@ -1,0 +1,1390 @@
+{
+  "inventory_format_version": 1,
+  "dataset_version": "capstone-v1-draft",
+  "recorded_on": "2026-10-02",
+  "source_commit": "48e300d16ed8669c6dffd7e01191576485d26963",
+  "status": "exposure_inventory_not_dataset_release",
+  "hash_policy": "SHA-256 of pinned Git source bytes with CRLF normalized to LF; UTF-8 source files",
+  "default_for_prior_development_material": "exposed",
+  "unknown_provenance_unseen_eligible": false,
+  "unique_utterance_count": null,
+  "indexed_source_case_count": 104,
+  "policy_only_sources": [
+    {
+      "category": "prior_debugging_chats_and_screenshots",
+      "exposure": "exposed",
+      "contents_imported": false
+    },
+    {
+      "category": "ignored_live_evaluation_reports",
+      "exposure": "exposed",
+      "contents_imported": false
+    },
+    {
+      "category": "participant_requests_already_observed_during_development",
+      "exposure": "exposed",
+      "contents_imported": false
+    }
+  ],
+  "sources": [
+    {
+      "path": "agent/tests/__init__.py",
+      "sha256_lf_utf8": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/contract_fixtures.py",
+      "sha256_lf_utf8": "8d1e14ef6446cd7f3c778218907978d61e2734ccb6481dcdbaaa0e7941e2b504",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_action_contract.py",
+      "sha256_lf_utf8": "678fa3e5a3fb61d674a4d868318ff9b15b2f0a92bfe96b0bd1ba43f70d77f938",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_action_result_contract.py",
+      "sha256_lf_utf8": "c4eab7d8fac7f12e720368f84e7a2899b484767c779d7d536dc646d5af735cd3",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_advice.py",
+      "sha256_lf_utf8": "8db6466f0aeaa552affc1d8caed5f0bd7e2c18ce68a57ff1f4c17b35f78ec1a6",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_cart_conversation_repair.py",
+      "sha256_lf_utf8": "96fde7fad38889ecebcd9ef9081e5b6c58a0dbd8d58cf4ead795deabf39636f1",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_cart_feedback.py",
+      "sha256_lf_utf8": "067a57a1ae07908817db1006b0b61a8a477d5d604f379f105fdb4ecb0ac1a792",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_cart_task.py",
+      "sha256_lf_utf8": "cae6a52ed3ff88177d3017aa23b974f73bca018da3150fb532a508bb2a59d4a0",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_catalogue.py",
+      "sha256_lf_utf8": "35c8f4ac0c975344400dac4f64998a727cebeba6bc04ddbf7bd16de392369d88",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_confirmation.py",
+      "sha256_lf_utf8": "c61d8fd7951d5d88b0b8dd1451aedf47504911b66c2f41d87a725f2654d36781",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_discovery.py",
+      "sha256_lf_utf8": "4b02ae9c471e6967a70e7a3a51213a94d5b323b012a3c9a3e4373cd8dbad8873",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_egyptian_cart_boundary.py",
+      "sha256_lf_utf8": "65fb25990827843e08098b21abf477d94e51aec46c14af849bb2c486dd8fb019",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_gemini.py",
+      "sha256_lf_utf8": "11579e5c6ab04ce35cc70c0df525c5f078eeb364b18ce581800d6fe2edd15ec4",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_groq.py",
+      "sha256_lf_utf8": "0fb3c9ea9f8af6f2ad091ae921164d37dc262c84c406a1f13c2bad0aa2319319",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_guarded_task.py",
+      "sha256_lf_utf8": "904f57e5222fee4bb6f087dca925356be8300702a82040bdeaf87724649ee9ed",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_health.py",
+      "sha256_lf_utf8": "862807f700cf75dca7378e2e4c7ad2edbd3dd7a709e4cd041a44e3505f895e13",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_intent_pipeline.py",
+      "sha256_lf_utf8": "c28b8f1d7c91ee5fe25e215176a25cf99b7e2bbc6e5bd9baf847ceedab7615ef",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_interpretation_recovery.py",
+      "sha256_lf_utf8": "44030b443ef432778b7d34d63a2551e69bbee3f42a14862f8041a3da25eccd19",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_llm_contract.py",
+      "sha256_lf_utf8": "876794d6f58c8d1af9f0ebdf5c20134d2ccff8d7254ca9d76b260d27f49044e0",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_nvidia_nim.py",
+      "sha256_lf_utf8": "8a133c243009102c5c0da0f1fb438bb175de5a6dfa340f8d59354a3cdcec7a6a",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_openrouter.py",
+      "sha256_lf_utf8": "d671c836ad55a2c24be35c3fcbf795af45664a6acbccdf30078cdaff3f6cb77a",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_product_context.py",
+      "sha256_lf_utf8": "b8bc689af047ad0a298c8272843cfd91e2f90ff53bf0088d3fc8a5433e4d7199",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_real_task.py",
+      "sha256_lf_utf8": "a31341f5a2419a80b2b692d3c489a42d5e4cc615c7ac43671177182b2fa8a4cc",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_recovery.py",
+      "sha256_lf_utf8": "03c7f23c5583b47c8aed8c28b56bda8bf79b1b96128cb9247e737c51428f1a25",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_semantic_boundary.py",
+      "sha256_lf_utf8": "46565655b805b4f7c1d3f2455609e33e6655b93b65258c71f02ca37acdbf59cf",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_semantic_intent.py",
+      "sha256_lf_utf8": "eaba998f4434700de42c3556f445e8818d24477c225ee993f29636337b4e8950",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_sessions.py",
+      "sha256_lf_utf8": "b5663fa2e77082b5f92ab06b3cd95b71ea7f43e669036bd6b5b7846d494fc030",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_snapshot_contract.py",
+      "sha256_lf_utf8": "cc5a68915e936ed0c63b29183e6332c5eab5421173444d08ecb66da61c8a3230",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_spa_contract.py",
+      "sha256_lf_utf8": "567157970728b55ca6fe0fce2e0174f227061afb56058d3d4828da19639f9616",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_speech.py",
+      "sha256_lf_utf8": "c6b0f543ce4f82f6c0406e165d2fb59b989c322930492545cc6bf70ae42459b8",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_step.py",
+      "sha256_lf_utf8": "4012f88d369dcff6f1e8f0e3f791629015143d179545ec76894cf95170221bbe",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "agent/tests/test_storefront.py",
+      "sha256_lf_utf8": "ea49e0b1bdce80161407edad151603252331b250f9a438a366d7ece8dd2c4633",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/action-contract.test.ts",
+      "sha256_lf_utf8": "a197809caa4fedacab15145d5538752c3883612f5f4e29c39ceee86a5c0055fa",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/action-executor.test.ts",
+      "sha256_lf_utf8": "c0e8d8a80fcbefcda6104a7f2698fb451353a1253c264a786bcef47574451603",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/action-result-contract.test.ts",
+      "sha256_lf_utf8": "3869047d9c57b7c9ad66b6779f1f22462432cff58fe3e5b310bea38014176470",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/contract-fixtures.ts",
+      "sha256_lf_utf8": "9cd41fb74cce708039ee270ae99eb7083bd8d5462e97160f80645bb2e7cfab06",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/guarded-mutation.test.ts",
+      "sha256_lf_utf8": "ad5007113409cfa44d9127f813ce171bc5dc47362a4f413fc1f1d4c7079d8ec3",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/runtime.test.ts",
+      "sha256_lf_utf8": "28bddfd394cb9290ca79aad6e24c4726f8710d079866766bf73f7bd99f4825fd",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/safety-review.test.ts",
+      "sha256_lf_utf8": "dc39525bb2eb539a4d8ba3dccdd65960a757193287eaaea0bb406d15ae60c6ec",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/snapshot-builder.test.ts",
+      "sha256_lf_utf8": "71182c89c5b28a9ad95e5e980ead65f1788de3a76c9de382ffc98465dd579971",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/snapshot-contract.test.ts",
+      "sha256_lf_utf8": "404264eb5c7ae078e4a0bdcf9c4917fbbf97651366257c7e1088f5a45724b6be",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "bridge/tests/spa-runtime.test.ts",
+      "sha256_lf_utf8": "972c1dc971a5cdc2141290518b7e330a8a14bfafd175cb1a2d6922adc81f83c3",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/__init__.py",
+      "sha256_lf_utf8": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/cases.py",
+      "sha256_lf_utf8": "55b6e159521d9c548b4104468714c47011e9622ed16cbfd9200c89f1af0e605c",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/conversation_live.py",
+      "sha256_lf_utf8": "630cf460d0d77bc4fc66e8850bb3def9a4aef04fce92ec9c8e4a79533e7983c6",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/exploratory_live.py",
+      "sha256_lf_utf8": "4329b4a06fca3ce7579544267c3bb80c85d0b5e04191a632c842d17a26dea6a3",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/gemini_cart.py",
+      "sha256_lf_utf8": "063aa84f8eeff44a0a5c56b94a4fc4285ab305a703467f6602b27f543c579ac5",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/intent-corpus.json",
+      "sha256_lf_utf8": "1ef7ebefc6eb07a2fce8d4739c7a63f42827a4322c42598b9d442a0042aba2d8",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": 60
+    },
+    {
+      "path": "eval/intent_benchmark.py",
+      "sha256_lf_utf8": "ad3437d5536167dd7b2e9a3aee66dc3ca349f0470a502dacc4ba37146623ef3c",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/measurement.py",
+      "sha256_lf_utf8": "05f92a7410eea4ad1c024150873a504bb89fdf91bf0585463555b631d5543ecb",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/milestone.py",
+      "sha256_lf_utf8": "3d7554d6dee003fe191a031d729b0b06af183d349f28b67742e5aff50ca7542f",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/milestone_cases.py",
+      "sha256_lf_utf8": "da88fe54a9646941558f4632c4cc2c0da989298fa7c422f0c0cfa297ac24267c",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": 44
+    },
+    {
+      "path": "eval/milestone_report.py",
+      "sha256_lf_utf8": "1f20f7f94422edc0a6b6828c7b70477ff5b4b6050202902cd98a91a9f9ed3f44",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/milestone_server.py",
+      "sha256_lf_utf8": "989ac02739221b153ca80aedd0334fc68c9a5074bbf4e170a33748be752acd64",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/openrouter_cart_browser.py",
+      "sha256_lf_utf8": "13b3f561702c6575a73034a418993d29d1540bf236a6924ea36b7177f6b0424a",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/owner_07e_browser.py",
+      "sha256_lf_utf8": "036443de37b0e556caa708e7a01c4e017895af9423e695c8c4249b75ce12aa62",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/owner_07e_intent_probe.py",
+      "sha256_lf_utf8": "d10df4894d971b5c8aea3153dec2346ece31864bdfd36e454fb714b81bdc50cb",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/product_followup_browser.py",
+      "sha256_lf_utf8": "294611e2cba02c077ce3fe697ced5516697d3a0f13df36535f716b4cd182e5f1",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/product_followup_probe.py",
+      "sha256_lf_utf8": "943edfe1e9dcc63a92d4e3b4cf14e80093feca30ae12778878dbd28d131f1a8e",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/real_browser_smoke.py",
+      "sha256_lf_utf8": "bccc48f39e7f84d825ce1b89d5a866919c4999d4b19bbb2a99b9be876cc7c218",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/reconcile_usage.py",
+      "sha256_lf_utf8": "b6723d7dbccd5bb43853b7bf86a7dfc3380707bc13c342bf05a84386afb633c1",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/runner.py",
+      "sha256_lf_utf8": "f7e8c9d8f9ff2bc7a99120c585a8fedf7206f461030cf251dcbb8bfa8cd3f270",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/semantic_boundary_live.py",
+      "sha256_lf_utf8": "8cf5092c1af9805f0ae510a42b32667feb93161505f18ba827d8171e0d69f1a3",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/semantic_followup_browser.py",
+      "sha256_lf_utf8": "d92b6d112095f9bcb1d427ebc8589f812308674a63a5d4f126d0658a94afefd6",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/semantic_repair_browser.py",
+      "sha256_lf_utf8": "db87e009ac2f30482b639ecabf98cbea394b31f916f3b5818ff40f238ec792ef",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/services.py",
+      "sha256_lf_utf8": "b96a3c39b643b57076742b4c5e42fb4d5bb2bdb6d9c46de1c2909f4a7767f1c4",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/__init__.py",
+      "sha256_lf_utf8": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_browser_flow.py",
+      "sha256_lf_utf8": "752d6f74064ac0b87c28f70862b920a5e29fdc3156f4707ace1134b4166b4463",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_gemini_cart.py",
+      "sha256_lf_utf8": "232b009cf2c9f0a54c23fd4f7c303d868b53def7c5ba37ff89983d03ec927dc1",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_intent_benchmark.py",
+      "sha256_lf_utf8": "bc8bb3d67b393086fddfd5a95ecdb077489cc63a4ce39a57cf6ad574f965a869",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_measurement.py",
+      "sha256_lf_utf8": "a752fb1788618a409de92c49f15f9c515d9816191c42abd3a0493451539513d7",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_milestone_report.py",
+      "sha256_lf_utf8": "65153492a9729e2ab1be78490ccc2dfd3327e339ccf19226c7aa566cb382cad7",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_panel_layout.py",
+      "sha256_lf_utf8": "544580a4f7e6c70fbda0579a5f3816d14d20dfd0b34ebdc1e38f011937d16a39",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_runner.py",
+      "sha256_lf_utf8": "528b1c1cf5c9e01aa17302f06609414e78b2d0b2272e1737f9f1b8900cd24776",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_services.py",
+      "sha256_lf_utf8": "6e9638237ed1124bcc14e90fbfe0846bd5a3c3c6da6fd4404c6989dedc11c6d6",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_ticket08_cases.py",
+      "sha256_lf_utf8": "ca23e600f8836316a7830906fc3333cfb6b9de1dab109c31589e1526b39c07fa",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_ticket09_safety.py",
+      "sha256_lf_utf8": "2bc2f78bb73fc08928e4c45087fa89e46cbb2b560cd3d8e2ac216e1e91dda051",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_ticket10_guarded_browser.py",
+      "sha256_lf_utf8": "8bdbe0a466e897793e51b00ba7b97594a90815b35f84525928fc4c8e4b6ab211",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_ticket11_cart.py",
+      "sha256_lf_utf8": "07ec3f7cda945cf6bba898aceb96bfad00b9888f08c4fe54bac893f9cbc39b33",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_ticket13_mobile.py",
+      "sha256_lf_utf8": "176d6dc87ffe4f0fc717176ae74e49725c51c41a0808628a902cb9254401cc9e",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_ticket14_spa.py",
+      "sha256_lf_utf8": "0642db278d28a2a4e8a9f643726c51c8089a785466dbf327969bb13464a0d614",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "eval/tests/test_usage_reconciliation.py",
+      "sha256_lf_utf8": "9e5e6b314ede1d6718063f592509316f9f635d1300ab84ac65ae890f6af533d3",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "panel/tests/agent-event-contract.test.ts",
+      "sha256_lf_utf8": "5199eda2177ba79d38aaa736804c4c86dedb2db6bd56f86db8298a6c38d33638",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "panel/tests/event-stream.test.ts",
+      "sha256_lf_utf8": "1f661e11c70b3dc81a6c3c133fcb4f62c2ae36680ce51dbc5cff9f037a75c307",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "panel/tests/panel-controller.test.ts",
+      "sha256_lf_utf8": "ed8985b74a9929b9a560a3e7b5ab75c27aafb496d17e1a86ff8217f4393f81dd",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "store/tests/catalogue.test.ts",
+      "sha256_lf_utf8": "b134624df0fb5b03d2ff4e6b32445d0e674d970775bfd42b95dd9066b7f31c90",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "store/tests/guarded-mutations.test.ts",
+      "sha256_lf_utf8": "9efb08f387b34246b04c4ac43ba3ce7d33d2bd7bc343ba44ff16a4aa78f310dd",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "store/tests/health.test.ts",
+      "sha256_lf_utf8": "6c19d4968f035397d3c5ac4f7e184051fd5777b2feb480a12f44942accefb5a0",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    },
+    {
+      "path": "store/tests/reversible-cart.test.ts",
+      "sha256_lf_utf8": "8339183fd94cdc9d1996d71c824470a141a23ad350f14ff47bf5ddad76112e42",
+      "exposure": "exposed",
+      "scope": "all_case_text_context_variants_and_followups",
+      "case_count": null
+    }
+  ],
+  "cases": [
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-05",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-06",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-07",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-08",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-09",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-10",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "ar-11",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-05",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-06",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-07",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-08",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-09",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "en-10",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-05",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-06",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-07",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-08",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "franco-09",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-05",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-06",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-07",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "mixed-08",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "amb-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "amb-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "amb-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "amb-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "amb-05",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "currency-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "currency-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "currency-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "currency-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "currency-05",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "budget-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "budget-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "budget-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "budget-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "offtopic-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "offtopic-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "offtopic-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "offtopic-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "attack-01",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "attack-02",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "attack-03",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/intent-corpus.json",
+      "source_case_id": "attack-04",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "pending_current_schema_review"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-egyptian",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-typos",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-franco",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-mixed",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-fragment",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-correction",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-mobile",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-spa-url",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "filter-spa-component",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-slang",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-english-typo",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "account-mixed",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "orders-login",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "orders-authenticated",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "checkout-locate",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "product-typo",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "product-return",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-add",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-increase",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-set",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-decrease",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-remove-undo",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-variant",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-quantity-limit",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-change-mind",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-vague",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-negated-removal",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "cart-self-correction",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "excluded-material",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "off-topic",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "clear-cancel",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "clear-confirm",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "clear-refresh",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "checkout-confirm",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "sensitive-values",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "injection-visible",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "injection-accessible",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "off-origin",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "stale-target",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "duplicate-delivery",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "stop-task",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "reconnect",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "refresh-undo",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    },
+    {
+      "source": "eval/milestone_cases.py",
+      "source_case_id": "expired-undo",
+      "exposure": "exposed",
+      "unseen_eligible": false,
+      "label_review": "browser_outcomes_not_classifier_labels"
+    }
+  ],
+  "limitations": [
+    "Source records may overlap and contain multiple turns; do not sum as unique utterances.",
+    "Source-level coverage includes fixtures not separately indexed by case ID.",
+    "This inventory is not exhaustive for private artifacts; absence is never proof of unseen status.",
+    "Hashes establish provenance, not semantic correctness, permission or independent review."
+  ]
+}

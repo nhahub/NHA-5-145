@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-23",
+  "base_commit": "a73ff5bbc272ae6a3340c2372adf19ae7a0bae97",
+  "status": "inactive-local-preparation",
+  "resources_created": false,
+  "unit_installed_or_enabled": false,
+  "provider_qualified": false,
+  "aws_or_model_calls": 0,
+  "linux_artifacts": {
+    "startup": {
+      "bytes": 25888663,
+      "sha256": "7d90b216b33f4697354df220764e8a2f79dd35b63bcc1fff2e2c01f72aac5f7d"
+    },
+    "controller": {
+      "bytes": 25888669,
+      "sha256": "8b968e9daf2d9cb0a8191eec0a5d5a3d9945ebe7d82b10e08707760332b5c641"
+    },
+    "ubuntu": {
+      "version": "24.04.3",
+      "python": "3.12.3",
+      "roles_passed": ["startup", "controller"]
+    },
+    "amazon_linux": {
+      "image": "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+      "os": "Amazon Linux 2023.12.20260914",
+      "platform": "linux/amd64",
+      "python": "3.12.15",
+      "roles_passed": ["startup", "controller"],
+      "network": "none",
+      "read_only_root": true,
+      "memory_mib": 256,
+      "temporary_memory_mib": 128,
+      "cpus": 1,
+      "pids": 64,
+      "host_credentials_mounted": false,
+      "checkout_mounted": false,
+      "sdk_creation_and_network_blocked": true,
+      "site_packages_and_checkout_fallback": false,
+      "service_models_ca_versions_and_provenance_checked": true
+    },
+    "limitations": [
+      "isolated import and injected delegation only; no RIE or real Lambda invocation",
+      "no IAM, OAC, event-delivery, account-eligibility or cloud integration acceptance",
+      "Linux ZIP result applies to unchanged 22October exact artifacts, not host launcher execution"
+    ]
+  },
+  "docker": {
+    "desktop": "4.96.3 (244472)",
+    "engine": "29.9.2",
+    "api": "1.56",
+    "runtime_backup": "C:/Users/pc/AppData/Local/Docker/run.stale-20261023-01",
+    "images_volumes_or_persistent_data_purged": false
+  },
+  "host_launcher": {
+    "entry": "python -B -m deploy.host_agent --config ABSOLUTE_PATH",
+    "address": "127.0.0.1:8000",
+    "workers": 1,
+    "model_gate": "unqualified",
+    "configuration_load_before_loop": true,
+    "owned_cleanup_on_server_loop": true,
+    "legacy_unit_unchanged": true,
+    "separate_unit": "deploy/shopping-copilot-agent.service",
+    "real_host_posix_systemd_acceptance": false
+  },
+  "tests": {
+    "red": "1 failed, 19 errors: missing launcher and inactive unit",
+    "initial_green": { "passed": 20, "seconds": 6.01 },
+    "final_host": {
+      "passed": 84,
+      "seconds": 27.17,
+      "warnings": "two upstream websockets deprecations",
+      "log": "outputs/cap06-host-launcher-focused.log"
+    },
+    "full": {
+      "passed": 1066,
+      "skipped": 0,
+      "seconds": 297.79,
+      "log": "outputs/cap06-host-launcher-full.log",
+      "coverage": "all Agent, launcher/bootstrap/config/checks, control/package/access/waiting and fresh release build/browser recovery",
+      "collection_note": "collected before two additional actual-Uvicorn cases; both passed in final_host"
+    },
+    "review": {
+      "actionable_findings": 0,
+      "independent_host_passed": 84,
+      "seconds": 23.91,
+      "limits": [
+        "target POSIX/systemd/signal timing and cloud/provider acceptance remain later gates",
+        "reviewer inspected retained Linux logs but did not independently repeat Docker recovery or image execution",
+        "reviewer did not reopen external research links; revalidate deployment-sensitive contracts before apply"
+      ]
+    },
+    "checks": {
+      "ruff_check": "pass",
+      "ruff_format_files": 249,
+      "pip_check": "pass",
+      "typescript_lint": "pass",
+      "changed_markdown_json_prettier": "pass",
+      "whitespace": "pass"
+    }
+  },
+  "open_gates": [
+    "full host and Storefront/Caddy orchestration",
+    "real POSIX/key/config/IAM/OAC/event/account acceptance",
+    "Bedrock quota and model qualification",
+    "observation service/cost/inventory reconciliation",
+    "separate resource/cost/rollback apply approval",
+    "AWS deployment and cloud acceptance"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "date": "2026-10-26",
+  "purpose": "owner-approved private host recovery and offline provisioning; no application activation",
+  "approval": {
+    "proposal": "docs/cap06-private-provisioning-proposal.md",
+    "credit_allocation_usd": "0.25",
+    "cash_usd": "0",
+    "free_plan_required": true,
+    "operator_ipv4_rotation_authorized": true,
+    "operator_ipv4_changed": false
+  },
+  "final": {
+    "schema": 1,
+    "observed_utc": "2026-10-26T18:57:44.635175+00:00",
+    "original_stopped": true,
+    "original_public_ip_absent": true,
+    "original_encrypted20gib_root_attached_retained": true,
+    "helper_terminated": true,
+    "helper_root_deleted": true,
+    "helper_eni_deleted": true,
+    "allocated_eips_in_stockholm": 0,
+    "free_plan_active": true,
+    "timer_repaired_and_boot_verified": true,
+    "native_runtime_installation_complete": true,
+    "system_python39_unchanged": true,
+    "python312_node_caddy_nftables_verified": true,
+    "one_gib_swap_active_verified_before_stop": true,
+    "application_units_inactive": true,
+    "model_requests": 0,
+    "provider_key_ledger_migration": false,
+    "billing_finalized": false
+  },
+  "runtime": {
+    "os": "Amazon Linux2023.12.20261021",
+    "system_python": "3.9.25",
+    "system_python_binary_and_owning_rpm_unchanged": true,
+    "parallel_python": "3.12.14",
+    "node": "24.22.1",
+    "caddy": "2.11.7",
+    "nftables": "1.0.4",
+    "locked_wheels_verified": 28,
+    "extra_python_distribution": "pip bootstrap only",
+    "native_imports_verified": true,
+    "service_account_runtime_execution_verified": 3,
+    "static_units_verified": 6,
+    "application_units_enabled": false,
+    "application_units_active": false,
+    "empty_provider_custody_directories": true,
+    "nftables_vendor_service_masked_inactive": true,
+    "metadata_rules_activated": false,
+    "caddy_file_capability_set": false,
+    "free_disk_bytes_before_staging_bundle_removal": 17889599488
+  },
+  "rpm_transaction": {
+    "inventory_packages_before": 494,
+    "packages_added": 9,
+    "upgrades_downgrades_erases": 0,
+    "source_metadata_release": "2023.12.20261021",
+    "actual_inventory_sha256": "243e2c478af2f72c4519316e1e884c6918bdb6352c73be7c43ac33f7831435ec",
+    "packages": [
+      {
+        "file": "iptables-libs-1.8.8-3.amzn2023.0.2.x86_64.rpm",
+        "nevra": "iptables-libs-0:1.8.8-3.amzn2023.0.2.x86_64",
+        "bytes": 410191,
+        "sha256": "322786a8e3df9b8dde62b3543f1a932b44eed307917c154a42c97b50ee7c5553",
+        "signature_verified": true
+      },
+      {
+        "file": "libnetfilter_conntrack-1.0.8-2.amzn2023.0.2.x86_64.rpm",
+        "nevra": "libnetfilter_conntrack-0:1.0.8-2.amzn2023.0.2.x86_64",
+        "bytes": 59052,
+        "sha256": "6f1f29d39be88e61943e8b20f37d7fa4a4514aa2476de3480118b881bcc70ccd",
+        "signature_verified": true
+      },
+      {
+        "file": "libnfnetlink-1.0.1-19.amzn2023.0.2.x86_64.rpm",
+        "nevra": "libnfnetlink-0:1.0.1-19.amzn2023.0.2.x86_64",
+        "bytes": 30580,
+        "sha256": "cc984aa33225910676443523274eba0f4bd95808695113fe180919033d06c859",
+        "signature_verified": true
+      },
+      {
+        "file": "libnftnl-1.2.2-2.amzn2023.0.2.x86_64.rpm",
+        "nevra": "libnftnl-0:1.2.2-2.amzn2023.0.2.x86_64",
+        "bytes": 85695,
+        "sha256": "07a5c6de366eb6c61def60beb0905e41ea832858467df65c4bb09cc9d30cde63",
+        "signature_verified": true
+      },
+      {
+        "file": "mpdecimal-2.5.1-3.amzn2023.0.3.x86_64.rpm",
+        "nevra": "mpdecimal-0:2.5.1-3.amzn2023.0.3.x86_64",
+        "bytes": 103903,
+        "sha256": "6ebdc3fb983cb7ca7be7bd600c1d1e7ffbb0fab31de77d352b9a47f00a11407d",
+        "signature_verified": true
+      },
+      {
+        "file": "nftables-1.0.4-3.amzn2023.0.3.x86_64.rpm",
+        "nevra": "nftables-1:1.0.4-3.amzn2023.0.3.x86_64",
+        "bytes": 406254,
+        "sha256": "f04fa5408e365de1a2ad1f1ed9b50f5c29d2287f1061e58af47ef3a1ece12ab1",
+        "signature_verified": true
+      },
+      {
+        "file": "python3.12-3.12.14-2.amzn2023.0.1.x86_64.rpm",
+        "nevra": "python3.12-0:3.12.14-2.amzn2023.0.1.x86_64",
+        "bytes": 27565,
+        "sha256": "b0110c2dd0a9e7335826a8fbbf9222dbc0df2f9d10dd38189382645065175889",
+        "signature_verified": true
+      },
+      {
+        "file": "python3.12-libs-3.12.14-2.amzn2023.0.1.x86_64.rpm",
+        "nevra": "python3.12-libs-0:3.12.14-2.amzn2023.0.1.x86_64",
+        "bytes": 9674254,
+        "sha256": "2f411ef99fe7380111a3d689855db0f13fd08a87e65458e606f3b8e08c23d2ca",
+        "signature_verified": true
+      },
+      {
+        "file": "python3.12-pip-wheel-23.2.1-4.amzn2023.0.12.noarch.rpm",
+        "nevra": "python3.12-pip-wheel-0:23.2.1-4.amzn2023.0.12.noarch",
+        "bytes": 1533226,
+        "sha256": "576f2dfc8a55a1f539fa24702aea406ab6a6290555d293da714db303b7605c35",
+        "signature_verified": true
+      }
+    ]
+  },
+  "timer": {
+    "old_timer_service_masked": true,
+    "replacement_on_boot_minutes": 90,
+    "persistent": false,
+    "on_calendar_present": false,
+    "offline_backup_retrieved": true,
+    "filesystem_uuid_partuuid_unchanged": true,
+    "new_original_boot_timer_active_waiting_verified": true,
+    "original_boot_count_this_stage": 1
+  },
+  "swap": {
+    "file_bytes": 1073741824,
+    "allocated_bytes": 1073741824,
+    "owner_uid": 0,
+    "mode": "0600",
+    "usable_bytes": 1073737728,
+    "page_bytes": 4096,
+    "active_before_stop": true,
+    "swappiness": 10,
+    "fstab_configured": true,
+    "reboot_persistence_tested": false
+  },
+  "artifact": {
+    "release_source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+    "archive_sha256": "5e5e3843160225b81b81f3dd79bb960fc82507134ae7a7f58896020d5cd28a23",
+    "release_manifest_sha256": "efc1f9da4388c24b9e8b312aed2871c1aa7174f78370a531f2400a8c6b9d0757",
+    "bundle_bytes": 101767090,
+    "bundle_sha256": "e9626be5be6aa9b6f7374a5620092d56c1c1cbfdbda6d58b91064a5f9e8b7c12"
+  },
+  "timing": {
+    "cli_invocations": 109,
+    "successful_resource_mutations": 15,
+    "failed_or_unknown_resource_mutations": 0,
+    "bounds": {
+      "helper": {
+        "requested_utc": "2026-10-26T18:23:13.829976+00:00",
+        "first_stopped_observed_utc": "2026-10-26T18:40:02.877933+00:00",
+        "running_upper_bound_seconds": 1009.047957
+      },
+      "original": {
+        "requested_utc": "2026-10-26T18:43:22.047186+00:00",
+        "first_stopped_observed_utc": "2026-10-26T18:55:40.819572+00:00",
+        "running_upper_bound_seconds": 738.772386
+      }
+    },
+    "eip_allocation_upper_bound_seconds": 1890.385637,
+    "credit_allocation_usd": "0.25",
+    "billing_finalized": false
+  },
+  "limitations": [
+    "actual managed-service sandbox/UID/IMDS/capability enforcement not tested",
+    "model provider custody and runtime allowance not migrated or enabled",
+    "no new model call or qualification spend",
+    "swap persistence and controlled reboot not tested",
+    "no public DNS/TLS or application activation",
+    "billing delayed; retained original disk storage continues"
+  ],
+  "private_operation": ".scratch/cap06-private-provisioning-execution/run-b92b98ec-3f8",
+  "private_receipts": [
+    {
+      "path": "approval.json",
+      "bytes": 1437,
+      "sha256": "d3a4efd32dcf22f86edb1920ebc5c94f6214d5caedb686b204b9d99765c3a515"
+    },
+    {
+      "path": "final-safe-state-summary.json",
+      "bytes": 734,
+      "sha256": "acc5e6a25c8e4a6bce50d8daf4bc878926f349ea0bf1ffe65abfcf3b2baed7da"
+    },
+    {
+      "path": "execution-timing-cost-bounds.json",
+      "bytes": 676,
+      "sha256": "a3f1fae6d86e188d1f99aba8e3f6834790c66f39f164b6f234794b70e8578725"
+    },
+    {
+      "path": "root-inspection-result-private.json",
+      "bytes": 2380,
+      "sha256": "9722f49febdadac0cac53d9785d6074ebe97372009a674989357b113a5f97d5c"
+    },
+    {
+      "path": "root-repair-reconciled-private.json",
+      "bytes": 948,
+      "sha256": "38177ddddd056bcedc71d3fd238722754264bf7009f6d23c41cfaf8b02e2efed"
+    },
+    {
+      "path": "original-timer-backup.tar.gz",
+      "bytes": 1029,
+      "sha256": "bae94bba89d910ba9075d7aed5eb472bc498189235477cafbb21c23ea2eef3e6"
+    },
+    {
+      "path": "frozen-rpm-selection.json",
+      "bytes": 3828,
+      "sha256": "707365f97f6ea75d5b0e7c481f105403269b9e98895f7764aaf7e2dd6954944f"
+    },
+    {
+      "path": "helper-rpm-preview-private.json",
+      "bytes": 6175,
+      "sha256": "ff7ca2e0eb22d2342df9bd8edbfda00bd3b3981702e91db85bfcf550dd68456f"
+    },
+    {
+      "path": "original-boot-verification.json",
+      "bytes": 3816,
+      "sha256": "03457a324b62c09c5f8badfcd6206952c777823785886b11211723eb90799821"
+    },
+    {
+      "path": "runtime-install-result-private.json",
+      "bytes": 24006,
+      "sha256": "91be337d3242b9d36bed7d57cca8a05e15b21f5cf6d24e7dad473d5c393ad855"
+    },
+    {
+      "path": "runtime-permission-results-private.json",
+      "bytes": 753,
+      "sha256": "e5da25646aea67f27154bdc23b08158818107c81ce4673fe63bc35272d2cdb1c"
+    },
+    {
+      "path": "private-receipt-manifest.json",
+      "bytes": 105960,
+      "sha256": "f5b6625e3b4a9ae35a283084e455ed0bc70affcc66fe45ac7841b9e04740cf1a"
+    }
+  ]
+}

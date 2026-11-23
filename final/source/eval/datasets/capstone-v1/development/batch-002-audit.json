@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-06",
+  "scope": "synthetic exposed development data only",
+  "new_records": 168,
+  "primary_candidates": 160,
+  "contextual_exclusions": 8,
+  "new_language_counts": {
+    "egyptian_arabic": 42,
+    "franco_arabic": 42,
+    "english": 42,
+    "mixed": 42
+  },
+  "new_primary_intent_language_counts": {
+    "advice": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "find_products": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "locate": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "navigate": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "open_product": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "mutate": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "cart_edit": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "help": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "off_topic": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    },
+    "unsupported": {
+      "egyptian_arabic": 4,
+      "franco_arabic": 4,
+      "english": 4,
+      "mixed": 4
+    }
+  },
+  "combined_records": 308,
+  "combined_primary_candidates": 263,
+  "authoring_scenarios_before_review": 40,
+  "new_families_after_clear_cart_merge": 39,
+  "combined_connected_components": 41,
+  "largest_component_records": 128,
+  "combined_support": {
+    "advice": {
+      "eligible_rows": 33,
+      "connected_components": 5,
+      "new_eligible_rows": 16
+    },
+    "find_products": {
+      "eligible_rows": 42,
+      "connected_components": 7,
+      "new_eligible_rows": 16
+    },
+    "locate": {
+      "eligible_rows": 19,
+      "connected_components": 4,
+      "new_eligible_rows": 16
+    },
+    "navigate": {
+      "eligible_rows": 25,
+      "connected_components": 4,
+      "new_eligible_rows": 16
+    },
+    "open_product": {
+      "eligible_rows": 18,
+      "connected_components": 4,
+      "new_eligible_rows": 16
+    },
+    "mutate": {
+      "eligible_rows": 24,
+      "connected_components": 3,
+      "new_eligible_rows": 16
+    },
+    "cart_edit": {
+      "eligible_rows": 46,
+      "connected_components": 5,
+      "new_eligible_rows": 16
+    },
+    "help": {
+      "eligible_rows": 18,
+      "connected_components": 4,
+      "new_eligible_rows": 16
+    },
+    "off_topic": {
+      "eligible_rows": 17,
+      "connected_components": 5,
+      "new_eligible_rows": 16
+    },
+    "unsupported": {
+      "eligible_rows": 21,
+      "connected_components": 8,
+      "new_eligible_rows": 16
+    }
+  },
+  "desired_four_components_per_intent_met": false,
+  "known_cross_source_relations": 15,
+  "exact_and_normalized_duplicate_count": 0,
+  "new_context_fixture_count": 26,
+  "checks": [
+    "v2 schema",
+    "unique IDs and NFKC/casefold/space-normalized text across308",
+    "4 primary candidates per intent/language cell",
+    "all new records exposed/draft/non-evaluable/unassigned",
+    "context/catalogue hash consistency",
+    "follow-up antecedent text and conversation/family preservation",
+    "family coverage and full transitive component membership",
+    "all source links retained without splitting old components"
+  ],
+  "new_split_assigned": false,
+  "training_run": false,
+  "inference_api_calls": 0,
+  "unseen_count": 0,
+  "independent_human_review": false
+}

@@ -1,0 +1,786 @@
+[
+  {
+    "id": "egyptian_arabic-01",
+    "conversation_group": "egyptian_arabic-01",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "عايز القميص الرسمي ده بس مش فاكر اسمو",
+    "relevant_ids": ["clothing-05"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عايز القميص الرسمي ده بس مش فاكر اسمو",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-02",
+    "conversation_group": "egyptian_arabic-02",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "فيه حاجه للحر والبحر مش تقيله؟",
+    "relevant_ids": ["clothing-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "فيه حاجه للحر والبحر مش تقيله؟",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-03",
+    "conversation_group": "egyptian_arabic-03",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "كوتشي مارثون القاهره عندكو؟",
+    "relevant_ids": ["shoe-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "كوتشي مارثون القاهره عندكو؟",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-04",
+    "conversation_group": "egyptian_arabic-04",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "شنطه احط فيها اللاب وانا رايح الشغل",
+    "relevant_ids": ["bag-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "شنطه احط فيها اللاب وانا رايح الشغل",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-05",
+    "conversation_group": "egyptian_arabic-05",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "لا لا قصدي السماعات الصغيره اللاسلكي",
+    "relevant_ids": ["electronics-14"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "لا لا قصدي السماعات الصغيره اللاسلكي",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-06",
+    "conversation_group": "egyptian_arabic-06",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "عايز تيشرت اسكندريه كده",
+    "relevant_ids": ["clothing-06"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عايز تيشرت اسكندريه كده",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-07",
+    "conversation_group": "egyptian_arabic-07",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "بنك طاقه للموبايل مش شاحن حيطه",
+    "relevant_ids": ["electronics-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "بنك طاقه للموبايل مش شاحن حيطه",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-08",
+    "conversation_group": "egyptian_arabic-08",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "وريني شنط جيم",
+    "relevant_ids": ["bag-09"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "وريني شنط جيم",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-09",
+    "conversation_group": "egyptian_arabic-09",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "فين الماوس الوايرلس؟",
+    "relevant_ids": ["electronics-08"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "فين الماوس الوايرلس؟",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "egyptian_arabic-10",
+    "conversation_group": "egyptian_arabic-10",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "egyptian_arabic",
+    "text": "كوتشي جري مش جلد بس لو مش معروف قوللي",
+    "relevant_ids": ["shoe-02"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "كوتشي جري مش جلد بس لو مش معروف قوللي",
+      "predicates": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-01",
+    "conversation_group": "franco_arabic-01",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "3ayz el 2amees el rasmy",
+    "relevant_ids": ["clothing-05"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "3ayz el 2amees el rasmy",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-02",
+    "conversation_group": "franco_arabic-02",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "3ayza tote lel ba7r mesh shanta safar",
+    "relevant_ids": ["bag-11"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "3ayza tote lel ba7r mesh shanta safar",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-03",
+    "conversation_group": "franco_arabic-03",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "fe cairo marathon shoes wala la2",
+    "relevant_ids": ["shoe-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "fe cairo marathon shoes wala la2",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-04",
+    "conversation_group": "franco_arabic-04",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "3ayz 7aga a7ot 3aleha el mobile 3al maktab",
+    "relevant_ids": ["electronics-12"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "3ayz 7aga a7ot 3aleha el mobile 3al maktab",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-05",
+    "conversation_group": "franco_arabic-05",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "wariny alex tee kda",
+    "relevant_ids": ["clothing-06"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "wariny alex tee kda",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-06",
+    "conversation_group": "franco_arabic-06",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "3ayz mouse wireless msh keyboard",
+    "relevant_ids": ["electronics-08"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "3ayz mouse wireless msh keyboard",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-07",
+    "conversation_group": "franco_arabic-07",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "ana 3ayza hoodie mree7",
+    "relevant_ids": ["clothing-12"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "ana 3ayza hoodie mree7",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-08",
+    "conversation_group": "franco_arabic-08",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "shanta lel camera 3ndko?",
+    "relevant_ids": ["bag-12"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "shanta lel camera 3ndko?",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-09",
+    "conversation_group": "franco_arabic-09",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "3ayz charger saree3 lel mobile",
+    "relevant_ids": ["electronics-03"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "3ayz charger saree3 lel mobile",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "franco_arabic-10",
+    "conversation_group": "franco_arabic-10",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "franco_arabic",
+    "text": "wariny nile tracksuit size kbeer",
+    "relevant_ids": ["clothing-14"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "wariny nile tracksuit size kbeer",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-01",
+    "conversation_group": "english-01",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "got that formal shrt?",
+    "relevant_ids": ["clothing-05"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "got that formal shrt?",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-02",
+    "conversation_group": "english-02",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "need a light cotton shirt for hot weather",
+    "relevant_ids": ["clothing-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "need a light cotton shirt for hot weather",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-03",
+    "conversation_group": "english-03",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "cairo marthon shoe pls",
+    "relevant_ids": ["shoe-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "cairo marthon shoe pls",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-04",
+    "conversation_group": "english-04",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "bag for carrying a laptop to work",
+    "relevant_ids": ["bag-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "bag for carrying a laptop to work",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-05",
+    "conversation_group": "english-05",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "nah the earbuds, not the big headphones",
+    "relevant_ids": ["electronics-14"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "nah the earbuds, not the big headphones",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-06",
+    "conversation_group": "english-06",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "phone dying.. need a power bank",
+    "relevant_ids": ["electronics-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "phone dying.. need a power bank",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-07",
+    "conversation_group": "english-07",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "gym bag, nothing fancy",
+    "relevant_ids": ["bag-09"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "gym bag, nothing fancy",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-08",
+    "conversation_group": "english-08",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "show wireless mice",
+    "relevant_ids": ["electronics-08"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "show wireless mice",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-09",
+    "conversation_group": "english-09",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "something to put my phone on at my desk",
+    "relevant_ids": ["electronics-12"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "something to put my phone on at my desk",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "english-10",
+    "conversation_group": "english-10",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "english",
+    "text": "cotton shirt but no leather accessories",
+    "relevant_ids": ["clothing-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "cotton shirt but no leather accessories",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-01",
+    "conversation_group": "mixed-01",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "عايز formal shirt بس وريني الاول",
+    "relevant_ids": ["clothing-05"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عايز formal shirt بس وريني الاول",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-02",
+    "conversation_group": "mixed-02",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "الـ wireless mouse موجود؟",
+    "relevant_ids": ["electronics-08"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "الـ wireless mouse موجود؟",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-03",
+    "conversation_group": "mixed-03",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "عايزة cotton shirt للحر",
+    "relevant_ids": ["clothing-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عايزة cotton shirt للحر",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-04",
+    "conversation_group": "mixed-04",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "عايز Cairo Marathon بتاع الجري",
+    "relevant_ids": ["shoe-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عايز Cairo Marathon بتاع الجري",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-05",
+    "conversation_group": "mixed-05",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "شنطة laptop للشغل ممكن؟",
+    "relevant_ids": ["bag-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "شنطة laptop للشغل ممكن؟",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-06",
+    "conversation_group": "mixed-06",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "لا قصدي powerbank مش charger",
+    "relevant_ids": ["electronics-04"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "لا قصدي powerbank مش charger",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-07",
+    "conversation_group": "mixed-07",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "عندك phone stand ع المكتب؟",
+    "relevant_ids": ["electronics-12"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عندك phone stand ع المكتب؟",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-08",
+    "conversation_group": "mixed-08",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "وريني الـ Alex Tee كده",
+    "relevant_ids": ["clothing-06"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "وريني الـ Alex Tee كده",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-09",
+    "conversation_group": "mixed-09",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "شنطة beach tote مش backpack",
+    "relevant_ids": ["bag-11"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "شنطة beach tote مش backpack",
+      "predicates": [],
+      "requirements": [],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  },
+  {
+    "id": "mixed-10",
+    "conversation_group": "mixed-10",
+    "source": "model_generated",
+    "exposure": "exposed",
+    "language": "mixed",
+    "text": "عايز running shoes مش leather ولو uncertain قول",
+    "relevant_ids": ["shoe-02"],
+    "label_status": "provisional_nonexhaustive_target",
+    "search": {
+      "v": 1,
+      "query": "عايز running shoes مش leather ولو uncertain قول",
+      "predicates": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "requirements": [
+        {
+          "field": "feature",
+          "op": "exclude",
+          "value": "leather"
+        }
+      ],
+      "unverified_requirements": [],
+      "sort": "relevance",
+      "cursor": null
+    }
+  }
+]

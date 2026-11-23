@@ -1,0 +1,1077 @@
+{
+  "schema": 1,
+  "date": "2026-10-25",
+  "kind": "native-synthetic-captured-provider-capacity-regression",
+  "status": "synthetic_capacity_gate_passed_not_candidate_host_or_live_model_qualification",
+  "synthetic_only": true,
+  "actual_host_or_key_qualified": false,
+  "candidate_host_capacity_qualified": false,
+  "full_browser_http_sse_capacity_established": false,
+  "remote_provider_latency_established": false,
+  "source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+  "root_cause": "Legacy callback single-flight slot denied concurrent pure captured in-memory verification; direct owned typed verifier calls retain closure/type/proof fences without I/O.",
+  "configuration": {
+    "active": 2,
+    "waiting": 3,
+    "queue_wait_seconds": 8,
+    "provider_post_delay_fixture_seconds": 0.4,
+    "provider_lock_changed": false,
+    "runtime_disk_rehashing_added": false
+  },
+  "probe_sha256": "c9efedf576fcc942c89e794032dcf8b01ce9968ce62d1fa9e0152d0498b16ac3",
+  "baseline_failed_gate": {
+    "stage": ".scratch/cap06-native-captured-capacity/run-07f0fa07383a",
+    "source_commit": "4deaf586fc069768f83cceadd6917b5e80a18190",
+    "profile_sha256": "5b87c7e451b0f7243e4f1a16dfcb47172eb404b10c6b9bfe6b228aaf876dad1a",
+    "result_sha256": "19af3aa71668481638ed7814f45f36f23694ad861b4585c31b9e52ade8819aae",
+    "stdout_sha256": "530c1aa951e0bb7d313c314205ceddea3dfbeed7761dca28f7449809ab9a331a",
+    "stderr_bytes": 0,
+    "invocation_sha256": "51a566a67d53df7b629052ee8a8dcb8c3d468c0c7adb7d59067fc7b9626c26a6",
+    "host_memory_sha256": "abef2db0c56017adfbbed51365905896739c8086426380cedc5288869a9356ce",
+    "host_memory": {
+      "before": {
+        "commit_bytes": 28411392000,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 10047672320,
+        "physical_available_bytes": 13673476096
+      },
+      "samples": 22,
+      "host_settings_changed": false,
+      "minimum_commit_bytes": 7516192768,
+      "minimum_physical_bytes": 4294967296,
+      "initial_physical_bytes": 8589934592,
+      "after": {
+        "commit_bytes": 27975573504,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 10483490816,
+        "physical_available_bytes": 14064910336
+      },
+      "interruption": null,
+      "min_commit_available_bytes": 9679785984,
+      "min_physical_available_bytes": 13443284992,
+      "elapsed_seconds": 22.01
+    },
+    "runner_exit_code_observed_by_root": 0,
+    "result": {
+      "synthetic_only": true,
+      "actual_host_or_key_qualified": false,
+      "full_http_or_sse_capacity_measured": false,
+      "full_system_sizing_established": false,
+      "remote_provider_latency_measured": false,
+      "real_provider_requests": 0,
+      "real_sdk_requests": 0,
+      "measurement_completed": true,
+      "capacity_gate_passed": false,
+      "levels": [
+        {
+          "requested": 1,
+          "mock_get_count": 1,
+          "mock_post_count": 1,
+          "mock_post_peak": 1,
+          "first_post_hold": null,
+          "outcomes": [
+            {
+              "index": 0,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 405.513119,
+              "reservation_created": true,
+              "settled": true
+            }
+          ],
+          "cohort_timed_out": false,
+          "process_measurement": {
+            "scope": "exact_current_probe_process_including_native_app",
+            "includes_browser_or_system_or_other_services": false,
+            "samples": 11,
+            "peak_rss_mib": 73.523438,
+            "cpu_percent_one_core": 2.461233
+          },
+          "elapsed_ms": 406.658051,
+          "completed": 1,
+          "error_categories": {},
+          "queue_events": [
+            {
+              "cohort": 1,
+              "outcome": "acquired",
+              "milliseconds": 0.013182
+            }
+          ],
+          "final_guard_admitted": 0,
+          "final_guard_slots_available": 2,
+          "final_adapter_lock_held": false
+        },
+        {
+          "requested": 5,
+          "mock_get_count": 1,
+          "mock_post_count": 1,
+          "mock_post_peak": 1,
+          "first_post_hold": null,
+          "outcomes": [
+            {
+              "index": 0,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 406.051169,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 1,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.065988,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 2,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.045977,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 3,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.029645,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 4,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.018336,
+              "reservation_created": false,
+              "settled": false
+            }
+          ],
+          "cohort_timed_out": false,
+          "process_measurement": {
+            "scope": "exact_current_probe_process_including_native_app",
+            "includes_browser_or_system_or_other_services": false,
+            "samples": 11,
+            "peak_rss_mib": 73.523438,
+            "cpu_percent_one_core": 2.460629
+          },
+          "elapsed_ms": 406.49861,
+          "completed": 1,
+          "error_categories": {
+            "lifecycle_unavailable": 4
+          },
+          "queue_events": [
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.030502
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.017205
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.014515
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.012265
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.006729
+            }
+          ],
+          "final_guard_admitted": 0,
+          "final_guard_slots_available": 2,
+          "final_adapter_lock_held": false
+        },
+        {
+          "requested": 8,
+          "mock_get_count": 1,
+          "mock_post_count": 1,
+          "mock_post_peak": 1,
+          "first_post_hold": {
+            "elapsed_ms": 2002.979672,
+            "release_reason": "two_second_deadline",
+            "queue_full_observed": 0
+          },
+          "outcomes": [
+            {
+              "index": 0,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 2409.531583,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 1,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.026816,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 2,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.041912,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 3,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.018039,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 4,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.014719,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 5,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.016943,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 6,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.01266,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 7,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "lifecycle_unavailable",
+              "elapsed_ms": 0.012362,
+              "reservation_created": false,
+              "settled": false
+            }
+          ],
+          "cohort_timed_out": false,
+          "process_measurement": {
+            "scope": "exact_current_probe_process_including_native_app",
+            "includes_browser_or_system_or_other_services": false,
+            "samples": 50,
+            "peak_rss_mib": 73.523438,
+            "cpu_percent_one_core": 1.65981
+          },
+          "elapsed_ms": 2409.9827,
+          "completed": 1,
+          "error_categories": {
+            "lifecycle_unavailable": 7
+          },
+          "queue_events": [
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.011774
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.007436
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.010532
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.007374
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.005522
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.008443
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.004678
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.004449
+            }
+          ],
+          "final_guard_admitted": 0,
+          "final_guard_slots_available": 2,
+          "final_adapter_lock_held": false
+        }
+      ],
+      "asynchronous_errors": [],
+      "phase": "complete",
+      "default_full_startup_preserved": true,
+      "ledger_before": {
+        "enabled": true,
+        "allowance_usd": "0.730000000",
+        "accounted_usd": "0.040000000",
+        "remaining_usd": "0.690000000",
+        "attempts": 1,
+        "uncertain": 1
+      },
+      "sealed_configuration": {
+        "active": 2,
+        "waiting": 3,
+        "queue_wait_seconds": 8,
+        "response_token_bound": 64,
+        "synthetic_post_delay_seconds": 0.4
+      },
+      "captured_qualification_and_work_check_before": true,
+      "captured_qualification_and_work_check_after": true,
+      "cleanup": {
+        "work_closed": true,
+        "work_io_closed": true,
+        "admission_closed": true,
+        "checks_closed": true,
+        "provider_gate_closed": true,
+        "qualification_closed": true,
+        "authority_closed_once": true
+      },
+      "pending_tasks_after_owned_cleanup": 0,
+      "ledger_after": {
+        "enabled": true,
+        "allowance_usd": "0.730000000",
+        "accounted_usd": "0.040300000",
+        "remaining_usd": "0.689700000",
+        "attempts": 4,
+        "uncertain": 1
+      },
+      "original_uncertainty_preserved": true,
+      "additional_uncertain_attempts": 0,
+      "additional_uncertainty_only_failed_reserved_attempts": true,
+      "new_reservations": 3,
+      "mock_get_count": 3,
+      "mock_post_count": 3,
+      "mock_post_peak": 1,
+      "model_metadata_attempts": 3,
+      "authority_reads": 73,
+      "authority_forbidden": 0,
+      "network_denials": 0,
+      "catalogue_preserved": true,
+      "source_archive_unchanged": true,
+      "release_manifest_unchanged": true
+    }
+  },
+  "fixed_candidate": {
+    "stage": ".scratch/cap06-native-captured-capacity/candidate-fe8c8f5b11aa",
+    "source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+    "profile_sha256": "a8de451abe1d211eee228a98658a934a59e4599e18b9a0afd75a0ab8efb8a635",
+    "result_sha256": "43dd7bbceb906034c195d9896dc9c10901e0869bcf70886d71ae163fc3ea2bcc",
+    "stdout_sha256": "41263c0ce80a330c39fbacaf02ccd63f0fb7ae7ac3169879055148e9ad696dd2",
+    "stderr_bytes": 0,
+    "invocation_sha256": "1ee0a7c348a558732260317830cee737fcb01e3f03858675c685474fd23b3a78",
+    "host_memory_sha256": "03f29167d45828b84e6abb53b5920d18e5485be9f980797abc4e38d93d92dff2",
+    "host_memory": {
+      "before": {
+        "commit_bytes": 29397966848,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 9061097472,
+        "physical_available_bytes": 12946042880
+      },
+      "samples": 22,
+      "host_settings_changed": false,
+      "minimum_commit_bytes": 7516192768,
+      "minimum_physical_bytes": 4294967296,
+      "initial_physical_bytes": 8589934592,
+      "after": {
+        "commit_bytes": 29940133888,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 8518930432,
+        "physical_available_bytes": 12603740160
+      },
+      "interruption": null,
+      "min_commit_available_bytes": 8466219008,
+      "min_physical_available_bytes": 12415758336,
+      "elapsed_seconds": 22.02
+    },
+    "runner_exit_code_observed_by_root": 0,
+    "result": {
+      "synthetic_only": true,
+      "actual_host_or_key_qualified": false,
+      "full_http_or_sse_capacity_measured": false,
+      "full_system_sizing_established": false,
+      "remote_provider_latency_measured": false,
+      "real_provider_requests": 0,
+      "real_sdk_requests": 0,
+      "measurement_completed": true,
+      "capacity_gate_passed": true,
+      "levels": [
+        {
+          "requested": 1,
+          "mock_get_count": 1,
+          "mock_post_count": 1,
+          "mock_post_peak": 1,
+          "first_post_hold": null,
+          "outcomes": [
+            {
+              "index": 0,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 405.154914,
+              "reservation_created": true,
+              "settled": true
+            }
+          ],
+          "cohort_timed_out": false,
+          "process_measurement": {
+            "scope": "exact_current_probe_process_including_native_app",
+            "includes_browser_or_system_or_other_services": false,
+            "samples": 11,
+            "peak_rss_mib": 73.257812,
+            "cpu_percent_one_core": 2.466269
+          },
+          "elapsed_ms": 405.580812,
+          "completed": 1,
+          "error_categories": {},
+          "queue_events": [
+            {
+              "cohort": 1,
+              "outcome": "acquired",
+              "milliseconds": 0.013674
+            }
+          ],
+          "final_guard_admitted": 0,
+          "final_guard_slots_available": 2,
+          "final_adapter_lock_held": false
+        },
+        {
+          "requested": 5,
+          "mock_get_count": 5,
+          "mock_post_count": 5,
+          "mock_post_peak": 1,
+          "first_post_hold": null,
+          "outcomes": [
+            {
+              "index": 0,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 408.643096,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 1,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 811.016866,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 2,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 1214.35592,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 3,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 1618.450867,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 4,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 2019.846369,
+              "reservation_created": true,
+              "settled": true
+            }
+          ],
+          "cohort_timed_out": false,
+          "process_measurement": {
+            "scope": "exact_current_probe_process_including_native_app",
+            "includes_browser_or_system_or_other_services": false,
+            "samples": 42,
+            "peak_rss_mib": 73.507812,
+            "cpu_percent_one_core": 1.484841
+          },
+          "elapsed_ms": 2020.539704,
+          "completed": 5,
+          "error_categories": {},
+          "queue_events": [
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.019513
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 0.011881
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 408.455779
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 810.929186
+            },
+            {
+              "cohort": 5,
+              "outcome": "acquired",
+              "milliseconds": 1214.315246
+            }
+          ],
+          "final_guard_admitted": 0,
+          "final_guard_slots_available": 2,
+          "final_adapter_lock_held": false
+        },
+        {
+          "requested": 8,
+          "mock_get_count": 5,
+          "mock_post_count": 5,
+          "mock_post_peak": 1,
+          "first_post_hold": {
+            "elapsed_ms": 0.004678,
+            "release_reason": "three_queue_full",
+            "queue_full_observed": 3
+          },
+          "outcomes": [
+            {
+              "index": 0,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 410.021708,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 1,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 812.748743,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 2,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 1215.219449,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 3,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 1618.27805,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 4,
+              "completed": true,
+              "chunks": 1,
+              "error_category": null,
+              "elapsed_ms": 2019.786563,
+              "reservation_created": true,
+              "settled": true
+            },
+            {
+              "index": 5,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "inference_busy",
+              "elapsed_ms": 0.016808,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 6,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "inference_busy",
+              "elapsed_ms": 0.009577,
+              "reservation_created": false,
+              "settled": false
+            },
+            {
+              "index": 7,
+              "completed": false,
+              "chunks": 0,
+              "error_category": "inference_busy",
+              "elapsed_ms": 0.007068,
+              "reservation_created": false,
+              "settled": false
+            }
+          ],
+          "cohort_timed_out": false,
+          "process_measurement": {
+            "scope": "exact_current_probe_process_including_native_app",
+            "includes_browser_or_system_or_other_services": false,
+            "samples": 42,
+            "peak_rss_mib": 73.507812,
+            "cpu_percent_one_core": 2.474978
+          },
+          "elapsed_ms": 2020.282929,
+          "completed": 5,
+          "error_categories": {
+            "inference_busy": 3
+          },
+          "queue_events": [
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.010278
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 0.00694
+            },
+            {
+              "cohort": 8,
+              "outcome": "full",
+              "milliseconds": 0.001263
+            },
+            {
+              "cohort": 8,
+              "outcome": "full",
+              "milliseconds": 0.001014
+            },
+            {
+              "cohort": 8,
+              "outcome": "full",
+              "milliseconds": 0.000906
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 409.953691
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 812.732857
+            },
+            {
+              "cohort": 8,
+              "outcome": "acquired",
+              "milliseconds": 1215.216725
+            }
+          ],
+          "final_guard_admitted": 0,
+          "final_guard_slots_available": 2,
+          "final_adapter_lock_held": false
+        }
+      ],
+      "asynchronous_errors": [],
+      "phase": "complete",
+      "default_full_startup_preserved": true,
+      "ledger_before": {
+        "enabled": true,
+        "allowance_usd": "0.730000000",
+        "accounted_usd": "0.040000000",
+        "remaining_usd": "0.690000000",
+        "attempts": 1,
+        "uncertain": 1
+      },
+      "sealed_configuration": {
+        "active": 2,
+        "waiting": 3,
+        "queue_wait_seconds": 8,
+        "response_token_bound": 64,
+        "synthetic_post_delay_seconds": 0.4
+      },
+      "captured_qualification_and_work_check_before": true,
+      "captured_qualification_and_work_check_after": true,
+      "cleanup": {
+        "work_closed": true,
+        "work_io_closed": true,
+        "admission_closed": true,
+        "checks_closed": true,
+        "provider_gate_closed": true,
+        "qualification_closed": true,
+        "authority_closed_once": true
+      },
+      "pending_tasks_after_owned_cleanup": 0,
+      "ledger_after": {
+        "enabled": true,
+        "allowance_usd": "0.730000000",
+        "accounted_usd": "0.041100000",
+        "remaining_usd": "0.688900000",
+        "attempts": 12,
+        "uncertain": 1
+      },
+      "original_uncertainty_preserved": true,
+      "additional_uncertain_attempts": 0,
+      "additional_uncertainty_only_failed_reserved_attempts": true,
+      "new_reservations": 11,
+      "mock_get_count": 11,
+      "mock_post_count": 11,
+      "mock_post_peak": 1,
+      "model_metadata_attempts": 11,
+      "authority_reads": 217,
+      "authority_forbidden": 0,
+      "network_denials": 0,
+      "catalogue_preserved": true,
+      "source_archive_unchanged": true,
+      "release_manifest_unchanged": true
+    }
+  },
+  "build": {
+    "stage": ".scratch/cap06-native-release/run-4934a57708be",
+    "source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+    "profile_sha256": "a4fa507f326a3ec53ec81abcb3c9df7cf119d8f888b8a504c36a96ae70e50c95",
+    "result_sha256": "0c17bea1886bbf825f01aaaf4b7fff8c6f567163485709be274b98074c04d128",
+    "stdout_sha256": "33b9de2bb6c0a1766455515b13d0b33b0f8be13099dfb6419777c4bd0107518a",
+    "stderr_bytes": 0,
+    "invocation_sha256": "96615550aa17d788af2ee9c7ddf923e4ffaac2c00912eb474230a2d8dd35b9cd",
+    "host_memory_sha256": "a29228dcaa6a5a6c5c405903780b7c2f47ddb05d27541a1542022fca011ebc24",
+    "host_memory": {
+      "before": {
+        "commit_bytes": 29261627392,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 9197436928,
+        "physical_available_bytes": 13019721728
+      },
+      "samples": 107,
+      "host_settings_changed": false,
+      "minimum_commit_bytes": 7516192768,
+      "minimum_physical_bytes": 4294967296,
+      "initial_physical_bytes": 8589934592,
+      "after": {
+        "commit_bytes": 29665685504,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 8793378816,
+        "physical_available_bytes": 12699357184
+      },
+      "interruption": null,
+      "min_commit_available_bytes": 8200990720,
+      "min_physical_available_bytes": 12250005504,
+      "elapsed_seconds": 107.06
+    },
+    "runner_exit_code_observed_by_root": 0,
+    "result": {
+      "source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+      "source_tree": "ade5f9f5d6960a9a263f01589df0f70c7c37cc87",
+      "source_clean": true,
+      "genuine_git": true,
+      "offline_native_build": true,
+      "python_version": "3.12.14",
+      "python_prefix": "/rehearsal/vendor-python/usr",
+      "node_version": "v24.22.1",
+      "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+      "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+      "manifest_sha256": "efc1f9da4388c24b9e8b312aed2871c1aa7174f78370a531f2400a8c6b9d0757",
+      "archive_sha256": "5e5e3843160225b81b81f3dd79bb960fc82507134ae7a7f58896020d5cd28a23",
+      "archive_bytes": 4423680,
+      "runtime": {
+        "agent_full_startup_verified": false,
+        "agent_running_loop_refusal_only": true,
+        "caddy_adapt_only": true,
+        "catalogue_preserved": true,
+        "default_posix_v2_load": true,
+        "key_refusals": ["group-readable-provider-key", "symlink-provider-key"],
+        "manifest_unchanged": true,
+        "native_imports": [
+          "pydantic_core._pydantic_core",
+          "httptools.parser.parser",
+          "yaml._yaml",
+          "uvloop.loop",
+          "watchfiles._rust_notify",
+          "websockets.speedups"
+        ],
+        "native_storefront_restarts": 2,
+        "provider_calls": 0,
+        "runtime_distributions": 28,
+        "sdk_calls": 0,
+        "storefront_key_environment_isolation": true,
+        "uncertain_allowance_preserved": true
+      }
+    }
+  },
+  "review": {
+    "fresh_focused_reviews": 1,
+    "material_findings": 0,
+    "declined_test_and_custody_results": true
+  },
+  "verification": {
+    "new_parallel_work_check_cases": 3,
+    "red_observed": true,
+    "focused_tests": 55,
+    "full_python_passed": 1555,
+    "full_python_seconds": 934.43,
+    "upstream_deprecation_warnings": 2,
+    "full_python_log_sha256": "88ab0be31031715902f77cd8c44d37da1a19d4acb21cfc2530844d187f91d092",
+    "ruff_check_passed": true,
+    "ruff_formatted_python_files": 281,
+    "typescript_unchanged_previous_199_passes_retained": true
+  },
+  "limits": [
+    "The same0.4s synthetic response is not remote model latency/availability.",
+    "Only current native probe+app process RSS/CPU sampled; no EC2/kernel/system/disk/browsers sizing.",
+    "Read-only synthetic authority cannot prove admitted HTTP/SSE/Shopper actions.",
+    "Captured qualification/readiness expiry proof and independent archive roundtrip recorded separately."
+  ],
+  "external_effects": {
+    "real_model_requests": 0,
+    "real_sdk_calls_in_native": 0,
+    "resource_changes": false,
+    "real_key_or_ledger_migration": false,
+    "allowance_reset_or_topup": false,
+    "public_activation": false,
+    "push_merge": false,
+    "task_started_docker_stopped": true
+  },
+  "qualification": {
+    "stage": ".scratch/cap06-native-agent-startup/qualification-vendor-447723c72f",
+    "profile_sha256": "584320c20f844e65dd2f4e87ad5ac6d8dada449836225d85f4612c93cd4f3d0a",
+    "result_sha256": "e7854f8b9dec77b60235aa8e9decf1c779c96ceb122b9de6f36f541aa15c5554",
+    "invocation_sha256": "55be92f9529e0605437b236d720e3e6a3b79149c39646c6693ccacf6623e5c10",
+    "stdout_sha256": "7a2cc8400ac8d2b0f45ef43cba6083cb9bfad205df69819127e405ad32602346",
+    "stderr_bytes": 0,
+    "memory": {
+      "before": {
+        "commit_bytes": 29547999232,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 8911065088,
+        "physical_available_bytes": 12786614272
+      },
+      "samples": 37,
+      "host_settings_changed": false,
+      "minimum_commit_bytes": 7516192768,
+      "minimum_physical_bytes": 4294967296,
+      "initial_physical_bytes": 8589934592,
+      "after": {
+        "commit_bytes": 30591143936,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 7867920384,
+        "physical_available_bytes": 12961853440
+      },
+      "interruption": null,
+      "min_commit_available_bytes": 7795982336,
+      "min_physical_available_bytes": 11985674240,
+      "elapsed_seconds": 37.03
+    },
+    "result": {
+      "default_agent": {
+        "native_agent_started": true,
+        "synthetic_authority_injected": true,
+        "qualified_readiness_verified": false,
+        "signed_closed_readiness_verified": true,
+        "invalid_proof_before_datastore": true,
+        "graceful_sigterm_verified": true,
+        "sigterm_process_returncode": -15,
+        "generation_zero_refusal_verified": true,
+        "allowance_uncertainty_preserved": true,
+        "catalogue_and_manifest_preserved": true,
+        "positive": {
+          "checks": {
+            "release": true,
+            "storefront": true,
+            "admission": true,
+            "allowance": true,
+            "provider": false
+          },
+          "authority_reads": 8,
+          "authority_closed": 1,
+          "authority_forbidden": 0,
+          "model_type": "OpenRouterClient",
+          "model_attempts": 0,
+          "network_denials": 0,
+          "work_closed": true,
+          "admission_closed": true,
+          "checks_closed": true
+        },
+        "negative": {
+          "checks": {},
+          "authority_reads": 7,
+          "authority_closed": 1,
+          "authority_forbidden": 0,
+          "model_type": "OpenRouterClient",
+          "model_attempts": 0,
+          "network_denials": 0,
+          "work_closed": true,
+          "admission_closed": true,
+          "checks_closed": true
+        }
+      },
+      "explicit_synthetic_binding_ready": true,
+      "startup_only_private_hashing_verified": true,
+      "runtime_evidence_deletion_does_not_reconfigure": true,
+      "expiry_blocks_signed_readiness_and_work": true,
+      "qualification_io_worker_created": false,
+      "positive": {
+        "app_constructed": true,
+        "actual_verifier_selected": true,
+        "no_qualification_io_worker": true,
+        "runtime_private_read_attempts": 0,
+        "expiry_work_refused": true,
+        "model_attempts": 0,
+        "network_denials": 0,
+        "authority_reads": 21,
+        "authority_closed": 1,
+        "authority_forbidden": 0,
+        "verifier_closed": true,
+        "work_closed": true,
+        "admission_closed": true
+      },
+      "startup_refusals": {
+        "expired": {
+          "app_constructed": false,
+          "actual_verifier_selected": false,
+          "no_qualification_io_worker": true,
+          "runtime_private_read_attempts": 0,
+          "expiry_work_refused": false,
+          "model_attempts": 0,
+          "network_denials": 0,
+          "authority_reads": 0,
+          "authority_closed": 0,
+          "authority_forbidden": 0,
+          "verifier_closed": false,
+          "work_closed": false,
+          "admission_closed": false
+        },
+        "wrong-key": {
+          "app_constructed": false,
+          "actual_verifier_selected": false,
+          "no_qualification_io_worker": true,
+          "runtime_private_read_attempts": 0,
+          "expiry_work_refused": false,
+          "model_attempts": 0,
+          "network_denials": 0,
+          "authority_reads": 0,
+          "authority_closed": 0,
+          "authority_forbidden": 0,
+          "verifier_closed": false,
+          "work_closed": false,
+          "admission_closed": false
+        },
+        "bad-evidence": {
+          "app_constructed": false,
+          "actual_verifier_selected": false,
+          "no_qualification_io_worker": true,
+          "runtime_private_read_attempts": 0,
+          "expiry_work_refused": false,
+          "model_attempts": 0,
+          "network_denials": 0,
+          "authority_reads": 0,
+          "authority_closed": 0,
+          "authority_forbidden": 0,
+          "verifier_closed": false,
+          "work_closed": false,
+          "admission_closed": false
+        }
+      },
+      "allowance_catalogue_manifest_preserved": true,
+      "actual_host_or_key_qualified": false,
+      "real_provider_requests": 0,
+      "real_sdk_requests": 0
+    },
+    "runner_exit_code_observed_by_root": 0
+  },
+  "roundtrip": {
+    "stage": ".scratch/cap06-native-release/run-4934a57708be/roundtrip-vendor-d3a31c70",
+    "profile_sha256": "0f489a1bfc592decf1b1f6d205cae1f9f2820fcde7d4aa773214d3ec6f4637a2",
+    "result_sha256": "db9f4e5951b4534a821072e74b3b3e00487875a2555a8850e79e60f4de4aa8de",
+    "invocation_sha256": "18843f84ff25bdc7f747bd6d90301b179c7eeb3da797f39eab0c69cd3c13f543",
+    "stdout_sha256": "49af17cc3c97b489ab3b7000b9b5c7c1449ba8358373ded91bcde108d9a66bff",
+    "stderr_bytes": 0,
+    "memory": {
+      "before": {
+        "commit_bytes": 29509701632,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 8949362688,
+        "physical_available_bytes": 13650939904
+      },
+      "samples": 4,
+      "host_settings_changed": false,
+      "minimum_commit_bytes": 7516192768,
+      "minimum_physical_bytes": 4294967296,
+      "initial_physical_bytes": 8589934592,
+      "after": {
+        "commit_bytes": 29769342976,
+        "commit_limit_bytes": 38459064320,
+        "commit_available_bytes": 8689721344,
+        "physical_available_bytes": 13496385536
+      },
+      "interruption": null,
+      "min_commit_available_bytes": 8690966528,
+      "min_physical_available_bytes": 13520830464,
+      "elapsed_seconds": 4.02
+    },
+    "result": {
+      "archive_sha256": "5e5e3843160225b81b81f3dd79bb960fc82507134ae7a7f58896020d5cd28a23",
+      "manifest_sha256": "efc1f9da4388c24b9e8b312aed2871c1aa7174f78370a531f2400a8c6b9d0757",
+      "entries": 1228,
+      "relative_links": 192,
+      "contained_hardlinks": 39,
+      "verified_manifest_files": 945,
+      "native_archive_roundtrip_verified": true,
+      "source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+      "public_origins": {
+        "panel": "https://app.scpilot.tech",
+        "store": "https://store.scpilot.tech",
+        "agent": "https://app.scpilot.tech"
+      },
+      "python_version": "3.12.14",
+      "python_prefix": "/rehearsal/vendor-python/usr"
+    },
+    "runner_exit_code_observed_by_root": 0
+  }
+}

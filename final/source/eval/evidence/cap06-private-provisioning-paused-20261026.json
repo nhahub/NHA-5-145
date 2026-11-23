@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "approval_received": true,
+  "approved_credit_allocation_usd": "0.25",
+  "operator_ipv4_rotation_authorized": true,
+  "actual_operator_ip_changed": false,
+  "aws_identity_account_and_active_free_plan_verified": true,
+  "credit_coverage_verified": true,
+  "pause": {
+    "schema": 1,
+    "status": "paused_before_helper_launch",
+    "observed_utc": "2026-10-26T18:18:06.465862+00:00",
+    "original_stopped": true,
+    "original_no_public_ip": true,
+    "original_encrypted_root_attached_retained": true,
+    "helper_created": false,
+    "eip_allocated": false,
+    "allocated_eips_in_stockholm": 0,
+    "project_pending_running_stopping_instances": 0,
+    "runtime_installation": false,
+    "timer_repair": false,
+    "swap_created": false,
+    "storage_still_accrues": true,
+    "resource_writes_this_operation": 0
+  },
+  "actual_resource_mutations": 0,
+  "private_operation": ".scratch/cap06-private-provisioning-execution/run-b92b98ec-3f8",
+  "private_receipts": [
+    {
+      "path": "pause-snapshot/approval.json",
+      "sha256": "d3a4efd32dcf22f86edb1920ebc5c94f6214d5caedb686b204b9d99765c3a515"
+    },
+    {
+      "path": "pause-snapshot/state.json",
+      "sha256": "fbef3366ab288b38a766140288530d02991db01e1de9b6c90c443f753ea4d09b"
+    },
+    {
+      "path": "pause-snapshot/pause-safe-state.json",
+      "sha256": "d4cc708b7e9b2ba20b7424764236994f6be05fb4ea2ad6477c2b3da9fa5db1bd"
+    },
+    {
+      "path": "pause-snapshot/operation-complete.json",
+      "sha256": "e1bf26d8122150eb63ba6bd0c31e04662c625a165e0ebfefa13367c5a3b2c6f5"
+    },
+    {
+      "path": "pause-snapshot/watchdog-events.jsonl",
+      "sha256": "94003a682c87b809df802ae77518d18c255c83eb9b73c58d6a30191d8234c0df"
+    }
+  ],
+  "resume": "Fresh preflight and watchdog required. Original expired timer unchanged; never boot before offline repair. Approved starts end2026-10-27T15:00:00Z; later execution requires a revised time window.",
+  "watchdog_final_event": "no_launch_within_startup_window"
+}

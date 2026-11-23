@@ -1,0 +1,25 @@
+{
+  "context_format_version": 1,
+  "context_id": "fr-cart-before",
+  "source_category": "synthetic",
+  "exposure": "exposed",
+  "not_a_browser_snapshot": true,
+  "description": "Synthetic semantic annotation context; no browser execution or real Shopper data.",
+  "catalogue_reference": {
+    "path": "store/src/catalogue.ts",
+    "git_commit": "0c98d9293820296aa73109c0666d861dabdbd023",
+    "sha256": "0683111b78d2333de33fb1caa244927aaf9b1e49a8b9fad5e87f615c42005b49"
+  },
+  "page_path": "/cart",
+  "cart_lines": [
+    {
+      "line_key": "shoe-01~42~black",
+      "product_id": "shoe-01",
+      "size": "42",
+      "color": "black",
+      "quantity": 4
+    }
+  ],
+  "prior_turns": [],
+  "known_product_ids": ["shoe-01"]
+}

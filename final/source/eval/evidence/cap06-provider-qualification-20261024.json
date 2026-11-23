@@ -1,0 +1,472 @@
+{
+  "accepted_local_evidence": {
+    "accepted_report": {
+      "accepted_for_local_replacement": true,
+      "automated_passed": true,
+      "bytes": 470510,
+      "gate_passed": true,
+      "model": "google/gemini-3.5-flash-lite",
+      "sha256": "7a168063cc6b179cd484e7c6098923a8592b737752dd3908e0dd3a0e1853fd98"
+    },
+    "reconciliation": {
+      "bytes": 112241,
+      "runtime_qualification_granted": false,
+      "sha256": "8ae076766b9ac6609b437007f363e1ddd95676a19e99d315f8dffc05112fb9a9"
+    }
+  },
+  "actual_host_or_key_qualified": false,
+  "build": {
+    "archive_bytes": 4423680,
+    "archive_sha256": "a94a4f379509cb257a7ee9c99a2e93cc2864deff56d2d3fb6b0e7aafd79d7807",
+    "genuine_git": true,
+    "manifest_sha256": "804243ca8138d0a402fe7594397725bf9f9c6cb6d7dc91337677f04f7a07c20c",
+    "node_version": "v24.22.1",
+    "offline_native_build": true,
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "python_prefix": "/rehearsal/vendor-python/usr",
+    "python_version": "3.12.14",
+    "runtime": {
+      "agent_full_startup_verified": false,
+      "agent_running_loop_refusal_only": true,
+      "caddy_adapt_only": true,
+      "catalogue_preserved": true,
+      "default_posix_v2_load": true,
+      "key_refusals": ["group-readable-provider-key", "symlink-provider-key"],
+      "manifest_unchanged": true,
+      "native_imports": [
+        "pydantic_core._pydantic_core",
+        "httptools.parser.parser",
+        "yaml._yaml",
+        "uvloop.loop",
+        "watchfiles._rust_notify",
+        "websockets.speedups"
+      ],
+      "native_storefront_restarts": 2,
+      "provider_calls": 0,
+      "runtime_distributions": 28,
+      "sdk_calls": 0,
+      "storefront_key_environment_isolation": true,
+      "uncertain_allowance_preserved": true
+    },
+    "source_clean": true,
+    "source_commit": "4deaf586fc069768f83cceadd6917b5e80a18190",
+    "source_tree": "51ce93d5210fe42610d0cdca20e8415ad2f23a22"
+  },
+  "collector": {
+    "bytes": 19907,
+    "collected_at": "2026-10-24T20:02:25.680681+00:00",
+    "keys_or_ledgers_opened": false,
+    "path": ".scratch/cap06-native-agent-startup/collect-qualification-evidence.py",
+    "sha256": "628c36490a0198cb57d285f7338a254b5c200e08863f5d12b01583acf15b27f8"
+  },
+  "date": "2026-10-24",
+  "external_effects": {
+    "global_host_settings_changed": false,
+    "public_activation": false,
+    "push_merge": false,
+    "real_provider_key_or_ledger_changed": false,
+    "real_provider_requests": 0,
+    "real_sdk_requests": 0,
+    "resource_changes": false,
+    "task_started_docker_stopped": true
+  },
+  "kind": "native-startup-only-provider-qualification-preparation",
+  "proofs": {
+    "build": {
+      "host_memory": {
+        "after": {
+          "commit_available_bytes": 8117686272,
+          "commit_bytes": 30341378048,
+          "commit_limit_bytes": 38459064320,
+          "physical_available_bytes": 14864404480
+        },
+        "before": {
+          "commit_available_bytes": 9113673728,
+          "commit_bytes": 29345390592,
+          "commit_limit_bytes": 38459064320,
+          "physical_available_bytes": 15023329280
+        },
+        "elapsed_seconds": 99.06,
+        "host_settings_changed": false,
+        "initial_physical_bytes": 8589934592,
+        "interruption": null,
+        "min_commit_available_bytes": 8063889408,
+        "min_physical_available_bytes": 14309007360,
+        "minimum_commit_bytes": 7516192768,
+        "minimum_physical_bytes": 4294967296,
+        "samples": 99
+      },
+      "invocation_sha256": "c8b1d6ab89a6f6b765770bce25945ba8809625be986eeba192ef6be164d3822c",
+      "native_stdlib_import_count": 14,
+      "probe_sha256": "2943a23dd5ee7adce8ef70d7e89cf00d66808002096f7505067d1dc529bb9bc0",
+      "process_exit_code": null,
+      "process_exit_code_note": "Existing bounded runner does not persist process exit code in stage files; caller must retain its observed successful run result.",
+      "profile_sha256": "8b629dc222d9d9ebe5824e9464e1a6af26edce6b64a749f33ec1866b7514dd8b",
+      "resource_limits": {
+        "cpus": "2",
+        "memory": "2g",
+        "memory_swap": "2g",
+        "pids_limit": "128"
+      },
+      "result_sha256": "ab4941af00ec3783f1a358bc0f0fd2ebbff31de3095dc462e150ae735f9c2860",
+      "stage": ".scratch/cap06-native-release/run-addc2e27d6ec",
+      "stderr_empty": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c2c99b4f9bea2b61dabff3a36eb12e97c990afc056e7db0d203f3088ea7e0158",
+      "vendor_python": {
+        "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+        "prefix": "/rehearsal/vendor-python/usr",
+        "python_version": "3.12.14",
+        "soabi": "cpython-312-x86_64-linux-gnu"
+      },
+      "vendor_stderr_empty": true,
+      "runner_exit_code_observed_by_root": 0
+    },
+    "qualification": {
+      "host_memory": {
+        "after": {
+          "commit_available_bytes": 8639066112,
+          "commit_bytes": 29819998208,
+          "commit_limit_bytes": 38459064320,
+          "physical_available_bytes": 15529734144
+        },
+        "before": {
+          "commit_available_bytes": 9079222272,
+          "commit_bytes": 29379842048,
+          "commit_limit_bytes": 38459064320,
+          "physical_available_bytes": 15740657664
+        },
+        "elapsed_seconds": 34.01,
+        "host_settings_changed": false,
+        "initial_physical_bytes": 8589934592,
+        "interruption": null,
+        "min_commit_available_bytes": 8566116352,
+        "min_physical_available_bytes": 15479836672,
+        "minimum_commit_bytes": 7516192768,
+        "minimum_physical_bytes": 4294967296,
+        "samples": 34
+      },
+      "invocation_sha256": "a9af5df76d331b1a9dd1cb7a48e540531aa296f47de02f6f03ac03cff6f27a9c",
+      "native_stdlib_import_count": 14,
+      "probe_bindings": {
+        "accepted_report_sha256": "7a168063cc6b179cd484e7c6098923a8592b737752dd3908e0dd3a0e1853fd98",
+        "agent_probe_sha256": "63a94bd4d5b2b4c7acdf828b5f9384a5f921e9a309d8c13841824ad511d74b37",
+        "fixture_probe_sha256": "2943a23dd5ee7adce8ef70d7e89cf00d66808002096f7505067d1dc529bb9bc0",
+        "qualification_probe_sha256": "5235dfde6b3914e597c0d66edc8bf4fbc54eda383f22a55deeef9f9aa92e40bb",
+        "reconciliation_sha256": "8ae076766b9ac6609b437007f363e1ddd95676a19e99d315f8dffc05112fb9a9"
+      },
+      "probe_sha256": "5235dfde6b3914e597c0d66edc8bf4fbc54eda383f22a55deeef9f9aa92e40bb",
+      "process_exit_code": null,
+      "process_exit_code_note": "Existing bounded runner does not persist process exit code in stage files; caller must retain its observed successful run result.",
+      "profile_sha256": "b0ff4982533b6bff425b51428bb7bccc3d71b00f8c7ae6ee2fa09dfdd3356caf",
+      "resource_limits": {
+        "cpus": "1",
+        "memory": "1g",
+        "memory_swap": "1g",
+        "pids_limit": "128"
+      },
+      "result_sha256": "e7854f8b9dec77b60235aa8e9decf1c779c96ceb122b9de6f36f541aa15c5554",
+      "stage": ".scratch/cap06-native-agent-startup/qualification-vendor-f30a78d242",
+      "stderr_empty": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7a2cc8400ac8d2b0f45ef43cba6083cb9bfad205df69819127e405ad32602346",
+      "vendor_python": {
+        "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+        "prefix": "/rehearsal/vendor-python/usr",
+        "python_version": "3.12.14",
+        "soabi": "cpython-312-x86_64-linux-gnu"
+      },
+      "vendor_stderr_empty": true,
+      "runner_exit_code_observed_by_root": 0
+    },
+    "roundtrip": {
+      "host_memory": {
+        "after": {
+          "commit_available_bytes": 8911765504,
+          "commit_bytes": 29547298816,
+          "commit_limit_bytes": 38459064320,
+          "physical_available_bytes": 15712264192
+        },
+        "before": {
+          "commit_available_bytes": 8990388224,
+          "commit_bytes": 29468676096,
+          "commit_limit_bytes": 38459064320,
+          "physical_available_bytes": 15795609600
+        },
+        "elapsed_seconds": 4.0,
+        "host_settings_changed": false,
+        "initial_physical_bytes": 8589934592,
+        "interruption": null,
+        "min_commit_available_bytes": 8874700800,
+        "min_physical_available_bytes": 15713783808,
+        "minimum_commit_bytes": 7516192768,
+        "minimum_physical_bytes": 4294967296,
+        "samples": 4
+      },
+      "invocation_sha256": "8cba72b59ef2d55bc24e8df9785e732520adeb1bc6f52df668367207610c1b25",
+      "native_stdlib_import_count": 14,
+      "probe_sha256": "0ea3d5a98f395d7af5253970970b432e8e9170b957e7e1b57338150aa2310adf",
+      "process_exit_code": null,
+      "process_exit_code_note": "Existing bounded runner does not persist process exit code in stage files; caller must retain its observed successful run result.",
+      "profile_sha256": "ee7406c17330b651ed00ba8e623b6ca43b7b1377573c9d5dfd3faaec4c47ef97",
+      "resource_limits": {
+        "cpus": "1",
+        "memory": "512m",
+        "memory_swap": "512m",
+        "pids_limit": "32"
+      },
+      "result_sha256": "f7471aea20f73893d8768f42fab30f9c0d8798844b3b98db362c41a9bc7ec921",
+      "stage": ".scratch/cap06-native-release/run-addc2e27d6ec/roundtrip-vendor-511abe93",
+      "stderr_empty": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e2c03e2af7d59e496afffe46df8640842feae30a649f62ccd4cdf7ca40395505",
+      "vendor_python": {
+        "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+        "prefix": "/rehearsal/vendor-python/usr",
+        "python_version": "3.12.14",
+        "soabi": "cpython-312-x86_64-linux-gnu"
+      },
+      "vendor_stderr_empty": true,
+      "runner_exit_code_observed_by_root": 0
+    }
+  },
+  "qualification": {
+    "actual_host_or_key_qualified": false,
+    "allowance_catalogue_manifest_preserved": true,
+    "default_agent": {
+      "allowance_uncertainty_preserved": true,
+      "catalogue_and_manifest_preserved": true,
+      "generation_zero_refusal_verified": true,
+      "graceful_sigterm_verified": true,
+      "invalid_proof_before_datastore": true,
+      "native_agent_started": true,
+      "negative": {
+        "admission_closed": true,
+        "authority_closed": 1,
+        "authority_forbidden": 0,
+        "authority_reads": 7,
+        "checks": {},
+        "checks_closed": true,
+        "model_attempts": 0,
+        "model_type": "OpenRouterClient",
+        "network_denials": 0,
+        "work_closed": true
+      },
+      "positive": {
+        "admission_closed": true,
+        "authority_closed": 1,
+        "authority_forbidden": 0,
+        "authority_reads": 8,
+        "checks": {
+          "admission": true,
+          "allowance": true,
+          "provider": false,
+          "release": true,
+          "storefront": true
+        },
+        "checks_closed": true,
+        "model_attempts": 0,
+        "model_type": "OpenRouterClient",
+        "network_denials": 0,
+        "work_closed": true
+      },
+      "qualified_readiness_verified": false,
+      "signed_closed_readiness_verified": true,
+      "sigterm_process_returncode": -15,
+      "synthetic_authority_injected": true
+    },
+    "expiry_blocks_signed_readiness_and_work": true,
+    "explicit_synthetic_binding_ready": true,
+    "positive": {
+      "actual_verifier_selected": true,
+      "admission_closed": true,
+      "app_constructed": true,
+      "authority_closed": 1,
+      "authority_forbidden": 0,
+      "authority_reads": 21,
+      "expiry_work_refused": true,
+      "model_attempts": 0,
+      "network_denials": 0,
+      "no_qualification_io_worker": true,
+      "runtime_private_read_attempts": 0,
+      "verifier_closed": true,
+      "work_closed": true
+    },
+    "qualification_io_worker_created": false,
+    "real_provider_requests": 0,
+    "real_sdk_requests": 0,
+    "runtime_evidence_deletion_does_not_reconfigure": true,
+    "startup_only_private_hashing_verified": true,
+    "startup_refusals": {
+      "bad-evidence": {
+        "actual_verifier_selected": false,
+        "admission_closed": false,
+        "app_constructed": false,
+        "authority_closed": 0,
+        "authority_forbidden": 0,
+        "authority_reads": 0,
+        "expiry_work_refused": false,
+        "model_attempts": 0,
+        "network_denials": 0,
+        "no_qualification_io_worker": true,
+        "runtime_private_read_attempts": 0,
+        "verifier_closed": false,
+        "work_closed": false
+      },
+      "expired": {
+        "actual_verifier_selected": false,
+        "admission_closed": false,
+        "app_constructed": false,
+        "authority_closed": 0,
+        "authority_forbidden": 0,
+        "authority_reads": 0,
+        "expiry_work_refused": false,
+        "model_attempts": 0,
+        "network_denials": 0,
+        "no_qualification_io_worker": true,
+        "runtime_private_read_attempts": 0,
+        "verifier_closed": false,
+        "work_closed": false
+      },
+      "wrong-key": {
+        "actual_verifier_selected": false,
+        "admission_closed": false,
+        "app_constructed": false,
+        "authority_closed": 0,
+        "authority_forbidden": 0,
+        "authority_reads": 0,
+        "expiry_work_refused": false,
+        "model_attempts": 0,
+        "network_denials": 0,
+        "no_qualification_io_worker": true,
+        "runtime_private_read_attempts": 0,
+        "verifier_closed": false,
+        "work_closed": false
+      }
+    }
+  },
+  "remaining_gates": [
+    "actual host interpreter/vendor security/AMI and provisioning adoption",
+    "systemd/users/reboot/metadata/capability/log acceptance",
+    "actual authority, protected provider key, remaining allowance custody and qualified capacity",
+    "exact current resource/cost/rollback and public activation approval"
+  ],
+  "roundtrip": {
+    "archive_sha256": "a94a4f379509cb257a7ee9c99a2e93cc2864deff56d2d3fb6b0e7aafd79d7807",
+    "contained_hardlinks": 39,
+    "entries": 1228,
+    "manifest_sha256": "804243ca8138d0a402fe7594397725bf9f9c6cb6d7dc91337677f04f7a07c20c",
+    "native_archive_roundtrip_verified": true,
+    "public_origins": {
+      "agent": "https://app.scpilot.tech",
+      "panel": "https://app.scpilot.tech",
+      "store": "https://store.scpilot.tech"
+    },
+    "python_prefix": "/rehearsal/vendor-python/usr",
+    "python_version": "3.12.14",
+    "relative_links": 192,
+    "source_commit": "4deaf586fc069768f83cceadd6917b5e80a18190",
+    "verified_manifest_files": 945
+  },
+  "runtime_source": {
+    "bytes": 5156554,
+    "commit": "4deaf586fc069768f83cceadd6917b5e80a18190",
+    "files": 6,
+    "sha256": "1fcb82190b771a0b2fe19d2fe63716bf8481c4bac865eb67805c0f60c6763ef3",
+    "tree": "51ce93d5210fe42610d0cdca20e8415ad2f23a22"
+  },
+  "schema": 1,
+  "status": "collected_isolated_synthetic_preparation_not_actual_host_or_key_qualification",
+  "synthetic_only": true,
+  "tools": {
+    "caddy_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+    "catalogue_sha256": "52ee9d8714d73bcd587a72d17d778f412213a010ae547b7350b55f24c02674f0",
+    "git_sha256": "7868f63309367aed4330fd3da5841634acc1c9b51f3e090451ac02c95090e202",
+    "image_sha256": "25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "node_sha256": "e32e2d16081cf644f88392934288086e7662529d0d43277c34f7aad2207cfafb",
+    "packaging_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "pnpm_manifest_sha256": "db5b3ddeca41b9dca76da8701fb885076a219832f103ffab6e41462aa630ad04",
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "python_bootstrap_sha256": "cbd03c0acec87c39cb6ca08e9450e7bc815ee0dff7cf845b5616e6e76ecf941d",
+    "python_prefix_sha256": "e0531746fc5e1ff28d941af91b4d30ea93fd5b2d3c10c94ec8318d8f8d0e5ce8",
+    "store_manifest_sha256": "04df8140b7fb96959eb60a594de1d295caffe75277b0677dee63568441d2cc82"
+  },
+  "vendor_provenance": {
+    "actual_ami_install_observed": false,
+    "bytes": 20872,
+    "evidence_path": "eval/evidence/cap06-vendor-runtime-alignment-20261024.json",
+    "package_count": 19,
+    "prefix_archive_sha256": "e0531746fc5e1ff28d941af91b4d30ea93fd5b2d3c10c94ec8318d8f8d0e5ce8",
+    "repository_release": "2023.12.20261021",
+    "sha256": "1e93e793ff61c7b5628adabfc0b7b0b144007a4c8b83b1cd390b15ec747b7406"
+  },
+  "verification": {
+    "full_python": {
+      "command": "python -B -X utf8 -m pytest",
+      "passed": 1552,
+      "seconds": 961.14,
+      "warnings": 2,
+      "warning_category": "upstream websocket deprecations",
+      "log_sha256": "18e58d727442da28d9cfc00fe818031f2b8a4df759617e15abd685f806520655"
+    },
+    "typescript": {
+      "command": "pnpm --recursive test",
+      "passed": 199,
+      "workspaces": {
+        "bridge": 97,
+        "panel": 39,
+        "store": 63
+      },
+      "log_sha256": "fccaa6562dbcdefdabcfc0d547e35d7878f7dc2b868fe4587676bbf6e34560e0"
+    },
+    "review_fix_regressions": {
+      "passed": 148,
+      "seconds": 33.39,
+      "warnings": 2,
+      "log_sha256": "1448a882d51d35714afd83279bfab19cd5dfc8dab03dbb1b8dada474531a0bae"
+    },
+    "python_source": {
+      "ruff_check_passed": true,
+      "ruff_format_files": 281,
+      "pip_check_passed": true
+    },
+    "source_lint": "ESLint passes excluding old generated .scratch artifacts; default pnpm lint:ts reports66no-undef errors only in3old ignored generated release copies.",
+    "format_limit": "Default pnpm format:check:ts reports12ignored local ledgers. Alternate ignored-file attempt had incorrect relative anchors and scanned224ignored/report inputs; read-only, rejected. Corrected419tracked-supported-file check passes.",
+    "review": {
+      "fresh_reviews": 1,
+      "material_findings": 3,
+      "fixed_with_red_green": 3,
+      "unresolved_material_findings": 0,
+      "report_semantics_independently_verified": true,
+      "no_review_loop": true
+    },
+    "historical_suite_exceptions_preserved": true,
+    "tracked_source_formatting": {
+      "passed": true,
+      "files": 419,
+      "selection": "git ls-files --cached --others --exclude-standard, formatter-supported extensions only",
+      "excluded_ignored_inputs": true
+    }
+  },
+  "rejected_attempts": [
+    {
+      "stage": ".scratch/cap06-native-release/run-34c3e8a130a9",
+      "reason": "conservative8GiBcommit-headroom guard stopped the bounded build; not passing native evidence",
+      "host_memory_sha256": "5273500612bd168a12e7bb2488c5854807126e6b4cdfe1937c9d6fc6d46ad80d",
+      "minimum_commit_available_bytes": 8516980736,
+      "minimum_physical_available_bytes": 14369480704,
+      "container_absent": true,
+      "global_host_settings_changed": false
+    }
+  ],
+  "proof_policy": {
+    "maximum_build_memory_bytes": 2147483648,
+    "minimum_commit_headroom_bytes": 7516192768,
+    "minimum_running_physical_available_bytes": 4294967296,
+    "initial_physical_available_bytes": 8589934592,
+    "memory_runner_sha256": "b17cfe11dfad9d9c1a689ae9066b59396dcbfa77cc386ec2f21c997a54d04ab1",
+    "change_reason": "First8GiBguard stopped at7.93GiBcommit headroom while physical available remained13.38GiB. Serial rerun retains2GiBcontainer cap and7GiBcommit floor; no OS settings changed."
+  }
+}

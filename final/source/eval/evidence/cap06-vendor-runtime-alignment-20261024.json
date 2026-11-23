@@ -1,0 +1,440 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "native-vendor-runtime-alignment",
+  "status": "verified_isolated_preparation_not_production_adoption",
+  "source": {
+    "commit": "2c9ae3615dc2c25cc455d8501849777438d5a906",
+    "tree": "b13637d21b4b6a2b0a28422387b5a444ecc3dc25",
+    "sha256": "b410ed925d0cd8dcbc60f78d7dd9a3a55b96f6fa77826495b7d0ca771bca4314",
+    "bytes": 5091026,
+    "files": 6
+  },
+  "vendor": {
+    "repository_release": "2023.12.20261021",
+    "package_count": 19,
+    "signature_key_id": "d832c631",
+    "key_sha256": "664b632018bd84f9b249be7bd26937c560edb2f2bfc0cbc01ec5a7b4e06aad56",
+    "private_temporary_rpmdb": true,
+    "extraction_receipt_sha256": "8ae587d5f8d7fbb63ef82175cf90b76300c51b04efc6156de954bbf0e50057b1",
+    "prefix_archive": {
+      "file": "python-3.12.14-complete2-prefix.tar",
+      "sha256": "e0531746fc5e1ff28d941af91b4d30ea93fd5b2d3c10c94ec8318d8f8d0e5ce8",
+      "bytes": 81438720,
+      "layout": "usr/bin/python3.12 plus usr/lib64/python3.12 and libpython inside extracted prefix"
+    },
+    "packages": [
+      {
+        "nevra": "python3.12-0:3.12.14-2.amzn2023.0.1.x86_64",
+        "rpm_sha256": "b0110c2dd0a9e7335826a8fbbf9222dbc0df2f9d10dd38189382645065175889",
+        "rpm_bytes": 27565,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "python3.12-libs-0:3.12.14-2.amzn2023.0.1.x86_64",
+        "rpm_sha256": "2f411ef99fe7380111a3d689855db0f13fd08a87e65458e606f3b8e08c23d2ca",
+        "rpm_bytes": 9674254,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "python3.12-pip-0:23.2.1-4.amzn2023.0.12.noarch",
+        "rpm_sha256": "daea96756895f2c6fa59b335cb11ef9407aaa4ed885b91c1c7baa3e8636b444a",
+        "rpm_bytes": 2911826,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "python3.12-pip-wheel-0:23.2.1-4.amzn2023.0.12.noarch",
+        "rpm_sha256": "576f2dfc8a55a1f539fa24702aea406ab6a6290555d293da714db303b7605c35",
+        "rpm_bytes": 1533226,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "bzip2-libs-0:1.0.8-6.amzn2023.0.2.x86_64",
+        "rpm_sha256": "d79286ed2f2350109d2254fae144c0b950df418f16a87e854a1a78a320b01292",
+        "rpm_bytes": 44415,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "expat-0:2.8.3-1.amzn2023.0.1.x86_64",
+        "rpm_sha256": "16f4c8e1fe525d9d3e8c8ef5387448d2587d5a34ad062efb6513a6250eda3778",
+        "rpm_bytes": 137218,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "gdbm-libs-1:1.19-2.amzn2023.0.2.x86_64",
+        "rpm_sha256": "b1c503fbf4757f1879b7bf8b950454b3f6a2d0d4edb3bcdc0607ca865b9f172e",
+        "rpm_bytes": 54069,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "libffi-0:3.4.4-1.amzn2023.0.1.x86_64",
+        "rpm_sha256": "587023e3c9a674699007bd354b46386f79dbaa4f55a6e8d2dff83db495c2743e",
+        "rpm_bytes": 40203,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "libgcc-0:14.2.1-7.amzn2023.0.2.x86_64",
+        "rpm_sha256": "215e8ef317dfccce12d7412316e5db6c050a3a54a7a5ea6eb918c9830173cc7e",
+        "rpm_bytes": 143824,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "libstdc++-0:14.2.1-7.amzn2023.0.2.x86_64",
+        "rpm_sha256": "0c2d7755e5ec3d67524a105e3f387c070013e6217101ead9b1f2d5d8a6f8b4a2",
+        "rpm_bytes": 899946,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "libuuid-0:2.37.4-1.amzn2023.0.6.x86_64",
+        "rpm_sha256": "0a5fa5800dc6160c2e292fd1edb040d08b24d6e527696daf0882a4796c9ef170",
+        "rpm_bytes": 26109,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "libxcrypt-0:4.4.33-7.amzn2023.x86_64",
+        "rpm_sha256": "a8bb4e999ec52c43c3d200f43089bed6cede2ae8c05fa6833e77c7e3959f7e23",
+        "rpm_bytes": 124140,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "mpdecimal-0:2.5.1-3.amzn2023.0.3.x86_64",
+        "rpm_sha256": "6ebdc3fb983cb7ca7be7bd600c1d1e7ffbb0fab31de77d352b9a47f00a11407d",
+        "rpm_bytes": 103903,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "ncurses-libs-0:6.6-1.amzn2023.0.1.x86_64",
+        "rpm_sha256": "557fa8de34c208950e978eb76ce57ae8c1844eaeab3ebb8af18e664002403ad7",
+        "rpm_bytes": 348323,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "openssl-libs-1:3.5.8-1.amzn2023.0.3.x86_64",
+        "rpm_sha256": "8989046817a55edb0b12f02e71dd2838fc0c327b39e438415ba984dc354b753b",
+        "rpm_bytes": 2452933,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "readline-0:8.1-2.amzn2023.0.2.x86_64",
+        "rpm_sha256": "be2fdf97635292954f3e72f4b9a0eb0c2ba0efa4909352801290dbd0b5758a8d",
+        "rpm_bytes": 217112,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "sqlite-libs-0:3.40.0-1.amzn2023.0.8.x86_64",
+        "rpm_sha256": "3a0d44b73e0c5e0bac3dacbe54fcdb432299bc9aee2301aacc6ecc13dab0f865",
+        "rpm_bytes": 674946,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "xz-libs-0:5.2.5-9.amzn2023.0.2.x86_64",
+        "rpm_sha256": "5732aac952d1f5d52110cad1250df4eedf3e65d8e7b27368ec98aeb9a2061771",
+        "rpm_bytes": 95293,
+        "rpm_signature_verified": true
+      },
+      {
+        "nevra": "zlib-0:1.2.11-33.amzn2023.0.6.x86_64",
+        "rpm_sha256": "083bfd30bba9d65ad37d774a23b7c0ab7a22d15c893f1550fcd42d777214251f",
+        "rpm_bytes": 93831,
+        "rpm_signature_verified": true
+      }
+    ],
+    "only_pinned_image_glibc_elf_dependencies": true,
+    "actual_ami_install_observed": false
+  },
+  "tools": {
+    "python_bootstrap_sha256": "cbd03c0acec87c39cb6ca08e9450e7bc815ee0dff7cf845b5616e6e76ecf941d",
+    "probe_sha256": "2943a23dd5ee7adce8ef70d7e89cf00d66808002096f7505067d1dc529bb9bc0",
+    "python_prefix_sha256": "e0531746fc5e1ff28d941af91b4d30ea93fd5b2d3c10c94ec8318d8f8d0e5ce8",
+    "image_sha256": "25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "git_sha256": "7868f63309367aed4330fd3da5841634acc1c9b51f3e090451ac02c95090e202",
+    "node_sha256": "e32e2d16081cf644f88392934288086e7662529d0d43277c34f7aad2207cfafb",
+    "caddy_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "packaging_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "catalogue_sha256": "52ee9d8714d73bcd587a72d17d778f412213a010ae547b7350b55f24c02674f0",
+    "store_manifest_sha256": "04df8140b7fb96959eb60a594de1d295caffe75277b0677dee63568441d2cc82",
+    "pnpm_manifest_sha256": "db5b3ddeca41b9dca76da8701fb885076a219832f103ffab6e41462aa630ad04"
+  },
+  "build": {
+    "source_commit": "2c9ae3615dc2c25cc455d8501849777438d5a906",
+    "source_tree": "b13637d21b4b6a2b0a28422387b5a444ecc3dc25",
+    "source_clean": true,
+    "genuine_git": true,
+    "offline_native_build": true,
+    "python_version": "3.12.14",
+    "python_prefix": "/rehearsal/vendor-python/usr",
+    "node_version": "v24.22.1",
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "manifest_sha256": "f043325da8e4fab8dfc47b9ec3701b10a72a438d0891a5876fe33cf865cc440e",
+    "archive_sha256": "c3c7d6da9c2874d0f8c0ced73e67887abb4251db59acfe95e0b74a53a3f8a5a3",
+    "archive_bytes": 4392960,
+    "runtime": {
+      "agent_full_startup_verified": false,
+      "agent_running_loop_refusal_only": true,
+      "caddy_adapt_only": true,
+      "catalogue_preserved": true,
+      "default_posix_v2_load": true,
+      "key_refusals": ["group-readable-provider-key", "symlink-provider-key"],
+      "manifest_unchanged": true,
+      "native_imports": [
+        "pydantic_core._pydantic_core",
+        "httptools.parser.parser",
+        "yaml._yaml",
+        "uvloop.loop",
+        "watchfiles._rust_notify",
+        "websockets.speedups"
+      ],
+      "native_storefront_restarts": 2,
+      "provider_calls": 0,
+      "runtime_distributions": 28,
+      "sdk_calls": 0,
+      "storefront_key_environment_isolation": true,
+      "uncertain_allowance_preserved": true
+    }
+  },
+  "agent_startup": {
+    "native_agent_started": true,
+    "synthetic_authority_injected": true,
+    "qualified_readiness_verified": false,
+    "signed_closed_readiness_verified": true,
+    "invalid_proof_before_datastore": true,
+    "graceful_sigterm_verified": true,
+    "sigterm_process_returncode": -15,
+    "generation_zero_refusal_verified": true,
+    "allowance_uncertainty_preserved": true,
+    "catalogue_and_manifest_preserved": true,
+    "positive": {
+      "checks": {
+        "release": true,
+        "storefront": true,
+        "admission": true,
+        "allowance": true,
+        "provider": false
+      },
+      "authority_reads": 15,
+      "authority_closed": 1,
+      "authority_forbidden": 0,
+      "model_type": "OpenRouterClient",
+      "model_attempts": 0,
+      "network_denials": 0,
+      "work_closed": true,
+      "admission_closed": true,
+      "checks_closed": true
+    },
+    "negative": {
+      "checks": {},
+      "authority_reads": 7,
+      "authority_closed": 1,
+      "authority_forbidden": 0,
+      "model_type": "OpenRouterClient",
+      "model_attempts": 0,
+      "network_denials": 0,
+      "work_closed": true,
+      "admission_closed": true,
+      "checks_closed": true
+    }
+  },
+  "roundtrip": {
+    "archive_sha256": "c3c7d6da9c2874d0f8c0ced73e67887abb4251db59acfe95e0b74a53a3f8a5a3",
+    "manifest_sha256": "f043325da8e4fab8dfc47b9ec3701b10a72a438d0891a5876fe33cf865cc440e",
+    "entries": 1226,
+    "relative_links": 192,
+    "contained_hardlinks": 39,
+    "verified_manifest_files": 943,
+    "native_archive_roundtrip_verified": true,
+    "source_commit": "2c9ae3615dc2c25cc455d8501849777438d5a906",
+    "public_origins": {
+      "panel": "https://app.scpilot.tech",
+      "store": "https://store.scpilot.tech",
+      "agent": "https://app.scpilot.tech"
+    },
+    "python_version": "3.12.14",
+    "python_prefix": "/rehearsal/vendor-python/usr"
+  },
+  "proofs": {
+    "build": {
+      "stage": ".scratch/cap06-native-release/run-340dc202c175",
+      "profile_sha256": "92f788bb11cc6ee0e8fe7fc028b01852a19903c3ddc7a90d3355e0a01175f7ab",
+      "probe_sha256": "2943a23dd5ee7adce8ef70d7e89cf00d66808002096f7505067d1dc529bb9bc0",
+      "invocation_sha256": "7bb4236f76fd3303c3144a554c11811f22583735b1d1a458b36446fc0c5e146a",
+      "stdout_sha256": "927ffc20b9867fa4c09de4b20bd60bf5561a2f74d6ba0f82ff34c0327a7e354e",
+      "stderr_empty": true,
+      "vendor_python": {
+        "python_version": "3.12.14",
+        "prefix": "/rehearsal/vendor-python/usr",
+        "soabi": "cpython-312-x86_64-linux-gnu",
+        "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+        "native_stdlib_imports": {
+          "_ssl": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so",
+          "_hashlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so",
+          "_sqlite3": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so",
+          "_decimal": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_decimal.cpython-312-x86_64-linux-gnu.so",
+          "_bz2": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so",
+          "_lzma": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so",
+          "_ctypes": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so",
+          "pyexpat": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/pyexpat.cpython-312-x86_64-linux-gnu.so",
+          "_gdbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_gdbm.cpython-312-x86_64-linux-gnu.so",
+          "_dbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_dbm.cpython-312-x86_64-linux-gnu.so",
+          "_crypt": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so",
+          "_uuid": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_uuid.cpython-312-x86_64-linux-gnu.so",
+          "readline": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/readline.cpython-312-x86_64-linux-gnu.so",
+          "zlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/zlib.cpython-312-x86_64-linux-gnu.so"
+        }
+      },
+      "host_memory": {
+        "before": {
+          "commit_bytes": 18149269504,
+          "commit_limit_bytes": 38459064320,
+          "commit_available_bytes": 20309794816,
+          "physical_available_bytes": 21088231424
+        },
+        "samples": 97,
+        "host_settings_changed": false,
+        "after": {
+          "commit_bytes": 19450298368,
+          "commit_limit_bytes": 38459064320,
+          "commit_available_bytes": 19008765952,
+          "physical_available_bytes": 19748450304
+        },
+        "interruption": null,
+        "min_commit_available_bytes": 18958217216,
+        "min_physical_available_bytes": 19720552448,
+        "elapsed_seconds": 97.05
+      }
+    },
+    "agent": {
+      "stage": ".scratch/cap06-native-agent-startup/vendor-4d3c54ea9d",
+      "profile_sha256": "9cf34cd0a4916955e4c636dfb624c0dfec001234b34728f28d34c19d22e420ea",
+      "probe_sha256": "63a94bd4d5b2b4c7acdf828b5f9384a5f921e9a309d8c13841824ad511d74b37",
+      "invocation_sha256": "d7535bf3ff0c8dcc47d4bfe3b3da8ad1cc46592c73aca963ddaffbbeea143190",
+      "stdout_sha256": "f64102ddc07133a45617790d3f930bcfc9ed38ec8b7bca131c3d4f56c3932dbd",
+      "stderr_empty": true,
+      "vendor_python": {
+        "python_version": "3.12.14",
+        "prefix": "/rehearsal/vendor-python/usr",
+        "soabi": "cpython-312-x86_64-linux-gnu",
+        "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+        "native_stdlib_imports": {
+          "_ssl": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so",
+          "_hashlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so",
+          "_sqlite3": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so",
+          "_decimal": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_decimal.cpython-312-x86_64-linux-gnu.so",
+          "_bz2": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so",
+          "_lzma": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so",
+          "_ctypes": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so",
+          "pyexpat": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/pyexpat.cpython-312-x86_64-linux-gnu.so",
+          "_gdbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_gdbm.cpython-312-x86_64-linux-gnu.so",
+          "_dbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_dbm.cpython-312-x86_64-linux-gnu.so",
+          "_crypt": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so",
+          "_uuid": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_uuid.cpython-312-x86_64-linux-gnu.so",
+          "readline": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/readline.cpython-312-x86_64-linux-gnu.so",
+          "zlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/zlib.cpython-312-x86_64-linux-gnu.so"
+        }
+      },
+      "host_memory": {
+        "before": {
+          "commit_bytes": 18582130688,
+          "commit_limit_bytes": 38459064320,
+          "commit_available_bytes": 19876933632,
+          "physical_available_bytes": 20602884096
+        },
+        "samples": 16,
+        "host_settings_changed": false,
+        "after": {
+          "commit_bytes": 19211960320,
+          "commit_limit_bytes": 38459064320,
+          "commit_available_bytes": 19247104000,
+          "physical_available_bytes": 19996479488
+        },
+        "interruption": null,
+        "min_commit_available_bytes": 19188305920,
+        "min_physical_available_bytes": 19988033536,
+        "elapsed_seconds": 16.0
+      }
+    },
+    "roundtrip": {
+      "stage": ".scratch/cap06-native-release/run-340dc202c175/roundtrip-vendor-7cd70dda",
+      "profile_sha256": "7b504225eec535da354f84f8abac0a39dd4a1b3347936326b6ee0a282cd7fbc4",
+      "probe_sha256": "0ea3d5a98f395d7af5253970970b432e8e9170b957e7e1b57338150aa2310adf",
+      "invocation_sha256": "383acf69a243cb7d0b08a7efac953efbdf076ee35957545faf8c5771e1bb1422",
+      "stdout_sha256": "4c071164297d8a606e8a3a90fca7fbfae0e491eece0950cb8297e7e9cac339d4",
+      "stderr_empty": true,
+      "vendor_python": {
+        "python_version": "3.12.14",
+        "prefix": "/rehearsal/vendor-python/usr",
+        "soabi": "cpython-312-x86_64-linux-gnu",
+        "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+        "native_stdlib_imports": {
+          "_ssl": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so",
+          "_hashlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so",
+          "_sqlite3": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so",
+          "_decimal": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_decimal.cpython-312-x86_64-linux-gnu.so",
+          "_bz2": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so",
+          "_lzma": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so",
+          "_ctypes": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so",
+          "pyexpat": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/pyexpat.cpython-312-x86_64-linux-gnu.so",
+          "_gdbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_gdbm.cpython-312-x86_64-linux-gnu.so",
+          "_dbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_dbm.cpython-312-x86_64-linux-gnu.so",
+          "_crypt": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so",
+          "_uuid": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_uuid.cpython-312-x86_64-linux-gnu.so",
+          "readline": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/readline.cpython-312-x86_64-linux-gnu.so",
+          "zlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/zlib.cpython-312-x86_64-linux-gnu.so"
+        }
+      },
+      "host_memory": {
+        "before": {
+          "commit_bytes": 18347343872,
+          "commit_limit_bytes": 38459064320,
+          "commit_available_bytes": 20111720448,
+          "physical_available_bytes": 20847558656
+        },
+        "samples": 4,
+        "host_settings_changed": false,
+        "after": {
+          "commit_bytes": 18430009344,
+          "commit_limit_bytes": 38459064320,
+          "commit_available_bytes": 20029054976,
+          "physical_available_bytes": 20777820160
+        },
+        "interruption": null,
+        "min_commit_available_bytes": 19981275136,
+        "min_physical_available_bytes": 20763987968,
+        "elapsed_seconds": 4.03
+      }
+    }
+  },
+  "verification": {
+    "runtime_bootstrap_probe_tests": {
+      "passed": 62,
+      "seconds": 12.57
+    },
+    "release_source_agent_openrouter_config_tests": {
+      "passed": 140,
+      "seconds": 181.64,
+      "upstream_warnings": 2
+    },
+    "ruff_checked_formatted_python_files": 274,
+    "pip_check_passed": true,
+    "fresh_source_review_material_findings": 0,
+    "deferred_minor": "Tar metadata is materialized before count check; trusted signed/hash-bound input plus archive/expansion/resource caps remain enforced.",
+    "prior_broad_suite_exception_preserved": true
+  },
+  "external_effects": {
+    "model_requests": 0,
+    "real_sdk_requests_in_native_proofs": 0,
+    "resource_changes": false,
+    "real_provider_key_or_ledger_changed": false,
+    "public_activation": false,
+    "global_host_settings_changed": false,
+    "push_merge": false
+  },
+  "remaining_gates": [
+    "production interpreter/vendor security/AMI installed package adoption",
+    "actual systemd/users/reboot/metadata/capability/log acceptance",
+    "real authority/provider qualification/key and remaining allowance custody/capacity",
+    "exact current resource/cost/rollback and public activation approval"
+  ]
+}

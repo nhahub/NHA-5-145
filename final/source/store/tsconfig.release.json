@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "..",
+    "outDir": "../outputs/runtime",
+    "types": ["node"]
+  },
+  "include": ["src"],
+  "exclude": ["tests", "scripts"]
+}

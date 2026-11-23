@@ -1,0 +1,331 @@
+{
+  "date": "2026-10-23",
+  "status": "local_implementation_verified_not_deployed",
+  "base_commit": "c6924a5f30d8102b29e6afbcd17c489bbc5899c1",
+  "source_dirty": true,
+  "scope": "prepared host isolation and redacted process lifecycle only",
+  "design": "docs/specs/2026-10-23-cap06-host-isolation-design.md",
+  "image": "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+  "runtime_profile_sha256": "2b59384f4ef93be0938319155abecf5954889ce4e63c28f254d6caa73bc6da7d",
+  "source_release_manifest_sha256": "f1475c2a399cdb668163b05d7c865420327da24dfe87109ead89a5cddb364ca4",
+  "fixture": {
+    "sha256": "7f6de86d6bacd0ad31ccf98be67a91490f729bcf99a10f19a6d45f31b6d40082",
+    "upstream_manifest_sha256": "f1475c2a399cdb668163b05d7c865420327da24dfe87109ead89a5cddb364ca4",
+    "members": 747,
+    "bytes": 3377745,
+    "traversed_bytes": 9933740,
+    "normalized_links": 193
+  },
+  "native_host": {
+    "agent_active_loop_refused": true,
+    "caddy_adapt_only": true,
+    "catalogue_preserved": true,
+    "configuration_refusals": [
+      "group-readable configuration",
+      "symlink configuration",
+      "hardlink configuration",
+      "FIFO configuration",
+      "symlink ancestor",
+      "extra",
+      "bool-version",
+      "alias-state",
+      "provider",
+      "fingerprint",
+      "relative",
+      "short private key",
+      "duplicate JSON field"
+    ],
+    "default_protected_reader": true,
+    "derived_manifest_sha256": "0e72ce8481975e50bfc1af8766d244ccece421ab270b8929e86e8f83b5a596d3",
+    "disabled_synthetic_allowance_preserved": true,
+    "libc": ["glibc", "2.34"],
+    "native_extensions": {
+      "httptools.parser.parser": "parser.cpython-312-x86_64-linux-gnu.so",
+      "pydantic_core._pydantic_core": "_pydantic_core.cpython-312-x86_64-linux-gnu.so",
+      "uvloop.loop": "loop.cpython-312-x86_64-linux-gnu.so",
+      "watchfiles._rust_notify": "_rust_notify.cpython-312-x86_64-linux-gnu.so",
+      "websockets.speedups": "speedups.cpython-312-x86_64-linux-gnu.so",
+      "yaml._yaml": "_yaml.cpython-312-x86_64-linux-gnu.so"
+    },
+    "native_storefront_exec_and_restart": true,
+    "os_release": {
+      "ANSI_COLOR": "0;33",
+      "BUG_REPORT_URL": "https://github.com/amazonlinux/amazon-linux-2023",
+      "CPE_NAME": "cpe:2.3:o:amazon:amazon_linux:2023",
+      "DOCUMENTATION_URL": "https://docs.aws.amazon.com/linux/",
+      "HOME_URL": "https://aws.amazon.com/linux/amazon-linux-2023/",
+      "ID": "amzn",
+      "ID_LIKE": "fedora",
+      "NAME": "Amazon Linux",
+      "PLATFORM_ID": "platform:al2023",
+      "PRETTY_NAME": "Amazon Linux 2023.12.20260914",
+      "SUPPORT_END": "2029-06-30",
+      "SUPPORT_URL": "https://aws.amazon.com/premiumsupport/",
+      "VARIANT_ID": "202609151327-2023.753.0",
+      "VENDOR_NAME": "AWS",
+      "VENDOR_URL": "https://aws.amazon.com/",
+      "VERSION": "2023",
+      "VERSION_ID": "2023"
+    },
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.34",
+    "proxy_handoff_captured": true,
+    "public_caddy_run": false,
+    "python": "3.12.15",
+    "sdk_creation_forbidden": true,
+    "uid": 10001,
+    "upstream_manifest_sha256": "f1475c2a399cdb668163b05d7c865420327da24dfe87109ead89a5cddb364ca4",
+    "versions": {
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "boto3": "1.43.115",
+      "botocore": "1.43.115",
+      "certifi": "2026.7.22",
+      "click": "8.5.0",
+      "fastapi": "0.116.1",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httptools": "0.8.0",
+      "httpx": "0.28.1",
+      "idna": "3.19",
+      "jmespath": "1.1.0",
+      "packaging": "26.3",
+      "pydantic": "2.13.5",
+      "pydantic-core": "2.46.5",
+      "python-dateutil": "2.9.0.post0",
+      "python-dotenv": "1.2.3",
+      "pyyaml": "6.0.3",
+      "s3transfer": "0.19.3",
+      "six": "1.17.0",
+      "starlette": "0.47.3",
+      "typing-extensions": "4.16.0",
+      "typing-inspection": "0.4.4",
+      "urllib3": "2.8.0",
+      "uvicorn": "0.35.0",
+      "uvloop": "0.22.1",
+      "watchfiles": "1.2.0",
+      "websockets": "17.1"
+    }
+  },
+  "uid_log_packet_proof": {
+    "catalogue_live_wal_and_restart": true,
+    "catalogue_write_denied": true,
+    "cross_uid_signal_denied": true,
+    "derived_manifest_sha256": "0e72ce8481975e50bfc1af8766d244ccece421ab270b8929e86e8f83b5a596d3",
+    "diagnostics": {
+      "concurrent_writers": 8,
+      "file_and_directory_fsync": true,
+      "io_failures_propagated": 3,
+      "lock_timeout_seconds": 1,
+      "retention": true,
+      "rotation": true,
+      "unsafe_files_refused": 7
+    },
+    "missing_wal_sidecars_fail_closed": true,
+    "native_store_multi_uid_restarts": 2,
+    "packets": {
+      "actual_imds_contacted": false,
+      "failure_atomic": true,
+      "ipv4_root_and_agent_allowed": true,
+      "ipv6_root_and_agent_allowed": true,
+      "ipv6_rule_installed": true,
+      "nft_version": "nftables v1.0.4 (Lester Gooch #3)",
+      "ordinary_loopback_allowed_all_uids": true,
+      "other_three_uids_refused": true,
+      "repeat_idempotent": true,
+      "sentinel_preserved": true
+    },
+    "private_read_denials": [
+      [10002, "agent/readiness.key"],
+      [10002, "agent/ledger.sqlite"],
+      [10002, "agent/service.key"],
+      [10003, "agent/service.key"],
+      [10003, "store/service.key"],
+      [10001, "store/service.key"]
+    ],
+    "probe_sha256": "c0066c8b0fb9645846cd1510f74b9c6abe205e989372a74b3517f173eed11e38",
+    "service_children_no_effective_capabilities": true,
+    "source_manifest_sha256": "f1475c2a399cdb668163b05d7c865420327da24dfe87109ead89a5cddb364ca4",
+    "store_and_proxy_agent_environment_denied": true,
+    "systemd_boot_tested": false
+  },
+  "test_tools": [
+    {
+      "file": "nftables-1.0.4-3.amzn2023.0.3.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/f04fa5408e365de1a2ad1f1ed9b50f5c29d2287f1061e58af47ef3a1ece12ab1/nftables-1.0.4-3.amzn2023.0.3.x86_64.rpm",
+      "sha256": "f04fa5408e365de1a2ad1f1ed9b50f5c29d2287f1061e58af47ef3a1ece12ab1",
+      "bytes": 406254
+    },
+    {
+      "file": "libnftnl-1.2.2-2.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/07a5c6de366eb6c61def60beb0905e41ea832858467df65c4bb09cc9d30cde63/libnftnl-1.2.2-2.amzn2023.0.2.x86_64.rpm",
+      "sha256": "07a5c6de366eb6c61def60beb0905e41ea832858467df65c4bb09cc9d30cde63",
+      "bytes": 85695
+    },
+    {
+      "file": "libmnl-1.0.4-13.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/3070d3abc261ab0270717aae200b702861924c35fee59ad2abcf7bdf807462c7/libmnl-1.0.4-13.amzn2023.0.2.x86_64.rpm",
+      "sha256": "3070d3abc261ab0270717aae200b702861924c35fee59ad2abcf7bdf807462c7",
+      "bytes": 29317
+    },
+    {
+      "file": "gmp-6.2.1-2.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/79a25d459594c41cc4c5ec18ad42d4011da65cb27355421cb9975f5157169fdf/gmp-6.2.1-2.amzn2023.0.2.x86_64.rpm",
+      "sha256": "79a25d459594c41cc4c5ec18ad42d4011da65cb27355421cb9975f5157169fdf",
+      "bytes": 331530
+    },
+    {
+      "file": "jansson-2.14-0.amzn2023.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/4b17c5ffaf7d5621092e4c58e6fb7d9bd712bd4054fd3848b171bbd1c0810d27/jansson-2.14-0.amzn2023.x86_64.rpm",
+      "sha256": "4b17c5ffaf7d5621092e4c58e6fb7d9bd712bd4054fd3848b171bbd1c0810d27",
+      "bytes": 46845
+    },
+    {
+      "file": "readline-8.1-2.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/be2fdf97635292954f3e72f4b9a0eb0c2ba0efa4909352801290dbd0b5758a8d/readline-8.1-2.amzn2023.0.2.x86_64.rpm",
+      "sha256": "be2fdf97635292954f3e72f4b9a0eb0c2ba0efa4909352801290dbd0b5758a8d",
+      "bytes": 217112
+    },
+    {
+      "file": "ncurses-libs-6.2-4.20200222.amzn2023.0.6.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/27a1b1af4e31ef737261336f59e27608e53800cd859a60ea9822bbda7572df16/ncurses-libs-6.2-4.20200222.amzn2023.0.6.x86_64.rpm",
+      "sha256": "27a1b1af4e31ef737261336f59e27608e53800cd859a60ea9822bbda7572df16",
+      "bytes": 335736
+    },
+    {
+      "file": "ncurses-base-6.2-4.20200222.amzn2023.0.6.noarch.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/cf22ad6a84e56f5172a4b28ead36c11274adf48a9b9f080fd4e5154444737ea0/ncurses-base-6.2-4.20200222.amzn2023.0.6.noarch.rpm",
+      "sha256": "cf22ad6a84e56f5172a4b28ead36c11274adf48a9b9f080fd4e5154444737ea0",
+      "bytes": 61672
+    },
+    {
+      "file": "iptables-libs-1.8.8-3.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/322786a8e3df9b8dde62b3543f1a932b44eed307917c154a42c97b50ee7c5553/iptables-libs-1.8.8-3.amzn2023.0.2.x86_64.rpm",
+      "sha256": "322786a8e3df9b8dde62b3543f1a932b44eed307917c154a42c97b50ee7c5553",
+      "bytes": 410191
+    },
+    {
+      "file": "libnetfilter_conntrack-1.0.8-2.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/6f1f29d39be88e61943e8b20f37d7fa4a4514aa2476de3480118b881bcc70ccd/libnetfilter_conntrack-1.0.8-2.amzn2023.0.2.x86_64.rpm",
+      "sha256": "6f1f29d39be88e61943e8b20f37d7fa4a4514aa2476de3480118b881bcc70ccd",
+      "bytes": 59052
+    },
+    {
+      "file": "libnfnetlink-1.0.1-19.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/cc984aa33225910676443523274eba0f4bd95808695113fe180919033d06c859/libnfnetlink-1.0.1-19.amzn2023.0.2.x86_64.rpm",
+      "sha256": "cc984aa33225910676443523274eba0f4bd95808695113fe180919033d06c859",
+      "bytes": 30580
+    },
+    {
+      "file": "libpcap-1.10.7-1.amzn2023.0.1.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/68cbe995a044f4cc3f6874368a2e6d518d8e7a9abccfa9c9f6110eae44b7aa92/libpcap-1.10.7-1.amzn2023.0.1.x86_64.rpm",
+      "sha256": "68cbe995a044f4cc3f6874368a2e6d518d8e7a9abccfa9c9f6110eae44b7aa92",
+      "bytes": 191608
+    },
+    {
+      "file": "libibverbs-48.0-1.amzn2023.0.1.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/70de30ec5cb05de1c61ae37436c77385ed3f0e9e1faa2c81ff158308739bce5b/libibverbs-48.0-1.amzn2023.0.1.x86_64.rpm",
+      "sha256": "70de30ec5cb05de1c61ae37436c77385ed3f0e9e1faa2c81ff158308739bce5b",
+      "bytes": 443326
+    },
+    {
+      "file": "libnl3-3.5.0-6.amzn2023.0.2.x86_64.rpm",
+      "url": "https://cdn.amazonlinux.com/al2023/blobstore/c1048cd31386ee70d3bc497bf140ef8e873b537ac115d3e671c6c6cf5af80a47/libnl3-3.5.0-6.amzn2023.0.2.x86_64.rpm",
+      "sha256": "c1048cd31386ee70d3bc497bf140ef8e873b537ac115d3e671c6c6cf5af80a47",
+      "bytes": 337413
+    }
+  ],
+  "test_tool_extracted_regular_or_link_targets": 182,
+  "test_tool_tree_map_sha256": "237a15ceb43f7a9f4ff8b49686948d1f380cad11786395b07b84565dd4239690",
+  "rpm_signature_verified": false,
+  "systemd_static": {
+    "systemd": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "version": "systemd 255 (255.4-1ubuntu8.17)",
+      "limits": "static syntax/dependency check with inert target/interpreter/directory stubs; no unit start or native exec"
+    }
+  },
+  "tests": {
+    "focused": "89passed13.46s before packaged integration; subsequent full run covers it",
+    "metadata_after_fixture_repair": "16passed0.41s",
+    "ruff": "262files formatted; check passed",
+    "build": "fresh production origins; source manifest dirty/base above",
+    "full_agent_eval_initial": {
+      "passed": 1310,
+      "setup_errors": 8,
+      "seconds": 930.77,
+      "error_category": "missing imported component_files pytest fixture after Ruff unused-import cleanup",
+      "implementation_failures": 0,
+      "warnings": 2
+    },
+    "eight_repaired": {
+      "command": "python -B -X utf8 -m pytest eval/tests/test_host_metadata.py -q -k test_metadata_cli_verifies_root_identity_release_before_one_bounded_nft",
+      "passed": 8,
+      "deselected": 8,
+      "seconds": 0.24
+    },
+    "new_modules_after_repair": {
+      "passed": 30,
+      "seconds": 1.07
+    },
+    "full_agent_eval_final": {
+      "command": "python -B -X utf8 -m pytest agent/tests eval/tests --lf -q",
+      "selection": "repository disables cacheprovider; --lf executed full suite",
+      "passed": 1318,
+      "seconds": 935.1,
+      "warnings": 2,
+      "errors": 0,
+      "skipped": 0
+    },
+    "typescript": {
+      "bridge": 97,
+      "store": 63,
+      "panel": 39,
+      "total": 199
+    },
+    "eslint": "pass; exclude only generated .scratch/cap06-linux-host/** and .scratch/cap06-host-isolation/**",
+    "workspace_build": "pnpm build pass",
+    "pip_check": "No broken requirements found",
+    "inventory_consistency": "AWS resources/conditional adoption/constraints/bindings/costs unchanged; local services exactly4 files; all real bindings null",
+    "unresolved_failures": 0
+  },
+  "review": {
+    "reviewer": "fresh gpt-6-astra high context; read-only whole slice",
+    "critical": 0,
+    "important": 0,
+    "minor": 1,
+    "minor_resolution": "Current handoff corrected to native provisioning/runtime lock and host acceptance",
+    "deferred": [],
+    "second_review": false,
+    "status": "complete; one minor documentation fix; no production fix required"
+  },
+  "authorization": {
+    "aws_account_or_model_api": false,
+    "real_keys_state_or_users": false,
+    "host_firewall_or_unit_activation": false,
+    "public_tls_dns": false,
+    "new_inference_or_cash": false,
+    "push_merge": false
+  },
+  "remaining": [
+    "approved native Linux production provisioning/runtime lock and binary security provenance",
+    "real AL2023 systemd252 UID/capability/dependency-failure/boot/reboot/metadata and log-retrieval acceptance",
+    "Agent SDK/lifespan/signed readiness and measured combined capacity",
+    "current account/credits/feature eligibility/finite workload cost facts",
+    "Bedrock usable quota and strict qualification plus explicit bounded spend authority",
+    "exact resource/cost/rollback approval and activation/desktop/Android/cloud safety acceptance"
+  ],
+  "verification_logs_sha256": {
+    "cap06-host-isolation-build.stdout": "ce6f5ccf1594cf607a673778dd9b0f5a8e94b42fd12b7a6d580b75fd5b957684",
+    "cap06-host-isolation-boundaries-run.stdout": "57c1dffcdcf71142c76c31dff8f83b07bdf27376aead2c98050fb4a200f0a6d8",
+    "cap06-host-isolation-native-run.stdout": "21b29ed719bf22f3c374fa755a13f8d38c14af4ea463a3a586720cb1636b783e",
+    "cap06-host-isolation-static-units.json": "2b23a7ccdc0fe93a146da904caac4a746f9d31b625f3c6c612bd61267aadab9d",
+    "cap06-host-isolation-pytest.log": "6d74403c59087f6fd1d883ceeb8f00d67b84bcaaa12c0a7b867081aa15a934b5",
+    "cap06-host-isolation-pytest-repaired.log": "c30af80ea6486da6de77e91b49edd857b5cde2c8dd8fd41354648d17c12b1af1",
+    "cap06-host-isolation-pytest-eight-repaired.log": "f8ac42dc01276f359084a29162619b5ee0e84017e900fe7bf79403c3aa89e9b8",
+    "cap06-host-isolation-eslint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cap06-host-isolation-typescript.log": "4233192f874f6b112b63fd467dee939f4eac9e212a5d3b34a67952e7bf8a4ed1",
+    "cap06-host-isolation-build-workspace.log": "c844a01f580118f63d50b4586a896d2f805f2490f321bba5ce218ddd63867518"
+  }
+}

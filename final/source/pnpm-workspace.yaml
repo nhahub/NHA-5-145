@@ -1,0 +1,7 @@
+packages:
+  - bridge
+  - panel
+  - store
+
+allowBuilds:
+  esbuild: true

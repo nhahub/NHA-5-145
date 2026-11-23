@@ -1,0 +1,2736 @@
+{
+  "version": "synthetic-pilot-20261007-v2",
+  "kind": "synthetic_development_pilot",
+  "frozen": true,
+  "unseen_count": 0,
+  "labels": [
+    "advice",
+    "find_products",
+    "locate",
+    "navigate",
+    "open_product",
+    "mutate",
+    "cart_edit",
+    "help",
+    "off_topic",
+    "unsupported"
+  ],
+  "annotation_status": "reviewed_drafts",
+  "independent_human_review": false,
+  "annotation_files": [
+    "eval/datasets/capstone-v1/development/synthetic-batch-001.json",
+    "eval/datasets/capstone-v1/development/gemini-batch-001.annotated.json",
+    "eval/datasets/capstone-v1/development/synthetic-batch-002.json"
+  ],
+  "source_hashes": {
+    "eval/datasets/capstone-v1/development/record-format-v2.schema.json": "2d0cf19598f7dea78807ce0053b6acd7fd2be433a7386d593e355ba16b6ca562",
+    "eval/datasets/capstone-v1/development/synthetic-batch-001.json": "dffc979ffb0949cb88ddf8ff7a9b12242416ca327c78e238125b365ab12aadf4",
+    "eval/datasets/capstone-v1/development/gemini-batch-001.annotated.json": "ce20143c19499143ee658af18d4edad421aea3e41cb67141ceb455dfe9dcec49",
+    "eval/datasets/capstone-v1/development/synthetic-batch-002.json": "a09c36f800a721d8df0a78fa59e01a6b687b7a9427dd3e83adca1d9a82f9930c",
+    "eval/datasets/capstone-v1/development/expanded-group-map.json": "993f5907510f54084545c32a9666e686269e757ab505015dd751810ff07bc7c2",
+    "eval/datasets/capstone-v1/development/combined-group-map.json": "5c0f17ee84a22e49d0a0dd3acde7f5d0817fad33c6ffbd9ab16deb837b426bba",
+    "eval/datasets/capstone-v1/development/batch-002-families.json": "8651ff5b9653b5b6aa3909c7487784761a6e33584586937693617e56a947f51a",
+    "eval/datasets/capstone-v1/development/batch-002-overlap-review.json": "d0b40d8aa4d8281d54110ba39ae4748d623c817ddd019a267d7ab58fe8e67555",
+    "eval/datasets/capstone-v1/development/contexts/ar-cart-before.json": "7610521803d8c538eccbe929fb8407b8df144a6eeab30d9e57b34b71333c408a",
+    "store/src/catalogue.ts": "0683111b78d2333de33fb1caa244927aaf9b1e49a8b9fad5e87f615c42005b49",
+    "eval/datasets/capstone-v1/development/contexts/ar-cart-after.json": "155138872d86635152e7edd66a16ba007b60d32f7ed9f6283894fad17b615465",
+    "eval/datasets/capstone-v1/development/contexts/cart-for-clear.json": "191e6d1fa56c4d835e8444ee7d0796fa82a6c6aceca3354f873a6d89e1f54194",
+    "eval/datasets/capstone-v1/development/contexts/comparison.json": "a27195d44917e1f9cc3fdabd58e8fc4789da3e27274c0d09cc018fdf30016161",
+    "eval/datasets/capstone-v1/development/contexts/fr-cart-before.json": "9e41d4a7dcb10c2fe0b6abbe854eb137caacf06e2274ae6d3ef3b5610aa09986",
+    "eval/datasets/capstone-v1/development/contexts/fr-cart-after.json": "e8347adf1b19e147fbd4ae70542f03d900b6164051820aef4a5aeb6b2457a94b",
+    "eval/datasets/capstone-v1/development/contexts/en-known-shirt.json": "fb8ab336e1ecdefc7d243f931406c490c3a2c0cca3ff7bd9013b5ed3380457d2",
+    "eval/datasets/capstone-v1/development/contexts/product-add.json": "f1daabca6bed3015ecc3074089e640cc6fcc2041802b201dbaa4a0818133781b",
+    "eval/datasets/capstone-v1/development/contexts/remove-then-undo.json": "1bec6c85bbedf4022890c86b10d2895d48e5298d6ca7c1390d76ebad20c10406",
+    "eval/datasets/capstone-v1/development/contexts/en-return-shirt.json": "58c834e0821cbc21514e6f71090557a860766fdd62700e801cab161f499d6e4e",
+    "eval/datasets/capstone-v1/development/contexts/mix-cart-ambiguous.json": "fa013db437185e7b4037f3ff4e0e5cf2fea1df93581468c724f2a594ee2f7f3d",
+    "eval/datasets/capstone-v1/development/contexts/checkout-ready.json": "7d403825acc0c61edd4fe0212fcdec74daa7074f3050c2ebcdb08487070e265e",
+    "eval/datasets/capstone-v1/development/contexts/mix-cart-answer.json": "31d549d967328166e32adef17d42b0f00a0888b3b2a19092ae6b7e26f0abfb14",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-price-tradeoff.json": "6421f770ebe9c4748e2702ef9e4a7aba1aee77fb247cf8a6f8e7d087f14af7df",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-use-suitability.json": "ca9cdb473a407e3ffa62986fad250475e261d44b987b1df7d88c8c22c9ba9d39",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-size-uncertainty.json": "246725d36cbab9d428243502c09539954872e7b49618184ba105c7d67074cee4",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-checkout-control.json": "c566f291d7b1d4fc39bb680db759526535655587378824bc3ecdde71e2d98689",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-quantity-control.json": "e912744e4d30a19fb5777875be54eddb809878ebe088b84a0c75f2f574ab457c",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-remove-control.json": "7338dfec45399454293295ecd1154338e81512c1cbcdb69ed7b7e75edd210ae9",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-shoe-details.json": "de630f88406d4a66d1db582a5e92110b6b177bb70b12f8405c2f1f425469e64b",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-ranked-product-details.json": "709c60cfcdbb5f847d2cfad74703aa8efadd40fc52a80c0a70c3b05f242c85bf",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-cart-product-details.json": "193ef45f82adf76fcd4a4dfe8014dc36a05fe782fd6026ae1847e734c3a7c5e4",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-shortlist-cheapest-details.json": "50a880a6c4ac2e5a7fce1d3d6b80b59d8ea8619972bb04ca96757e46e978ead2",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-abandon-basket.json": "709f943b2716f0b15410499d82f6253e7043682620a1cdf4a377d27c40c9d4ca",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-replace-basket.json": "aa3f40eb20aecf27444897f2e5285b6292989db1aa580ce2df58255a7834e060",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-place-order.json": "0f181f39bc6cac4a38ff4f1d62b4d5c4532d93d325b334bc5b039bdf8453027c",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-checkout-retry.json": "b2d9a2324b623209ac3f99dbf5caa7f605b34a5c76461587ae700c8a2f9d7f11",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-add-variant.json": "7c99867412dc5ae0d6ca22315866e82660fc5f5a0ea85b5784b5177da29f8787",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-quantity-revision.json": "f7f1d059be166db7d4c0389c9ae20c0790ba5099ed02e201deff9cfe50bab48b",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-remove-line.json": "3b2e178961630e3385200a6d4748085eee42b7a5d7715b7835223c6b78a60277",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-undo-edit.json": "39c25a32ac942c04582f715f394ad71d8d5a7d046ae429ab20bfe9902534ba54",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-161.json": "925f0e18a2de4e87c1056612b11ddcec5f6474a95d86a6599214c5a5cf06ad49",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-162.json": "1f91bc861d5fbad11ea801a7ced24866a86806af65bf56eb510581b7980ebf45",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-163.json": "354723476344de90ef27e4e5b01d36f9ad53fc70eb759e604f8a271d3e854689",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-164.json": "366d69c102bcdc2206e21855b4678c83746a8c2d04d1bc27f034d25a0cca7fe2",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-165.json": "bc9459f4e14bf71167f40c61124f37caadd69c454da5314d5f2bc7db0def2d37",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-166.json": "423a007fe108c3eb354b7b718d0529e2ab385fc84c5d0022c5af5ab7872b22ca",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-167.json": "cc4aa25a98919694511e3d1b121db33fed7e1aa60d31301a5c335e24806742b7",
+    "eval/datasets/capstone-v1/development/contexts/batch-002/synthetic-002-168.json": "9a097d50a071adc8837c5616cf42ea3c30c8045aa9760e986256f2f609acda8a",
+    "eval/datasets/capstone-v1/development/pilot2-overlap-review.json": "d77899dd6c6594d47702b4616394119123e4cf3cef035ed228380f5e06eaba1b",
+    "eval/intent-corpus.json": "1ef7ebefc6eb07a2fce8d4739c7a63f42827a4322c42598b9d442a0042aba2d8",
+    "eval/milestone_cases.py": "da88fe54a9646941558f4632c4cc2c0da989298fa7c422f0c0cfa297ac24267c",
+    "eval/freeze_expanded_pilot.py": "68db6e15dd8338caf21301ba8ca90bfa02184a30923933078ab5898f1bea167b",
+    "eval/group_allocation.py": "c4cb2df2060b746273438de781e0149fe37478c5697bdd0bbceb815b7a63f154",
+    "docs/cap03-expanded-pilot-protocol.md": "7dd71d830489a7765340fb803216f689d21c3a3defe8ca6038bec71afe359107",
+    "eval/datasets/capstone-v1/pilot-20261007/groups.json": "adaa7e786b38b20b3ac5308aa4ca118e15f3a4fd04dc20220c06ce52d843e31e"
+  },
+  "protocol": "docs/cap03-expanded-pilot-protocol.md",
+  "hash_convention": "UTF-8 bytes with CRLF normalized to LF",
+  "allocation": {
+    "method": "nearest20percent_then_lexicographic_whole_components",
+    "scipy_version": "1.18.1",
+    "min_train_rows_per_label": 8,
+    "min_validation_rows_per_label": 4,
+    "min_train_rows_per_label_language": 2,
+    "min_validation_rows_per_label_language": 1,
+    "min_train_components_per_label": 2,
+    "min_validation_components_per_label": 1
+  },
+  "records": [
+    {
+      "case_id": "syn-ar-01",
+      "text": "عايز كوتش جري مقاس ٤٢ لحد ١٨٠٠ جنييه ومش جلد خالص",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-02",
+      "text": "عندي بنطلون اسود.. رايك البس عليه لون ايه لو رايح عزومه؟",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-004",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-03",
+      "text": "وديني لحسابي بقا مش صفحة الاوردرات",
+      "label": "navigate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-005",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-04",
+      "text": "القميص الرسمي الابيض لارج زود عليه تلاته كمان، سيب الكوتشي زي مهو",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-06",
+      "text": "فضي السله كلها خلاص مش عايز حاجه منها",
+      "label": "mutate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-07",
+      "text": "وريني زرار الدفع فين بس متدوسش عليه",
+      "label": "locate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-08",
+      "text": "هو انت بتساعدني ف ايه هنا اصلا؟",
+      "label": "help",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-007",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-09",
+      "text": "ابعتلي الاوردر مع مندوب بعد نص الليل النهارده",
+      "label": "unsupported",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-008",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-ar-10",
+      "text": "اكتبلي رساله اعتذار لصاحبي بعيد عن حوار الشرا ده",
+      "label": "off_topic",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-009",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-01",
+      "text": "3ayz t shirt size M max 700 geneh, mesh 1700 ana katabt ghalt",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-014",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-02",
+      "text": "el Nile Runner wala Quick Step? far2 el se3r yestahl leh aslan",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-03",
+      "text": "efta7 saf7et el 7esab beta3y 3ashan ashofha",
+      "label": "navigate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-005",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-04",
+      "text": "el Nile Runner el aswd 42 na2as meno wa7ed bs",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-06",
+      "text": "el Formal Shirt eft7ly saf7to bas mat7otosh fel 3arabeya",
+      "label": "open_product",
+      "language": "franco_arabic",
+      "group": "pilot2-component-011",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-07",
+      "text": "7ot el kootsh da fel 3arabeya 2, el aswd ma2as 42",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-08",
+      "text": "la2 ragga3 el 7aga elly sheltha delwa2ty",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-09",
+      "text": "faddy kol el cart wana habda2 mn awel w gdeed",
+      "label": "mutate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-fr-10",
+      "text": "howa feen el checkout? wareny el zorar bs",
+      "label": "locate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-01",
+      "text": "need a backpack max 950 egp for uni, no leather pls",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-02",
+      "text": "would these running shoes actually be comfy standing all day or is that a guess?",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-03",
+      "text": "take me to my orders, newest one first if u can",
+      "label": "navigate",
+      "language": "english",
+      "group": "pilot2-component-010",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "syn-en-04",
+      "text": "open the Formal Shirt page pls, dont add it",
+      "label": "open_product",
+      "language": "english",
+      "group": "pilot2-component-011",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-06",
+      "text": "remove just the white Formal Shirt in L, leave the grey one",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-07",
+      "text": "ok place the order now, ive filled the payment bit myself",
+      "label": "mutate",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-08",
+      "text": "can u split the payment over 6 months? thats the only way i can buy",
+      "label": "unsupported",
+      "language": "english",
+      "group": "pilot2-component-012",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-09",
+      "text": "uh what can you do in this shop? im lost",
+      "label": "help",
+      "language": "english",
+      "group": "pilot2-component-007",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-en-10",
+      "text": "find shirts size XL under 1k egp.. actually up to 1200 is fine",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-013",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-01",
+      "text": "عايز running shoes size 41 لحد ١٦٠٠ egp، مش leather بليز",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-02",
+      "text": "ال Quick Step اغلى من Nile Runner ليه؟ قوللي tradeoff بجد مش كلام بيع",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-03",
+      "text": "افتحلي cart دلوقتي خليني اشوف اللي فيه",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-04",
+      "text": "شيل ال shirt من cart بس، الباقي سيبه",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-06",
+      "text": "زود quantity بتاع Nile Runner الاسود 42 بمقدار ٢ مش تخلي التوتال ٢",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-07",
+      "text": "ده size 42 black؟ تمام add to cart واحد بس",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-08",
+      "text": "فين checkout button؟ highlight بس انا لسه براجع",
+      "label": "locate",
+      "language": "mixed",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-09",
+      "text": "اعمل clear cart كله مش remove لقطعه واحده",
+      "label": "mutate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "syn-mx-10",
+      "text": "عايز tshirt size L وال budget ٦٥٠ جنيه max، spelling عندي بايظ معلش",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-014",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-001",
+      "text": "عايز كوتشي ابيض مقاس 43 في حدود 600 جنيه كدا",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-003",
+      "text": "طب هو القماش ده خفيف وينفع صيف ولا بيكتم الرجل؟",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-004",
+      "text": "تمام ضيف اول واحد ف اللسته للعربيه مقاس 43",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-005",
+      "text": "وريني كدا بناطيل جينز مقاس 34 وتكون واسعه وايد ليج",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-007",
+      "text": "حطلي اتنين من الكحلي دا في السله",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-009",
+      "text": "ايه الفرق بين التيشيرت الاوفر سايز ده والعادي؟ خامتهم واحده؟",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-010",
+      "text": "طيب ضيف الاوفر سايز البيج دا مقاس L",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-012",
+      "text": "ورينى دريسات صيفى مشجره تكون طويله وبكمام وماتكنش شفافه",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-014",
+      "text": "هو الدريس ده تلبيسه مظبوط ولا اخد نمره اكبر؟",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-015",
+      "text": "عاوز اشوف عربية المشتريات دلوقتي فيها ايه",
+      "label": "navigate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-016",
+      "text": "فضى السله كلها مش عايز اشترى حاجه دلوقتى خلاص",
+      "label": "mutate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-017",
+      "text": "فيه عندكم هوديات تقيله شتوى تحت 400 جنيه؟",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-020",
+      "text": "ضيف الهودى النبيتى مقاس 2XL فى السله",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-022",
+      "text": "يا ريت كوتشى مريح بتاع مشى يومى ويكون سعره حنين كدا",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-023",
+      "text": "كوتشى الركض الرمادى احسن ولا الاسود من ناحية التحمل؟",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-026",
+      "text": "3ayez ashof sneakers abiad size 42 ta7t 800 le",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-028",
+      "text": "hwa el slip on da comfortable ll mshy el kteer wla bywga3 el regle?",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-029",
+      "text": "7elw awy 7ot el aswad f el cart size 42",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-030",
+      "text": "warini sweatpants regaly polo aw plain b s3r kwyis",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-032",
+      "text": "ezawwed el kamya khalehom 3 bdal wa7da",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-033",
+      "text": "sheel el t-shirt el aswad mn el cart sebo faqy el 7agat",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-034",
+      "text": "eh el far2 ben jacket el denim da w el tani el darker?",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-035",
+      "text": "7ot el jacket el azra2 size XL f el basket",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-037",
+      "text": "3ayez ashof el cart fiha eh delwa2ty",
+      "label": "navigate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-038",
+      "text": "emsa7 kol 7aga f el cart clear all ya basha",
+      "label": "mutate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-039",
+      "text": "fih 3ndoko basic tees abyad w aswad pack 3la ba3d?",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-041",
+      "text": "tab hwa el medium hyb2a daye2 3lya lw wazny 75 kg?",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-042",
+      "text": "7ot pack 2 t-shirts size L f el cart",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-044",
+      "text": "3ayez shanta cross sghyra w tkun leater b s3r rekhis",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-046",
+      "text": "daf3 el order da b visa wla lazm cash?",
+      "label": "unsupported",
+      "language": "franco_arabic",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-047",
+      "text": "e7zef el shanta mn el basket msh me7tagha",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-048",
+      "text": "hatly formal shoes brown size 44 b2al mn 1000 egp",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-051",
+      "text": "show me cheap black running shoes size 11 under 900 egp",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-053",
+      "text": "is this one breathable enough for daily gym workouts?",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-054",
+      "text": "add the grey running shoes to my cart size 44",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-055",
+      "text": "find me oversized graphic tees in beige or offwhite",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-057",
+      "text": "add 2 pieces of the vintage beige tee size L",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-058",
+      "text": "actully change qty to 1 i dont need two",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-059",
+      "text": "which fits looser the cargo pants or the relaxed jeans?",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-060",
+      "text": "put the olive cargos size 32 into my bag",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-062",
+      "text": "show my bag content right now",
+      "label": "navigate",
+      "language": "english",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-063",
+      "text": "empty cart completely cancel everything",
+      "label": "mutate",
+      "language": "english",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-064",
+      "text": "i need warm winter fleece hoodies for men under 500",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-066",
+      "text": "does this hoodie shrink after first wash cycle?",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-067",
+      "text": "add navy blue hoodie XL to cart",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-069",
+      "text": "look for summer linen shirts for beach",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-071",
+      "text": "how long does standard delivery take to alexandria?",
+      "label": "unsupported",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-072",
+      "text": "remove that last item i added by misstake",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-073",
+      "text": "browse casual loafers brown leather size 41",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-074",
+      "text": "add 1 pair to shopping cart",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-076",
+      "text": "عايز hoodie يكون oversize ولونه olive مقاس XL",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-078",
+      "text": "هو الـ material قطن 100% ولا مخلوط بـ polyester؟",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-079",
+      "text": "اعمل add للـ hoodie الـ charcoal ده ف الـ cart",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-080",
+      "text": "ورينى كوتشيات running تكون lightweight عشان الـ marathon",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-082",
+      "text": "زود الـ quantity وخليها 2 pairs من الكوتشى الاسود",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-084",
+      "text": "ايه الفرق بين الـ slim fit والـ regular fit فى التيشيرتات دى؟",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-085",
+      "text": "ضيف الـ black polo shirt مقاس L ف الـ basket",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-087",
+      "text": "فتحلى الـ cart كدا اشوف الـ total كام بالمصاريف",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-088",
+      "text": "اعمل clear للـ cart كلها مش هشتري حاجة انهارده",
+      "label": "mutate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-089",
+      "text": "بدور على cargo pants لونها beige او khaki بسعر معقول",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-091",
+      "text": "هو الـ delivery للـ order ده هياخد كام يوم لـ Cairo؟",
+      "label": "unsupported",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-092",
+      "text": "حط الـ cargo الـ khaki مقاس 34 فى الـ cart",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-094",
+      "text": "ورينى summer dresses تكون floral و midi",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-096",
+      "text": "هو الـ size chart مظبوط ولا الـ dress بييجى tight؟",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-097",
+      "text": "اعمل delete للـ socks اللى حطيتها بالغلط ف الـ bag",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-099",
+      "text": "عايز basic white sneakers جلد ينفع semi-formal",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "gemini-001-100",
+      "text": "تمام اعمل proceed to checkout خلاص",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-001",
+      "text": "هو الابيض مع البنطلون الكحلي بتاعي هيبقى باهت؟ قولي رأيك فالتنسيق مش عايز اشتري دلوقتي",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-004",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-002",
+      "text": "3andy pantaloon aswad, el k7ly ma3ah yeb2a kteer? 3ayez ra2yak fel alwan bas",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-004",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-003",
+      "text": "be honest does a blue top with my grey trousers look weird? just talking colours rn",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-004",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-004",
+      "text": "الـ white tee مع جينز غامق شكله basic زيادة؟ محتاج رأيك مش add to cart",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-004",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-005",
+      "text": "ليه ادفع اكتر في خطوة سريعة بدل عداء النيل؟ فرق السعر يستاهل بالنسبه لتمرين خفيف ولا لا",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-006",
+      "text": "ana mesh fahem far2 se3r Nile Runner w Quick Step, eih elly maktob yebarrer el far2?",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-007",
+      "text": "Quick Step costs more than Nile Runner ... talk me through what I actually get, dont buy either",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-008",
+      "text": "بين عداء النيل و Quick Step إيه الـ tradeoff مقابل الفلوس؟ ما تختارش على السعر بس",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-009",
+      "text": "انا بمشي للشغل ومش بلعب جري، هل مواصفات راحة يومية مناسبه لده؟ متفترضش حاجه مش مكتوبه",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-015",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-010",
+      "text": "Daily Comfort lel mashy kol yom wala sport? fahhemny... la ana 3ayez tafseer el mowasafat bas",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-015",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-011",
+      "text": "would Daily Comfort make sense for a commute on foot? explain what the listing does and doesnt tell us",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-015",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-012",
+      "text": "راحة يومية ينفع للـ commute مش gym؟ عايز نفكر في الـ pros and cons الأول",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-015",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-013",
+      "text": "قميص رسمي مقاس كبير ولا وسط لو بحب اللبس واسع؟ مش طالب تختارلي مقاس مؤكد، عايز افهم الاختيار",
+      "label": "advice",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-016",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-014",
+      "text": "Formal Shirt M wala L law ba7eb loose fit? mesh 3ayezak tefta7 saf7a, 3ayez netkalem fel ekhtyar",
+      "label": "advice",
+      "language": "franco_arabic",
+      "group": "pilot2-component-016",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-015",
+      "text": "im between M and L on Formal Shirt. what would you need to know before recommending a size?",
+      "label": "advice",
+      "language": "english",
+      "group": "pilot2-component-016",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-016",
+      "text": "محتار بين size M و L في قميص رسمي، ناقصنا إيه عشان تقول رأي مسؤول؟",
+      "label": "advice",
+      "language": "mixed",
+      "group": "pilot2-component-016",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-017",
+      "text": "وريني كوتشي مقاس ٤٢ لحد ١٨٠٠ جنيه بس مش جلد",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-018",
+      "text": "badawar 3ala kotshy aswad 41, ma yzeedsh 3an 1600 geneh",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-019",
+      "text": "show me running shoes pls, 42 and max 1900 EGP. no need to sort yet",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-020",
+      "text": "عايز shoes size 40 بحد أقصى ١٥٠٠ EGP ومش white",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-021",
+      "text": "شوفلي تيشرتات خفيفه للصيف مش سودا، اقصى حاجه ٦٠٠ جنيه",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-017",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-022",
+      "text": "3ayez hoodies l7ad 900... la 700 geneh akher kalam",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-017",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-023",
+      "text": "any shirts in white, medium? cap it at 950 EGP please",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-017",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-024",
+      "text": "هاتلي tops size L بس الـ budget ٨٠٠ جنيه، مش بدور على shoes",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-017",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-025",
+      "text": "عاوزه شنطه ضهر للجامعه وفلوسي ١٣٠٠ جنيه بالكتير",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-026",
+      "text": "wariny shonat safar, 2000 geneh maximum w mesh lawn a7mar",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-027",
+      "text": "looking for a black backpack, newest ones first if possible",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-028",
+      "text": "ممكن bags للشغل؟ قصدي briefcase مش backpack، لحد ١٤٠٠ جنيه",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-003",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-029",
+      "text": "طلعلي سماعات اقصى سعر الف ومتين جنيه",
+      "label": "find_products",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-018",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-030",
+      "text": "3ayez charger abyad, er5as 7aga el awel",
+      "label": "find_products",
+      "language": "franco_arabic",
+      "group": "pilot2-component-018",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-031",
+      "text": "got any smartwatches up to 2500 EGP in silver?",
+      "label": "find_products",
+      "language": "english",
+      "group": "pilot2-component-018",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-032",
+      "text": "بدور على speaker صغير، ceiling ٩٠٠ EGP مش headphones",
+      "label": "find_products",
+      "language": "mixed",
+      "group": "pilot2-component-018",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-033",
+      "text": "فين زرار اكمال الشرا اللي في العربيه؟ شاور عليه بس انا هدوس",
+      "label": "locate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-034",
+      "text": "mesh shayef zorar el checkout, warini makano bas matdossh",
+      "label": "locate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-035",
+      "text": "which button takes me to checkout? highlight it, leave the clicking to me",
+      "label": "locate",
+      "language": "english",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-036",
+      "text": "شاورلي على checkout button بس، مش عايز نكمل الطلب دلوقتي",
+      "label": "locate",
+      "language": "mixed",
+      "group": "pilot2-component-006",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-037",
+      "text": "فين المكان اللي ازود منه عدد عداء النيل؟ حددلي الخانه بس",
+      "label": "locate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-019",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-038",
+      "text": "3ayez a3raf makaan el 3adad bta3 Nile Runner, mesh tezawedo enta",
+      "label": "locate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-019",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-039",
+      "text": "point out the quantity box for Nile Runner, im doing the edit myself",
+      "label": "locate",
+      "language": "english",
+      "group": "pilot2-component-019",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-040",
+      "text": "الـ quantity بتاع عداء النيل فين؟ highlight بس من غير update",
+      "label": "locate",
+      "language": "mixed",
+      "group": "pilot2-component-019",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-041",
+      "text": "زرار مسح حقيبة القاهرة فين؟ متشيلهاش انا بس مش لاقيه",
+      "label": "locate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-020",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-042",
+      "text": "feen el remove bta3 Cairo Backpack? e3melly eshara w seebha zay ma heya",
+      "label": "locate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-020",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-043",
+      "text": "show me the delete control on Cairo Backpack. dont delete it yet",
+      "label": "locate",
+      "language": "english",
+      "group": "pilot2-component-020",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-044",
+      "text": "ممكن spotlight على remove بتاع حقيبة القاهرة؟ مش أمر مسح",
+      "label": "locate",
+      "language": "mixed",
+      "group": "pilot2-component-020",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-045",
+      "text": "فين علامة حسابي؟ انا مش عايز افتحه دلوقتي بس اعرف مكانه",
+      "label": "locate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-021",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-046",
+      "text": "eshawerly 3ala link 7esaby, bala ma ten2elny",
+      "label": "locate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-021",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-047",
+      "text": "where exactly is the account link? just mark it for me",
+      "label": "locate",
+      "language": "english",
+      "group": "pilot2-component-021",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-048",
+      "text": "الـ account icon مش لاقيه، بس وريني مكانه من غير navigation",
+      "label": "locate",
+      "language": "mixed",
+      "group": "pilot2-component-021",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-049",
+      "text": "رجعني للعربيه اشوف انا حطيت ايه، سيب الكميه زي ماهي",
+      "label": "navigate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-050",
+      "text": "khodny lel shopping cart delwa2ty, mat3adelsh ay 7aga",
+      "label": "navigate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-051",
+      "text": "ugh lost my basket page, take me back there please",
+      "label": "navigate",
+      "language": "english",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-052",
+      "text": "افتح الـ cart خليني اراجعها بس، no changes",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-053",
+      "text": "وديني لحسابي مش لسجل الطلبات، انا هكمل بنفسي",
+      "label": "navigate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-005",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-054",
+      "text": "efta7 saf7et 7esaby, mesh mo7tag tezawed ay product",
+      "label": "navigate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-005",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-055",
+      "text": "account page please, i wanna look at it myself",
+      "label": "navigate",
+      "language": "english",
+      "group": "pilot2-component-005",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-056",
+      "text": "محتاج تفتح my account مش checkout",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-005",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-057",
+      "text": "عايز اروح صفحه طلباتي القديمه، مش بطلب حاجه جديده",
+      "label": "navigate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-010",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-058",
+      "text": "wareeny saf7et el orders bta3ty, ana naseet awsalha ezay",
+      "label": "navigate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-010",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-059",
+      "text": "can we go back to order history? leave this product for now",
+      "label": "navigate",
+      "language": "english",
+      "group": "pilot2-component-010",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-060",
+      "text": "خلينا في orders history دلوقتي، افتح الصفحة",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-010",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-061",
+      "text": "وصلني لصفحه اكمال الطلب بس متأكدش الشرا انا لسه بفكر",
+      "label": "navigate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-062",
+      "text": "roo7 lel checkout page, bas mat3melsh submit lel talab",
+      "label": "navigate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-063",
+      "text": "take me to checkout so i can look. im not placing the order yet",
+      "label": "navigate",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-064",
+      "text": "افتح checkout screen وخلاص، no submit لسه",
+      "label": "navigate",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-065",
+      "text": "صفحه نسمة الصباح نفسها لو سمحت مش قايمه الجزم",
+      "label": "open_product",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-011",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-066",
+      "text": "efta7 details bta3 Morning Breeze, 3ayez abos 3aleh",
+      "label": "open_product",
+      "language": "franco_arabic",
+      "group": "pilot2-component-011",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-067",
+      "text": "take me into Morning Breeze please, the actual product page",
+      "label": "open_product",
+      "language": "english",
+      "group": "pilot2-component-011",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-068",
+      "text": "وريني product page بتاع نسمة الصباح من غير add",
+      "label": "open_product",
+      "language": "mixed",
+      "group": "pilot2-component-011",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-069",
+      "text": "من التلات منتجات اللي اقترحتهم افتح صفحة المنتج التاني، مش الاول",
+      "label": "open_product",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-022",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-070",
+      "text": "el product el tany men el tarshi7at efta7 saf7eto, mesh awel wa7ed",
+      "label": "open_product",
+      "language": "franco_arabic",
+      "group": "pilot2-component-022",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-071",
+      "text": "open the second suggested product, its detail page please, keep the shortlist",
+      "label": "open_product",
+      "language": "english",
+      "group": "pilot2-component-022",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-072",
+      "text": "افتح product page بتاع الاختيار رقم ٢ من الـ suggestions",
+      "label": "open_product",
+      "language": "mixed",
+      "group": "pilot2-component-022",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-073",
+      "text": "الكوتشي الاسود مقاس ٤٢ اللي في العربيه افتحلي صفحة المنتج بتاعه، متعدلش العدد",
+      "label": "open_product",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-023",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-074",
+      "text": "el kotshy el aswad 42 fel cart, 3ayez saf7et el product nafso mesh el 3adad",
+      "label": "open_product",
+      "language": "franco_arabic",
+      "group": "pilot2-component-023",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-075",
+      "text": "take me to the product details for the black size 42 shoes in my basket, leave the quantity alone",
+      "label": "open_product",
+      "language": "english",
+      "group": "pilot2-component-023",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-076",
+      "text": "من cart افتح تفاصيل الـ shoes الاسود size 42، مش edit quantity",
+      "label": "open_product",
+      "language": "mixed",
+      "group": "pilot2-component-023",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-077",
+      "text": "افتح صفحة ارخص منتج من التلاته اللي انت لسه عرضتهم، متعملش بحث جديد",
+      "label": "open_product",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-024",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-078",
+      "text": "men el talat tarshi7at elly odamna, el ar5as efta7 saf7eto bas",
+      "label": "open_product",
+      "language": "franco_arabic",
+      "group": "pilot2-component-024",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-079",
+      "text": "open the cheapest product from that existing three-item shortlist, no new search please",
+      "label": "open_product",
+      "language": "english",
+      "group": "pilot2-component-024",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-080",
+      "text": "هات product page للـ cheapest من آخر ٣ suggestions بس",
+      "label": "open_product",
+      "language": "mixed",
+      "group": "pilot2-component-024",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-081",
+      "text": "خلاص مش هاخد حاجه من اللي فالعربيه، فضيها كلها",
+      "label": "mutate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-082",
+      "text": "batalt ashtery elly fel cart, emsa7 kol el items menha",
+      "label": "mutate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-083",
+      "text": "changed my mind on the whole basket. empty it please",
+      "label": "mutate",
+      "language": "english",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-084",
+      "text": "عايز الـ cart فاضية تمام، remove all مش منتج واحد",
+      "label": "mutate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-085",
+      "text": "هنبدأ من اول وجديد، امسح محتويات السله بالكامل وسيب الحساب",
+      "label": "mutate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-086",
+      "text": "ebda2ly basket fady, sheel kol elly et7at abl keda mesh 7aga wa7da",
+      "label": "mutate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-087",
+      "text": "reset my shopping basket to empty. i want to rebuild it from scratch",
+      "label": "mutate",
+      "language": "english",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-088",
+      "text": "اعمل clear للـ basket كلها عشان هختار تاني، مش delete account",
+      "label": "mutate",
+      "language": "mixed",
+      "group": "pilot2-component-002",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-089",
+      "text": "راجعت السلة وخلاص عايز اتمم الطلب دلوقتي",
+      "label": "mutate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-090",
+      "text": "ana khala9t morag3a, sabbet el talab w kammel el shera",
+      "label": "mutate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-091",
+      "text": "everything in the basket looks right, place the order please",
+      "label": "mutate",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-092",
+      "text": "تمام اعمل submit order دلوقتي، راجعت الاختيارات",
+      "label": "mutate",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-093",
+      "text": "انا دوست شراء ومش فاهم تم ولا لا، جرب تبعت الطلب تاني",
+      "label": "mutate",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-025",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-094",
+      "text": "el page wa2afet ba3d el shera, e3mel submit tany law sama7t",
+      "label": "mutate",
+      "language": "franco_arabic",
+      "group": "pilot2-component-025",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-095",
+      "text": "checkout froze after i clicked. submit it again? dont charge twice though",
+      "label": "mutate",
+      "language": "english",
+      "group": "pilot2-component-025",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-096",
+      "text": "الـ checkout علق، اعمل retry للـ order بس مش مرتين",
+      "label": "mutate",
+      "language": "mixed",
+      "group": "pilot2-component-025",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-097",
+      "text": "حطلي اتنين تيشيرت اسكندريه ابيض مقاس وسط في العربيه",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-026",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-098",
+      "text": "dayef Alex Tee abyad size M wa7ed lel cart",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-026",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-099",
+      "text": "add three white Alex Tees in M please, not the blue ones",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-026",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-100",
+      "text": "ضيف Alex Tee size M ابيض، واحدة بس مش ٢",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-026",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-101",
+      "text": "زود عداء النيل اللي فالسلة اتنين كمان، مش خليه اتنين",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-102",
+      "text": "Nile Runner elly fel cart khalih 4... la 3 bas",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-103",
+      "text": "one fewer Nile Runner in my basket please, keep the bag as it is",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-104",
+      "text": "خلي Nile Runner quantity ٥ إجمالي مش +5",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-105",
+      "text": "شيل حقيبة القاهرة من العربيه بس سيب الكوتشي",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-106",
+      "text": "Cairo Backpack mesh 3ayezha fel cart, sheelha heya bas",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-107",
+      "text": "remove the Cairo Backpack line please, this isnt a clear-all request",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-108",
+      "text": "امسح Cairo Backpack من cart بس، متعملش empty للكل",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-109",
+      "text": "لا رجع اخر تعديل في العربيه، كنت غلطان",
+      "label": "cart_edit",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-110",
+      "text": "ya lahwy el ta3deel el akheer ghalat, erga3 feeh",
+      "label": "cart_edit",
+      "language": "franco_arabic",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-111",
+      "text": "oops undo that last cart change please",
+      "label": "cart_edit",
+      "language": "english",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-112",
+      "text": "اعمل Undo لآخر cart edit، مش ابدأ shopping من جديد",
+      "label": "cart_edit",
+      "language": "mixed",
+      "group": "pilot2-component-001",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-113",
+      "text": "انت بتساعد في ايه هنا اصلا؟ انا اول مره اجربك",
+      "label": "help",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-007",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-114",
+      "text": "enta momken te3mel eh fel store da? mesh talab shera lesa",
+      "label": "help",
+      "language": "franco_arabic",
+      "group": "pilot2-component-007",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-115",
+      "text": "what can i actually ask you to do on this shop?",
+      "label": "help",
+      "language": "english",
+      "group": "pilot2-component-007",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-116",
+      "text": "إيه الـ features بتاعتك كمساعد؟ مش فاهم البداية",
+      "label": "help",
+      "language": "mixed",
+      "group": "pilot2-component-007",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-117",
+      "text": "انا مش بعرف اكتب طلب واضح، ابدأ كلامي معاك ازاي؟",
+      "label": "help",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-027",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-118",
+      "text": "ana batah fel kalam, aktoblak el talab ezay 3ashan tefhamny?",
+      "label": "help",
+      "language": "franco_arabic",
+      "group": "pilot2-component-027",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-119",
+      "text": "how should i phrase stuff to you? i dont know what details to include",
+      "label": "help",
+      "language": "english",
+      "group": "pilot2-component-027",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-120",
+      "text": "لو عايز اكتب request مفهوم أقول الـ details إزاي؟",
+      "label": "help",
+      "language": "mixed",
+      "group": "pilot2-component-027",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-121",
+      "text": "مش فاهم يعني ايه توضيح، المفروض ارد عليك ازاي لما تسألني؟",
+      "label": "help",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-028",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-122",
+      "text": "lama te2olly wada7 talabk a3mel eh? ana mesh fahem el system",
+      "label": "help",
+      "language": "franco_arabic",
+      "group": "pilot2-component-028",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-123",
+      "text": "when you ask me to clarify, what does that mean? explain it simply",
+      "label": "help",
+      "language": "english",
+      "group": "pilot2-component-028",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-124",
+      "text": "الـ clarification دي معناها إيه؟ عايز أفهم طريقة الرد",
+      "label": "help",
+      "language": "mixed",
+      "group": "pilot2-component-028",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-125",
+      "text": "هو ينفع اشتغل بإيدي وانت موجود ولا لازم كل حاجه اقولك عليها؟",
+      "label": "help",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-029",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-126",
+      "text": "yenfa3 astakhdem el site b nafsy wenta mawgoud? 3ayez afham bas",
+      "label": "help",
+      "language": "franco_arabic",
+      "group": "pilot2-component-029",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-127",
+      "text": "do i have to let you do everything or can i still use the shop myself?",
+      "label": "help",
+      "language": "english",
+      "group": "pilot2-component-029",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-128",
+      "text": "ينفع أعمل manual browsing معاك ولا لازم كل حاجة في chat؟",
+      "label": "help",
+      "language": "mixed",
+      "group": "pilot2-component-029",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-129",
+      "text": "ازاي اعمل مكرونه من غير صلصه؟ مش بسأل على منتج",
+      "label": "off_topic",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-030",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-130",
+      "text": "3andk taree2et 3egina pizza sahla? mesh 3ayez ashtery 7aga",
+      "label": "off_topic",
+      "language": "franco_arabic",
+      "group": "pilot2-component-030",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-131",
+      "text": "random question whats an easy omelette recipe?",
+      "label": "off_topic",
+      "language": "english",
+      "group": "pilot2-component-030",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-132",
+      "text": "قوللي recipe للبان كيك، مالوش علاقة بالـ store",
+      "label": "off_topic",
+      "language": "mixed",
+      "group": "pilot2-component-030",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-133",
+      "text": "احكيلي حكايه رعب قصيره بدل التسوق شويه",
+      "label": "off_topic",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-031",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-134",
+      "text": "3ayez nokta teDa7akny, seebak men el shera",
+      "label": "off_topic",
+      "language": "franco_arabic",
+      "group": "pilot2-component-031",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-135",
+      "text": "write a funny little poem about my cat please",
+      "label": "off_topic",
+      "language": "english",
+      "group": "pilot2-component-031",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-136",
+      "text": "رشحلي movie كوميدي لليلة، مش shopping",
+      "label": "off_topic",
+      "language": "mixed",
+      "group": "pilot2-component-031",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-137",
+      "text": "حللي مسألة اتنين س زائد خمسه يساوي تلاتتاشر",
+      "label": "off_topic",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-032",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-138",
+      "text": "fahhemny el photosynthesis 3ashan 3andy emte7an",
+      "label": "off_topic",
+      "language": "franco_arabic",
+      "group": "pilot2-component-032",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-139",
+      "text": "why does my python for loop skip every other number?",
+      "label": "off_topic",
+      "language": "english",
+      "group": "pilot2-component-032",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-140",
+      "text": "ممكن تشرحلي quadratic equation؟ عندي exam",
+      "label": "off_topic",
+      "language": "mixed",
+      "group": "pilot2-component-032",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-141",
+      "text": "الجو بكره في طنطا عامل ايه؟ مش بشتري لبس بس بسأل",
+      "label": "off_topic",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-033",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-142",
+      "text": "hayemtar bokra fel giza wala la? so2al 3an el gaw bas",
+      "label": "off_topic",
+      "language": "franco_arabic",
+      "group": "pilot2-component-033",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-143",
+      "text": "whats the forecast in Cairo this weekend? nothing to do with clothes",
+      "label": "off_topic",
+      "language": "english",
+      "group": "pilot2-component-033",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-144",
+      "text": "في rain بكرة في اسوان؟ مش محتاج product",
+      "label": "off_topic",
+      "language": "mixed",
+      "group": "pilot2-component-033",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-145",
+      "text": "دورلي على نفس السماعه في متجر تاني وابعتلي ارخص لينك بره هنا",
+      "label": "unsupported",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-034",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-146",
+      "text": "roo7 amazon w shof el se3r hnak, mesh 3ayez men el store da",
+      "label": "unsupported",
+      "language": "franco_arabic",
+      "group": "pilot2-component-034",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-147",
+      "text": "check competing shops for this item and open the cheapest external listing",
+      "label": "unsupported",
+      "language": "english",
+      "group": "pilot2-component-034",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-148",
+      "text": "اعمل price check على موقع تاني وافتحه، مش نفس store",
+      "label": "unsupported",
+      "language": "mixed",
+      "group": "pilot2-component-034",
+      "eligible": true,
+      "split": "train"
+    },
+    {
+      "case_id": "synthetic-002-149",
+      "text": "فاصل مع البايع ونزلي سعر القميص خمسين جنيه",
+      "label": "unsupported",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-035",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-150",
+      "text": "kalem el seller yekhally el se3r nos, ana mesh hadfa3 keda",
+      "label": "unsupported",
+      "language": "franco_arabic",
+      "group": "pilot2-component-035",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-151",
+      "text": "can you bargain with the seller and knock 20 percent off?",
+      "label": "unsupported",
+      "language": "english",
+      "group": "pilot2-component-035",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-152",
+      "text": "اطلب discount من التاجر مخصوص ليا وغير الـ price",
+      "label": "unsupported",
+      "language": "mixed",
+      "group": "pilot2-component-035",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-153",
+      "text": "غير ميعاد توصيل طلبي للسبت بدل بكره من عندك",
+      "label": "unsupported",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-036",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-154",
+      "text": "badal ma el talab yegy bokra khalleh youm el etneen",
+      "label": "unsupported",
+      "language": "franco_arabic",
+      "group": "pilot2-component-036",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-155",
+      "text": "reschedule my delivery for next week, i wont be home tomorrow",
+      "label": "unsupported",
+      "language": "english",
+      "group": "pilot2-component-036",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-156",
+      "text": "عدّل delivery date للجمعة، مش بس توريني orders",
+      "label": "unsupported",
+      "language": "mixed",
+      "group": "pilot2-component-036",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-157",
+      "text": "رجعلي فلوس الطلب اللي استلمته، عايز اعمل استرجاع",
+      "label": "unsupported",
+      "language": "egyptian_arabic",
+      "group": "pilot2-component-037",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-158",
+      "text": "3ayez aragga3 el product w el floos terga3ly, e3mel el refund",
+      "label": "unsupported",
+      "language": "franco_arabic",
+      "group": "pilot2-component-037",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-159",
+      "text": "start a refund for the order i already received please",
+      "label": "unsupported",
+      "language": "english",
+      "group": "pilot2-component-037",
+      "eligible": true,
+      "split": "validation"
+    },
+    {
+      "case_id": "synthetic-002-160",
+      "text": "اعمل return للطلب القديم وrefund، مش remove من cart",
+      "label": "unsupported",
+      "language": "mixed",
+      "group": "pilot2-component-037",
+      "eligible": true,
+      "split": "validation"
+    }
+  ],
+  "group_assignments": {
+    "pilot2-component-001": "train",
+    "pilot2-component-002": "train",
+    "pilot2-component-003": "train",
+    "pilot2-component-004": "train",
+    "pilot2-component-005": "train",
+    "pilot2-component-006": "train",
+    "pilot2-component-007": "train",
+    "pilot2-component-008": "train",
+    "pilot2-component-009": "train",
+    "pilot2-component-010": "validation",
+    "pilot2-component-011": "train",
+    "pilot2-component-012": "train",
+    "pilot2-component-013": "train",
+    "pilot2-component-014": "train",
+    "pilot2-component-015": "train",
+    "pilot2-component-016": "validation",
+    "pilot2-component-017": "train",
+    "pilot2-component-018": "validation",
+    "pilot2-component-019": "train",
+    "pilot2-component-020": "train",
+    "pilot2-component-021": "validation",
+    "pilot2-component-022": "train",
+    "pilot2-component-023": "train",
+    "pilot2-component-024": "validation",
+    "pilot2-component-025": "validation",
+    "pilot2-component-026": "validation",
+    "pilot2-component-027": "train",
+    "pilot2-component-028": "train",
+    "pilot2-component-029": "validation",
+    "pilot2-component-030": "train",
+    "pilot2-component-031": "train",
+    "pilot2-component-032": "validation",
+    "pilot2-component-033": "validation",
+    "pilot2-component-034": "train",
+    "pilot2-component-035": "validation",
+    "pilot2-component-036": "validation",
+    "pilot2-component-037": "validation"
+  },
+  "excluded": [
+    {
+      "case_id": "syn-ar-05",
+      "group": "pilot2-component-001",
+      "reason": "The affected product and continuation intent require the preceding cart conversation."
+    },
+    {
+      "case_id": "syn-fr-05",
+      "group": "pilot2-component-001",
+      "reason": "The current quantity and product refer to the previous turn."
+    },
+    {
+      "case_id": "syn-en-05",
+      "group": "pilot2-component-011",
+      "reason": "The product referred to as that same shirt comes from the prior turn."
+    },
+    {
+      "case_id": "syn-mx-05",
+      "group": "pilot2-component-001",
+      "reason": "This fragment identifies a variant; the remove operation exists only in the pending conversation."
+    },
+    {
+      "case_id": "gemini-001-002",
+      "group": "pilot2-component-001",
+      "reason": "Search revision needs the earlier request and unknown rejected result."
+    },
+    {
+      "case_id": "gemini-001-006",
+      "group": "pilot2-component-001",
+      "reason": "Colour-only follow-up relies on the earlier jeans request."
+    },
+    {
+      "case_id": "gemini-001-008",
+      "group": "pilot2-component-001",
+      "reason": "Fragment does not establish cart editing without the preceding add request."
+    },
+    {
+      "case_id": "gemini-001-011",
+      "group": "pilot2-component-001",
+      "reason": "Two operations cannot be faithfully scored as one primary cart operation."
+    },
+    {
+      "case_id": "gemini-001-013",
+      "group": "pilot2-component-001",
+      "reason": "Material-only revision requires the earlier dress request."
+    },
+    {
+      "case_id": "gemini-001-018",
+      "group": "pilot2-component-001",
+      "reason": "Feature-only follow-up needs the earlier hoodie request."
+    },
+    {
+      "case_id": "gemini-001-019",
+      "group": "pilot2-component-001",
+      "reason": "Availability question has an unresolved product and advice/search boundary needing adjudication."
+    },
+    {
+      "case_id": "gemini-001-021",
+      "group": "pilot2-component-001",
+      "reason": "Submission plus unsupported cash-on-delivery requirement is compound."
+    },
+    {
+      "case_id": "gemini-001-024",
+      "group": "pilot2-component-001",
+      "reason": "Order wording leaves cart removal versus unsupported placed-order amendment unresolved."
+    },
+    {
+      "case_id": "gemini-001-025",
+      "group": "pilot2-component-001",
+      "reason": "Guarded submission plus unsupported external messaging."
+    },
+    {
+      "case_id": "gemini-001-027",
+      "group": "pilot2-component-001",
+      "reason": "Feature-only search revision relies on prior request and absent result."
+    },
+    {
+      "case_id": "gemini-001-031",
+      "group": "pilot2-component-001",
+      "reason": "Material-only follow-up requires the preceding sweatpants request."
+    },
+    {
+      "case_id": "gemini-001-036",
+      "group": "pilot2-component-001",
+      "reason": "Size-change fragment needs prior cart context and capability adjudication."
+    },
+    {
+      "case_id": "gemini-001-040",
+      "group": "pilot2-component-001",
+      "reason": "Colour-only follow-up depends on absent product and earlier pack request."
+    },
+    {
+      "case_id": "gemini-001-043",
+      "group": "pilot2-component-001",
+      "reason": "Submission plus unsupported cash-on-delivery requirement."
+    },
+    {
+      "case_id": "gemini-001-045",
+      "group": "pilot2-component-003",
+      "reason": "Material-only revision needs the preceding bag request."
+    },
+    {
+      "case_id": "gemini-001-049",
+      "group": "pilot2-component-001",
+      "reason": "Shape-only follow-up needs earlier shoe constraints."
+    },
+    {
+      "case_id": "gemini-001-050",
+      "group": "pilot2-component-001",
+      "reason": "Submission plus unspecified message-delivery request."
+    },
+    {
+      "case_id": "gemini-001-052",
+      "group": "pilot2-component-001",
+      "reason": "Brand revision needs the earlier search; alternative-brand scope requires semantic review."
+    },
+    {
+      "case_id": "gemini-001-056",
+      "group": "pilot2-component-001",
+      "reason": "Print-only revision relies on preceding T-shirt search."
+    },
+    {
+      "case_id": "gemini-001-061",
+      "group": "pilot2-component-001",
+      "reason": "Two requested operations cannot be scored as one primary cart operation."
+    },
+    {
+      "case_id": "gemini-001-065",
+      "group": "pilot2-component-001",
+      "reason": "Feature-only follow-up needs earlier hoodie constraints."
+    },
+    {
+      "case_id": "gemini-001-068",
+      "group": "pilot2-component-001",
+      "reason": "Navigation plus unsupported cash-on-delivery selection."
+    },
+    {
+      "case_id": "gemini-001-070",
+      "group": "pilot2-component-001",
+      "reason": "Fit-only follow-up needs the earlier shirt request."
+    },
+    {
+      "case_id": "gemini-001-075",
+      "group": "pilot2-component-001",
+      "reason": "Ambiguous checkout clause plus unsupported conditional coupon application."
+    },
+    {
+      "case_id": "gemini-001-077",
+      "group": "pilot2-component-001",
+      "reason": "Colour-only follow-up depends on earlier hoodie request."
+    },
+    {
+      "case_id": "gemini-001-081",
+      "group": "pilot2-component-001",
+      "reason": "Brand/price revision needs the prior shoe search."
+    },
+    {
+      "case_id": "gemini-001-083",
+      "group": "pilot2-component-001",
+      "reason": "Fragment requires earlier cart quantity context to distinguish line removal from quantity correction."
+    },
+    {
+      "case_id": "gemini-001-086",
+      "group": "pilot2-component-001",
+      "reason": "Supported navigation plus unsupported variant change, not one classifier target."
+    },
+    {
+      "case_id": "gemini-001-090",
+      "group": "pilot2-component-001",
+      "reason": "Product/colour-only follow-up needs previous search and absent result."
+    },
+    {
+      "case_id": "gemini-001-093",
+      "group": "pilot2-component-001",
+      "reason": "Guarded submission plus unsupported cash-on-delivery choice."
+    },
+    {
+      "case_id": "gemini-001-095",
+      "group": "pilot2-component-001",
+      "reason": "Sleeve-only revision needs the earlier dress search."
+    },
+    {
+      "case_id": "gemini-001-098",
+      "group": "pilot2-component-001",
+      "reason": "Compound unsupported cancellation/restoration request has no single supported operation target."
+    },
+    {
+      "case_id": "synthetic-002-161",
+      "group": "pilot2-component-001",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-162",
+      "group": "pilot2-component-001",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-163",
+      "group": "pilot2-component-001",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-164",
+      "group": "pilot2-component-001",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-165",
+      "group": "pilot2-component-026",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-166",
+      "group": "pilot2-component-026",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-167",
+      "group": "pilot2-component-026",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    },
+    {
+      "case_id": "synthetic-002-168",
+      "group": "pilot2-component-026",
+      "reason": "Fragment needs the explicit antecedent; exclude from message-only intent classification."
+    }
+  ],
+  "limitations": [
+    "Exposed synthetic development only; new examples authored after pilot1",
+    "Bounded overlap review, not exhaustive private-history deduplication",
+    "Three mutation components; authoring four-family target explicitly revised",
+    "Final unseen evaluation and LLM comparison remain open"
+  ],
+  "group_map": "eval/datasets/capstone-v1/pilot-20261007/groups.json"
+}

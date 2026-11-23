@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-28",
+  "owner_approved_focused_credit_ceiling_usd": "0.15",
+  "readiness_reserve_unchanged_usd": "0.10",
+  "zero_live_model_posts": true,
+  "new_provider_status_gets": 0,
+  "private_operator_tests_passed": 48,
+  "source_review": "one fresh review; important recovery findings fixed with failing then passing tests including real synthetic DynamoLifecycle",
+  "native_signed_generation": 2,
+  "earlier_signed_generation_refused": 1,
+  "synthetic_retained_generation_fixture_only": true,
+  "native_result": {
+    "synthetic_only": true,
+    "real_aws_calls": 0,
+    "real_model_posts": 0,
+    "python": "3.12.14",
+    "lanes": [
+      {
+        "mode": "control",
+        "cohorts": [
+          {
+            "requested": 1,
+            "completed": 1,
+            "inference_busy": 0,
+            "elapsed_seconds": 0.179928
+          },
+          {
+            "requested": 5,
+            "completed": 5,
+            "inference_busy": 0,
+            "elapsed_seconds": 0.532507
+          },
+          {
+            "requested": 8,
+            "completed": 8,
+            "inference_busy": 0,
+            "elapsed_seconds": 0.840916
+          }
+        ],
+        "requests": 126,
+        "uncertain_preserved": true
+      },
+      {
+        "mode": "captured",
+        "cohorts": [
+          {
+            "requested": 1,
+            "completed": 1,
+            "inference_busy": 0,
+            "elapsed_seconds": 1.92885
+          },
+          {
+            "requested": 5,
+            "completed": 5,
+            "inference_busy": 0,
+            "elapsed_seconds": 6.823332
+          },
+          {
+            "requested": 8,
+            "completed": 5,
+            "inference_busy": 3,
+            "elapsed_seconds": 8.049209
+          }
+        ],
+        "requests": 140,
+        "uncertain_preserved": true
+      }
+    ],
+    "request_accounting": {
+      "calls": 8805,
+      "observed_wru": 648,
+      "observed_rru": 9614,
+      "observed_sdk_wire_bytes": 26072646,
+      "maximum_encoded_row": 1129,
+      "bounded_wru": 2320,
+      "bounded_rru": 16469,
+      "bounded_table_bytes": 79306,
+      "bounded_regional_sdk_wire_bytes": 52145292,
+      "bounded_internet_output_bytes": 16777216
+    },
+    "passed": true
+  },
+  "pricing": {
+    "verified": true,
+    "checked_epoch": 1793197676.0238106,
+    "conservative_bound_usd": "0.142404",
+    "ceiling_usd": "0.15",
+    "aws_account_requests": 0,
+    "official_sources": [
+      "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/eu-north-1/index.csv",
+      "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonVPC/current/eu-north-1/index.json",
+      "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonDynamoDB/current/eu-north-1/index.json"
+    ]
+  },
+  "cloud_entry": "blocked until prior clean normal completion receipt and actual stopped generation1",
+  "focused_actual_host_execution": false,
+  "operator_source_sha256_offline_only": {
+    "focused_session.py": "08f6bfbd163a72507ee69f1c9d892a5a820538d0917852643c760e80f2369768",
+    "focused_guest.py": "1c17be389ee441673a1145c81bc4b5528c7cc135b0fe1c54881531e3ff5c0188",
+    "focused_reset.py": "560045d86e3eebe5bc909fa5c333bf63fd5d4b1b4d01e7f371277d8ed49cea52",
+    "guest.py": "5d0f132c4ce2e30ed68f9d423b40e8d62078f1db61b7e09ef3fa7576b85d5647",
+    "session.py": "7a0c2a83f5e702eb1907cbfb526ece0cb059016887f0a20e3e6b4c724b25fdf9",
+    "cloud_operation.py": "7bb548cb5cccab185831ef0a9be38b51ba1434ff63bc96ab6b724821684e77c6"
+  }
+}

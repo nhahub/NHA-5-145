@@ -1,0 +1,2292 @@
+[
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-01",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["typo", "negation", "budget", "size"],
+    "input": {
+      "message": "عايز كوتش جري مقاس ٤٢ لحد ١٨٠٠ جنييه ومش جلد خالص",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "find_products",
+      "constraints": {
+        "category": "shoes",
+        "product_type": "running",
+        "size": "42",
+        "max_price": {
+          "amount": "1800",
+          "currency": "EGP"
+        }
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [
+        {
+          "kind": "feature",
+          "value": "leather",
+          "excluded": true,
+          "source": "مش جلد خالص"
+        }
+      ],
+      "semantic_notes": "Upper price bound is inclusive; leather is an exclusion, not a soft preference."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-running-no-leather",
+      "conversation_group_id": "conv-syn-ar-01",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-02",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["styling", "owned_item", "opinion"],
+    "input": {
+      "message": "عندي بنطلون اسود.. رايك البس عليه لون ايه لو رايح عزومه؟",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "advice",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Black describes an owned pair of trousers, not a mandatory purchase colour. Styling opinion must be distinguished from product facts."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-outfit-colour",
+      "conversation_group_id": "conv-syn-ar-02",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-03",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["negation", "navigation"],
+    "input": {
+      "message": "وديني لحسابي بقا مش صفحة الاوردرات",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "navigate",
+      "constraints": {
+        "target": "account"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-account-nav",
+      "conversation_group_id": "conv-syn-ar-03",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-04",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["quantity", "multi_product", "typo"],
+    "input": {
+      "message": "القميص الرسمي الابيض لارج زود عليه تلاته كمان، سيب الكوتشي زي مهو",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/ar-cart-before.json",
+      "context_sha256": "7610521803d8c538eccbe929fb8407b8df144a6eeab30d9e57b34b71333c408a",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05~L~white"],
+      "quantity_mode": "increase",
+      "quantity": 3,
+      "cart_operation": "quantity",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Current quantity 2 becomes 5. Preserve shoe line."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shirt-quantity",
+      "conversation_group_id": "conv-ar-shirt-correction",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-05",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["correction", "reference", "quantity"],
+    "input": {
+      "message": "لا لا انا قصدي يبقو تلاته كلهم مش تزود تلاته",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/ar-cart-after.json",
+      "context_sha256": "155138872d86635152e7edd66a16ba007b60d32f7ed9f6283894fad17b615465",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05~L~white"],
+      "quantity_mode": "set",
+      "quantity": 3,
+      "cart_operation": "quantity",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Correct the same shirt line to total 3; do not apply another increase."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shirt-quantity",
+      "conversation_group_id": "conv-ar-shirt-correction",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": false,
+      "eligibility_reason": "The affected product and continuation intent require the preceding cart conversation."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-06",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["negation", "guarded_mutation"],
+    "input": {
+      "message": "فضي السله كلها خلاص مش عايز حاجه منها",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/cart-for-clear.json",
+      "context_sha256": "191e6d1fa56c4d835e8444ee7d0796fa82a6c6aceca3354f873a6d89e1f54194",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "mutate",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": "clear_cart",
+      "catalogue_requirements": [],
+      "semantic_notes": "Requires fresh bound Confirmation. Natural-language instruction is not a confirmation token."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-clear-cart",
+      "conversation_group_id": "conv-syn-ar-06",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-07",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["negation", "spotlight"],
+    "input": {
+      "message": "وريني زرار الدفع فين بس متدوسش عليه",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "locate",
+      "constraints": {
+        "target": "checkout"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Spotlight only; no checkout activation or submission."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-locate-checkout",
+      "conversation_group_id": "conv-syn-ar-07",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-08",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["capability_question"],
+    "input": {
+      "message": "هو انت بتساعدني ف ايه هنا اصلا؟",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "help",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-help-capabilities",
+      "conversation_group_id": "conv-syn-ar-08",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-09",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["unsupported_delivery"],
+    "input": {
+      "message": "ابعتلي الاوردر مع مندوب بعد نص الليل النهارده",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "unsupported",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Scheduling real delivery is outside the controlled fictional Storefront; do not promise fulfilment."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-delivery-scheduling",
+      "conversation_group_id": "conv-syn-ar-09",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-ar-10",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "egyptian_arabic",
+    "script": "arabic",
+    "scenario_tags": ["off_topic"],
+    "input": {
+      "message": "اكتبلي رساله اعتذار لصاحبي بعيد عن حوار الشرا ده",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "off_topic",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-nonshopping-writing",
+      "conversation_group_id": "conv-syn-ar-10",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-01",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["correction", "budget", "size"],
+    "input": {
+      "message": "3ayz t shirt size M max 700 geneh, mesh 1700 ana katabt ghalt",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "find_products",
+      "constraints": {
+        "category": "clothing",
+        "product_type": "tops",
+        "size": "M",
+        "max_price": {
+          "amount": "700",
+          "currency": "EGP"
+        },
+        "query": "t-shirt"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Final budget 700 EGP overrides the explicitly rejected 1700. Catalogue type is tops; the query preserves the narrower T-shirt request."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-tshirt-budget-correction",
+      "conversation_group_id": "conv-syn-fr-01",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-02",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["comparison", "price_tradeoff"],
+    "input": {
+      "message": "el Nile Runner wala Quick Step? far2 el se3r yestahl leh aslan",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/comparison.json",
+      "context_sha256": "a27195d44917e1f9cc3fdabd58e8fc4789da3e27274c0d09cc018fdf30016161",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "advice",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01", "shoe-02"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Discuss verified facts/prices; unknown durability or comfort cannot become claims."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shoe-comparison",
+      "conversation_group_id": "conv-syn-fr-02",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-03",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["navigation"],
+    "input": {
+      "message": "efta7 saf7et el 7esab beta3y 3ashan ashofha",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "navigate",
+      "constraints": {
+        "target": "account"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-account-nav",
+      "conversation_group_id": "conv-syn-fr-03",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-04",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["quantity", "variant"],
+    "input": {
+      "message": "el Nile Runner el aswd 42 na2as meno wa7ed bs",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/fr-cart-before.json",
+      "context_sha256": "9e41d4a7dcb10c2fe0b6abbe854eb137caacf06e2274ae6d3ef3b5610aa09986",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01~42~black"],
+      "quantity_mode": "decrease",
+      "quantity": 1,
+      "cart_operation": "quantity",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Current 4 becomes 3; do not set total to 1."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-runner-quantity",
+      "conversation_group_id": "conv-fr-runner-correction",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-05",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["correction", "quantity", "reference"],
+    "input": {
+      "message": "estana khalihom 2 fel a5er, ana etla5bat",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/fr-cart-after.json",
+      "context_sha256": "e8347adf1b19e147fbd4ae70542f03d900b6164051820aef4a5aeb6b2457a94b",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01~42~black"],
+      "quantity_mode": "set",
+      "quantity": 2,
+      "cart_operation": "quantity",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-runner-quantity",
+      "conversation_group_id": "conv-fr-runner-correction",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": false,
+      "eligibility_reason": "The current quantity and product refer to the previous turn."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-06",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["negation", "product_navigation"],
+    "input": {
+      "message": "el Formal Shirt eft7ly saf7to bas mat7otosh fel 3arabeya",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/en-known-shirt.json",
+      "context_sha256": "fb8ab336e1ecdefc7d243f931406c490c3a2c0cca3ff7bd9013b5ed3380457d2",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "open_product",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Open page only; no add-to-cart."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-formal-shirt-page",
+      "conversation_group_id": "conv-syn-fr-06",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-07",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["add", "reference", "variant"],
+    "input": {
+      "message": "7ot el kootsh da fel 3arabeya 2, el aswd ma2as 42",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/product-add.json",
+      "context_sha256": "f1daabca6bed3015ecc3074089e640cc6fcc2041802b201dbaa4a0818133781b",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {
+        "size": "42",
+        "color": "black"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01"],
+      "quantity_mode": "set",
+      "quantity": 2,
+      "cart_operation": "add",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Current product shoe-01. Target here is semantic product identity, not a DOM button ID."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-runner-add",
+      "conversation_group_id": "conv-syn-fr-07",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-08",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["undo", "reference"],
+    "input": {
+      "message": "la2 ragga3 el 7aga elly sheltha delwa2ty",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/remove-then-undo.json",
+      "context_sha256": "1bec6c85bbedf4022890c86b10d2895d48e5298d6ca7c1390d76ebad20c10406",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05~L~white"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": "undo",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Restore exact saved line within original Undo deadline."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-undo-removal",
+      "conversation_group_id": "conv-syn-fr-08",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-09",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["guarded_mutation"],
+    "input": {
+      "message": "faddy kol el cart wana habda2 mn awel w gdeed",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/cart-for-clear.json",
+      "context_sha256": "191e6d1fa56c4d835e8444ee7d0796fa82a6c6aceca3354f873a6d89e1f54194",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "mutate",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": "clear_cart",
+      "catalogue_requirements": [],
+      "semantic_notes": "Offer Confirmation; do not clear automatically."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-clear-cart",
+      "conversation_group_id": "conv-syn-fr-09",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-fr-10",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "franco_arabic",
+    "script": "latin",
+    "scenario_tags": ["spotlight"],
+    "input": {
+      "message": "howa feen el checkout? wareny el zorar bs",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "locate",
+      "constraints": {
+        "target": "checkout"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-locate-checkout",
+      "conversation_group_id": "conv-syn-fr-10",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-01",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["budget", "negation"],
+    "input": {
+      "message": "need a backpack max 950 egp for uni, no leather pls",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "find_products",
+      "constraints": {
+        "category": "bags",
+        "product_type": "backpack",
+        "max_price": {
+          "amount": "950",
+          "currency": "EGP"
+        }
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [
+        {
+          "kind": "feature",
+          "value": "leather",
+          "excluded": true,
+          "source": "no leather"
+        }
+      ],
+      "semantic_notes": "University is purpose/context. Do not invent verified laptop capacity or durability."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-bag-no-leather",
+      "conversation_group_id": "conv-syn-en-01",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-02",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["uncertainty", "reference"],
+    "input": {
+      "message": "would these running shoes actually be comfy standing all day or is that a guess?",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/comparison.json",
+      "context_sha256": "a27195d44917e1f9cc3fdabd58e8fc4789da3e27274c0d09cc018fdf30016161",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "advice",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01", "shoe-02"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Standing-all-day comfort is unverified in the supplied catalogue; acknowledge uncertainty."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shoe-comfort",
+      "conversation_group_id": "conv-syn-en-02",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-03",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["orders", "navigation"],
+    "input": {
+      "message": "take me to my orders, newest one first if u can",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "navigate",
+      "constraints": {
+        "target": "orders"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Orders navigation/newest-order guidance; hand back login if needed."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-orders-nav",
+      "conversation_group_id": "conv-syn-en-03",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-04",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["negation", "product_navigation"],
+    "input": {
+      "message": "open the Formal Shirt page pls, dont add it",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/en-known-shirt.json",
+      "context_sha256": "fb8ab336e1ecdefc7d243f931406c490c3a2c0cca3ff7bd9013b5ed3380457d2",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "open_product",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-formal-shirt-page",
+      "conversation_group_id": "conv-en-shirt-return",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-05",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["reference", "followup"],
+    "input": {
+      "message": "actually back to that same shirt page, lost it",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/en-return-shirt.json",
+      "context_sha256": "58c834e0821cbc21514e6f71090557a860766fdd62700e801cab161f499d6e4e",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "open_product",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-formal-shirt-page",
+      "conversation_group_id": "conv-en-shirt-return",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": false,
+      "eligibility_reason": "The product referred to as that same shirt comes from the prior turn."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-06",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["negation", "multi_variant", "remove"],
+    "input": {
+      "message": "remove just the white Formal Shirt in L, leave the grey one",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/mix-cart-ambiguous.json",
+      "context_sha256": "fa013db437185e7b4037f3ff4e0e5cf2fea1df93581468c724f2a594ee2f7f3d",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05~L~white"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": "remove",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Unambiguous variant; preserve grey line."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shirt-remove-variant",
+      "conversation_group_id": "conv-syn-en-06",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-07",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["guarded_mutation", "checkout"],
+    "input": {
+      "message": "ok place the order now, ive filled the payment bit myself",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/checkout-ready.json",
+      "context_sha256": "7d403825acc0c61edd4fe0212fcdec74daa7074f3050c2ebcdb08487070e265e",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "mutate",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": "submit_checkout",
+      "catalogue_requirements": [],
+      "semantic_notes": "Still require fresh bound Confirmation; do not read or enter payment values."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-submit-checkout",
+      "conversation_group_id": "conv-syn-en-07",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-08",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["unsupported_payment"],
+    "input": {
+      "message": "can u split the payment over 6 months? thats the only way i can buy",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "unsupported",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Real instalment finance is unsupported; no invented payment options."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-installments",
+      "conversation_group_id": "conv-syn-en-08",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-09",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["capability_question"],
+    "input": {
+      "message": "uh what can you do in this shop? im lost",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "help",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-help-capabilities",
+      "conversation_group_id": "conv-syn-en-09",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-en-10",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "english",
+    "script": "latin",
+    "scenario_tags": ["correction", "budget", "size"],
+    "input": {
+      "message": "find shirts size XL under 1k egp.. actually up to 1200 is fine",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "find_products",
+      "constraints": {
+        "category": "clothing",
+        "product_type": "shirts",
+        "size": "XL",
+        "max_price": {
+          "amount": "1200",
+          "currency": "EGP"
+        }
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Final inclusive ceiling 1200 EGP. Earlier 1000 is superseded."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shirt-budget",
+      "conversation_group_id": "conv-syn-en-10",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-01",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "negation", "budget"],
+    "input": {
+      "message": "عايز running shoes size 41 لحد ١٦٠٠ egp، مش leather بليز",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "find_products",
+      "constraints": {
+        "category": "shoes",
+        "product_type": "running",
+        "size": "41",
+        "max_price": {
+          "amount": "1600",
+          "currency": "EGP"
+        }
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [
+        {
+          "kind": "feature",
+          "value": "leather",
+          "excluded": true,
+          "source": "مش leather"
+        }
+      ],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-running-no-leather",
+      "conversation_group_id": "conv-syn-mx-01",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-02",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "comparison"],
+    "input": {
+      "message": "ال Quick Step اغلى من Nile Runner ليه؟ قوللي tradeoff بجد مش كلام بيع",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/comparison.json",
+      "context_sha256": "a27195d44917e1f9cc3fdabd58e8fc4789da3e27274c0d09cc018fdf30016161",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "advice",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01", "shoe-02"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Ground price tradeoff in supplied product facts; do not invent quality differences."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shoe-comparison",
+      "conversation_group_id": "conv-syn-mx-02",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-03",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "navigation"],
+    "input": {
+      "message": "افتحلي cart دلوقتي خليني اشوف اللي فيه",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "navigate",
+      "constraints": {
+        "target": "cart"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-cart-nav",
+      "conversation_group_id": "conv-syn-mx-03",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-04",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "ambiguity", "multi_variant"],
+    "input": {
+      "message": "شيل ال shirt من cart بس، الباقي سيبه",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/mix-cart-ambiguous.json",
+      "context_sha256": "fa013db437185e7b4037f3ff4e0e5cf2fea1df93581468c724f2a594ee2f7f3d",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": true,
+      "clarification_fields": ["target"],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": "remove",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Two shirt variants exist. Ask which one; neither line is authorized for removal yet."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shirt-remove-variant",
+      "conversation_group_id": "conv-mx-remove-clarification",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-05",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "clarification", "negation"],
+    "input": {
+      "message": "ال white size L مش ال gray",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/mix-cart-answer.json",
+      "context_sha256": "31d549d967328166e32adef17d42b0f00a0888b3b2a19092ae6b7e26f0abfb14",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["clothing-05~L~white"],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": "remove",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Resolve pending removal to white L; preserve grey."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-shirt-remove-variant",
+      "conversation_group_id": "conv-mx-remove-clarification",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": false,
+      "eligibility_reason": "This fragment identifies a variant; the remove operation exists only in the pending conversation."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-06",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "negation", "quantity"],
+    "input": {
+      "message": "زود quantity بتاع Nile Runner الاسود 42 بمقدار ٢ مش تخلي التوتال ٢",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/fr-cart-before.json",
+      "context_sha256": "9e41d4a7dcb10c2fe0b6abbe854eb137caacf06e2274ae6d3ef3b5610aa09986",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01~42~black"],
+      "quantity_mode": "increase",
+      "quantity": 2,
+      "cart_operation": "quantity",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "From 4 to 6, not set-to-2."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-runner-quantity",
+      "conversation_group_id": "conv-syn-mx-06",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-07",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "add", "variant"],
+    "input": {
+      "message": "ده size 42 black؟ تمام add to cart واحد بس",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/product-add.json",
+      "context_sha256": "f1daabca6bed3015ecc3074089e640cc6fcc2041802b201dbaa4a0818133781b",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "cart_edit",
+      "constraints": {
+        "size": "42",
+        "color": "black"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": ["shoe-01"],
+      "quantity_mode": "set",
+      "quantity": 1,
+      "cart_operation": "add",
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Current selected variant matches. No product substitution."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-runner-add",
+      "conversation_group_id": "conv-syn-mx-07",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-08",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "spotlight", "negation"],
+    "input": {
+      "message": "فين checkout button؟ highlight بس انا لسه براجع",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "locate",
+      "constraints": {
+        "target": "checkout"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": ""
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-locate-checkout",
+      "conversation_group_id": "conv-syn-mx-08",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-09",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "negation", "guarded_mutation"],
+    "input": {
+      "message": "اعمل clear cart كله مش remove لقطعه واحده",
+      "followup_turns": [],
+      "sanitized_context_reference": "eval/datasets/capstone-v1/development/contexts/cart-for-clear.json",
+      "context_sha256": "191e6d1fa56c4d835e8444ee7d0796fa82a6c6aceca3354f873a6d89e1f54194",
+      "requires_context": true
+    },
+    "expected": {
+      "intent": "mutate",
+      "constraints": {},
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": "clear_cart",
+      "catalogue_requirements": [],
+      "semantic_notes": "Clear all requires Confirmation despite the explicit wording."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-clear-cart",
+      "conversation_group_id": "conv-syn-mx-09",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Explicit top-level capability is in this message; contextual entity resolution is scored separately."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  },
+  {
+    "record_format_version": 2,
+    "template_only": false,
+    "eligible_for_evaluation": false,
+    "case_id": "syn-mx-10",
+    "dataset_version": "capstone-v1-draft",
+    "provenance": {
+      "source_category": "synthetic",
+      "source_reference": "owner-request-synthetic40-20261002",
+      "author_id": "synthetic-batch001",
+      "created_on": "2026-10-02",
+      "permission_reference": "owner-authorized-generation-20261002-not-participant-data",
+      "prior_exposure": "exposed"
+    },
+    "language_group": "mixed",
+    "script": "mixed",
+    "scenario_tags": ["code_switch", "budget", "size"],
+    "input": {
+      "message": "عايز tshirt size L وال budget ٦٥٠ جنيه max، spelling عندي بايظ معلش",
+      "followup_turns": [],
+      "sanitized_context_reference": null,
+      "context_sha256": null,
+      "requires_context": false
+    },
+    "expected": {
+      "intent": "find_products",
+      "constraints": {
+        "category": "clothing",
+        "product_type": "tops",
+        "size": "L",
+        "max_price": {
+          "amount": "650",
+          "currency": "EGP"
+        },
+        "query": "t-shirt"
+      },
+      "needs_clarification": false,
+      "clarification_fields": [],
+      "acceptable_targets": [],
+      "quantity_mode": null,
+      "quantity": null,
+      "cart_operation": null,
+      "mutation_kind": null,
+      "catalogue_requirements": [],
+      "semantic_notes": "Keep final explicit constraints; no inference of brand or material. Catalogue type is tops; the query preserves the narrower T-shirt request."
+    },
+    "grouping": {
+      "paraphrase_group_id": "family-tshirt-budget-correction",
+      "conversation_group_id": "conv-syn-mx-10",
+      "split": null,
+      "duplicate_review": "pending_semantic_review"
+    },
+    "comparison": {
+      "intent_only_eligible": true,
+      "eligibility_reason": "Self-contained top-level capability under the fixed Storefront task definition."
+    },
+    "annotation": {
+      "annotator_id": "synthetic-batch001",
+      "reviewer_id": null,
+      "status": "draft_unreviewed",
+      "disagreements": [],
+      "resolution": null
+    }
+  }
+]

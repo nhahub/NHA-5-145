@@ -1,0 +1,8 @@
+[Unit]
+Description=Shopping Copilot controlled host services
+Wants=shopping-copilot-store.service shopping-copilot-agent.service shopping-copilot-proxy.service
+Conflicts=shopping-copilot.service
+After=shopping-copilot.service
+
+[Install]
+WantedBy=multi-user.target

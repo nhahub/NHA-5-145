@@ -1,0 +1,51 @@
+{
+  "v": 1,
+  "date": "2026-10-21",
+  "base_commit": "8eb1bc4",
+  "scope": "CAP-06 remote invitation adapter; offline and disconnected from active factories",
+  "files_sha256": {
+    "agent/admission/dynamodb.py": "e166eb1fd9d7272f137fe7a21be2cc17adb824611cd290b5e6bb359f89df7a13",
+    "agent/tests/test_admission_dynamodb.py": "7b0b1c03e333df0aad3ab735d96769241e0c248ac0f34dfbf6166d66ce6e07cc",
+    "eval/requirements-cloud.txt": "c76e499d541f0c109e53f3a54359e7de93ca592c52edf05701dd08aca13ecea8"
+  },
+  "offline_backend": "Moto5.2.4, mocked DynamoDB via Boto3 dummy credentials",
+  "new_adapter_checks": {
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 11.21
+  },
+  "final_focused_and_rebuild": {
+    "passed": 99,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 39.96,
+    "includes": "remote/local admission, HTTP/limits/model boundaries, lifecycle, inference allowance/runtime, final self-contained release build"
+  },
+  "release_proxy_before_final_status_fix": {
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 148.42
+  },
+  "review": {
+    "initial_findings": 1,
+    "finding": "Malformed queried status row could masquerade as healthy invitation",
+    "regression_observed_red": true,
+    "resolved": true,
+    "independent_recheck_passed": 2,
+    "independent_recheck_deselected": 38
+  },
+  "live_aws_api_calls": 0,
+  "paid_model_calls": 0,
+  "active_backend_changed": false,
+  "resources_created": false,
+  "dns_writes": 0,
+  "cloud_acceptance_passed": false,
+  "limitations": [
+    "Emulator does not establish real IAM, cloud transaction conflicts, latency, costs or durability.",
+    "No remote lifecycle/EC2 command or Lambda/OAC integration yet.",
+    "Runtime factories still use existing local authority; no backend activation.",
+    "Existing Bedrock quota and infrastructure acceptance gates remain open."
+  ]
+}

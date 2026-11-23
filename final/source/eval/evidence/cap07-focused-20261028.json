@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-28",
+  "status": "captured_load_abort_unresolved_compute_safe",
+  "credit_ceiling_usd": "0.15",
+  "cash_usd": "0",
+  "free_plan_verified": true,
+  "conservative_incremental_credit_estimate_usd": "0.017384",
+  "final_billing_measurement": false,
+  "prior_authority_clean_completion": {
+    "finished": true,
+    "generation": 1,
+    "authority_state": "stopped",
+    "epoch": 1793198446.3494473
+  },
+  "start_used": true,
+  "guest_reboots": 0,
+  "started_epoch": 1793198758.5986173,
+  "fixed_end_epoch": 1793213158,
+  "compute_safe": {
+    "original_stopped": true,
+    "eip_released": true,
+    "utc": "2026-10-28T14:50:42.392095+00:00"
+  },
+  "fresh_final_safety": {
+    "stopped": true,
+    "public_ip_absent": true,
+    "operation_eips": 0,
+    "authority_state": "unhealthy",
+    "generation": 2,
+    "teardown_errors": []
+  },
+  "guest_cleanup": {
+    "guest_cleanup": true,
+    "ledger_disabled": true,
+    "apps_disabled": true,
+    "safe_guard_restored": true
+  },
+  "readiness_generation": 2,
+  "readiness": {
+    "signed_ready": true,
+    "wrong_generation_refused": true,
+    "wrong_key_refused": true,
+    "stale_response_refused": true,
+    "unsigned_response_refused": true
+  },
+  "actual_isolation": {
+    "actual_role_namespace_read": true,
+    "wrong_namespace_denied": true,
+    "model_egress_denied": true
+  },
+  "capture_startup": {
+    "capture_cannot_open_real_custody": true,
+    "signed_capture_ready": true
+  },
+  "captured_load_passed": false,
+  "captured_abort_cause": "Unknown; detailed driver stderr/samples/result retained on root; late SSH retrieval missed stop",
+  "driver_diagnostics_recovered": false,
+  "live_model_posts": 0,
+  "new_provider_status_gets": 0,
+  "canonical_uploaded_or_reset": false,
+  "preexecution_private_tests": 49,
+  "postabort_diagnostic_tests": 50,
+  "postabort_diagnostic_change_deployed": false,
+  "authority_finish": {
+    "pending": false,
+    "not_before": 1793202570.6503828,
+    "finite_local_worker": true,
+    "no_cloud_compute": true,
+    "complete_receipt": {
+      "finished": true,
+      "generation": 2,
+      "authority_state": "stopped",
+      "epoch": 1793202646.3866498
+    }
+  },
+  "protected_pointer": ".scratch/cap07-controlled-host-preparation/focused-operation.txt",
+  "deployed_operator_source_sha256": {
+    "guest.py": "5d0f132c4ce2e30ed68f9d423b40e8d62078f1db61b7e09ef3fa7576b85d5647",
+    "focused_guest.py": "1c17be389ee441673a1145c81bc4b5528c7cc135b0fe1c54881531e3ff5c0188",
+    "focused_reset.py": "e69736475f2501cbb84a43f3be95e3dd9b579abcf1b7f68c1ebbc1b28d1e7f11"
+  },
+  "new_start_authorized": false
+}

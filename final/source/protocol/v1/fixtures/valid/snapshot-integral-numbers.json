@@ -1,0 +1,21 @@
+{
+  "v": 1,
+  "url": "http://localhost:4000/products",
+  "title": "Products",
+  "lang": "en",
+  "viewport": {
+    "w": 390.0,
+    "h": 844.0,
+    "scrollY": 0.0
+  },
+  "truncated": false,
+  "elements": [
+    {
+      "id": 12.0,
+      "role": "heading",
+      "name": "Products",
+      "visible": true,
+      "level": 1.0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "intake_version": 1,
+  "status": "unmapped_unreviewed",
+  "recorded_on": "2026-10-02",
+  "source_category": "synthetic",
+  "generator": "Gemini, as confirmed by the owner",
+  "source_reference": "owner-supplied-gemini-code-1790943979936.json",
+  "original_file": "eval/datasets/capstone-v1/development/intake/gemini-batch-001.original.json.txt",
+  "sha256_original_bytes": "0dd0b3d788dbb59e75373bd92b1d2e3a868e6aa8de103fb7acffa55509298ea7",
+  "exposure": "exposed",
+  "eligible_for_unseen": false,
+  "eligible_for_training": false,
+  "permission_reference": "owner-provided-synthetic-file-20261002",
+  "record_count": 100,
+  "language_counts": {
+    "ar-EG": 25,
+    "franco": 25,
+    "en": 25,
+    "mixed": 25
+  },
+  "source_label_counts": {
+    "search_product": 20,
+    "filter_negation": 17,
+    "product_advice": 17,
+    "add_to_cart": 15,
+    "update_cart_quantity": 5,
+    "remove_from_cart": 7,
+    "view_cart": 4,
+    "clear_cart": 4,
+    "checkout": 8,
+    "update_cart_item": 2,
+    "cancel_order": 1
+  },
+  "conversation_group_count": 28,
+  "exact_unique_text_count": 100,
+  "review_status": "structural_inspection_only",
+  "missing": [
+    "canonical_intent_mapping",
+    "explicit_constraints_and_exclusions",
+    "cart_operation_and_quantity_mode",
+    "sanitized_product_cart_assistant_context",
+    "cross_language_paraphrase_groups",
+    "independent_label_review",
+    "frozen_splits"
+  ],
+  "original_labels_are_not_gold": true
+}

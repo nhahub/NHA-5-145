@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "date": "2026-10-27",
+  "approved_proposal_commit": "b898b12",
+  "preparation_commit": "aeb1ec7",
+  "status": "acceptance_incomplete_session_closed_safe",
+  "cloud_started_utc": "2026-10-27T20:07:32.758057+00:00",
+  "hard_end_utc": "2026-10-28T00:07:32+00:00",
+  "compute_safe_observed_utc": "2026-10-27T20:16:02.900347+00:00",
+  "start_requests": 1,
+  "controlled_reboots": 0,
+  "eips_allocated": 1,
+  "eips_remaining": 0,
+  "original_stopped": true,
+  "public_ip_absent": true,
+  "free_plan_active": true,
+  "lifecycle": {
+    "state": "stopped",
+    "generation": 0,
+    "leases": 0,
+    "command_absent": true,
+    "invitations_issued": 0
+  },
+  "resources_retained": {
+    "existing_host": true,
+    "existing_encrypted_root_gib": 20,
+    "control_tables": 1,
+    "roles": 1,
+    "instance_profiles": 1,
+    "review_utc": "2026-12-23T18:00:00Z"
+  },
+  "provider": {
+    "name": "openrouter",
+    "model": "google/gemini-3.5-flash-lite",
+    "non_resetting_key_cap_usd": "2.00",
+    "readiness_reserve_usd": "0.10",
+    "key_status_gets": 1,
+    "live_model_posts": 0,
+    "local_canonical_enabled": false,
+    "host_key_or_ledger_installed": false,
+    "settlements_preserved": 228,
+    "legacy_holds_preserved": 19
+  },
+  "failure": {
+    "phase": "negative_log_quota_fixture",
+    "kind": "operator_fixture_assertion",
+    "reason": "Production logger rejects a short write with OSError and no errno; quota fixture accepted only errno-bearing failures.",
+    "production_logger_changed": false
+  },
+  "gates": {
+    "account_and_resource_preflight": "passed",
+    "fixed_guest_deadline_guard_install": "passed",
+    "kernel_barrier_units_start": "passed",
+    "metadata_dependency_failure_and_restore": "completed_before_fixture_failure",
+    "log_rotation": "passed_before_fixture_failure",
+    "log_quota": "failed_fixture_assertion",
+    "log_lock_on_actual_host": "unverified",
+    "actual_role_network_allow_deny_probes": "unverified",
+    "actual_service_uid_capability_acceptance": "unverified",
+    "real_custody_binding_readiness": "unverified",
+    "controlled_reboot": "not_run",
+    "private_host_capacity": "not_run",
+    "stop_eip_release": "passed"
+  },
+  "local_verification": {
+    "full_python": "1597passed;2upstreamwarnings",
+    "private_operator_regressions": "29passed",
+    "frozen_linux_log_fixtures": [
+      {
+        "fixture": "rotation",
+        "exit": 0,
+        "stderr": ""
+      },
+      {
+        "fixture": "quota",
+        "exit": 0,
+        "stderr": ""
+      },
+      {
+        "fixture": "lock",
+        "exit": 0,
+        "stderr": ""
+      }
+    ],
+    "application_source_unchanged": true
+  },
+  "cost": {
+    "running_window_seconds_upper": 125,
+    "eip_window_seconds_upper": 109,
+    "compute_and_ipv4_usd_upper": 0.000901389,
+    "including_full_request_storage_egress_envelopes_and_contingency_usd_upper": 0.015805667,
+    "approved_usd": "0.25",
+    "cash_usd": "0",
+    "billing_is_estimate": true,
+    "existing_root_retention_separate": true
+  },
+  "private_receipts": {
+    "manifest_sha256": "6299a280ef2e09a068c4fcb693c756bb47a25bb334d91c8e16b0702046a36096",
+    "final_payload_manifest_sha256": "e8a84ac41edbff57d0f23adaf3bc9a1b6c1c85b4d30388ba1279fb3f67daff83",
+    "protected_location_pointer": ".scratch/cap07-controlled-host-preparation/current-operation.txt"
+  },
+  "remaining": [
+    "fresh reviewed authorization for another bounded Start; original one-Start scope consumed",
+    "verify/adopt retained acceptance assets before any future retry",
+    "actual role/network isolation, custody binding and signed readiness",
+    "one controlled reboot and actual private capacity"
+  ],
+  "production_interpreter_approved": false,
+  "public_activation": false
+}

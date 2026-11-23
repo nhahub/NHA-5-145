@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-28",
+  "status": "captured_host_lane_incomplete_compute_safe",
+  "approval": "Explicit owner renewal of docs/cap07-continuation-20261028.md",
+  "aws_credit_ceiling_usd": "0.25",
+  "cash_usd": "0",
+  "free_plan_verified": true,
+  "conservative_incremental_credit_bound_usd": "0.020044",
+  "billing_measurement": false,
+  "retained_root_storage_separate": true,
+  "single_start_used": true,
+  "controlled_reboot_used": true,
+  "started_epoch": 1793194321.389877,
+  "absolute_end_epoch": 1793208721,
+  "compute_safe": {
+    "original_stopped": true,
+    "eip_released": true,
+    "utc": "2026-10-28T13:41:08.250776+00:00"
+  },
+  "final_observation": {
+    "stopped": true,
+    "public_ip_absent": true,
+    "operation_eips": 0,
+    "authority_state": "unhealthy",
+    "generation": 1,
+    "teardown_errors": []
+  },
+  "isolation": {
+    "actual_role_namespace_read": true,
+    "wrong_namespace_denied": true,
+    "model_egress_denied": true,
+    "operation_uuid": "[protected]",
+    "end_epoch": 1793208721,
+    "table": "[protected]",
+    "namespace": "[protected]",
+    "checked_epoch": 1793194579.7639937,
+    "boot_id": "[protected]"
+  },
+  "negative_fixtures": {
+    "metadata_dependency_failure_closed": true,
+    "bounded_synthetic_log_rotation": true,
+    "synthetic_log_quota_refused": true,
+    "synthetic_log_lock_refused": true
+  },
+  "reboot": {
+    "distinct_boot_id": true,
+    "automatic_recovery": true,
+    "before_readiness": {
+      "signed_ready": true,
+      "wrong_generation_refused": true,
+      "wrong_key_refused": true,
+      "stale_response_refused": true,
+      "unsigned_response_refused": true
+    },
+    "after_readiness": {
+      "signed_ready": true,
+      "wrong_generation_refused": true,
+      "wrong_key_refused": true,
+      "stale_response_refused": true,
+      "unsigned_response_refused": true
+    },
+    "swap_active_before": true,
+    "swap_active_after": true,
+    "nft_file_sha_preserved": false
+  },
+  "control_capacity": {
+    "passed": true,
+    "real_model_posts": 0,
+    "mode": "control",
+    "cohorts": [
+      {
+        "requested": 1,
+        "completed": 1,
+        "inference_busy": 0,
+        "elapsed_seconds": 0.243848
+      },
+      {
+        "requested": 5,
+        "completed": 5,
+        "inference_busy": 0,
+        "elapsed_seconds": 0.680233
+      },
+      {
+        "requested": 8,
+        "completed": 8,
+        "inference_busy": 0,
+        "elapsed_seconds": 1.040859
+      }
+    ],
+    "requests": 126,
+    "minimum_mem_available": 1544470528,
+    "maximum_swap_used": 0,
+    "sampler_count": 14
+  },
+  "capture_real_custody_denied": {
+    "capture_cannot_open_real_custody": true
+  },
+  "captured_capacity": {
+    "passed": false,
+    "missing_expected_service": true,
+    "driver_stderr_empty": true,
+    "exact_guest_startup_cause_unverified": true
+  },
+  "offline_binding_probe": {
+    "red_mode": "0644",
+    "red_refusal": "Private file required",
+    "green_mode": "0400",
+    "frozen_private_reader": true,
+    "network": "none"
+  },
+  "native_rehearsal": {
+    "passed": true,
+    "synthetic_only": true,
+    "lanes": [
+      {
+        "mode": "control",
+        "cohorts": [
+          {
+            "requested": 1,
+            "completed": 1,
+            "inference_busy": 0,
+            "elapsed_seconds": 0.183175
+          },
+          {
+            "requested": 5,
+            "completed": 5,
+            "inference_busy": 0,
+            "elapsed_seconds": 0.544852
+          },
+          {
+            "requested": 8,
+            "completed": 8,
+            "inference_busy": 0,
+            "elapsed_seconds": 0.898883
+          }
+        ],
+        "requests": 126,
+        "uncertain_preserved": true
+      },
+      {
+        "mode": "captured",
+        "cohorts": [
+          {
+            "requested": 1,
+            "completed": 1,
+            "inference_busy": 0,
+            "elapsed_seconds": 1.973841
+          },
+          {
+            "requested": 5,
+            "completed": 5,
+            "inference_busy": 0,
+            "elapsed_seconds": 6.960762
+          },
+          {
+            "requested": 8,
+            "completed": 5,
+            "inference_busy": 3,
+            "elapsed_seconds": 7.718992
+          }
+        ],
+        "requests": 140,
+        "uncertain_preserved": true
+      }
+    ],
+    "fake_model_posts": 22,
+    "real_aws_calls": 0,
+    "real_model_posts": 0
+  },
+  "private_operator_tests": 37,
+  "actual_live_model_posts": 0,
+  "new_provider_status_gets": 0,
+  "authority_finish": {
+    "pending": false,
+    "not_before": 1793198379.1700122,
+    "finite_local_worker": true,
+    "no_running_cloud_compute": true,
+    "complete_receipt": {
+      "finished": true,
+      "generation": 1,
+      "authority_state": "stopped",
+      "epoch": 1793198446.3494473
+    }
+  },
+  "protected_operation_pointer": ".scratch/cap07-controlled-host-preparation/continuation-operation.txt",
+  "operator_source_sha256_offline_audit_only": {
+    "guest.py": "da595d6a73ea04fe05963d24757cbb9d00d7150735bb852cfd66c09791b34d0f",
+    "continuation_session.py": "7e83916bb905799487ce3232b9ecf9a243490186f0e364ad0db0971c94679585",
+    "retained_diagnostics.py": "36e4c83953111c3ae0d145cb5f8c31849507c8f02f1d9160c3df14b66444ffed",
+    "retry_session.py": "54066a4dbaf7e8113fa823b7eddde8bcb76ccbfb1cda067a3df300290eaaf58f",
+    "retry_reset.py": "03cce730cd17895fba85fd379c9b9288f774e80b99584b106a3e61fea8a085c8",
+    "finish_continuation.py": "6c9a20410f53834c233bf52ce6554bef28b5d4a274513ead365958ed38b97e3e"
+  },
+  "remaining": [
+    "verify authority finish receipt",
+    "custody/generation-aware offline preparation",
+    "renewed grant for actual captured host retest"
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "status": "reviewed_authoring_groups_not_allocation_components",
+  "source_category": "synthetic",
+  "exposure": "exposed",
+  "frozen": false,
+  "unseen_count": 0,
+  "families": [
+    {
+      "family_id": "synth002-colour-discussion",
+      "intent": "advice",
+      "case_ids": [
+        "synthetic-002-001",
+        "synthetic-002-002",
+        "synthetic-002-003",
+        "synthetic-002-004"
+      ],
+      "rationale": "Discuss the decision using verified catalogue facts. Opinions are qualified, absent facts stay unknown; do not search or mutate solely because of this question.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-price-tradeoff",
+      "intent": "advice",
+      "case_ids": [
+        "synthetic-002-005",
+        "synthetic-002-006",
+        "synthetic-002-007",
+        "synthetic-002-008"
+      ],
+      "rationale": "Discuss the decision using verified catalogue facts. Opinions are qualified, absent facts stay unknown; do not search or mutate solely because of this question.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-use-suitability",
+      "intent": "advice",
+      "case_ids": [
+        "synthetic-002-009",
+        "synthetic-002-010",
+        "synthetic-002-011",
+        "synthetic-002-012"
+      ],
+      "rationale": "Discuss the decision using verified catalogue facts. Opinions are qualified, absent facts stay unknown; do not search or mutate solely because of this question.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-size-uncertainty",
+      "intent": "advice",
+      "case_ids": [
+        "synthetic-002-013",
+        "synthetic-002-014",
+        "synthetic-002-015",
+        "synthetic-002-016"
+      ],
+      "rationale": "Discuss the decision using verified catalogue facts. Opinions are qualified, absent facts stay unknown; do not search or mutate solely because of this question.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-shoe-search",
+      "intent": "find_products",
+      "case_ids": [
+        "synthetic-002-017",
+        "synthetic-002-018",
+        "synthetic-002-019",
+        "synthetic-002-020",
+        "synthetic-002-161",
+        "synthetic-002-162",
+        "synthetic-002-163",
+        "synthetic-002-164"
+      ],
+      "rationale": "Discover shoes with stated requirements; negation must not turn into a positive leather requirement.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-clothing-search",
+      "intent": "find_products",
+      "case_ids": [
+        "synthetic-002-021",
+        "synthetic-002-022",
+        "synthetic-002-023",
+        "synthetic-002-024"
+      ],
+      "rationale": "Discover clothing; preserve corrected budget and explicit exclusions.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-bag-search",
+      "intent": "find_products",
+      "case_ids": [
+        "synthetic-002-025",
+        "synthetic-002-026",
+        "synthetic-002-027",
+        "synthetic-002-028"
+      ],
+      "rationale": "Discover bags under explicit requirements. Do not infer unlisted dimensions or material.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-electronics-search",
+      "intent": "find_products",
+      "case_ids": [
+        "synthetic-002-029",
+        "synthetic-002-030",
+        "synthetic-002-031",
+        "synthetic-002-032"
+      ],
+      "rationale": "Discover electronics; do not invent technical specifications.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-checkout-control",
+      "intent": "locate",
+      "case_ids": [
+        "synthetic-002-033",
+        "synthetic-002-034",
+        "synthetic-002-035",
+        "synthetic-002-036"
+      ],
+      "rationale": "Spotlight checkout control without clicking, navigating or submitting.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-quantity-control",
+      "intent": "locate",
+      "case_ids": [
+        "synthetic-002-037",
+        "synthetic-002-038",
+        "synthetic-002-039",
+        "synthetic-002-040"
+      ],
+      "rationale": "Identify the quantity control for the named line; do not change quantity.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-remove-control",
+      "intent": "locate",
+      "case_ids": [
+        "synthetic-002-041",
+        "synthetic-002-042",
+        "synthetic-002-043",
+        "synthetic-002-044"
+      ],
+      "rationale": "Show the remove control for one line without executing removal.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-account-entry",
+      "intent": "locate",
+      "case_ids": [
+        "synthetic-002-045",
+        "synthetic-002-046",
+        "synthetic-002-047",
+        "synthetic-002-048"
+      ],
+      "rationale": "Locate the account entry without navigation or credential handling.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-cart-destination",
+      "intent": "navigate",
+      "case_ids": [
+        "synthetic-002-049",
+        "synthetic-002-050",
+        "synthetic-002-051",
+        "synthetic-002-052"
+      ],
+      "rationale": "Open cart for inspection, preserving all items.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-account-destination",
+      "intent": "navigate",
+      "case_ids": [
+        "synthetic-002-053",
+        "synthetic-002-054",
+        "synthetic-002-055",
+        "synthetic-002-056"
+      ],
+      "rationale": "Navigate to account; sensitive fields stay manual.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-orders-destination",
+      "intent": "navigate",
+      "case_ids": [
+        "synthetic-002-057",
+        "synthetic-002-058",
+        "synthetic-002-059",
+        "synthetic-002-060"
+      ],
+      "rationale": "Open orders destination without inventing order facts.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-checkout-destination",
+      "intent": "navigate",
+      "case_ids": [
+        "synthetic-002-061",
+        "synthetic-002-062",
+        "synthetic-002-063",
+        "synthetic-002-064"
+      ],
+      "rationale": "Open checkout page only; do not submit the fictional order.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-shoe-details",
+      "intent": "open_product",
+      "case_ids": [
+        "synthetic-002-065",
+        "synthetic-002-066",
+        "synthetic-002-067",
+        "synthetic-002-068"
+      ],
+      "rationale": "Open the named product page using catalogue identity, not price/filter search.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-ranked-product-details",
+      "intent": "open_product",
+      "case_ids": [
+        "synthetic-002-069",
+        "synthetic-002-070",
+        "synthetic-002-071",
+        "synthetic-002-072"
+      ],
+      "rationale": "Open the product in position two of the explicit synthetic recommendation list. Intent is clear from text; target resolution requires ordered context. Do not treat this as a new discovery request.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-cart-product-details",
+      "intent": "open_product",
+      "case_ids": [
+        "synthetic-002-073",
+        "synthetic-002-074",
+        "synthetic-002-075",
+        "synthetic-002-076"
+      ],
+      "rationale": "Open product details by a uniquely matching cart-line description; do not edit that line. Cart fixture resolves the referent.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-shortlist-cheapest-details",
+      "intent": "open_product",
+      "case_ids": [
+        "synthetic-002-077",
+        "synthetic-002-078",
+        "synthetic-002-079",
+        "synthetic-002-080"
+      ],
+      "rationale": "Open the least expensive product within the explicit existing shortlist. Compare pinned catalogue prices only; do not search outside the shortlist or alter the cart.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-abandon-basket",
+      "intent": "mutate",
+      "case_ids": [
+        "synthetic-002-081",
+        "synthetic-002-082",
+        "synthetic-002-083",
+        "synthetic-002-084",
+        "synthetic-002-085",
+        "synthetic-002-086",
+        "synthetic-002-087",
+        "synthetic-002-088"
+      ],
+      "rationale": "Whole-cart clearing against the same fixture. Different motivations do not establish independent task families.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-place-order",
+      "intent": "mutate",
+      "case_ids": [
+        "synthetic-002-089",
+        "synthetic-002-090",
+        "synthetic-002-091",
+        "synthetic-002-092"
+      ],
+      "rationale": "Request fictional checkout submission; language is not a bound Confirmation token. Do not execute before current safety/Confirmation checks.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-checkout-retry",
+      "intent": "mutate",
+      "case_ids": [
+        "synthetic-002-093",
+        "synthetic-002-094",
+        "synthetic-002-095",
+        "synthetic-002-096"
+      ],
+      "rationale": "Request submission again; uncertain prior outcomes require reconciliation and must never auto-replay. A new instruction is not proof of prior failure.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-add-variant",
+      "intent": "cart_edit",
+      "case_ids": [
+        "synthetic-002-097",
+        "synthetic-002-098",
+        "synthetic-002-099",
+        "synthetic-002-100",
+        "synthetic-002-165",
+        "synthetic-002-166",
+        "synthetic-002-167",
+        "synthetic-002-168"
+      ],
+      "rationale": "Add the explicit variant and quantity; validate inventory before execution, never substitute a variant.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-quantity-revision",
+      "intent": "cart_edit",
+      "case_ids": [
+        "synthetic-002-101",
+        "synthetic-002-102",
+        "synthetic-002-103",
+        "synthetic-002-104"
+      ],
+      "rationale": "Change the named cart line; preserve total versus delta and final correction.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-remove-line",
+      "intent": "cart_edit",
+      "case_ids": [
+        "synthetic-002-105",
+        "synthetic-002-106",
+        "synthetic-002-107",
+        "synthetic-002-108"
+      ],
+      "rationale": "Remove only the named bag line, preserve other cart lines.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-undo-edit",
+      "intent": "cart_edit",
+      "case_ids": [
+        "synthetic-002-109",
+        "synthetic-002-110",
+        "synthetic-002-111",
+        "synthetic-002-112"
+      ],
+      "rationale": "Undo the latest reversible edit only if its receipt is still valid; do not invent or replay another edit.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-capabilities",
+      "intent": "help",
+      "case_ids": [
+        "synthetic-002-113",
+        "synthetic-002-114",
+        "synthetic-002-115",
+        "synthetic-002-116"
+      ],
+      "rationale": "Explain assistant capabilities without inferring a purchase command.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-compose-request",
+      "intent": "help",
+      "case_ids": [
+        "synthetic-002-117",
+        "synthetic-002-118",
+        "synthetic-002-119",
+        "synthetic-002-120"
+      ],
+      "rationale": "Explain how to express a shopping request, not execute an example task.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-clarification-support",
+      "intent": "help",
+      "case_ids": [
+        "synthetic-002-121",
+        "synthetic-002-122",
+        "synthetic-002-123",
+        "synthetic-002-124"
+      ],
+      "rationale": "Offer explanation/support for clarification workflow; no specific missing target or executable request is established.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-manual-control",
+      "intent": "help",
+      "case_ids": [
+        "synthetic-002-125",
+        "synthetic-002-126",
+        "synthetic-002-127",
+        "synthetic-002-128"
+      ],
+      "rationale": "Explain how the shopper retains manual control; this is a general question, not an instruction to Stop a running task.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-cooking",
+      "intent": "off_topic",
+      "case_ids": [
+        "synthetic-002-129",
+        "synthetic-002-130",
+        "synthetic-002-131",
+        "synthetic-002-132"
+      ],
+      "rationale": "Unrelated cooking request; do not reinterpret it as shopping.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-entertainment",
+      "intent": "off_topic",
+      "case_ids": [
+        "synthetic-002-133",
+        "synthetic-002-134",
+        "synthetic-002-135",
+        "synthetic-002-136"
+      ],
+      "rationale": "Unrelated entertainment request.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-study",
+      "intent": "off_topic",
+      "case_ids": [
+        "synthetic-002-137",
+        "synthetic-002-138",
+        "synthetic-002-139",
+        "synthetic-002-140"
+      ],
+      "rationale": "Unrelated academic or programming help.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-weather",
+      "intent": "off_topic",
+      "case_ids": [
+        "synthetic-002-141",
+        "synthetic-002-142",
+        "synthetic-002-143",
+        "synthetic-002-144"
+      ],
+      "rationale": "Unrelated weather question without shopping goal.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-external-stores",
+      "intent": "unsupported",
+      "case_ids": [
+        "synthetic-002-145",
+        "synthetic-002-146",
+        "synthetic-002-147",
+        "synthetic-002-148"
+      ],
+      "rationale": "Shopping request for external-site browsing beyond the Controlled Storefront; never navigate off-origin.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-bargaining",
+      "intent": "unsupported",
+      "case_ids": [
+        "synthetic-002-149",
+        "synthetic-002-150",
+        "synthetic-002-151",
+        "synthetic-002-152"
+      ],
+      "rationale": "Negotiating or changing catalogue prices is unsupported; do not fabricate a discount.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-delivery-change",
+      "intent": "unsupported",
+      "case_ids": [
+        "synthetic-002-153",
+        "synthetic-002-154",
+        "synthetic-002-155",
+        "synthetic-002-156"
+      ],
+      "rationale": "Changing delivery arrangements is unsupported; do not confuse with order-page navigation.",
+      "split": null
+    },
+    {
+      "family_id": "synth002-refund-request",
+      "intent": "unsupported",
+      "case_ids": [
+        "synthetic-002-157",
+        "synthetic-002-158",
+        "synthetic-002-159",
+        "synthetic-002-160"
+      ],
+      "rationale": "Returns/refunds are outside supported mutations; do not fabricate processing.",
+      "split": null
+    }
+  ],
+  "original_authoring_scenario_count": 40,
+  "merged_authoring_groups": [
+    {
+      "from": ["synth002-abandon-basket", "synth002-replace-basket"],
+      "into": "synth002-abandon-basket",
+      "reason": "Whole-cart clearing against the same fixture. Different motivations do not establish independent task families."
+    }
+  ]
+}

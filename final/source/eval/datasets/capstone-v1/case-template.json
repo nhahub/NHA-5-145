@@ -1,0 +1,51 @@
+{
+  "record_format_version": 1,
+  "template_only": true,
+  "eligible_for_evaluation": false,
+  "case_id": null,
+  "dataset_version": "capstone-v1-draft",
+  "provenance": {
+    "source_category": null,
+    "source_reference": null,
+    "author_id": null,
+    "created_on": null,
+    "permission_reference": null,
+    "prior_exposure": null
+  },
+  "language_group": null,
+  "script": null,
+  "scenario_tags": [],
+  "input": {
+    "message": null,
+    "followup_turns": [],
+    "sanitized_context_reference": null,
+    "context_sha256": null,
+    "requires_context": null
+  },
+  "expected": {
+    "intent": null,
+    "constraints": null,
+    "needs_clarification": null,
+    "clarification_fields": [],
+    "acceptable_targets": [],
+    "quantity_mode": null,
+    "quantity": null
+  },
+  "grouping": {
+    "paraphrase_group_id": null,
+    "conversation_group_id": null,
+    "split": null,
+    "duplicate_review": "not_reviewed"
+  },
+  "comparison": {
+    "intent_only_eligible": null,
+    "eligibility_reason": null
+  },
+  "annotation": {
+    "annotator_id": null,
+    "reviewer_id": null,
+    "status": "not_annotated",
+    "disagreements": [],
+    "resolution": null
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "first-private-host-inspection-proposal",
+  "status": "PREPARED_NOT_AUTHORIZED_OR_APPLIED",
+  "apply_authorized": false,
+  "public_application_activation_authorized": false,
+  "cash_authorized_usd": "0",
+  "proposed_aws_credit_allocation_usd": "4.50",
+  "estimated_gross_usd": "3.39846642",
+  "storage_sensitivity_gross_usd": "3.63732357",
+  "guaranteed_billing_cap": false,
+  "free_plan_required": true,
+  "region": "eu-north-1",
+  "resources": {
+    "instances": 1,
+    "instance_type": "t3.small",
+    "cpu_credits": "standard",
+    "ami_id": "ami-0111419d42d14a400",
+    "iam_instance_profile": null,
+    "volumes": 1,
+    "root_gib": 20,
+    "root_type": "gp3",
+    "encrypted": true,
+    "iops": 3000,
+    "throughput_mib_s": 125,
+    "delete_root_on_termination": false,
+    "primary_interfaces": 1,
+    "auto_public_ipv4": false,
+    "eips": 1,
+    "security_groups": 1,
+    "import_existing_public_key_pairs": 1,
+    "new_private_keys": 0,
+    "new_customer_managed_kms_keys": 0
+  },
+  "network": {
+    "new_ingress": "TCP22 only from captured ownerIPv4/32",
+    "tcp80_443_ingress": false,
+    "egress": "TCP443 only; no IPv6 rules; existing Amazon resolver behavior verified separately",
+    "shared_vpc_subnet_route_acl_mutations": false
+  },
+  "inspection_limits": {
+    "cumulative_instance_running_hours": 2,
+    "cumulative_eip_allocation_hours": 2,
+    "maximum_volume_retention_days": 60,
+    "internet_egress_gib": 0.01,
+    "kms_requests_costed": 100,
+    "automatic_retries": false,
+    "automatic_restart_after_stop": false,
+    "guest_stop_deadline_minutes_after_launch": 90,
+    "guest_stop_hard_cloud_guarantee": false,
+    "direct_owned_stop_and_eip_release_before_turn_end": true
+  },
+  "excluded": [
+    "Application services or ports",
+    "Actual provider key or inference ledger",
+    "Provider/model calls or allowance changes",
+    "DynamoDB/Lambda/CloudFront/Scheduler/IAM runtime role",
+    "DNS/certificates/public demo",
+    "Paid-plan upgrade or account feature activation",
+    "Private-key generation or replacement"
+  ],
+  "preflight": {
+    "read_only_aws_calls": 13,
+    "account_same_as_existing_project": true,
+    "free_plan_active": true,
+    "network_ami_quota_candidates_verified": true,
+    "operator_ipv4_verified": true,
+    "existing_public_key_verified": true,
+    "private_key_companion_exists": true,
+    "private_key_possession_or_passphrase_verified": false,
+    "ssh_agent_available": false,
+    "matching_proposed_resources_exist": false
+  },
+  "private_binding_sha256": {
+    "candidate_inputs": "10376313bb50ec5501590d4bd1b3151da3a5c3a313a2764f65cee58a00a7d80b",
+    "candidate_consistency": "e29a56a5760d812112de9c175c5e2c4a37e45f1e586fdfcc00c44cb1f968dd15",
+    "public_key_metadata": "30082662b0943257f0d79adc39d5c7fdce8a682b89145c027a1fd3a9152e4dd5",
+    "ssh_access_preflight": "8c1b6a3e1e15996c497523a72655ffa9242caa844fbaa272951e8ae99372c689",
+    "run_instances_template": "a556c231ceadf3bab237d77ebf0eab91ee62fa2bc5db6f3def55c424dab8e6cc",
+    "user_data_template": "8c08e035076de8c9a21c2704956f213feca05db0afc3901add86aad1b7702f6e",
+    "sanitized_account_summary": "423cb4cc8297e8938ad9198b9f96ed69c13455390d6260f3c1ffdbe1f3fd5726"
+  },
+  "price_receipt_sha256": {
+    "selected_primary_rates": "3f4623ff5f829dad0fc49d8a48d39d5d93d0ea4171d3d2e7b4498e708b85ffa4",
+    "worksheet": "ab8b2c771092fa78c2b2a8522bdb956c933bee5e3d714633a82ab69a2168381a",
+    "source_manifest": "bc1719a581a88936cae84262923efe84d7011ae297c245dd4f3e91d4f1f640f5"
+  },
+  "native_candidate": {
+    "source_commit": "023d9f621bc9432b871e519d51e6ce57bb7dc204",
+    "archive_sha256": "5e5e3843160225b81b81f3dd79bb960fc82507134ae7a7f58896020d5cd28a23",
+    "manifest_sha256": "efc1f9da4388c24b9e8b312aed2871c1aa7174f78370a531f2400a8c6b9d0757",
+    "native_retest_pending": false,
+    "synthetic_capacity_passed": true,
+    "actual_host_capacity_qualified": false,
+    "evidence": "eval/evidence/cap06-captured-capacity-20261025.json"
+  },
+  "stop_and_recovery": [
+    "Persist operationUUID, public-key fingerprint, exact account/network/AMI inputs and intended deadline privately before ANYmutation. Tag all created resources and set RunInstances ClientToken to this operation. If an API times out or returns an unknown outcome, perform read-only exact-operation tag/client-token inventory to recover owned instance/address/dependencies and stop/release before finish; never infer creation failed or retry by resource name.",
+    "Recheck account remainsFree and names/account/network/IP/key bindings match; stop on access/upgrade/pricing drift",
+    "Import only existing public key, create dedicatedSG then remove default all-egress and install exact rules BEFORElaunch",
+    "Launch once with idempotency token and false autoIPv4; explicitly associate one owned taggedEIP",
+    "Verify host SSHfingerprint from owned EC2 console evidence before SSH; no private key material is copied or logged",
+    "Verify stop timer immediately; failed bootstrap/SSH/acceptance triggers owned APIStopInstances without proceeding",
+    "Inspect installedOS/runtime/package/systemd/UID/firewall/capability/metadata/log facts only; no app/key migration",
+    "RequestStopInstances using capturedownedID; observe stopped; disassociate/releaseownedEIP; confirmabsence and no ownedrunninginstance",
+    "Retain stoppedinstance/rootvolume within60day approvedwindow; no snapshot/volume deletion/termination without separate approval",
+    "Ifcreationpartiallyfails removeonlyemptyunusedtaggedSG/importedpublickey/unassociatedEIPfromthisoperation; preserveanyvolume/instance/data and reportfailure"
+  ],
+  "all_real_production_bindings_remain_null": true,
+  "approval_window": {
+    "not_before_utc": "2026-10-24T21:00:00Z",
+    "latest_creation_utc": "2026-10-25T18:00:00Z",
+    "latest_confirmed_stopped_and_eip_released_utc": "2026-10-25T20:00:00Z",
+    "per_operation_stop_deadline": "min(actual launch time+90minutes,2026-10-25T19:30:00Z)",
+    "per_operation_confirmed_stop_and_eip_release": "min(actual launch/EIP allocation+2hours,2026-10-25T20:00:00Z)",
+    "retention_decision_due_utc": "2026-12-23T18:00:00Z",
+    "retention_decision_is_deletion_permission": false,
+    "expired_window_requires_new_review": true
+  },
+  "review": {
+    "independent_focused_reviews": 1,
+    "material_findings_fixed": 2,
+    "fixed_topics": [
+      "unknown creation outcome ownership recovery",
+      "exact source and finite UTC approval/retention windows"
+    ],
+    "not_creation_authorization": true
+  }
+}

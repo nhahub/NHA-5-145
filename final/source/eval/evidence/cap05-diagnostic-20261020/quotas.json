@@ -1,0 +1,92 @@
+{
+  "v": 1,
+  "date": "2026-10-20",
+  "region": "eu-north-1",
+  "service": "bedrock",
+  "apis": ["GetServiceQuota", "ListServiceQuotas"],
+  "read_only": true,
+  "pages_scanned": 7,
+  "more_pages": false,
+  "gpt_oss_20b_requests_per_minute": {
+    "QuotaName": "On-demand model inference requests per minute for OpenAI GPT OSS 20B",
+    "QuotaCode": "L-AF7F0545",
+    "Value": 0.0,
+    "Unit": "None",
+    "Adjustable": false
+  },
+  "shortlist_quotas": [
+    {
+      "QuotaName": "Cross-region model inference requests per minute for Amazon Nova Lite",
+      "QuotaCode": "L-89F8391A",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "Cross-region model inference tokens per minute for Amazon Nova Micro",
+      "QuotaCode": "L-DC7FF66C",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": true
+    },
+    {
+      "QuotaName": "On-demand model inference requests per minute for OpenAI GPT OSS 20B",
+      "QuotaCode": "L-AF7F0545",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "On-demand model inference tokens per minute for Amazon Nova Lite",
+      "QuotaCode": "L-70423BF8",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "Model invocation max tokens per day for Amazon Nova Lite (doubled for cross-region calls)",
+      "QuotaCode": "L-45E0AD92",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "On-demand model inference tokens per minute for OpenAI GPT OSS 20B",
+      "QuotaCode": "L-036E14D8",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "Cross-region model inference tokens per minute for Amazon Nova Lite",
+      "QuotaCode": "L-7C42E72A",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": true
+    },
+    {
+      "QuotaName": "Cross-region model inference requests per minute for Amazon Nova Micro",
+      "QuotaCode": "L-3F110E0F",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "On-demand model inference requests per minute for Amazon Nova Lite",
+      "QuotaCode": "L-E386A278",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    },
+    {
+      "QuotaName": "Model invocation max tokens per day for Amazon Nova Micro (doubled for cross-region calls)",
+      "QuotaCode": "L-D2912E70",
+      "Value": 0.0,
+      "Unit": "None",
+      "Adjustable": false
+    }
+  ],
+  "quota_change_requested": false,
+  "account_restriction_reason": "unknown",
+  "scope": "Applied quotas for the listed runtime models only; not a claim about every Bedrock model or endpoint."
+}

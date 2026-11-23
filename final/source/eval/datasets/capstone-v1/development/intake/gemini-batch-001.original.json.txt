@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "text": "عايز كوتشي ابيض مقاس 43 في حدود 600 جنيه كدا",
+    "language_group": "ar-EG",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 1
+  },
+  {
+    "id": 2,
+    "text": "لا مش عاجبني الشكل ده بلاش كوتشيات جلد هات قماش احسن",
+    "language_group": "ar-EG",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 1
+  },
+  {
+    "id": 3,
+    "text": "طب هو القماش ده خفيف وينفع صيف ولا بيكتم الرجل؟",
+    "language_group": "ar-EG",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 1
+  },
+  {
+    "id": 4,
+    "text": "تمام ضيف اول واحد ف اللسته للعربيه مقاس 43",
+    "language_group": "ar-EG",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 1
+  },
+  {
+    "id": 5,
+    "text": "وريني كدا بناطيل جينز مقاس 34 وتكون واسعه وايد ليج",
+    "language_group": "ar-EG",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 2
+  },
+  {
+    "id": 6,
+    "text": "لا مش عايز اسود هات ازرق فاتح او كحلي",
+    "language_group": "ar-EG",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 2
+  },
+  {
+    "id": 7,
+    "text": "حطلي اتنين من الكحلي دا في السله",
+    "language_group": "ar-EG",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 2
+  },
+  {
+    "id": 8,
+    "text": "استنى خليهم واحده بس مش عايز اتنين",
+    "language_group": "ar-EG",
+    "expected_intent": "update_cart_quantity",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 2
+  },
+  {
+    "id": 9,
+    "text": "ايه الفرق بين التيشيرت الاوفر سايز ده والعادي؟ خامتهم واحده؟",
+    "language_group": "ar-EG",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 3
+  },
+  {
+    "id": 10,
+    "text": "طيب ضيف الاوفر سايز البيج دا مقاس L",
+    "language_group": "ar-EG",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 3
+  },
+  {
+    "id": 11,
+    "text": "شيل التيشيرت البيج دا من العربيه ورجعلي الاوفر سايز الاسود مكانه",
+    "language_group": "ar-EG",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 3
+  },
+  {
+    "id": 12,
+    "text": "ورينى دريسات صيفى مشجره تكون طويله وبكمام وماتكنش شفافه",
+    "language_group": "ar-EG",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 4
+  },
+  {
+    "id": 13,
+    "text": "بلاش الستان دا بكرهه ورينى قطن بس",
+    "language_group": "ar-EG",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 4
+  },
+  {
+    "id": 14,
+    "text": "هو الدريس ده تلبيسه مظبوط ولا اخد نمره اكبر؟",
+    "language_group": "ar-EG",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 4
+  },
+  {
+    "id": 15,
+    "text": "عاوز اشوف عربية المشتريات دلوقتي فيها ايه",
+    "language_group": "ar-EG",
+    "expected_intent": "view_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 5
+  },
+  {
+    "id": 16,
+    "text": "فضى السله كلها مش عايز اشترى حاجه دلوقتى خلاص",
+    "language_group": "ar-EG",
+    "expected_intent": "clear_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 5
+  },
+  {
+    "id": 17,
+    "text": "فيه عندكم هوديات تقيله شتوى تحت 400 جنيه؟",
+    "language_group": "ar-EG",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 6
+  },
+  {
+    "id": 18,
+    "text": "مش عايز حاجه بسوسته خالص هات مقفول بس",
+    "language_group": "ar-EG",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 6
+  },
+  {
+    "id": 19,
+    "text": "هو الهودي النبيتي متبقي منه مقاس 2XL ولا خلصان؟",
+    "language_group": "ar-EG",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 6
+  },
+  {
+    "id": 20,
+    "text": "ضيف الهودى النبيتى مقاس 2XL فى السله",
+    "language_group": "ar-EG",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 6
+  },
+  {
+    "id": 21,
+    "text": "عايز اعمل شيك اوت واخلص الاوردر وادفع عند الاستلام",
+    "language_group": "ar-EG",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 6
+  },
+  {
+    "id": 22,
+    "text": "يا ريت كوتشى مريح بتاع مشى يومى ويكون سعره حنين كدا",
+    "language_group": "ar-EG",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 7
+  },
+  {
+    "id": 23,
+    "text": "كوتشى الركض الرمادى احسن ولا الاسود من ناحية التحمل؟",
+    "language_group": "ar-EG",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 7
+  },
+  {
+    "id": 24,
+    "text": "شيل الشرابات من الطلب مش محتاجهم",
+    "language_group": "ar-EG",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 7
+  },
+  {
+    "id": 25,
+    "text": "تمام كدا كمل الطلب وابعتلى الفاتوره ع الواتس",
+    "language_group": "ar-EG",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 7
+  },
+  {
+    "id": 26,
+    "text": "3ayez ashof sneakers abiad size 42 ta7t 800 le",
+    "language_group": "franco",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 8
+  },
+  {
+    "id": 27,
+    "text": "la2 msh 3agbny el model da balash 7agat b rabat 3ayez slip on",
+    "language_group": "franco",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 8
+  },
+  {
+    "id": 28,
+    "text": "hwa el slip on da comfortable ll mshy el kteer wla bywga3 el regle?",
+    "language_group": "franco",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 8
+  },
+  {
+    "id": 29,
+    "text": "7elw awy 7ot el aswad f el cart size 42",
+    "language_group": "franco",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 8
+  },
+  {
+    "id": 30,
+    "text": "warini sweatpants regaly polo aw plain b s3r kwyis",
+    "language_group": "franco",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 9
+  },
+  {
+    "id": 31,
+    "text": "msh 3ayez 7aga polyester khales hatly cotton 100%",
+    "language_group": "franco",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 9
+  },
+  {
+    "id": 32,
+    "text": "ezawwed el kamya khalehom 3 bdal wa7da",
+    "language_group": "franco",
+    "expected_intent": "update_cart_quantity",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 9
+  },
+  {
+    "id": 33,
+    "text": "sheel el t-shirt el aswad mn el cart sebo faqy el 7agat",
+    "language_group": "franco",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 9
+  },
+  {
+    "id": 34,
+    "text": "eh el far2 ben jacket el denim da w el tani el darker?",
+    "language_group": "franco",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 10
+  },
+  {
+    "id": 35,
+    "text": "7ot el jacket el azra2 size XL f el basket",
+    "language_group": "franco",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 10
+  },
+  {
+    "id": 36,
+    "text": "aslan ghayer el size khaleh XXL 3ashan byksho",
+    "language_group": "franco",
+    "expected_intent": "update_cart_item",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 10
+  },
+  {
+    "id": 37,
+    "text": "3ayez ashof el cart fiha eh delwa2ty",
+    "language_group": "franco",
+    "expected_intent": "view_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 11
+  },
+  {
+    "id": 38,
+    "text": "emsa7 kol 7aga f el cart clear all ya basha",
+    "language_group": "franco",
+    "expected_intent": "clear_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 11
+  },
+  {
+    "id": 39,
+    "text": "fih 3ndoko basic tees abyad w aswad pack 3la ba3d?",
+    "language_group": "franco",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 12
+  },
+  {
+    "id": 40,
+    "text": "msh 3agbny el lon da fih a7mar wla la2?",
+    "language_group": "franco",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 12
+  },
+  {
+    "id": 41,
+    "text": "tab hwa el medium hyb2a daye2 3lya lw wazny 75 kg?",
+    "language_group": "franco",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 12
+  },
+  {
+    "id": 42,
+    "text": "7ot pack 2 t-shirts size L f el cart",
+    "language_group": "franco",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 12
+  },
+  {
+    "id": 43,
+    "text": "khala9 kda a3mel checkout w el daf3 cash 3nd el esteelam",
+    "language_group": "franco",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 12
+  },
+  {
+    "id": 44,
+    "text": "3ayez shanta cross sghyra w tkun leater b s3r rekhis",
+    "language_group": "franco",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 13
+  },
+  {
+    "id": 45,
+    "text": "la balash leather 5aleha fabric 3ashan el saif",
+    "language_group": "franco",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 13
+  },
+  {
+    "id": 46,
+    "text": "daf3 el order da b visa wla lazm cash?",
+    "language_group": "franco",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 13
+  },
+  {
+    "id": 47,
+    "text": "e7zef el shanta mn el basket msh me7tagha",
+    "language_group": "franco",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 13
+  },
+  {
+    "id": 48,
+    "text": "hatly formal shoes brown size 44 b2al mn 1000 egp",
+    "language_group": "franco",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 14
+  },
+  {
+    "id": 49,
+    "text": "msh 3ayez 7aga pointy khalina f el round toe",
+    "language_group": "franco",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 14
+  },
+  {
+    "id": 50,
+    "text": "yalla etmm el talab w eb3at confirmation msg",
+    "language_group": "franco",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 14
+  },
+  {
+    "id": 51,
+    "text": "show me cheap black running shoes size 11 under 900 egp",
+    "language_group": "en",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 15
+  },
+  {
+    "id": 52,
+    "text": "no not nike looking for adidas or any local brand instead",
+    "language_group": "en",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 15
+  },
+  {
+    "id": 53,
+    "text": "is this one breathable enough for daily gym workouts?",
+    "language_group": "en",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 15
+  },
+  {
+    "id": 54,
+    "text": "add the grey running shoes to my cart size 44",
+    "language_group": "en",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 15
+  },
+  {
+    "id": 55,
+    "text": "find me oversized graphic tees in beige or offwhite",
+    "language_group": "en",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 16
+  },
+  {
+    "id": 56,
+    "text": "dont show heavy prints i prefer minimal front logo only",
+    "language_group": "en",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 16
+  },
+  {
+    "id": 57,
+    "text": "add 2 pieces of the vintage beige tee size L",
+    "language_group": "en",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 16
+  },
+  {
+    "id": 58,
+    "text": "actully change qty to 1 i dont need two",
+    "language_group": "en",
+    "expected_intent": "update_cart_quantity",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 16
+  },
+  {
+    "id": 59,
+    "text": "which fits looser the cargo pants or the relaxed jeans?",
+    "language_group": "en",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 17
+  },
+  {
+    "id": 60,
+    "text": "put the olive cargos size 32 into my bag",
+    "language_group": "en",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 17
+  },
+  {
+    "id": 61,
+    "text": "wait drop the olive ones and put the black cargo instead",
+    "language_group": "en",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 17
+  },
+  {
+    "id": 62,
+    "text": "show my bag content right now",
+    "language_group": "en",
+    "expected_intent": "view_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 18
+  },
+  {
+    "id": 63,
+    "text": "empty cart completely cancel everything",
+    "language_group": "en",
+    "expected_intent": "clear_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 18
+  },
+  {
+    "id": 64,
+    "text": "i need warm winter fleece hoodies for men under 500",
+    "language_group": "en",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 19
+  },
+  {
+    "id": 65,
+    "text": "no zips please only pullovers",
+    "language_group": "en",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 19
+  },
+  {
+    "id": 66,
+    "text": "does this hoodie shrink after first wash cycle?",
+    "language_group": "en",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 19
+  },
+  {
+    "id": 67,
+    "text": "add navy blue hoodie XL to cart",
+    "language_group": "en",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 19
+  },
+  {
+    "id": 68,
+    "text": "proceed to checkout with cash on delivery option",
+    "language_group": "en",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 19
+  },
+  {
+    "id": 69,
+    "text": "look for summer linen shirts for beach",
+    "language_group": "en",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 20
+  },
+  {
+    "id": 70,
+    "text": "skip the slim fit ones i want loose relaxed fit only",
+    "language_group": "en",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 20
+  },
+  {
+    "id": 71,
+    "text": "how long does standard delivery take to alexandria?",
+    "language_group": "en",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 20
+  },
+  {
+    "id": 72,
+    "text": "remove that last item i added by misstake",
+    "language_group": "en",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 20
+  },
+  {
+    "id": 73,
+    "text": "browse casual loafers brown leather size 41",
+    "language_group": "en",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 21
+  },
+  {
+    "id": 74,
+    "text": "add 1 pair to shopping cart",
+    "language_group": "en",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 21
+  },
+  {
+    "id": 75,
+    "text": "checkout now and apply coupon if available",
+    "language_group": "en",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 21
+  },
+  {
+    "id": 76,
+    "text": "عايز hoodie يكون oversize ولونه olive مقاس XL",
+    "language_group": "mixed",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 22
+  },
+  {
+    "id": 77,
+    "text": "لا بلاش olive مش حلو ف اللبس ورينى الـ charcoal",
+    "language_group": "mixed",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 22
+  },
+  {
+    "id": 78,
+    "text": "هو الـ material قطن 100% ولا مخلوط بـ polyester؟",
+    "language_group": "mixed",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 22
+  },
+  {
+    "id": 79,
+    "text": "اعمل add للـ hoodie الـ charcoal ده ف الـ cart",
+    "language_group": "mixed",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 22
+  },
+  {
+    "id": 80,
+    "text": "ورينى كوتشيات running تكون lightweight عشان الـ marathon",
+    "language_group": "mixed",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 23
+  },
+  {
+    "id": 81,
+    "text": "مش عايز brand غالى بلاش Nike ورينى حاجات affordable",
+    "language_group": "mixed",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 23
+  },
+  {
+    "id": 82,
+    "text": "زود الـ quantity وخليها 2 pairs من الكوتشى الاسود",
+    "language_group": "mixed",
+    "expected_intent": "update_cart_quantity",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 23
+  },
+  {
+    "id": 83,
+    "text": "اعمل remove للـ pair التانيه كفايه واحد بس",
+    "language_group": "mixed",
+    "expected_intent": "update_cart_quantity",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 23
+  },
+  {
+    "id": 84,
+    "text": "ايه الفرق بين الـ slim fit والـ regular fit فى التيشيرتات دى؟",
+    "language_group": "mixed",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 24
+  },
+  {
+    "id": 85,
+    "text": "ضيف الـ black polo shirt مقاس L ف الـ basket",
+    "language_group": "mixed",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 24
+  },
+  {
+    "id": 86,
+    "text": "عايز اشوف الـ cart واغير الـ size لـ XL بدل L",
+    "language_group": "mixed",
+    "expected_intent": "update_cart_item",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 24
+  },
+  {
+    "id": 87,
+    "text": "فتحلى الـ cart كدا اشوف الـ total كام بالمصاريف",
+    "language_group": "mixed",
+    "expected_intent": "view_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 25
+  },
+  {
+    "id": 88,
+    "text": "اعمل clear للـ cart كلها مش هشتري حاجة انهارده",
+    "language_group": "mixed",
+    "expected_intent": "clear_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 25
+  },
+  {
+    "id": 89,
+    "text": "بدور على cargo pants لونها beige او khaki بسعر معقول",
+    "language_group": "mixed",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 26
+  },
+  {
+    "id": 90,
+    "text": "فيه منه لون تانى غير الـ beige؟ مش بحب الدرجه دى",
+    "language_group": "mixed",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 26
+  },
+  {
+    "id": 91,
+    "text": "هو الـ delivery للـ order ده هياخد كام يوم لـ Cairo؟",
+    "language_group": "mixed",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 26
+  },
+  {
+    "id": 92,
+    "text": "حط الـ cargo الـ khaki مقاس 34 فى الـ cart",
+    "language_group": "mixed",
+    "expected_intent": "add_to_cart",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 26
+  },
+  {
+    "id": 93,
+    "text": "خلصلى الـ checkout واختار cash on delivery",
+    "language_group": "mixed",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 26
+  },
+  {
+    "id": 94,
+    "text": "ورينى summer dresses تكون floral و midi",
+    "language_group": "mixed",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 27
+  },
+  {
+    "id": 95,
+    "text": "بلاش sleeveless خالص انا محجبة وعايزة long sleeves",
+    "language_group": "mixed",
+    "expected_intent": "filter_negation",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 27
+  },
+  {
+    "id": 96,
+    "text": "هو الـ size chart مظبوط ولا الـ dress بييجى tight؟",
+    "language_group": "mixed",
+    "expected_intent": "product_advice",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 27
+  },
+  {
+    "id": 97,
+    "text": "اعمل delete للـ socks اللى حطيتها بالغلط ف الـ bag",
+    "language_group": "mixed",
+    "expected_intent": "remove_from_cart",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 27
+  },
+  {
+    "id": 98,
+    "text": "اعمل cancel للطلب الأخير ورجع الـ items ف الـ cart تانى",
+    "language_group": "mixed",
+    "expected_intent": "cancel_order",
+    "is_negation_or_correction": true,
+    "conversation_group_id": 28
+  },
+  {
+    "id": 99,
+    "text": "عايز basic white sneakers جلد ينفع semi-formal",
+    "language_group": "mixed",
+    "expected_intent": "search_product",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 28
+  },
+  {
+    "id": 100,
+    "text": "تمام اعمل proceed to checkout خلاص",
+    "language_group": "mixed",
+    "expected_intent": "checkout",
+    "is_negation_or_correction": false,
+    "conversation_group_id": 28
+  }
+]

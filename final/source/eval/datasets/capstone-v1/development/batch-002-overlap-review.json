@@ -1,0 +1,279 @@
+{
+  "review_date": "2026-10-06",
+  "review_kind": "author_plus_second_draft_review_not_human_gold",
+  "source": "docs/cap02-expansion-plan.md",
+  "status": "known_links_recorded_not_exhaustive_semantic_deduplication",
+  "relations": [
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-005",
+        "synthetic-002-006",
+        "synthetic-002-007",
+        "synthetic-002-008",
+        "syn-fr-02",
+        "syn-mx-02"
+      ],
+      "reason": "Same named shoe pair and price trade-off scenario."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": ["synthetic-002-017", "synthetic-002-161", "syn-ar-01"],
+      "reason": "Same size42/budget1800/leather-exclusion scenario plus its contextual correction."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-033",
+        "synthetic-002-034",
+        "synthetic-002-035",
+        "synthetic-002-036",
+        "syn-ar-07",
+        "syn-fr-10",
+        "syn-mx-08"
+      ],
+      "reason": "Same checkout Spotlight request with no activation."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-049",
+        "synthetic-002-050",
+        "synthetic-002-051",
+        "synthetic-002-052",
+        "syn-mx-03",
+        "gemini-001-015",
+        "gemini-001-037",
+        "gemini-001-062",
+        "gemini-001-087"
+      ],
+      "reason": "Cart-inspection request paraphrases."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-053",
+        "synthetic-002-054",
+        "synthetic-002-055",
+        "synthetic-002-056",
+        "syn-ar-03",
+        "syn-fr-03"
+      ],
+      "reason": "Account navigation request including exclusion of other destinations."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-057",
+        "synthetic-002-058",
+        "synthetic-002-059",
+        "synthetic-002-060",
+        "syn-en-03"
+      ],
+      "reason": "Order-history navigation; newest-order preference is a variant of the same goal."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-061",
+        "synthetic-002-062",
+        "synthetic-002-063",
+        "synthetic-002-064",
+        "gemini-001-100"
+      ],
+      "reason": "Proceed to checkout-page request; new variants explicitly distinguish submission."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-081",
+        "synthetic-002-082",
+        "synthetic-002-083",
+        "synthetic-002-084",
+        "synthetic-002-085",
+        "synthetic-002-086",
+        "synthetic-002-087",
+        "synthetic-002-088",
+        "syn-ar-06",
+        "syn-fr-09",
+        "syn-mx-09",
+        "gemini-001-016",
+        "gemini-001-038",
+        "gemini-001-063",
+        "gemini-001-088"
+      ],
+      "reason": "Whole-cart-clear paraphrases; motivations do not make independent families."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-089",
+        "synthetic-002-090",
+        "synthetic-002-091",
+        "synthetic-002-092",
+        "syn-en-07"
+      ],
+      "reason": "Order-submission request after review; safety still requires bound Confirmation."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": ["synthetic-002-101", "syn-mx-06"],
+      "reason": "Increase named Nile Runner cart line by a delta."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": ["synthetic-002-103", "syn-fr-04"],
+      "reason": "Decrease named Nile Runner line while preserving other items."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-109",
+        "synthetic-002-110",
+        "synthetic-002-111",
+        "synthetic-002-112",
+        "syn-fr-08"
+      ],
+      "reason": "Undo latest reversible cart edit."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-113",
+        "synthetic-002-114",
+        "synthetic-002-115",
+        "synthetic-002-116",
+        "syn-ar-08",
+        "syn-en-09"
+      ],
+      "reason": "Assistant-capabilities question paraphrases."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": [
+        "synthetic-002-065",
+        "synthetic-002-066",
+        "synthetic-002-067",
+        "synthetic-002-068",
+        "syn-fr-06",
+        "syn-en-04",
+        "syn-en-05"
+      ],
+      "reason": "Named-product-page opening template. Other new detail-page families now require distinct ordinal/cart-line/shortlist-price resolution; the initial name-substitution drafts are archived in this ledger."
+    },
+    {
+      "relation": "conservative_must_link",
+      "case_ids": ["synthetic-002-020", "syn-mx-01"],
+      "reason": "Mixed shoe search shares size/budget/negated-property template; retain conservatively despite different values."
+    }
+  ],
+  "lexical_scan": {
+    "normalization": "NFKC + casefold + non-word runs to spaces; original messages unchanged",
+    "method": "difflib.SequenceMatcher within the same language group, ratio >= 0.60",
+    "candidates": [
+      {
+        "new_case_id": "synthetic-002-017",
+        "existing_case_id": "syn-ar-01",
+        "similarity": 0.7826,
+        "decision": "must_link",
+        "reason": "Shared goal/scenario wording; retain in the full connected graph."
+      },
+      {
+        "new_case_id": "synthetic-002-113",
+        "existing_case_id": "syn-ar-08",
+        "similarity": 0.6757,
+        "decision": "must_link",
+        "reason": "Shared goal/scenario wording; retain in the full connected graph."
+      },
+      {
+        "new_case_id": "synthetic-002-020",
+        "existing_case_id": "syn-mx-01",
+        "similarity": 0.6733,
+        "decision": "must_link",
+        "reason": "Shared goal/scenario wording; retain in the full connected graph."
+      },
+      {
+        "new_case_id": "synthetic-002-115",
+        "existing_case_id": "syn-en-09",
+        "similarity": 0.6353,
+        "decision": "must_link",
+        "reason": "Shared goal/scenario wording; retain in the full connected graph."
+      },
+      {
+        "new_case_id": "synthetic-002-099",
+        "existing_case_id": "syn-en-06",
+        "similarity": 0.6018,
+        "decision": "not_a_paraphrase",
+        "reason": "Add requested variant versus remove existing line: shared colour/size wording does not imply same intent or authored scenario."
+      }
+    ]
+  },
+  "limitations": [
+    "Only the 140 previous canonical synthetic rows and this new batch were compared here; full legacy corpus, browser tests and private transcripts remain exposed and require review before joint use.",
+    "No lexical threshold proves semantic independence.",
+    "Original family IDs describe authorship; use full connected components for any future joint allocation.",
+    "No new split, model run, human gold or unseen evidence is approved by this ledger."
+  ],
+  "pre_fit_authoring_revisions": [
+    {
+      "case_id": "synthetic-002-069",
+      "prior_draft_message": "ممكن توديني لصفحة كارديجان خفيف؟ الاسم ده بالظبط",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-070",
+      "prior_draft_message": "Light Cardigan saf7eto law sama7t, mesh 3ayez list",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-071",
+      "prior_draft_message": "open Light Cardigan for me ... no buying, just its details",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-072",
+      "prior_draft_message": "كارديجان خفيف افتح الـ details page بتاعته",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-073",
+      "prior_draft_message": "افتح حقيبة كاميرا كمنتج، مش قسم الشنط كله",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-074",
+      "prior_draft_message": "khodny 3ala Camera Bag nafso, el saf7a mesh el category",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-075",
+      "prior_draft_message": "id like the Camera Bag page on screen, can you bring that up?",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-076",
+      "prior_draft_message": "افتح Camera Bag product نفسه عشان اقرا الوصف",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-077",
+      "prior_draft_message": "خليني ادخل صفحة سماعة جيب اشوفها",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-078",
+      "prior_draft_message": "Pocket Speaker details plz, 3ayez a2ra el kalam elly 3aleha",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-079",
+      "prior_draft_message": "bring up Pocket Speaker, i closed its page by mistake",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    },
+    {
+      "case_id": "synthetic-002-080",
+      "prior_draft_message": "عايز صفحة سماعة جيب، just open مش اشتري",
+      "reason": "Replace catalogue-name substitution with a distinct context-resolution task before fitting any model."
+    }
+  ]
+}

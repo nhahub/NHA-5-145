@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "native-agent-startup-with-synthetic-authority",
+  "status": "verified_with_real_authority_and_qualification_gates_open",
+  "source": {
+    "branch": "feature/cap06-linux-production-host",
+    "probe_base_commit": "65ad131",
+    "probe_uncommitted_bytes_bound_by_sha256": true,
+    "native_release_commit": "2dbe015115822d0e2821b194645e416c71d20d30",
+    "native_release_tree": "ff109049c131baab1ac15f29ebf5dc66bc875ef9",
+    "production_code_changed": false
+  },
+  "input_sha256": {
+    "eval/native_agent_probe.py": "63a94bd4d5b2b4c7acdf828b5f9384a5f921e9a309d8c13841824ad511d74b37",
+    "eval/tests/test_native_agent_probe.py": "666c1e9cfd5490b1e40b9fb047bd8e853285048e89a60ebd60e23ae510e673a4",
+    "profile.json": "12dcc451a09fe1ec40c4fa18bfbf31c8f8bf567cf3acf440969d6d1072086b5c",
+    "release_probe.py": "3941aa0fff49f3e5ebad1cba398e5a817d070a862aa9488d7c7f6a0b23639932",
+    "release.tar": "bb525fcf8a218fa9f6aa1d475cb8dc01ee57f842456bad26d044f5a984ce134a",
+    "release.json": "bbf04fb131f066492876218bccacf8907a9b19db78408e1eb4eb57ae1ba31944"
+  },
+  "profile": {
+    "version": 1,
+    "image_sha256": "25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "source": {
+      "commit": "2dbe015115822d0e2821b194645e416c71d20d30",
+      "tree": "ff109049c131baab1ac15f29ebf5dc66bc875ef9",
+      "sha256": "f47490964f3fd741b615a245482fa39f0c2d435f04bab99f288d819504ab3a98",
+      "bytes": 5049285,
+      "files": 6
+    },
+    "git_sha256": "7868f63309367aed4330fd3da5841634acc1c9b51f3e090451ac02c95090e202",
+    "node_sha256": "53fb205ae78805130177e24bcb459a69a1518c8d98f8965f31d85aae7ea840fc",
+    "caddy_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+    "policy_cache_sha256": "494dd8387148001eb6766474081f235faec0d67e17ba941aca7ae3c5d84d3e0a",
+    "policy_lock_sha256": "2ffe54bac902422627c296d5a7619f66a7ef9c6ad2565e854d4663cf05cf0d80",
+    "packaging_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "catalogue_sha256": "52ee9d8714d73bcd587a72d17d778f412213a010ae547b7350b55f24c02674f0",
+    "store_manifest_sha256": "04df8140b7fb96959eb60a594de1d295caffe75277b0677dee63568441d2cc82",
+    "pnpm_manifest_sha256": "db5b3ddeca41b9dca76da8701fb885076a219832f103ffab6e41462aa630ad04",
+    "archive_sha256": "bb525fcf8a218fa9f6aa1d475cb8dc01ee57f842456bad26d044f5a984ce134a",
+    "manifest_sha256": "bbf04fb131f066492876218bccacf8907a9b19db78408e1eb4eb57ae1ba31944",
+    "fixture_probe_sha256": "3941aa0fff49f3e5ebad1cba398e5a817d070a862aa9488d7c7f6a0b23639932",
+    "agent_probe_sha256": "63a94bd4d5b2b4c7acdf828b5f9384a5f921e9a309d8c13841824ad511d74b37"
+  },
+  "result": {
+    "native_agent_started": true,
+    "synthetic_authority_injected": true,
+    "qualified_readiness_verified": false,
+    "signed_closed_readiness_verified": true,
+    "invalid_proof_before_datastore": true,
+    "graceful_sigterm_verified": true,
+    "sigterm_process_returncode": -15,
+    "generation_zero_refusal_verified": true,
+    "allowance_uncertainty_preserved": true,
+    "catalogue_and_manifest_preserved": true,
+    "positive": {
+      "checks": {
+        "release": true,
+        "storefront": true,
+        "admission": true,
+        "allowance": true,
+        "provider": false
+      },
+      "authority_reads": 15,
+      "authority_closed": 1,
+      "authority_forbidden": 0,
+      "model_type": "OpenRouterClient",
+      "model_attempts": 0,
+      "network_denials": 0,
+      "work_closed": true,
+      "admission_closed": true,
+      "checks_closed": true
+    },
+    "negative": {
+      "checks": {},
+      "authority_reads": 7,
+      "authority_closed": 1,
+      "authority_forbidden": 0,
+      "model_type": "OpenRouterClient",
+      "model_attempts": 0,
+      "network_denials": 0,
+      "work_closed": true,
+      "admission_closed": true,
+      "checks_closed": true
+    }
+  },
+  "injection_scope": {
+    "only_external_authority_factory_injected": true,
+    "real_sdk_construction_forbidden": true,
+    "actual_protected_posix_reader": true,
+    "actual_release_root_binding": true,
+    "actual_model_factory_and_openrouter_client": true,
+    "synthetic_provider_key_only": true,
+    "default_provider_verifier_unchanged": true,
+    "actual_uvicorn_and_original_lifespan": true,
+    "lifespan_wrapper": "observes individual existing checks and final cleanup; does not replace them",
+    "real_aws_or_dynamodb_access_verified": false,
+    "qualified_model_readiness_verified": false
+  },
+  "synthetic_allowance": {
+    "credit_usd": "0.73",
+    "uncertain_hold_usd": "0.04",
+    "enabled_for_provider_gate_independence": true,
+    "status_unchanged_after_both_runs": true,
+    "actual_key_or_ledger_read_or_changed": false
+  },
+  "bounds": {
+    "image": "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "network": "none",
+    "root_filesystem": "read-only",
+    "uid": 10001,
+    "gid": 10001,
+    "capabilities": [],
+    "new_privileges": false,
+    "memory_bytes": 1073741824,
+    "additional_swap_bytes": 0,
+    "cpus": 1,
+    "pids": 128,
+    "tmp_bytes": 67108864,
+    "executable_work_tmpfs_bytes": 536870912,
+    "synthetic_caddy_tmpfs_bytes": 33554432,
+    "outer_timeout_seconds": 180,
+    "pip_timeout_seconds": 90,
+    "startup_timeout_seconds_each": 20,
+    "sigterm_timeout_seconds": 10,
+    "invalid_generation_timeout_seconds": 15,
+    "ports_published": false,
+    "owner_home_checkout_credentials_socket_mounts": false,
+    "task_containers_removed": true
+  },
+  "verification": {
+    "new_protocol_tests": "9 passed,0.43s; initial missing-module RED collection error",
+    "host_compatibility": "71 passed,2 upstream deprecation warnings,27.53s",
+    "ruff": "passed;272files already formatted",
+    "pip_check": "passed",
+    "timeout_cleanup": {
+      "controlled_timeout": true,
+      "corrected_prefix_command": "rm",
+      "named_container_removed": true,
+      "reinspection_missing": true
+    },
+    "production_or_typescript_changes": false,
+    "earlier_broad_results": "Agent899passed; Evaluation546passed2warnings1unchanged milestone cleanup failure, affected wholemodule1passes unchanged on recheck; TS199/build pass. No uninterrupted full-green claim; original evidence retained."
+  },
+  "review": {
+    "fresh_review_material_findings": 2,
+    "addressed": 2,
+    "header_fix": "preserve case-insensitive HTTPMessage; observed native failure then final actual native pass",
+    "timeout_fix": "remove Docker run from rm prefix; controlled2second timeout and exact named reinspection confirms removal",
+    "other_material_findings": 0
+  },
+  "retained_attempts": [
+    {
+      "stage": "run-cced6c2bdc",
+      "result": "harness KeyError Cache-Control after signed HTTP response; header mapping fixed"
+    },
+    {
+      "stage": "run-20e548ccfc",
+      "result": "harness expected403 for unauthenticated speech; existing boundary returns401Shopper identity required; exact assertion corrected"
+    },
+    {
+      "stage": "run-22eaa915b6",
+      "result": "complete native proof passed, empty stderr"
+    }
+  ],
+  "signal_semantics": {
+    "actual_process_returncode": -15,
+    "uvicorn_reraises_signal_after_graceful_lifespan": true,
+    "original_signal_handlers_not_patched": true,
+    "cleanup_audited_before_reraise": true,
+    "all_owned_resources_closed": true
+  },
+  "remaining_gates": [
+    "actual production interpreter/AMI/package security adoption",
+    "real host provisioning/systemd/PID1/reboot/users/capabilities/metadata/log acceptance",
+    "real Dynamo/account access and selected-provider qualification/key/remaining-credit custody",
+    "measured qualified capacity",
+    "current account/Free-plan balance/exact cost/resource/rollback/public activation gates",
+    "deployed desktop/physical Android safety acceptance"
+  ],
+  "external_effects": {
+    "aws_account_provider_requests": 0,
+    "paid_calls": 0,
+    "real_state_or_credentials_changed": false,
+    "service_install_activation": false,
+    "public_dns_tls_changes": false,
+    "push_merge": false
+  }
+}

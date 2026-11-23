@@ -1,0 +1,27 @@
+{
+  "status": "offline_preparation_only",
+  "epoch": 1793276024.97863,
+  "lambda_artifacts": [
+    {
+      "role": "startup",
+      "sha256": "7d90b216b33f4697354df220764e8a2f79dd35b63bcc1fff2e2c01f72aac5f7d",
+      "bytes": 25888663,
+      "verified": true,
+      "isolated_smoke_passed": true
+    },
+    {
+      "role": "controller",
+      "sha256": "8b968e9daf2d9cb0a8191eec0a5d5a3d9945ebe7d82b10e08707760332b5c641",
+      "bytes": 25888669,
+      "verified": true,
+      "isolated_smoke_passed": true
+    }
+  ],
+  "focused_tests_passed": 72,
+  "account_lambda_concurrency": 400,
+  "account_unreserved_lambda_concurrency": 400,
+  "account_existing_lambda_functions": 0,
+  "cloudfront_list_access": "API returned successfully; count query null, inventory not established",
+  "aws_writes": 0,
+  "live_model_posts": 0
+}

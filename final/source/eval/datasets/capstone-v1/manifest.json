@@ -1,0 +1,150 @@
+{
+  "manifest_version": 1,
+  "dataset_version": "capstone-v1-draft",
+  "created_on": "2026-09-29",
+  "status": "closed_under_owner_approved_synthetic_scope",
+  "frozen": false,
+  "unseen_case_count": 0,
+  "preparation_artifacts": {
+    "directory_guide": "eval/datasets/capstone-v1/README.md",
+    "empty_splits": "eval/datasets/capstone-v1/splits.json",
+    "non_evaluable_case_template": "eval/datasets/capstone-v1/case-template.json",
+    "baseline_specification": "docs/cap01-requirements.md#graduation-ml-and-deployment-requirements",
+    "execution_after": ["local-mvp/15", "local-mvp/16"],
+    "collection_packet": "docs/cap02-collection-packet.md",
+    "label_guide": "docs/cap02-label-guide.md",
+    "local_gate_status": "closed_with_documented_owner_approved_evidence_adjustments"
+  },
+  "sources": [
+    {
+      "path": "eval/intent-corpus.json",
+      "sha256": "1ef7ebefc6eb07a2fce8d4739c7a63f42827a4322c42598b9d442a0042aba2d8",
+      "source_version": "intent-corpus-v1",
+      "case_count": 60,
+      "critical_safety_count": 22,
+      "legacy_kind_counts": {
+        "adversarial": 4,
+        "ambiguous": 5,
+        "egyptian_arabic": 11,
+        "english": 10,
+        "franco_arabic": 9,
+        "malformed_budget": 4,
+        "mixed": 8,
+        "off_topic": 4,
+        "unsupported_currency": 5
+      },
+      "exposure": "previously_used_in_development_and_evaluation",
+      "assigned_use": "regression_development",
+      "labels_reviewed_for_current_schema": false,
+      "exposure_status": "exposed",
+      "unseen_eligible": false
+    },
+    {
+      "path": "eval/milestone_cases.py",
+      "sha256": "da88fe54a9646941558f4632c4cc2c0da989298fa7c422f0c0cfa297ac24267c",
+      "case_count": 44,
+      "designated_safety_count": 19,
+      "exposure": "previously_used_in_development_and_evaluation",
+      "assigned_use": "browser_regression",
+      "language_only_corpus": false,
+      "exposure_status": "exposed",
+      "unseen_eligible": false
+    }
+  ],
+  "limitations": [
+    "Sources exercise different seams and may overlap; counts are not unique independent examples.",
+    "The legacy kind field mixes language and scenario labels.",
+    "No independent unseen cases have been collected or frozen.",
+    "This manifest does not establish label correctness or model quality."
+  ],
+  "protocol": "docs/capstone-dataset.md",
+  "updated_on": "2026-10-07",
+  "exposure_inventory": "eval/datasets/capstone-v1/exposure-inventory.json",
+  "new_human_case_count": 0,
+  "reviewed_release_case_count": 0,
+  "collection_readiness": {
+    "custodian": "not_assigned_no_independent_team_available",
+    "independent_reviewer": "unavailable_owner_only",
+    "contributor_capacity": "unconfirmed",
+    "permission_arrangements": "unconfirmed",
+    "sample_sizes": "not_selected",
+    "split_allocation": "not_selected"
+  },
+  "synthetic_development": {
+    "batch": "eval/datasets/capstone-v1/development/synthetic-batch-001.json",
+    "record_format_version": 2,
+    "case_count": 40,
+    "language_counts": {
+      "egyptian_arabic": 10,
+      "franco_arabic": 10,
+      "english": 10,
+      "mixed": 10
+    },
+    "exposure": "exposed",
+    "labels": "draft_unreviewed",
+    "split_proposal": "eval/datasets/capstone-v1/draft-split-strategy.json",
+    "assigned_release_cases": 0
+  },
+  "synthetic_intake": {
+    "metadata": "eval/datasets/capstone-v1/development/intake/gemini-batch-001.metadata.json",
+    "case_count": 100,
+    "status": "mapped_reviewed_drafts",
+    "exposure": "exposed",
+    "distinctness_against_other_sources": "reviewed_connected_group_map_preserves_related_cases"
+  },
+  "synthetic_pilot": {
+    "release": "eval/datasets/capstone-v1/pilot-20261006/release.json",
+    "owner_approved_on": "2026-10-06",
+    "protocol": "docs/cap03-pilot-protocol.md",
+    "results": "docs/cap03-pilot-results.md",
+    "source_case_count": 140,
+    "eligible_case_count": 103,
+    "excluded_case_count": 37,
+    "train": 82,
+    "validation": 21,
+    "unseen": 0,
+    "independent_human_review": false,
+    "final_evaluation_open": true
+  },
+  "synthetic_development_expansion": {
+    "batch": "eval/datasets/capstone-v1/development/synthetic-batch-002.json",
+    "review": "docs/cap02-expansion-review.md",
+    "component_map": "eval/datasets/capstone-v1/development/expanded-group-map.json",
+    "new_records": 168,
+    "new_primary_candidates": 160,
+    "new_contextual_exclusions": 8,
+    "combined_records": 308,
+    "combined_primary_candidates": 263,
+    "known_components": 41,
+    "labels": "reviewed_drafts_not_independent_gold",
+    "split_assigned": false,
+    "four_components_per_intent_target_met": false,
+    "unseen": 0,
+    "training_run": false,
+    "status": "historical_pre_pilot2_inventory_see_expanded_synthetic_pilot"
+  },
+  "expanded_synthetic_pilot": {
+    "release": "eval/datasets/capstone-v1/pilot-20261007/release.json",
+    "protocol": "docs/cap03-expanded-pilot-protocol.md",
+    "results": "docs/cap03-expanded-pilot-results.md",
+    "source_case_count": 308,
+    "eligible_case_count": 263,
+    "excluded_case_count": 45,
+    "components": 37,
+    "train": 210,
+    "validation": 53,
+    "unseen": 0,
+    "independent_human_review": false,
+    "final_evaluation_open": true
+  },
+  "approved_closeout": {
+    "date": "2026-10-09",
+    "release": "eval/datasets/capstone-v1/holdout-20261009/release.json",
+    "training": 210,
+    "validation": 53,
+    "synthetic_test": 120,
+    "independent_human_test": 0,
+    "evidence": "docs/cap02-cap03-closeout.md",
+    "note": "Original inventory fields and empty independent-test placeholder are historical, not independent evidence."
+  }
+}

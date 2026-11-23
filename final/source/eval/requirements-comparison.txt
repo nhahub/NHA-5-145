@@ -1,0 +1,7 @@
+# Offline evaluation only; never add these to the application runtime image.
+-r requirements-baseline.txt
+xgboost==3.4.1
+sentence-transformers==6.1.0
+torch==2.14.1
+transformers==5.19.0
+huggingface-hub==1.33.0

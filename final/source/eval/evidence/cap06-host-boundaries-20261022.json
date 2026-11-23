@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-22",
+  "base_commit": "63cf98c",
+  "scope": "Injected async remote host authority/work and signed readiness integration; default local backend unchanged",
+  "source_hash_basis": "SHA256 of working-tree file bytes used for offline Windows verification",
+  "source_sha256": {
+    "agent/async_boundary.py": "1740ec8714bcd6274dc5d4860748351988c91395d0a6b10c14b01cafaad6dec6",
+    "agent/admission/async_runtime.py": "0755de6fd1dc1f39f1d89f1b1d90934685e5befa21945b33f6ae96a8033d1023",
+    "agent/admission/runtime.py": "9dd7611f441f0ad93bb81fa869b1c085298c17e31d167330b3cdef6a0711d10f",
+    "agent/lifecycle/async_work.py": "dfa61563ae90c2b2dc83e81600eb89135d5a9438e08d8a357841ea5f578b61a3",
+    "agent/lifecycle/host_health.py": "407d9080775ef12accddd6b5e261cd88b24abf9e7572dbf5921fd810ab8b02fc",
+    "agent/lifecycle/dynamodb.py": "ff55c0d10b072f29a1f85eb8a019ac7b616bbe743b1d25092cb01cbc7cdc2542",
+    "agent/app.py": "308566a5b1822f206dceaf5eb17dd219cfa3c9bb4124fe92b363ab1faed15e48",
+    "agent/shopper_http.py": "cc4f1e50a84f52e443b39a126b2ef9e8d010409b13dfbe4c515cbe192f843d58",
+    "agent/shopper_access.py": "9db14803d11b020d9ce7d27349217efa3f891a88896d57a3184fe3c1daed8684",
+    "agent/tests/test_async_boundary.py": "d02fc011d7e609fe610c3c40f47b149497e35c236a3df4e85c2f7a85862c124d",
+    "agent/tests/test_async_work.py": "566abe4bd8af4f09ec2ea53b0a532237c8a29517b80abc6f70135ea26c0d8031",
+    "agent/tests/test_host_boundaries.py": "e1ceffc63e21b34027918f0501aae4804e6e43e8c74c0ddfc887f8ad4c15495d",
+    "agent/tests/test_lifecycle_dynamodb.py": "6191642bb1590fe6b8c9f764bf738cb69bb3a0a6c74aaae376733b2e35e6f34c",
+    "agent/tests/test_lifecycle_executor.py": "657f31db0ffc8e81483ba2de0d4ae47fde32362fb9f354652386e24b60d85742"
+  },
+  "final_checks": {
+    "command": "python -X utf8 -m pytest agent/tests eval/tests/test_cloud_access.py eval/tests/test_waiting_signing.py eval/tests/test_release.py::test_built_release_is_self_contained_and_refuses_overwrite -q",
+    "passed": 865,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 119.85,
+    "includes": "All Agent tests, access policy/browser signing and fresh self-contained release build",
+    "focused_passed": 96,
+    "focused_duration_seconds": 36.94
+  },
+  "independent_review": {
+    "actionable_findings": 2,
+    "remaining_actionable_findings": 0,
+    "resolved": [
+      "Slow dependency cancellation cleanup exceeded readiness response deadline: RED/GREEN, retained single aggregate and asyncio.wait response bound",
+      "Aggregate task completion could precede local worker failure: RED/GREEN, synchronous closed/failed/generation fence before signing"
+    ],
+    "final_host_and_original_repro_checks": {
+      "passed": 21,
+      "duration_seconds": 8.06
+    },
+    "final_mock_concurrency_checks": {
+      "passed": 5,
+      "duration_seconds": 6.29
+    }
+  },
+  "mock_harness_correction": {
+    "first_broad_run": "862 passed; competing executor failure plus pending-stub teardown error",
+    "second_broad_run": "863 passed; concurrent wake returned generation1 but mock rollback restored generation0",
+    "reproduced": "Moto backups/restores whole table without thread isolation; one successful receipt invalidated after rejected competitor rollback",
+    "correction": "Shared Moto fixture serializes individual get/query/transaction server operations. Competing controller workflows and same-revision barriers remain; no production lock added."
+  },
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format:232 files",
+    "pip check",
+    "git diff --check"
+  ],
+  "verified_bounds": [
+    "Remote admission four threads/64 retained submitted operations; immutable subjects and post-await ownership validation",
+    "Remote work one thread/64 retained logical jobs; generation pinning and failed-renewal fencing",
+    "Caller cancellation retains real I/O capacity; known cancelled-begin cleanup only; no unknown retry/refund",
+    "Pending protection transfers through degraded health; meaningful activity only on accepted explicit interaction",
+    "Proof authentication before I/O; five mandatory trusted async checks, strict True and no default readiness",
+    "One aggregate retained through slow cleanup;1.5s async response bound and final authority/local fence",
+    "Lifespan drains health/work/admission on shutdown or initialization failure",
+    "Ownership, Confirmation, stale/duplicate Action and refresh recovery regressions pass"
+  ],
+  "actual_aws_api_calls": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "production_keys_generated": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "remaining": [
+    "Actual trusted release/service/catalogue/admission/allowance/qualified-provider checks and restricted host bootstrap",
+    "Linux Lambda dependency package and credential/key configuration loading",
+    "Costed approved reliable external observation delivery and account-effective IAM/OAC/event eligibility",
+    "Bedrock applied zero quotas; final resource/cost/rollback approval and deployed acceptance"
+  ],
+  "limits": [
+    "Injected callbacks are not actual provider qualification or deployed readiness",
+    "A retained synchronous SDK operation cannot be killed; explicit bounded client timeouts remain required",
+    "Pending/unknown leases expire rather than being replayed or reconstructed",
+    "No scheduler service, sleep/self-invocation loop, upgrade, new spend or push"
+  ]
+}

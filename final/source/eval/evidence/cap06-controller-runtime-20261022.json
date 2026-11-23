@@ -1,0 +1,76 @@
+{
+  "v": 1,
+  "date": "2026-10-22",
+  "base_commit": "677bb79",
+  "scope": "Explicit injected runtime factories and authenticated fixed-host observation; inactive host helper, no deployment",
+  "source_sha256": {
+    "agent/lifecycle/readiness.py": "88d45bcf484d8d261e46744b8354ac12705553046b267f8c294a156cf38b7b73",
+    "agent/lifecycle/controller.py": "da436829936651418a7daee6fab7ec52648605f7b7b0d07f05195bce173ab285",
+    "agent/lifecycle/lambda_runtime.py": "f8992b8b49fa77ac58288eafc8a9d0fe0024a9ea9b6a2fe9edc8a6ac035c5e9d",
+    "agent/lifecycle/dynamodb.py": "5814090dab19c296cc6dada49916ab23b4de58b147b8c54c79a8dc77700081be",
+    "agent/lifecycle/executor.py": "f33792521d055f3c33b89ddd0be7100c08fc4c2b3f4252bc4c2c15cd7da2bcf1",
+    "agent/lifecycle/startup.py": "58ea354ea43670746ab7ec522e5fee33413ba74cb6eaa0e3729628dbf9e4c1c0",
+    "agent/tests/test_readiness.py": "ab7cc9cf7a98b26ec29240af3d90754e93a1fb427e7d3f998f3622adbdfc1251",
+    "agent/tests/test_control_worker.py": "074aaea39c7556ed3ae4411b9a25f64e126bc70d634a7aedc86eb2976ba51678",
+    "agent/tests/test_lambda_runtime.py": "0f40718b873f46a2e9c957a62545f7169e70fb9fa44ec0722e2bd9f8fbfd23a7",
+    "agent/tests/test_lifecycle_executor.py": "d1efa248013b8bcd3a9730519815a94322d59db218cfabafa02b7b3738a418be",
+    "eval/tests/test_release.py": "a6fa314b8cf5cb0ecd8534c4dec3b96532d8dd26591296aa347626f63c89c6c5"
+  },
+  "final_checks": {
+    "passed": 308,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 94.71,
+    "includes": "admission, lifecycle/command/startup, inference allowance/runtime, readiness/controller/factories, cloud access/browser signing and fresh release build"
+  },
+  "independent_review": {
+    "initial_actionable_findings": 1,
+    "finding": "HTTPX rechunking deferred body deadline under slow subchunks",
+    "regression_red_observed": true,
+    "red_chunks_simulated_seconds": 1025,
+    "fixed_chunks_simulated_seconds": 2,
+    "resolved": true,
+    "remaining_actionable_findings": 0,
+    "focused_passed": 93,
+    "duration_seconds": 23.09
+  },
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format: 225 files",
+    "pip check",
+    "git diff --check"
+  ],
+  "aws_runtime_contract": "docs/research/2026-10-22-cap06-controller-runtime-contract.md",
+  "verified_bounds": [
+    "Exact Stockholm instance/function and role-specific SDK clients",
+    "Zero application/SDK retries, durable generation/operation-filtered exclusive command claim",
+    "Status observations never claim START",
+    "Queue202 is acceptance only; unknown acknowledgement retains wake generation",
+    "Fresh release/generation/nonce/ready-bit HMAC and constant-time comparison",
+    "Verified fixed HTTPS origin, no proxy/redirect, max1024byte response and per-raw-chunk deadline checks",
+    "EC2 uint16 internal high byte ignored; malformed state still unknown",
+    "No production key or sensitive event/response logging"
+  ],
+  "actual_aws_api_calls": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "production_keys_generated": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "remaining": [
+    "Actual host readiness aggregate and async work integration",
+    "Linux Lambda dependency package/bootstrap/restricted configuration loading",
+    "Costed approved reliable observation delivery when browsers close or hosts fail",
+    "Effective IAM/OAC, event/concurrency account eligibility and deployment acceptance",
+    "Bedrock applied zero quotas and final resource/cost/rollback approval"
+  ],
+  "limits": [
+    "Readiness helper remains inactive; ordinary current health cannot become ready",
+    "Per-phase HTTP timeouts plus checked body deadline are not an atomic wall-clock limit",
+    "AWS can duplicate or service-retry async delivery even with function-error retries0",
+    "Generation remains a DynamoDB protocol, not an EC2 API fence",
+    "No additional scheduler/service or sleep/self-invocation loop selected"
+  ]
+}

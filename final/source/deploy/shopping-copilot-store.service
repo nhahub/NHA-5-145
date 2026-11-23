@@ -1,0 +1,41 @@
+[Unit]
+Description=Shopping Copilot production Storefront
+After=network.target shopping-copilot-metadata.service shopping-copilot.service
+Requires=shopping-copilot-metadata.service
+BindsTo=shopping-copilot-metadata.service
+Conflicts=shopping-copilot.service
+PartOf=shopping-copilot-host.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=exec
+User=copilot-store
+Group=copilot-store
+WorkingDirectory=/opt/shopping-copilot/current
+ExecStart=/opt/shopping-copilot/python/bin/python -B -m deploy.host_component --config /etc/shopping-copilot/store/store.json --component store
+ExecStartPre=/opt/shopping-copilot/python/bin/python -B -m deploy.host_diagnostics --service store --event starting
+ExecStopPost=/opt/shopping-copilot/python/bin/python -B -m deploy.host_diagnostics --service store --event stopped
+LogsDirectory=shopping-copilot/store
+LogsDirectoryMode=0700
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=20
+UMask=0027
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectProc=invisible
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+ReadOnlyPaths=/opt/shopping-copilot /etc/shopping-copilot
+ReadWritePaths=/var/lib/shopping-copilot/store /var/log/shopping-copilot/store
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LimitNOFILE=4096
+TasksMax=64
+MemoryMax=256M
+StandardOutput=null
+StandardError=null

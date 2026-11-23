@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "task_id": "t_009",
+  "action_id": "a_017",
+  "sequence_number": 3,
+  "status": "ok",
+  "snapshot": {
+    "v": 1,
+    "url": "http://localhost:4000/c/shoes?type=running&max_price=2000",
+    "title": "Running shoes",
+    "lang": "ar",
+    "viewport": {
+      "w": 390,
+      "h": 844,
+      "scrollY": 0
+    },
+    "truncated": false,
+    "elements": [
+      {
+        "id": 52,
+        "role": "heading",
+        "name": "12 products",
+        "visible": true,
+        "level": 2
+      }
+    ]
+  }
+}

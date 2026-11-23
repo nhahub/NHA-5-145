@@ -1,0 +1,28 @@
+{
+  "split_format_version": 1,
+  "dataset_version": "capstone-v1-draft",
+  "status": "structure_only",
+  "frozen": false,
+  "assigned_case_count": 0,
+  "groups": {
+    "train": [],
+    "validation": [],
+    "regression": []
+  },
+  "unseen_release": {
+    "status": "not_collected",
+    "case_count": 0,
+    "release_id": null,
+    "sha256": null,
+    "custodian_id": null,
+    "frozen_on": null,
+    "contains_previously_exposed_cases": false
+  },
+  "rules": {
+    "group_related_paraphrases_and_conversations": true,
+    "fit_learned_preprocessing_on_train_only": true,
+    "select_configurations_on_validation_only": true,
+    "hold_unseen_content_outside_development_checkout": true,
+    "legacy_source_counts_are_not_split_assignments": true
+  }
+}

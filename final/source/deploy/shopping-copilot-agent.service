@@ -1,0 +1,42 @@
+[Unit]
+Description=Shopping Copilot external-authority Agent
+After=network.target shopping-copilot-metadata.service shopping-copilot.service shopping-copilot-store.service
+Requires=shopping-copilot-metadata.service
+BindsTo=shopping-copilot-metadata.service
+Conflicts=shopping-copilot.service
+PartOf=shopping-copilot-host.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=exec
+User=copilot
+Group=copilot
+SupplementaryGroups=copilot-catalogue
+WorkingDirectory=/opt/shopping-copilot/current
+ExecStart=/opt/shopping-copilot/python/bin/python -B -m deploy.host_agent --config /etc/shopping-copilot/agent/host.json
+ExecStartPre=/opt/shopping-copilot/python/bin/python -B -m deploy.host_diagnostics --service agent --event starting
+ExecStopPost=/opt/shopping-copilot/python/bin/python -B -m deploy.host_diagnostics --service agent --event stopped
+LogsDirectory=shopping-copilot/agent
+LogsDirectoryMode=0700
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectProc=invisible
+RestrictNamespaces=yes
+RestrictSUIDSGID=yes
+ReadOnlyPaths=/opt/shopping-copilot /etc/shopping-copilot /var/lib/shopping-copilot/store
+ReadWritePaths=/var/lib/shopping-copilot/agent /var/log/shopping-copilot/agent
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LimitNOFILE=4096
+TasksMax=64
+MemoryMax=1G
+StandardOutput=null
+StandardError=null

@@ -1,0 +1,64 @@
+{
+  "epoch": 1793220005.0585563,
+  "temporary_budgets": 0,
+  "temporary_functions": 0,
+  "temporary_rds": 0,
+  "temporary_schedules": 0,
+  "temporary_security_groups": 0,
+  "temporary_roles": 0,
+  "temporary_log_groups": 0,
+  "active_region_ec2": 0,
+  "region_eips": 0,
+  "plan": "FREE",
+  "remaining_credits": {
+    "amount": 159.79,
+    "unit": "USD"
+  },
+  "activities": [
+    {
+      "title": "Use a foundation model in the Amazon Bedrock playground",
+      "status": "NOT_STARTED",
+      "reward_usd": 20.0
+    },
+    {
+      "title": "Create an Aurora or RDS database",
+      "status": "NOT_STARTED",
+      "reward_usd": 20.0
+    },
+    {
+      "title": "Create a web app using AWS Lambda",
+      "status": "COMPLETED",
+      "reward_usd": 20.0
+    },
+    {
+      "title": "Set up a cost budget using AWS Budgets",
+      "status": "COMPLETED",
+      "reward_usd": 20.0
+    },
+    {
+      "title": "Launch an instance using EC2",
+      "status": "COMPLETED",
+      "reward_usd": 20.0
+    }
+  ],
+  "status": "owner_paused_operation_closed",
+  "new_rewards_usd": 40,
+  "total_extra_rewards_usd": 60,
+  "unclaimed_rewards_usd": 40,
+  "credit_ceiling_usd": "1",
+  "cash_usd": "0",
+  "rds_ever_created": false,
+  "bedrock_model_calls": 0,
+  "lambda_signed_invocations": 1,
+  "operator_tests_passed": 10,
+  "finalized_billing": false,
+  "retained_project_storage_continues": true,
+  "protected_pointer": ".scratch/aws-credit-rewards/current-operation.txt",
+  "cap07_authority_finish": {
+    "finished": true,
+    "generation": 3,
+    "authority_state": "stopped",
+    "epoch": 1793220259.3383248
+  },
+  "cap07_operation_closed": true
+}

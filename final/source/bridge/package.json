@@ -1,0 +1,15 @@
+{
+  "name": "@shopping-copilot/bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run --passWithNoTests --pool=threads --maxWorkers=1"
+  },
+  "devDependencies": {
+    "@types/jsdom": "21.1.7",
+    "jsdom": "26.1.0",
+    "vitest": "3.2.4"
+  }
+}

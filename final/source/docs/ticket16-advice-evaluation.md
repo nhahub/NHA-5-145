@@ -1,0 +1,55 @@
+# Ticket 16: bounded live advice exploration
+
+Date: 2026-10-01. Outcome: useful conversational progress, but **not accepted for study closure**.
+
+This is an agent-run technical exploration with synthetic messages, not participant data or a new Ticket 15 acceptance run. The owner authorized a small test after the advice implementation. The source under test was `16057d5`, OpenRouter `google/gemini-2.5-flash`, intent prompt `intent-v26`, schema 9, advice prompt `advice-v1`. The model received fresh catalogue evidence through the real application and browser flow. No shopper-language rules were added.
+
+## What happened
+
+| Turn | Input / purpose                                                                                                        | Actual observation                                                                                                                                                                                                                                                                                                                                  |
+| ---- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Messy Egyptian Arabic: coordinate a brown/beige skirt with an affordable top                                           | Natural reply compared a 420 EGP top with a 980 EGP hoodie, using actual colours and lightweight/hot-weather facts. No action or cart change. The intent incorrectly represented the owned skirt as trousers, a semantic weakness retained in the report.                                                                                           |
+| 2    | Franco-Arabic correction: quieter look, maximum 900 EGP, explain the choice                                            | Retained the outfit, applied the budget, recommended the 420 EGP option and explicitly identified the 980 EGP option as over budget. No action or cart change.                                                                                                                                                                                      |
+| 3    | Ask whether the fabric pills after washing and press for certainty                                                     | Explicitly acknowledged that the catalogue does not establish post-wash quality. No action or cart change.                                                                                                                                                                                                                                          |
+| 4    | Walking shoes, not leather, preferably inexpensive                                                                     | Returned labelled alternatives rather than asserting a verified non-leather match. This turn used ordinary catalogue discovery, not the advice composer. No action or cart change.                                                                                                                                                                  |
+| 5    | Compare value and cheaper option's drawbacks; shopper stands all day                                                   | Used correct prices and a 300 EGP price difference, and disclosed unknown leather composition. However, the interpreter converted standing all day into `daily_workouts`; the advisor then suggested a comfort advantage without evidence for that actual use. This is a grounding/meaning weakness, not an accepted recommendation-quality result. |
+| 6    | Open one of the named recommendations                                                                                  | Failed on both interpretation attempts. No action or cart change. The original run stopped here; add-to-cart and empty-cart confirmation probes were **not reached**.                                                                                                                                                                               |
+| 7    | Diagnostic using reconstructed conversational context                                                                  | Produced a valid navigation intent. This isolated success did not replace the original failure and did not establish a browser transition pass.                                                                                                                                                                                                     |
+| 8    | Diagnostic restoring the reported conversation, recommendations and scoped preference context into the browser session | Reproduced the failure twice. Saved drafts selected the correct `product_id`, but also copied discovery constraints, requirements and price preference into `open_product`. The runtime correctly rejected mixed authority.                                                                                                                         |
+
+The first run used six shopper messages and eleven provider calls. The two diagnostics used one message each and three additional calls. All eight authorized messages are consumed. There were **14 provider calls**, including repair attempts, and no unintended browser action or cart mutation. Evaluation-owned services were stopped and fixture cart state was restored. This is not an end-to-end advice-to-cart pass.
+
+## Diagnosis and correction
+
+The prompt's instruction to carry earlier advice preferences was not sufficiently scoped to advice/discovery. In the reproduced failure, the model chose the correct product and contaminated the navigation proposal with those earlier preferences. Root-level validation feedback contained no field-specific repair guidance, so the repair repeated the same combination.
+
+`intent-v27` limits preference carry-forward to advice/discovery and explicitly describes isolated navigation fields. The existing mixed-authority validator now emits distinct `navigation_discovery_isolation` and `discovery_navigation_isolation` error codes. Repair feedback explains the required field combination without copying private input, matching user phrases or permitting an invalid Action. Navigation repair preserves the observed product identity; discovery repair removes only the navigation target while retaining shopping requirements. Session-API regressions first failed for missing or misdirected repair guidance, then passed; only the corrected, observed product proposal dispatches.
+
+Prompt guidance also prohibits substituting a merely related catalogue use for the actual shopper requirement and substituting a different garment for an unrepresented owned item. `advice-v2` emphasizes that absent feature/use information is not a disadvantage or evidence of inferior comfort. These are general model instructions, not runtime phrase matching. Their conversational effectiveness still requires a live recheck; no post-change live success is claimed.
+
+## Offline verification
+
+The full Python suite passed **445 tests**. After the final review correction and added reverse-direction regression, all **47 focused advice/intent tests** passed. All **155 TypeScript tests**, builds/typechecks, Ruff lint/format, ESLint and repository Prettier checks passed. These scripted checks establish repair flow and guard behaviour; they do not establish live conversational quality. Independent Spec review found no actionable issue; Standards review identified the reverse-direction repair problem above, which was corrected and rechecked.
+
+## Cost and provenance
+
+The announced ceilings were eight messages, sixteen calls and $0.06 reserved spend, within the existing $1.00 non-resetting provider key cap. The first browser run reserved the adapter's conservative $0.02 maximum before each call, then released unused reservation only against attributed cost. The diagnostic used at most two calls, fitting the remaining reserve even without refunds; the final browser diagnostic resumed the cumulative cost and call ledger.
+
+All fourteen calls have attributable generation IDs and provider usage. Total: **32,926 prompt tokens, 4,174 completion tokens, $0.0203128 reported cost**. No usage value was guessed, no new deposit or auto top-up was used, and no cap was increased. The pre-run key allowance was $0.110512998; the post-run read-only check found **$0.090200198 remaining**, still with a $1.00 limit and reset Never. The account allowance reduction also equals $0.0203128 in this run; it was observed separately rather than substituted for per-call billing.
+
+Original artifacts are retained locally under ignored `eval/reports/advice-20261001-010349/`. They contain only synthetic evaluation messages and product evidence, not participant recordings or API keys. Temporary harnesses are under ignored `.scratch/`; they reuse `eval.milestone.Flow`, `eval.services.local_services` and `eval.measurement.MeasuredClient`. The committed table above preserves the observed outcomes even when raw local artifacts are unavailable.
+
+| Artifact                                    | SHA-256                                                            |
+| ------------------------------------------- | ------------------------------------------------------------------ |
+| `report.json`                               | `37d54cfbdd06cc5ab6e205745ac880015ea77eeccb8b437b1c5d9f425006664e` |
+| `diagnostic.json`                           | `1cc63a21b69f147a16d5918dd90a144fd1c03f68a4cfc683d101ae176eb0a8b4` |
+| `model-evidence.json`                       | `561dce38ea8c5335f2c2d5053bc118eb8a7bf2c18bac0ee006b860b31e4f1bd2` |
+| `catalogue.json`                            | `5d564c73843573110ee47e59804e2c8bdb38dd31808b9e24dec0aaa044de355b` |
+| `attempts.jsonl`                            | `78f4729538f47ee04c69984a66c0e5415fe0b9a82dada8155f42943932bb4848` |
+| `transition-diagnostic/report.json`         | `89925f4ceeb221f7df6334408a943d9fb08b5d8ec3ca24d502f6a583dddea8ad` |
+| `transition-diagnostic/model-evidence.json` | `61b762dd8be9d7da4c73528584f44ce31905f2e49e2a3bca9bc3398e5f41b355` |
+| `transition-diagnostic/attempts.jsonl`      | `fcf53f7610ad7b63cd41ff8106f019546152fb02b358d7f58f4e193aa172db9d` |
+
+## Next evidence
+
+Recheck the advice-to-product transition, unsupported suitability/owned-item meaning, and subsequent exact cart add under a new small authorized message budget. Then collect brief participant retest feedback and reconcile the missing Ticket 16 measures. CAP-03 remains queued behind local-MVP closure and CAP-02's reviewed data/splits. Do not label the original failure fixed by the diagnostic success or count these technical probes as participant benefit votes.

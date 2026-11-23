@@ -1,0 +1,552 @@
+{
+  "date": "2026-10-23",
+  "scope": "offline derived Linux host rehearsal and public-rate scenario reconciliation only",
+  "source": {
+    "source_commit": "b2f029001c5c2331d049bf26aa7e2fd372576287",
+    "source_dirty": true,
+    "local_rehearsal": false,
+    "public_origins": {
+      "panel": "https://app.scpilot.tech",
+      "store": "https://store.scpilot.tech",
+      "agent": "https://app.scpilot.tech"
+    }
+  },
+  "source_dirty_explanation": "untracked test/research artifacts; production runtime tree unchanged from source commit",
+  "source_hashes": {
+    "eval/linux_host_fixture.py": "656b6052e7545a65db3160a32cd0445ccdf8d69d8341273c505638877c544dc8",
+    "eval/linux_host_probe.py": "4c9697aa7841f357933dc888a555d57a4f0aed497ea7f94a605c8900426596f8",
+    "eval/linux-host-runtime.json": "3ab6052f9ed49bebaef071431a5119ea038d39848003e7bde5a94f3faee43893",
+    "deploy/host_config.py": "c177490d06ac06698b89a1ef62715d66fe3ca133b52a6187d2754631de6bea2b",
+    "deploy/host_component.py": "192f2ffd858bf72a13061bb55a6b76496a43097f4f0da3aaa6dc8ae11fc57f73",
+    "deploy/host_agent.py": "a70e7669811d133fd205cc4da7890f37bf29d8be226f567b77fa3ab2daadd33f"
+  },
+  "image": "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+  "docker": {
+    "desktop": "4.96.3 (244472)",
+    "engine": "29.9.2",
+    "api": "1.56",
+    "pull": "never",
+    "network": "none",
+    "root": "read-only",
+    "uid": "10001:10001",
+    "capabilities": "ALL dropped",
+    "no_new_privileges": true,
+    "cpu": 1,
+    "memory_bytes": 1073741824,
+    "swap_additional_bytes": 0,
+    "pids": 64,
+    "outer_timeout_seconds": 240,
+    "tmpfs": [
+      "/tmp 64MiB noexec",
+      "/rehearsal 512MiB exec owner0700",
+      "/var/lib/shopping-copilot 32MiB noexec"
+    ],
+    "published_ports": [],
+    "mounts": "read-only fixture input and fixed binaries only"
+  },
+  "runtime_profile_sha256": "3c21f9ab7e02e6def7dde2727d33a200421c1a0f7fb04ae6514beef2f70ecb07",
+  "runtime_profile": {
+    "version": 1,
+    "target": "cp312-linux-x86_64",
+    "wheels": [
+      {
+        "name": "annotated-types",
+        "version": "0.8.0",
+        "filename": "annotated_types-0.8.0-py3-none-any.whl",
+        "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+        "bytes": 13427,
+        "url": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/annotated-types/0.8.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "anyio",
+        "version": "4.15.1",
+        "filename": "anyio-4.15.1-py3-none-any.whl",
+        "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+        "bytes": 132079,
+        "url": "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/anyio/4.15.1/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "boto3",
+        "version": "1.43.115",
+        "filename": "boto3-1.43.115-py3-none-any.whl",
+        "sha256": "6667a0c21d48dc125dbba88444bc8a601ce881a99341a0e6169f9333898e620d",
+        "bytes": 140044,
+        "url": "https://files.pythonhosted.org/packages/be/bc/40dffae3238ef8d3415393132751fe2c88e8663ef84a31f0950e439ed2d5/boto3-1.43.115-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/boto3/1.43.115/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "botocore",
+        "version": "1.43.115",
+        "filename": "botocore-1.43.115-py3-none-any.whl",
+        "sha256": "9ceda640c868bc15f5399129e8cfdef8cbb4b350e8a99547c9b5f477cfb9619a",
+        "bytes": 16085101,
+        "url": "https://files.pythonhosted.org/packages/77/2d/4b6b6f5704d1ec9b412c1dd9700bda0c315619dbac4a21418180a81a2780/botocore-1.43.115-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/botocore/1.43.115/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "certifi",
+        "version": "2026.7.22",
+        "filename": "certifi-2026.7.22-py3-none-any.whl",
+        "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+        "bytes": 136983,
+        "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/certifi/2026.7.22/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "click",
+        "version": "8.5.0",
+        "filename": "click-8.5.0-py3-none-any.whl",
+        "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+        "bytes": 125251,
+        "url": "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/click/8.5.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "fastapi",
+        "version": "0.116.1",
+        "filename": "fastapi-0.116.1-py3-none-any.whl",
+        "sha256": "c46ac7c312df840f0c9e220f7964bada936781bc4e2e6eb71f1c4d7553786565",
+        "bytes": 95631,
+        "url": "https://files.pythonhosted.org/packages/e5/47/d63c60f59a59467fda0f93f46335c9d18526d7071f025cb5b89d5353ea42/fastapi-0.116.1-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/fastapi/0.116.1/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "h11",
+        "version": "0.16.0",
+        "filename": "h11-0.16.0-py3-none-any.whl",
+        "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+        "bytes": 37515,
+        "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/h11/0.16.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "httpcore",
+        "version": "1.0.9",
+        "filename": "httpcore-1.0.9-py3-none-any.whl",
+        "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+        "bytes": 78784,
+        "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/httpcore/1.0.9/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "httptools",
+        "version": "0.8.0",
+        "filename": "httptools-0.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+        "sha256": "b15fc622b0f869d19207c4089a501d9bcc63ca5e071ffdd2f03f922df882dcb2",
+        "bytes": 523851,
+        "url": "https://files.pythonhosted.org/packages/e3/a6/febbb8b8db0f58b38e44ad6cb946e6a255ae49b55f2e8543408fb7501ccd/httptools-0.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/httptools/0.8.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "httpx",
+        "version": "0.28.1",
+        "filename": "httpx-0.28.1-py3-none-any.whl",
+        "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+        "bytes": 73517,
+        "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/httpx/0.28.1/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "idna",
+        "version": "3.19",
+        "filename": "idna-3.19-py3-none-any.whl",
+        "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4",
+        "bytes": 68550,
+        "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/idna/3.19/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "jmespath",
+        "version": "1.1.0",
+        "filename": "jmespath-1.1.0-py3-none-any.whl",
+        "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+        "bytes": 20419,
+        "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/jmespath/1.1.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "pydantic",
+        "version": "2.13.5",
+        "filename": "pydantic-2.13.5-py3-none-any.whl",
+        "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+        "bytes": 472589,
+        "url": "https://files.pythonhosted.org/packages/eb/47/c95ffc2009878c7aac0c5e08528022dcb885933252a88b5f170058014464/pydantic-2.13.5-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/pydantic/2.13.5/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "pydantic-core",
+        "version": "2.46.5",
+        "filename": "pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "0fc5be0abd4a407e200d844b404e33639a554e7bd0d448e7b9ae181be4789ac2",
+        "bytes": 2066284,
+        "url": "https://files.pythonhosted.org/packages/c0/a4/eb9409ec0736e50aa70a412f16c204ed149516846912f7e6724d4c73ee53/pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/pydantic-core/2.46.5/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "python-dateutil",
+        "version": "2.9.0.post0",
+        "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+        "bytes": 229892,
+        "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/python-dateutil/2.9.0.post0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "python-dotenv",
+        "version": "1.2.3",
+        "filename": "python_dotenv-1.2.3-py3-none-any.whl",
+        "sha256": "904552145e8bfed22162c09dab1c2b9b54fefa7b23ba780f4f26ca0316b0f0d9",
+        "bytes": 22780,
+        "url": "https://files.pythonhosted.org/packages/0d/17/c5c6b53ddc18f297992099b3d9ec16c855c0ccc83263a21fe4d1c625ec6c/python_dotenv-1.2.3-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/python-dotenv/1.2.3/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "pyyaml",
+        "version": "6.0.3",
+        "filename": "pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "sha256": "ba1cc08a7ccde2d2ec775841541641e4548226580ab850948cbfda66a1befcdc",
+        "bytes": 807870,
+        "url": "https://files.pythonhosted.org/packages/8b/9d/b3589d3877982d4f2329302ef98a8026e7f4443c765c46cfecc8858c6b4b/pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/pyyaml/6.0.3/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "s3transfer",
+        "version": "0.19.3",
+        "filename": "s3transfer-0.19.3-py3-none-any.whl",
+        "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553",
+        "bytes": 90252,
+        "url": "https://files.pythonhosted.org/packages/e2/a4/88f9e10498759121060b8050a1554753dfc04df39bbbcc7aad9ecc8d9440/s3transfer-0.19.3-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/s3transfer/0.19.3/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "six",
+        "version": "1.17.0",
+        "filename": "six-1.17.0-py2.py3-none-any.whl",
+        "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+        "bytes": 11050,
+        "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/six/1.17.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "starlette",
+        "version": "0.47.3",
+        "filename": "starlette-0.47.3-py3-none-any.whl",
+        "sha256": "89c0778ca62a76b826101e7c709e70680a1699ca7da6b44d38eb0a7e61fe4b51",
+        "bytes": 72991,
+        "url": "https://files.pythonhosted.org/packages/ce/fd/901cfa59aaa5b30a99e16876f11abe38b59a1a2c51ffb3d7142bb6089069/starlette-0.47.3-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/starlette/0.47.3/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "typing-extensions",
+        "version": "4.16.0",
+        "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+        "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+        "bytes": 45571,
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/typing-extensions/4.16.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "typing-inspection",
+        "version": "0.4.4",
+        "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+        "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+        "bytes": 14750,
+        "url": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/typing-inspection/0.4.4/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "urllib3",
+        "version": "2.8.0",
+        "filename": "urllib3-2.8.0-py3-none-any.whl",
+        "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+        "bytes": 135717,
+        "url": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/urllib3/2.8.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "uvicorn",
+        "version": "0.35.0",
+        "filename": "uvicorn-0.35.0-py3-none-any.whl",
+        "sha256": "197535216b25ff9b785e29a0b79199f55222193d47f820816e7da751e9bc8d4a",
+        "bytes": 66406,
+        "url": "https://files.pythonhosted.org/packages/d2/e2/dc81b1bd1dcfe91735810265e9d26bc8ec5da45b4c0f6237e286819194c3/uvicorn-0.35.0-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/uvicorn/0.35.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "uvloop",
+        "version": "0.22.1",
+        "filename": "uvloop-0.22.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "sha256": "7b5b1ac819a3f946d3b2ee07f09149578ae76066d70b44df3fa990add49a82e4",
+        "bytes": 4426307,
+        "url": "https://files.pythonhosted.org/packages/5f/6f/e62b4dfc7ad6518e7eff2516f680d02a0f6eb62c0c212e152ca708a0085e/uvloop-0.22.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/uvloop/0.22.1/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "watchfiles",
+        "version": "1.2.0",
+        "filename": "watchfiles-1.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "e53a384f76b631c3ae5334ce6a52f0baa3a911eb94a4eac7f160079868b716d5",
+        "bytes": 456398,
+        "url": "https://files.pythonhosted.org/packages/22/24/ed72f68cbc1333ca9b9f2200aa048bb6658ae41709bc1caad4310f4bdffd/watchfiles-1.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/watchfiles/1.2.0/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "websockets",
+        "version": "17.1",
+        "filename": "websockets-17.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+        "sha256": "0c863507ada5805517ca6dff1c524dcd42942efe6304dacf06700878398d21a6",
+        "bytes": 224557,
+        "url": "https://files.pythonhosted.org/packages/fb/05/9f82d090c8d2d861604147ef6dfb938a90b039f9358d5193f1df62558593/websockets-17.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+        "metadata_url": "https://pypi.org/pypi/websockets/17.1/json",
+        "purpose": "runtime"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3",
+        "filename": "packaging-26.3-py3-none-any.whl",
+        "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+        "bytes": 129956,
+        "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+        "metadata_url": "https://pypi.org/pypi/packaging/26.3/json",
+        "purpose": "diagnostic"
+      }
+    ],
+    "roots": [
+      "boto3",
+      "fastapi",
+      "httpx",
+      "python-dotenv",
+      "uvicorn[standard]",
+      "packaging"
+    ],
+    "binaries": [
+      {
+        "name": "node",
+        "archive_url": "https://nodejs.org/dist/v24.13.0/node-v24.13.0-linux-x64.tar.xz",
+        "archive_sha256": "e798599612f4bb71333a3397ab0d095fd62214e115aea45aa858a145fc72d67e",
+        "archive_sha512": "260313526f756434197819313d64e506a69059d404c262a7caa2698315babce94f7de9f8a98c371a536a4f2a25e4ba03366c9bcdcdff950e2c4891d31aa35327",
+        "binary_sha256": "53fb205ae78805130177e24bcb459a69a1518c8d98f8965f31d85aae7ea840fc",
+        "binary_bytes": 121158216
+      },
+      {
+        "name": "caddy",
+        "archive_url": "https://github.com/caddyserver/caddy/releases/download/v2.11.7/caddy_2.11.7_linux_amd64.tar.gz",
+        "archive_sha256": "727b91701a392de6ebc5027509f548bf39979e5216340d0faed8fa5e69c84f8b",
+        "archive_sha512": "a7a433a1b133efc3c8d10eb0b99d52a24b5ef5c322dc77f5282182b1c0402139ab83f3a99f0c52409df77d20123fb0b523edad8a66d8f5e49136197bf61ef0e7",
+        "binary_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+        "binary_bytes": 51953826
+      }
+    ],
+    "fixture": {
+      "sha256": "beaf89516f6c816a18939f20c8564706b7ddb94cfdb24c37a95364c07a951d8b",
+      "upstream_manifest_sha256": "42e8f5efdeddcf48e35e09a01e09f3b6c225be66caaddd10edbbd07cfe3ecf79",
+      "members": 742,
+      "bytes": 3361794,
+      "traversed_bytes": 9917789,
+      "normalized_links": 193
+    },
+    "catalogue_sha256": "52ee9d8714d73bcd587a72d17d778f412213a010ae547b7350b55f24c02674f0",
+    "requirements_sha256": "9cdf517d05ca59481c57f8de9afb9eb1f164c41ffc1cd7631bd56f4bf0836f94",
+    "probe_sha256": "4c9697aa7841f357933dc888a555d57a4f0aed497ea7f94a605c8900426596f8"
+  },
+  "result": {
+    "agent_active_loop_refused": true,
+    "caddy_adapt_only": true,
+    "catalogue_preserved": true,
+    "configuration_refusals": [
+      "group-readable configuration",
+      "symlink configuration",
+      "hardlink configuration",
+      "FIFO configuration",
+      "symlink ancestor",
+      "extra",
+      "bool-version",
+      "alias-state",
+      "provider",
+      "fingerprint",
+      "relative",
+      "short private key",
+      "duplicate JSON field"
+    ],
+    "default_protected_reader": true,
+    "derived_manifest_sha256": "fc6c98c3f6411cf97dd323048bdf9c7bf76187db31984d696ddb76e42bd30c25",
+    "disabled_synthetic_allowance_preserved": true,
+    "libc": ["glibc", "2.34"],
+    "native_extensions": {
+      "httptools.parser.parser": "parser.cpython-312-x86_64-linux-gnu.so",
+      "pydantic_core._pydantic_core": "_pydantic_core.cpython-312-x86_64-linux-gnu.so",
+      "uvloop.loop": "loop.cpython-312-x86_64-linux-gnu.so",
+      "watchfiles._rust_notify": "_rust_notify.cpython-312-x86_64-linux-gnu.so",
+      "websockets.speedups": "speedups.cpython-312-x86_64-linux-gnu.so",
+      "yaml._yaml": "_yaml.cpython-312-x86_64-linux-gnu.so"
+    },
+    "native_storefront_exec_and_restart": true,
+    "os_release": {
+      "ANSI_COLOR": "0;33",
+      "BUG_REPORT_URL": "https://github.com/amazonlinux/amazon-linux-2023",
+      "CPE_NAME": "cpe:2.3:o:amazon:amazon_linux:2023",
+      "DOCUMENTATION_URL": "https://docs.aws.amazon.com/linux/",
+      "HOME_URL": "https://aws.amazon.com/linux/amazon-linux-2023/",
+      "ID": "amzn",
+      "ID_LIKE": "fedora",
+      "NAME": "Amazon Linux",
+      "PLATFORM_ID": "platform:al2023",
+      "PRETTY_NAME": "Amazon Linux 2023.12.20260914",
+      "SUPPORT_END": "2029-06-30",
+      "SUPPORT_URL": "https://aws.amazon.com/premiumsupport/",
+      "VARIANT_ID": "202609151327-2023.753.0",
+      "VENDOR_NAME": "AWS",
+      "VENDOR_URL": "https://aws.amazon.com/",
+      "VERSION": "2023",
+      "VERSION_ID": "2023"
+    },
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.34",
+    "proxy_handoff_captured": true,
+    "public_caddy_run": false,
+    "python": "3.12.15",
+    "sdk_creation_forbidden": true,
+    "uid": 10001,
+    "upstream_manifest_sha256": "42e8f5efdeddcf48e35e09a01e09f3b6c225be66caaddd10edbbd07cfe3ecf79",
+    "versions": {
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "boto3": "1.43.115",
+      "botocore": "1.43.115",
+      "certifi": "2026.7.22",
+      "click": "8.5.0",
+      "fastapi": "0.116.1",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httptools": "0.8.0",
+      "httpx": "0.28.1",
+      "idna": "3.19",
+      "jmespath": "1.1.0",
+      "packaging": "26.3",
+      "pydantic": "2.13.5",
+      "pydantic-core": "2.46.5",
+      "python-dateutil": "2.9.0.post0",
+      "python-dotenv": "1.2.3",
+      "pyyaml": "6.0.3",
+      "s3transfer": "0.19.3",
+      "six": "1.17.0",
+      "starlette": "0.47.3",
+      "typing-extensions": "4.16.0",
+      "typing-inspection": "0.4.4",
+      "urllib3": "2.8.0",
+      "uvicorn": "0.35.0",
+      "uvloop": "0.22.1",
+      "watchfiles": "1.2.0",
+      "websockets": "17.1"
+    }
+  },
+  "initial_failures": [
+    "First native run failed; stderr was initially suppressed by harness.",
+    "Diagnostic rerun: flattened pnpm alias caused Cannot find module body-parser.",
+    "Preserve verified internal topology through normalized relative links. Added test watched RED/GREEN; full run then passed."
+  ],
+  "tests": {
+    "portable_fixture_initial": "6 missing-module RED then 6 passed; topology case RED then 7 passed",
+    "focused": "138 passed, no skips, 2 upstream websockets deprecation warnings; 221.04s",
+    "ruff_check": "pass",
+    "ruff_format": "254 files pass",
+    "pip_check": "pass",
+    "production_release_build": "pass existing builder; exact upstream digest retained",
+    "command": "python -X utf8 -m pytest eval/tests/test_linux_host_fixture.py eval/tests/test_host_config.py eval/tests/test_host_agent.py eval/tests/test_host_component.py eval/tests/test_host_bootstrap.py eval/tests/test_host_checks.py eval/tests/test_release.py -q",
+    "eslint": "pass: eslint . --max-warnings=0 --ignore-pattern .scratch/cap06-linux-host/**",
+    "eslint_initial": "default pnpm lint:ts failed on22 no-undef in generated ignored compiled rehearsal release; unchanged source TS passed after excluding only that generated tree",
+    "prettier": "all changed Markdown/JSON pass",
+    "whitespace": "git diff --check pass"
+  },
+  "cost": {
+    "currency": "USD",
+    "days": 60,
+    "public_rate_checked": "2026-10-23",
+    "primary_decimal_recomputed": true,
+    "rows": {
+      "EC2": "31.1040",
+      "EBS": "3.3440",
+      "EIP": "7.200",
+      "S3": "0.095092",
+      "logs": "0.568",
+      "direct_egress": "1.80",
+      "CloudFront": "0.350",
+      "table_storage": "0.00538",
+      "non_tick_Lambda": "1.706670000000",
+      "non_tick_DynamoDB": "0.08045",
+      "conditional_Scheduler": "0.094176",
+      "conditional_tick_Lambda": "10.817301600000",
+      "conditional_tick_DynamoDB": "10.1952000",
+      "conditional_monitoring": "1"
+    },
+    "infrastructure": "68.360269600000",
+    "future_model_allocation_unapproved": "11",
+    "existing_diagnostic_hold_not_measured_cost": "0.03",
+    "combined": "79.390269600000",
+    "combined_120_EC2_hours": "50.878269600000",
+    "combined_30s_non_tick_Lambda": "102.723649600000",
+    "source": "docs/research/2026-10-23-cap06-inventory-reconciliation.md",
+    "measured_workload": false,
+    "current_credit_eligibility_proven": false,
+    "conditional_inventory_adopted": false,
+    "new_spend_authorized": false
+  },
+  "limitations": [
+    "derived artifact, not byte-identical Windows artifact or approved installation",
+    "test-only Linux runtime profile, not production dependency selection",
+    "Agent active-loop refusal only; no real app/SDK/lifespan/readiness",
+    "Caddy version/adapt/captured handoff only; no actual public proxy exec",
+    "no systemd PID1/EC2 service-UID/capability/signal/capacity acceptance",
+    "no AWS/account/credential/model/resource/DNS/TLS call/write, unit installation or push",
+    "cost inputs unmeasured, not spending caps or proof USD80 suffices"
+  ],
+  "image_inspection": {
+    "Id": "sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "Architecture": "amd64",
+    "Os": "linux",
+    "RepoDigests": [
+      "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406"
+    ]
+  },
+  "review": {
+    "status": "fresh read-only review: no Critical, Important or Minor findings; acceptable for inactive offline scope",
+    "independent_verification": "artifact/source/profile/wheel/binary/probe/requirements/catalogue/ZIP/member digests and every Decimal row/sensitivity independently checked",
+    "initial_tests": "87 passed,1deselected,2warnings,11errors21.74s; errors shared one Windows Node catalogue-seed subprocess exit3221226505/empty stderr",
+    "narrow_rerun": "test_host_bootstrap.py:11passed7.33s; no fixes/reset",
+    "limitation": "Transient unexplained Windows fixture setup failure retained, not a proven change regression or erased failure",
+    "declined_to_judge_rulings": [
+      "No duplicate Docker/build/vendor/shared-port run: retained exact inputs/output independently verified; primary actual runs and tests retained.",
+      "Fresh price availability/account eligibility/publisher signatures remain unproven; dated primary research/digest comparison only.",
+      "Production installation security, Agent app/SDK/lifespan/readiness and public Caddy exec intentionally deferred; no deployment claim.",
+      "Actual systemd/EC2 capability/signal/capacity, TLS/DNS, IAM/OAC/events/model/deployed shopping safety remain required; no gate closed by offline results."
+    ]
+  }
+}

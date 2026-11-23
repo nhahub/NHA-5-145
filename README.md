@@ -12,8 +12,17 @@ Official submission repository: [nhahub/NHA-5-145](https://github.com/nhahub/NHA
 | 02 - Literature Review | 16 October 2026 | [Literature PDF](reports/02-literature-review.pdf) (7 pages) |
 | 03 - Requirements Gathering | 16 October 2026 | [Requirements PDF](reports/03-requirements-gathering.pdf) (12 pages) |
 | 04 - System Analysis and Design | 6 November 2026 | [Design PDF](milestones/2026-11-06/reports/04-system-analysis-and-design.pdf) (23 pages) |
+| Final submission - source code, presentation, demo video, infographic | 23 November 2026 | [Final submission](final/README.md) |
 
 The first three reports and their editable sources and original provenance remain unchanged from the 16 October submission, commit `b8b8f78058028abd2c4df62d5dbd22d1524d0a27`.
+
+## 23 November final submission
+
+- [Final submission index](final/README.md): what is included and what changed since the defense.
+- [Presentation (PowerPoint)](final/presentation/Shopping-Copilot-Presentation-2026-11-23.pptx) and [PDF copy](final/presentation/Shopping-Copilot-Presentation-2026-11-23.pdf).
+- [Demo video](final/video/shopping-copilot-demo-2026-11-23.mp4), recorded on the deployed site with the real model.
+- [Infographic](final/infographic/shopping-copilot-infographic.png) ([PDF](final/infographic/shopping-copilot-infographic.pdf)).
+- [Source code](final/source/README.md): the complete application, tests, evaluation suite and deployment code.
 
 ## 6 November submission
 

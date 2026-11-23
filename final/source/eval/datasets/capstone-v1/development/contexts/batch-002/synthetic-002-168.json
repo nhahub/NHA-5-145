@@ -1,0 +1,21 @@
+{
+  "context_format_version": 1,
+  "context_id": "synthetic-002-168",
+  "source_category": "synthetic",
+  "exposure": "exposed",
+  "not_a_browser_snapshot": true,
+  "description": "Synthetic follow-up state; previous request pending and no action executed.",
+  "catalogue_reference": {
+    "path": "store/src/catalogue.ts",
+    "git_commit": "b9148cdf13b52639a48e1b81f790f69fb53607d6",
+    "sha256": "0683111b78d2333de33fb1caa244927aaf9b1e49a8b9fad5e87f615c42005b49"
+  },
+  "prior_turns": [
+    {
+      "case_id": "synthetic-002-100",
+      "message": "ضيف Alex Tee size M ابيض، واحدة بس مش ٢",
+      "synthetic_outcome": "request pending; no action executed"
+    }
+  ],
+  "parent_context_reference": "eval/datasets/capstone-v1/development/contexts/batch-002/synth002-add-variant.json"
+}

@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+# Each gate is its own job so a style slip is reported as a format failure,
+# not as a failure of the tests that never ran.
+jobs:
+  # Formatting is advisory: a style slip is reported as a warning on this job
+  # but never fails the run. Lint, test and build stay strict.
+  format:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - run: make format-check
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - run: make lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with:
+          browser: "true"
+      - run: make test
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - run: make build
+      - name: HTTP health checks
+        shell: bash
+        env:
+          LLM_PROVIDER: scripted
+          LLM_MODEL: scripted-v1
+        run: |
+          python scripts/init_local_identity.py
+          pnpm --filter @shopping-copilot/store exec tsx scripts/catalogue-import.ts
+          pnpm --filter @shopping-copilot/store start &
+          python -m uvicorn agent.app:app --host 127.0.0.1 --port 8000 &
+          for attempt in {1..20}; do
+            curl --fail --silent http://127.0.0.1:4000/ >/dev/null \
+              && curl --fail --silent http://127.0.0.1:8000/health >/dev/null \
+              && exit 0
+            sleep 1
+          done
+          exit 1

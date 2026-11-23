@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "date": "2026-10-26",
+  "scope": "owner-approved local provisioning preparation; separate cloud-resource approval pending",
+  "base_commit": "aabd905",
+  "aws_authenticated_requests": 0,
+  "aws_resource_writes": 0,
+  "ssh_connections": 0,
+  "model_requests": 0,
+  "real_provider_custody_accessed": false,
+  "real_host_booted": false,
+  "production_interpreter_approved": false,
+  "signature_checks": {
+    "caddy_archive": true,
+    "caddy_checksum_list": true,
+    "caddy_refusals": 3,
+    "nft_fixture_rpms": 14,
+    "nft_refusals": 2,
+    "amazon_key_fingerprint": "B21C50FA44A99720EAA72F7FE951904AD832C631",
+    "verifier_bootstrap": "official HTTPS release API digest; not independently signed bootstrap"
+  },
+  "timer": {
+    "native_systemd": "252.23-15.amzn2023",
+    "offline_mask_enable_verify": true,
+    "unsafe_fixture_refusals": 7,
+    "actual_timer_boot_tested": false
+  },
+  "mounted_xfs": {
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "xfsprogs": "6.12.0",
+    "duplicate_uuid_refusal": true,
+    "norecovery_remount_refusal": true,
+    "unmount_clean_check_new_rw_mount": true,
+    "timer_repair": true,
+    "filesystem_uuid_unchanged": true,
+    "cleanup_verified": true,
+    "actual_ebs_tested": false
+  },
+  "swap": {
+    "file_bytes": 1073741824,
+    "allocated_bytes": 1073741824,
+    "page_bytes": 4096,
+    "expected_usable_bytes": 1073737728,
+    "owner_uid": 0,
+    "mode": "0600",
+    "xfs_preparation_passed": true,
+    "activated": false,
+    "reboot_persistence_tested": false,
+    "config_repeat_no_write": true,
+    "config_and_path_refusals": 7
+  },
+  "next_proposal": {
+    "path": "docs/cap06-private-provisioning-proposal.md",
+    "incremental_credit_ceiling_usd": "0.25",
+    "resource_approval_received": false,
+    "original_host_rpm_inventory_complete": false,
+    "additive_transaction_frozen": false
+  },
+  "receipts": [
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/input/tool-inputs.json",
+      "bytes": 7261,
+      "sha256": "6196b81c900759a144c119b5d5c70fc439479d661f289053522eb7051991a5d4"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/input/extract-tools.py",
+      "bytes": 3535,
+      "sha256": "507ed25de339f05314b7485df52114fed355773c9358eac4ad8888350ef77952"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/input/procedure-probe.py",
+      "bytes": 8170,
+      "sha256": "4900519e371d67a0e36792af46f0a7f1d01400097991a6dcad7761bcbf6f73b6"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/input/mounted-xfs-probe.py",
+      "bytes": 7240,
+      "sha256": "a4ed7d4b56f4a4b04c5ec4c73254a3c036b58d1adb3433931b6e4f4b95467dc2"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/input/config-probe.py",
+      "bytes": 3593,
+      "sha256": "200cceca33db3c729ad2d700c46dc1875dc09d60e2c6518aebc4e47eaee877f2"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/output/procedure-05/procedure-rehearsal.json",
+      "bytes": 3899,
+      "sha256": "bc026202012cdcfedd9fb50dcafd73c6f447168209fe9da5281694557f8a449e"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/output/procedure-05/invocation.json",
+      "bytes": 1414,
+      "sha256": "743f83a63a6bdc0ea5cd197804870d754047335b32e1c6756291df48ca08414f"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/output/mounted-xfs-02/result.json",
+      "bytes": 2575,
+      "sha256": "06008b55950b993b04ff4bb50a51e3729721162d47f4aa9170474c0d5ffceab2"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/output/mounted-xfs-02/invocation.json",
+      "bytes": 687,
+      "sha256": "a48e5e725d703a5ea992a553d9ef42604c11f0a7e25846a12d199e23c5ffba16"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/rehearsal/output/config-check/config-rehearsal.json",
+      "bytes": 355,
+      "sha256": "fb8ab857b683bf23188fa0c3be24e815e184184f09e13f0b13a3cf3634de8a8c"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/signatures/output/nft-rpm-signatures.json",
+      "bytes": 24630,
+      "sha256": "bbec62e9c7ee10761f3daaa97266a3d8a17de0ee1a06032930f0aec86b4ab198"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/signatures/output/archive-exit.json",
+      "bytes": 18,
+      "sha256": "302c5fcf0227d427ee240abdbd2a948557ea7ab09699f9c3bdeb0f98b67375ce"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/signatures/output/checksums-exit.json",
+      "bytes": 18,
+      "sha256": "302c5fcf0227d427ee240abdbd2a948557ea7ab09699f9c3bdeb0f98b67375ce"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/signatures/output/caddy-negative-results.json",
+      "bytes": 249,
+      "sha256": "f57301bd0f020e010537db7b917aec8aa825e491db85964f2f9183180b7ec162"
+    },
+    {
+      "path": ".scratch/cap06-offline-provisioning/signatures/tuf-validation.json",
+      "bytes": 16541,
+      "sha256": "fe0f3f2448a04dd17034834a9104bb6b8a72ac40e3bd899640a3762851c1736b"
+    },
+    {
+      "path": ".scratch/cap06-private-provisioning-prices-20261026/calculation.json",
+      "bytes": 4695,
+      "sha256": "33fac247b47826f6a9955c898300d7ee41d027d7a392c908355c8ebca57159c9"
+    }
+  ]
+}

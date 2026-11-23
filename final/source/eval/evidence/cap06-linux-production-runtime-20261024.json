@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "offline-linux-runtime-preparation",
+  "status": "runtime_preparation_verified_full_run_setup_error_retained",
+  "scope": {
+    "storefront": "Controlled Storefront only",
+    "step25": "parked_unmerged_out_of_scope",
+    "native_service_architecture_unchanged": true
+  },
+  "source": {
+    "branch": "feature/cap06-linux-production-host",
+    "base": "02bcf378577466011d0cf713c8de575eeae4787a",
+    "working_tree_changes_under_test": true
+  },
+  "input_sha256": {
+    "deploy/linux-runtime.json": "3596707ddbdae9b6398ab8586f068521332ea84f49ccd7502cd6540e93a3c8c7",
+    "deploy/requirements-linux.lock": "eb960478d605b887e36da1ae65d843a50879531262edea2ddbe83ef065610df9",
+    "deploy/linux_runtime.py": "f564227a686e1d9f4f2350c36137693925fc8f00f678276476ec031a353c6030",
+    "eval/linux_runtime_probe.py": "18e168e9303cbaf1c10061cdcd8d2a2c6e6e6328c76df6c4a4eb89fed7e6b26e"
+  },
+  "offline_probe": {
+    "image": "public.ecr.aws/lambda/python@sha256:25aee9bac65f131c5d090d3e3a36ccf232d65cf3e6c1dbd0bffd43ca7ce34406",
+    "input_sha256": {
+      "packaging.whl": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "probe.py": "18e168e9303cbaf1c10061cdcd8d2a2c6e6e6328c76df6c4a4eb89fed7e6b26e",
+      "profile.json": "3596707ddbdae9b6398ab8586f068521332ea84f49ccd7502cd6540e93a3c8c7",
+      "requirements.lock": "eb960478d605b887e36da1ae65d843a50879531262edea2ddbe83ef065610df9"
+    },
+    "verifier": {
+      "version": 1,
+      "runtime_wheels": 28,
+      "target": {
+        "implementation": "cpython",
+        "python_version": "3.12",
+        "sys_platform": "linux",
+        "platform_machine": "x86_64",
+        "libc": "glibc",
+        "libc_version": "2.34",
+        "marker_python_full_version": "3.12.15"
+      },
+      "production_interpreter_approved": false,
+      "requirements_sha256": "eb960478d605b887e36da1ae65d843a50879531262edea2ddbe83ef065610df9"
+    },
+    "result": {
+      "application_started": false,
+      "dependency_closure": true,
+      "libc": ["glibc", "2.34"],
+      "native_imports": {
+        "httptools.parser.parser": "parser.cpython-312-x86_64-linux-gnu.so",
+        "pydantic_core._pydantic_core": "_pydantic_core.cpython-312-x86_64-linux-gnu.so",
+        "uvloop.loop": "loop.cpython-312-x86_64-linux-gnu.so",
+        "watchfiles._rust_notify": "_rust_notify.cpython-312-x86_64-linux-gnu.so",
+        "websockets.speedups": "speedups.cpython-312-x86_64-linux-gnu.so",
+        "yaml._yaml": "_yaml.cpython-312-x86_64-linux-gnu.so"
+      },
+      "production_interpreter_approved": false,
+      "python": "3.12.15",
+      "runtime_distributions": {
+        "annotated-types": "0.8.0",
+        "anyio": "4.15.1",
+        "boto3": "1.43.115",
+        "botocore": "1.43.115",
+        "certifi": "2026.7.22",
+        "click": "8.5.0",
+        "fastapi": "0.116.1",
+        "h11": "0.16.0",
+        "httpcore": "1.0.9",
+        "httptools": "0.8.0",
+        "httpx": "0.28.1",
+        "idna": "3.19",
+        "jmespath": "1.1.0",
+        "pydantic": "2.13.5",
+        "pydantic-core": "2.46.5",
+        "python-dateutil": "2.9.0.post0",
+        "python-dotenv": "1.2.3",
+        "pyyaml": "6.0.3",
+        "s3transfer": "0.19.3",
+        "six": "1.17.0",
+        "starlette": "0.47.3",
+        "typing-extensions": "4.16.0",
+        "typing-inspection": "0.4.4",
+        "urllib3": "2.8.0",
+        "uvicorn": "0.35.0",
+        "uvloop": "0.22.1",
+        "watchfiles": "1.2.0",
+        "websockets": "17.1"
+      },
+      "status": "ok"
+    },
+    "bounds": {
+      "network": "none",
+      "root_filesystem": "read-only",
+      "capabilities": "none",
+      "new_privileges": false,
+      "uid": 10001,
+      "gid": 10001,
+      "pids": 64,
+      "memory_bytes": 1073741824,
+      "cpus": 1,
+      "tmp_bytes": 67108864,
+      "runtime_tmpfs_bytes": 536870912,
+      "outer_timeout_seconds": 180,
+      "pip_timeout_seconds": 90
+    },
+    "mounts": "read-only synthetic inputs and exact28wheels; no checkout/home/credential/state/socket mounts",
+    "ports_published": false,
+    "application_container_image_created": false,
+    "disposable_container_removed": true
+  },
+  "verification": {
+    "new_lock_red": "2 expected failures before implementation",
+    "release_red": "1 expected missing-input assertion,15.72s",
+    "lock_tests": "47 passed,9.18s",
+    "host_boundaries": "19 passed,6.38s",
+    "host_config_launcher_isolation": "151 passed,2 upstream warnings,50.22s",
+    "release_module": "12 passed,158.77s; additional new pre-build drift refusal passed separately,0.24s",
+    "typescript": "199 passed",
+    "workspace_build": "passed",
+    "ruff": "passed,265 files formatted",
+    "pip_check": "passed",
+    "source_eslint": "passed with git-ignored .scratch generated fixture trees excluded",
+    "source_prettier": "passed with repository .gitignore, .prettierignore  applied",
+    "full_python": {
+      "result": "1367 passed,2 warnings,1 setup error",
+      "seconds": 941.89,
+      "error_test": "agent/tests/test_admission_dynamodb.py::test_remote_changed_invitation_limit_cannot_bypass_validated_authority",
+      "error": "MemoryError while Botocore read endpoint data during Moto fixture setup; no actual AWS call",
+      "affected_module_recheck": "40 passed,10.69s,unchanged code",
+      "full_run_green": false,
+      "exact_failure_pressure_captured": false,
+      "interpretation": "Allocation failure was not reproduced on whole-module recheck; root cause not proven, no suppression or production-code change"
+    }
+  },
+  "review": {
+    "fresh_whole_slice_findings": 0,
+    "independent_lock_tests": "47 passed,7.74s",
+    "limits": "reviewer did not repeat native installation or release build"
+  },
+  "repairs": [
+    "Windows ZIP filename normalization required checking orig_filename",
+    "Ruff capture_output style repaired; native proof repeated on exact final probe",
+    "Initial blanket lint/format commands visited retained ignored fixtures/tooling; checks passed after applying their documented ignore boundaries"
+  ],
+  "provider_fallback": {
+    "owner_approved": true,
+    "provider": "openrouter",
+    "model": "google/gemini-3.5-flash-lite",
+    "non_resetting_key_cap_usd": "2.00",
+    "host_integration_complete": false,
+    "new_calls_or_spend_authorized": false,
+    "credentials_displayed": false,
+    "provider_balance_queried": false
+  },
+  "not_established": [
+    "production interpreter/package security adoption",
+    "clean native Linux release with real Git provenance",
+    "host provisioning/systemd boot/reboot/capability proof",
+    "full Agent readiness and aggregate capacity",
+    "selected-provider host qualification/remaining allowance custody",
+    "AWS resources/DNS/public TLS/deployed desktop and Android acceptance"
+  ],
+  "side_effects": {
+    "aws_calls": false,
+    "provider_calls": false,
+    "production_key_or_state_changes": false,
+    "host_service_installation_or_activation": false,
+    "dns_or_public_tls_changes": false,
+    "new_downloads": false,
+    "git_push": false,
+    "docker_desktop_started": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "v": 1,
+  "date": "2026-10-21",
+  "scope": "CAP-06 local public HTTPS configuration preparation only",
+  "base_commit": "45eb2d3",
+  "caddy_version": "2.11.7",
+  "public_profile": "deploy/Caddyfile.public",
+  "public_profile_sha256": "9b3e69dcbc573ebcf2a31fbb6d8c1f9310dd1031f9406a69ef4d6292adc8760c",
+  "rehearsal_profile_sha256": "00ffccf3a648ff629b124409775d8e028a5d9c6bdb47319e87fe32d23e170874",
+  "public_hosts": ["app.scpilot.tech", "store.scpilot.tech"],
+  "checks": {
+    "command": "python -m pytest eval/tests/test_public_https.py eval/tests/test_release.py -q",
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 148.6
+  },
+  "independent_review": {
+    "findings": 0,
+    "adaptation_tests_passed": 3,
+    "adaptation_tests_skipped": 0
+  },
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format check",
+    "Caddy fmt byte equality",
+    "git diff --check"
+  ],
+  "paid_model_requests": 0,
+  "aws_api_calls": 0,
+  "dns_writes": 0,
+  "certificate_requests": 0,
+  "public_caddy_listeners_started": 0,
+  "application_provider_changed": false,
+  "public_tls_qualified": false,
+  "bedrock_qualified": false,
+  "deployment_accepted": false,
+  "limitations": [
+    "Caddy adapt only; no module provisioning or public listener.",
+    "Host DNS, permissions, issuance, renewal, redirects, SNI/Host behavior and browser trust remain unverified.",
+    "Remote invitation/lifecycle authority and AWS provisioning remain future work.",
+    "CAP-05 zero-quota blocker and both disabled diagnostic allowances remain unchanged."
+  ]
+}

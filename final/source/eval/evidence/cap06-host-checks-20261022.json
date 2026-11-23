@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-22",
+  "base_commit": "ecbef98",
+  "scope": "Concrete injected host release/catalogue/admission/allowance observations; provider explicitly unqualified and bootstrap inactive",
+  "source_hash_basis": "SHA256 of working-tree bytes used in offline Windows verification",
+  "source_sha256": {
+    "deploy/host_checks.py": "143b3ae8df1cbf302e47d025ea089e6c519635c2cb8a1f874eb210e769ae3cec",
+    "agent/admission/dynamodb.py": "3f3492830fd53eaf87d484333e7a1f4327768a8600214e9f425d2dbea9244645",
+    "agent/admission/async_runtime.py": "06bc4492ae3951788e070e5d6f89511bdd3d797a69e10dcb17efc5bc74eed9a3",
+    "agent/tests/test_async_boundary.py": "07d4fe84aa3e49c52d088479213084e7a1846c860d3fbd8cdb3103c657ff3707",
+    "eval/tests/test_host_checks.py": "a3139b07431b3b656848215dda9ba707ade60198c0804939347434574090c99c",
+    "eval/tests/test_release.py": "eeb52a564aa4c3c199bb8a0e796925dbb1a87b0a9f145dfc80b1a44ee12ba030"
+  },
+  "final_checks": {
+    "command": "python -X utf8 -m pytest agent/tests eval/tests/test_host_checks.py eval/tests/test_cloud_access.py eval/tests/test_waiting_signing.py eval/tests/test_release.py::test_built_release_is_self_contained_and_refuses_overwrite -q",
+    "passed": 894,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 139.37,
+    "includes": "All Agent safety/authority/recovery tests, concrete checks, access/browser signing and fresh self-contained release build",
+    "focused_passed": 32,
+    "focused_duration_seconds": 11.09
+  },
+  "independent_review": {
+    "actionable_findings": 0,
+    "remaining_actionable_findings": 0,
+    "concrete_and_boundary_passed": 32,
+    "existing_host_boundaries_passed": 19
+  },
+  "red_green": [
+    "Missing AsyncAdmissionPolicy.ready method RED then metadata-only health GREEN",
+    "Missing deploy.host_checks RED then four concrete checks plus explicit false provider GREEN",
+    "Valid cloned admission-store replacement silently accepted RED; pinned authority binding GREEN"
+  ],
+  "verified_bounds": [
+    "Pinned manifest fingerprint before/after full artifact verification, exact production origins/mode",
+    "Distinct existing external catalogue/ledger; synchronous work bounded to2workers/8retained calls",
+    "Fixed authenticated private catalogue POST, no proxy/redirect/retry/cache, identity encoding and32768raw-byte cap",
+    "Strict SearchResult with duplicate JSON rejection; local catalogue revision/content revalidated after HTTP",
+    "Remote admission metadata health without grant/redemption/session allocation",
+    "Enabled bound allowance with maximum guarded request headroom; uncertain charges retained",
+    "Guard ledger/client/prices/path/identity and remote store/client/table/namespace/identity bindings pinned",
+    "Explicit async provider verifier required; unqualified_provider=False keeps signed ASGI proof false",
+    "No Agent aggregate recursion, environment mutation, model construction or backend activation",
+    "Fresh general release packages deploy/host_checks.py"
+  ],
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format:234files",
+    "pip check",
+    "git diff --check"
+  ],
+  "actual_aws_api_calls": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "production_keys_generated": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "remaining": [
+    "Restricted configuration/key loading and host bootstrap/lifetime wiring",
+    "Actual Bedrock qualification after zero-quota blocker resolves; no new pass format or provider fallback",
+    "Linux Lambda dependency packaging and approved reliable external observation delivery",
+    "Account-effective IAM/OAC/event eligibility, resource/cost/rollback approval and deployed acceptance"
+  ],
+  "limits": [
+    "Synthetic production-shaped fixture and intercepted service prove local contract only",
+    "Catalogue health does not prove every shopper journey or process supervision",
+    "Allowance observation is not a reservation or guaranteed future request admission",
+    "Async deadlines are cooperative; HostReadiness retains cleanup capacity and cannot kill entered SDK I/O",
+    "No scheduler/topology change, upgrade, spend increase or push"
+  ]
+}

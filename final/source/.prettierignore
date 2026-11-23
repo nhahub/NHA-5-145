@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+pytest-cache-files-*
+pnpm-lock.yaml
+outputs
+work
+
+# Generated deliverables and local tool state; some carry provenance hashes.
+/output/
+/.chart-data-*/
+/.*/
+!/.github/
+
+# Preserve the exact owner-approved bytes referenced by diagnostic SHA256 receipts.
+docs/public-startup-transport-diagnostic-20261103.md

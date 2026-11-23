@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "kind": "read-only-account-and-production-host-candidate-preflight",
+  "status": "candidate_preparation_not_apply_authorization",
+  "account": {
+    "same_account_as_owner_prior_project": true,
+    "plan_type": "FREE",
+    "plan_status": "ACTIVE",
+    "remaining_aws_credit_usd": "100.0",
+    "plan_expiration_utc": "2027-04-07T15:42:08.381000+00:00",
+    "cash_or_upgrade_authorized": false,
+    "read_only_billing_endpoint_creates_regional_resources": false
+  },
+  "read_only_receipt_sha256": {
+    "identity.json": "27fe718dbc5bc9b9bd8c4fece1e9c90d2551000805270f17a1ef9db3624fd1ed",
+    "plan.json": "035f07da92122fee309f030cd844a0deaaf307b80ac1635e4e7df82fda5c8a6a",
+    "ami.json": "294ee64ce5a5cb7e927566152a4c2adf34e3adf3d2ad6aba7aebaf6d0096f428",
+    "subnets.json": "e93f4da8e8520ea055d43c0f3e3694d6fa28138f135cc71b46af5863df69ca9a",
+    "routes.json": "16463191dca9a6dbcefc276c360ab025651b95aa5b78bc73b0a4bdb1cde6bfcd",
+    "hosts.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "vpcs.json": "f23a9006894dd5efa1d3665becf9fd3ba8a86b9e8eb1d651237b556bcd7c80c2",
+    "ec2_quota.json": "0d87f5c1f08334393a32d75f9f2439e7eabc9a89e27960f9ae87e6d86a5fc880",
+    "lambda_limits.json": "57a2fda992ee3ca823f9754af23d8101b3672fca91eb55ddc5b037c789be7d59",
+    "host_type_offerings.json": "e81bc8fb07ba426ca4a1d7a21f1461910174890d13744c3d40d791289a0d325d",
+    "running_types.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "elastic_address_count.json": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "host_security_group_matches.json": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "admin_key_matches.json": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  "network": {
+    "default_vpcs": 1,
+    "default_vpc_available": true,
+    "existing_subnets": 3,
+    "available_subnets": 3,
+    "subnets_auto_assign_ipv4": 3,
+    "active_default_internet_gateway_routes": 1,
+    "shared_network_changed": false,
+    "required_launch_override": "Do not change subnet defaults; explicitly disable automatic public IPv4 on the sole primary interface before later approved single EIP association."
+  },
+  "resource_observations": {
+    "matching_proposed_host": 0,
+    "matching_proposed_security_group": 0,
+    "matching_proposed_admin_public_key": 0,
+    "allocated_elastic_ips": 0,
+    "running_or_pending_instances": 0,
+    "lambda_functions": 0,
+    "read_only_name_checks_are_creation_or_adoption_authorization": false
+  },
+  "quotas": {
+    "ec2_standard_vcpu_limit": 16.0,
+    "candidate_type": "t3.small",
+    "candidate_vcpu": 2,
+    "candidate_memory_mib": 2048,
+    "candidate_offered_in_existing_three_zones": true,
+    "lambda_concurrency_limit": 400,
+    "lambda_unreserved": 400,
+    "future_two_reserved_units_with_100_unreserved_arithmetic_feasible": true,
+    "actual_creation_or_reserved_concurrency_calls_made": false,
+    "quotas_are_capacity_or_budget_guarantee": false
+  },
+  "ami_candidate": {
+    "public_parameter": "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64",
+    "parameter_version": 196,
+    "id": "ami-0111419d42d14a400",
+    "amazon_owner_match": true,
+    "name": "al2023-ami-2023.12.20261021.0-kernel-6.18-x86_64",
+    "state": "available",
+    "architecture": "x86_64",
+    "creation_utc": "2026-10-21T20:33:25.000Z",
+    "deprecation_utc": "2027-01-19T20:35:00.000Z",
+    "boot_mode": "uefi-preferred",
+    "root_device": "/dev/xvda",
+    "default_root_gib": 8,
+    "default_root_encrypted": false,
+    "default_root_delete_on_termination": true,
+    "required_root_override": "Explicit20GiB encryptedgp3,3000IOPS/125MiBps,retained; do not silently use AMI defaults.",
+    "adopted_for_creation": false
+  },
+  "node_candidate": {
+    "version": "24.22.1",
+    "reason": "Official21Oct2026securityrelease;24.13.0retained as historical compatibility only",
+    "acquisition": {
+      "version": "24.22.1",
+      "platform": "linux-x64",
+      "official_release": "https://nodejs.org/en/blog/release/v24.22.1/",
+      "verification_documentation": "https://github.com/nodejs/node#verifying-binaries",
+      "keyring_repository": "https://github.com/nodejs/release-keys",
+      "keyring_commit": "481637f813e912c4aa3622d7964ab426c97b8e8d",
+      "signature_verified": true,
+      "signing_fingerprint": "5BE8A3F6C8A5C01D106C0AD820B1A390B168D356",
+      "primary_fingerprint": "5BE8A3F6C8A5C01D106C0AD820B1A390B168D356",
+      "authorized_key_in_pinned_official_readme": true,
+      "gpg_version": "2.4.9",
+      "owner_default_keyring_used": false,
+      "gpg_home": "gnupg",
+      "gpg_status_sha256": "64ef66e78d11ebc1606b39c65988e61f558e5efa7e6aa578ea35aa11df313d27",
+      "archive_sha256": "6c172a9ab6718f7b801fb5a7bd486af2ee5e32758086a04b84fcce2aa77095e6",
+      "archive_bytes": 32026916,
+      "binary_sha256": "e32e2d16081cf644f88392934288086e7662529d0d43277c34f7aad2207cfafb",
+      "binary_bytes": 126879696,
+      "license_sha256": "5888dbb9a1d2b18f2c3e6c5f6af1b39de658372b402a0577b002777f14c62ace",
+      "keyring_sha256": "610b8d249da3d5733f5a128def2dd0294dbbf5b5713e6ca2529db8db419dee00",
+      "metadata_sources": [
+        {
+          "url": "https://nodejs.org/dist/v24.22.1/SHASUMS256.txt",
+          "resolved_url": "https://nodejs.org/dist/v24.22.1/SHASUMS256.txt",
+          "file": "SHASUMS256.txt",
+          "bytes": 3171,
+          "sha256": "fdfbffc969c0f604beff0124d409b33a43b53f5c681d6220f80023e0d6df9dc4",
+          "reused_this_attempt": true
+        },
+        {
+          "url": "https://nodejs.org/dist/v24.22.1/SHASUMS256.txt.sig",
+          "resolved_url": "https://nodejs.org/dist/v24.22.1/SHASUMS256.txt.sig",
+          "file": "SHASUMS256.txt.sig",
+          "bytes": 119,
+          "sha256": "4e8fc0160f74781e90e3faf3f8218a72f4cee84d3ac80b9b6d448cec5b8bb7ad",
+          "reused_this_attempt": true
+        },
+        {
+          "url": "https://nodejs.org/dist/v24.22.1/node-v24.22.1-linux-x64.tar.xz",
+          "resolved_url": "https://nodejs.org/dist/v24.22.1/node-v24.22.1-linux-x64.tar.xz",
+          "file": "node-v24.22.1-linux-x64.tar.xz",
+          "bytes": 32026916,
+          "sha256": "6c172a9ab6718f7b801fb5a7bd486af2ee5e32758086a04b84fcce2aa77095e6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nodejs/release-keys/481637f813e912c4aa3622d7964ab426c97b8e8d/gpg/pubring.kbx",
+          "resolved_url": "https://raw.githubusercontent.com/nodejs/release-keys/481637f813e912c4aa3622d7964ab426c97b8e8d/gpg/pubring.kbx",
+          "file": "nodejs-pubring.kbx",
+          "bytes": 95960,
+          "sha256": "610b8d249da3d5733f5a128def2dd0294dbbf5b5713e6ca2529db8db419dee00",
+          "reused_this_attempt": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nodejs/release-keys/481637f813e912c4aa3622d7964ab426c97b8e8d/README.md",
+          "resolved_url": "https://raw.githubusercontent.com/nodejs/release-keys/481637f813e912c4aa3622d7964ab426c97b8e8d/README.md",
+          "file": "release-keys-README.md",
+          "bytes": 6069,
+          "sha256": "caee8c460eee4240f17e11290032b71ee1a5ba06fdbc106db4b77d097b5cca49",
+          "reused_this_attempt": true
+        },
+        {
+          "url": "https://api.github.com/repos/nodejs/release-keys/commits/main",
+          "resolved_url": "https://api.github.com/repos/nodejs/release-keys/commits/main",
+          "file": "release-keys-commit.json",
+          "bytes": 10723,
+          "sha256": "fe387cec314d0a93a44cc4363629cae7c90f1d9fcc785db9c4741167525ca280",
+          "reused_this_attempt": true
+        }
+      ],
+      "binary_executed": false,
+      "system_installed": false,
+      "path_changed": false,
+      "active_signer_confirmed": true,
+      "pgp_ownertrust_note": "Cryptographic signature valid; dedicated fresh keyring has no personal Web-of-Trust certification. Signer matched the active official pinned Node release-key list.",
+      "preserved_initial_failure": "attempt1-gpg-verification.*: Windows C: keyring path rejected as key resource URL; subsequent dedicated /c/... MSYS path verification succeeded."
+    },
+    "native_version": {
+      "native_version": "v24.22.1",
+      "exit_code": 0,
+      "stderr_empty": true
+    },
+    "native_startup_result": {
+      "native_agent_started": true,
+      "synthetic_authority_injected": true,
+      "qualified_readiness_verified": false,
+      "signed_closed_readiness_verified": true,
+      "invalid_proof_before_datastore": true,
+      "graceful_sigterm_verified": true,
+      "sigterm_process_returncode": -15,
+      "generation_zero_refusal_verified": true,
+      "allowance_uncertainty_preserved": true,
+      "catalogue_and_manifest_preserved": true,
+      "positive": {
+        "checks": {
+          "release": true,
+          "storefront": true,
+          "admission": true,
+          "allowance": true,
+          "provider": false
+        },
+        "authority_reads": 15,
+        "authority_closed": 1,
+        "authority_forbidden": 0,
+        "model_type": "OpenRouterClient",
+        "model_attempts": 0,
+        "network_denials": 0,
+        "work_closed": true,
+        "admission_closed": true,
+        "checks_closed": true
+      },
+      "negative": {
+        "checks": {},
+        "authority_reads": 7,
+        "authority_closed": 1,
+        "authority_forbidden": 0,
+        "model_type": "OpenRouterClient",
+        "model_attempts": 0,
+        "network_denials": 0,
+        "work_closed": true,
+        "admission_closed": true,
+        "checks_closed": true
+      }
+    },
+    "profile_sha256": "f7c6f49866e089946a40700764a776fd31ee8bd60dd8c7b0a470acee71ab3fb3",
+    "probe_sha256": "63a94bd4d5b2b4c7acdf828b5f9384a5f921e9a309d8c13841824ad511d74b37",
+    "old_native_archive_unchanged": true,
+    "system_installed": false,
+    "production_security_adopted": false
+  },
+  "python_candidate": {
+    "repository_release": "2023.12.20261021",
+    "python_nevra": "python3.12-0:3.12.14-2.amzn2023.0.1.x86_64",
+    "libs_nevra": "python3.12-libs-0:3.12.14-2.amzn2023.0.1.x86_64",
+    "repository_receipt_sha256": "7cdca63cde667c7ed0bed5c1dea5a48450681d97045fa8dad108d2c2bfca518a",
+    "tested_lambda_interpreter_patch": "3.12.15",
+    "host_runtime_alignment_required": false,
+    "actual_ami_installed_interpreter_observed": false,
+    "production_interpreter_approved": false,
+    "signed_package_count": 19,
+    "signature_key_id": "d832c631",
+    "extraction_receipt_sha256": "8ae587d5f8d7fbb63ef82175cf90b76300c51b04efc6156de954bbf0e50057b1",
+    "private_prefix_sha256": "e0531746fc5e1ff28d941af91b4d30ea93fd5b2d3c10c94ec8318d8f8d0e5ce8",
+    "private_prefix_bytes": 81438720,
+    "native_smoke": {
+      "python_version": "3.12.14",
+      "prefix": "/rehearsal/vendor-python/usr",
+      "soabi": "cpython-312-x86_64-linux-gnu",
+      "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+      "native_stdlib_imports": {
+        "_ssl": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so",
+        "_hashlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so",
+        "_sqlite3": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so",
+        "_decimal": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_decimal.cpython-312-x86_64-linux-gnu.so",
+        "_bz2": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so",
+        "_lzma": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so",
+        "_ctypes": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so",
+        "pyexpat": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/pyexpat.cpython-312-x86_64-linux-gnu.so",
+        "_gdbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_gdbm.cpython-312-x86_64-linux-gnu.so",
+        "_dbm": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_dbm.cpython-312-x86_64-linux-gnu.so",
+        "_crypt": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so",
+        "_uuid": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/_uuid.cpython-312-x86_64-linux-gnu.so",
+        "readline": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/readline.cpython-312-x86_64-linux-gnu.so",
+        "zlib": "/rehearsal/vendor-python/usr/lib64/python3.12/lib-dynload/zlib.cpython-312-x86_64-linux-gnu.so"
+      }
+    },
+    "native_smoke_profile_sha256": "942278cdb21c53d1c59b9b7b9ac3453f11c69aaeb4bb37e49d5e35a5ab9bfe71",
+    "application_build_under_candidate_verified": true,
+    "system_installed": false,
+    "candidate_runtime_alignment_verified": true,
+    "actual_host_interpreter_adoption_required": true,
+    "alignment_evidence": "eval/evidence/cap06-vendor-runtime-alignment-20261024.json"
+  },
+  "provider": {
+    "selected_route_unchanged": "approved OpenRouter fallback; exactmodel remains separatelyqualified",
+    "model_requests": 0,
+    "actual_provider_key_credit_or_ledger_read": false,
+    "non_resetting_key_cap_usd": "2.00",
+    "aws_credit_does_not_fund_openrouter": true
+  },
+  "external_effects": {
+    "aws_calls": "read-only STS/EC2/SSM/FreeTier/ServiceQuotas/Lambda metadata after owner reauthentication",
+    "resources_created_modified_or_deleted": false,
+    "upgrade": false,
+    "model_spend": 0,
+    "public_dns_tls_changed": false,
+    "host_package_install": false,
+    "push_merge": false
+  },
+  "remaining_gates": [
+    "actual host interpreter/vendor advisories/security and installed package adoption",
+    "actual host/systemd/remoteauthority/capacity acceptance",
+    "selected-provider qualification and protected key/remaining allowance custody",
+    "exact cost/resource/rollback and public activation approval"
+  ]
+}

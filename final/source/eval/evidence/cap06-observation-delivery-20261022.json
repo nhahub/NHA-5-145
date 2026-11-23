@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-22",
+  "status": "inactive-conditional-local-preparation",
+  "base_commit": "2bfb282",
+  "scope": [
+    "current-generation observation-first tick",
+    "at most one already-pending authorized command",
+    "stopped no EC2 or write",
+    "tick-only bounded completion EMF",
+    "redacted tick error through lazy entry/runtime",
+    "disabled pure Scheduler/IAM/CloudWatch proposal"
+  ],
+  "resource_adoption_pending": true,
+  "resources_created": false,
+  "selected_inventory_changed": false,
+  "tests": {
+    "focused_new_cases": {
+      "passed": 36,
+      "seconds": 11.4,
+      "log": "outputs/cap06-observation-focused.log"
+    },
+    "initial_integrated": {
+      "passed": 84,
+      "seconds": 20.85
+    },
+    "affected_full": {
+      "passed": 1036,
+      "skipped": 0,
+      "seconds": 170.67,
+      "log": "outputs/cap06-observation-full.log",
+      "coverage": "all Agent, observation renderer, Lambda package, host checks/config/bootstrap, cloud access, waiting signing and fresh release build"
+    },
+    "independent_review": {
+      "findings": 0,
+      "focused_and_existing_passed": 108,
+      "seconds": 33.72
+    },
+    "red_green": [
+      "existing strict event rejection before tick implementation",
+      "renderer missing module then fourteen passes",
+      "unknown commands/claims never replayed with periodic observations"
+    ]
+  },
+  "operation_profiles": [
+    {
+      "case": "stopped",
+      "condition_count": 0,
+      "conservative_write_units": 0,
+      "get_count": 3,
+      "max_item_json_bytes": 418,
+      "put_count": 0,
+      "transactions": 0
+    },
+    {
+      "case": "unclaimed-start",
+      "condition_count": 4,
+      "conservative_write_units": 14,
+      "get_count": 26,
+      "max_item_json_bytes": 634,
+      "put_count": 3,
+      "transactions": 3
+    },
+    {
+      "case": "ready128",
+      "condition_count": 1,
+      "conservative_write_units": 16,
+      "get_count": 15,
+      "max_item_json_bytes": 6868,
+      "put_count": 1,
+      "transactions": 1
+    },
+    {
+      "case": "drain",
+      "condition_count": 1,
+      "conservative_write_units": 4,
+      "get_count": 15,
+      "max_item_json_bytes": 470,
+      "put_count": 1,
+      "transactions": 1
+    },
+    {
+      "case": "stop",
+      "condition_count": 3,
+      "conservative_write_units": 12,
+      "get_count": 21,
+      "max_item_json_bytes": 638,
+      "put_count": 3,
+      "transactions": 3
+    },
+    {
+      "case": "uncertain",
+      "condition_count": 1,
+      "conservative_write_units": 4,
+      "get_count": 15,
+      "max_item_json_bytes": 629,
+      "put_count": 1,
+      "transactions": 1
+    }
+  ],
+  "profile_limitations": [
+    "Moto/Stubber intercepted calls, not actual AWS billing/latency",
+    "sizes are serialized DynamoDB JSON, conservative compared to item billing bytes",
+    "cold factory adds four metadata reads",
+    "fixture profiles are not universal operation/item maxima or cash spending caps"
+  ],
+  "artifacts": {
+    "startup": {
+      "path": ".scratch/cap06-observation-delivery/startup-20261022-v1.zip",
+      "sha256": "7d90b216b33f4697354df220764e8a2f79dd35b63bcc1fff2e2c01f72aac5f7d",
+      "zip_bytes": 25888663,
+      "extracted_bytes": 25325881,
+      "files": 2379,
+      "manifest_sha256": "0d1e4c56a69dc43ac192a28190548e4bb760be38663c64dfd16278001a833650",
+      "rebuild_identical": true,
+      "smoke": {
+        "fixed_role_delegation": true,
+        "isolated_import": true,
+        "platform": "win32",
+        "python": "3.12.5",
+        "role": "startup",
+        "sdk_creation_and_network_blocked": true,
+        "service_models_and_ca_present": true,
+        "versions": {
+          "anyio": "4.15.1",
+          "boto3": "1.43.115",
+          "botocore": "1.43.115",
+          "certifi": "2026.7.22",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.19",
+          "jmespath": "1.1.0",
+          "python-dateutil": "2.9.0.post0",
+          "s3transfer": "0.19.3",
+          "six": "1.17.0",
+          "typing-extensions": "4.16.0",
+          "urllib3": "2.8.0"
+        }
+      }
+    },
+    "controller": {
+      "path": ".scratch/cap06-observation-delivery/controller-20261022-v1.zip",
+      "sha256": "8b968e9daf2d9cb0a8191eec0a5d5a3d9945ebe7d82b10e08707760332b5c641",
+      "zip_bytes": 25888669,
+      "extracted_bytes": 25325887,
+      "files": 2379,
+      "manifest_sha256": "090598a2419f3c750e3e8d4a9b87460109c4f18cf4f36d091ef463c7db8c977c",
+      "rebuild_identical": true,
+      "smoke": {
+        "fixed_role_delegation": true,
+        "isolated_import": true,
+        "platform": "win32",
+        "python": "3.12.5",
+        "role": "controller",
+        "sdk_creation_and_network_blocked": true,
+        "service_models_and_ca_present": true,
+        "versions": {
+          "anyio": "4.15.1",
+          "boto3": "1.43.115",
+          "botocore": "1.43.115",
+          "certifi": "2026.7.22",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.19",
+          "jmespath": "1.1.0",
+          "python-dateutil": "2.9.0.post0",
+          "s3transfer": "0.19.3",
+          "six": "1.17.0",
+          "typing-extensions": "4.16.0",
+          "urllib3": "2.8.0"
+        }
+      }
+    }
+  },
+  "source_hash_basis": "Working-tree bytes verified on Windows; Git line-ending conversion can change future checkout/build hashes.",
+  "input_sha256": {
+    "agent/lifecycle/controller.py": "108b819e1f0b5ca04c0c3f1aa65118b3547ed1292200a34bf92239e8bf0701b8",
+    "agent/lifecycle/lambda_runtime.py": "dde0e5d05882b0cd2877b77eba36d4af5d872bf654432bf66341360d3c52376b",
+    "agent/lifecycle/lambda_entry.py": "2b24076a3e7c5472f6bf123485c045c360f997586e6d5e42ed4d4b60b845be63",
+    "agent/tests/test_control_tick.py": "9bab3daa5b853f74997c35010cfba1ebb90095f9a1a4af3881716fbb1859ed54",
+    "deploy/observation.py": "f55d80b5479f6d0a81999c57412893e20ca7340cff38996c3baa68678f484543",
+    "eval/tests/test_observation.py": "018708d1f98bf4b186c160b44fd11576ac98835dc79d2f3554535ce5e5e8bf06",
+    "eval/lambda_package_smoke.py": "6ca44c58ff1833934c1ab8129fe3ae78afcfccf3e5b46c31660ae1746133b2ea",
+    "deploy/lambda-wheels.json": "33f67afe3df803201a4093338b9c9f57818119256991ed69df27d3eeed73da6d",
+    "deploy/lambda-requirements.lock": "3ba878a0105283ab1bc646543a68c077eca9f71ecf78e3358695848e2f35b69a",
+    "docs/cap06-observation-delivery.md": "12a0f47e7e21f7b64c95205f1067f631a13bb361d42cb1be2edb5cba280ebc91",
+    "docs/specs/2026-10-22-cap06-observation-delivery-design.md": "75f308176a7957082ee486a42e12fae89e0d6dc0abbe44393b1ae48abd304e72",
+    "the execution plan": "67982b24bde318f9f5711216120451dfb9e18895c89cbf4df13f02b520d3f1f1",
+    "docs/research/2026-10-22-cap06-observation-delivery-contract.md": "f9157e3d50ad13bee507c2d01e9a7bcc6b68284ee97da1ace9fc5c2f27577330"
+  },
+  "checks": [
+    "Ruff lint/format247Pythonfiles",
+    "pip check",
+    "ESLint",
+    "repository Prettier",
+    "git whitespace",
+    "independent Decimal arithmetic",
+    "primary AWS policy/async/trust source recheck",
+    "actual repeated offline wheel builds + external digest + isolated Python3.12.5 -I -S -B smoke with SDK/network forbidden"
+  ],
+  "cost_proposal": {
+    "days": 60,
+    "nominal_ticks": 86400,
+    "memory_mib": 256,
+    "timeout_seconds": 30,
+    "rru_per_tick_assumption": 160,
+    "wru_per_tick_assumption": 144,
+    "additional_stress_usd": "22.171657600000",
+    "rounded_up_usd": "22.18",
+    "proposed_planning_allocation_usd": "23",
+    "prior_reference_plus_allocation_usd": "78.50",
+    "remaining_in_proposed_80_envelope_usd": "1.50",
+    "separate_prior_unallocated_usd": "20",
+    "authority": "planning proposal only, no new spend/inference permission",
+    "limitations": [
+      "actual account/credit eligibility unknown",
+      "no unproven free allowances subtracted",
+      "billing INIT/duplicates/extra traffic can exceed scenario",
+      "reconcile complete measured costs before apply"
+    ]
+  },
+  "not_performed": [
+    "real AWS/account/credential/model calls",
+    "resource/key/config/IAM/DNS/TLS writes",
+    "schedule enablement or service adoption",
+    "notification sending or alarm actions",
+    "Linux/AL2023 runtime verification",
+    "deployment or cloud acceptance",
+    "extra spending or push"
+  ],
+  "next": [
+    "exact artifact Linux/architecture execution",
+    "host launcher/POSIX/config/key integration",
+    "service/credit/account/concurrency eligibility and full cost/rollback review",
+    "separate resource apply authorization",
+    "Bedrock quota and model qualification",
+    "real closed-browser/backlog/idle/outage/capacity/Android cloud acceptance"
+  ]
+}

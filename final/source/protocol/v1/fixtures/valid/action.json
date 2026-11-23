@@ -1,0 +1,9 @@
+{
+  "v": 1,
+  "type": "navigate",
+  "task_id": "t_009",
+  "action_id": "a_017",
+  "sequence_number": 3,
+  "narration": "Opening the filtered products.",
+  "url": "/c/shoes?type=running&max_price=2000"
+}

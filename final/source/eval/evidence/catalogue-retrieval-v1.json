@@ -1,0 +1,1376 @@
+{
+  "provenance": "language-model-generated exposed development queries; provisional relevance labels; no live LLM",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "device": "cpu",
+  "corpus_sha256": "dd5cd178c66d85c103c0d9c42c252553680b615b6089d30f88ff16a44e7247ee",
+  "product_encoding_including_load_ms": 11590.620200000558,
+  "query_batch_ms": 103.56300000057672,
+  "node_rss_bytes": 93794304,
+  "results": [
+    {
+      "id": "egyptian_arabic-01",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["clothing-05"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 1.7760999999999854,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-03",
+          "clothing-10",
+          "shoe-10",
+          "clothing-05",
+          "clothing-08",
+          "clothing-01",
+          "bag-11",
+          "electronics-05",
+          "electronics-01",
+          "bag-01"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.25,
+        "search_ms": 5.127499999999998,
+        "response_bytes": 4623,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-02",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["clothing-04"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.3464999999999918,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-03",
+          "clothing-10",
+          "shoe-10",
+          "clothing-01",
+          "electronics-01",
+          "bag-11",
+          "electronics-05",
+          "clothing-05",
+          "clothing-08",
+          "bag-01"
+        ],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 4.317299999999989,
+        "response_bytes": 4623,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-03",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["shoe-04"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.3768000000000029,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-03",
+          "shoe-10",
+          "shoe-14",
+          "clothing-01",
+          "bag-05",
+          "bag-11",
+          "shoe-08",
+          "clothing-02",
+          "shoe-04",
+          "shoe-11"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.1111111111111111,
+        "search_ms": 4.0916,
+        "response_bytes": 4613,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-04",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["bag-04"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.37180000000000746,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-03",
+          "shoe-10",
+          "clothing-10",
+          "clothing-01",
+          "electronics-01",
+          "clothing-05",
+          "electronics-05",
+          "clothing-08",
+          "shoe-04",
+          "bag-11"
+        ],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 3.2918999999999983,
+        "response_bytes": 4711,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-05",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["electronics-14"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.41619999999997503,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-11",
+          "electronics-08",
+          "shoe-12",
+          "electronics-14",
+          "electronics-03",
+          "shoe-10",
+          "electronics-10",
+          "bag-06",
+          "shoe-03",
+          "electronics-01"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.25,
+        "search_ms": 3.6415999999999826,
+        "response_bytes": 4583,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-06",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["clothing-06"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.289799999999957,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-05",
+          "shoe-08",
+          "shoe-10",
+          "shoe-03",
+          "bag-15",
+          "shoe-14",
+          "clothing-02",
+          "bag-13",
+          "bag-11",
+          "clothing-15"
+        ],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 3.639700000000005,
+        "response_bytes": 4552,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-07",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["electronics-04"],
+      "lexical": {
+        "ids": ["electronics-03"],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.6327999999999747,
+        "response_bytes": 581,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-03",
+          "electronics-04",
+          "electronics-12",
+          "electronics-14",
+          "electronics-02",
+          "bag-02",
+          "electronics-10",
+          "electronics-08",
+          "electronics-15",
+          "bag-08"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 3.748899999999992,
+        "response_bytes": 4600,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-08",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["bag-09"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.30979999999999563,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-02",
+          "clothing-12",
+          "bag-05",
+          "clothing-06",
+          "clothing-09",
+          "shoe-10",
+          "shoe-08",
+          "bag-03",
+          "shoe-12",
+          "bag-15"
+        ],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 3.627900000000011,
+        "response_bytes": 4645,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-09",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["electronics-08"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.28520000000003165,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-15",
+          "bag-11",
+          "bag-05",
+          "clothing-09",
+          "shoe-08",
+          "shoe-10",
+          "bag-03",
+          "bag-01",
+          "shoe-12",
+          "clothing-02"
+        ],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 4.255600000000015,
+        "response_bytes": 4536,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "egyptian_arabic-10",
+      "language": "egyptian_arabic",
+      "relevant_ids": ["shoe-02"],
+      "lexical": {
+        "ids": ["shoe-05"],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.713799999999992,
+        "response_bytes": 621,
+        "unknown_candidates": 1
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-05",
+          "shoe-10",
+          "shoe-03",
+          "clothing-10",
+          "shoe-11",
+          "shoe-14",
+          "bag-06",
+          "bag-09",
+          "shoe-04",
+          "shoe-12"
+        ],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 4.586999999999989,
+        "response_bytes": 4914,
+        "unknown_candidates": 10
+      }
+    },
+    {
+      "id": "franco_arabic-01",
+      "language": "franco_arabic",
+      "relevant_ids": ["clothing-05"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.8688000000000216,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-10",
+          "shoe-03",
+          "shoe-08",
+          "bag-05",
+          "bag-09",
+          "clothing-12",
+          "bag-11",
+          "clothing-05",
+          "shoe-11",
+          "shoe-14"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.125,
+        "search_ms": 3.5126000000000204,
+        "response_bytes": 4561,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-02",
+      "language": "franco_arabic",
+      "relevant_ids": ["bag-11"],
+      "lexical": {
+        "ids": ["bag-05", "bag-11", "bag-01"],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 1.146000000000015,
+        "response_bytes": 1372,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-11",
+          "bag-05",
+          "bag-01",
+          "shoe-10",
+          "shoe-03",
+          "clothing-10",
+          "shoe-12",
+          "clothing-07",
+          "bag-09",
+          "clothing-05"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.7635999999999967,
+        "response_bytes": 4536,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-03",
+      "language": "franco_arabic",
+      "relevant_ids": ["shoe-04"],
+      "lexical": {
+        "ids": ["shoe-04", "bag-02", "clothing-01", "electronics-05"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.700300000000027,
+        "response_bytes": 1935,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-04",
+          "clothing-01",
+          "electronics-05",
+          "bag-02",
+          "shoe-02",
+          "shoe-05",
+          "shoe-10",
+          "clothing-13",
+          "clothing-03",
+          "shoe-09"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 10.954700000000003,
+        "response_bytes": 4699,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-04",
+      "language": "franco_arabic",
+      "relevant_ids": ["electronics-12"],
+      "lexical": {
+        "ids": [],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.3188999999999851,
+        "response_bytes": 166,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-12",
+          "electronics-01",
+          "electronics-05",
+          "electronics-02",
+          "bag-11",
+          "bag-01",
+          "electronics-15",
+          "electronics-10",
+          "shoe-12",
+          "bag-05"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.2060000000000173,
+        "response_bytes": 4576,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-05",
+      "language": "franco_arabic",
+      "relevant_ids": ["clothing-06"],
+      "lexical": {
+        "ids": ["clothing-06", "clothing-07", "bag-05", "shoe-08"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.7278999999999769,
+        "response_bytes": 1934,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-05",
+          "shoe-08",
+          "clothing-06",
+          "clothing-07",
+          "clothing-12",
+          "clothing-02",
+          "shoe-14",
+          "bag-03",
+          "bag-09",
+          "shoe-07"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.3333333333333333,
+        "search_ms": 3.426400000000001,
+        "response_bytes": 4638,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-06",
+      "language": "franco_arabic",
+      "relevant_ids": ["electronics-08"],
+      "lexical": {
+        "ids": ["electronics-08", "electronics-07", "electronics-14"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.6050999999999931,
+        "response_bytes": 1474,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-07",
+          "electronics-08",
+          "electronics-14",
+          "electronics-15",
+          "electronics-10",
+          "electronics-01",
+          "electronics-02",
+          "electronics-12",
+          "electronics-09",
+          "electronics-05"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 3.9898999999999774,
+        "response_bytes": 4674,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-07",
+      "language": "franco_arabic",
+      "relevant_ids": ["clothing-12"],
+      "lexical": {
+        "ids": ["clothing-12"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.4008000000000038,
+        "response_bytes": 590,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-12",
+          "bag-05",
+          "clothing-03",
+          "electronics-01",
+          "electronics-02",
+          "clothing-06",
+          "clothing-01",
+          "electronics-15",
+          "clothing-02",
+          "bag-06"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.2198999999999955,
+        "response_bytes": 4632,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-08",
+      "language": "franco_arabic",
+      "relevant_ids": ["bag-12"],
+      "lexical": {
+        "ids": ["electronics-11", "bag-12"],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 0.4788000000000352,
+        "response_bytes": 998,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-11",
+          "bag-12",
+          "shoe-10",
+          "bag-06",
+          "clothing-02",
+          "electronics-05",
+          "bag-09",
+          "clothing-12",
+          "electronics-10",
+          "shoe-02"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 3.3933999999999855,
+        "response_bytes": 4575,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-09",
+      "language": "franco_arabic",
+      "relevant_ids": ["electronics-03"],
+      "lexical": {
+        "ids": ["electronics-03"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.39119999999996935,
+        "response_bytes": 581,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-03",
+          "electronics-12",
+          "electronics-10",
+          "electronics-05",
+          "electronics-04",
+          "electronics-11",
+          "bag-12",
+          "bag-01",
+          "shoe-12",
+          "clothing-03"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.7660000000000196,
+        "response_bytes": 4574,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "franco_arabic-10",
+      "language": "franco_arabic",
+      "relevant_ids": ["clothing-14"],
+      "lexical": {
+        "ids": [
+          "clothing-14",
+          "clothing-03",
+          "bag-01",
+          "electronics-01",
+          "shoe-09",
+          "shoe-01"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.8546999999999798,
+        "response_bytes": 2698,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-14",
+          "clothing-03",
+          "bag-01",
+          "shoe-01",
+          "shoe-09",
+          "electronics-01",
+          "clothing-01",
+          "electronics-05",
+          "electronics-06",
+          "clothing-02"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.7151000000000067,
+        "response_bytes": 4617,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-01",
+      "language": "english",
+      "relevant_ids": ["clothing-05"],
+      "lexical": {
+        "ids": ["clothing-05", "shoe-08"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.5110000000000241,
+        "response_bytes": 1071,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-05",
+          "shoe-08",
+          "clothing-10",
+          "clothing-11",
+          "shoe-10",
+          "bag-13",
+          "clothing-08",
+          "shoe-07",
+          "clothing-15",
+          "bag-10"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.0728000000000293,
+        "response_bytes": 4663,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-02",
+      "language": "english",
+      "relevant_ids": ["clothing-04"],
+      "lexical": {
+        "ids": ["clothing-04", "clothing-06", "clothing-05", "clothing-15"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 1.2854000000000383,
+        "response_bytes": 2033,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-04",
+          "clothing-05",
+          "clothing-06",
+          "clothing-15",
+          "clothing-03",
+          "shoe-07",
+          "clothing-07",
+          "bag-07",
+          "shoe-09",
+          "shoe-10"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.4087000000000103,
+        "response_bytes": 4761,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-03",
+      "language": "english",
+      "relevant_ids": ["shoe-04"],
+      "lexical": {
+        "ids": ["bag-02", "clothing-01", "electronics-05", "shoe-04"],
+        "recall_at_10": 1.0,
+        "rr": 0.25,
+        "search_ms": 0.6689000000000078,
+        "response_bytes": 1935,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-01",
+          "bag-02",
+          "electronics-05",
+          "shoe-04",
+          "clothing-03",
+          "shoe-09",
+          "bag-05",
+          "clothing-08",
+          "bag-01",
+          "clothing-15"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.25,
+        "search_ms": 3.421800000000019,
+        "response_bytes": 4645,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-04",
+      "language": "english",
+      "relevant_ids": ["bag-04"],
+      "lexical": {
+        "ids": ["bag-10", "bag-04", "bag-01", "bag-12", "bag-14", "bag-07"],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 1.289100000000019,
+        "response_bytes": 2611,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-04",
+          "bag-10",
+          "bag-14",
+          "bag-12",
+          "bag-07",
+          "bag-01",
+          "bag-08",
+          "bag-02",
+          "bag-13",
+          "bag-06"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.441599999999994,
+        "response_bytes": 4448,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-05",
+      "language": "english",
+      "relevant_ids": ["electronics-14"],
+      "lexical": {
+        "ids": ["electronics-01", "electronics-14"],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 0.511099999999999,
+        "response_bytes": 1037,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-01",
+          "electronics-14",
+          "electronics-02",
+          "clothing-12",
+          "electronics-07",
+          "electronics-13",
+          "electronics-15",
+          "electronics-10",
+          "bag-06",
+          "electronics-08"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 3.5160999999999945,
+        "response_bytes": 4628,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-06",
+      "language": "english",
+      "relevant_ids": ["electronics-04"],
+      "lexical": {
+        "ids": ["electronics-04", "electronics-12", "electronics-03"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.612199999999973,
+        "response_bytes": 1440,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-04",
+          "electronics-12",
+          "electronics-03",
+          "electronics-10",
+          "electronics-15",
+          "electronics-02",
+          "electronics-08",
+          "electronics-14",
+          "electronics-09",
+          "electronics-01"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.212500000000034,
+        "response_bytes": 4632,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-07",
+      "language": "english",
+      "relevant_ids": ["bag-09"],
+      "lexical": {
+        "ids": ["bag-09", "bag-01", "bag-12", "bag-14", "bag-07"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.7947000000000344,
+        "response_bytes": 2191,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-14",
+          "bag-07",
+          "bag-12",
+          "bag-09",
+          "bag-01",
+          "bag-06",
+          "bag-13",
+          "bag-08",
+          "bag-02",
+          "bag-10"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.25,
+        "search_ms": 4.04770000000002,
+        "response_bytes": 4431,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-08",
+      "language": "english",
+      "relevant_ids": ["electronics-08"],
+      "lexical": {
+        "ids": ["electronics-08", "electronics-14"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.8879000000000019,
+        "response_bytes": 1038,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-08",
+          "electronics-14",
+          "electronics-10",
+          "electronics-15",
+          "electronics-01",
+          "electronics-03",
+          "electronics-11",
+          "electronics-04",
+          "electronics-05",
+          "electronics-13"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.917599999999993,
+        "response_bytes": 4650,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-09",
+      "language": "english",
+      "relevant_ids": ["electronics-12"],
+      "lexical": {
+        "ids": ["electronics-09", "electronics-12"],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 0.5518999999999892,
+        "response_bytes": 1021,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-09",
+          "electronics-12",
+          "electronics-10",
+          "electronics-15",
+          "electronics-05",
+          "electronics-07",
+          "electronics-11",
+          "bag-13",
+          "electronics-02",
+          "electronics-08"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 3.1906999999999925,
+        "response_bytes": 4643,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "english-10",
+      "language": "english",
+      "relevant_ids": ["clothing-04"],
+      "lexical": {
+        "ids": [
+          "clothing-05",
+          "clothing-04",
+          "electronics-12",
+          "electronics-13",
+          "shoe-07",
+          "shoe-08"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 0.9262999999999693,
+        "response_bytes": 2898,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-04",
+          "clothing-05",
+          "shoe-07",
+          "electronics-13",
+          "electronics-12",
+          "shoe-08",
+          "clothing-03",
+          "clothing-01",
+          "bag-06",
+          "bag-07"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.252900000000011,
+        "response_bytes": 4754,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-01",
+      "language": "mixed",
+      "relevant_ids": ["clothing-05"],
+      "lexical": {
+        "ids": ["clothing-05", "shoe-08", "clothing-04"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.5815999999999804,
+        "response_bytes": 1584,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-05",
+          "shoe-08",
+          "clothing-04",
+          "clothing-10",
+          "shoe-10",
+          "clothing-11",
+          "bag-13",
+          "shoe-07",
+          "clothing-08",
+          "bag-07"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 4.047799999999995,
+        "response_bytes": 4760,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-02",
+      "language": "mixed",
+      "relevant_ids": ["electronics-08"],
+      "lexical": {
+        "ids": ["electronics-08", "electronics-14"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.5629000000000133,
+        "response_bytes": 1038,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-08",
+          "electronics-14",
+          "electronics-10",
+          "electronics-07",
+          "electronics-15",
+          "electronics-03",
+          "electronics-11",
+          "electronics-02",
+          "electronics-01",
+          "electronics-04"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.064199999999971,
+        "response_bytes": 4634,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-03",
+      "language": "mixed",
+      "relevant_ids": ["clothing-04"],
+      "lexical": {
+        "ids": ["clothing-05", "clothing-04"],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 0.45949999999999136,
+        "response_bytes": 1127,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-04",
+          "clothing-05",
+          "clothing-03",
+          "bag-06",
+          "bag-01",
+          "clothing-09",
+          "shoe-07",
+          "bag-07",
+          "shoe-10",
+          "electronics-13"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.466099999999983,
+        "response_bytes": 4679,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-04",
+      "language": "mixed",
+      "relevant_ids": ["shoe-04"],
+      "lexical": {
+        "ids": ["shoe-04", "bag-02", "clothing-01", "electronics-05"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.6619000000000028,
+        "response_bytes": 1935,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-04",
+          "electronics-05",
+          "clothing-01",
+          "bag-02",
+          "shoe-05",
+          "shoe-02",
+          "shoe-01",
+          "shoe-03",
+          "shoe-09",
+          "clothing-03"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.8272999999999797,
+        "response_bytes": 4709,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-05",
+      "language": "mixed",
+      "relevant_ids": ["bag-04"],
+      "lexical": {
+        "ids": [
+          "bag-04",
+          "bag-01",
+          "bag-03",
+          "bag-09",
+          "bag-11",
+          "bag-07",
+          "bag-13",
+          "bag-15"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 1.4381999999999948,
+        "response_bytes": 3443,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-04",
+          "bag-13",
+          "bag-15",
+          "bag-07",
+          "bag-01",
+          "bag-11",
+          "bag-09",
+          "bag-03",
+          "electronics-07",
+          "electronics-10"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.0545999999999935,
+        "response_bytes": 4487,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-06",
+      "language": "mixed",
+      "relevant_ids": ["electronics-04"],
+      "lexical": {
+        "ids": ["electronics-03"],
+        "recall_at_10": 0.0,
+        "rr": 0.0,
+        "search_ms": 0.4157999999999902,
+        "response_bytes": 581,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-03",
+          "electronics-04",
+          "electronics-10",
+          "electronics-09",
+          "electronics-15",
+          "electronics-12",
+          "bag-01",
+          "electronics-02",
+          "shoe-03",
+          "electronics-05"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.5,
+        "search_ms": 3.4706999999999653,
+        "response_bytes": 4598,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-07",
+      "language": "mixed",
+      "relevant_ids": ["electronics-12"],
+      "lexical": {
+        "ids": ["electronics-12"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.44189999999997553,
+        "response_bytes": 600,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "electronics-12",
+          "electronics-09",
+          "electronics-10",
+          "electronics-02",
+          "electronics-15",
+          "electronics-01",
+          "electronics-07",
+          "electronics-14",
+          "electronics-05",
+          "bag-13"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.5548,
+        "response_bytes": 4659,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-08",
+      "language": "mixed",
+      "relevant_ids": ["clothing-06"],
+      "lexical": {
+        "ids": ["clothing-06", "clothing-07", "bag-05", "shoe-08"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.6995000000000005,
+        "response_bytes": 1934,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "clothing-06",
+          "shoe-08",
+          "bag-05",
+          "clothing-07",
+          "clothing-12",
+          "shoe-14",
+          "clothing-02",
+          "shoe-05",
+          "bag-13",
+          "shoe-10"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.1861999999999853,
+        "response_bytes": 4637,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-09",
+      "language": "mixed",
+      "relevant_ids": ["bag-11"],
+      "lexical": {
+        "ids": [
+          "bag-11",
+          "bag-01",
+          "bag-02",
+          "bag-08",
+          "bag-05",
+          "clothing-06",
+          "clothing-04",
+          "bag-03",
+          "bag-04",
+          "bag-09"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 1.924599999999998,
+        "response_bytes": 4617,
+        "unknown_candidates": 0
+      },
+      "hybrid": {
+        "ids": [
+          "bag-11",
+          "bag-01",
+          "bag-05",
+          "bag-08",
+          "bag-02",
+          "clothing-04",
+          "bag-03",
+          "bag-15",
+          "clothing-06",
+          "bag-07"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 3.2649000000000115,
+        "response_bytes": 4619,
+        "unknown_candidates": 0
+      }
+    },
+    {
+      "id": "mixed-10",
+      "language": "mixed",
+      "relevant_ids": ["shoe-02"],
+      "lexical": {
+        "ids": ["shoe-02", "shoe-04", "shoe-03", "shoe-05", "shoe-01"],
+        "recall_at_10": 1.0,
+        "rr": 1.0,
+        "search_ms": 0.8521999999999821,
+        "response_bytes": 2555,
+        "unknown_candidates": 5
+      },
+      "hybrid": {
+        "ids": [
+          "shoe-03",
+          "shoe-04",
+          "shoe-02",
+          "shoe-05",
+          "shoe-01",
+          "shoe-10",
+          "clothing-10",
+          "clothing-08",
+          "clothing-01",
+          "electronics-05"
+        ],
+        "recall_at_10": 1.0,
+        "rr": 0.3333333333333333,
+        "search_ms": 4.122099999999989,
+        "response_bytes": 5070,
+        "unknown_candidates": 10
+      }
+    }
+  ],
+  "summary": {
+    "lexical": {
+      "mean_recall_at_10": 0.675,
+      "mrr": 0.56875
+    },
+    "hybrid": {
+      "mean_recall_at_10": 0.85,
+      "mrr": 0.6225694444444444
+    }
+  },
+  "per_language": {
+    "egyptian_arabic": {
+      "lexical": 0.0,
+      "hybrid": 0.4
+    },
+    "english": {
+      "lexical": 1.0,
+      "hybrid": 1.0
+    },
+    "franco_arabic": {
+      "lexical": 0.8,
+      "hybrid": 1.0
+    },
+    "mixed": {
+      "lexical": 0.9,
+      "hybrid": 1.0
+    }
+  },
+  "historical_full_read": {
+    "candidate_recall_at_60": 1.0,
+    "products_per_read": 60,
+    "response_bytes": 29603,
+    "note": "Full evidence transport baseline only; no claim about historical model or three-card selection accuracy."
+  },
+  "cpu_load_fixture": {
+    "products": 1000,
+    "construction": "Repeated catalogue facts with unique IDs; cached normalized vectors, not 1000 independently labelled products.",
+    "node_rss_bytes": 254873600,
+    "warm_search_p95_ms": {
+      "lexical": 3.0054999999999836,
+      "hybrid": 38.8497000000001
+    },
+    "excludes": "Query encoding, HTTP overhead and other service processes; whole-stack fit and end-to-end p95 remain unqualified."
+  },
+  "qualification": {
+    "default_enabled": false,
+    "live_model": "not run; separate budget authorization required",
+    "host_fit": "not measured; no deployment qualification",
+    "quality": "Exposed provisional target labels only; not unseen performance or exhaustive relevance."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "v": 1,
+  "date": "2026-10-22",
+  "base_commit": "019095a",
+  "scope": "Offline exact-resource IAM/OAC access bundle and viewer POST payload signing",
+  "source_sha256": {
+    "deploy/cloud_access.py": "9e637928c9965c159c9785db6c0bcce0fa895125b62ce1e57d67e0c9c3c0e31b",
+    "agent/lifecycle/waiting.html": "54d19da3948ac3176ea6a4887629804cd2ac54f2cf15116c5f330fd7c56ccd9b",
+    "eval/tests/test_cloud_access.py": "139f05012a624a539b574a90b02c2f117a4172963ad67f338425493cdff44b70",
+    "eval/tests/test_waiting_signing.py": "08e58eae121644df963ba4e31d364798b8eeced12c93db826416f27ec3271ac3",
+    "eval/tests/test_release.py": "90c89da8a4c1e8e777a1661f8dd51e01b922fdb985eb10072da4cbfc784810c2"
+  },
+  "final_checks": {
+    "passed": 159,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 68.92,
+    "includes": "local/remote lifecycle, startup, executor, access bundle, browser signing and fresh release build"
+  },
+  "independent_review": {
+    "remaining_actionable_findings": 0,
+    "focused_tests_passed": 28,
+    "duration_seconds": 3.78
+  },
+  "red_observed": [
+    "Access renderer module missing",
+    "POST omitted required digest header for both ASCII and Arabic input",
+    "Crypto failure still sent wake before signing implementation"
+  ],
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format: 219 files",
+    "pip check",
+    "git diff --check"
+  ],
+  "aws_contract_research": "docs/research/2026-10-22-cap06-lambda-oac-contract.md",
+  "browser_verification": "Chromium with every page request intercepted; HTTPS and trusted localhost contexts, nonce CSP, exact UTF-8 body digest independently verified using hashlib, no URL/storage leak and no fetch on crypto failure",
+  "actual_aws_api_calls": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "policies_applied": false,
+  "actual_resource_identifiers_selected": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "limits": [
+    "JSON bundle is not a deployable template or AWS IAM simulation",
+    "CloudFront adds protocol/signature headers beyond the custom viewer allowlist",
+    "Table partition IAM does not prove application protocol semantics",
+    "Runtime factories, controller observations/scheduling and async host integration remain pending",
+    "Final cost estimate must include controller invocations and DDB calls",
+    "Bedrock zero-quota blocker and all open acceptance gates remain"
+  ]
+}

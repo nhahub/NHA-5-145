@@ -1,0 +1,79 @@
+[
+  {
+    "v": 1,
+    "type": "navigate",
+    "task_id": "t_009",
+    "action_id": "a_001",
+    "sequence_number": 1,
+    "narration": "Opening running shoes.",
+    "url": "/c/shoes?type=running"
+  },
+  {
+    "v": 1,
+    "type": "click",
+    "task_id": "t_009",
+    "action_id": "a_002",
+    "sequence_number": 2,
+    "narration": "Applying the filters.",
+    "id": 40
+  },
+  {
+    "v": 1,
+    "type": "type",
+    "task_id": "t_009",
+    "action_id": "a_003",
+    "sequence_number": 3,
+    "narration": "Entering the maximum price.",
+    "id": 33,
+    "text": "2000",
+    "submit": false
+  },
+  {
+    "v": 1,
+    "type": "select",
+    "task_id": "t_009",
+    "action_id": "a_004",
+    "sequence_number": 4,
+    "narration": "Sorting by lowest price.",
+    "id": 12,
+    "option": "Price: low to high"
+  },
+  {
+    "v": 1,
+    "type": "scroll_to",
+    "task_id": "t_009",
+    "action_id": "a_005",
+    "sequence_number": 5,
+    "narration": "Moving to the results.",
+    "id": 52
+  },
+  {
+    "v": 1,
+    "type": "spotlight",
+    "task_id": "t_009",
+    "action_id": "a_006",
+    "sequence_number": 6,
+    "narration": "Showing you the cart.",
+    "id": 7,
+    "message": "الكارت هنا"
+  },
+  {
+    "v": 1,
+    "type": "ask_shopper",
+    "task_id": "t_009",
+    "action_id": "a_007",
+    "sequence_number": 7,
+    "narration": "I need your choice.",
+    "question": "Which size do you want?",
+    "options": ["41", "42"]
+  },
+  {
+    "v": 1,
+    "type": "done",
+    "task_id": "t_009",
+    "action_id": "a_008",
+    "sequence_number": 8,
+    "narration": "The matching products are ready.",
+    "summary": "Filtered running shoes under EGP 2000."
+  }
+]

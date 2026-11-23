@@ -1,0 +1,75 @@
+{
+  "v": 1,
+  "date": "2026-10-22",
+  "base_commit": "11ac61e",
+  "scope": "Injected single command executor and bounded startup HTTP-v2; offline only",
+  "source_sha256": {
+    "agent/lifecycle/dynamodb.py": "574454358eadbedfe641d6d461e746f3424cdbc27f4e8c8508f4e85113078e39",
+    "agent/lifecycle/executor.py": "94b65dc52cd48be765beb5647c58417263b35ca02224cdd4e42ea70833a827cb",
+    "agent/lifecycle/startup.py": "a8b0b6dd2c7b2db6106f6f5f0c1f475dcbc11e4707d5f08b33b6e07cbf194b54",
+    "agent/tests/test_lifecycle_executor.py": "15845378da4b99f4810ff491035b8f09281c6155b1128afe38c1a4d39a159eab",
+    "agent/tests/test_startup.py": "4833b90e546abfa6a294e8730ee8d15d1d93786289d31508fd8828e97d4a82ee",
+    "eval/tests/test_release.py": "64c0c90c9dd6b331a5b1fb8ba6a73ee4d9838385b6c9201368c5c06547835a5b"
+  },
+  "final_checks": {
+    "passed": 211,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 82.78,
+    "includes": "admission, local/remote lifecycle, executor/startup, inference allowance/runtime and fresh release build"
+  },
+  "independent_review": {
+    "findings_initial": 2,
+    "findings": [
+      "Deadline sampled before additional invitation I/O",
+      "EC2 policy checked before additional authority I/O"
+    ],
+    "regression_red_observed": true,
+    "resolved": true,
+    "remaining_actionable_findings": 0,
+    "independent_tests_passed": 114,
+    "duration_seconds": 49.51
+  },
+  "format_lint": [
+    "ESLint",
+    "Prettier",
+    "Ruff check",
+    "Ruff format: 216 files",
+    "pip check",
+    "git diff --check"
+  ],
+  "bounds": {
+    "ec2_api_calls_per_execution": 1,
+    "sdk_total_attempts": 1,
+    "connect_timeout_max_seconds": 5,
+    "read_timeout_max_seconds": 15,
+    "body_max_bytes": 1024,
+    "fixed_rate_lanes_per_minute": {
+      "http": 240,
+      "wake": 10,
+      "poll": 120
+    }
+  },
+  "offline_backend": "Moto 5.2.4 DynamoDB and botocore Stubber EC2 with explicit dummy credentials",
+  "emulator_limitation": "Concurrency harness serializes mock server transactions because Moto rollback is not thread isolated; actual AWS conflict/durability qualification remains pending",
+  "actual_aws_api_calls": 0,
+  "actual_ec2_commands": 0,
+  "paid_model_calls": 0,
+  "resources_created": false,
+  "active_runtime_backend_changed": false,
+  "deployment_accepted": false,
+  "remaining": [
+    "Lambda/OAC/IAM and fixed instance wiring",
+    "Trusted readiness and observation scheduling",
+    "Async Agent/host work integration",
+    "Approved resource/cost inventory, DNS and public TLS",
+    "Bedrock applied quota blocker and deployed cloud acceptance"
+  ],
+  "safety_limits": [
+    "No automatic retry, claim takeover or uncertain action replay",
+    "No EC2 generation/revocation atomicity across network I/O",
+    "HTTP does not execute commands, redeem shopping access or extend activity",
+    "Application rate limits do not cap edge or invocation costs",
+    "No raw code/event/SDK response/receipt logging"
+  ]
+}
