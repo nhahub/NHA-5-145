@@ -30,7 +30,7 @@ The first three reports and their editable sources and original provenance remai
 ## 23 November final submission
 
 - [Final submission index](final/README.md): what is included and what changed since the defense.
-- [Presentation (PowerPoint)](final/presentation/Shopping-Copilot-Presentation-2026-11-23.pptx) and [PDF copy](final/presentation/Shopping-Copilot-Presentation-2026-11-23.pdf).
+- [Presentation (PowerPoint)](final/presentation/Shopping-Copilot-Graduation-Defense-2026-11-24.pptx) and [PDF copy](final/presentation/Shopping-Copilot-Graduation-Defense-2026-11-24.pdf).
 - [Demo video](final/video/shopping-copilot-demo-2026-11-23.mp4), recorded on the deployed site with the real model.
 - [Infographic](final/infographic/shopping-copilot-infographic.png) ([PDF](final/infographic/shopping-copilot-infographic.pdf)).
 - [Source code](final/source/README.md): the complete application, tests, evaluation suite and deployment code.

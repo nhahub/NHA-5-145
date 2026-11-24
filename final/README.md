@@ -8,8 +8,8 @@ An Arabic-first shopping assistant that turns everyday requests (Egyptian Arabic
 
 | Item | File |
 | --- | --- |
-| Presentation (PowerPoint, motion clips and transitions) | [presentation/Shopping-Copilot-Presentation-2026-11-23.pptx](presentation/Shopping-Copilot-Presentation-2026-11-23.pptx) |
-| Presentation (PDF copy) | [presentation/Shopping-Copilot-Presentation-2026-11-23.pdf](presentation/Shopping-Copilot-Presentation-2026-11-23.pdf) |
+| Presentation (PowerPoint, 19 slides with demo clips and Morph transitions) | [presentation/Shopping-Copilot-Graduation-Defense-2026-11-24.pptx](presentation/Shopping-Copilot-Graduation-Defense-2026-11-24.pptx) |
+| Presentation (PDF copy) | [presentation/Shopping-Copilot-Graduation-Defense-2026-11-24.pdf](presentation/Shopping-Copilot-Graduation-Defense-2026-11-24.pdf) |
 | Demo video (4:22, 1080p) | [video/shopping-copilot-demo-2026-11-23.mp4](video/shopping-copilot-demo-2026-11-23.mp4) |
 | Infographic | [infographic/shopping-copilot-infographic.png](infographic/shopping-copilot-infographic.png) · [PDF](infographic/shopping-copilot-infographic.pdf) |
 | Source code | [source/](source/) — start with [source/README.md](source/README.md) |
